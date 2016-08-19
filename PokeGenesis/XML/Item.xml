@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Namespace>
+  <Item>
+    <id> t-shirt</id>
+  </Item>
+  <Item>
+    <id> bow on its head</id>
+  </Item>
+  <Item>
+    <id> pair of shades</id>
+  </Item>
+  <Item>
+    <id> pair of glasses</id>
+  </Item>
+  <Item>
+    <id> collar</id>
+  </Item>
+  <Item>
+    <id> baseball cap</id>
+  </Item>
+  <Item>
+    <id> hard hat</id>
+  </Item>
+  <Item>
+    <id> bowtie</id>
+  </Item>
+  <Item>  
+    <id> vest</id>
+  </Item>
+</Namespace>

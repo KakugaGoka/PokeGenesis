@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Namespace>
+  <Design>
+    <id> spots</id>
+  </Design>
+  <Design>
+    <id> stripes</id>
+  </Design>
+  <Design>
+    <id> checkers</id>
+  </Design>
+  <Design>
+    <id> waves</id>
+  </Design>
+  <Design>
+    <id> flowers</id>
+  </Design>
+  <Design>
+    <id> butterflies</id>
+  </Design>
+  <Design>
+    <id> skulls</id>
+  </Design>
+</Namespace>

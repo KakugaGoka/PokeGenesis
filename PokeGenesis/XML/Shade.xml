@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Namespace>
+  <Shade>
+    <id></id>
+  </Shade>
+  <Shade>
+    <id></id>
+  </Shade>
+  <Shade>
+    <id></id>
+  </Shade>
+  <Shade>
+	  <id> light</id>
+	</Shade>
+  <Shade>
+    <id> dark</id>
+  </Shade>
+  <Shade>
+    <id> faded</id>
+  </Shade>
+  <Shade>
+    <id> deep</id>
+  </Shade>
+  <Shade>
+    <id> bright</id>
+  </Shade>
+</Namespace>

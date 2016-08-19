@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Namespace>
+  <Color>
+    <id> white</id>
+  </Color>
+  <Color>
+    <id> black</id>
+  </Color>
+  <Color>
+    <id> red</id>
+  </Color>
+  <Color>
+    <id> blue</id>
+  </Color>
+  <Color>
+    <id> green</id>
+  </Color>
+  <Color>
+    <id> yellow</id>
+  </Color>
+  <Color>
+    <id> purple</id>
+  </Color>
+  <Color>
+    <id> orange</id>
+  </Color>
+  <Color>
+    <id> grey</id>
+  </Color>
+  <Color>
+    <id> brown</id>
+  </Color>
+  <Color>
+    <id> pink</id>
+  </Color>
+</Namespace>

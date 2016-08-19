@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Namespace>
+  <Pokemon>
+    <id>Bulbasaur</id>
+  </Pokemon>
+  <Pokemon>
+    <id>Charmander</id>
+  </Pokemon>
+    <id>Squirtle</id>
+  <Pokemon>
+    <id>Pikachu</id>
+  </Pokemon>
+    <id>Geodude</id>
+  <Pokemon>
+    <id>Oddish</id>
+  </Pokemon>
+  <Pokemon>
+    <id>Growlithe</id>
+  </Pokemon>
+  <Pokemon>
+    <id>Diglett</id>
+  </Pokemon>
+  <Pokemon>
+    <id>Ponyta</id>
+  </Pokemon>
+  <Pokemon>
+    <id>Magikarp</id>
+  </Pokemon>
+  <Pokemon>
+    <id>Pidgey</id>
+  </Pokemon>
+  <Pokemon>
+    <id>Weedle</id>
+  </Pokemon>
+  <Pokemon>
+    <id>Caterpie</id>
+  </Pokemon>
+</Namespace>
