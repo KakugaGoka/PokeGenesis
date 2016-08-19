@@ -49,7 +49,7 @@ namespace PokeGenesis
                 Console.WriteLine("It is wearing a{0}{1}{2}, with{3}{4}{5}... That is unique!", shade1, color1, item, shade2, color2, design);
             }
             Console.WriteLine("----------------------------------------------------------------------------------------------");
-            Console.ReadKey();
+            Console.ReadKey(true);
             goto Start;
         }
     }
