@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Namespace>
+  <Pokemon>
+    <number>001</number>
+    <id>Bulbasaur</id>
+    <type>Grass/Poison</type>
+    <hp>5</hp>
+    <atk>5</atk>
+    <def>5</def>
+    <spatk>7</spatk>
+    <spdef>7</spdef>
+    <spd>5</spd>
+    <size>2' 4" / 0.7m (Small)</size>
+    <weight>15.2 lbs. / 6.9kg (1)</weight>
+    <gender>87.5% M / 12.5% F</gender>
+    <egg>Monster / Plant</egg>
+    <hatch>10 Day</hatch>
+    <diet>Herbivore, Phototroph</diet>
+    <habitat>Forest, Grassland, Rainforest</habitat>
+    <!-- -->
+    <List001>
+      <Evolution>
+        <evo>Bulbasaur</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Ivysaur</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Venusaur</evo>
+      </Evolution>
+      <Capability>
+        <cap>Overland 5</cap>
+      </Capability>
+      <Capability>
+        <cap>Swim 3</cap>
+      </Capability>
+      <Capability>
+        <cap>Jump 0/2</cap>
+      </Capability>
+      <Capability>
+        <cap>Power 2</cap>
+      </Capability>
+      <Capability>
+        <cap>Naturewalk (Grassland, Forest)</cap>
+      </Capability>
+      <Capability>
+        <cap>Underdog</cap>
+      </Capability>
+      <Skills>
+        <skill>Athl 3d6+2</skill>
+      </Skills>
+      <Skills>
+        <skill>Acro 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Combat 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Stealth 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Percep 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Focus 2d6+1</skill>
+      </Skills>
+      <Moves>
+        <move>Lvl 1: Tackle - Normal</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 3: Growl - Normal</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 7: Leech Seed - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 9: Vine Whip - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 13: Poison Powder - Poison</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 13: Sleep Powder - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 15: Take Down - Normal</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 19: Razor Leaf - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 21: Sweet Scent - Normal</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 25: Growth - Normal</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 27: Double-Edge - Normal - </move>
+      </Moves>
+      <Moves>
+        <move>Lvl 31: Worry Seed - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 33: Synthesis - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 37: Seed Bomb - Grass</move>
+      </Moves>
+      <TM>
+        <tm>A1 Cut</tm>
+      </TM>
+      <TM>
+        <tm>A4 Strength</tm>
+      </TM>
+      <TM>
+        <tm>06 Toxic</tm>
+      </TM>
+      <TM>
+        <tm>09 Venoshock</tm>
+      </TM>
+      <TM>
+        <tm>10 Hidden Power</tm>
+      </TM>
+      <TM>
+        <tm>11 Sunny</tm>
+      </TM>
+      <TM>
+        <tm>16 Light Screen</tm>
+      </TM>
+      <TM>
+        <tm>17 Protect</tm>
+      </TM>
+      <TM>
+        <tm>20 Safegaurd</tm>
+      </TM>
+      <TM>
+        <tm>21 Frustration</tm>
+      </TM>
+      <TM>
+        <tm>22 Solar Beam</tm>
+      </TM>
+      <TM>
+        <tm>27 Return</tm>
+      </TM>
+      <TM>
+        <tm>32 Double Team</tm>
+      </TM>
+      <TM>
+        <tm>36 Sludge Bomb</tm>
+      </TM>
+      <TM>
+        <tm>42 Facade</tm>
+      </TM>
+      <TM>
+        <tm>44 Rest</tm>
+      </TM>
+      <TM>
+        <tm>45 Attract</tm>
+      </TM>
+      <TM>
+        <tm>48 Round</tm>
+      </TM>
+      <TM>
+        <tm>49 Echoed Voice</tm>
+      </TM>
+      <TM>
+        <tm>53 Energy Ball</tm>
+      </TM>
+      <TM>
+        <tm>70 Flash</tm>
+      </TM>
+      <TM>
+        <tm>75 Swords Dance</tm>
+      </TM>
+      <TM>
+        <tm>86 Grass Knot</tm>
+      </TM>
+      <TM>
+        <tm>87 Swagger</tm>
+      </TM>
+      <TM>
+        <tm>88 Sleep Talk</tm>
+      </TM>
+      <TM>
+        <tm>90 Substitute</tm>
+      </TM>
+      <TM>
+        <tm>94 Rock Smash</tm>
+      </TM>
+      <TM>
+        <tm>96 Nature Power</tm>
+      </TM>
+      <TM>
+        <tm>100 Confide</tm>
+      </TM>
+      <Egg>
+        <egg>Amnesia</egg>
+      </Egg>
+      <Egg>
+        <egg>Charm</egg>
+      </Egg>
+      <Egg>
+        <egg>Curse</egg>
+      </Egg>
+      <Egg>
+        <egg>Endure</egg>
+      </Egg>
+      <Egg>
+        <egg>Giga Drain</egg>
+      </Egg>
+      <Egg>
+        <egg>Grass Whistle</egg>
+      </Egg>
+      <Egg>
+        <egg>Grassy Terrain</egg>
+      </Egg>
+      <Egg>
+        <egg>Ingrain</egg>
+      </Egg>
+      <Egg>
+        <egg>Leaf Storm</egg>
+      </Egg>
+      <Egg>
+        <egg>Light Screen</egg>
+      </Egg>
+      <Egg>
+        <egg>Magical Leaf</egg>
+      </Egg>
+      <Egg>
+        <egg>Nature Power</egg>
+      </Egg>
+      <Egg>
+        <egg>Petal Dance</egg>
+      </Egg>
+      <Egg>
+        <egg>Power Whip</egg>
+      </Egg>
+      <Egg>
+        <egg>Safegaurd</egg>
+      </Egg>
+      <Egg>
+        <egg>Skull Bash</egg>
+      </Egg>
+      <Egg>
+        <egg>Sludge</egg>
+      </Egg>>
+      <Tutor>
+        <tut>Bind</tut>
+      </Tutor>
+      <Tutor>
+        <tut>Body Slam</tut>
+      </Tutor>
+      <Tutor>
+        <tut>Bullet Seed</tut>
+      </Tutor>
+      <Tutor>
+        <tut>Defense Curl</tut>
+      </Tutor>
+      <Tutor>
+        <tut>Fury Cutter</tut>
+      </Tutor>
+      <Tutor>
+        <tut>Giga Drain</tut>
+      </Tutor>
+      <Tutor>
+        <tut>Grass Pledge</tut>
+      </Tutor>
+      <Tutor>
+        <tut>Knock Off</tut>
+      </Tutor>
+      <Tutor>
+        <tut>Mud-Slap</tut>
+      </Tutor>
+      <Tutor>
+        <tut>Natural Gift</tut>
+      </Tutor>
+      <Tutor>
+        <tut>Secret Power</tut>
+      </Tutor>
+      <Tutor>
+        <tut>Seed Bomb</tut>
+      </Tutor>
+      <Tutor>
+        <tut>Sleep Talk</tut>
+      </Tutor>
+      <Tutor>
+        <tut>Snore</tut>
+      </Tutor>
+      <Tutor>
+        <tut>String Shot</tut>
+      </Tutor>
+      <Tutor>
+        <tut>Synthesis</tut>
+      </Tutor>
+      <Tutor>
+        <tut>Worry Seed</tut>
+      </Tutor>
+    </List001>
+  </Pokemon>
+  <Pokemon>
+    <number>002</number>
+    <id>Ivysaur</id>
+    <type>Grass/Poison</type>
+    <hp>6</hp>
+    <atk>6</atk>
+    <def>6</def>
+    <spatk>8</spatk>
+    <spdef>8</spdef>
+    <spd>6</spd>
+    <size>3' 3" / 1m (Medium)</size>
+    <weight>28.7 lbs. / 13kg (2)</weight>
+    <gender>87.5% M / 12.5% F</gender>
+    <egg>Monster / Plant</egg>
+    <hatch>n/a</hatch>
+    <diet>Omnivore, Phototroph</diet>
+    <habitat>Forest, Grassland, Rainforest</habitat>
+  </Pokemon>
+  <Pokemon>
+    <number>003</number>
+    <id>Venasaur</id>
+    <type>Grass/Poison</type>
+    <hp>8</hp>
+    <atk>8</atk>
+    <def>8</def>
+    <spatk>10</spatk>
+    <spdef>10</spdef>
+    <spd>8</spd>
+    <size>6' 7" / 2m (Large)</size>
+    <weight>220.5 lbs. / 100kg (5)</weight>
+    <gender>87.5% M / 12.5% F</gender>
+    <egg>Monster / Plant</egg>
+    <hatch>n/a</hatch>
+    <diet>Omnivore, Phototroph</diet>
+    <habitat>Forest, Grassland, Rainforest</habitat>
+  </Pokemon>
+</Namespace>
