@@ -16,18 +16,18 @@ namespace PokeGenesis
         {
             XMLtoList list = new XMLtoList();
             Random rnd = new Random();
-        Start:
-            List<Identifier> pokeList = list.createList("Pokemon");
+        start:
+            List<Identifier> pokeList = list.createList("Pokemon", "Pokemon");
             int pokeRange = pokeList.Count;
             int pokeN = rnd.Next(0, pokeRange);
             Console.WriteLine("A wild {0} appeared!", pokeList[pokeN].id);
             int isUnique = rnd.Next(0, 10);
             if (isUnique == 9)
             {
-                List<Identifier> itemList = list.createList("Item");
-                List<Identifier> designList = list.createList("Design");
-                List<Identifier> shadeList = list.createList("Shade");
-                List<Identifier> colorList = list.createList("Color");
+                List<Identifier> itemList = list.createList("Item", "Item");
+                List<Identifier> designList = list.createList("Design", "Design");
+                List<Identifier> shadeList = list.createList("Shade", "Shade");
+                List<Identifier> colorList = list.createList("Color", "Color");
                 int itemRange = itemList.Count;
                 int designRange = designList.Count;
                 int shadeRange = shadeList.Count;
@@ -40,6 +40,8 @@ namespace PokeGenesis
                 int colorN2 = rnd.Next(0, colorRange);
                 if (colorN1 == 0 || colorN1 == 1) { shadeN1 = 0; }
                 if (colorN2 == 0 || colorN2 == 1) { shadeN2 = 0; }
+            checkColor:
+                if (colorN1 == colorN2) { colorN2 = rnd.Next(0, colorRange); goto checkColor; }
                 string shade1 = shadeList[shadeN1].id;
                 string color1 = colorList[colorN1].id;
                 string item = itemList[itemN].id;
@@ -50,7 +52,7 @@ namespace PokeGenesis
             }
             Console.WriteLine("----------------------------------------------------------------------------------------------");
             Console.ReadKey(true);
-            goto Start;
+            goto start;
         }
     }
 }

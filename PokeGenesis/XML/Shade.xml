@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Namespace>
+  <!--The first three shades are empty to allow for now shades being added since the code does not allow for this and it is easier to give the option to make the shades more rare! :) -->
+  <!--In order to add more simply write out this template and fill in your addition where you see the "####"
+  <Shade>
+    <id> ####</id>
+  </Shade>
+      It is very important that you leave the space in front of the item you add, other wise it will not be seperated from the previous word.-->
   <Shade>
     <id></id>
   </Shade>

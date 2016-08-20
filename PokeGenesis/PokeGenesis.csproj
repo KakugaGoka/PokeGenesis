@@ -81,7 +81,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="PokeGenesis_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="XML\Color.xml">

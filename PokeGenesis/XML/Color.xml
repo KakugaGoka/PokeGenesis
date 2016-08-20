@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Namespace>
+<!--Please leave White and Black as the first two colors in this list. The program does not apply shades to the first to colors.-->
+  <!--In order to add more simply write out this template and fill in your addition where you see the "####"
+  <Color>
+    <id> ####</id>
+  </Color>
+      It is very important that you leave the space in front of the item you add, other wise it will not be seperated from the previous word.-->
   <Color>
     <id> white</id>
   </Color>

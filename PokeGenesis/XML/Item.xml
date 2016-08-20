@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Namespace>
+  <!--In order to add more simply write out this template and fill in your addition where you see the "####"
+  <Item>
+    <id> ####</id>
+  </Item>
+      It is very important that you leave the space in front of the item you add, other wise it will not be seperated from the previous word.-->
   <Item>
     <id> t-shirt</id>
   </Item>
