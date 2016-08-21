@@ -60,21 +60,21 @@ namespace GenesisDex
             var pokeImage = pbPokemon.Image;
             int pokeH = (122 - pokeImage.Height) / 2;
             pbPokemon.Location = new Point(142, (182 + pokeH));
-            rtbInfo.Text = string.Format(
+            rtbInfo1.Text = string.Format(
                 "Number: {0}" + Environment.NewLine +
                 "Name: {1}" + Environment.NewLine +
                 "Type: {2}" + Environment.NewLine + Environment.NewLine +
                 "HP:\t\t{3}" + Environment.NewLine +
                 "ATK:\t\t{4}" + Environment.NewLine +
                 "DEF:\t\t{5}" + Environment.NewLine +
-                "SPATK:\t{6}" + Environment.NewLine +
-                "SPDEF:\t{7}" + Environment.NewLine +
+                "SPATK:\t\t{6}" + Environment.NewLine +
+                "SPDEF:\t\t{7}" + Environment.NewLine +
                 "SPD:\t\t{8}" + Environment.NewLine + Environment.NewLine +
                 "Height: {9}" + Environment.NewLine +
-                "Weight: {10}" + Environment.NewLine +
+                "Weight: {10}" + Environment.NewLine + Environment.NewLine +
                 "Gender Ratio: {11}" + Environment.NewLine +
                 "Egg Group: {12}" + Environment.NewLine +
-                "Average Hatch Time: {13}" + Environment.NewLine +
+                "Average Hatch Time: {13}" + Environment.NewLine + Environment.NewLine +
                 "Diet: {14}" + Environment.NewLine +
                 "Habitat: {15}",
                 pokeList[i].number, pokeList[i].id, pokeList[i].type, pokeList[i].hp, pokeList[i].atk, pokeList[i].def,
@@ -149,12 +149,10 @@ namespace GenesisDex
                 if (viewMega == true)
                 {
                     pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOn.PNG");
-                    clickWait.Enabled = false;
                 }
                 else
                 {
                     pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOff.PNG");
-                    clickWait.Enabled = false;
                 }
             }
         }
@@ -166,65 +164,79 @@ namespace GenesisDex
             {
                 if (viewMega == true)
                 {
-                    pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOnClick.PNG");
+                    pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOffHover.PNG");
                     viewMega = false;
                     pbPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Pokemon\\" + pokeList[i].number + ".gif");
-                    rtbInfo.Text = string.Format(
+                    rtbInfo1.Text = string.Format(
                         "Number: {0}" + Environment.NewLine +
                         "Name: {1}" + Environment.NewLine +
                         "Type: {2}" + Environment.NewLine + Environment.NewLine +
                         "HP:\t\t{3}" + Environment.NewLine +
                         "ATK:\t\t{4}" + Environment.NewLine +
                         "DEF:\t\t{5}" + Environment.NewLine +
-                        "SPATK:\t{6}" + Environment.NewLine +
-                        "SPDEF:\t{7}" + Environment.NewLine +
+                        "SPATK:\t\t{6}" + Environment.NewLine +
+                        "SPDEF:\t\t{7}" + Environment.NewLine +
                         "SPD:\t\t{8}" + Environment.NewLine + Environment.NewLine +
                         "Height: {9}" + Environment.NewLine +
-                        "Weight: {10}" + Environment.NewLine +
+                        "Weight: {10}" + Environment.NewLine + Environment.NewLine +
                         "Gender Ratio: {11}" + Environment.NewLine +
                         "Egg Group: {12}" + Environment.NewLine +
-                        "Average Hatch Time: {13}" + Environment.NewLine +
+                        "Average Hatch Time: {13}" + Environment.NewLine + Environment.NewLine +
                         "Diet: {14}" + Environment.NewLine +
                         "Habitat: {15}",
                         pokeList[i].number, pokeList[i].id, pokeList[i].type, pokeList[i].hp, pokeList[i].atk, pokeList[i].def,
                         pokeList[i].spatk, pokeList[i].spdef, pokeList[i].spd, pokeList[i].size, pokeList[i].weight, pokeList[i].gender,
                         pokeList[i].egg, pokeList[i].hatch, pokeList[i].diet, pokeList[i].habitat);
-                    clickWait.Elapsed += new ElapsedEventHandler(pbMega_MouseLeave);
-                    clickWait.Interval = 500;
-                    clickWait.Enabled = true;
                 }
                 else
                 {
-                    pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOffClick.PNG");
+                    pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOnHover.PNG");
                     viewMega = true;
                     pbPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Pokemon\\" + pokeList[i].number + "-mega.gif");
                     MegaList megaXML = new MegaList();
                     megaList = megaXML.createList("Mega" + pokeList[i].number);
-                    rtbInfo.Text = string.Format(
+                    rtbInfo1.Text = string.Format(
                         "Number: {0}" + Environment.NewLine +
                         "Name: {1}" + Environment.NewLine +
                         "Type: {2}" + Environment.NewLine + Environment.NewLine +
                         "HP:\t\t{3}" + Environment.NewLine +
                         "ATK:\t\t{4}" + Environment.NewLine +
                         "DEF:\t\t{5}" + Environment.NewLine +
-                        "SPATK:\t{6}" + Environment.NewLine +
-                        "SPDEF:\t{7}" + Environment.NewLine +
+                        "SPATK:\t\t{6}" + Environment.NewLine +
+                        "SPDEF:\t\t{7}" + Environment.NewLine +
                         "SPD:\t\t{8}" + Environment.NewLine + Environment.NewLine +
                         "Height: {9}" + Environment.NewLine +
-                        "Weight: {10}" + Environment.NewLine +
+                        "Weight: {10}" + Environment.NewLine + Environment.NewLine +
                         "Gender Ratio: {11}" + Environment.NewLine +
                         "Egg Group: {12}" + Environment.NewLine +
-                        "Average Hatch Time: {13}" + Environment.NewLine +
+                        "Average Hatch Time: {13}" + Environment.NewLine + Environment.NewLine +
                         "Diet: {14}" + Environment.NewLine +
                         "Habitat: {15}",
                         pokeList[i].number, megaList[0].id, megaList[0].type, megaList[0].hp, megaList[0].atk, megaList[0].def,
                         megaList[0].spatk, megaList[0].spdef, megaList[0].spd, pokeList[i].size, pokeList[i].weight, pokeList[i].gender,
                         pokeList[i].egg, pokeList[i].hatch, pokeList[i].diet, pokeList[i].habitat);
-                    clickWait.Elapsed += new ElapsedEventHandler(pbMega_MouseLeave);
-                    clickWait.Interval = 500;
-                    clickWait.Enabled = true;
                 }
             }
+        }
+
+        private void infoForward_MouseHover(object sender, EventArgs e)
+        {
+            infoForward.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoRightHover.PNG");
+        }
+
+        private void infoBack_MouseHover(object sender, EventArgs e)
+        {
+            infoBack.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoLeftHover.PNG");
+        }
+
+        private void infoBack_MouseLeave(object sender, EventArgs e)
+        {
+            infoBack.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoLeft.PNG");
+        }
+
+        private void infoForward_MouseLeave(object sender, EventArgs e)
+        {
+            infoForward.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoRight.PNG");
         }
     }
 }
