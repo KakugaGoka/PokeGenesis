@@ -59,13 +59,27 @@ namespace GenesisDex
             }
             var pokeImage = pbPokemon.Image;
             int pokeH = (122 - pokeImage.Height) / 2;
-            pbPokemon.Location = new Point(142, (232 + pokeH));
-            lblHP.Text = pokeList[i].hp;
-            lblATK.Text = pokeList[i].atk;
-            lblDEF.Text = pokeList[i].def;
-            lblSPATK.Text = pokeList[i].spatk;
-            lblSPDEF.Text = pokeList[i].spdef;
-            lblSPD.Text = pokeList[i].spd;
+            pbPokemon.Location = new Point(142, (182 + pokeH));
+            rtbInfo.Text = string.Format(
+                "Number: {0}" + Environment.NewLine +
+                "Name: {1}" + Environment.NewLine +
+                "Type: {2}" + Environment.NewLine + Environment.NewLine +
+                "HP:\t\t{3}" + Environment.NewLine +
+                "ATK:\t\t{4}" + Environment.NewLine +
+                "DEF:\t\t{5}" + Environment.NewLine +
+                "SPATK:\t{6}" + Environment.NewLine +
+                "SPDEF:\t{7}" + Environment.NewLine +
+                "SPD:\t\t{8}" + Environment.NewLine + Environment.NewLine +
+                "Height: {9}" + Environment.NewLine +
+                "Weight: {10}" + Environment.NewLine +
+                "Gender Ratio: {11}" + Environment.NewLine +
+                "Egg Group: {12}" + Environment.NewLine +
+                "Average Hatch Time: {13}" + Environment.NewLine +
+                "Diet: {14}" + Environment.NewLine +
+                "Habitat: {15}",
+                pokeList[i].number, pokeList[i].id, pokeList[i].type, pokeList[i].hp, pokeList[i].atk, pokeList[i].def,
+                pokeList[i].spatk, pokeList[i].spdef, pokeList[i].spd, pokeList[i].size, pokeList[i].weight, pokeList[i].gender,
+                pokeList[i].egg, pokeList[i].hatch, pokeList[i].diet, pokeList[i].habitat);
             carryi = i;
         }
 
@@ -155,13 +169,26 @@ namespace GenesisDex
                     pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOnClick.PNG");
                     viewMega = false;
                     pbPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Pokemon\\" + pokeList[i].number + ".gif");
-                    lblHP.Text = pokeList[i].hp;
-                    lblATK.Text = pokeList[i].atk;
-                    lblDEF.Text = pokeList[i].def;
-                    lblSPATK.Text = pokeList[i].spatk;
-                    lblSPDEF.Text = pokeList[i].spdef;
-                    lblSPD.Text = pokeList[i].spd;
-
+                    rtbInfo.Text = string.Format(
+                        "Number: {0}" + Environment.NewLine +
+                        "Name: {1}" + Environment.NewLine +
+                        "Type: {2}" + Environment.NewLine + Environment.NewLine +
+                        "HP:\t\t{3}" + Environment.NewLine +
+                        "ATK:\t\t{4}" + Environment.NewLine +
+                        "DEF:\t\t{5}" + Environment.NewLine +
+                        "SPATK:\t{6}" + Environment.NewLine +
+                        "SPDEF:\t{7}" + Environment.NewLine +
+                        "SPD:\t\t{8}" + Environment.NewLine + Environment.NewLine +
+                        "Height: {9}" + Environment.NewLine +
+                        "Weight: {10}" + Environment.NewLine +
+                        "Gender Ratio: {11}" + Environment.NewLine +
+                        "Egg Group: {12}" + Environment.NewLine +
+                        "Average Hatch Time: {13}" + Environment.NewLine +
+                        "Diet: {14}" + Environment.NewLine +
+                        "Habitat: {15}",
+                        pokeList[i].number, pokeList[i].id, pokeList[i].type, pokeList[i].hp, pokeList[i].atk, pokeList[i].def,
+                        pokeList[i].spatk, pokeList[i].spdef, pokeList[i].spd, pokeList[i].size, pokeList[i].weight, pokeList[i].gender,
+                        pokeList[i].egg, pokeList[i].hatch, pokeList[i].diet, pokeList[i].habitat);
                     clickWait.Elapsed += new ElapsedEventHandler(pbMega_MouseLeave);
                     clickWait.Interval = 500;
                     clickWait.Enabled = true;
@@ -173,12 +200,26 @@ namespace GenesisDex
                     pbPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Pokemon\\" + pokeList[i].number + "-mega.gif");
                     MegaList megaXML = new MegaList();
                     megaList = megaXML.createList("Mega" + pokeList[i].number);
-                    lblHP.Text = megaList[0].hp;
-                    lblATK.Text = megaList[0].atk;
-                    lblDEF.Text = megaList[0].def;
-                    lblSPATK.Text = megaList[0].spatk;
-                    lblSPDEF.Text = megaList[0].spdef;
-                    lblSPD.Text = megaList[0].spd;
+                    rtbInfo.Text = string.Format(
+                        "Number: {0}" + Environment.NewLine +
+                        "Name: {1}" + Environment.NewLine +
+                        "Type: {2}" + Environment.NewLine + Environment.NewLine +
+                        "HP:\t\t{3}" + Environment.NewLine +
+                        "ATK:\t\t{4}" + Environment.NewLine +
+                        "DEF:\t\t{5}" + Environment.NewLine +
+                        "SPATK:\t{6}" + Environment.NewLine +
+                        "SPDEF:\t{7}" + Environment.NewLine +
+                        "SPD:\t\t{8}" + Environment.NewLine + Environment.NewLine +
+                        "Height: {9}" + Environment.NewLine +
+                        "Weight: {10}" + Environment.NewLine +
+                        "Gender Ratio: {11}" + Environment.NewLine +
+                        "Egg Group: {12}" + Environment.NewLine +
+                        "Average Hatch Time: {13}" + Environment.NewLine +
+                        "Diet: {14}" + Environment.NewLine +
+                        "Habitat: {15}",
+                        pokeList[i].number, megaList[0].id, megaList[0].type, megaList[0].hp, megaList[0].atk, megaList[0].def,
+                        megaList[0].spatk, megaList[0].spdef, megaList[0].spd, pokeList[i].size, pokeList[i].weight, pokeList[i].gender,
+                        pokeList[i].egg, pokeList[i].hatch, pokeList[i].diet, pokeList[i].habitat);
                     clickWait.Elapsed += new ElapsedEventHandler(pbMega_MouseLeave);
                     clickWait.Interval = 500;
                     clickWait.Enabled = true;

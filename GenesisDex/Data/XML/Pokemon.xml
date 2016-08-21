@@ -95,7 +95,7 @@
         <move>Lvl 25: Growth - Normal</move>
       </Moves>
       <Moves>
-        <move>Lvl 27: Double-Edge - Normal - </move>
+        <move>Lvl 27: Double-Edge - Normal</move>
       </Moves>
       <Moves>
         <move>Lvl 31: Worry Seed - Grass</move>
@@ -125,6 +125,92 @@
     <hatch>n/a</hatch>
     <diet>Omnivore, Phototroph</diet>
     <habitat>Forest, Grassland, Rainforest</habitat>
+    <List002>
+        <Evolution>
+          <evo>Bulbasaur</evo>
+        </Evolution>
+        <Evolution>
+          <evo>Ivysaur</evo>
+        </Evolution>
+        <Evolution>
+          <evo>Venusaur</evo>
+        </Evolution>
+        <Capability>
+          <cap>Overland 6</cap>
+        </Capability>
+        <Capability>
+          <cap>Swim 3</cap>
+        </Capability>
+        <Capability>
+          <cap>Jump 1/1</cap>
+        </Capability>
+        <Capability>
+          <cap>Power 3</cap>
+        </Capability>
+        <Capability>
+          <cap>Naturewalk (Grassland, Forest)</cap>
+        </Capability>
+        <Capability>
+          <cap>Underdog</cap>
+        </Capability>
+        <Skills>
+          <skill>Athl 4d6+3</skill>
+        </Skills>
+        <Skills>
+          <skill>Acro 2d6</skill>
+        </Skills>
+        <Skills>
+          <skill>Combat 3d6</skill>
+        </Skills>
+        <Skills>
+          <skill>Stealth 2d6</skill>
+        </Skills>
+        <Skills>
+          <skill>Percep 2d6</skill>
+        </Skills>
+        <Skills>
+          <skill>Focus 3d6+2</skill>
+        </Skills>
+        <Moves>
+          <move>Lvl 3: Growl - Normal</move>
+        </Moves>
+        <Moves>
+          <move>Lvl 7: Leech Seed - Grass</move>
+        </Moves>
+        <Moves>
+          <move>Lvl 9: Vine Whip - Grass</move>
+        </Moves>
+        <Moves>
+          <move>Lvl 13: Poison Powder - Poison</move>
+        </Moves>
+        <Moves>
+          <move>Lvl 13: Sleep Powder - Grass</move>
+        </Moves>
+        <Moves>
+          <move>Lvl 15: Take Down - Normal</move>
+        </Moves>
+        <Moves>
+          <move>Lvl 20: Razor Leaf - Grass</move>
+        </Moves>
+        <Moves>
+          <move>Lvl 23: Sweet Scent - Normal</move>
+        </Moves>
+        <Moves>
+          <move>Lvl 28: Growth - Normal</move>
+        </Moves>
+        <Moves>
+          <move>Lvl 31: Double-Edge - Normal</move>
+        </Moves>
+        <Moves>
+          <move>Lvl 36: Worry Seed - Grass</move>
+        </Moves>
+        <Moves>
+          <move>Lvl 39: Synthesis - Grass</move>
+        </Moves>
+        <Moves>
+          <move>Lvl 44: Solar Beam - Grass</move>
+        </Moves>
+    </List002>
   </Pokemon>
   <Pokemon>
     <number>003</number>
@@ -143,6 +229,98 @@
     <hatch>n/a</hatch>
     <diet>Omnivore, Phototroph</diet>
     <habitat>Forest, Grassland, Rainforest</habitat>
+    <List003>
+      <Evolution>
+        <evo>Bulbasaur</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Ivysaur</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Venusaur</evo>
+      </Evolution>
+      <Capability>
+        <cap>Overland 6</cap>
+      </Capability>
+      <Capability>
+        <cap>Swim 4</cap>
+      </Capability>
+      <Capability>
+        <cap>Jump 2/2</cap>
+      </Capability>
+      <Capability>
+        <cap>Power 8</cap>
+      </Capability>
+      <Capability>
+        <cap>Naturewalk (Grassland, Forest)</cap>
+      </Capability>
+      <Capability>
+        <cap>Alluring (only in Rain)</cap>
+      </Capability>
+      <Skills>
+        <skill>Athl 5d6+3</skill>
+      </Skills>
+      <Skills>
+        <skill>Acro 1d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Combat 4d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Stealth 1d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Percep 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Focus 5d6+3</skill>
+      </Skills>
+      <Moves>
+        <move>Lvl 3: Growl - Normal</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 7: Leech Seed - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 9: Vine Whip - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 13: Poison Powder - Poison</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 13: Sleep Powder - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 15: Take Down - Normal</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 20: Razor Leaf - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 23: Sweet Scent - Normal</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 28: Growth - Normal</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 31: Double-Edge - Normal</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 32: Petal Dance - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 39: Worry Seed - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 45: Synthesis - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 50: Petal Blizzard - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 53: Solar Beam - Grass</move>
+      </Moves>
+    </List003>
     <Mega003>
       <id>Mega Venasaur</id>
       <type>Grass/Poison</type>
