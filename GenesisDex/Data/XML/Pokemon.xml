@@ -106,196 +106,7 @@
       <Moves>
         <move>Lvl 37: Seed Bomb - Grass</move>
       </Moves>
-      <TM>
-        <tm>A1 Cut</tm>
-      </TM>
-      <TM>
-        <tm>A4 Strength</tm>
-      </TM>
-      <TM>
-        <tm>06 Toxic</tm>
-      </TM>
-      <TM>
-        <tm>09 Venoshock</tm>
-      </TM>
-      <TM>
-        <tm>10 Hidden Power</tm>
-      </TM>
-      <TM>
-        <tm>11 Sunny</tm>
-      </TM>
-      <TM>
-        <tm>16 Light Screen</tm>
-      </TM>
-      <TM>
-        <tm>17 Protect</tm>
-      </TM>
-      <TM>
-        <tm>20 Safegaurd</tm>
-      </TM>
-      <TM>
-        <tm>21 Frustration</tm>
-      </TM>
-      <TM>
-        <tm>22 Solar Beam</tm>
-      </TM>
-      <TM>
-        <tm>27 Return</tm>
-      </TM>
-      <TM>
-        <tm>32 Double Team</tm>
-      </TM>
-      <TM>
-        <tm>36 Sludge Bomb</tm>
-      </TM>
-      <TM>
-        <tm>42 Facade</tm>
-      </TM>
-      <TM>
-        <tm>44 Rest</tm>
-      </TM>
-      <TM>
-        <tm>45 Attract</tm>
-      </TM>
-      <TM>
-        <tm>48 Round</tm>
-      </TM>
-      <TM>
-        <tm>49 Echoed Voice</tm>
-      </TM>
-      <TM>
-        <tm>53 Energy Ball</tm>
-      </TM>
-      <TM>
-        <tm>70 Flash</tm>
-      </TM>
-      <TM>
-        <tm>75 Swords Dance</tm>
-      </TM>
-      <TM>
-        <tm>86 Grass Knot</tm>
-      </TM>
-      <TM>
-        <tm>87 Swagger</tm>
-      </TM>
-      <TM>
-        <tm>88 Sleep Talk</tm>
-      </TM>
-      <TM>
-        <tm>90 Substitute</tm>
-      </TM>
-      <TM>
-        <tm>94 Rock Smash</tm>
-      </TM>
-      <TM>
-        <tm>96 Nature Power</tm>
-      </TM>
-      <TM>
-        <tm>100 Confide</tm>
-      </TM>
-      <Egg>
-        <egg>Amnesia</egg>
-      </Egg>
-      <Egg>
-        <egg>Charm</egg>
-      </Egg>
-      <Egg>
-        <egg>Curse</egg>
-      </Egg>
-      <Egg>
-        <egg>Endure</egg>
-      </Egg>
-      <Egg>
-        <egg>Giga Drain</egg>
-      </Egg>
-      <Egg>
-        <egg>Grass Whistle</egg>
-      </Egg>
-      <Egg>
-        <egg>Grassy Terrain</egg>
-      </Egg>
-      <Egg>
-        <egg>Ingrain</egg>
-      </Egg>
-      <Egg>
-        <egg>Leaf Storm</egg>
-      </Egg>
-      <Egg>
-        <egg>Light Screen</egg>
-      </Egg>
-      <Egg>
-        <egg>Magical Leaf</egg>
-      </Egg>
-      <Egg>
-        <egg>Nature Power</egg>
-      </Egg>
-      <Egg>
-        <egg>Petal Dance</egg>
-      </Egg>
-      <Egg>
-        <egg>Power Whip</egg>
-      </Egg>
-      <Egg>
-        <egg>Safegaurd</egg>
-      </Egg>
-      <Egg>
-        <egg>Skull Bash</egg>
-      </Egg>
-      <Egg>
-        <egg>Sludge</egg>
-      </Egg>>
-      <Tutor>
-        <tut>Bind</tut>
-      </Tutor>
-      <Tutor>
-        <tut>Body Slam</tut>
-      </Tutor>
-      <Tutor>
-        <tut>Bullet Seed</tut>
-      </Tutor>
-      <Tutor>
-        <tut>Defense Curl</tut>
-      </Tutor>
-      <Tutor>
-        <tut>Fury Cutter</tut>
-      </Tutor>
-      <Tutor>
-        <tut>Giga Drain</tut>
-      </Tutor>
-      <Tutor>
-        <tut>Grass Pledge</tut>
-      </Tutor>
-      <Tutor>
-        <tut>Knock Off</tut>
-      </Tutor>
-      <Tutor>
-        <tut>Mud-Slap</tut>
-      </Tutor>
-      <Tutor>
-        <tut>Natural Gift</tut>
-      </Tutor>
-      <Tutor>
-        <tut>Secret Power</tut>
-      </Tutor>
-      <Tutor>
-        <tut>Seed Bomb</tut>
-      </Tutor>
-      <Tutor>
-        <tut>Sleep Talk</tut>
-      </Tutor>
-      <Tutor>
-        <tut>Snore</tut>
-      </Tutor>
-      <Tutor>
-        <tut>String Shot</tut>
-      </Tutor>
-      <Tutor>
-        <tut>Synthesis</tut>
-      </Tutor>
-      <Tutor>
-        <tut>Worry Seed</tut>
-      </Tutor>
-    </List001>
+     </List001>
   </Pokemon>
   <Pokemon>
     <number>002</number>
@@ -332,5 +143,16 @@
     <hatch>n/a</hatch>
     <diet>Omnivore, Phototroph</diet>
     <habitat>Forest, Grassland, Rainforest</habitat>
+    <Mega003>
+      <id>Mega Venasaur</id>
+      <type>Grass/Poison</type>
+      <hp>8</hp>
+      <atk>10</atk>
+      <def>12</def>
+      <spatk>12</spatk>
+      <spdef>12</spdef>
+      <spd>8</spd>
+      <ability>Thick Fat</ability>
+    </Mega003>
   </Pokemon>
 </Namespace>

@@ -82,2507 +82,2561 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="Data\001.gif">
+    <Content Include="Data\GUI\CloseButton.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\002.gif">
+    <Content Include="Data\GUI\CloseButtonHover.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\003-mega.gif">
+    <Content Include="Data\GUI\MainMenu.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\003.gif">
+    <Content Include="Data\GUI\MegaNo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\004.gif">
+    <Content Include="Data\GUI\MegaYesOff.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\005.gif">
+    <Content Include="Data\GUI\MegaYesOffClick.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\006-mega-x.gif">
+    <Content Include="Data\GUI\MegaYesOffHover.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\006-mega-y.gif">
+    <Content Include="Data\GUI\MegaYesOn.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\006.gif">
+    <Content Include="Data\GUI\MegaYesOnClick.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\007.gif">
+    <Content Include="Data\GUI\MegaYesOnHover.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\008.gif">
+    <Content Include="Data\Pokemon\001.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\009-mega.gif">
+    <Content Include="Data\Pokemon\002.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\009.gif">
+    <Content Include="Data\Pokemon\003-mega.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\010.gif">
+    <Content Include="Data\Pokemon\003.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\011.gif">
+    <Content Include="Data\Pokemon\004.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\012.gif">
+    <Content Include="Data\Pokemon\005.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\013.gif">
+    <Content Include="Data\Pokemon\006-mega-x.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\014.gif">
+    <Content Include="Data\Pokemon\006-mega-y.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\015.gif">
+    <Content Include="Data\Pokemon\006.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\016.gif">
+    <Content Include="Data\Pokemon\007.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\017.gif">
+    <Content Include="Data\Pokemon\008.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\018.gif">
+    <Content Include="Data\Pokemon\009-mega.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\019.gif">
+    <Content Include="Data\Pokemon\009.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\020.gif">
+    <Content Include="Data\Pokemon\010.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\021.gif">
+    <Content Include="Data\Pokemon\011.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\022.gif">
+    <Content Include="Data\Pokemon\012.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\023.gif">
+    <Content Include="Data\Pokemon\013.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\024.gif">
+    <Content Include="Data\Pokemon\014.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\025.gif">
+    <Content Include="Data\Pokemon\015-mega.gif" />
+    <Content Include="Data\Pokemon\015.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\026.gif">
+    <Content Include="Data\Pokemon\016.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\027.gif">
+    <Content Include="Data\Pokemon\017.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\028.gif">
+    <Content Include="Data\Pokemon\018-mega.gif" />
+    <Content Include="Data\Pokemon\018.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\029.gif">
+    <Content Include="Data\Pokemon\019.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\030.gif">
+    <Content Include="Data\Pokemon\020.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\031.gif">
+    <Content Include="Data\Pokemon\021.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\032.gif">
+    <Content Include="Data\Pokemon\022.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\033.gif">
+    <Content Include="Data\Pokemon\023.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\034.gif">
+    <Content Include="Data\Pokemon\024.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\035.gif">
+    <Content Include="Data\Pokemon\025-cosplay.gif" />
+    <Content Include="Data\Pokemon\025.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\036.gif">
+    <Content Include="Data\Pokemon\026.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\037.gif">
+    <Content Include="Data\Pokemon\027.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\038.gif">
+    <Content Include="Data\Pokemon\028.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\039.gif">
+    <Content Include="Data\Pokemon\029.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\040.gif">
+    <Content Include="Data\Pokemon\030.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\041.gif">
+    <Content Include="Data\Pokemon\031.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\042.gif">
+    <Content Include="Data\Pokemon\032.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\043.gif">
+    <Content Include="Data\Pokemon\033.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\044.gif">
+    <Content Include="Data\Pokemon\034.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\045.gif">
+    <Content Include="Data\Pokemon\035.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\046.gif">
+    <Content Include="Data\Pokemon\036.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\047.gif">
+    <Content Include="Data\Pokemon\037.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\048.gif">
+    <Content Include="Data\Pokemon\038.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\049.gif">
+    <Content Include="Data\Pokemon\039.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\050.gif">
+    <Content Include="Data\Pokemon\040.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\051.gif">
+    <Content Include="Data\Pokemon\041.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\052.gif">
+    <Content Include="Data\Pokemon\042.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\053.gif">
+    <Content Include="Data\Pokemon\043.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\054.gif">
+    <Content Include="Data\Pokemon\044.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\055.gif">
+    <Content Include="Data\Pokemon\045.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\056.gif">
+    <Content Include="Data\Pokemon\046.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\057.gif">
+    <Content Include="Data\Pokemon\047.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\058.gif">
+    <Content Include="Data\Pokemon\048.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\059.gif">
+    <Content Include="Data\Pokemon\049.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\060.gif">
+    <Content Include="Data\Pokemon\050.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\061.gif">
+    <Content Include="Data\Pokemon\051.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\062.gif">
+    <Content Include="Data\Pokemon\052.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\063.gif">
+    <Content Include="Data\Pokemon\053.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\064.gif">
+    <Content Include="Data\Pokemon\054.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\065-mega.gif">
+    <Content Include="Data\Pokemon\055.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\065.gif">
+    <Content Include="Data\Pokemon\056.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\066.gif">
+    <Content Include="Data\Pokemon\057.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\067.gif">
+    <Content Include="Data\Pokemon\058.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\068.gif">
+    <Content Include="Data\Pokemon\059.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\069.gif">
+    <Content Include="Data\Pokemon\060.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\070.gif">
+    <Content Include="Data\Pokemon\061.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\071.gif">
+    <Content Include="Data\Pokemon\062.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\072.gif">
+    <Content Include="Data\Pokemon\063.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\073.gif">
+    <Content Include="Data\Pokemon\064.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\074.gif">
+    <Content Include="Data\Pokemon\065-mega.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\075.gif">
+    <Content Include="Data\Pokemon\065.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\076.gif">
+    <Content Include="Data\Pokemon\066.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\077.gif">
+    <Content Include="Data\Pokemon\067.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\078.gif">
+    <Content Include="Data\Pokemon\068.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\079.gif">
+    <Content Include="Data\Pokemon\069.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\080.gif">
+    <Content Include="Data\Pokemon\070.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\081.gif">
+    <Content Include="Data\Pokemon\071.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\082.gif">
+    <Content Include="Data\Pokemon\072.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\083.gif">
+    <Content Include="Data\Pokemon\073.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\084.gif">
+    <Content Include="Data\Pokemon\074.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\085.gif">
+    <Content Include="Data\Pokemon\075.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\086.gif">
+    <Content Include="Data\Pokemon\076.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\087.gif">
+    <Content Include="Data\Pokemon\077.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\088.gif">
+    <Content Include="Data\Pokemon\078.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\089.gif">
+    <Content Include="Data\Pokemon\079.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\090.gif">
+    <Content Include="Data\Pokemon\080-mega.gif" />
+    <Content Include="Data\Pokemon\080.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\091.gif">
+    <Content Include="Data\Pokemon\081.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\092.gif">
+    <Content Include="Data\Pokemon\082.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\093.gif">
+    <Content Include="Data\Pokemon\083.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\094-mega.gif">
+    <Content Include="Data\Pokemon\084.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\094.gif">
+    <Content Include="Data\Pokemon\085.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\095.gif">
+    <Content Include="Data\Pokemon\086.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\096.gif">
+    <Content Include="Data\Pokemon\087.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\097.gif">
+    <Content Include="Data\Pokemon\088.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\098.gif">
+    <Content Include="Data\Pokemon\089.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\099.gif">
+    <Content Include="Data\Pokemon\090.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\100.gif">
+    <Content Include="Data\Pokemon\091.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\101.gif">
+    <Content Include="Data\Pokemon\092.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\102.gif">
+    <Content Include="Data\Pokemon\093.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\103.gif">
+    <Content Include="Data\Pokemon\094-mega.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\104.gif">
+    <Content Include="Data\Pokemon\094.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\105.gif">
+    <Content Include="Data\Pokemon\095.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\106.gif">
+    <Content Include="Data\Pokemon\096.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\107.gif">
+    <Content Include="Data\Pokemon\097.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\108.gif">
+    <Content Include="Data\Pokemon\098.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\109.gif">
+    <Content Include="Data\Pokemon\099.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\110.gif">
+    <Content Include="Data\Pokemon\100.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\111.gif">
+    <Content Include="Data\Pokemon\101.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\112.gif">
+    <Content Include="Data\Pokemon\102.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\113.gif">
+    <Content Include="Data\Pokemon\103.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\114.gif">
+    <Content Include="Data\Pokemon\104.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\115-mega.gif">
+    <Content Include="Data\Pokemon\105.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\115.gif">
+    <Content Include="Data\Pokemon\106.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\116.gif">
+    <Content Include="Data\Pokemon\107.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\117.gif">
+    <Content Include="Data\Pokemon\108.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\118.gif">
+    <Content Include="Data\Pokemon\109.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\119.gif">
+    <Content Include="Data\Pokemon\110.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\120.gif">
+    <Content Include="Data\Pokemon\111.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\121.gif">
+    <Content Include="Data\Pokemon\112.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\122.gif">
+    <Content Include="Data\Pokemon\113.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\123.gif">
+    <Content Include="Data\Pokemon\114.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\124.gif">
+    <Content Include="Data\Pokemon\115-mega.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\125.gif">
+    <Content Include="Data\Pokemon\115.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\126.gif">
+    <Content Include="Data\Pokemon\116.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\127-mega.gif">
+    <Content Include="Data\Pokemon\117.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\127.gif">
+    <Content Include="Data\Pokemon\118.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\128.gif">
+    <Content Include="Data\Pokemon\119.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\129.gif">
+    <Content Include="Data\Pokemon\120.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\130-mega.gif">
+    <Content Include="Data\Pokemon\121.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\130.gif">
+    <Content Include="Data\Pokemon\122.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\131.gif">
+    <Content Include="Data\Pokemon\123.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\132.gif">
+    <Content Include="Data\Pokemon\124.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\133.gif">
+    <Content Include="Data\Pokemon\125.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\134.gif">
+    <Content Include="Data\Pokemon\126.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\135.gif">
+    <Content Include="Data\Pokemon\127-mega.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\136.gif">
+    <Content Include="Data\Pokemon\127.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\137.gif">
+    <Content Include="Data\Pokemon\128.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\138.gif">
+    <Content Include="Data\Pokemon\129.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\139.gif">
+    <Content Include="Data\Pokemon\130-mega.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\140.gif">
+    <Content Include="Data\Pokemon\130.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\141.gif">
+    <Content Include="Data\Pokemon\131.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\142-mega.gif">
+    <Content Include="Data\Pokemon\132.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\142.gif">
+    <Content Include="Data\Pokemon\133.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\143.gif">
+    <Content Include="Data\Pokemon\134.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\144.gif">
+    <Content Include="Data\Pokemon\135.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\145.gif">
+    <Content Include="Data\Pokemon\136.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\146.gif">
+    <Content Include="Data\Pokemon\137.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\147.gif">
+    <Content Include="Data\Pokemon\138.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\148.gif">
+    <Content Include="Data\Pokemon\139.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\149.gif">
+    <Content Include="Data\Pokemon\140.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\150-mega-x.gif">
+    <Content Include="Data\Pokemon\141.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\150-mega-y.gif">
+    <Content Include="Data\Pokemon\142-mega.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\150.gif">
+    <Content Include="Data\Pokemon\142.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\151.gif">
+    <Content Include="Data\Pokemon\143.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\152.gif">
+    <Content Include="Data\Pokemon\144.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\153.gif">
+    <Content Include="Data\Pokemon\145.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\154.gif">
+    <Content Include="Data\Pokemon\146.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\155.gif">
+    <Content Include="Data\Pokemon\147.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\156.gif">
+    <Content Include="Data\Pokemon\148.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\157.gif">
+    <Content Include="Data\Pokemon\149.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\158.gif">
+    <Content Include="Data\Pokemon\150-mega-x.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\159.gif">
+    <Content Include="Data\Pokemon\150-mega-y.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\160.gif">
+    <Content Include="Data\Pokemon\150.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\161.gif">
+    <Content Include="Data\Pokemon\151.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\162.gif">
+    <Content Include="Data\Pokemon\152.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\163.gif">
+    <Content Include="Data\Pokemon\153.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\164.gif">
+    <Content Include="Data\Pokemon\154.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\165.gif">
+    <Content Include="Data\Pokemon\155.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\166.gif">
+    <Content Include="Data\Pokemon\156.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\167.gif">
+    <Content Include="Data\Pokemon\157.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\168.gif">
+    <Content Include="Data\Pokemon\158.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\169.gif">
+    <Content Include="Data\Pokemon\159.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\170.gif">
+    <Content Include="Data\Pokemon\160.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\171.gif">
+    <Content Include="Data\Pokemon\161.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\172.gif">
+    <Content Include="Data\Pokemon\162.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\173.gif">
+    <Content Include="Data\Pokemon\163.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\174.gif">
+    <Content Include="Data\Pokemon\164.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\175.gif">
+    <Content Include="Data\Pokemon\165.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\176.gif">
+    <Content Include="Data\Pokemon\166.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\177.gif">
+    <Content Include="Data\Pokemon\167.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\178.gif">
+    <Content Include="Data\Pokemon\168.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\179.gif">
+    <Content Include="Data\Pokemon\169.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\180.gif">
+    <Content Include="Data\Pokemon\170.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\181-mega.gif">
+    <Content Include="Data\Pokemon\171.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\181.gif">
+    <Content Include="Data\Pokemon\172.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\182.gif">
+    <Content Include="Data\Pokemon\173.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\183.gif">
+    <Content Include="Data\Pokemon\174.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\184.gif">
+    <Content Include="Data\Pokemon\175.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\185.gif">
+    <Content Include="Data\Pokemon\176.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\186.gif">
+    <Content Include="Data\Pokemon\177.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\187.gif">
+    <Content Include="Data\Pokemon\178.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\188.gif">
+    <Content Include="Data\Pokemon\179.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\189.gif">
+    <Content Include="Data\Pokemon\180.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\190.gif">
+    <Content Include="Data\Pokemon\181-mega.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\191.gif">
+    <Content Include="Data\Pokemon\181.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\192.gif">
+    <Content Include="Data\Pokemon\182.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\193.gif">
+    <Content Include="Data\Pokemon\183.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\194.gif">
+    <Content Include="Data\Pokemon\184.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\195.gif">
+    <Content Include="Data\Pokemon\185.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\196.gif">
+    <Content Include="Data\Pokemon\186.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\197.gif">
+    <Content Include="Data\Pokemon\187.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\198.gif">
+    <Content Include="Data\Pokemon\188.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\199.gif">
+    <Content Include="Data\Pokemon\189.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\200.gif">
+    <Content Include="Data\Pokemon\190.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\201.gif">
+    <Content Include="Data\Pokemon\191.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\202.gif">
+    <Content Include="Data\Pokemon\192.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\203.gif">
+    <Content Include="Data\Pokemon\193.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\204.gif">
+    <Content Include="Data\Pokemon\194.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\205.gif">
+    <Content Include="Data\Pokemon\195.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\206.gif">
+    <Content Include="Data\Pokemon\196.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\207.gif">
+    <Content Include="Data\Pokemon\197.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\208.gif">
+    <Content Include="Data\Pokemon\198.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\209.gif">
+    <Content Include="Data\Pokemon\199.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\210.gif">
+    <Content Include="Data\Pokemon\200.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\211.gif">
+    <Content Include="Data\Pokemon\201.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\212-mega.gif">
+    <Content Include="Data\Pokemon\202.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\212.gif">
+    <Content Include="Data\Pokemon\203.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\213.gif">
+    <Content Include="Data\Pokemon\204.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\214-mega.gif">
+    <Content Include="Data\Pokemon\205.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\214.gif">
+    <Content Include="Data\Pokemon\206.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\215.gif">
+    <Content Include="Data\Pokemon\207.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\216.gif">
+    <Content Include="Data\Pokemon\208-mega.gif" />
+    <Content Include="Data\Pokemon\208.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\217.gif">
+    <Content Include="Data\Pokemon\209.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\218.gif">
+    <Content Include="Data\Pokemon\210.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\219.gif">
+    <Content Include="Data\Pokemon\211.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\220.gif">
+    <Content Include="Data\Pokemon\212-mega.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\221.gif">
+    <Content Include="Data\Pokemon\212.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\222.gif">
+    <Content Include="Data\Pokemon\213.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\223.gif">
+    <Content Include="Data\Pokemon\214-mega.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\224.gif">
+    <Content Include="Data\Pokemon\214.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\225.gif">
+    <Content Include="Data\Pokemon\215.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\226.gif">
+    <Content Include="Data\Pokemon\216.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\227.gif">
+    <Content Include="Data\Pokemon\217.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\228.gif">
+    <Content Include="Data\Pokemon\218.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\229-mega.gif">
+    <Content Include="Data\Pokemon\219.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\229.gif">
+    <Content Include="Data\Pokemon\220.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\230.gif">
+    <Content Include="Data\Pokemon\221.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\231.gif">
+    <Content Include="Data\Pokemon\222.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\232.gif">
+    <Content Include="Data\Pokemon\223.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\233.gif">
+    <Content Include="Data\Pokemon\224.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\234.gif">
+    <Content Include="Data\Pokemon\225.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\235.gif">
+    <Content Include="Data\Pokemon\226.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\236.gif">
+    <Content Include="Data\Pokemon\227.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\237.gif">
+    <Content Include="Data\Pokemon\228.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\238.gif">
+    <Content Include="Data\Pokemon\229-mega.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\239.gif">
+    <Content Include="Data\Pokemon\229.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\240.gif">
+    <Content Include="Data\Pokemon\230.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\241.gif">
+    <Content Include="Data\Pokemon\231.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\242.gif">
+    <Content Include="Data\Pokemon\232.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\243.gif">
+    <Content Include="Data\Pokemon\233.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\244.gif">
+    <Content Include="Data\Pokemon\234.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\245.gif">
+    <Content Include="Data\Pokemon\235.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\246.gif">
+    <Content Include="Data\Pokemon\236.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\247.gif">
+    <Content Include="Data\Pokemon\237.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\248-mega.gif">
+    <Content Include="Data\Pokemon\238.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\248.gif">
+    <Content Include="Data\Pokemon\239.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\249.gif">
+    <Content Include="Data\Pokemon\240.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\250.gif">
+    <Content Include="Data\Pokemon\241.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\251.gif">
+    <Content Include="Data\Pokemon\242.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\252.gif">
+    <Content Include="Data\Pokemon\243.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\253.gif">
+    <Content Include="Data\Pokemon\244.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\254.gif">
+    <Content Include="Data\Pokemon\245.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\255.gif">
+    <Content Include="Data\Pokemon\246.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\256.gif">
+    <Content Include="Data\Pokemon\247.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\257-mega.gif">
+    <Content Include="Data\Pokemon\248-mega.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\257.gif">
+    <Content Include="Data\Pokemon\248.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\258.gif">
+    <Content Include="Data\Pokemon\249.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\259.gif">
+    <Content Include="Data\Pokemon\250.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\260.gif">
+    <Content Include="Data\Pokemon\251.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\261.gif">
+    <Content Include="Data\Pokemon\252.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\262.gif">
+    <Content Include="Data\Pokemon\253.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\263.gif">
+    <Content Include="Data\Pokemon\254-mega.gif" />
+    <Content Include="Data\Pokemon\254.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\264.gif">
+    <Content Include="Data\Pokemon\255.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\265.gif">
+    <Content Include="Data\Pokemon\256.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\266.gif">
+    <Content Include="Data\Pokemon\257-mega.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\267.gif">
+    <Content Include="Data\Pokemon\257.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\268.gif">
+    <Content Include="Data\Pokemon\258.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\269.gif">
+    <Content Include="Data\Pokemon\259.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\270.gif">
+    <Content Include="Data\Pokemon\260-mega.gif" />
+    <Content Include="Data\Pokemon\260.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\271.gif">
+    <Content Include="Data\Pokemon\261.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\272.gif">
+    <Content Include="Data\Pokemon\262.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\273.gif">
+    <Content Include="Data\Pokemon\263.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\274.gif">
+    <Content Include="Data\Pokemon\264.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\275.gif">
+    <Content Include="Data\Pokemon\265.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\276.gif">
+    <Content Include="Data\Pokemon\266.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\277.gif">
+    <Content Include="Data\Pokemon\267.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\278.gif">
+    <Content Include="Data\Pokemon\268.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\279.gif">
+    <Content Include="Data\Pokemon\269.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\280.gif">
+    <Content Include="Data\Pokemon\270.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\281.gif">
+    <Content Include="Data\Pokemon\271.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\282-mega.gif">
+    <Content Include="Data\Pokemon\272.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\282.gif">
+    <Content Include="Data\Pokemon\273.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\283.gif">
+    <Content Include="Data\Pokemon\274.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\284.gif">
+    <Content Include="Data\Pokemon\275.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\285.gif">
+    <Content Include="Data\Pokemon\276.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\286.gif">
+    <Content Include="Data\Pokemon\277.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\287.gif">
+    <Content Include="Data\Pokemon\278.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\288.gif">
+    <Content Include="Data\Pokemon\279.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\289.gif">
+    <Content Include="Data\Pokemon\280.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\290.gif">
+    <Content Include="Data\Pokemon\281.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\291.gif">
+    <Content Include="Data\Pokemon\282-mega.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\292.gif">
+    <Content Include="Data\Pokemon\282.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\293.gif">
+    <Content Include="Data\Pokemon\283.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\294.gif">
+    <Content Include="Data\Pokemon\284.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\295.gif">
+    <Content Include="Data\Pokemon\285.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\296.gif">
+    <Content Include="Data\Pokemon\286.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\297.gif">
+    <Content Include="Data\Pokemon\287.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\298.gif">
+    <Content Include="Data\Pokemon\288.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\299.gif">
+    <Content Include="Data\Pokemon\289.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\300.gif">
+    <Content Include="Data\Pokemon\290.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\301.gif">
+    <Content Include="Data\Pokemon\291.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\302.gif">
+    <Content Include="Data\Pokemon\292.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\303-mega.gif">
+    <Content Include="Data\Pokemon\293.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\303.gif">
+    <Content Include="Data\Pokemon\294.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\304.gif">
+    <Content Include="Data\Pokemon\295.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\305.gif">
+    <Content Include="Data\Pokemon\296.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\306-mega.gif">
+    <Content Include="Data\Pokemon\297.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\306.gif">
+    <Content Include="Data\Pokemon\298.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\307.gif">
+    <Content Include="Data\Pokemon\299.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\308-mega.gif">
+    <Content Include="Data\Pokemon\300.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\308.gif">
+    <Content Include="Data\Pokemon\301.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\309.gif">
+    <Content Include="Data\Pokemon\302-mega.gif" />
+    <Content Include="Data\Pokemon\302.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\310-mega.gif">
+    <Content Include="Data\Pokemon\303-mega.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\310.gif">
+    <Content Include="Data\Pokemon\303.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\311.gif">
+    <Content Include="Data\Pokemon\304.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\312.gif">
+    <Content Include="Data\Pokemon\305.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\313.gif">
+    <Content Include="Data\Pokemon\306-mega.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\314.gif">
+    <Content Include="Data\Pokemon\306.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\315.gif">
+    <Content Include="Data\Pokemon\307.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\316.gif">
+    <Content Include="Data\Pokemon\308-mega.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\317.gif">
+    <Content Include="Data\Pokemon\308.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\318.gif">
+    <Content Include="Data\Pokemon\309.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\319.gif">
+    <Content Include="Data\Pokemon\310-mega.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\320.gif">
+    <Content Include="Data\Pokemon\310.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\321.gif">
+    <Content Include="Data\Pokemon\311.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\322.gif">
+    <Content Include="Data\Pokemon\312.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\323.gif">
+    <Content Include="Data\Pokemon\313.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\324.gif">
+    <Content Include="Data\Pokemon\314.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\325.gif">
+    <Content Include="Data\Pokemon\315.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\326.gif">
+    <Content Include="Data\Pokemon\316.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\327.gif">
+    <Content Include="Data\Pokemon\317.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\328.gif">
+    <Content Include="Data\Pokemon\318.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\329.gif">
+    <Content Include="Data\Pokemon\319-mega.gif" />
+    <Content Include="Data\Pokemon\319.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\330.gif">
+    <Content Include="Data\Pokemon\320.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\331.gif">
+    <Content Include="Data\Pokemon\321.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\332.gif">
+    <Content Include="Data\Pokemon\322.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\333.gif">
+    <Content Include="Data\Pokemon\323-mega.gif" />
+    <Content Include="Data\Pokemon\323.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\334.gif">
+    <Content Include="Data\Pokemon\324.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\335.gif">
+    <Content Include="Data\Pokemon\325.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\336.gif">
+    <Content Include="Data\Pokemon\326.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\337.gif">
+    <Content Include="Data\Pokemon\327.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\338.gif">
+    <Content Include="Data\Pokemon\328.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\339.gif">
+    <Content Include="Data\Pokemon\329.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\340.gif">
+    <Content Include="Data\Pokemon\330.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\341.gif">
+    <Content Include="Data\Pokemon\331.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\342.gif">
+    <Content Include="Data\Pokemon\332.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\343.gif">
+    <Content Include="Data\Pokemon\333.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\344.gif">
+    <Content Include="Data\Pokemon\334-mega.gif" />
+    <Content Include="Data\Pokemon\334.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\345.gif">
+    <Content Include="Data\Pokemon\335.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\346.gif">
+    <Content Include="Data\Pokemon\336.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\347.gif">
+    <Content Include="Data\Pokemon\337.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\348.gif">
+    <Content Include="Data\Pokemon\338.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\349.gif">
+    <Content Include="Data\Pokemon\339.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\350.gif">
+    <Content Include="Data\Pokemon\340.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\351-rainy.gif">
+    <Content Include="Data\Pokemon\341.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\351-snowy.gif">
+    <Content Include="Data\Pokemon\342.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\351-sunny.gif">
+    <Content Include="Data\Pokemon\343.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\351.gif">
+    <Content Include="Data\Pokemon\344.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\352.gif">
+    <Content Include="Data\Pokemon\345.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\353.gif">
+    <Content Include="Data\Pokemon\346.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\354-mega.gif">
+    <Content Include="Data\Pokemon\347.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\354.gif">
+    <Content Include="Data\Pokemon\348.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\355.gif">
+    <Content Include="Data\Pokemon\349.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\356.gif">
+    <Content Include="Data\Pokemon\350.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\357.gif">
+    <Content Include="Data\Pokemon\351-rainy.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\358.gif">
+    <Content Include="Data\Pokemon\351-snowy.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\359-mega.gif">
+    <Content Include="Data\Pokemon\351-sunny.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\359.gif">
+    <Content Include="Data\Pokemon\351.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\360.gif">
+    <Content Include="Data\Pokemon\352.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\361.gif">
+    <Content Include="Data\Pokemon\353.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\362.gif">
+    <Content Include="Data\Pokemon\354-mega.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\363.gif">
+    <Content Include="Data\Pokemon\354.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\364.gif">
+    <Content Include="Data\Pokemon\355.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\365.gif">
+    <Content Include="Data\Pokemon\356.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\366.gif">
+    <Content Include="Data\Pokemon\357.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\367.gif">
+    <Content Include="Data\Pokemon\358.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\368.gif">
+    <Content Include="Data\Pokemon\359-mega.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\369.gif">
+    <Content Include="Data\Pokemon\359.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\370.gif">
+    <Content Include="Data\Pokemon\360.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\371.gif">
+    <Content Include="Data\Pokemon\361.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\372.gif">
+    <Content Include="Data\Pokemon\362-mega.gif" />
+    <Content Include="Data\Pokemon\362.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\373.gif">
+    <Content Include="Data\Pokemon\363.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\374.gif">
+    <Content Include="Data\Pokemon\364.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\375.gif">
+    <Content Include="Data\Pokemon\365.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\376.gif">
+    <Content Include="Data\Pokemon\366.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\377.gif">
+    <Content Include="Data\Pokemon\367.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\378.gif">
+    <Content Include="Data\Pokemon\368.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\379.gif">
+    <Content Include="Data\Pokemon\369.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\380-mega.gif">
+    <Content Include="Data\Pokemon\370.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\380.gif">
+    <Content Include="Data\Pokemon\371.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\381-mega.gif">
+    <Content Include="Data\Pokemon\372.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\381.gif">
+    <Content Include="Data\Pokemon\373-mega.gif" />
+    <Content Include="Data\Pokemon\373.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\382.gif">
+    <Content Include="Data\Pokemon\374.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\383.gif">
+    <Content Include="Data\Pokemon\375.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\384.gif">
+    <Content Include="Data\Pokemon\376-mega.gif" />
+    <Content Include="Data\Pokemon\376.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\385.gif">
+    <Content Include="Data\Pokemon\377.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\386-attack.gif">
+    <Content Include="Data\Pokemon\378.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\386-defense.gif">
+    <Content Include="Data\Pokemon\379.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\386-speed.gif">
+    <Content Include="Data\Pokemon\380-mega.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\386.gif">
+    <Content Include="Data\Pokemon\380.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\387.gif">
+    <Content Include="Data\Pokemon\381-mega.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\388.gif">
+    <Content Include="Data\Pokemon\381.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\389.gif">
+    <Content Include="Data\Pokemon\382-mega.gif" />
+    <Content Include="Data\Pokemon\382.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\390.gif">
+    <Content Include="Data\Pokemon\383-mega.gif" />
+    <Content Include="Data\Pokemon\383.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\391.gif">
+    <Content Include="Data\Pokemon\384-mega.gif" />
+    <Content Include="Data\Pokemon\384.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\392.gif">
+    <Content Include="Data\Pokemon\385.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\393.gif">
+    <Content Include="Data\Pokemon\386-attack.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\394.gif">
+    <Content Include="Data\Pokemon\386-defense.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\395.gif">
+    <Content Include="Data\Pokemon\386-speed.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\396.gif">
+    <Content Include="Data\Pokemon\386.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\397.gif">
+    <Content Include="Data\Pokemon\387.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\398.gif">
+    <Content Include="Data\Pokemon\388.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\399.gif">
+    <Content Include="Data\Pokemon\389.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\400.gif">
+    <Content Include="Data\Pokemon\390.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\401.gif">
+    <Content Include="Data\Pokemon\391.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\402.gif">
+    <Content Include="Data\Pokemon\392.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\403.gif">
+    <Content Include="Data\Pokemon\393.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\404.gif">
+    <Content Include="Data\Pokemon\394.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\405.gif">
+    <Content Include="Data\Pokemon\395.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\406.gif">
+    <Content Include="Data\Pokemon\396.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\407.gif">
+    <Content Include="Data\Pokemon\397.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\408.gif">
+    <Content Include="Data\Pokemon\398.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\409.gif">
+    <Content Include="Data\Pokemon\399.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\410.gif">
+    <Content Include="Data\Pokemon\400.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\411.gif">
+    <Content Include="Data\Pokemon\401.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\412-sandy.gif">
+    <Content Include="Data\Pokemon\402.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\412-trash.gif">
+    <Content Include="Data\Pokemon\403.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\412.gif">
+    <Content Include="Data\Pokemon\404.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\413-sandy.gif">
+    <Content Include="Data\Pokemon\405.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\413-trash.gif">
+    <Content Include="Data\Pokemon\406.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\413.gif">
+    <Content Include="Data\Pokemon\407.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\414.gif">
+    <Content Include="Data\Pokemon\408.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\415.gif">
+    <Content Include="Data\Pokemon\409.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\416.gif">
+    <Content Include="Data\Pokemon\410.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\417.gif">
+    <Content Include="Data\Pokemon\411.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\418.gif">
+    <Content Include="Data\Pokemon\412-sandy.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\419.gif">
+    <Content Include="Data\Pokemon\412-trash.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\420.gif">
+    <Content Include="Data\Pokemon\412.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\421-sunny.gif">
+    <Content Include="Data\Pokemon\413-sandy.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\421.gif">
+    <Content Include="Data\Pokemon\413-trash.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\422.gif">
+    <Content Include="Data\Pokemon\413.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\423.gif">
+    <Content Include="Data\Pokemon\414.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\424.gif">
+    <Content Include="Data\Pokemon\415.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\425.gif">
+    <Content Include="Data\Pokemon\416.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\426.gif">
+    <Content Include="Data\Pokemon\417.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\427.gif">
+    <Content Include="Data\Pokemon\418.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\428.gif">
+    <Content Include="Data\Pokemon\419.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\429.gif">
+    <Content Include="Data\Pokemon\420.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\430.gif">
+    <Content Include="Data\Pokemon\421-sunny.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\431.gif">
+    <Content Include="Data\Pokemon\421.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\432.gif">
+    <Content Include="Data\Pokemon\422.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\433.gif">
+    <Content Include="Data\Pokemon\423.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\434.gif">
+    <Content Include="Data\Pokemon\424.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\435.gif">
+    <Content Include="Data\Pokemon\425.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\436.gif">
+    <Content Include="Data\Pokemon\426.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\437.gif">
+    <Content Include="Data\Pokemon\427.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\438.gif">
+    <Content Include="Data\Pokemon\428-mega.gif" />
+    <Content Include="Data\Pokemon\428.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\439.gif">
+    <Content Include="Data\Pokemon\429.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\440.gif">
+    <Content Include="Data\Pokemon\430.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\441.gif">
+    <Content Include="Data\Pokemon\431.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\442.gif">
+    <Content Include="Data\Pokemon\432.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\443.gif">
+    <Content Include="Data\Pokemon\433.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\444.gif">
+    <Content Include="Data\Pokemon\434.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\445-mega.gif">
+    <Content Include="Data\Pokemon\435.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\445.gif">
+    <Content Include="Data\Pokemon\436.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\446.gif">
+    <Content Include="Data\Pokemon\437.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\447.gif">
+    <Content Include="Data\Pokemon\438.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\448-mega.gif">
+    <Content Include="Data\Pokemon\439.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\448.gif">
+    <Content Include="Data\Pokemon\440.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\449.gif">
+    <Content Include="Data\Pokemon\441.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\450.gif">
+    <Content Include="Data\Pokemon\442.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\451.gif">
+    <Content Include="Data\Pokemon\443.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\452.gif">
+    <Content Include="Data\Pokemon\444.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\453.gif">
+    <Content Include="Data\Pokemon\445-mega.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\454.gif">
+    <Content Include="Data\Pokemon\445.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\455.gif">
+    <Content Include="Data\Pokemon\446.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\456.gif">
+    <Content Include="Data\Pokemon\447.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\457.gif">
+    <Content Include="Data\Pokemon\448-mega.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\458.gif">
+    <Content Include="Data\Pokemon\448.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\459.gif">
+    <Content Include="Data\Pokemon\449.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\460-mega.gif">
+    <Content Include="Data\Pokemon\450.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\460.gif">
+    <Content Include="Data\Pokemon\451.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\461.gif">
+    <Content Include="Data\Pokemon\452.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\462.gif">
+    <Content Include="Data\Pokemon\453.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\463.gif">
+    <Content Include="Data\Pokemon\454.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\464.gif">
+    <Content Include="Data\Pokemon\455.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\465.gif">
+    <Content Include="Data\Pokemon\456.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\466.gif">
+    <Content Include="Data\Pokemon\457.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\467.gif">
+    <Content Include="Data\Pokemon\458.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\468.gif">
+    <Content Include="Data\Pokemon\459.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\469.gif">
+    <Content Include="Data\Pokemon\460-mega.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\470.gif">
+    <Content Include="Data\Pokemon\460.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\471.gif">
+    <Content Include="Data\Pokemon\461.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\472.gif">
+    <Content Include="Data\Pokemon\462.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\473.gif">
+    <Content Include="Data\Pokemon\463.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\474.gif">
+    <Content Include="Data\Pokemon\464.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\475.gif">
+    <Content Include="Data\Pokemon\465.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\476.gif">
+    <Content Include="Data\Pokemon\466.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\477.gif">
+    <Content Include="Data\Pokemon\467.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\478.gif">
+    <Content Include="Data\Pokemon\468.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\479-fan.gif">
+    <Content Include="Data\Pokemon\469.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\479-frost.gif">
+    <Content Include="Data\Pokemon\470.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\479-heat.gif">
+    <Content Include="Data\Pokemon\471.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\479-mow.gif">
+    <Content Include="Data\Pokemon\472.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\479-wash.gif">
+    <Content Include="Data\Pokemon\473.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\479.gif">
+    <Content Include="Data\Pokemon\474.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\480.gif">
+    <Content Include="Data\Pokemon\475-mega.gif" />
+    <Content Include="Data\Pokemon\475.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\481.gif">
+    <Content Include="Data\Pokemon\476.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\482.gif">
+    <Content Include="Data\Pokemon\477.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\483.gif">
+    <Content Include="Data\Pokemon\478.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\484.gif">
+    <Content Include="Data\Pokemon\479-fan.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\485.gif">
+    <Content Include="Data\Pokemon\479-frost.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\486.gif">
+    <Content Include="Data\Pokemon\479-heat.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\487-origin.gif">
+    <Content Include="Data\Pokemon\479-mow.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\487.gif">
+    <Content Include="Data\Pokemon\479-wash.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\488.gif">
+    <Content Include="Data\Pokemon\479.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\489.gif">
+    <Content Include="Data\Pokemon\480.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\490.gif">
+    <Content Include="Data\Pokemon\481.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\491.gif">
+    <Content Include="Data\Pokemon\482.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\492-sky.gif">
+    <Content Include="Data\Pokemon\483.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\492.gif">
+    <Content Include="Data\Pokemon\484.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\493-bug.gif">
+    <Content Include="Data\Pokemon\485.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\493-dark.gif">
+    <Content Include="Data\Pokemon\486.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\493-dragon.gif">
+    <Content Include="Data\Pokemon\487-origin.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\493-electric.gif">
+    <Content Include="Data\Pokemon\487.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\493-fairy.gif">
+    <Content Include="Data\Pokemon\488.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\493-fighting.gif">
+    <Content Include="Data\Pokemon\489.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\493-fire.gif">
+    <Content Include="Data\Pokemon\490.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\493-flying.gif">
+    <Content Include="Data\Pokemon\491.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\493-ghost.gif">
+    <Content Include="Data\Pokemon\492-sky.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\493-grass.gif">
+    <Content Include="Data\Pokemon\492.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\493-ground.gif">
+    <Content Include="Data\Pokemon\493-bug.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\493-ice.gif">
+    <Content Include="Data\Pokemon\493-dark.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\493-poison.gif">
+    <Content Include="Data\Pokemon\493-dragon.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\493-psychic.gif">
+    <Content Include="Data\Pokemon\493-electric.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\493-rock.gif">
+    <Content Include="Data\Pokemon\493-fairy.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\493-steel.gif">
+    <Content Include="Data\Pokemon\493-fighting.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\493-water.gif">
+    <Content Include="Data\Pokemon\493-fire.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\493.gif">
+    <Content Include="Data\Pokemon\493-flying.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\494.gif">
+    <Content Include="Data\Pokemon\493-ghost.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\495.gif">
+    <Content Include="Data\Pokemon\493-grass.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\496.gif">
+    <Content Include="Data\Pokemon\493-ground.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\497.gif">
+    <Content Include="Data\Pokemon\493-ice.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\498.gif">
+    <Content Include="Data\Pokemon\493-poison.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\499.gif">
+    <Content Include="Data\Pokemon\493-psychic.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\500.gif">
+    <Content Include="Data\Pokemon\493-rock.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\501.gif">
+    <Content Include="Data\Pokemon\493-steel.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\502.gif">
+    <Content Include="Data\Pokemon\493-water.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\503.gif">
+    <Content Include="Data\Pokemon\493.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\504.gif">
+    <Content Include="Data\Pokemon\494.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\505.gif">
+    <Content Include="Data\Pokemon\495.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\506.gif">
+    <Content Include="Data\Pokemon\496.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\507.gif">
+    <Content Include="Data\Pokemon\497.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\508.gif">
+    <Content Include="Data\Pokemon\498.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\509.gif">
+    <Content Include="Data\Pokemon\499.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\510.gif">
+    <Content Include="Data\Pokemon\500.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\511.gif">
+    <Content Include="Data\Pokemon\501.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\512.gif">
+    <Content Include="Data\Pokemon\502.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\513.gif">
+    <Content Include="Data\Pokemon\503.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\514.gif">
+    <Content Include="Data\Pokemon\504.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\515.gif">
+    <Content Include="Data\Pokemon\505.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\516.gif">
+    <Content Include="Data\Pokemon\506.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\517.gif">
+    <Content Include="Data\Pokemon\507.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\518.gif">
+    <Content Include="Data\Pokemon\508.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\519.gif">
+    <Content Include="Data\Pokemon\509.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\520.gif">
+    <Content Include="Data\Pokemon\510.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\521.gif">
+    <Content Include="Data\Pokemon\511.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\522.gif">
+    <Content Include="Data\Pokemon\512.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\523.gif">
+    <Content Include="Data\Pokemon\513.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\524.gif">
+    <Content Include="Data\Pokemon\514.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\525.gif">
+    <Content Include="Data\Pokemon\515.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\526.gif">
+    <Content Include="Data\Pokemon\516.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\527.gif">
+    <Content Include="Data\Pokemon\517.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\528.gif">
+    <Content Include="Data\Pokemon\518.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\529.gif">
+    <Content Include="Data\Pokemon\519.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\530.gif">
+    <Content Include="Data\Pokemon\520.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\531.gif">
+    <Content Include="Data\Pokemon\521.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\532.gif">
+    <Content Include="Data\Pokemon\522.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\533.gif">
+    <Content Include="Data\Pokemon\523.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\534.gif">
+    <Content Include="Data\Pokemon\524.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\535.gif">
+    <Content Include="Data\Pokemon\525.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\536.gif">
+    <Content Include="Data\Pokemon\526.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\537.gif">
+    <Content Include="Data\Pokemon\527.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\538.gif">
+    <Content Include="Data\Pokemon\528.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\539.gif">
+    <Content Include="Data\Pokemon\529.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\540.gif">
+    <Content Include="Data\Pokemon\530.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\541.gif">
+    <Content Include="Data\Pokemon\531-mega.gif" />
+    <Content Include="Data\Pokemon\531.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\542.gif">
+    <Content Include="Data\Pokemon\532.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\543.gif">
+    <Content Include="Data\Pokemon\533.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\544.gif">
+    <Content Include="Data\Pokemon\534.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\545.gif">
+    <Content Include="Data\Pokemon\535.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\546.gif">
+    <Content Include="Data\Pokemon\536.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\547.gif">
+    <Content Include="Data\Pokemon\537.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\548.gif">
+    <Content Include="Data\Pokemon\538.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\549.gif">
+    <Content Include="Data\Pokemon\539.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\550-blue.gif">
+    <Content Include="Data\Pokemon\540.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\550.gif">
+    <Content Include="Data\Pokemon\541.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\551.gif">
+    <Content Include="Data\Pokemon\542.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\552.gif">
+    <Content Include="Data\Pokemon\543.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\553.gif">
+    <Content Include="Data\Pokemon\544.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\554.gif">
+    <Content Include="Data\Pokemon\545.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\555-mode.gif">
+    <Content Include="Data\Pokemon\546.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\555.gif">
+    <Content Include="Data\Pokemon\547.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\556.gif">
+    <Content Include="Data\Pokemon\548.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\557.gif">
+    <Content Include="Data\Pokemon\549.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\558.gif">
+    <Content Include="Data\Pokemon\550-blue.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\559.gif">
+    <Content Include="Data\Pokemon\550.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\560.gif">
+    <Content Include="Data\Pokemon\551.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\561.gif">
+    <Content Include="Data\Pokemon\552.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\562.gif">
+    <Content Include="Data\Pokemon\553.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\563.gif">
+    <Content Include="Data\Pokemon\554.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\564.gif">
+    <Content Include="Data\Pokemon\555-mode.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\565.gif">
+    <Content Include="Data\Pokemon\555.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\566.gif">
+    <Content Include="Data\Pokemon\556.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\567.gif">
+    <Content Include="Data\Pokemon\557.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\568.gif">
+    <Content Include="Data\Pokemon\558.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\569.gif">
+    <Content Include="Data\Pokemon\559.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\570.gif">
+    <Content Include="Data\Pokemon\560.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\571.gif">
+    <Content Include="Data\Pokemon\561.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\572.gif">
+    <Content Include="Data\Pokemon\562.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\573.gif">
+    <Content Include="Data\Pokemon\563.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\574.gif">
+    <Content Include="Data\Pokemon\564.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\575.gif">
+    <Content Include="Data\Pokemon\565.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\576.gif">
+    <Content Include="Data\Pokemon\566.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\577.gif">
+    <Content Include="Data\Pokemon\567.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\578.gif">
+    <Content Include="Data\Pokemon\568.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\579.gif">
+    <Content Include="Data\Pokemon\569.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\580.gif">
+    <Content Include="Data\Pokemon\570.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\581.gif">
+    <Content Include="Data\Pokemon\571.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\582.gif">
+    <Content Include="Data\Pokemon\572.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\583.gif">
+    <Content Include="Data\Pokemon\573.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\584.gif">
+    <Content Include="Data\Pokemon\574.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\585.gif">
+    <Content Include="Data\Pokemon\575.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\586.gif">
+    <Content Include="Data\Pokemon\576.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\587.gif">
+    <Content Include="Data\Pokemon\577.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\588.gif">
+    <Content Include="Data\Pokemon\578.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\589.gif">
+    <Content Include="Data\Pokemon\579.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\590.gif">
+    <Content Include="Data\Pokemon\580.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\591.gif">
+    <Content Include="Data\Pokemon\581.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\592-f.gif">
+    <Content Include="Data\Pokemon\582.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\593.gif">
+    <Content Include="Data\Pokemon\583.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\594.gif">
+    <Content Include="Data\Pokemon\584.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\595.gif">
+    <Content Include="Data\Pokemon\585.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\596.gif">
+    <Content Include="Data\Pokemon\586.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\597.gif">
+    <Content Include="Data\Pokemon\587.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\598.gif">
+    <Content Include="Data\Pokemon\588.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\599.gif">
+    <Content Include="Data\Pokemon\589.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\600.gif">
+    <Content Include="Data\Pokemon\590.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\601.gif">
+    <Content Include="Data\Pokemon\591.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\602.gif">
+    <Content Include="Data\Pokemon\592-f.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\603.gif">
+    <Content Include="Data\Pokemon\593.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\604.gif">
+    <Content Include="Data\Pokemon\594.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\605.gif">
+    <Content Include="Data\Pokemon\595.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\606.gif">
+    <Content Include="Data\Pokemon\596.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\607.gif">
+    <Content Include="Data\Pokemon\597.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\608.gif">
+    <Content Include="Data\Pokemon\598.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\609.gif">
+    <Content Include="Data\Pokemon\599.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\610.gif">
+    <Content Include="Data\Pokemon\600.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\611.gif">
+    <Content Include="Data\Pokemon\601.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\612.gif">
+    <Content Include="Data\Pokemon\602.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\613.gif">
+    <Content Include="Data\Pokemon\603.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\614.gif">
+    <Content Include="Data\Pokemon\604.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\615.gif">
+    <Content Include="Data\Pokemon\605.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\616.gif">
+    <Content Include="Data\Pokemon\606.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\617.gif">
+    <Content Include="Data\Pokemon\607.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\618.gif">
+    <Content Include="Data\Pokemon\608.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\619.gif">
+    <Content Include="Data\Pokemon\609.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\620.gif">
+    <Content Include="Data\Pokemon\610.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\621.gif">
+    <Content Include="Data\Pokemon\611.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\622.gif">
+    <Content Include="Data\Pokemon\612.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\623.gif">
+    <Content Include="Data\Pokemon\613.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\624.gif">
+    <Content Include="Data\Pokemon\614.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\625.gif">
+    <Content Include="Data\Pokemon\615.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\626.gif">
+    <Content Include="Data\Pokemon\616.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\627.gif">
+    <Content Include="Data\Pokemon\617.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\628.gif">
+    <Content Include="Data\Pokemon\618.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\629.gif">
+    <Content Include="Data\Pokemon\619.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\630.gif">
+    <Content Include="Data\Pokemon\620.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\631.gif">
+    <Content Include="Data\Pokemon\621.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\632.gif">
+    <Content Include="Data\Pokemon\622.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\633.gif">
+    <Content Include="Data\Pokemon\623.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\634.gif">
+    <Content Include="Data\Pokemon\624.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\635.gif">
+    <Content Include="Data\Pokemon\625.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\636.gif">
+    <Content Include="Data\Pokemon\626.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\637.gif">
+    <Content Include="Data\Pokemon\627.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\638.gif">
+    <Content Include="Data\Pokemon\628.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\639.gif">
+    <Content Include="Data\Pokemon\629.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\640.gif">
+    <Content Include="Data\Pokemon\630.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\641-therian.gif">
+    <Content Include="Data\Pokemon\631.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\641.gif">
+    <Content Include="Data\Pokemon\632.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\642-therian.gif">
+    <Content Include="Data\Pokemon\633.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\642.gif">
+    <Content Include="Data\Pokemon\634.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\643.gif">
+    <Content Include="Data\Pokemon\635.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\644.gif">
+    <Content Include="Data\Pokemon\636.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\645-therian.gif">
+    <Content Include="Data\Pokemon\637.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\645.gif">
+    <Content Include="Data\Pokemon\638.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\646-black.gif">
+    <Content Include="Data\Pokemon\639.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\646-white.gif">
+    <Content Include="Data\Pokemon\640.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\646.gif">
+    <Content Include="Data\Pokemon\641-therian.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\647-resolute.gif">
+    <Content Include="Data\Pokemon\641.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\647.gif">
+    <Content Include="Data\Pokemon\642-therian.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\648-pirouette.gif">
+    <Content Include="Data\Pokemon\642.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\648.gif">
+    <Content Include="Data\Pokemon\643.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\649-blue.gif">
+    <Content Include="Data\Pokemon\644.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\649-chill.gif">
+    <Content Include="Data\Pokemon\645-therian.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\649-red.gif">
+    <Content Include="Data\Pokemon\645.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\649-yellow.gif">
+    <Content Include="Data\Pokemon\646-black.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\649.gif">
+    <Content Include="Data\Pokemon\646-white.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\650.gif">
+    <Content Include="Data\Pokemon\646.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\651.gif">
+    <Content Include="Data\Pokemon\647-resolute.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\652.gif">
+    <Content Include="Data\Pokemon\647.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\653.gif">
+    <Content Include="Data\Pokemon\648-pirouette.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\654.gif">
+    <Content Include="Data\Pokemon\648.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\656.gif">
+    <Content Include="Data\Pokemon\649-blue.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\657.gif">
+    <Content Include="Data\Pokemon\649-chill.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\658.gif">
+    <Content Include="Data\Pokemon\649-red.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\659.gif">
+    <Content Include="Data\Pokemon\649-yellow.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\660.gif">
+    <Content Include="Data\Pokemon\649.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\661.gif">
+    <Content Include="Data\Pokemon\650.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\662.gif">
+    <Content Include="Data\Pokemon\651.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\663.gif">
+    <Content Include="Data\Pokemon\652.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\664.gif">
+    <Content Include="Data\Pokemon\653.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\665.gif">
+    <Content Include="Data\Pokemon\654.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\666-archipelago.gif">
+    <Content Include="Data\Pokemon\656.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\666-continental.gif">
+    <Content Include="Data\Pokemon\657.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\666-elegant.gif">
+    <Content Include="Data\Pokemon\658.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\666-garden.gif">
+    <Content Include="Data\Pokemon\659.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\666-highplains.gif">
+    <Content Include="Data\Pokemon\660.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\666-jungle.gif">
+    <Content Include="Data\Pokemon\661.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\666-marine.gif">
+    <Content Include="Data\Pokemon\662.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\666-meadow.gif">
+    <Content Include="Data\Pokemon\663.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\666-modern.gif">
+    <Content Include="Data\Pokemon\664.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\666-monsoon.gif">
+    <Content Include="Data\Pokemon\665.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\666-ocean.gif">
+    <Content Include="Data\Pokemon\666-archipelago.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\666-polar.gif">
+    <Content Include="Data\Pokemon\666-continental.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\666-river.gif">
+    <Content Include="Data\Pokemon\666-elegant.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\666-sandstorm.gif">
+    <Content Include="Data\Pokemon\666-garden.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\666-savannah.gif">
+    <Content Include="Data\Pokemon\666-highplains.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\666-sun.gif">
+    <Content Include="Data\Pokemon\666-jungle.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\666-tundra.gif">
+    <Content Include="Data\Pokemon\666-marine.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\666.gif">
+    <Content Include="Data\Pokemon\666-meadow.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\667.gif">
+    <Content Include="Data\Pokemon\666-modern.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\668-f.gif">
+    <Content Include="Data\Pokemon\666-monsoon.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\668.gif">
+    <Content Include="Data\Pokemon\666-ocean.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\669-blue.gif">
+    <Content Include="Data\Pokemon\666-polar.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\669-orange.gif">
+    <Content Include="Data\Pokemon\666-river.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\669-red.gif">
+    <Content Include="Data\Pokemon\666-sandstorm.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\669-white.gif">
+    <Content Include="Data\Pokemon\666-savannah.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\669-yellow.gif">
+    <Content Include="Data\Pokemon\666-sun.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\669.gif">
+    <Content Include="Data\Pokemon\666-tundra.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\670-eternalflower.gif">
+    <Content Include="Data\Pokemon\666.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\670.gif">
+    <Content Include="Data\Pokemon\667.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\671.gif">
+    <Content Include="Data\Pokemon\668-f.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\672.gif">
+    <Content Include="Data\Pokemon\668.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\673.gif">
+    <Content Include="Data\Pokemon\669-blue.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\674.gif">
+    <Content Include="Data\Pokemon\669-orange.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\675.gif">
+    <Content Include="Data\Pokemon\669-red.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\676.gif">
+    <Content Include="Data\Pokemon\669-white.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\677.gif">
+    <Content Include="Data\Pokemon\669-yellow.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\678-f.gif">
+    <Content Include="Data\Pokemon\669.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\678-m.gif">
+    <Content Include="Data\Pokemon\670-eternalflower.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\679.gif">
+    <Content Include="Data\Pokemon\670.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\680.gif">
+    <Content Include="Data\Pokemon\671.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\681-blade.gif">
+    <Content Include="Data\Pokemon\672.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\681-shield.gif">
+    <Content Include="Data\Pokemon\673.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\681.gif">
+    <Content Include="Data\Pokemon\674.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\682.gif">
+    <Content Include="Data\Pokemon\675.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\683.gif">
+    <Content Include="Data\Pokemon\676.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\684.gif">
+    <Content Include="Data\Pokemon\677.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\685.gif">
+    <Content Include="Data\Pokemon\678-f.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\686.gif">
+    <Content Include="Data\Pokemon\678-m.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\687.gif">
+    <Content Include="Data\Pokemon\679.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\688.gif">
+    <Content Include="Data\Pokemon\680.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\689.gif">
+    <Content Include="Data\Pokemon\681-blade.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\690.gif">
+    <Content Include="Data\Pokemon\681-shield.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\691.gif">
+    <Content Include="Data\Pokemon\681.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\692.gif">
+    <Content Include="Data\Pokemon\682.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\693.gif">
+    <Content Include="Data\Pokemon\683.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\694.gif">
+    <Content Include="Data\Pokemon\684.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\695.gif">
+    <Content Include="Data\Pokemon\685.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\696.gif">
+    <Content Include="Data\Pokemon\686.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\697.gif">
+    <Content Include="Data\Pokemon\687.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\698.gif">
+    <Content Include="Data\Pokemon\688.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\699.gif">
+    <Content Include="Data\Pokemon\689.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\700.gif">
+    <Content Include="Data\Pokemon\690.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\701.gif">
+    <Content Include="Data\Pokemon\691.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\702.gif">
+    <Content Include="Data\Pokemon\692.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\703.gif">
+    <Content Include="Data\Pokemon\693.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\704.gif">
+    <Content Include="Data\Pokemon\694.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\705.gif">
+    <Content Include="Data\Pokemon\695.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\706.gif">
+    <Content Include="Data\Pokemon\696.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\707.gif">
+    <Content Include="Data\Pokemon\697.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\708.gif">
+    <Content Include="Data\Pokemon\698.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\709.gif">
+    <Content Include="Data\Pokemon\699.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\710-large.gif">
+    <Content Include="Data\Pokemon\700.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\710-small.gif">
+    <Content Include="Data\Pokemon\701.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\710-super.gif">
+    <Content Include="Data\Pokemon\702.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\710.gif">
+    <Content Include="Data\Pokemon\703.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\711-large.gif">
+    <Content Include="Data\Pokemon\704.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\711-small.gif">
+    <Content Include="Data\Pokemon\705.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\711-super.gif">
+    <Content Include="Data\Pokemon\706.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\711.gif">
+    <Content Include="Data\Pokemon\707.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\712.gif">
+    <Content Include="Data\Pokemon\708.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\713.gif">
+    <Content Include="Data\Pokemon\709.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\714.gif">
+    <Content Include="Data\Pokemon\710-large.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\715.gif">
+    <Content Include="Data\Pokemon\710-small.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\716.gif">
+    <Content Include="Data\Pokemon\710-super.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\717.gif">
+    <Content Include="Data\Pokemon\710.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\718.gif">
+    <Content Include="Data\Pokemon\711-large.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\719.gif">
+    <Content Include="Data\Pokemon\711-small.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="XML\Color.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Data\Pokemon\711-super.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Pokemon\711.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Pokemon\712.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Pokemon\713.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Pokemon\714.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Pokemon\715.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Pokemon\716.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Pokemon\717.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Pokemon\718.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Pokemon\719-mega.gif" />
+    <Content Include="Data\Pokemon\719.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Pokemon\720-mega.gif" />
+    <Content Include="Data\Pokemon\720.gif" />
+    <Content Include="Data\Pokemon\721.gif" />
+    <Content Include="Data\XML\Color.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="XML\Design.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Data\XML\Design.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="XML\Item.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Data\XML\Item.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="XML\Pokemon.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Data\XML\Pokemon.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="XML\Shade.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Data\XML\Shade.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
