@@ -39,11 +39,17 @@ namespace GenesisDexEngine
         public string spatk { get; set; }
         public string spdef { get; set; }
         public string spd { get; set; }
+        public string ability { get; set; }
     }
 
     class Evolution
     {
         public string evo { get; set; }
+    }
+
+    class Ability
+    {
+        public string ability { get; set; }
     }
 
     class Capability
@@ -125,7 +131,8 @@ namespace GenesisDexEngine
                             def = (string)node.Element("def"),
                             spatk = (string)node.Element("spatk"),
                             spdef = (string)node.Element("spdef"),
-                            spd = (string)node.Element("spd")
+                            spd = (string)node.Element("spd"),
+                            ability = (string)node.Element("ability")
                         };
             idList = query.ToList();
             return idList;
@@ -191,6 +198,23 @@ namespace GenesisDexEngine
                         select new Move
                         {
                             move = (string)node.Element("move")
+                        };
+            idList = query.ToList();
+            return idList;
+        }
+    }
+
+    class AbilityList
+    {
+        public List<Ability> createList(string decend)
+        {
+            string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\Pokemon.xml");
+            List<Ability> idList = new List<Ability>();
+            XDocument doc = XDocument.Load(fileName);
+            var query = from node in doc.Descendants("List" + decend).Descendants("Ability")
+                        select new Ability
+                        {
+                            ability = (string)node.Element("ability")
                         };
             idList = query.ToList();
             return idList;

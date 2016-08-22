@@ -23,6 +23,7 @@ namespace GenesisDex
         List<Skill> skillList = new List<Skill>();
         List<Capability> capList = new List<Capability>();
         List<Move> moveList = new List<Move>();
+        List<Ability> abiList = new List<Ability>();
         int carryi { get; set; }
         int page { get; set; }
         bool mega { get; set; }
@@ -365,6 +366,33 @@ namespace GenesisDex
             for (var e = 0; e < evoList.Count; e++)
             {
                 rtbInfo1.Text += "-" + evoList[e].evo + Environment.NewLine;
+            }
+            AbilityList abiXML = new AbilityList();
+            abiList = abiXML.createList(pokeList[i].number);
+            rtbInfo1.Text += string.Format(Environment.NewLine + "\tBasic Abilities" + Environment.NewLine +
+                "{0}\t\t{1}" + Environment.NewLine + Environment.NewLine +
+                "\tAdvanced Abilities" + Environment.NewLine +
+                "{2}\t\t{3}" + Environment.NewLine + Environment.NewLine +
+                "\tHigh Ability" + Environment.NewLine +
+                "\t{4}", 
+                abiList[0].ability, abiList[1].ability,
+                abiList[2].ability, abiList[3].ability,
+                abiList[4].ability);
+            MegaList megaAbility = new MegaList();
+            if (mega == true)
+            {
+                megaList = megaAbility.createList("Mega" + pokeList[i].number);
+                rtbInfo1.Text += string.Format(Environment.NewLine + "\tMega Ability" + Environment.NewLine +
+                    "\t" + megaList[0].ability);
+            }
+            else if (megax == true)
+            {
+                megaList = megaAbility.createList("MegaX" + pokeList[i].number);
+                rtbInfo1.Text += string.Format(Environment.NewLine + "\tMega Ability Y" + Environment.NewLine +
+                    "\t" + megaList[0].ability);
+                megaList = megaAbility.createList("MegaY" + pokeList[i].number);
+                rtbInfo1.Text += string.Format(Environment.NewLine + "\tMega Ability X" + Environment.NewLine +
+                    "\t" + megaList[0].ability);
             }
         }
 
