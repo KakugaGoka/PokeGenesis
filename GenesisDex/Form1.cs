@@ -19,7 +19,12 @@ namespace GenesisDex
     {
         List<Pokemon> pokeList = new List<Pokemon>();
         List<Mega> megaList = new List<Mega>();
+        List<Evolution> evoList = new List<Evolution>();
+        List<Skill> skillList = new List<Skill>();
+        List<Capability> capList = new List<Capability>();
+        List<Move> moveList = new List<Move>();
         int carryi { get; set; }
+        int page { get; set; }
         bool mega { get; set; }
         bool viewMega { get; set; }
         List<string> pokeDex = new List<string>();
@@ -51,7 +56,6 @@ namespace GenesisDex
             {
                 pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOff.PNG");
                 viewMega = false;
-
             }
             else
             {
@@ -60,32 +64,9 @@ namespace GenesisDex
             var pokeImage = pbPokemon.Image;
             int pokeH = (122 - pokeImage.Height) / 2;
             pbPokemon.Location = new Point(142, (182 + pokeH));
-            rtbInfo1.Text = string.Format(
-                "Number: {0}" + Environment.NewLine +
-                "Name: {1}" + Environment.NewLine +
-                "Type: {2}" + Environment.NewLine + Environment.NewLine +
-                "HP:\t\t{3}" + Environment.NewLine +
-                "ATK:\t\t{4}" + Environment.NewLine +
-                "DEF:\t\t{5}" + Environment.NewLine +
-                "SPATK:\t\t{6}" + Environment.NewLine +
-                "SPDEF:\t\t{7}" + Environment.NewLine +
-                "SPD:\t\t{8}" + Environment.NewLine + Environment.NewLine +
-                "Height: {9}" + Environment.NewLine +
-                "Weight: {10}" + Environment.NewLine + Environment.NewLine +
-                "Gender Ratio: {11}" + Environment.NewLine +
-                "Egg Group: {12}" + Environment.NewLine +
-                "Average Hatch Time: {13}" + Environment.NewLine + Environment.NewLine +
-                "Diet: {14}" + Environment.NewLine +
-                "Habitat: {15}",
-                pokeList[i].number, pokeList[i].id, pokeList[i].type, pokeList[i].hp, pokeList[i].atk, pokeList[i].def,
-                pokeList[i].spatk, pokeList[i].spdef, pokeList[i].spd, pokeList[i].size, pokeList[i].weight, pokeList[i].gender,
-                pokeList[i].egg, pokeList[i].hatch, pokeList[i].diet, pokeList[i].habitat);
+            page = 1;
             carryi = i;
-        }
-
-        private void cbDex_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            updatePage();
         }
         private bool dragging = false;
         private Point dragCursorPoint;
@@ -167,54 +148,14 @@ namespace GenesisDex
                     pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOffHover.PNG");
                     viewMega = false;
                     pbPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Pokemon\\" + pokeList[i].number + ".gif");
-                    rtbInfo1.Text = string.Format(
-                        "Number: {0}" + Environment.NewLine +
-                        "Name: {1}" + Environment.NewLine +
-                        "Type: {2}" + Environment.NewLine + Environment.NewLine +
-                        "HP:\t\t{3}" + Environment.NewLine +
-                        "ATK:\t\t{4}" + Environment.NewLine +
-                        "DEF:\t\t{5}" + Environment.NewLine +
-                        "SPATK:\t\t{6}" + Environment.NewLine +
-                        "SPDEF:\t\t{7}" + Environment.NewLine +
-                        "SPD:\t\t{8}" + Environment.NewLine + Environment.NewLine +
-                        "Height: {9}" + Environment.NewLine +
-                        "Weight: {10}" + Environment.NewLine + Environment.NewLine +
-                        "Gender Ratio: {11}" + Environment.NewLine +
-                        "Egg Group: {12}" + Environment.NewLine +
-                        "Average Hatch Time: {13}" + Environment.NewLine + Environment.NewLine +
-                        "Diet: {14}" + Environment.NewLine +
-                        "Habitat: {15}",
-                        pokeList[i].number, pokeList[i].id, pokeList[i].type, pokeList[i].hp, pokeList[i].atk, pokeList[i].def,
-                        pokeList[i].spatk, pokeList[i].spdef, pokeList[i].spd, pokeList[i].size, pokeList[i].weight, pokeList[i].gender,
-                        pokeList[i].egg, pokeList[i].hatch, pokeList[i].diet, pokeList[i].habitat);
+                    updatePage();
                 }
                 else
                 {
                     pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOnHover.PNG");
                     viewMega = true;
                     pbPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Pokemon\\" + pokeList[i].number + "-mega.gif");
-                    MegaList megaXML = new MegaList();
-                    megaList = megaXML.createList("Mega" + pokeList[i].number);
-                    rtbInfo1.Text = string.Format(
-                        "Number: {0}" + Environment.NewLine +
-                        "Name: {1}" + Environment.NewLine +
-                        "Type: {2}" + Environment.NewLine + Environment.NewLine +
-                        "HP:\t\t{3}" + Environment.NewLine +
-                        "ATK:\t\t{4}" + Environment.NewLine +
-                        "DEF:\t\t{5}" + Environment.NewLine +
-                        "SPATK:\t\t{6}" + Environment.NewLine +
-                        "SPDEF:\t\t{7}" + Environment.NewLine +
-                        "SPD:\t\t{8}" + Environment.NewLine + Environment.NewLine +
-                        "Height: {9}" + Environment.NewLine +
-                        "Weight: {10}" + Environment.NewLine + Environment.NewLine +
-                        "Gender Ratio: {11}" + Environment.NewLine +
-                        "Egg Group: {12}" + Environment.NewLine +
-                        "Average Hatch Time: {13}" + Environment.NewLine + Environment.NewLine +
-                        "Diet: {14}" + Environment.NewLine +
-                        "Habitat: {15}",
-                        pokeList[i].number, megaList[0].id, megaList[0].type, megaList[0].hp, megaList[0].atk, megaList[0].def,
-                        megaList[0].spatk, megaList[0].spdef, megaList[0].spd, pokeList[i].size, pokeList[i].weight, pokeList[i].gender,
-                        pokeList[i].egg, pokeList[i].hatch, pokeList[i].diet, pokeList[i].habitat);
+                    updatePage();
                 }
             }
         }
@@ -237,6 +178,125 @@ namespace GenesisDex
         private void infoForward_MouseLeave(object sender, EventArgs e)
         {
             infoForward.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoRight.PNG");
+        }
+
+        private void writeInfo()
+        {
+            int i = carryi;
+            if (viewMega == true)
+            {
+                MegaList megaXML = new MegaList();
+                megaList = megaXML.createList("Mega" + pokeList[i].number);
+                rtbInfo1.Text = string.Format(
+                    "Number: {0}" + Environment.NewLine +
+                    "Name: {1}" + Environment.NewLine +
+                    "Type: {2}" + Environment.NewLine + Environment.NewLine +
+                    "HP:\t\t{3}" + Environment.NewLine +
+                    "ATK:\t\t{4}" + Environment.NewLine +
+                    "DEF:\t\t{5}" + Environment.NewLine +
+                    "SPATK:\t\t{6}" + Environment.NewLine +
+                    "SPDEF:\t\t{7}" + Environment.NewLine +
+                    "SPD:\t\t{8}" + Environment.NewLine + Environment.NewLine +
+                    "Height: {9}" + Environment.NewLine +
+                    "Weight: {10}" + Environment.NewLine + Environment.NewLine +
+                    "Gender Ratio: {11}" + Environment.NewLine +
+                    "Egg Group: {12}" + Environment.NewLine +
+                    "Average Hatch Time: {13}" + Environment.NewLine + Environment.NewLine +
+                    "Diet: {14}" + Environment.NewLine +
+                    "Habitat: {15}",
+                    pokeList[i].number, megaList[0].id, megaList[0].type, megaList[0].hp, megaList[0].atk, megaList[0].def,
+                    megaList[0].spatk, megaList[0].spdef, megaList[0].spd, pokeList[i].size, pokeList[i].weight, pokeList[i].gender,
+                    pokeList[i].egg, pokeList[i].hatch, pokeList[i].diet, pokeList[i].habitat);
+            }
+            else
+            {
+                rtbInfo1.Text = string.Format(
+                "Number: {0}" + Environment.NewLine +
+                "Name: {1}" + Environment.NewLine +
+                "Type: {2}" + Environment.NewLine + Environment.NewLine +
+                "HP:\t\t{3}" + Environment.NewLine +
+                "ATK:\t\t{4}" + Environment.NewLine +
+                "DEF:\t\t{5}" + Environment.NewLine +
+                "SPATK:\t\t{6}" + Environment.NewLine +
+                "SPDEF:\t\t{7}" + Environment.NewLine +
+                "SPD:\t\t{8}" + Environment.NewLine + Environment.NewLine +
+                "Height: {9}" + Environment.NewLine +
+                "Weight: {10}" + Environment.NewLine + Environment.NewLine +
+                "Gender Ratio: {11}" + Environment.NewLine +
+                "Egg Group: {12}" + Environment.NewLine +
+                "Average Hatch Time: {13}" + Environment.NewLine + Environment.NewLine +
+                "Diet: {14}" + Environment.NewLine +
+                "Habitat: {15}",
+                pokeList[i].number, pokeList[i].id, pokeList[i].type, pokeList[i].hp, pokeList[i].atk, pokeList[i].def,
+                pokeList[i].spatk, pokeList[i].spdef, pokeList[i].spd, pokeList[i].size, pokeList[i].weight, pokeList[i].gender,
+                pokeList[i].egg, pokeList[i].hatch, pokeList[i].diet, pokeList[i].habitat);
+            }
+        }
+
+        private void writeStats()
+        {
+            int i = carryi;
+            CapabilityList capXML = new CapabilityList();
+            SkillList skillXML = new SkillList();
+            capList = capXML.createList(pokeList[i].number);
+            skillList = skillXML.createList(pokeList[i].number);
+            rtbInfo1.Text = ("Capabilities:" + Environment.NewLine);
+            for (var e = 0; e < capList.Count; e++)
+            {
+                rtbInfo1.Text += "-" + capList[e].cap + Environment.NewLine;
+            }
+            rtbInfo1.Text += (Environment.NewLine + "Skills:" + Environment.NewLine);
+            for (var e = 0; e < skillList.Count; e++)
+            {
+                rtbInfo1.Text += "-" + skillList[e].skill + Environment.NewLine;
+            }
+        }
+
+        private void writeMoves()
+        {
+            int i = carryi;
+            MoveList moveXML = new MoveList();
+            moveList = moveXML.createList(pokeList[i].number);
+            rtbInfo1.Text = ("Moves:" + Environment.NewLine);
+            for (var e = 0; e < moveList.Count; e++)
+            {
+                rtbInfo1.Text += "-" + moveList[e].move + Environment.NewLine;
+            }
+        }
+
+        private void writeEvo()
+        {
+            int i = carryi;
+            EvolutionList evoXML = new EvolutionList();
+            evoList = evoXML.createList(pokeList[i].number);
+            rtbInfo1.Text = ("Evolutions:" + Environment.NewLine);
+            for (var e = 0; e < evoList.Count; e++)
+            {
+                rtbInfo1.Text += "-" + evoList[e].evo + Environment.NewLine;
+            }
+        }
+
+        private void infoForward_Click(object sender, EventArgs e)
+        {
+            page += 1;
+            updatePage();
+
+        }
+
+        private void infoBack_Click(object sender, EventArgs e)
+        {
+            page -= 1;
+            updatePage();
+        }
+
+        private void updatePage()
+        {
+            if (page == 5) { page = 1; }
+            if (page == 0) { page = 4; }
+            if (page == 1) { writeInfo(); }
+            if (page == 2) { writeStats(); }
+            if (page == 3) { writeMoves(); }
+            if (page == 4) { writeEvo(); }
         }
     }
 }

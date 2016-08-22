@@ -113,6 +113,7 @@
             this.infoForward.Size = new System.Drawing.Size(33, 35);
             this.infoForward.TabIndex = 23;
             this.infoForward.TabStop = false;
+            this.infoForward.Click += new System.EventHandler(this.infoForward_Click);
             this.infoForward.MouseLeave += new System.EventHandler(this.infoForward_MouseLeave);
             this.infoForward.MouseHover += new System.EventHandler(this.infoForward_MouseHover);
             // 
@@ -125,6 +126,7 @@
             this.infoBack.Size = new System.Drawing.Size(38, 35);
             this.infoBack.TabIndex = 24;
             this.infoBack.TabStop = false;
+            this.infoBack.Click += new System.EventHandler(this.infoBack_Click);
             this.infoBack.MouseLeave += new System.EventHandler(this.infoBack_MouseLeave);
             this.infoBack.MouseHover += new System.EventHandler(this.infoBack_MouseHover);
             // 

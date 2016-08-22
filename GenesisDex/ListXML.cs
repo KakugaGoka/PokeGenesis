@@ -139,7 +139,7 @@ namespace GenesisDexEngine
             string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\Pokemon.xml");
             List<Evolution> idList = new List<Evolution>();
             XDocument doc = XDocument.Load(fileName);
-            var query = from node in doc.Descendants(decend)
+            var query = from node in doc.Descendants("List" + decend).Descendants("Evolution")
                         select new Evolution
                         {
                             evo = (string)node.Element("evo")
@@ -155,7 +155,7 @@ namespace GenesisDexEngine
             string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\Pokemon.xml");
             List<Capability> idList = new List<Capability>();
             XDocument doc = XDocument.Load(fileName);
-            var query = from node in doc.Descendants(decend)
+            var query = from node in doc.Descendants("List" + decend).Descendants("Capability")
                         select new Capability
                         {
                             cap = (string)node.Element("cap")
@@ -171,7 +171,7 @@ namespace GenesisDexEngine
             string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\Pokemon.xml");
             List<Skill> idList = new List<Skill>();
             XDocument doc = XDocument.Load(fileName);
-            var query = from node in doc.Descendants(decend)
+            var query = from node in doc.Descendants("List" + decend).Descendants("Skills")
                         select new Skill
                         {
                             skill = (string)node.Element("skill")
@@ -187,58 +187,10 @@ namespace GenesisDexEngine
             string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\Pokemon.xml");
             List<Move> idList = new List<Move>();
             XDocument doc = XDocument.Load(fileName);
-            var query = from node in doc.Descendants(decend)
+            var query = from node in doc.Descendants("List" + decend).Descendants("Moves")
                         select new Move
                         {
                             move = (string)node.Element("move")
-                        };
-            idList = query.ToList();
-            return idList;
-        }
-    }
-    class TMList
-    {
-        public List<TM> createList(string decend)
-        {
-            string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\Pokemon.xml");
-            List<TM> idList = new List<TM>();
-            XDocument doc = XDocument.Load(fileName);
-            var query = from node in doc.Descendants(decend)
-                        select new TM
-                        {
-                            tm = (string)node.Element("tm")
-                        };
-            idList = query.ToList();
-            return idList;
-        }
-    }
-    class EggList
-    {
-        public List<Egg> createList(string decend)
-        {
-            string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\Pokemon.xml");
-            List<Egg> idList = new List<Egg>();
-            XDocument doc = XDocument.Load(fileName);
-            var query = from node in doc.Descendants(decend)
-                        select new Egg
-                        {
-                            egg = (string)node.Element("egg")
-                        };
-            idList = query.ToList();
-            return idList;
-        }
-    }
-    class TutorList
-    {
-        public List<Tutor> createList(string decend)
-        {
-            string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\Pokemon.xml");
-            List<Tutor> idList = new List<Tutor>();
-            XDocument doc = XDocument.Load(fileName);
-            var query = from node in doc.Descendants(decend)
-                        select new Tutor
-                        {
-                            tut = (string)node.Element("tut")
                         };
             idList = query.ToList();
             return idList;
