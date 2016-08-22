@@ -17,7 +17,6 @@
     <hatch>10 Day</hatch>
     <diet>Herbivore, Phototroph</diet>
     <habitat>Forest, Grassland, Rainforest</habitat>
-    <!-- -->
     <List001>
       <Evolution>
         <evo>Bulbasaur</evo>
@@ -332,5 +331,112 @@
       <spd>8</spd>
       <ability>Thick Fat</ability>
     </Mega003>
+  </Pokemon>
+  <Pokemon>
+    <number>004</number>
+    <id>Squirtle</id>
+    <type>Water</type>
+    <hp>5</hp>
+    <atk>5</atk>
+    <def>5</def>
+    <spatk>7</spatk>
+    <spdef>7</spdef>
+    <spd>5</spd>
+    <size>2' 4" / 0.7m (Small)</size>
+    <weight>15.2 lbs. / 6.9kg (1)</weight>
+    <gender>87.5% M / 12.5% F</gender>
+    <egg>Monster / Plant</egg>
+    <hatch>10 Day</hatch>
+    <diet>Herbivore, Phototroph</diet>
+    <habitat>Forest, Grassland, Rainforest</habitat>
+    <List001>
+      <Evolution>
+        <evo>Bulbasaur</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Ivysaur</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Venusaur</evo>
+      </Evolution>
+      <Capability>
+        <cap>Overland 5</cap>
+      </Capability>
+      <Capability>
+        <cap>Swim 3</cap>
+      </Capability>
+      <Capability>
+        <cap>Jump 0/2</cap>
+      </Capability>
+      <Capability>
+        <cap>Power 2</cap>
+      </Capability>
+      <Capability>
+        <cap>Naturewalk (Grassland, Forest)</cap>
+      </Capability>
+      <Capability>
+        <cap>Underdog</cap>
+      </Capability>
+      <Skills>
+        <skill>Athl 3d6+2</skill>
+      </Skills>
+      <Skills>
+        <skill>Acro 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Combat 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Stealth 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Percep 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Focus 2d6+1</skill>
+      </Skills>
+      <Moves>
+        <move>Lvl 1: Tackle - Normal</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 3: Growl - Normal</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 7: Leech Seed - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 9: Vine Whip - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 13: Poison Powder - Poison</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 13: Sleep Powder - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 15: Take Down - Normal</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 19: Razor Leaf - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 21: Sweet Scent - Normal</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 25: Growth - Normal</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 27: Double-Edge - Normal</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 31: Worry Seed - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 33: Synthesis - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 37: Seed Bomb - Grass</move>
+      </Moves>
+     </List001>
   </Pokemon>
 </Namespace>
