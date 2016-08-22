@@ -26,7 +26,9 @@ namespace GenesisDex
         int carryi { get; set; }
         int page { get; set; }
         bool mega { get; set; }
+        bool megax { get; set; }
         bool viewMega { get; set; }
+        bool onMegaX { get; set; }
         List<string> pokeDex = new List<string>();
         System.Timers.Timer clickWait = new System.Timers.Timer();
 
@@ -57,10 +59,16 @@ namespace GenesisDex
                 pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOff.PNG");
                 viewMega = false;
             }
+            else if (megax == true)
+            {
+                pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOff.PNG");
+                viewMega = false;
+            }
             else
             {
                 pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaNo.PNG"); ;
             }
+            megax = File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Pokemon\\" + pokeList[i].number + "-mega-x.gif");
             var pokeImage = pbPokemon.Image;
             int pokeH = (122 - pokeImage.Height) / 2;
             pbPokemon.Location = new Point(142, (182 + pokeH));
@@ -157,6 +165,39 @@ namespace GenesisDex
                     pbPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Pokemon\\" + pokeList[i].number + "-mega.gif");
                     updatePage();
                 }
+            }
+            else if (megax == true)
+            {
+                if (viewMega == true)
+                {
+                    pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOffHover.PNG");
+                    viewMega = false;
+                    pbPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Pokemon\\" + pokeList[i].number + ".gif");
+                    updatePage();
+                }
+                else
+                {
+                    pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOnHover.PNG");
+                    viewMega = true;
+                    onMegaX = false;
+                    changeMega();
+                    updatePage();
+                }
+            }
+        }
+
+        private void changeMega()
+        {
+            int i = carryi;
+            if (onMegaX == false)
+            {
+                onMegaX = true;
+                pbPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Pokemon\\" + pokeList[i].number + "-mega-x.gif");
+            }
+            if (onMegaX == true)
+            {
+                onMegaX = false; 
+                pbPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Pokemon\\" + pokeList[i].number + "-mega-y.gif");
             }
         }
 
