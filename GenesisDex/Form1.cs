@@ -224,9 +224,60 @@ namespace GenesisDex
         private void writeInfo()
         {
             int i = carryi;
+            MegaList megaXML = new MegaList();
             if (viewMega == true)
             {
-                MegaList megaXML = new MegaList();
+                if (megax == true)
+                {
+                    if (onMegaX == true)
+                    {
+                        megaList = megaXML.createList("MegaX" + pokeList[i].number);
+                        rtbInfo1.Text = string.Format(
+                            "Number: {0}" + Environment.NewLine +
+                            "Name: {1}" + Environment.NewLine +
+                            "Type: {2}" + Environment.NewLine + Environment.NewLine +
+                            "HP:\t\t{3}" + Environment.NewLine +
+                            "ATK:\t\t{4}" + Environment.NewLine +
+                            "DEF:\t\t{5}" + Environment.NewLine +
+                            "SPATK:\t\t{6}" + Environment.NewLine +
+                            "SPDEF:\t\t{7}" + Environment.NewLine +
+                            "SPD:\t\t{8}" + Environment.NewLine + Environment.NewLine +
+                            "Height: {9}" + Environment.NewLine +
+                            "Weight: {10}" + Environment.NewLine + Environment.NewLine +
+                            "Gender Ratio: {11}" + Environment.NewLine +
+                            "Egg Group: {12}" + Environment.NewLine +
+                            "Average Hatch Time: {13}" + Environment.NewLine + Environment.NewLine +
+                            "Diet: {14}" + Environment.NewLine +
+                            "Habitat: {15}",
+                            pokeList[i].number, megaList[0].id, megaList[0].type, megaList[0].hp, megaList[0].atk, megaList[0].def,
+                            megaList[0].spatk, megaList[0].spdef, megaList[0].spd, pokeList[i].size, pokeList[i].weight, pokeList[i].gender,
+                            pokeList[i].egg, pokeList[i].hatch, pokeList[i].diet, pokeList[i].habitat);
+                    }
+                    else
+                    {
+                        megaList = megaXML.createList("MegaY" + pokeList[i].number);
+                        rtbInfo1.Text = string.Format(
+                            "Number: {0}" + Environment.NewLine +
+                            "Name: {1}" + Environment.NewLine +
+                            "Type: {2}" + Environment.NewLine + Environment.NewLine +
+                            "HP:\t\t{3}" + Environment.NewLine +
+                            "ATK:\t\t{4}" + Environment.NewLine +
+                            "DEF:\t\t{5}" + Environment.NewLine +
+                            "SPATK:\t\t{6}" + Environment.NewLine +
+                            "SPDEF:\t\t{7}" + Environment.NewLine +
+                            "SPD:\t\t{8}" + Environment.NewLine + Environment.NewLine +
+                            "Height: {9}" + Environment.NewLine +
+                            "Weight: {10}" + Environment.NewLine + Environment.NewLine +
+                            "Gender Ratio: {11}" + Environment.NewLine +
+                            "Egg Group: {12}" + Environment.NewLine +
+                            "Average Hatch Time: {13}" + Environment.NewLine + Environment.NewLine +
+                            "Diet: {14}" + Environment.NewLine +
+                            "Habitat: {15}",
+                            pokeList[i].number, megaList[0].id, megaList[0].type, megaList[0].hp, megaList[0].atk, megaList[0].def,
+                            megaList[0].spatk, megaList[0].spdef, megaList[0].spd, pokeList[i].size, pokeList[i].weight, pokeList[i].gender,
+                            pokeList[i].egg, pokeList[i].hatch, pokeList[i].diet, pokeList[i].habitat);
+                    }
+                }
                 megaList = megaXML.createList("Mega" + pokeList[i].number);
                 rtbInfo1.Text = string.Format(
                     "Number: {0}" + Environment.NewLine +
