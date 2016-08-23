@@ -516,25 +516,28 @@ namespace GenesisDex
                 abiList[2].ability, abiList[3].ability,
                 abiList[4].ability);
             MegaList megaAbility = new MegaList();
-            if (mega == true)
+            if (viewMega == true)
             {
-                megaList = megaAbility.createList("Mega" + pokeList[i].number);
-                rtbInfo1.Text += string.Format(Environment.NewLine + Environment.NewLine + "Mega Ability:" + Environment.NewLine +
-                    "-" + megaList[0].ability);
-            }
-            else if (megax == true)
-            {
-                if (onMegaX == true)
+                if (mega == true)
                 {
-                    megaList = megaAbility.createList("MegaX" + pokeList[i].number);
-                    rtbInfo1.Text += string.Format(Environment.NewLine + "Mega Ability Y:" + Environment.NewLine +
+                    megaList = megaAbility.createList("Mega" + pokeList[i].number);
+                    rtbInfo1.Text += string.Format(Environment.NewLine + Environment.NewLine + "Mega Ability:" + Environment.NewLine +
                         "-" + megaList[0].ability);
                 }
-                else
+                else if (megax == true)
                 {
-                    megaList = megaAbility.createList("MegaY" + pokeList[i].number);
-                    rtbInfo1.Text += string.Format(Environment.NewLine + "Mega Ability X:" + Environment.NewLine +
-                        "-" + megaList[0].ability);
+                    if (onMegaX == true)
+                    {
+                        megaList = megaAbility.createList("MegaX" + pokeList[i].number);
+                        rtbInfo1.Text += string.Format(Environment.NewLine + "Mega Ability Y:" + Environment.NewLine +
+                            "-" + megaList[0].ability);
+                    }
+                    else
+                    {
+                        megaList = megaAbility.createList("MegaY" + pokeList[i].number);
+                        rtbInfo1.Text += string.Format(Environment.NewLine + "Mega Ability X:" + Environment.NewLine +
+                            "-" + megaList[0].ability);
+                    }
                 }
             }
         }
@@ -597,9 +600,37 @@ namespace GenesisDex
         }
         private void pbPokeLeft_Click(object sender, EventArgs e)
         {
-            if (imageDisplayed == 0) { imageDisplayed = pokeImages.Count - 1; }
-            else { imageDisplayed -= 1; }
-            pbPokemon.Image = pokeImages[imageDisplayed];
+            if (viewMega == true)
+            {
+                if (megax == false)
+                {
+                    if (imageDisplayed == 0) { imageDisplayed = pokeImages.Count - 1; }
+                    else { imageDisplayed -= 1; }
+                    pbPokemon.Image = megaImages[imageDisplayed];
+                }
+                else
+                {
+                    if (onMegaX == true)
+                    {
+                        if (imageDisplayed == 0) { imageDisplayed = pokeImages.Count - 1; }
+                        else { imageDisplayed -= 1; }
+                        pbPokemon.Image = megaxImages[imageDisplayed];
+                    }
+                    else
+                    {
+                        if (imageDisplayed == 0) { imageDisplayed = pokeImages.Count - 1; }
+                        else { imageDisplayed -= 1; }
+                        pbPokemon.Image = megayImages[imageDisplayed];
+                    }
+                }
+            }
+            else
+            {
+                if (imageDisplayed == 0) { imageDisplayed = pokeImages.Count - 1; }
+                else { imageDisplayed -= 1; }
+                pbPokemon.Image = pokeImages[imageDisplayed];
+            }
+
         }
     }
 }
