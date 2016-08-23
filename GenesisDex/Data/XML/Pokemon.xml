@@ -377,4 +377,151 @@
       <ability>Thick Fat</ability>
     </Mega003>
   </Pokemon>
+  <Pokemon>
+    <number>006</number>
+    <id>Charizard</id>
+    <type>Grass/Poison</type>
+    <hp>8</hp>
+    <atk>8</atk>
+    <def>8</def>
+    <spatk>10</spatk>
+    <spdef>10</spdef>
+    <spd>8</spd>
+    <size>6' 7" / 2m (Large)</size>
+    <weight>220.5 lbs. / 100kg (5)</weight>
+    <gender>87.5% M / 12.5% F</gender>
+    <egg>Monster / Plant</egg>
+    <hatch>n/a</hatch>
+    <diet>Omnivore, Phototroph</diet>
+    <habitat>Forest, Grassland, Rainforest</habitat>
+    <List006>
+      <Evolution>
+        <evo>Bulbasaur</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Ivysaur</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Venusaur</evo>
+      </Evolution>
+      <Ability>
+        <ability>Confidence</ability>
+      </Ability>
+      <Ability>
+        <ability>Photosynthesis</ability>
+      </Ability>
+      <Ability>
+        <ability>Chlorophyll</ability>
+      </Ability>
+      <Ability>
+        <ability>Aroma Veil</ability>
+      </Ability>
+      <Ability>
+        <ability>Courage</ability>
+      </Ability>
+      <Capability>
+        <cap>Overland 6</cap>
+      </Capability>
+      <Capability>
+        <cap>Swim 4</cap>
+      </Capability>
+      <Capability>
+        <cap>Jump 2/2</cap>
+      </Capability>
+      <Capability>
+        <cap>Power 8</cap>
+      </Capability>
+      <Capability>
+        <cap>Naturewalk (Grassland, Forest)</cap>
+      </Capability>
+      <Capability>
+        <cap>Alluring (only in Rain)</cap>
+      </Capability>
+      <Skills>
+        <skill>Athl 5d6+3</skill>
+      </Skills>
+      <Skills>
+        <skill>Acro 1d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Combat 4d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Stealth 1d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Percep 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Focus 5d6+3</skill>
+      </Skills>
+      <Moves>
+        <move>Lvl 3: Growl - Normal</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 7: Leech Seed - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 9: Vine Whip - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 13: Poison Powder - Poison</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 13: Sleep Powder - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 15: Take Down - Normal</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 20: Razor Leaf - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 23: Sweet Scent - Normal</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 28: Growth - Normal</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 31: Double-Edge - Normal</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 32: Petal Dance - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 39: Worry Seed - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 45: Synthesis - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 50: Petal Blizzard - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 53: Solar Beam - Grass</move>
+      </Moves>
+    </List006>
+    <MegaX006>
+      <id>Mega Charizard X</id>
+      <type>Grass/Poison</type>
+      <hp>8</hp>
+      <atk>10</atk>
+      <def>12</def>
+      <spatk>12</spatk>
+      <spdef>12</spdef>
+      <spd>999</spd>
+      <ability>X</ability>
+    </MegaX006>
+    <MegaY006>
+       <id>Mega Charizard Y</id>
+      <type>Grass/Poison</type>
+      <hp>999</hp>
+      <atk>10</atk>
+      <def>12</def>
+      <spatk>12</spatk>
+      <spdef>12</spdef>
+      <spd>8</spd>
+      <ability>Y</ability>
+    </MegaY006>
+  </Pokemon>
 </Namespace>

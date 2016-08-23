@@ -38,6 +38,8 @@
             this.infoBack = new System.Windows.Forms.PictureBox();
             this.pbPokeLeft = new System.Windows.Forms.PictureBox();
             this.pbPokeRight = new System.Windows.Forms.PictureBox();
+            this.pbX = new System.Windows.Forms.PictureBox();
+            this.pbY = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMega)).BeginInit();
@@ -45,14 +47,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.infoBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokeLeft)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokeRight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbX)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbY)).BeginInit();
             this.SuspendLayout();
             // 
             // pbPokemon
             // 
             this.pbPokemon.BackColor = System.Drawing.Color.Transparent;
-            this.pbPokemon.Location = new System.Drawing.Point(114, 182);
+            this.pbPokemon.Location = new System.Drawing.Point(114, 172);
             this.pbPokemon.Name = "pbPokemon";
-            this.pbPokemon.Size = new System.Drawing.Size(175, 122);
+            this.pbPokemon.Size = new System.Drawing.Size(175, 131);
             this.pbPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbPokemon.TabIndex = 0;
             this.pbPokemon.TabStop = false;
@@ -154,6 +158,26 @@
             this.pbPokeRight.TabStop = false;
             this.pbPokeRight.Click += new System.EventHandler(this.pbPokeRight_Click);
             // 
+            // pbX
+            // 
+            this.pbX.BackColor = System.Drawing.Color.Transparent;
+            this.pbX.Location = new System.Drawing.Point(55, 182);
+            this.pbX.Name = "pbX";
+            this.pbX.Size = new System.Drawing.Size(54, 50);
+            this.pbX.TabIndex = 27;
+            this.pbX.TabStop = false;
+            this.pbX.Click += new System.EventHandler(this.pbX_Click);
+            // 
+            // pbY
+            // 
+            this.pbY.BackColor = System.Drawing.Color.Transparent;
+            this.pbY.Location = new System.Drawing.Point(294, 182);
+            this.pbY.Name = "pbY";
+            this.pbY.Size = new System.Drawing.Size(54, 50);
+            this.pbY.TabIndex = 28;
+            this.pbY.TabStop = false;
+            this.pbY.Click += new System.EventHandler(this.pbY_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -161,6 +185,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(822, 616);
+            this.Controls.Add(this.pbY);
+            this.Controls.Add(this.pbX);
             this.Controls.Add(this.pbPokeRight);
             this.Controls.Add(this.pbPokeLeft);
             this.Controls.Add(this.infoBack);
@@ -185,6 +211,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.infoBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokeLeft)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokeRight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbX)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbY)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -200,6 +228,8 @@
         private System.Windows.Forms.PictureBox infoBack;
         private System.Windows.Forms.PictureBox pbPokeLeft;
         private System.Windows.Forms.PictureBox pbPokeRight;
+        private System.Windows.Forms.PictureBox pbX;
+        private System.Windows.Forms.PictureBox pbY;
     }
 }
 
