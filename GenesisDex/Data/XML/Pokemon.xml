@@ -27,6 +27,21 @@
       <Evolution>
         <evo>Venusaur</evo>
       </Evolution>
+      <Ability>
+        <ability>Confidence</ability>
+      </Ability>
+      <Ability>
+        <ability>Photosynthesis</ability>
+      </Ability>
+      <Ability>
+        <ability>Chlorophyll</ability>
+      </Ability>
+      <Ability>
+        <ability>Leaf Gaurd</ability>
+      </Ability>
+      <Ability>
+        <ability>Courage</ability>
+      </Ability>
       <Capability>
         <cap>Overland 5</cap>
       </Capability>
@@ -134,6 +149,21 @@
         <Evolution>
           <evo>Venusaur</evo>
         </Evolution>
+        <Ability>
+          <ability>Confidence</ability>
+        </Ability>
+        <Ability>
+          <ability>Photosynthesis</ability>
+        </Ability>
+        <Ability>
+          <ability>Chlorophyll</ability>
+        </Ability>
+        <Ability>
+          <ability>Leaf Gaurd</ability>
+        </Ability>
+        <Ability>
+          <ability>Courage</ability>
+        </Ability>
         <Capability>
           <cap>Overland 6</cap>
         </Capability>
@@ -238,6 +268,21 @@
       <Evolution>
         <evo>Venusaur</evo>
       </Evolution>
+      <Ability>
+        <ability>Confidence</ability>
+      </Ability>
+      <Ability>
+        <ability>Photosynthesis</ability>
+      </Ability>
+      <Ability>
+        <ability>Chlorophyll</ability>
+      </Ability>
+      <Ability>
+        <ability>Aroma Veil</ability>
+      </Ability>
+      <Ability>
+        <ability>Courage</ability>
+      </Ability>
       <Capability>
         <cap>Overland 6</cap>
       </Capability>

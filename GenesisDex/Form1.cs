@@ -23,10 +23,20 @@ namespace GenesisDex
         List<Skill> skillList = new List<Skill>();
         List<Capability> capList = new List<Capability>();
         List<Move> moveList = new List<Move>();
+        List<Ability> abiList = new List<Ability>();
+        List<Image> pokeImages = new List<Image>();
+        List<Image> megaImages = new List<Image>();
+        List<Image> megaxImages = new List<Image>();
+        List<Image> megayImages = new List<Image>();
         int carryi { get; set; }
-        int page { get; set; }
+        int page = 1;
+        int imageDisplayed = 0;
         bool mega { get; set; }
+        bool megax { get; set; }
         bool viewMega { get; set; }
+        bool onMegaX { get; set; }
+        bool pokeChange { get; set; }
+        bool done = false;
         List<string> pokeDex = new List<string>();
         System.Timers.Timer clickWait = new System.Timers.Timer();
 
@@ -35,6 +45,8 @@ namespace GenesisDex
             InitializeComponent();
             PokemonList pokeXML = new PokemonList();
             this.BackgroundImage = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MainMenu.PNG");
+            pbPokeLeft.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonLeft.gif");
+            pbPokeRight.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRight.gif");
             pokeList = pokeXML.createList("Pokemon");
             for (var i = 0; i < pokeList.Count; i++)
             {
@@ -50,21 +62,153 @@ namespace GenesisDex
             {
                 if (lbPokemon.Text == pokeList[i].id.ToString()) { break; }
             }
-            pbPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Pokemon\\" + pokeList[i].number + ".gif");
-            mega = File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Pokemon\\" + pokeList[i].number + "-mega.gif");
+            pbPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + ".gif");
+            mega = File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega.gif");
             if (mega == true)
+            {
+                pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOff.PNG");
+                viewMega = false;
+            }
+            else if (megax == true)
             {
                 pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOff.PNG");
                 viewMega = false;
             }
             else
             {
-                pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaNo.PNG"); ;
+                pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaNo.PNG");
+                
             }
-            var pokeImage = pbPokemon.Image;
-            int pokeH = (122 - pokeImage.Height) / 2;
-            pbPokemon.Location = new Point(142, (182 + pokeH));
-            page = 1;
+            megax = File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega-x.gif");
+            var pokePic = pbPokemon.Image;
+            int pokeH = (122 - pokePic.Height) / 2;
+            pbPokemon.Location = new Point(114, (182 + pokeH));
+            pokeImages.Clear();
+            megaImages.Clear();
+            megaxImages.Clear();
+            megayImages.Clear();
+            pokeImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + ".gif"));
+            int n = 0;
+            while (done == false)
+            {
+                n++;
+                if(File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-" + n + ".gif"))
+                {
+                    pokeImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-" + n + ".gif"));
+                }
+                else
+                {
+                    done = true;
+                }
+            }
+            pokeImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + ".gif"));
+            n = 0;
+            done = false;
+            while (done == false)
+            {
+                n++;
+                if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-" + n + ".gif"))
+                {
+                    pokeImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-" + n + ".gif"));
+                }
+                else
+                {
+                    done = true;
+                }
+            }
+            if (mega == true)
+            {
+                megaImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega.gif"));
+                done = false;
+                while (done == false)
+                {
+                    n++;
+                    if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega-" + n + ".gif"))
+                    {
+                        megaImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega-" + n + ".gif"));
+                    }
+                    else
+                    {
+                        done = true;
+                    }
+                }
+                megaImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-mega.gif"));
+                n = 0;
+                done = false;
+                while (done == false)
+                {
+                    n++;
+                    if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-mega-" + n + ".gif"))
+                    {
+                        megaImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-mega-" + n + ".gif"));
+                    }
+                    else
+                    {
+                        done = true;
+                    }
+                }
+            }
+            if (megax == true)
+            {
+                megaxImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega-x.gif"));
+                megayImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega-y.gif"));
+                done = false;
+                while (done == false)
+                {
+                    n++;
+                    if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega-x-" + n + ".gif"))
+                    {
+                        megaxImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega-x-" + n + ".gif"));
+                    }
+                    else
+                    {
+                        done = true;
+                    }
+                }
+                done = false;
+                while (done == false)
+                {
+                    n++;
+                    if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega-y-" + n + ".gif"))
+                    {
+                        megayImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega-y-" + n + ".gif"));
+                    }
+                    else
+                    {
+                        done = true;
+                    }
+                }
+                megaxImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-mega-x.gif"));
+                megayImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-mega-y.gif"));
+                n = 0;
+                done = false;
+                while (done == false)
+                {
+                    n++;
+                    if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-mega-x-" + n + ".gif"))
+                    {
+                        megaxImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-mega-x-" + n + ".gif"));
+                    }
+                    else
+                    {
+                        done = true;
+                    }
+                }
+                done = false;
+                while (done == false)
+                {
+                    n++;
+                    if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-mega-y-" + n + ".gif"))
+                    {
+                        megayImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-mega-y-" + n + ".gif"));
+                    }
+                    else
+                    {
+                        done = true;
+                    }
+                }
+            }
+            viewMega = false;
             carryi = i;
             updatePage();
         }
@@ -147,16 +291,49 @@ namespace GenesisDex
                 {
                     pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOffHover.PNG");
                     viewMega = false;
-                    pbPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Pokemon\\" + pokeList[i].number + ".gif");
+                    pbPokemon.Image = pokeImages[0];
                     updatePage();
                 }
                 else
                 {
                     pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOnHover.PNG");
                     viewMega = true;
-                    pbPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Pokemon\\" + pokeList[i].number + "-mega.gif");
+                    pbPokemon.Image = megaImages[0];
                     updatePage();
                 }
+            }
+            else if (megax == true)
+            {
+                if (viewMega == true)
+                {
+                    pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOffHover.PNG");
+                    viewMega = false;
+                    pbPokemon.Image = pokeImages[0];
+                    updatePage();
+                }
+                else
+                {
+                    pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOnHover.PNG");
+                    viewMega = true;
+                    onMegaX = false;
+                    changeMega();
+                    updatePage();
+                }
+            }
+        }
+
+        private void changeMega()
+        {
+            int i = carryi;
+            if (onMegaX == false)
+            {
+                onMegaX = true;
+                pbPokemon.Image = megaxImages[0];
+            }
+            if (onMegaX == true)
+            {
+                onMegaX = false;
+                pbPokemon.Image = megayImages[0];
             }
         }
 
@@ -183,9 +360,60 @@ namespace GenesisDex
         private void writeInfo()
         {
             int i = carryi;
+            MegaList megaXML = new MegaList();
             if (viewMega == true)
             {
-                MegaList megaXML = new MegaList();
+                if (megax == true)
+                {
+                    if (onMegaX == true)
+                    {
+                        megaList = megaXML.createList("MegaX" + pokeList[i].number);
+                        rtbInfo1.Text = string.Format(
+                            "Number: {0}" + Environment.NewLine +
+                            "Name: {1}" + Environment.NewLine +
+                            "Type: {2}" + Environment.NewLine + Environment.NewLine +
+                            "HP:\t\t{3}" + Environment.NewLine +
+                            "ATK:\t\t{4}" + Environment.NewLine +
+                            "DEF:\t\t{5}" + Environment.NewLine +
+                            "SPATK:\t\t{6}" + Environment.NewLine +
+                            "SPDEF:\t\t{7}" + Environment.NewLine +
+                            "SPD:\t\t{8}" + Environment.NewLine + Environment.NewLine +
+                            "Height: {9}" + Environment.NewLine +
+                            "Weight: {10}" + Environment.NewLine + Environment.NewLine +
+                            "Gender Ratio: {11}" + Environment.NewLine +
+                            "Egg Group: {12}" + Environment.NewLine +
+                            "Average Hatch Time: {13}" + Environment.NewLine + Environment.NewLine +
+                            "Diet: {14}" + Environment.NewLine +
+                            "Habitat: {15}",
+                            pokeList[i].number, megaList[0].id, megaList[0].type, megaList[0].hp, megaList[0].atk, megaList[0].def,
+                            megaList[0].spatk, megaList[0].spdef, megaList[0].spd, pokeList[i].size, pokeList[i].weight, pokeList[i].gender,
+                            pokeList[i].egg, pokeList[i].hatch, pokeList[i].diet, pokeList[i].habitat);
+                    }
+                    else
+                    {
+                        megaList = megaXML.createList("MegaY" + pokeList[i].number);
+                        rtbInfo1.Text = string.Format(
+                            "Number: {0}" + Environment.NewLine +
+                            "Name: {1}" + Environment.NewLine +
+                            "Type: {2}" + Environment.NewLine + Environment.NewLine +
+                            "HP:\t\t{3}" + Environment.NewLine +
+                            "ATK:\t\t{4}" + Environment.NewLine +
+                            "DEF:\t\t{5}" + Environment.NewLine +
+                            "SPATK:\t\t{6}" + Environment.NewLine +
+                            "SPDEF:\t\t{7}" + Environment.NewLine +
+                            "SPD:\t\t{8}" + Environment.NewLine + Environment.NewLine +
+                            "Height: {9}" + Environment.NewLine +
+                            "Weight: {10}" + Environment.NewLine + Environment.NewLine +
+                            "Gender Ratio: {11}" + Environment.NewLine +
+                            "Egg Group: {12}" + Environment.NewLine +
+                            "Average Hatch Time: {13}" + Environment.NewLine + Environment.NewLine +
+                            "Diet: {14}" + Environment.NewLine +
+                            "Habitat: {15}",
+                            pokeList[i].number, megaList[0].id, megaList[0].type, megaList[0].hp, megaList[0].atk, megaList[0].def,
+                            megaList[0].spatk, megaList[0].spdef, megaList[0].spd, pokeList[i].size, pokeList[i].weight, pokeList[i].gender,
+                            pokeList[i].egg, pokeList[i].hatch, pokeList[i].diet, pokeList[i].habitat);
+                    }
+                }
                 megaList = megaXML.createList("Mega" + pokeList[i].number);
                 rtbInfo1.Text = string.Format(
                     "Number: {0}" + Environment.NewLine +
@@ -274,6 +502,41 @@ namespace GenesisDex
             {
                 rtbInfo1.Text += "-" + evoList[e].evo + Environment.NewLine;
             }
+            AbilityList abiXML = new AbilityList();
+            abiList = abiXML.createList(pokeList[i].number);
+            rtbInfo1.Text += string.Format(Environment.NewLine + "Basic Abilities:" + Environment.NewLine +
+                "-{0}" + Environment.NewLine + 
+                "-{1}" + Environment.NewLine + Environment.NewLine +
+                "Advanced Abilities:" + Environment.NewLine +
+                "-{2}" + Environment.NewLine + 
+                "-{3}" + Environment.NewLine + Environment.NewLine +
+                "High Ability:" + Environment.NewLine +
+                "-{4}", 
+                abiList[0].ability, abiList[1].ability,
+                abiList[2].ability, abiList[3].ability,
+                abiList[4].ability);
+            MegaList megaAbility = new MegaList();
+            if (mega == true)
+            {
+                megaList = megaAbility.createList("Mega" + pokeList[i].number);
+                rtbInfo1.Text += string.Format(Environment.NewLine + Environment.NewLine + "Mega Ability:" + Environment.NewLine +
+                    "-" + megaList[0].ability);
+            }
+            else if (megax == true)
+            {
+                if (onMegaX == true)
+                {
+                    megaList = megaAbility.createList("MegaX" + pokeList[i].number);
+                    rtbInfo1.Text += string.Format(Environment.NewLine + "Mega Ability Y:" + Environment.NewLine +
+                        "-" + megaList[0].ability);
+                }
+                else
+                {
+                    megaList = megaAbility.createList("MegaY" + pokeList[i].number);
+                    rtbInfo1.Text += string.Format(Environment.NewLine + "Mega Ability X:" + Environment.NewLine +
+                        "-" + megaList[0].ability);
+                }
+            }
         }
 
         private void infoForward_Click(object sender, EventArgs e)
@@ -297,6 +560,46 @@ namespace GenesisDex
             if (page == 2) { writeStats(); }
             if (page == 3) { writeMoves(); }
             if (page == 4) { writeEvo(); }
+        }
+
+        private void pbPokeRight_Click(object sender, EventArgs e)
+        {
+            if (viewMega == true)
+            {
+                if (megax == false)
+                {
+                    imageDisplayed += 1;
+                    if (imageDisplayed >= pokeImages.Count) { imageDisplayed = 0; }
+                    pbPokemon.Image = megaImages[imageDisplayed];
+                }
+                else
+                {
+                    if (onMegaX == true)
+                    {
+                        imageDisplayed += 1;
+                        if (imageDisplayed >= pokeImages.Count) { imageDisplayed = 0; }
+                        pbPokemon.Image = megaxImages[imageDisplayed];
+                    }
+                    else
+                    {
+                        imageDisplayed += 1;
+                        if (imageDisplayed >= pokeImages.Count) { imageDisplayed = 0; }
+                        pbPokemon.Image = megayImages[imageDisplayed];
+                    }
+                }
+            }
+            else
+            {
+                imageDisplayed += 1;
+                if (imageDisplayed >= pokeImages.Count) { imageDisplayed = 0; }
+                pbPokemon.Image = pokeImages[imageDisplayed];
+            }
+        }
+        private void pbPokeLeft_Click(object sender, EventArgs e)
+        {
+            if (imageDisplayed == 0) { imageDisplayed = pokeImages.Count - 1; }
+            else { imageDisplayed -= 1; }
+            pbPokemon.Image = pokeImages[imageDisplayed];
         }
     }
 }

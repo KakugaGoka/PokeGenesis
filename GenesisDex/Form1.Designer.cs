@@ -36,19 +36,23 @@
             this.rtbInfo1 = new System.Windows.Forms.RichTextBox();
             this.infoForward = new System.Windows.Forms.PictureBox();
             this.infoBack = new System.Windows.Forms.PictureBox();
+            this.pbPokeLeft = new System.Windows.Forms.PictureBox();
+            this.pbPokeRight = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMega)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoForward)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoBack)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPokeLeft)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPokeRight)).BeginInit();
             this.SuspendLayout();
             // 
             // pbPokemon
             // 
             this.pbPokemon.BackColor = System.Drawing.Color.Transparent;
-            this.pbPokemon.Location = new System.Drawing.Point(142, 182);
+            this.pbPokemon.Location = new System.Drawing.Point(114, 182);
             this.pbPokemon.Name = "pbPokemon";
-            this.pbPokemon.Size = new System.Drawing.Size(122, 122);
+            this.pbPokemon.Size = new System.Drawing.Size(175, 122);
             this.pbPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbPokemon.TabIndex = 0;
             this.pbPokemon.TabStop = false;
@@ -130,6 +134,26 @@
             this.infoBack.MouseLeave += new System.EventHandler(this.infoBack_MouseLeave);
             this.infoBack.MouseHover += new System.EventHandler(this.infoBack_MouseHover);
             // 
+            // pbPokeLeft
+            // 
+            this.pbPokeLeft.BackColor = System.Drawing.Color.Transparent;
+            this.pbPokeLeft.Location = new System.Drawing.Point(55, 254);
+            this.pbPokeLeft.Name = "pbPokeLeft";
+            this.pbPokeLeft.Size = new System.Drawing.Size(54, 50);
+            this.pbPokeLeft.TabIndex = 25;
+            this.pbPokeLeft.TabStop = false;
+            this.pbPokeLeft.Click += new System.EventHandler(this.pbPokeLeft_Click);
+            // 
+            // pbPokeRight
+            // 
+            this.pbPokeRight.BackColor = System.Drawing.Color.Transparent;
+            this.pbPokeRight.Location = new System.Drawing.Point(294, 254);
+            this.pbPokeRight.Name = "pbPokeRight";
+            this.pbPokeRight.Size = new System.Drawing.Size(54, 50);
+            this.pbPokeRight.TabIndex = 26;
+            this.pbPokeRight.TabStop = false;
+            this.pbPokeRight.Click += new System.EventHandler(this.pbPokeRight_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -137,6 +161,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(822, 616);
+            this.Controls.Add(this.pbPokeRight);
+            this.Controls.Add(this.pbPokeLeft);
             this.Controls.Add(this.infoBack);
             this.Controls.Add(this.infoForward);
             this.Controls.Add(this.rtbInfo1);
@@ -157,6 +183,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbMega)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoForward)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoBack)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPokeLeft)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPokeRight)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -170,6 +198,8 @@
         private System.Windows.Forms.RichTextBox rtbInfo1;
         private System.Windows.Forms.PictureBox infoForward;
         private System.Windows.Forms.PictureBox infoBack;
+        private System.Windows.Forms.PictureBox pbPokeLeft;
+        private System.Windows.Forms.PictureBox pbPokeRight;
     }
 }
 
