@@ -83,9 +83,9 @@
             this.lbPokemon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.lbPokemon.FormattingEnabled = true;
             this.lbPokemon.ItemHeight = 18;
-            this.lbPokemon.Location = new System.Drawing.Point(23, 382);
+            this.lbPokemon.Location = new System.Drawing.Point(23, 375);
             this.lbPokemon.Name = "lbPokemon";
-            this.lbPokemon.Size = new System.Drawing.Size(360, 184);
+            this.lbPokemon.Size = new System.Drawing.Size(360, 166);
             this.lbPokemon.TabIndex = 16;
             this.lbPokemon.SelectedIndexChanged += new System.EventHandler(this.lbPokemon_SelectedIndexChanged);
             // 
@@ -107,7 +107,7 @@
             this.rtbInfo1.BackColor = System.Drawing.Color.Black;
             this.rtbInfo1.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbInfo1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.rtbInfo1.Location = new System.Drawing.Point(476, 182);
+            this.rtbInfo1.Location = new System.Drawing.Point(468, 158);
             this.rtbInfo1.Name = "rtbInfo1";
             this.rtbInfo1.ReadOnly = true;
             this.rtbInfo1.Size = new System.Drawing.Size(294, 387);
@@ -118,7 +118,7 @@
             // 
             this.infoForward.BackColor = System.Drawing.Color.Transparent;
             this.infoForward.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("infoForward.BackgroundImage")));
-            this.infoForward.Location = new System.Drawing.Point(520, 137);
+            this.infoForward.Location = new System.Drawing.Point(729, 551);
             this.infoForward.Name = "infoForward";
             this.infoForward.Size = new System.Drawing.Size(33, 35);
             this.infoForward.TabIndex = 23;
@@ -131,7 +131,7 @@
             // 
             this.infoBack.BackColor = System.Drawing.Color.Transparent;
             this.infoBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("infoBack.BackgroundImage")));
-            this.infoBack.Location = new System.Drawing.Point(480, 137);
+            this.infoBack.Location = new System.Drawing.Point(468, 551);
             this.infoBack.Name = "infoBack";
             this.infoBack.Size = new System.Drawing.Size(38, 35);
             this.infoBack.TabIndex = 24;
@@ -183,13 +183,14 @@
             // pbPokeAdd
             // 
             this.pbPokeAdd.BackColor = System.Drawing.Color.Transparent;
-            this.pbPokeAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbPokeAdd.BackgroundImage")));
-            this.pbPokeAdd.Location = new System.Drawing.Point(97, 12);
+            this.pbPokeAdd.Location = new System.Drawing.Point(226, 102);
             this.pbPokeAdd.Name = "pbPokeAdd";
-            this.pbPokeAdd.Size = new System.Drawing.Size(24, 23);
+            this.pbPokeAdd.Size = new System.Drawing.Size(157, 33);
             this.pbPokeAdd.TabIndex = 29;
             this.pbPokeAdd.TabStop = false;
             this.pbPokeAdd.Click += new System.EventHandler(this.pbPokeAdd_Click);
+            this.pbPokeAdd.MouseLeave += new System.EventHandler(this.pbPokeAdd_MouseLeave);
+            this.pbPokeAdd.MouseHover += new System.EventHandler(this.pbPokeAdd_MouseHover);
             // 
             // FormMain
             // 

@@ -117,6 +117,7 @@ namespace GenesisDex
                     doc.Root.Add(mega);
                 }
             }
+            doc.Descendants().Where(e => string.IsNullOrEmpty(e.Value)).Remove();
             doc.Save(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Pokemon.xml");
             DialogResult result = MessageBox.Show(tbName.Text + " has been added to the Pokedex!");
             if (result == DialogResult.OK) { this.Close(); }

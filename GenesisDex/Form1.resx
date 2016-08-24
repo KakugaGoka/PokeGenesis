@@ -154,18 +154,6 @@
         YII=
 </value>
   </data>
-  <data name="pbPokeAdd.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAAd0SU1FB+AIFBMaLkcA0BYAAAFKSURBVEhLxZWxccMwEASZIFeuJpS7CedsQjmb
-        cK5S1IQrcQMMqD+KRz7AwxOyxmPM7BD4v8dBJAB1Y0p/jgySlNJ0hKorkcHTaZsE/cGeJZ9Gq9kuwKIP
-        4/4sDoHhkVE2oLh/FjTzbURGawcrhwhPG2sul2ns+w2Xuxk1o7XjBJrrdRqHIQcxp+Grw3e0cW5Cgy8D
-        4h3n88/OgCDntNw01tcmEFVRBqDQYaGYq/PNErMJtmRZQPAa5hXjOyyTrzGnA34TLBabyVwU4PNHWppY
-        P39dR4UAmhbd/5pE3wT4ySMjdTBXkyUoUZPWjLi7rD/PDTITnFoI36F6TgASy0n9NfwVoQl49XIk0SWZ
-        DSgKL0lBdDmCXcAbYXUWC6m9Io8MAm+GleIPzIPdRU1kAGSQ+ElqqLoSGfSwqVwrMuhhU7lWZNDDpnJt
-        pO4B4G6SgJqsj+cAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAzQAAAJsCAYAAAAr2OZZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL

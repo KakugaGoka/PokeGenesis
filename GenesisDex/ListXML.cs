@@ -86,9 +86,10 @@ namespace GenesisDexEngine
     {
         public List<Pokemon> createList(string decend)
         {
+            XDocument doc = null;
             string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\Pokemon.xml");
             List<Pokemon> idList = new List<Pokemon>();
-            XDocument doc = XDocument.Load(fileName);
+            doc = XDocument.Load(fileName);
             var query = from node in doc.Descendants(decend)
                         select new Pokemon
                         {

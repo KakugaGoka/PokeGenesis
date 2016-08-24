@@ -28,6 +28,7 @@ namespace GenesisDex
         List<Image> megaImages = new List<Image>();
         List<Image> megaxImages = new List<Image>();
         List<Image> megayImages = new List<Image>();
+        List<string> updateList = new List<string>();
         int carryi { get; set; }
         int page = 1;
         int imageDisplayed = 1;
@@ -43,28 +44,31 @@ namespace GenesisDex
         public FormMain()
         {
             InitializeComponent();
+            updateList.Add("updating...");
             pbY.Visible = false;
             pbX.Visible = false;
             PokemonList pokeXML = new PokemonList();
-            this.BackgroundImage = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MainMenu.PNG");
-            pbPokeLeft.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonLeft.gif");
-            pbPokeRight.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRight.gif");
+            this.BackgroundImage = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MainMenu.PNG");
+            pbPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonLeft.gif");
+            pbPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRight.gif");
+            pbPokeAdd.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\AddPokemon.png");
             pokeList = pokeXML.createList("Pokemon");
             for (var i = 0; i < pokeList.Count; i++)
             {
                 pokeDex.Add(pokeList[i].id);
             }
             lbPokemon.DataSource = pokeDex;
+            lbPokemon.SelectedIndex = 0;
         }
 
         private void lbPokemon_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (pokeList == null) { return; }
             var i = 0;
             for (i = 0; i < pokeList.Count; i++)
             {
                 if (lbPokemon.Text == pokeList[i].id.ToString()) { break; }
             }
-            if (pokeList == null) { return; }
             try
             {
                 mega = File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega.gif");
@@ -77,14 +81,14 @@ namespace GenesisDex
             catch { return; }
             if (mega == true)
             {
-                pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOff.PNG");
+                pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOff.PNG");
                 pbY.Visible = false;
                 pbX.Visible = false;
                 viewMega = false;
             }
             else if (megax == true)
             {
-                pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOff.PNG");
+                pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOff.PNG");
                 onMegaX = false;
                 pbY.Visible = true;
                 pbX.Visible = true;
@@ -94,7 +98,7 @@ namespace GenesisDex
             {
                 pbY.Visible = false;
                 pbX.Visible = false;
-                pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaNo.PNG");
+                pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaNo.PNG");
 
             }
             pokeImages.Clear();
@@ -103,7 +107,7 @@ namespace GenesisDex
             megayImages.Clear();
             try
             {
-                pokeImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + ".gif"));
+                pokeImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + ".gif"));
             }
             catch { }
             int n = 0;
@@ -112,7 +116,7 @@ namespace GenesisDex
                 n++;
                 if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-" + n + ".gif"))
                 {
-                    pokeImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-" + n + ".gif"));
+                    pokeImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-" + n + ".gif"));
                 }
                 else
                 {
@@ -121,7 +125,7 @@ namespace GenesisDex
             }
             try
             {
-                pokeImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + ".gif"));
+                pokeImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + ".gif"));
             }
             catch { return; }
             n = 0;
@@ -131,7 +135,7 @@ namespace GenesisDex
                 n++;
                 if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-" + n + ".gif"))
                 {
-                    pokeImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-" + n + ".gif"));
+                    pokeImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-" + n + ".gif"));
                 }
                 else
                 {
@@ -140,21 +144,21 @@ namespace GenesisDex
             }
             if (mega == true)
             {
-                megaImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega.gif"));
+                megaImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega.gif"));
                 done = false;
                 while (done == false)
                 {
                     n++;
                     if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega-" + n + ".gif"))
                     {
-                        megaImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega-" + n + ".gif"));
+                        megaImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega-" + n + ".gif"));
                     }
                     else
                     {
                         done = true;
                     }
                 }
-                megaImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-mega.gif"));
+                megaImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-mega.gif"));
                 n = 0;
                 done = false;
                 while (done == false)
@@ -162,7 +166,7 @@ namespace GenesisDex
                     n++;
                     if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-mega-" + n + ".gif"))
                     {
-                        megaImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-mega-" + n + ".gif"));
+                        megaImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-mega-" + n + ".gif"));
                     }
                     else
                     {
@@ -172,15 +176,15 @@ namespace GenesisDex
             }
             if (megax == true)
             {
-                megaxImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega-x.gif"));
-                megayImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega-y.gif"));
+                megaxImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega-x.gif"));
+                megayImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega-y.gif"));
                 done = false;
                 while (done == false)
                 {
                     n++;
                     if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega-x-" + n + ".gif"))
                     {
-                        megaxImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega-x-" + n + ".gif"));
+                        megaxImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega-x-" + n + ".gif"));
                     }
                     else
                     {
@@ -193,15 +197,15 @@ namespace GenesisDex
                     n++;
                     if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega-y-" + n + ".gif"))
                     {
-                        megayImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega-y-" + n + ".gif"));
+                        megayImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega-y-" + n + ".gif"));
                     }
                     else
                     {
                         done = true;
                     }
                 }
-                megaxImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-mega-x.gif"));
-                megayImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-mega-y.gif"));
+                megaxImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-mega-x.gif"));
+                megayImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-mega-y.gif"));
                 n = 0;
                 done = false;
                 while (done == false)
@@ -209,7 +213,7 @@ namespace GenesisDex
                     n++;
                     if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-mega-x-" + n + ".gif"))
                     {
-                        megaxImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-mega-x-" + n + ".gif"));
+                        megaxImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-mega-x-" + n + ".gif"));
                     }
                     else
                     {
@@ -222,7 +226,7 @@ namespace GenesisDex
                     n++;
                     if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-mega-y-" + n + ".gif"))
                     {
-                        megayImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-mega-y-" + n + ".gif"));
+                        megayImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + "-mega-y-" + n + ".gif"));
                     }
                     else
                     {
@@ -270,12 +274,12 @@ namespace GenesisDex
 
         private void pbExit_MouseHover(object sender, EventArgs e)
         {
-            pbExit.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButtonHover.PNG");
+            pbExit.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButtonHover.PNG");
         }
 
         private void pbExit_MouseLeave(object sender, EventArgs e)
         {
-            pbExit.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButton.PNG");
+            pbExit.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButton.PNG");
         }
 
         private void pbMega_MouseHover(object sender, EventArgs e)
@@ -284,11 +288,11 @@ namespace GenesisDex
             {
                 if (viewMega == true)
                 {
-                    pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOnHover.PNG");
+                    pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOnHover.PNG");
                 }
                 else
                 {
-                    pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOffHover.PNG");
+                    pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOffHover.PNG");
                 }
             }
         }
@@ -299,11 +303,11 @@ namespace GenesisDex
             {
                 if (viewMega == true)
                 {
-                    pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOn.PNG");
+                    pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOn.PNG");
                 }
                 else
                 {
-                    pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOff.PNG");
+                    pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOff.PNG");
                 }
             }
         }
@@ -315,14 +319,14 @@ namespace GenesisDex
             {
                 if (viewMega == true)
                 {
-                    pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOffHover.PNG");
+                    pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOffHover.PNG");
                     viewMega = false;
                     pbPokemon.Image = pokeImages[0];
                     updatePage();
                 }
                 else
                 {
-                    pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOnHover.PNG");
+                    pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOnHover.PNG");
                     viewMega = true;
                     pbPokemon.Image = megaImages[0];
                     updatePage();
@@ -332,14 +336,14 @@ namespace GenesisDex
             {
                 if (viewMega == true)
                 {
-                    pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOffHover.PNG");
+                    pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOffHover.PNG");
                     viewMega = false;
                     pbPokemon.Image = pokeImages[0];
                     updatePage();
                 }
                 else
                 {
-                    pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOnHover.PNG");
+                    pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOnHover.PNG");
                     changeMega();
                     viewMega = true;
                     updatePage();
@@ -354,8 +358,8 @@ namespace GenesisDex
             {
                 onMegaX = true;
                 pbPokemon.Image = megaxImages[0];
-                pbY.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYOff.PNG");
-                pbX.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaXOn.PNG");
+                pbY.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYOff.PNG");
+                pbX.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaXOn.PNG");
                 updatePage();
                 return;
             }
@@ -363,8 +367,8 @@ namespace GenesisDex
             {
                 onMegaX = false;
                 pbPokemon.Image = megayImages[0];
-                pbY.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYOn.PNG");
-                pbX.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaXOff.PNG");
+                pbY.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYOn.PNG");
+                pbX.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaXOff.PNG");
                 updatePage();
                 return;
             }
@@ -372,22 +376,22 @@ namespace GenesisDex
 
         private void infoForward_MouseHover(object sender, EventArgs e)
         {
-            infoForward.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoRightHover.PNG");
+            infoForward.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoRightHover.PNG");
         }
 
         private void infoBack_MouseHover(object sender, EventArgs e)
         {
-            infoBack.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoLeftHover.PNG");
+            infoBack.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoLeftHover.PNG");
         }
 
         private void infoBack_MouseLeave(object sender, EventArgs e)
         {
-            infoBack.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoLeft.PNG");
+            infoBack.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoLeft.PNG");
         }
 
         private void infoForward_MouseLeave(object sender, EventArgs e)
         {
-            infoForward.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoRight.PNG");
+            infoForward.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoRight.PNG");
         }
 
         private void writeInfo()
@@ -540,17 +544,21 @@ namespace GenesisDex
             }
             AbilityList abiXML = new AbilityList();
             abiList = abiXML.createList(pokeList[i].number);
-            rtbInfo1.Text += string.Format(Environment.NewLine + "Basic Abilities:" + Environment.NewLine +
-                "-{0}" + Environment.NewLine + 
-                "-{1}" + Environment.NewLine + Environment.NewLine +
-                "Advanced Abilities:" + Environment.NewLine +
-                "-{2}" + Environment.NewLine + 
-                "-{3}" + Environment.NewLine + Environment.NewLine +
-                "High Ability:" + Environment.NewLine +
-                "-{4}", 
-                abiList[0].ability, abiList[1].ability,
-                abiList[2].ability, abiList[3].ability,
-                abiList[4].ability);
+            rtbInfo1.Text += Environment.NewLine + "Basic Abilities:" + Environment.NewLine;
+            for (var e = 0; e < abiList.Count - 3; e++)
+            {
+                rtbInfo1.Text += "-" + abiList[e].ability + Environment.NewLine;
+            }
+            rtbInfo1.Text += Environment.NewLine + "Advanced Abilities:" + Environment.NewLine;
+            for (var e = 2; e < abiList.Count - 1; e++)
+            {
+                rtbInfo1.Text += "-" + abiList[e].ability + Environment.NewLine;
+            }
+            rtbInfo1.Text += Environment.NewLine + "High Ability:" + Environment.NewLine;
+            for (var e = 4; e < abiList.Count; e++)
+            {
+                rtbInfo1.Text += "-" + abiList[e].ability + Environment.NewLine;
+            }
             MegaList megaAbility = new MegaList();
             if (viewMega == true)
             {
@@ -714,9 +722,37 @@ namespace GenesisDex
             {
                 pokeDex.Add(pokeList[i].id);
             }
-            lbPokemon.DataSource = null;
+            lbPokemon.DataSource = updateList;
             lbPokemon.DataSource = pokeDex;
             lbPokemon.SelectedIndex = 0;
+            lbPokemon.Refresh();
+        }
+
+        private Image getImage(string x)
+        {
+            string path = (x);
+            if (File.Exists(x) == true)
+            {
+                return Image.FromFile(path);
+            }
+            else if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\ImageNotFound.gif"))
+            {
+                return Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\ImageNotFound.gif");
+            }
+            else
+            {
+                return Image.FromFile(null);
+            }
+        }
+
+        private void pbPokeAdd_MouseHover(object sender, EventArgs e)
+        {
+            pbPokeAdd.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\AddPokemonHover.png");
+        }
+
+        private void pbPokeAdd_MouseLeave(object sender, EventArgs e)
+        {
+            pbPokeAdd.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\AddPokemon.png");
         }
     }
 }
