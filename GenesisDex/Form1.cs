@@ -64,8 +64,17 @@ namespace GenesisDex
             {
                 if (lbPokemon.Text == pokeList[i].id.ToString()) { break; }
             }
-            mega = File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega.gif");
-            megax = File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega-x.gif");
+            if (pokeList == null) { return; }
+            try
+            {
+                mega = File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega.gif");
+            }
+            catch { return; }
+            try
+            {
+                megax = File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega-x.gif");
+            }
+            catch { return; }
             if (mega == true)
             {
                 pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOff.PNG");
@@ -86,18 +95,22 @@ namespace GenesisDex
                 pbY.Visible = false;
                 pbX.Visible = false;
                 pbMega.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaNo.PNG");
-                
+
             }
             pokeImages.Clear();
             megaImages.Clear();
             megaxImages.Clear();
             megayImages.Clear();
-            pokeImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + ".gif"));
+            try
+            {
+                pokeImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + ".gif"));
+            }
+            catch { }
             int n = 0;
             while (done == false)
             {
                 n++;
-                if(File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-" + n + ".gif"))
+                if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-" + n + ".gif"))
                 {
                     pokeImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-" + n + ".gif"));
                 }
@@ -106,7 +119,11 @@ namespace GenesisDex
                     done = true;
                 }
             }
-            pokeImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + ".gif"));
+            try
+            {
+                pokeImages.Add(Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + pokeList[i].number + ".gif"));
+            }
+            catch { return; }
             n = 0;
             done = false;
             while (done == false)
@@ -248,7 +265,7 @@ namespace GenesisDex
 
         private void pbExit_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+            this.Close();
         }
 
         private void pbExit_MouseHover(object sender, EventArgs e)
@@ -666,6 +683,40 @@ namespace GenesisDex
             {
                 changeMega();
             }
+        }
+
+        private void pbPokeAdd_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormChild fc = new FormChild();
+            fc.FormClosing += FormIsClosing;
+            fc.Show();
+        }
+
+        private void FormIsClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.Cancel)
+            {
+                return;
+            }
+
+            this.Show();
+            RefreshPokedex();
+            this.Update();
+        }
+
+        private void RefreshPokedex()
+        {
+            PokemonList pokeXML = new PokemonList();
+            pokeDex.Clear();
+            pokeList = pokeXML.createList("Pokemon");
+            for (var i = 0; i < pokeList.Count; i++)
+            {
+                pokeDex.Add(pokeList[i].id);
+            }
+            lbPokemon.DataSource = null;
+            lbPokemon.DataSource = pokeDex;
+            lbPokemon.SelectedIndex = 0;
         }
     }
 }
