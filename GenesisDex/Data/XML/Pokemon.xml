@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Namespace>
   <Pokemon>
     <number>001</number>
@@ -22,10 +22,10 @@
         <evo>Bulbasaur</evo>
       </Evolution>
       <Evolution>
-        <evo>Ivysaur</evo>
+        <evo>Ivysaur Minimum 15</evo>
       </Evolution>
       <Evolution>
-        <evo>Venusaur</evo>
+        <evo>Venusaur Minimum 30</evo>
       </Evolution>
       <Ability>
         <ability>Confidence</ability>
@@ -120,7 +120,7 @@
       <Moves>
         <move>Lvl 37: Seed Bomb - Grass</move>
       </Moves>
-     </List001>
+    </List001>
   </Pokemon>
   <Pokemon>
     <number>002</number>
@@ -140,105 +140,105 @@
     <diet>Omnivore, Phototroph</diet>
     <habitat>Forest, Grassland, Rainforest</habitat>
     <List002>
-        <Evolution>
-          <evo>Bulbasaur</evo>
-        </Evolution>
-        <Evolution>
-          <evo>Ivysaur</evo>
-        </Evolution>
-        <Evolution>
-          <evo>Venusaur</evo>
-        </Evolution>
-        <Ability>
-          <ability>Confidence</ability>
-        </Ability>
-        <Ability>
-          <ability>Photosynthesis</ability>
-        </Ability>
-        <Ability>
-          <ability>Chlorophyll</ability>
-        </Ability>
-        <Ability>
-          <ability>Leaf Gaurd</ability>
-        </Ability>
-        <Ability>
-          <ability>Courage</ability>
-        </Ability>
-        <Capability>
-          <cap>Overland 6</cap>
-        </Capability>
-        <Capability>
-          <cap>Swim 3</cap>
-        </Capability>
-        <Capability>
-          <cap>Jump 1/1</cap>
-        </Capability>
-        <Capability>
-          <cap>Power 3</cap>
-        </Capability>
-        <Capability>
-          <cap>Naturewalk (Grassland, Forest)</cap>
-        </Capability>
-        <Capability>
-          <cap>Underdog</cap>
-        </Capability>
-        <Skills>
-          <skill>Athl 4d6+3</skill>
-        </Skills>
-        <Skills>
-          <skill>Acro 2d6</skill>
-        </Skills>
-        <Skills>
-          <skill>Combat 3d6</skill>
-        </Skills>
-        <Skills>
-          <skill>Stealth 2d6</skill>
-        </Skills>
-        <Skills>
-          <skill>Percep 2d6</skill>
-        </Skills>
-        <Skills>
-          <skill>Focus 3d6+2</skill>
-        </Skills>
-        <Moves>
-          <move>Lvl 3: Growl - Normal</move>
-        </Moves>
-        <Moves>
-          <move>Lvl 7: Leech Seed - Grass</move>
-        </Moves>
-        <Moves>
-          <move>Lvl 9: Vine Whip - Grass</move>
-        </Moves>
-        <Moves>
-          <move>Lvl 13: Poison Powder - Poison</move>
-        </Moves>
-        <Moves>
-          <move>Lvl 13: Sleep Powder - Grass</move>
-        </Moves>
-        <Moves>
-          <move>Lvl 15: Take Down - Normal</move>
-        </Moves>
-        <Moves>
-          <move>Lvl 20: Razor Leaf - Grass</move>
-        </Moves>
-        <Moves>
-          <move>Lvl 23: Sweet Scent - Normal</move>
-        </Moves>
-        <Moves>
-          <move>Lvl 28: Growth - Normal</move>
-        </Moves>
-        <Moves>
-          <move>Lvl 31: Double-Edge - Normal</move>
-        </Moves>
-        <Moves>
-          <move>Lvl 36: Worry Seed - Grass</move>
-        </Moves>
-        <Moves>
-          <move>Lvl 39: Synthesis - Grass</move>
-        </Moves>
-        <Moves>
-          <move>Lvl 44: Solar Beam - Grass</move>
-        </Moves>
+      <Evolution>
+        <evo>Bulbasaur</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Ivysaur Mimimum 15</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Venusaur Mimimum 30</evo>
+      </Evolution>
+      <Ability>
+        <ability>Confidence</ability>
+      </Ability>
+      <Ability>
+        <ability>Photosynthesis</ability>
+      </Ability>
+      <Ability>
+        <ability>Chlorophyll</ability>
+      </Ability>
+      <Ability>
+        <ability>Leaf Gaurd</ability>
+      </Ability>
+      <Ability>
+        <ability>Courage</ability>
+      </Ability>
+      <Capability>
+        <cap>Overland 6</cap>
+      </Capability>
+      <Capability>
+        <cap>Swim 3</cap>
+      </Capability>
+      <Capability>
+        <cap>Jump 1/1</cap>
+      </Capability>
+      <Capability>
+        <cap>Power 3</cap>
+      </Capability>
+      <Capability>
+        <cap>Naturewalk (Grassland, Forest)</cap>
+      </Capability>
+      <Capability>
+        <cap>Underdog</cap>
+      </Capability>
+      <Skills>
+        <skill>Athl 4d6+3</skill>
+      </Skills>
+      <Skills>
+        <skill>Acro 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Combat 3d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Stealth 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Percep 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Focus 3d6+2</skill>
+      </Skills>
+      <Moves>
+        <move>Lvl 3: Growl - Normal</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 7: Leech Seed - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 9: Vine Whip - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 13: Poison Powder - Poison</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 13: Sleep Powder - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 15: Take Down - Normal</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 20: Razor Leaf - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 23: Sweet Scent - Normal</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 28: Growth - Normal</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 31: Double-Edge - Normal</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 36: Worry Seed - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 39: Synthesis - Grass</move>
+      </Moves>
+      <Moves>
+        <move>Lvl 44: Solar Beam - Grass</move>
+      </Moves>
     </List002>
   </Pokemon>
   <Pokemon>
@@ -263,10 +263,10 @@
         <evo>Bulbasaur</evo>
       </Evolution>
       <Evolution>
-        <evo>Ivysaur</evo>
+        <evo>Ivysaur Mimimum 15</evo>
       </Evolution>
       <Evolution>
-        <evo>Venusaur</evo>
+        <evo>Venusaur Mimimum 30</evo>
       </Evolution>
       <Ability>
         <ability>Confidence</ability>
@@ -378,73 +378,285 @@
     </Mega003>
   </Pokemon>
   <Pokemon>
-    <number>006</number>
-    <id>Charizard</id>
-    <type>Grass/Poison</type>
-    <hp>8</hp>
-    <atk>8</atk>
-    <def>8</def>
-    <spatk>10</spatk>
-    <spdef>10</spdef>
-    <spd>8</spd>
-    <size>6' 7" / 2m (Large)</size>
-    <weight>220.5 lbs. / 100kg (5)</weight>
+    <number>004</number>
+    <id>Charmander</id>
+    <type>Fire</type>
+    <hp>4</hp>
+    <atk>5</atk>
+    <def>4</def>
+    <spatk>6</spatk>
+    <spdef>5</spdef>
+    <spd>7</spd>
+    <size>2' 0" / 0.6m (Small)</size>
+    <weight>18.7 lbs. / 8.5kg (1)</weight>
     <gender>87.5% M / 12.5% F</gender>
-    <egg>Monster / Plant</egg>
-    <hatch>n/a</hatch>
-    <diet>Omnivore, Phototroph</diet>
-    <habitat>Forest, Grassland, Rainforest</habitat>
-    <List006>
-      <Evolution>
-        <evo>Bulbasaur</evo>
-      </Evolution>
-      <Evolution>
-        <evo>Ivysaur</evo>
-      </Evolution>
-      <Evolution>
-        <evo>Venusaur</evo>
-      </Evolution>
+    <egg>Monster / Dragon</egg>
+    <hatch>10 Days</hatch>
+    <diet>Herbivore</diet>
+    <habitat>Cave, Mountain</habitat>
+    <List004>
       <Ability>
-        <ability>Confidence</ability>
+        <ability>Flame Body</ability>
       </Ability>
       <Ability>
-        <ability>Photosynthesis</ability>
+        <ability>Rattled</ability>
       </Ability>
       <Ability>
-        <ability>Chlorophyll</ability>
+        <ability>Solar Power</ability>
       </Ability>
       <Ability>
-        <ability>Aroma Veil</ability>
+        <ability>White Flame</ability>
       </Ability>
       <Ability>
         <ability>Courage</ability>
       </Ability>
       <Capability>
-        <cap>Overland 6</cap>
+        <cap>Overland 5</cap>
+      </Capability>
+      <Capability>
+        <cap>Swim 3</cap>
+      </Capability>
+      <Capability>
+        <cap>Jump 1/1</cap>
+      </Capability>
+      <Capability>
+        <cap>Power 2</cap>
+      </Capability>
+      <Capability>
+        <cap>Firestarter</cap>
+      </Capability>
+      <Capability>
+        <cap>Glow</cap>
+      </Capability>
+      <Capability>
+        <cap>Naturewalk (Mountain)</cap>
+      </Capability>
+      <Capability>
+        <cap>Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo>Charmander</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Charmeleon Minimum 15</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Charizard Minimum 30</evo>
+      </Evolution>
+      <Moves>
+        <move>1 Scratch - Normal</move>
+      </Moves>
+      <Moves>
+        <move>3 Growl - Normal</move>
+      </Moves>
+      <Moves>
+        <move>7 Ember - Fire</move>
+      </Moves>
+      <Moves>
+        <move>10 Smokescreen - Normal</move>
+      </Moves>
+      <Moves>
+        <move>16 Dragon Rage - Dragon</move>
+      </Moves>
+      <Moves>
+        <move>19 Scary Face - Normal</move>
+      </Moves>
+      <Moves>
+        <move>25 Fire Fang - Fire</move>
+      </Moves>
+      <Moves>
+        <move>28 Flame Burst - Fire</move>
+      </Moves>
+      <Moves>
+        <move>34 Slash - Normal</move>
+      </Moves>
+      <Moves>
+        <move>37 Flamethrower - Fire</move>
+      </Moves>
+      <Moves>
+        <move>43 Fire Spin - Fire</move>
+      </Moves>
+      <Moves>
+        <move>46 Inferno - Fire</move>
+      </Moves>
+    </List004>
+  </Pokemon>
+  <Pokemon>
+    <number>005</number>
+    <id>Charmeleon</id>
+    <type>Fire</type>
+    <hp>6</hp>
+    <atk>6</atk>
+    <def>6</def>
+    <spatk>8</spatk>
+    <spdef>7</spdef>
+    <spd>8</spd>
+    <size>3'7 / 1.1m (Medium)</size>
+    <weight>41.9 lbs. / 19kg (2)</weight>
+    <gender>87.5% M / 12.5% F</gender>
+    <egg>Monster / Dragon</egg>
+    <diet>Carnivore</diet>
+    <habitat>Cave, Mountain</habitat>
+    <List005>
+      <Ability>
+        <ability>Flame Body</ability>
+      </Ability>
+      <Ability>
+        <ability>Intimidate</ability>
+      </Ability>
+      <Ability>
+        <ability>Solar Power</ability>
+      </Ability>
+      <Ability>
+        <ability>White Flame</ability>
+      </Ability>
+      <Ability>
+        <ability>Courage</ability>
+      </Ability>
+      <Capability>
+        <cap>Overland 6 </cap>
       </Capability>
       <Capability>
         <cap>Swim 4</cap>
       </Capability>
       <Capability>
-        <cap>Jump 2/2</cap>
+        <cap>Jump 1/1</cap>
+      </Capability>
+      <Capability>
+        <cap>Power 4</cap>
+      </Capability>
+      <Capability>
+        <cap>Firestarter</cap>
+      </Capability>
+      <Capability>
+        <cap>Glow</cap>
+      </Capability>
+      <Capability>
+        <cap>Naturewalk (Mountain)</cap>
+      </Capability>
+      <Capability>
+        <cap>Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo>1 - Charmander</evo>
+      </Evolution>
+      <Evolution>
+        <evo>2 - Charmeleon Minimum 15</evo>
+      </Evolution>
+      <Evolution>
+        <evo>3 - Charizard Minimum 30</evo>
+      </Evolution>
+      <Moves>
+        <move>7 Ember - Fire</move>
+      </Moves>
+      <Moves>
+        <move>10 Smokescreen - Normal</move>
+      </Moves>
+      <Moves>
+        <move>17 Dragon Rage - Dragon</move>
+      </Moves>
+      <Moves>
+        <move>21 Scary Face - Normal</move>
+      </Moves>
+      <Moves>
+        <move>28 Fire Fang - Fire</move>
+      </Moves>
+      <Moves>
+        <move>32 Flame Burst - Fire</move>
+      </Moves>
+      <Moves>
+        <move>39 Slash - Normal</move>
+      </Moves>
+      <Moves>
+        <move>43 Flamethrower - Fire</move>
+      </Moves>
+      <Moves>
+        <move>50 Fire Spin - Fire</move>
+      </Moves>
+      <Moves>
+        <move>54 Inferno - Fire</move>
+      </Moves>
+    </List005>
+  </Pokemon>
+  <Pokemon>
+    <number>006</number>
+    <id>Charizard</id>
+    <type>Fire / Flying</type>
+    <hp>8</hp>
+    <atk>8</atk>
+    <def>8</def>
+    <spatk>11</spatk>
+    <spdef>9</spdef>
+    <spd>10</spd>
+    <size>5' 7" / 1.7m (Medium)</size>
+    <weight>199.5 lbs. / 90.5kg (4)</weight>
+    <gender>87.5% M / 12.5% F</gender>
+    <egg>Monster / Dragon</egg>
+    <diet>Carnivore</diet>
+    <habitat>Cave, Mountain</habitat>
+    <List006>
+      <Ability>
+        <ability>Flame Body</ability>
+      </Ability>
+      <Ability>
+        <ability>Intimidate</ability>
+      </Ability>
+      <Ability>
+        <ability>Solar Power</ability>
+      </Ability>
+      <Ability>
+        <ability>White Flame</ability>
+      </Ability>
+      <Ability>
+        <ability>Courage</ability>
+      </Ability>
+      <Capability>
+        <cap>Overland 6 </cap>
+      </Capability>
+      <Capability>
+        <cap>Swim 5</cap>
+      </Capability>
+      <Capability>
+        <cap>Sky 8</cap>
+      </Capability>
+      <Capability>
+        <cap>Jump 2/3</cap>
       </Capability>
       <Capability>
         <cap>Power 8</cap>
       </Capability>
       <Capability>
-        <cap>Naturewalk (Grassland, Forest)</cap>
+        <cap>Firestarter</cap>
       </Capability>
       <Capability>
-        <cap>Alluring (only in Rain)</cap>
+        <cap>Glow</cap>
       </Capability>
+      <Capability>
+        <cap>Heater</cap>
+      </Capability>
+      <Capability>
+        <cap>Naturewalk (Mountain)</cap>
+      </Capability>
+      <Capability>
+        <cap>Mountable 1</cap>
+      </Capability>
+      <Evolution>
+        <evo>Charmander</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Charmeleon Minimum 15</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Charizard Minimum 30</evo>
+      </Evolution>
       <Skills>
-        <skill>Athl 5d6+3</skill>
+        <skill>Athl 5d6+2</skill>
       </Skills>
       <Skills>
-        <skill>Acro 1d6</skill>
+        <skill>Acro 3d6</skill>
       </Skills>
       <Skills>
-        <skill>Combat 4d6</skill>
+        <skill>Combat 4d6+3</skill>
       </Skills>
       <Skills>
         <skill>Stealth 1d6</skill>
@@ -453,75 +665,63 @@
         <skill>Percep 2d6</skill>
       </Skills>
       <Skills>
-        <skill>Focus 5d6+3</skill>
+        <skill>Focus 4d6</skill>
       </Skills>
       <Moves>
-        <move>Lvl 3: Growl - Normal</move>
+        <move>7 Ember - Fire</move>
       </Moves>
       <Moves>
-        <move>Lvl 7: Leech Seed - Grass</move>
+        <move>10 Smokescreen - Normal</move>
       </Moves>
       <Moves>
-        <move>Lvl 9: Vine Whip - Grass</move>
+        <move>17 Dragon Rage - Dragon</move>
       </Moves>
       <Moves>
-        <move>Lvl 13: Poison Powder - Poison</move>
+        <move>21 Scary Face - Normal</move>
       </Moves>
       <Moves>
-        <move>Lvl 13: Sleep Powder - Grass</move>
+        <move>28 Fire Fang - Fire</move>
       </Moves>
       <Moves>
-        <move>Lvl 15: Take Down - Normal</move>
+        <move>32 Flame Burst - Fire</move>
       </Moves>
       <Moves>
-        <move>Lvl 20: Razor Leaf - Grass</move>
+        <move>36 Wing Attack - Flying </move>
       </Moves>
       <Moves>
-        <move>Lvl 23: Sweet Scent - Normal</move>
+        <move>41 Slash - Normal</move>
       </Moves>
       <Moves>
-        <move>Lvl 28: Growth - Normal</move>
+        <move>47 Flamethrower - Fire</move>
       </Moves>
       <Moves>
-        <move>Lvl 31: Double-Edge - Normal</move>
+        <move>56 Fire Spin - Fire</move>
       </Moves>
       <Moves>
-        <move>Lvl 32: Petal Dance - Grass</move>
+        <move>62 Inferno - Fire</move>
       </Moves>
       <Moves>
-        <move>Lvl 39: Worry Seed - Grass</move>
+        <move>71 Heat Wave - Fire</move>
       </Moves>
       <Moves>
-        <move>Lvl 45: Synthesis - Grass</move>
-      </Moves>
-      <Moves>
-        <move>Lvl 50: Petal Blizzard - Grass</move>
-      </Moves>
-      <Moves>
-        <move>Lvl 53: Solar Beam - Grass</move>
+        <move>77 Flare Blitz - Fire</move>
       </Moves>
     </List006>
-    <MegaX006>
-      <id>Mega Charizard X</id>
-      <type>Grass/Poison</type>
-      <hp>8</hp>
-      <atk>10</atk>
-      <def>12</def>
-      <spatk>12</spatk>
-      <spdef>12</spdef>
-      <spd>999</spd>
-      <ability>X</ability>
-    </MegaX006>
-    <MegaY006>
-       <id>Mega Charizard Y</id>
-      <type>Grass/Poison</type>
-      <hp>999</hp>
-      <atk>10</atk>
-      <def>12</def>
-      <spatk>12</spatk>
-      <spdef>12</spdef>
-      <spd>8</spd>
-      <ability>Y</ability>
-    </MegaY006>
   </Pokemon>
+  <MegaX006>
+    <id>Charizard</id>
+    <type>Fire/Dragon</type>
+    <atk>+5</atk>
+    <def>+3</def>
+    <spatk>+2</spatk>
+    <ability>Tough Claws</ability>
+  </MegaX006>
+  <MegaY006>
+    <id>Charizard</id>
+    <type>Fire/Dragon</type>
+    <atk>+5</atk>
+    <def>+3</def>
+    <spatk>+2</spatk>
+    <ability>Tough Claws</ability>
+  </MegaY006>
 </Namespace>
