@@ -53,6 +53,7 @@ namespace GenesisDex
             pbPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRight.gif");
             pbPokeAdd.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\AddPokemon.png");
             pokeList = pokeXML.createList("Pokemon");
+            SortPokeList();
             for (var i = 0; i < pokeList.Count; i++)
             {
                 pokeDex.Add(pokeList[i].id);
@@ -717,6 +718,7 @@ namespace GenesisDex
             PokemonList pokeXML = new PokemonList();
             pokeDex.Clear();
             pokeList = pokeXML.createList("Pokemon");
+            SortPokeList();
             for (var i = 0; i < pokeList.Count; i++)
             {
                 pokeDex.Add(pokeList[i].id);
@@ -752,6 +754,14 @@ namespace GenesisDex
         private void pbPokeAdd_MouseLeave(object sender, EventArgs e)
         {
             pbPokeAdd.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\AddPokemon.png");
+        }
+
+        private void SortPokeList()
+        {
+            pokeList.Sort(delegate (Pokemon x, Pokemon y)
+            {
+                return x.number.CompareTo(y.number);
+            });
         }
     }
 }

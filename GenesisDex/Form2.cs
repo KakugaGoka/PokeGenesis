@@ -131,23 +131,32 @@ namespace GenesisDex
 
         private void btCapAdd_Click(object sender, EventArgs e)
         {
-            listCap.Items.Add(tbCapAdd.Text);
-            CAP = listCap.Items.Count - 1;
-            tbCapAdd.Text = "";
+            if (tbCapAdd.Text != "")
+            {
+                listCap.Items.Add(tbCapAdd.Text);
+                CAP = listCap.Items.Count - 1;
+                tbCapAdd.Text = "";
+            }
         }
 
         private void btEvoAdd_Click(object sender, EventArgs e)
         {
-            listEvo.Items.Add(tbEvoAdd.Text);
-            EVO = listEvo.Items.Count - 1;
-            tbEvoAdd.Text = "";
+            if (tbEvoAdd.Text != "")
+            {
+                listEvo.Items.Add(tbEvoAdd.Text);
+                EVO = listEvo.Items.Count - 1;
+                tbEvoAdd.Text = "";
+            }
         }
 
         private void btMoveAdd_Click(object sender, EventArgs e)
         {
-            listMoves.Items.Add(tbMoveAdd.Text);
-            MOV = listMoves.Items.Count - 1;
-            tbMoveAdd.Text = "";
+            if (tbMoveAdd.Text != "")
+            {
+                listMoves.Items.Add(tbMoveAdd.Text);
+                MOV = listMoves.Items.Count - 1;
+                tbMoveAdd.Text = "";
+            }
         }
 
         private void cbMega_CheckedChanged(object sender, EventArgs e)
