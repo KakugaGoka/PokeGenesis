@@ -33,6 +33,8 @@ namespace GenesisDex
         int carryi { get; set; }
         int page = 1;
         int imageDisplayed = 1;
+        int pbPokeLocX { get; set; }
+        int pbPokeLocY { get; set; }
         bool mega { get; set; }
         bool megax { get; set; }
         bool viewMega { get; set; }
@@ -45,6 +47,8 @@ namespace GenesisDex
         public FormMain()
         {
             InitializeComponent();
+            pbPokeLocX = pbPokemon.Location.X;
+            pbPokeLocY = pbPokemon.Location.Y;
             updateList.Add("updating...");
             pbY.Visible = false;
             pbX.Visible = false;
@@ -71,6 +75,8 @@ namespace GenesisDex
             {
                 if (lbPokemon.Text == pokeList[i].id.ToString()) { break; }
             }
+            pbY.Visible = false;
+            pbX.Visible = false;
             try
             {
                 megaList.Clear();
@@ -240,8 +246,9 @@ namespace GenesisDex
             carryi = i;
             pbPokemon.Image = pokeImages[0];
             var pokePic = pbPokemon.Image;
-            int pokeH = (122 - pokePic.Height) / 2;
-            pbPokemon.Location = new Point(114, (171 + pokeH));
+            int pokeH = (pokePic.Height);
+            int pbH = pbPokemon.Height;
+            pbPokemon.Location = new Point(pbPokeLocX, (pbPokeLocY + ((pbH/2) - (pokeH/2))));
             updatePage();
         }
         private bool dragging = false;
@@ -324,6 +331,10 @@ namespace GenesisDex
                     pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOffHover.PNG");
                     viewMega = false;
                     pbPokemon.Image = pokeImages[0];
+                    var pokePic = pbPokemon.Image;
+                    int pokeH = (pokePic.Height);
+                    int pbH = pbPokemon.Height;
+                    pbPokemon.Location = new Point(pbPokeLocX, (pbPokeLocY + ((pbH / 2) - (pokeH / 2))));
                     updatePage();
                 }
                 else
@@ -331,6 +342,10 @@ namespace GenesisDex
                     pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOnHover.PNG");
                     viewMega = true;
                     pbPokemon.Image = megaImages[0];
+                    var pokePic = pbPokemon.Image;
+                    int pokeH = (pokePic.Height);
+                    int pbH = pbPokemon.Height;
+                    pbPokemon.Location = new Point(pbPokeLocX, (pbPokeLocY + ((pbH / 2) - (pokeH / 2))));
                     updatePage();
                 }
             }
@@ -341,6 +356,10 @@ namespace GenesisDex
                     pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOffHover.PNG");
                     viewMega = false;
                     pbPokemon.Image = pokeImages[0];
+                    var pokePic = pbPokemon.Image;
+                    int pokeH = (pokePic.Height);
+                    int pbH = pbPokemon.Height;
+                    pbPokemon.Location = new Point(pbPokeLocX, (pbPokeLocY + ((pbH / 2) - (pokeH / 2))));
                     pbY.Visible = false;
                     pbX.Visible = false;
                     updatePage();
@@ -364,6 +383,10 @@ namespace GenesisDex
             {
                 onMegaX = true;
                 pbPokemon.Image = megaxImages[0];
+                var pokePic = pbPokemon.Image;
+                int pokeH = (pokePic.Height);
+                int pbH = pbPokemon.Height;
+                pbPokemon.Location = new Point(pbPokeLocX, (pbPokeLocY + ((pbH / 2) - (pokeH / 2))));
                 pbY.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYOff.PNG");
                 pbX.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaXOn.PNG");
                 updatePage();
@@ -373,6 +396,10 @@ namespace GenesisDex
             {
                 onMegaX = false;
                 pbPokemon.Image = megayImages[0];
+                var pokePic = pbPokemon.Image;
+                int pokeH = (pokePic.Height);
+                int pbH = pbPokemon.Height;
+                pbPokemon.Location = new Point(pbPokeLocX, (pbPokeLocY + ((pbH / 2) - (pokeH / 2))));
                 pbY.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYOn.PNG");
                 pbX.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaXOff.PNG");
                 updatePage();

@@ -58,7 +58,7 @@
             // pbPokemon
             // 
             this.pbPokemon.BackColor = System.Drawing.Color.Transparent;
-            this.pbPokemon.Location = new System.Drawing.Point(114, 171);
+            this.pbPokemon.Location = new System.Drawing.Point(114, 165);
             this.pbPokemon.Name = "pbPokemon";
             this.pbPokemon.Size = new System.Drawing.Size(175, 140);
             this.pbPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
