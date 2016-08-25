@@ -79,46 +79,46 @@
         <skill>Focus 2d6+1</skill>
       </Skills>
       <Moves>
-        <move>Lvl 1: Tackle - Normal</move>
+        <move>1 Tackle - Normal</move>
       </Moves>
       <Moves>
-        <move>Lvl 3: Growl - Normal</move>
+        <move>3 Growl - Normal</move>
       </Moves>
       <Moves>
-        <move>Lvl 7: Leech Seed - Grass</move>
+        <move>7 Leech Seed - Grass</move>
       </Moves>
       <Moves>
-        <move>Lvl 9: Vine Whip - Grass</move>
+        <move>9 Vine Whip - Grass</move>
       </Moves>
       <Moves>
-        <move>Lvl 13: Poison Powder - Poison</move>
+        <move>13 Poison Powder - Poison</move>
       </Moves>
       <Moves>
-        <move>Lvl 13: Sleep Powder - Grass</move>
+        <move>13 Sleep Powder - Grass</move>
       </Moves>
       <Moves>
-        <move>Lvl 15: Take Down - Normal</move>
+        <move>15 Take Down - Normal</move>
       </Moves>
       <Moves>
-        <move>Lvl 19: Razor Leaf - Grass</move>
+        <move>19 Razor Leaf - Grass</move>
       </Moves>
       <Moves>
-        <move>Lvl 21: Sweet Scent - Normal</move>
+        <move>21 Sweet Scent - Normal</move>
       </Moves>
       <Moves>
-        <move>Lvl 25: Growth - Normal</move>
+        <move>25 Growth - Normal</move>
       </Moves>
       <Moves>
-        <move>Lvl 27: Double-Edge - Normal</move>
+        <move>27 Double-Edge - Normal</move>
       </Moves>
       <Moves>
-        <move>Lvl 31: Worry Seed - Grass</move>
+        <move>31 Worry Seed - Grass</move>
       </Moves>
       <Moves>
-        <move>Lvl 33: Synthesis - Grass</move>
+        <move>33 Synthesis - Grass</move>
       </Moves>
       <Moves>
-        <move>Lvl 37: Seed Bomb - Grass</move>
+        <move>37 Seed Bomb - Grass</move>
       </Moves>
     </List001>
   </Pokemon>
@@ -201,43 +201,43 @@
         <skill>Focus 3d6+2</skill>
       </Skills>
       <Moves>
-        <move>Lvl 3: Growl - Normal</move>
+        <move>3 Growl - Normal</move>
       </Moves>
       <Moves>
-        <move>Lvl 7: Leech Seed - Grass</move>
+        <move>7 Leech Seed - Grass</move>
       </Moves>
       <Moves>
-        <move>Lvl 9: Vine Whip - Grass</move>
+        <move>9 Vine Whip - Grass</move>
       </Moves>
       <Moves>
-        <move>Lvl 13: Poison Powder - Poison</move>
+        <move>13 Poison Powder - Poison</move>
       </Moves>
       <Moves>
-        <move>Lvl 13: Sleep Powder - Grass</move>
+        <move>13 Sleep Powder - Grass</move>
       </Moves>
       <Moves>
-        <move>Lvl 15: Take Down - Normal</move>
+        <move>15 Take Down - Normal</move>
       </Moves>
       <Moves>
-        <move>Lvl 20: Razor Leaf - Grass</move>
+        <move>20 Razor Leaf - Grass</move>
       </Moves>
       <Moves>
-        <move>Lvl 23: Sweet Scent - Normal</move>
+        <move>23 Sweet Scent - Normal</move>
       </Moves>
       <Moves>
-        <move>Lvl 28: Growth - Normal</move>
+        <move>28 Growth - Normal</move>
       </Moves>
       <Moves>
-        <move>Lvl 31: Double-Edge - Normal</move>
+        <move>31 Double-Edge - Normal</move>
       </Moves>
       <Moves>
-        <move>Lvl 36: Worry Seed - Grass</move>
+        <move>36 Worry Seed - Grass</move>
       </Moves>
       <Moves>
-        <move>Lvl 39: Synthesis - Grass</move>
+        <move>39 Synthesis - Grass</move>
       </Moves>
       <Moves>
-        <move>Lvl 44: Solar Beam - Grass</move>
+        <move>44 Solar Beam - Grass</move>
       </Moves>
     </List002>
   </Pokemon>
@@ -320,52 +320,53 @@
         <skill>Focus 5d6+3</skill>
       </Skills>
       <Moves>
-        <move>Lvl 3: Growl - Normal</move>
+        <move>3 Growl - Normal</move>
       </Moves>
       <Moves>
-        <move>Lvl 7: Leech Seed - Grass</move>
+        <move>7 Leech Seed - Grass</move>
       </Moves>
       <Moves>
-        <move>Lvl 9: Vine Whip - Grass</move>
+        <move>9 Vine Whip - Grass</move>
       </Moves>
       <Moves>
-        <move>Lvl 13: Poison Powder - Poison</move>
+        <move>13 Poison Powder - Poison</move>
       </Moves>
       <Moves>
-        <move>Lvl 13: Sleep Powder - Grass</move>
+        <move>13 Sleep Powder - Grass</move>
       </Moves>
       <Moves>
-        <move>Lvl 15: Take Down - Normal</move>
+        <move>15 Take Down - Normal</move>
       </Moves>
       <Moves>
-        <move>Lvl 20: Razor Leaf - Grass</move>
+        <move>20 Razor Leaf - Grass</move>
       </Moves>
       <Moves>
-        <move>Lvl 23: Sweet Scent - Normal</move>
+        <move>23 Sweet Scent - Normal</move>
       </Moves>
       <Moves>
-        <move>Lvl 28: Growth - Normal</move>
+        <move>28 Growth - Normal</move>
       </Moves>
       <Moves>
-        <move>Lvl 31: Double-Edge - Normal</move>
+        <move>31 Double-Edge - Normal</move>
       </Moves>
       <Moves>
-        <move>Lvl 32: Petal Dance - Grass</move>
+        <move>32 Petal Dance - Grass</move>
       </Moves>
       <Moves>
-        <move>Lvl 39: Worry Seed - Grass</move>
+        <move>39 Worry Seed - Grass</move>
       </Moves>
       <Moves>
-        <move>Lvl 45: Synthesis - Grass</move>
+        <move>45 Synthesis - Grass</move>
       </Moves>
       <Moves>
-        <move>Lvl 50: Petal Blizzard - Grass</move>
+        <move>50 Petal Blizzard - Grass</move>
       </Moves>
       <Moves>
-        <move>Lvl 53: Solar Beam - Grass</move>
+        <move>53 Solar Beam - Grass</move>
       </Moves>
     </List003>
-    <Mega003>
+  </Pokemon>
+  <Mega003>
       <id>Mega Venasaur</id>
       <type>Grass/Poison</type>
       <atk>+2</atk>
@@ -373,8 +374,7 @@
       <spatk>+2</spatk>
       <spdef>+2</spdef>
       <ability>Thick Fat</ability>
-    </Mega003>
-  </Pokemon>
+  </Mega003>
   <Pokemon>
     <number>004</number>
     <id>Charmander</id>
@@ -441,6 +441,24 @@
       <Evolution>
         <evo>Charizard Minimum 30</evo>
       </Evolution>
+      <Skills>
+        <skill>Athl 2d6+2</skill>
+      </Skills>
+      <Skills>
+        <skill>Acro 3d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Combat 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Stealth 3d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Percep 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Focus 2d6</skill>
+      </Skills>
       <Moves>
         <move>1 Scratch - Normal</move>
       </Moves>
@@ -544,6 +562,24 @@
       <Evolution>
         <evo>3 - Charizard Minimum 30</evo>
       </Evolution>
+      <Skills>
+        <skill>Athl 4d6+2</skill>
+      </Skills>
+      <Skills>
+        <skill>Acro 3d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Combat 3d6+2</skill>
+      </Skills>
+      <Skills>
+        <skill>Stealth 3d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Percep 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Focus 3d6</skill>
+      </Skills>
       <Moves>
         <move>7 Ember - Fire</move>
       </Moves>
