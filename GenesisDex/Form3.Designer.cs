@@ -37,12 +37,14 @@
             this.pbExit = new System.Windows.Forms.PictureBox();
             this.pbPokemon = new System.Windows.Forms.PictureBox();
             this.pbScan = new System.Windows.Forms.PictureBox();
+            this.pbScanPokemon = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbOverlay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoForward)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbScan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbScanPokemon)).BeginInit();
             this.SuspendLayout();
             // 
             // pbOverlay
@@ -134,6 +136,20 @@
             this.pbScan.TabStop = false;
             this.pbScan.Click += new System.EventHandler(this.pbScan_Click_1);
             // 
+            // pbScanPokemon
+            // 
+            this.pbScanPokemon.BackColor = System.Drawing.Color.Transparent;
+            this.pbScanPokemon.Image = global::GenesisDex.Properties.Resources.ScanPokemon;
+            this.pbScanPokemon.Location = new System.Drawing.Point(226, 102);
+            this.pbScanPokemon.Name = "pbScanPokemon";
+            this.pbScanPokemon.Size = new System.Drawing.Size(157, 33);
+            this.pbScanPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbScanPokemon.TabIndex = 45;
+            this.pbScanPokemon.TabStop = false;
+            this.pbScanPokemon.Click += new System.EventHandler(this.pbScanPokemon_Click);
+            this.pbScanPokemon.MouseLeave += new System.EventHandler(this.pbScanPokemon_MouseLeave);
+            this.pbScanPokemon.MouseHover += new System.EventHandler(this.pbScanPokemon_MouseHover);
+            // 
             // FormScan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -141,6 +157,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = global::GenesisDex.Properties.Resources.MainMenu;
             this.ClientSize = new System.Drawing.Size(822, 616);
+            this.Controls.Add(this.pbScanPokemon);
             this.Controls.Add(this.pbScan);
             this.Controls.Add(this.pbOverlay);
             this.Controls.Add(this.infoBack);
@@ -163,6 +180,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokemon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbScan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbScanPokemon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -177,5 +195,6 @@
         private System.Windows.Forms.PictureBox pbExit;
         private System.Windows.Forms.PictureBox pbPokemon;
         private System.Windows.Forms.PictureBox pbScan;
+        private System.Windows.Forms.PictureBox pbScanPokemon;
     }
 }
