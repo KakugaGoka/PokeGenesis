@@ -243,7 +243,7 @@
   </Pokemon>
   <Pokemon>
     <number>003</number>
-    <id>Venasaur</id>
+    <id>Venusaur</id>
     <type>Grass/Poison</type>
     <hp>8</hp>
     <atk>8</atk>
@@ -368,12 +368,10 @@
     <Mega003>
       <id>Mega Venasaur</id>
       <type>Grass/Poison</type>
-      <hp>8</hp>
-      <atk>10</atk>
-      <def>12</def>
-      <spatk>12</spatk>
-      <spdef>12</spdef>
-      <spd>8</spd>
+      <atk>+2</atk>
+      <def>+4</def>
+      <spatk>+2</spatk>
+      <spdef>+2</spdef>
       <ability>Thick Fat</ability>
     </Mega003>
   </Pokemon>
@@ -724,4 +722,785 @@
     <spatk>+2</spatk>
     <ability>Tough Claws</ability>
   </MegaY006>
+  <Pokemon>
+    <number>007</number>
+    <id>Squirtle</id>
+    <type>Water</type>
+    <hp>4</hp>
+    <atk>5</atk>
+    <def>7</def>
+    <spatk>5</spatk>
+    <spdef>6</spdef>
+    <spd>4</spd>
+    <size>1' 8" / 0.5m (Small)</size>
+    <weight>1938 lbs. / 9kg (1)</weight>
+    <gender>87.5% M / 12.5% F</gender>
+    <egg>Monster / Water 1</egg>
+    <hatch>10 Days</hatch>
+    <diet>Herbivore</diet>
+    <habitat>Beah, Freshwater, Ocean</habitat>
+    <List007>
+      <Ability>
+        <ability>Shell Armor</ability>
+      </Ability>
+      <Ability>
+        <ability>Overcoat</ability>
+      </Ability>
+      <Ability>
+        <ability>Rain Dish</ability>
+      </Ability>
+      <Ability>
+        <ability>Shell Shield</ability>
+      </Ability>
+      <Ability>
+        <ability>Courage</ability>
+      </Ability>
+      <Skills>
+        <skill>Athl 2d6+2</skill>
+      </Skills>
+      <Skills>
+        <skill>Acro 3d6+2</skill>
+      </Skills>
+      <Skills>
+        <skill>Combat 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Stealth 3d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Percep 3d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Focus 2d6+3</skill>
+      </Skills>
+      <Capability>
+        <cap>Overland 6</cap>
+      </Capability>
+      <Capability>
+        <cap>Swim 6</cap>
+      </Capability>
+      <Capability>
+        <cap>Jump 1/1</cap>
+      </Capability>
+      <Capability>
+        <cap>Power 2</cap>
+      </Capability>
+      <Capability>
+        <cap>Fountain</cap>
+      </Capability>
+      <Capability>
+        <cap>Naturewalk (Wetlands)</cap>
+      </Capability>
+      <Capability>
+        <cap>Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo>Squirtle</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Wartortrle Minimum 15</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Blastoise Minimum 30</evo>
+      </Evolution>
+      <Moves>
+        <move>1 Tackle - Normal</move>
+      </Moves>
+      <Moves>
+        <move>4 Tail Whip - Normal</move>
+      </Moves>
+      <Moves>
+        <move>7 Bubble - Water</move>
+      </Moves>
+      <Moves>
+        <move>10 Withdraw - Water</move>
+      </Moves>
+      <Moves>
+        <move>13 Water Gun - Water</move>
+      </Moves>
+      <Moves>
+        <move>16 Bite - Dark</move>
+      </Moves>
+      <Moves>
+        <move>19 Rapid Spin - Normal</move>
+      </Moves>
+      <Moves>
+        <move>22 Protect - Normal</move>
+      </Moves>
+      <Moves>
+        <move>25 Water Pulse - Water</move>
+      </Moves>
+      <Moves>
+        <move>31 Skull Bash - Normal</move>
+      </Moves>
+      <Moves>
+        <move>34 Iron Defense - Steel</move>
+      </Moves>
+      <Moves>
+        <move>37 Rain Dance - Water</move>
+      </Moves>
+      <Moves>
+        <move>40 Hydro Pump - Water</move>
+      </Moves>
+    </List007>
+  </Pokemon>
+  <Pokemon>
+    <number>008</number>
+    <id>Wartortle</id>
+    <type>Water</type>
+    <hp>6</hp>
+    <atk>6</atk>
+    <def>8</def>
+    <spatk>7</spatk>
+    <spdef>8</spdef>
+    <spd>6</spd>
+    <size>3'3" / 1m (Medium)</size>
+    <weight>49.6 lbs. / 22.5kg (2)</weight>
+    <gender>87.5% M / 12.5% F</gender>
+    <egg>Monster / Water 1</egg>
+    <diet>Omnivore</diet>
+    <habitat>Beach, Freshwater, Ocean</habitat>
+    <List008>
+      <Ability>
+        <ability>Shell Armor</ability>
+      </Ability>
+      <Ability>
+        <ability>Overcoat</ability>
+      </Ability>
+      <Ability>
+        <ability>Rain Dish</ability>
+      </Ability>
+      <Ability>
+        <ability>Shell Shield</ability>
+      </Ability>
+      <Ability>
+        <ability>Courage</ability>
+      </Ability>
+      <Skills>
+        <skill>Athl 3d6+2</skill>
+      </Skills>
+      <Skills>
+        <skill>Acro 3d6+2</skill>
+      </Skills>
+      <Skills>
+        <skill>Combat 3d6+1</skill>
+      </Skills>
+      <Skills>
+        <skill>Stealth 3d6+2</skill>
+      </Skills>
+      <Skills>
+        <skill>Percep 3d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Focus 3d6+3</skill>
+      </Skills>
+      <Capability>
+        <cap>Overland 6</cap>
+      </Capability>
+      <Capability>
+        <cap>Swim 6</cap>
+      </Capability>
+      <Capability>
+        <cap>Jump 1/1</cap>
+      </Capability>
+      <Capability>
+        <cap>Power 4</cap>
+      </Capability>
+      <Capability>
+        <cap>Fountain</cap>
+      </Capability>
+      <Capability>
+        <cap>Naturewalk (Wetlands)</cap>
+      </Capability>
+      <Capability>
+        <cap>Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo>Squirtle</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Wartortle Minimum 15</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Blastoise Mimimum 30</evo>
+      </Evolution>
+      <Moves>
+        <move>4 Tail Whip - Normal</move>
+      </Moves>
+      <Moves>
+        <move>7 Bubble - Water</move>
+      </Moves>
+      <Moves>
+        <move>10 Withdraw - Water</move>
+      </Moves>
+      <Moves>
+        <move>13 Water Gun - Water</move>
+      </Moves>
+      <Moves>
+        <move>16 Bite - Dark</move>
+      </Moves>
+      <Moves>
+        <move>20 Rapid Spin - Normal</move>
+      </Moves>
+      <Moves>
+        <move>24 Protect - Normal</move>
+      </Moves>
+      <Moves>
+        <move>28 Water Pulse - Water</move>
+      </Moves>
+      <Moves>
+        <move>32 - Aqua Tail - Water</move>
+      </Moves>
+      <Moves>
+        <move>36 Skull Bash - Normal</move>
+      </Moves>
+      <Moves>
+        <move>40 Iron Defense - Steel</move>
+      </Moves>
+      <Moves>
+        <move>44 Rain Dance - Water</move>
+      </Moves>
+      <Moves>
+        <move>48 Hydro Pump - Water</move>
+      </Moves>
+    </List008>
+  </Pokemon>
+  <Pokemon>
+    <number>009</number>
+    <id>Blastoise</id>
+    <type>Water</type>
+    <hp>8</hp>
+    <atk>8</atk>
+    <def>10</def>
+    <spatk>9</spatk>
+    <spdef>11</spdef>
+    <spd>8</spd>
+    <size>5'3" / 1.6m (Medium)</size>
+    <weight>188.5 lbs. / 85.5kg (4)</weight>
+    <gender>87.5% M / 12.5% F</gender>
+    <egg>Monster / Water 1</egg>
+    <diet>Omnivore</diet>
+    <habitat>Beach, Freshwater, Ocean</habitat>
+    <List009>
+      <Ability>
+        <ability>Shell Armor</ability>
+      </Ability>
+      <Ability>
+        <ability>Overcoat</ability>
+      </Ability>
+      <Ability>
+        <ability>Rain Dish</ability>
+      </Ability>
+      <Ability>
+        <ability>ShellCannon</ability>
+      </Ability>
+      <Ability>
+        <ability>Courage</ability>
+      </Ability>
+      <Skills>
+        <skill>Athl 4d6+2</skill>
+      </Skills>
+      <Skills>
+        <skill>Acro 1d6+2</skill>
+      </Skills>
+      <Skills>
+        <skill>Combat 4d6+2</skill>
+      </Skills>
+      <Skills>
+        <skill>Stealth 1d6+2</skill>
+      </Skills>
+      <Skills>
+        <skill>Percep 3d6+3</skill>
+      </Skills>
+      <Skills>
+        <skill>Focus 4d6+3</skill>
+      </Skills>
+      <Capability>
+        <cap>Overland 6</cap>
+      </Capability>
+      <Capability>
+        <cap>Swim 9</cap>
+      </Capability>
+      <Capability>
+        <cap>Jump 1/1 </cap>
+      </Capability>
+      <Capability>
+        <cap>Power 9</cap>
+      </Capability>
+      <Capability>
+        <cap>Fountain</cap>
+      </Capability>
+      <Capability>
+        <cap>Naturewalk (Grassland)</cap>
+      </Capability>
+      <Capability>
+        <cap>Mountable 1</cap>
+      </Capability>
+      <Evolution>
+        <evo>Squirtle</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Wartortle Minimum 15</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Blastoise Minimum 30</evo>
+      </Evolution>
+      <Moves>
+        <move>4 Tail Whip - Normal</move>
+      </Moves>
+      <Moves>
+        <move>7 Bubble - Water</move>
+      </Moves>
+      <Moves>
+        <move>10 Withdraw - Water </move>
+      </Moves>
+      <Moves>
+        <move>13 Water Gun - Water</move>
+      </Moves>
+      <Moves>
+        <move>16 Bite - Dark</move>
+      </Moves>
+      <Moves>
+        <move>20 Rapid Spin - Normal</move>
+      </Moves>
+      <Moves>
+        <move>24 Protect - Normal</move>
+      </Moves>
+      <Moves>
+        <move>28 Water Pulse - Water </move>
+      </Moves>
+      <Moves>
+        <move>32 Aqua Tail - Water</move>
+      </Moves>
+      <Moves>
+        <move> 39 Skull Bash - Normal</move>
+      </Moves>
+      <Moves>
+        <move>46 Iron Defense - Steel</move>
+      </Moves>
+      <Moves>
+        <move>53 Rain Dance - Water</move>
+      </Moves>
+      <Moves>
+        <move>60 Hydro Pump - Water</move>
+      </Moves>
+    </List009>
+  </Pokemon>
+  <Mega009>
+    <id>Blastoise</id>
+    <type>Water</type>
+    <atk>+2</atk>
+    <def>+2</def>
+    <spatk>+5</spatk>
+    <spdef>+1</spdef>
+    <ability>Mega Launcher</ability>
+  </Mega009>
+  <Pokemon>
+    <number>010</number>
+    <id>Caterpie</id>
+    <type>Bug </type>
+    <hp>5</hp>
+    <atk>3</atk>
+    <def>4</def>
+    <spatk>2</spatk>
+    <spdef>2</spdef>
+    <spd>5</spd>
+    <size>1'0" / 0.3m (Small)</size>
+    <weight>6.4 lbs. / 2.9kg (1)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Bug</egg>
+    <hatch>7 Days</hatch>
+    <diet>Herbivore</diet>
+    <habitat>Forest</habitat>
+    <List010>
+      <Ability>
+        <ability>Shield Dust</ability>
+      </Ability>
+      <Ability>
+        <ability>Run Away</ability>
+      </Ability>
+      <Ability>
+        <ability>Silk Threads</ability>
+      </Ability>
+      <Ability>
+        <ability>Suction Cups</ability>
+      </Ability>
+      <Ability>
+        <ability>Run Up</ability>
+      </Ability>
+      <Skills>
+        <skill>Athl 3d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Acro 1d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Combat 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Stealth 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Percep 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Focus 3d6</skill>
+      </Skills>
+      <Capability>
+        <cap>Overland 5</cap>
+      </Capability>
+      <Capability>
+        <cap>Swim 2</cap>
+      </Capability>
+      <Capability>
+        <cap>Jump 1/1 </cap>
+      </Capability>
+      <Capability>
+        <cap>Power1</cap>
+      </Capability>
+      <Capability>
+        <cap>Naturewalk (Grassland, Forest)</cap>
+      </Capability>
+      <Capability>
+        <cap>Wallclimber</cap>
+      </Capability>
+      <Capability>
+        <cap>Threaded</cap>
+      </Capability>
+      <Capability>
+        <cap>Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo>Caterpie</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Metapod Minimum 5</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Butterfree Minimum 10</evo>
+      </Evolution>
+      <Moves>
+        <move>1 String Shot - Bug</move>
+      </Moves>
+      <Moves>
+        <move>1 Tackle - Normal</move>
+      </Moves>
+      <Moves>
+        <move>15 Bug Bite - Bug</move>
+      </Moves>
+    </List010>
+  </Pokemon>
+  <Pokemon>
+    <number>011</number>
+    <id>Metapod</id>
+    <type>Bug</type>
+    <hp>5</hp>
+    <atk>2</atk>
+    <def>6</def>
+    <spatk>3</spatk>
+    <spdef>3</spdef>
+    <spd>3</spd>
+    <size>2'4" / 0.7m (Small)</size>
+    <weight>21.8 lbs. / 9.9kg (1)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Bug</egg>
+    <diet>Nullivore</diet>
+    <habitat>Forest</habitat>
+    <List011>
+      <Ability>
+        <ability>Shed Skin</ability>
+      </Ability>
+      <Ability>
+        <ability>Battle Armor</ability>
+      </Ability>
+      <Ability>
+        <ability>Silk Threads</ability>
+      </Ability>
+      <Ability>
+        <ability>Magic Guard</ability>
+      </Ability>
+      <Ability>
+        <ability>Sturdy</ability>
+      </Ability>
+      <Skills>
+        <skill>Athl 1d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Acro 1d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Combat 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Stealth 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Percep 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Focus 3d6</skill>
+      </Skills>
+      <Capability>
+        <cap>Overland 2</cap>
+      </Capability>
+      <Capability>
+        <cap>Swim 2</cap>
+      </Capability>
+      <Capability>
+        <cap>Jump 1/1</cap>
+      </Capability>
+      <Capability>
+        <cap>Power1</cap>
+      </Capability>
+      <Capability>
+        <cap>Naturewalk (Grassland, Forest)</cap>
+      </Capability>
+      <Capability>
+        <cap>Threaded</cap>
+      </Capability>
+      <Capability>
+        <cap>Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo>Caterpie</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Metapod Minimum 5</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Butterfree Minimum 10</evo>
+      </Evolution>
+      <Moves>
+        <move>7 Harden - Normal</move>
+      </Moves>
+    </List011>
+  </Pokemon>
+  <Pokemon>
+    <number>012</number>
+    <id>Butterfree</id>
+    <type>Bug / Flying</type>
+    <hp>6</hp>
+    <atk>5</atk>
+    <def>5</def>
+    <spatk>+</spatk>
+    <spdef>9</spdef>
+    <spd>7</spd>
+    <size>3'7" / 1.1m (Medium)</size>
+    <weight>70.5 lbs./ 32kg (3)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Bug</egg>
+    <diet>Herbivore</diet>
+    <habitat>Forest</habitat>
+    <List012>
+      <Ability>
+        <ability>Compound Eyes</ability>
+      </Ability>
+      <Ability>
+        <ability>Tinted Lens</ability>
+      </Ability>
+      <Ability>
+        <ability>Keen Eye</ability>
+      </Ability>
+      <Ability>
+        <ability>Flutter</ability>
+      </Ability>
+      <Ability>
+        <ability>Blow Away</ability>
+      </Ability>
+      <Skills>
+        <skill>Athl 3d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Acro 3d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Combat 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Stealth 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Percep 6d6+3</skill>
+      </Skills>
+      <Skills>
+        <skill>Focus 5d6</skill>
+      </Skills>
+      <Capability>
+        <cap>Overland 3</cap>
+      </Capability>
+      <Capability>
+        <cap>Sky 8</cap>
+      </Capability>
+      <Capability>
+        <cap>Swim 2</cap>
+      </Capability>
+      <Capability>
+        <cap>Jump 1/1</cap>
+      </Capability>
+      <Capability>
+        <cap>Power2</cap>
+      </Capability>
+      <Capability>
+        <cap>Naturewalk (Grassland, Forest)</cap>
+      </Capability>
+      <Capability>
+        <cap>Wallclimber</cap>
+      </Capability>
+      <Capability>
+        <cap>Threaded</cap>
+      </Capability>
+      <Capability>
+        <cap>Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo>Caterpie</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Metapod Minimum 5</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Butterfree Minimum 10</evo>
+      </Evolution>
+      <Moves>
+        <move>10 Confusion - Psychic</move>
+      </Moves>
+      <Moves>
+        <move>12 Poison Powder - Poison</move>
+      </Moves>
+      <Moves>
+        <move>12 Sleep Powder - Grass</move>
+      </Moves>
+      <Moves>
+        <move>12 Stun Spore - Grass</move>
+      </Moves>
+      <Moves>
+        <move>16 Gust - Flying</move>
+      </Moves>
+      <Moves>
+        <move>18 Supersonic - Normal</move>
+      </Moves>
+      <Moves>
+        <move>22 Whirlwind - Normal</move>
+      </Moves>
+      <Moves>
+        <move>24 Psybeam - Psychic</move>
+      </Moves>
+      <Moves>
+        <move>28 Silver Wind - Bug</move>
+      </Moves>
+      <Moves>
+        <move>30 Tailwind - Flying</move>
+      </Moves>
+      <Moves>
+        <move>34 Rage Powder - Bug</move>
+      </Moves>
+      <Moves>
+        <move>36 Safeguard - Normal</move>
+      </Moves>
+      <Moves>
+        <move>40 Captivate - Normal</move>
+      </Moves>
+      <Moves>
+        <move>42 Bug Buzz - Bug</move>
+      </Moves>
+      <Moves>
+        <move>46 Quiver Dance - Bug</move>
+      </Moves>
+    </List012>
+  </Pokemon>
+  <Pokemon>
+    <number>013</number>
+    <id>Weedle</id>
+    <type>Bug / Poison</type>
+    <hp>4</hp>
+    <atk>4</atk>
+    <def>3</def>
+    <spatk>2</spatk>
+    <spdef>2</spdef>
+    <spd>5</spd>
+    <size>1'0" / 0.3m (Small)</size>
+    <weight>7.1 lbs. / 3.2kg (1)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Bug</egg>
+    <hatch>7 Days</hatch>
+    <diet>Herbivore</diet>
+    <habitat>Forest</habitat>
+    <List013>
+      <Ability>
+        <ability>Shield Dust</ability>
+      </Ability>
+      <Ability>
+        <ability>Run Away</ability>
+      </Ability>
+      <Ability>
+        <ability>Silk Threads</ability>
+      </Ability>
+      <Ability>
+        <ability>Swarm</ability>
+      </Ability>
+      <Ability>
+        <ability>Poison Touch</ability>
+      </Ability>
+      <Skills>
+        <skill>Athl 3d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Acro 1d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Combat 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Stealth 3d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Percep 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Focus 2d6</skill>
+      </Skills>
+      <Capability>
+        <cap>Overland 5</cap>
+      </Capability>
+      <Capability>
+        <cap>Burrow 1</cap>
+      </Capability>
+      <Capability>
+        <cap>Jump 1/1</cap>
+      </Capability>
+      <Capability>
+        <cap>Power 1</cap>
+      </Capability>
+      <Capability>
+        <cap>Naturewalk (Grassland, Forest)</cap>
+      </Capability>
+      <Capability>
+        <cap>Threaded</cap>
+      </Capability>
+      <Capability>
+        <cap>Wallclimber</cap>
+      </Capability>
+      <Capability>
+        <cap>Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo>Weedle </evo>
+      </Evolution>
+      <Evolution>
+        <evo>Kakuna Minimum 5</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Beedrill Minimum 10</evo>
+      </Evolution>
+      <Moves>
+        <move>1 Poison Sting - Poison</move>
+      </Moves>
+      <Moves>
+        <move>1 String Shot - Bug</move>
+      </Moves>
+      <Moves>
+        <move>15 Bug Bite - Bug</move>
+      </Moves>
+    </List013>
+  </Pokemon>
 </Namespace>
