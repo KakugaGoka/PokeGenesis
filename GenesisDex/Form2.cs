@@ -92,7 +92,7 @@ namespace GenesisDex
                 if (cbXY.Checked == true)
                 {
                     XElement megax = new XElement("MegaX" + tbNumber.Text,
-                        new XElement("id", tbName.Text),
+                        new XElement("id", tbMegaName.Text),
                         new XElement("type", tbMegaType.Text),
                         new XElement("hp", tbMegaHP.Text),
                         new XElement("atk", tbMegaATK.Text),
@@ -103,15 +103,15 @@ namespace GenesisDex
                         new XElement("ability", tbMegaAbility.Text));
                     doc.Root.Add(megax);
                     XElement megay = new XElement("MegaY" + tbNumber.Text,
-                        new XElement("id", tbName.Text),
-                        new XElement("type", tbMegaType.Text),
-                        new XElement("hp", tbMegaHP.Text),
-                        new XElement("atk", tbMegaATK.Text),
-                        new XElement("def", tbMegaDEF.Text),
-                        new XElement("spatk", tbMegaSPATK.Text),
-                        new XElement("spdef", tbMegaSPDEF.Text),
-                        new XElement("spd", tbMegaSPD.Text),
-                        new XElement("ability", tbMegaAbility.Text));
+                        new XElement("id", tbMega2Name.Text),
+                        new XElement("type", tbMega2Type.Text),
+                        new XElement("hp", tbMega2HP.Text),
+                        new XElement("atk", tbMega2ATK.Text),
+                        new XElement("def", tbMega2DEF.Text),
+                        new XElement("spatk", tbMega2SPATK.Text),
+                        new XElement("spdef", tbMega2SPDEF.Text),
+                        new XElement("spd", tbMega2SPD.Text),
+                        new XElement("ability", tbMega2Ability.Text));
                     doc.Root.Add(megay);
                 }
                 else

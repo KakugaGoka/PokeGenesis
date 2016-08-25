@@ -743,7 +743,7 @@
     </List006>
   </Pokemon>
   <MegaX006>
-    <id>Charizard</id>
+    <id>Mega Charizard X</id>
     <type>Fire/Dragon</type>
     <atk>+5</atk>
     <def>+3</def>
@@ -751,12 +751,12 @@
     <ability>Tough Claws</ability>
   </MegaX006>
   <MegaY006>
-    <id>Charizard</id>
-    <type>Fire/Dragon</type>
-    <atk>+5</atk>
-    <def>+3</def>
-    <spatk>+2</spatk>
-    <ability>Tough Claws</ability>
+    <id>Mega Charizard Y</id>
+    <type>Fire/Flying</type>
+    <atk>+2</atk>
+    <spdef>+3</spdef>
+    <spatk>+5</spatk>
+    <ability>Drought</ability>
   </MegaY006>
   <Pokemon>
     <number>007</number>
@@ -1123,7 +1123,7 @@
     </List009>
   </Pokemon>
   <Mega009>
-    <id>Blastoise</id>
+    <id>Mega Blastoise</id>
     <type>Water</type>
     <atk>+2</atk>
     <def>+2</def>

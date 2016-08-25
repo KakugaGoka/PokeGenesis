@@ -19,6 +19,7 @@ namespace GenesisDex
     {
         List<Pokemon> pokeList = new List<Pokemon>();
         List<Mega> megaList = new List<Mega>();
+        MegaList testMega = new MegaList();
         List<Evolution> evoList = new List<Evolution>();
         List<Skill> skillList = new List<Skill>();
         List<Capability> capList = new List<Capability>();
@@ -72,12 +73,16 @@ namespace GenesisDex
             }
             try
             {
-                mega = File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega.gif");
+                megaList.Clear();
+                megaList = testMega.createList("Mega" + pokeList[i].number);
+                mega = megaList.Count() != 0;
             }
             catch { return; }
             try
             {
-                megax = File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + pokeList[i].number + "-mega-x.gif");
+                megaList.Clear();
+                megaList = testMega.createList("MegaX" + pokeList[i].number);
+                megax = megaList.Count() != 0;
             }
             catch { return; }
             if (mega == true)
@@ -364,7 +369,7 @@ namespace GenesisDex
                 updatePage();
                 return;
             }
-            if (onMegaX == true)
+            else if (onMegaX == true)
             {
                 onMegaX = false;
                 pbPokemon.Image = megayImages[0];
@@ -405,17 +410,18 @@ namespace GenesisDex
                 {
                     if (onMegaX == true)
                     {
+                        megaList.Clear();
                         megaList = megaXML.createList("MegaX" + pokeList[i].number);
                         rtbInfo1.Text = string.Format(
                             "Number: {0}" + Environment.NewLine +
                             "Name: {1}" + Environment.NewLine +
                             "Type: {2}" + Environment.NewLine + Environment.NewLine +
-                            "HP:\t\t{3}" + Environment.NewLine +
-                            "ATK:\t\t{4}" + Environment.NewLine +
-                            "DEF:\t\t{5}" + Environment.NewLine +
-                            "SPATK:\t\t{6}" + Environment.NewLine +
-                            "SPDEF:\t\t{7}" + Environment.NewLine +
-                            "SPD:\t\t{8}" + Environment.NewLine + Environment.NewLine +
+                            "HP:\t\t{3}\t{16}" + Environment.NewLine +
+                            "ATK:\t\t{4}\t{17}" + Environment.NewLine +
+                            "DEF:\t\t{5}\t{18}" + Environment.NewLine +
+                            "SPATK:\t\t{6}\t{19}" + Environment.NewLine +
+                            "SPDEF:\t\t{7}\t{20}" + Environment.NewLine +
+                            "SPD:\t\t{8}\t{21}" + Environment.NewLine + Environment.NewLine +
                             "Height: {9}" + Environment.NewLine +
                             "Weight: {10}" + Environment.NewLine + Environment.NewLine +
                             "Gender Ratio: {11}" + Environment.NewLine +
@@ -423,23 +429,25 @@ namespace GenesisDex
                             "Average Hatch Time: {13}" + Environment.NewLine + Environment.NewLine +
                             "Diet: {14}" + Environment.NewLine +
                             "Habitat: {15}",
-                            pokeList[i].number, megaList[0].id, megaList[0].type, megaList[0].hp, megaList[0].atk, megaList[0].def,
-                            megaList[0].spatk, megaList[0].spdef, megaList[0].spd, pokeList[i].size, pokeList[i].weight, pokeList[i].gender,
-                            pokeList[i].egg, pokeList[i].hatch, pokeList[i].diet, pokeList[i].habitat);
+                            pokeList[i].number, megaList[0].id, megaList[0].type, pokeList[i].hp, pokeList[i].atk, pokeList[i].def,
+                            pokeList[i].spatk, pokeList[i].spdef, pokeList[i].spd, pokeList[i].size, pokeList[i].weight, pokeList[i].gender,
+                            pokeList[i].egg, pokeList[i].hatch, pokeList[i].diet, pokeList[i].habitat, megaList[0].hp, megaList[0].atk,
+                            megaList[0].def, megaList[0].spatk, megaList[0].spdef, megaList[0].spd);
                     }
                     else
                     {
+                        megaList.Clear();
                         megaList = megaXML.createList("MegaY" + pokeList[i].number);
                         rtbInfo1.Text = string.Format(
                             "Number: {0}" + Environment.NewLine +
                             "Name: {1}" + Environment.NewLine +
                             "Type: {2}" + Environment.NewLine + Environment.NewLine +
-                            "HP:\t\t{3}" + Environment.NewLine +
-                            "ATK:\t\t{4}" + Environment.NewLine +
-                            "DEF:\t\t{5}" + Environment.NewLine +
-                            "SPATK:\t\t{6}" + Environment.NewLine +
-                            "SPDEF:\t\t{7}" + Environment.NewLine +
-                            "SPD:\t\t{8}" + Environment.NewLine + Environment.NewLine +
+                            "HP:\t\t{3}\t{16}" + Environment.NewLine +
+                            "ATK:\t\t{4}\t{17}" + Environment.NewLine +
+                            "DEF:\t\t{5}\t{18}" + Environment.NewLine +
+                            "SPATK:\t\t{6}\t{19}" + Environment.NewLine +
+                            "SPDEF:\t\t{7}\t{20}" + Environment.NewLine +
+                            "SPD:\t\t{8}\t{21}" + Environment.NewLine + Environment.NewLine +
                             "Height: {9}" + Environment.NewLine +
                             "Weight: {10}" + Environment.NewLine + Environment.NewLine +
                             "Gender Ratio: {11}" + Environment.NewLine +
@@ -447,24 +455,26 @@ namespace GenesisDex
                             "Average Hatch Time: {13}" + Environment.NewLine + Environment.NewLine +
                             "Diet: {14}" + Environment.NewLine +
                             "Habitat: {15}",
-                            pokeList[i].number, megaList[0].id, megaList[0].type, megaList[0].hp, megaList[0].atk, megaList[0].def,
-                            megaList[0].spatk, megaList[0].spdef, megaList[0].spd, pokeList[i].size, pokeList[i].weight, pokeList[i].gender,
-                            pokeList[i].egg, pokeList[i].hatch, pokeList[i].diet, pokeList[i].habitat);
+                            pokeList[i].number, megaList[0].id, megaList[0].type, pokeList[i].hp, pokeList[i].atk, pokeList[i].def,
+                            pokeList[i].spatk, pokeList[i].spdef, pokeList[i].spd, pokeList[i].size, pokeList[i].weight, pokeList[i].gender,
+                            pokeList[i].egg, pokeList[i].hatch, pokeList[i].diet, pokeList[i].habitat, megaList[0].hp, megaList[0].atk,
+                            megaList[0].def, megaList[0].spatk, megaList[0].spdef, megaList[0].spd);
                     }
                 }
                 else if (mega == true)
                 {
+                    megaList.Clear();
                     megaList = megaXML.createList("Mega" + pokeList[i].number);
                     rtbInfo1.Text = string.Format(
                         "Number: {0}" + Environment.NewLine +
                         "Name: {1}" + Environment.NewLine +
                         "Type: {2}" + Environment.NewLine + Environment.NewLine +
-                        "HP:\t\t{3}" + Environment.NewLine +
-                        "ATK:\t\t{4}" + Environment.NewLine +
-                        "DEF:\t\t{5}" + Environment.NewLine +
-                        "SPATK:\t\t{6}" + Environment.NewLine +
-                        "SPDEF:\t\t{7}" + Environment.NewLine +
-                        "SPD:\t\t{8}" + Environment.NewLine + Environment.NewLine +
+                        "HP:\t\t{3}\t{16}" + Environment.NewLine +
+                        "ATK:\t\t{4}\t{17}" + Environment.NewLine +
+                        "DEF:\t\t{5}\t{18}" + Environment.NewLine +
+                        "SPATK:\t\t{6}\t{19}" + Environment.NewLine +
+                        "SPDEF:\t\t{7}\t{20}" + Environment.NewLine +
+                        "SPD:\t\t{8}\t{21}" + Environment.NewLine + Environment.NewLine +
                         "Height: {9}" + Environment.NewLine +
                         "Weight: {10}" + Environment.NewLine + Environment.NewLine +
                         "Gender Ratio: {11}" + Environment.NewLine +
@@ -472,33 +482,34 @@ namespace GenesisDex
                         "Average Hatch Time: {13}" + Environment.NewLine + Environment.NewLine +
                         "Diet: {14}" + Environment.NewLine +
                         "Habitat: {15}",
-                        pokeList[i].number, megaList[0].id, megaList[0].type, megaList[0].hp, megaList[0].atk, megaList[0].def,
-                        megaList[0].spatk, megaList[0].spdef, megaList[0].spd, pokeList[i].size, pokeList[i].weight, pokeList[i].gender,
-                        pokeList[i].egg, pokeList[i].hatch, pokeList[i].diet, pokeList[i].habitat);
+                        pokeList[i].number, megaList[0].id, megaList[0].type, pokeList[i].hp, pokeList[i].atk, pokeList[i].def,
+                        pokeList[i].spatk, pokeList[i].spdef, pokeList[i].spd, pokeList[i].size, pokeList[i].weight, pokeList[i].gender,
+                        pokeList[i].egg, pokeList[i].hatch, pokeList[i].diet, pokeList[i].habitat, megaList[0].hp, megaList[0].atk, 
+                        megaList[0].def, megaList[0].spatk, megaList[0].spdef, megaList[0].spd);
                 }
             }
             else
             {
                 rtbInfo1.Text = string.Format(
-                "Number: {0}" + Environment.NewLine +
-                "Name: {1}" + Environment.NewLine +
-                "Type: {2}" + Environment.NewLine + Environment.NewLine +
-                "HP:\t\t{3}" + Environment.NewLine +
-                "ATK:\t\t{4}" + Environment.NewLine +
-                "DEF:\t\t{5}" + Environment.NewLine +
-                "SPATK:\t\t{6}" + Environment.NewLine +
-                "SPDEF:\t\t{7}" + Environment.NewLine +
-                "SPD:\t\t{8}" + Environment.NewLine + Environment.NewLine +
-                "Height: {9}" + Environment.NewLine +
-                "Weight: {10}" + Environment.NewLine + Environment.NewLine +
-                "Gender Ratio: {11}" + Environment.NewLine +
-                "Egg Group: {12}" + Environment.NewLine +
-                "Average Hatch Time: {13}" + Environment.NewLine + Environment.NewLine +
-                "Diet: {14}" + Environment.NewLine +
-                "Habitat: {15}",
-                pokeList[i].number, pokeList[i].id, pokeList[i].type, pokeList[i].hp, pokeList[i].atk, pokeList[i].def,
-                pokeList[i].spatk, pokeList[i].spdef, pokeList[i].spd, pokeList[i].size, pokeList[i].weight, pokeList[i].gender,
-                pokeList[i].egg, pokeList[i].hatch, pokeList[i].diet, pokeList[i].habitat);
+                    "Number: {0}" + Environment.NewLine +
+                    "Name: {1}" + Environment.NewLine +
+                    "Type: {2}" + Environment.NewLine + Environment.NewLine +
+                    "HP:\t\t{3}" + Environment.NewLine +
+                    "ATK:\t\t{4}" + Environment.NewLine +
+                    "DEF:\t\t{5}" + Environment.NewLine +
+                    "SPATK:\t\t{6}" + Environment.NewLine +
+                    "SPDEF:\t\t{7}" + Environment.NewLine +
+                    "SPD:\t\t{8}" + Environment.NewLine + Environment.NewLine +
+                    "Height: {9}" + Environment.NewLine +
+                    "Weight: {10}" + Environment.NewLine + Environment.NewLine +
+                    "Gender Ratio: {11}" + Environment.NewLine +
+                    "Egg Group: {12}" + Environment.NewLine +
+                    "Average Hatch Time: {13}" + Environment.NewLine + Environment.NewLine +
+                    "Diet: {14}" + Environment.NewLine +
+                    "Habitat: {15}",
+                    pokeList[i].number, pokeList[i].id, pokeList[i].type, pokeList[i].hp, pokeList[i].atk, pokeList[i].def,
+                    pokeList[i].spatk, pokeList[i].spdef, pokeList[i].spd, pokeList[i].size, pokeList[i].weight, pokeList[i].gender,
+                    pokeList[i].egg, pokeList[i].hatch, pokeList[i].diet, pokeList[i].habitat);
             }
         }
 
@@ -507,6 +518,8 @@ namespace GenesisDex
             int i = carryi;
             CapabilityList capXML = new CapabilityList();
             SkillList skillXML = new SkillList();
+            capList.Clear();
+            skillList.Clear();
             capList = capXML.createList(pokeList[i].number);
             skillList = skillXML.createList(pokeList[i].number);
             rtbInfo1.Text = ("Capabilities:" + Environment.NewLine);
@@ -525,6 +538,7 @@ namespace GenesisDex
         {
             int i = carryi;
             MoveList moveXML = new MoveList();
+            moveList.Clear();
             moveList = moveXML.createList(pokeList[i].number);
             rtbInfo1.Text = ("Moves:" + Environment.NewLine);
             for (var e = 0; e < moveList.Count; e++)
@@ -537,6 +551,7 @@ namespace GenesisDex
         {
             int i = carryi;
             EvolutionList evoXML = new EvolutionList();
+            evoList.Clear();
             evoList = evoXML.createList(pokeList[i].number);
             rtbInfo1.Text = ("Evolutions:" + Environment.NewLine);
             for (var e = 0; e < evoList.Count; e++)
@@ -544,6 +559,7 @@ namespace GenesisDex
                 rtbInfo1.Text += "-" + evoList[e].evo + Environment.NewLine;
             }
             AbilityList abiXML = new AbilityList();
+            abiList.Clear();
             abiList = abiXML.createList(pokeList[i].number);
             rtbInfo1.Text += Environment.NewLine + "Basic Abilities:" + Environment.NewLine;
             for (var e = 0; e < abiList.Count - 3; e++)
@@ -717,6 +733,7 @@ namespace GenesisDex
         {
             PokemonList pokeXML = new PokemonList();
             pokeDex.Clear();
+            pokeList.Clear();
             pokeList = pokeXML.createList("Pokemon");
             SortPokeList();
             for (var i = 0; i < pokeList.Count; i++)
