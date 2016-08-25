@@ -12,18 +12,18 @@ using System.Windows.Forms;
 
 namespace GenesisDex
 {
-    public partial class FormChild : Form
+    public partial class FormAdd : Form
     {
-        public List<String> list
-        {
-            get; set;
-        }
+        int CAP { get; set; }
+        int EVO { get; set; }
+        int MOV { get; set; }
 
-        public FormChild()
+        public FormAdd()
         {
             InitializeComponent();
             gbMega.Visible = false;
             gbMega2.Visible = false;
+            gbRemove.Visible = false;
         }
 
         private void btAddPKMN_Click(object sender, EventArgs e)
@@ -121,6 +121,7 @@ namespace GenesisDex
             doc.Save(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Pokemon.xml");
             DialogResult result = MessageBox.Show(tbName.Text + " has been added to the Pokedex!");
             if (result == DialogResult.OK) { this.Close(); }
+
         }
 
         private void pbExit_Click(object sender, EventArgs e)
@@ -131,17 +132,22 @@ namespace GenesisDex
         private void btCapAdd_Click(object sender, EventArgs e)
         {
             listCap.Items.Add(tbCapAdd.Text);
+            CAP = listCap.Items.Count - 1;
+            tbCapAdd.Text = "";
         }
 
         private void btEvoAdd_Click(object sender, EventArgs e)
         {
             listEvo.Items.Add(tbEvoAdd.Text);
+            EVO = listEvo.Items.Count - 1;
+            tbEvoAdd.Text = "";
         }
 
         private void btMoveAdd_Click(object sender, EventArgs e)
         {
             listMoves.Items.Add(tbMoveAdd.Text);
-
+            MOV = listMoves.Items.Count - 1;
+            tbMoveAdd.Text = "";
         }
 
         private void cbMega_CheckedChanged(object sender, EventArgs e)
@@ -149,6 +155,10 @@ namespace GenesisDex
             if (cbMega.Checked == true)
             {
                 gbMega.Visible = true;
+                if (cbXY.Checked == true)
+                {
+                    cbXY_CheckedChanged(this, new EventArgs());
+                }
             }
             else
             {
@@ -176,6 +186,96 @@ namespace GenesisDex
             {
                 gbMega2.Visible = false;
                 gbMega.Text = "Mega Info";
+            }
+        }
+
+        private void btCapClear_Click(object sender, EventArgs e)
+        {
+            if (listCap.Items.Count == 0) { }
+            else
+            {
+                listCap.Items.RemoveAt(CAP);
+                CAP = listCap.Items.Count - 1;
+            }
+        }
+
+        private void btEvoClear_Click(object sender, EventArgs e)
+        {
+            if (listEvo.Items.Count == 0) { }
+            else
+            {
+                listEvo.Items.RemoveAt(EVO);
+                EVO = listEvo.Items.Count - 1;
+            }
+        }
+
+        private void btMoveClear_Click(object sender, EventArgs e)
+        {
+            if (listMoves.Items.Count == 0) { }
+            else
+            {
+                listMoves.Items.RemoveAt(MOV);
+                MOV = listMoves.Items.Count - 1;
+            }
+        }
+
+        private void tbCapAdd_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btCapAdd_Click(this, new EventArgs());
+            }
+        }
+
+        private void tbEvoAdd_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btEvoAdd_Click(this, new EventArgs());
+            }
+        }
+
+        private void tbMoveAdd_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btMoveAdd_Click(this, new EventArgs());
+            }
+        }
+
+        private void cbRemove_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbRemove.Checked == true)
+            {
+                gbRemove.Visible = true;
+            }
+            else
+            {
+                gbRemove.Visible = false;
+            }
+        }
+
+        private void btRemove_Click(object sender, EventArgs e)
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Pokemon.xml");
+            string ItemCode = tbRemove.Text;
+            XmlNode node = doc.SelectSingleNode("/*/Pokemon[contains(id,'" + ItemCode + "')]");
+            try { node.RemoveAll(); } catch { }
+            MessageBox.Show(tbRemove.Text + " has been removed from the Pokedex...");
+            tbRemove.Text = "";
+            doc.Save(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Pokemon.xml");
+            doc = null;
+            XDocument doc1 = XDocument.Load(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Pokemon.xml");
+            doc1.Descendants().Where(d => string.IsNullOrEmpty(d.Value)).Remove();
+            doc1.Save(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Pokemon.xml");
+        }
+
+        private void tbRemove_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btRemove_Click(this, new EventArgs());
             }
         }
     }

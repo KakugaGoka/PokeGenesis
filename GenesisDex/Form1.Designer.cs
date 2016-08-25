@@ -41,6 +41,7 @@
             this.pbX = new System.Windows.Forms.PictureBox();
             this.pbY = new System.Windows.Forms.PictureBox();
             this.pbPokeAdd = new System.Windows.Forms.PictureBox();
+            this.pbOverlay = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMega)).BeginInit();
@@ -51,14 +52,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbY)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokeAdd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbOverlay)).BeginInit();
             this.SuspendLayout();
             // 
             // pbPokemon
             // 
             this.pbPokemon.BackColor = System.Drawing.Color.Transparent;
-            this.pbPokemon.Location = new System.Drawing.Point(114, 172);
+            this.pbPokemon.Location = new System.Drawing.Point(114, 171);
             this.pbPokemon.Name = "pbPokemon";
-            this.pbPokemon.Size = new System.Drawing.Size(175, 131);
+            this.pbPokemon.Size = new System.Drawing.Size(175, 140);
             this.pbPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbPokemon.TabIndex = 0;
             this.pbPokemon.TabStop = false;
@@ -192,6 +194,17 @@
             this.pbPokeAdd.MouseLeave += new System.EventHandler(this.pbPokeAdd_MouseLeave);
             this.pbPokeAdd.MouseHover += new System.EventHandler(this.pbPokeAdd_MouseHover);
             // 
+            // pbOverlay
+            // 
+            this.pbOverlay.BackColor = System.Drawing.Color.Transparent;
+            this.pbOverlay.BackgroundImage = global::GenesisDex.Properties.Resources.MainMenuOverlay;
+            this.pbOverlay.Location = new System.Drawing.Point(15, 139);
+            this.pbOverlay.Name = "pbOverlay";
+            this.pbOverlay.Size = new System.Drawing.Size(377, 23);
+            this.pbOverlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbOverlay.TabIndex = 30;
+            this.pbOverlay.TabStop = false;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -199,6 +212,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(822, 616);
+            this.Controls.Add(this.pbOverlay);
             this.Controls.Add(this.pbPokeAdd);
             this.Controls.Add(this.pbY);
             this.Controls.Add(this.pbX);
@@ -229,6 +243,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbY)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokeAdd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbOverlay)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -247,6 +262,7 @@
         private System.Windows.Forms.PictureBox pbX;
         private System.Windows.Forms.PictureBox pbY;
         private System.Windows.Forms.PictureBox pbPokeAdd;
+        private System.Windows.Forms.PictureBox pbOverlay;
     }
 }
 

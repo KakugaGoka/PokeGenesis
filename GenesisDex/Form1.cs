@@ -82,16 +82,12 @@ namespace GenesisDex
             if (mega == true)
             {
                 pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOff.PNG");
-                pbY.Visible = false;
-                pbX.Visible = false;
                 viewMega = false;
             }
             else if (megax == true)
             {
                 pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOff.PNG");
                 onMegaX = false;
-                pbY.Visible = true;
-                pbX.Visible = true;
                 viewMega = false;
             }
             else
@@ -339,6 +335,8 @@ namespace GenesisDex
                     pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOffHover.PNG");
                     viewMega = false;
                     pbPokemon.Image = pokeImages[0];
+                    pbY.Visible = false;
+                    pbX.Visible = false;
                     updatePage();
                 }
                 else
@@ -346,6 +344,8 @@ namespace GenesisDex
                     pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOnHover.PNG");
                     changeMega();
                     viewMega = true;
+                    pbY.Visible = true;
+                    pbX.Visible = true;
                     updatePage();
                 }
             }
@@ -696,7 +696,7 @@ namespace GenesisDex
         private void pbPokeAdd_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormChild fc = new FormChild();
+            FormAdd fc = new FormAdd();
             fc.FormClosing += FormIsClosing;
             fc.Show();
         }
@@ -707,7 +707,6 @@ namespace GenesisDex
             {
                 return;
             }
-
             this.Show();
             RefreshPokedex();
             this.Update();
@@ -735,9 +734,9 @@ namespace GenesisDex
             {
                 return Image.FromFile(path);
             }
-            else if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\ImageNotFound.gif"))
+            else if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\MissingNo.gif"))
             {
-                return Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\ImageNotFound.gif");
+                return Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\MissingNo.gif");
             }
             else
             {
