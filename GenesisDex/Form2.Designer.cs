@@ -862,9 +862,9 @@
             this.label43.AutoSize = true;
             this.label43.Location = new System.Drawing.Point(5, 152);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(59, 13);
+            this.label43.Size = new System.Drawing.Size(64, 13);
             this.label43.TabIndex = 99;
-            this.label43.Text = "High Ability";
+            this.label43.Text = "Mega Ability";
             // 
             // tbMega2Ability
             // 
@@ -878,9 +878,9 @@
             this.label46.AutoSize = true;
             this.label46.Location = new System.Drawing.Point(5, 152);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(59, 13);
+            this.label46.Size = new System.Drawing.Size(64, 13);
             this.label46.TabIndex = 118;
-            this.label46.Text = "High Ability";
+            this.label46.Text = "Mega Ability";
             // 
             // tbMega2Type
             // 
@@ -1212,7 +1212,7 @@
             this.cbRemove.UseVisualStyleBackColor = true;
             this.cbRemove.CheckedChanged += new System.EventHandler(this.cbRemove_CheckedChanged);
             // 
-            // FormChild
+            // FormAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1300,7 +1300,7 @@
             this.Controls.Add(this.pbExit);
             this.Controls.Add(this.btAddPKMN);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormChild";
+            this.Name = "FormAdd";
             this.Text = "Edit Pokedex";
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
             this.gbMega.ResumeLayout(false);
