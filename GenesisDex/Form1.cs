@@ -42,7 +42,9 @@ namespace GenesisDex
         bool pokeChange { get; set; }
         bool done = false;
         List<string> pokeDex = new List<string>();
-        System.Timers.Timer clickWait = new System.Timers.Timer();
+        private bool dragging = false;
+        private Point dragCursorPoint;
+        private Point dragFormPoint;
 
         public FormMain()
         {
@@ -251,9 +253,6 @@ namespace GenesisDex
             pbPokemon.Location = new Point(pbPokeLocX, (pbPokeLocY + ((pbH/2) - (pokeH/2))));
             updatePage();
         }
-        private bool dragging = false;
-        private Point dragCursorPoint;
-        private Point dragFormPoint;
 
         private void FormMain_MouseDown(object sender, MouseEventArgs e)
         {
@@ -278,7 +277,7 @@ namespace GenesisDex
 
         private void pbExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void pbExit_MouseHover(object sender, EventArgs e)
@@ -741,11 +740,11 @@ namespace GenesisDex
         {
             this.Hide();
             FormAdd fc = new FormAdd();
-            fc.FormClosing += FormIsClosing;
+            fc.FormClosing += FormAddIsClosing;
             fc.Show();
         }
 
-        private void FormIsClosing(object sender, FormClosingEventArgs e)
+        private void FormAddIsClosing(object sender, FormClosingEventArgs e)
         {
             if (e.Cancel)
             {
@@ -806,6 +805,29 @@ namespace GenesisDex
             {
                 return x.number.CompareTo(y.number);
             });
+        }
+
+        private void pbScan_MouseHover(object sender, EventArgs e)
+        {
+            pbScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanHover.png");
+
+        }
+
+        private void pbScan_Click(object sender, EventArgs e)
+        {
+            FormScan fs = new FormScan();
+            this.Hide();
+            fs.Show();
+        }
+
+        private void pbScan_MouseHover_1(object sender, EventArgs e)
+        {
+            pbScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanHover.png");
+        }
+
+        private void pbScan_MouseLeave(object sender, EventArgs e)
+        {
+            pbScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Scan.png");
         }
     }
 }

@@ -117,17 +117,41 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Scan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Data\GUI\Scan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="infoBack.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACYAAAAjCAYAAAD48HgdAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAAd0SU1FB+AIFQgPEW4cMMsAAAFxSURBVFhHzditksIwFIZhTHx8b6K+ur6+up6b
+        wHMT9fVo/PrV69cjuvm6nJKfA5M2yQHxDr/hPEM6ncJBqTqoUWpWby5AaR2+aZomsWjmSxS3sHQBzN++
+        cRzZhaULYDYKcYskovkOqq7rLLDr+cw+HxPNP3T3O0ANw5AM+2nb+bvv2ddiWmF0pzcflgoD6mbWZoNV
+        VbWgUmCEWjKf92t2wC9mix0YSoE5qBddTyd2vR3NT4bFopAYbAsKicC2olBx2B4UKgrbi0JFYV/HIzs0
+        puJbuRcncvDvwYnA0FacGAxtwYnCUCxOHIZsHE4pQPhdIq6KaX42GCJc1uuxHDAEXHZY13XJMBSzZc+i
+        +Q4s1zV/SjTfgTVN85kwXPfTY8QtLB3NXmBa6wXmf2uIW1wymhvAkH2s4TX7Vqp1K+nnG9Wak6Q0xm6F
+        2T/h7HAKQT68ZHfY4y8C4CQBz7Jg7p8qOMbwLXGLJPJgLu5d/R/Xav4DOhPuKr/CXDkAAAAASUVORK5C
+        YII=
+</value>
   </data>
-  <data name="MainMenuOverlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MainMenuOverlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="infoForward.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACEAAAAjCAYAAAAaLGNkAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAAd0SU1FB+AIFQgND6YlbyoAAAEYSURBVFhH7dgvE4MgAIdhC51uttPNdrvZj+Kn
+        MNvt5vX1Zfv6AuOnh6eOKSB/Fhbem3du8OhOTk0IITxeTMzPkgXR932QtogZEhwhW0OiIRBjLD5Czn0J
+        MbQtH7pOuU8nJ4hb0/BnlllDnCFe4re2ECMETvujqj4ai2JC2EKMEPKIzzKFeEGgMc+VY6jyhkD4m1Tj
+        7POKQDoQ7wh0BgmCQEeQYIijKyYI4uyS9Y7QWTO8InQXLW8Ik1XTC8IEgIwQGBiQffe6tgYgI8S3ALEF
+        IGcIWwBygviJ27ur/RFIzhsNsQagBRGzaIg0TZftCVGLlS9kZVlySmk8RCWeV9aA5dWA6suuw9HLp/A1
+        YPN+ImSU4nMGEMKSN7JfuJcEaXSxAAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="MainMenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Data\GUI\MainMenu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Pokedex" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Data\GUI\Pokedex.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pbExit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAAd0SU1FB+AIFBMaLkcA0BYAAAFKSURBVEhLxZWxccMwEASZIFeuJpS7CedsQjmb
+        cK5S1IQrcQMMqD+KRz7AwxOyxmPM7BD4v8dBJAB1Y0p/jgySlNJ0hKorkcHTaZsE/cGeJZ9Gq9kuwKIP
+        4/4sDoHhkVE2oLh/FjTzbURGawcrhwhPG2sul2ns+w2Xuxk1o7XjBJrrdRqHIQcxp+Grw3e0cW5Cgy8D
+        4h3n88/OgCDntNw01tcmEFVRBqDQYaGYq/PNErMJtmRZQPAa5hXjOyyTrzGnA34TLBabyVwU4PNHWppY
+        P39dR4UAmhbd/5pE3wT4ySMjdTBXkyUoUZPWjLi7rD/PDTITnFoI36F6TgASy0n9NfwVoQl49XIk0SWZ
+        DSgKL0lBdDmCXcAbYXUWC6m9Io8MAm+GleIPzIPdRU1kAGSQ+ElqqLoSGfSwqVwrMuhhU7lWZNDDpnJt
+        pO4B4G6SgJqsj+cAAAAASUVORK5CYII=
+</value>
   </data>
 </root>

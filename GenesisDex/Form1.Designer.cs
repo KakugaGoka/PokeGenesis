@@ -42,6 +42,7 @@
             this.pbY = new System.Windows.Forms.PictureBox();
             this.pbPokeAdd = new System.Windows.Forms.PictureBox();
             this.pbOverlay = new System.Windows.Forms.PictureBox();
+            this.pbScan = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMega)).BeginInit();
@@ -53,6 +54,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbY)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokeAdd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOverlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbScan)).BeginInit();
             this.SuspendLayout();
             // 
             // pbPokemon
@@ -69,7 +71,7 @@
             // 
             this.pbExit.BackColor = System.Drawing.Color.Transparent;
             this.pbExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbExit.BackgroundImage")));
-            this.pbExit.Location = new System.Drawing.Point(12, 12);
+            this.pbExit.Location = new System.Drawing.Point(417, 12);
             this.pbExit.Name = "pbExit";
             this.pbExit.Size = new System.Drawing.Size(24, 23);
             this.pbExit.TabIndex = 15;
@@ -205,6 +207,19 @@
             this.pbOverlay.TabIndex = 30;
             this.pbOverlay.TabStop = false;
             // 
+            // pbScan
+            // 
+            this.pbScan.BackColor = System.Drawing.Color.Transparent;
+            this.pbScan.BackgroundImage = global::GenesisDex.Properties.Resources.Scan;
+            this.pbScan.Location = new System.Drawing.Point(22, 23);
+            this.pbScan.Name = "pbScan";
+            this.pbScan.Size = new System.Drawing.Size(86, 86);
+            this.pbScan.TabIndex = 32;
+            this.pbScan.TabStop = false;
+            this.pbScan.Click += new System.EventHandler(this.pbScan_Click);
+            this.pbScan.MouseLeave += new System.EventHandler(this.pbScan_MouseLeave);
+            this.pbScan.MouseHover += new System.EventHandler(this.pbScan_MouseHover_1);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -212,6 +227,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(822, 616);
+            this.Controls.Add(this.pbScan);
             this.Controls.Add(this.pbOverlay);
             this.Controls.Add(this.pbPokeAdd);
             this.Controls.Add(this.pbY);
@@ -228,6 +244,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "FormMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GenesisDex";
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormMain_MouseDown);
@@ -244,6 +261,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbY)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokeAdd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOverlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbScan)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -263,6 +281,7 @@
         private System.Windows.Forms.PictureBox pbY;
         private System.Windows.Forms.PictureBox pbPokeAdd;
         private System.Windows.Forms.PictureBox pbOverlay;
+        private System.Windows.Forms.PictureBox pbScan;
     }
 }
 

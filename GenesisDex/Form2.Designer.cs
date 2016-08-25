@@ -1301,6 +1301,7 @@
             this.Controls.Add(this.btAddPKMN);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormAdd";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edit Pokedex";
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
             this.gbMega.ResumeLayout(false);
