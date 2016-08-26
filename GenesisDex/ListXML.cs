@@ -42,6 +42,11 @@ namespace GenesisDexEngine
         public string ability { get; set; }
     }
 
+    class Items
+    {
+        public string id { get; set; }
+    }
+
     class Evolution
     {
         public string evo { get; set; }
@@ -134,6 +139,23 @@ namespace GenesisDexEngine
                             spdef = (string)node.Element("spdef"),
                             spd = (string)node.Element("spd"),
                             ability = (string)node.Element("ability")
+                        };
+            idList = query.ToList();
+            return idList;
+        }
+    }
+
+    class ItemList
+    {
+        public List<Items> createList(string xml, string decend)
+        {
+            string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\" + xml + ".xml");
+            List<Items> idList = new List<Items>();
+            XDocument doc = XDocument.Load(fileName);
+            var query = from node in doc.Descendants(decend)
+                        select new Items
+                        {
+                            id = (string)node.Element("id")
                         };
             idList = query.ToList();
             return idList;

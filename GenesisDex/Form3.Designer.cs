@@ -33,11 +33,22 @@
             this.infoBack = new System.Windows.Forms.PictureBox();
             this.infoForward = new System.Windows.Forms.PictureBox();
             this.rtbInfo1 = new System.Windows.Forms.RichTextBox();
-            this.lbPokemon = new System.Windows.Forms.ListBox();
             this.pbExit = new System.Windows.Forms.PictureBox();
             this.pbPokemon = new System.Windows.Forms.PictureBox();
             this.pbScan = new System.Windows.Forms.PictureBox();
             this.pbScanPokemon = new System.Windows.Forms.PictureBox();
+            this.pkLevelMin = new System.Windows.Forms.NumericUpDown();
+            this.pkHabitat = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pkType = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pkLevelMax = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pkHasItem = new System.Windows.Forms.CheckBox();
+            this.pkHasUnique = new System.Windows.Forms.CheckBox();
+            this.pkCanBeShiny = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbOverlay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoForward)).BeginInit();
@@ -45,6 +56,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbScan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbScanPokemon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pkLevelMin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pkLevelMax)).BeginInit();
             this.SuspendLayout();
             // 
             // pbOverlay
@@ -91,18 +104,6 @@
             this.rtbInfo1.TabIndex = 35;
             this.rtbInfo1.Text = "";
             // 
-            // lbPokemon
-            // 
-            this.lbPokemon.BackColor = System.Drawing.Color.Black;
-            this.lbPokemon.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPokemon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.lbPokemon.FormattingEnabled = true;
-            this.lbPokemon.ItemHeight = 18;
-            this.lbPokemon.Location = new System.Drawing.Point(23, 375);
-            this.lbPokemon.Name = "lbPokemon";
-            this.lbPokemon.Size = new System.Drawing.Size(360, 166);
-            this.lbPokemon.TabIndex = 33;
-            // 
             // pbExit
             // 
             this.pbExit.BackColor = System.Drawing.Color.Transparent;
@@ -140,7 +141,7 @@
             // 
             this.pbScanPokemon.BackColor = System.Drawing.Color.Transparent;
             this.pbScanPokemon.Image = global::GenesisDex.Properties.Resources.ScanPokemon;
-            this.pbScanPokemon.Location = new System.Drawing.Point(226, 102);
+            this.pbScanPokemon.Location = new System.Drawing.Point(109, 542);
             this.pbScanPokemon.Name = "pbScanPokemon";
             this.pbScanPokemon.Size = new System.Drawing.Size(157, 33);
             this.pbScanPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -150,6 +151,160 @@
             this.pbScanPokemon.MouseLeave += new System.EventHandler(this.pbScanPokemon_MouseLeave);
             this.pbScanPokemon.MouseHover += new System.EventHandler(this.pbScanPokemon_MouseHover);
             // 
+            // pkLevelMin
+            // 
+            this.pkLevelMin.Location = new System.Drawing.Point(109, 393);
+            this.pkLevelMin.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.pkLevelMin.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.pkLevelMin.Name = "pkLevelMin";
+            this.pkLevelMin.Size = new System.Drawing.Size(42, 20);
+            this.pkLevelMin.TabIndex = 46;
+            this.pkLevelMin.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            // 
+            // pkHabitat
+            // 
+            this.pkHabitat.FormattingEnabled = true;
+            this.pkHabitat.Location = new System.Drawing.Point(109, 419);
+            this.pkHabitat.Name = "pkHabitat";
+            this.pkHabitat.Size = new System.Drawing.Size(162, 21);
+            this.pkHabitat.TabIndex = 47;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Silver;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Location = new System.Drawing.Point(68, 395);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 15);
+            this.label1.TabIndex = 48;
+            this.label1.Text = "Level";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Silver;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.Location = new System.Drawing.Point(60, 422);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 15);
+            this.label2.TabIndex = 49;
+            this.label2.Text = "Habitat";
+            // 
+            // pkType
+            // 
+            this.pkType.FormattingEnabled = true;
+            this.pkType.Location = new System.Drawing.Point(109, 446);
+            this.pkType.Name = "pkType";
+            this.pkType.Size = new System.Drawing.Size(162, 21);
+            this.pkType.TabIndex = 50;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Silver;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Location = new System.Drawing.Point(70, 449);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(33, 15);
+            this.label3.TabIndex = 51;
+            this.label3.Text = "Type";
+            // 
+            // pkLevelMax
+            // 
+            this.pkLevelMax.Location = new System.Drawing.Point(157, 393);
+            this.pkLevelMax.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.pkLevelMax.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.pkLevelMax.Name = "pkLevelMax";
+            this.pkLevelMax.Size = new System.Drawing.Size(42, 20);
+            this.pkLevelMax.TabIndex = 52;
+            this.pkLevelMax.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Silver;
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label4.Location = new System.Drawing.Point(163, 375);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(29, 15);
+            this.label4.TabIndex = 53;
+            this.label4.Text = "Max";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Silver;
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label5.Location = new System.Drawing.Point(115, 375);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(26, 15);
+            this.label5.TabIndex = 54;
+            this.label5.Text = "Min";
+            // 
+            // pkHasItem
+            // 
+            this.pkHasItem.AutoSize = true;
+            this.pkHasItem.BackColor = System.Drawing.Color.Silver;
+            this.pkHasItem.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.pkHasItem.FlatAppearance.BorderSize = 5;
+            this.pkHasItem.Location = new System.Drawing.Point(109, 473);
+            this.pkHasItem.Name = "pkHasItem";
+            this.pkHasItem.Size = new System.Drawing.Size(206, 17);
+            this.pkHasItem.TabIndex = 55;
+            this.pkHasItem.Text = "Can gernerate with items or TM/HMs?";
+            this.pkHasItem.UseVisualStyleBackColor = false;
+            // 
+            // pkHasUnique
+            // 
+            this.pkHasUnique.AutoSize = true;
+            this.pkHasUnique.BackColor = System.Drawing.Color.Silver;
+            this.pkHasUnique.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.pkHasUnique.FlatAppearance.BorderSize = 5;
+            this.pkHasUnique.Location = new System.Drawing.Point(109, 496);
+            this.pkHasUnique.Name = "pkHasUnique";
+            this.pkHasUnique.Size = new System.Drawing.Size(183, 17);
+            this.pkHasUnique.TabIndex = 56;
+            this.pkHasUnique.Text = "Can gernerate with unique items?";
+            this.pkHasUnique.UseVisualStyleBackColor = false;
+            // 
+            // pkCanBeShiny
+            // 
+            this.pkCanBeShiny.AutoSize = true;
+            this.pkCanBeShiny.BackColor = System.Drawing.Color.Silver;
+            this.pkCanBeShiny.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.pkCanBeShiny.FlatAppearance.BorderSize = 5;
+            this.pkCanBeShiny.Location = new System.Drawing.Point(109, 519);
+            this.pkCanBeShiny.Name = "pkCanBeShiny";
+            this.pkCanBeShiny.Size = new System.Drawing.Size(93, 17);
+            this.pkCanBeShiny.TabIndex = 57;
+            this.pkCanBeShiny.Text = "Can be shiny?";
+            this.pkCanBeShiny.UseVisualStyleBackColor = false;
+            // 
             // FormScan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -157,13 +312,24 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = global::GenesisDex.Properties.Resources.MainMenu;
             this.ClientSize = new System.Drawing.Size(822, 616);
+            this.Controls.Add(this.pkCanBeShiny);
+            this.Controls.Add(this.pkHasUnique);
+            this.Controls.Add(this.pkHasItem);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.pkLevelMax);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.pkType);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pkHabitat);
+            this.Controls.Add(this.pkLevelMin);
             this.Controls.Add(this.pbScanPokemon);
             this.Controls.Add(this.pbScan);
             this.Controls.Add(this.pbOverlay);
             this.Controls.Add(this.infoBack);
             this.Controls.Add(this.infoForward);
             this.Controls.Add(this.rtbInfo1);
-            this.Controls.Add(this.lbPokemon);
             this.Controls.Add(this.pbExit);
             this.Controls.Add(this.pbPokemon);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -181,7 +347,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbPokemon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbScan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbScanPokemon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pkLevelMin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pkLevelMax)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -191,10 +360,21 @@
         private System.Windows.Forms.PictureBox infoBack;
         private System.Windows.Forms.PictureBox infoForward;
         private System.Windows.Forms.RichTextBox rtbInfo1;
-        private System.Windows.Forms.ListBox lbPokemon;
         private System.Windows.Forms.PictureBox pbExit;
         private System.Windows.Forms.PictureBox pbPokemon;
         private System.Windows.Forms.PictureBox pbScan;
         private System.Windows.Forms.PictureBox pbScanPokemon;
+        private System.Windows.Forms.NumericUpDown pkLevelMin;
+        private System.Windows.Forms.ComboBox pkHabitat;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox pkType;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.NumericUpDown pkLevelMax;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.CheckBox pkHasItem;
+        private System.Windows.Forms.CheckBox pkHasUnique;
+        private System.Windows.Forms.CheckBox pkCanBeShiny;
     }
 }
