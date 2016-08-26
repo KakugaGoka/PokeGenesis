@@ -1303,6 +1303,9 @@
             this.Name = "FormAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edit Pokedex";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormAdd_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FormAdd_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FormAdd_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
             this.gbMega.ResumeLayout(false);
             this.gbMega.PerformLayout();

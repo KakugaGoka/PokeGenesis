@@ -17,6 +17,9 @@ namespace GenesisDex
         int CAP { get; set; }
         int EVO { get; set; }
         int MOV { get; set; }
+        private bool dragging = false;
+        private Point dragCursorPoint;
+        private Point dragFormPoint;
 
         public FormAdd()
         {
@@ -305,6 +308,27 @@ namespace GenesisDex
             {
                 btRemove_Click(this, new EventArgs());
             }
+        }
+
+        private void FormAdd_MouseDown(object sender, MouseEventArgs e)
+        {
+            dragging = true;
+            dragCursorPoint = Cursor.Position;
+            dragFormPoint = this.Location;
+        }
+
+        private void FormAdd_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (dragging)
+            {
+                Point dif = Point.Subtract(Cursor.Position, new Size(dragCursorPoint));
+                this.Location = Point.Add(dragFormPoint, new Size(dif));
+            }
+        }
+
+        private void FormAdd_MouseUp(object sender, MouseEventArgs e)
+        {
+            dragging = false;
         }
     }
 }
