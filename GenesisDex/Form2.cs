@@ -39,6 +39,20 @@ namespace GenesisDex
             string[] Capabilities = listCap.Items.Cast<String>().ToArray();
             string[] Moves = listMoves.Items.Cast<String>().ToArray();
             string[] Evo = listEvo.Items.Cast<String>().ToArray();
+            tbNumber.Text = tbNumber.Text.Trim(' ');
+            tbName.Text = tbName.Text.Trim(' ');
+            tbType.Text = tbType.Text.Trim(' ');
+            tbHP.Text = tbHP.Text.Trim(' ');
+            tbATK.Text = tbATK.Text.Trim(' ');
+            tbDEF.Text = tbDEF.Text.Trim(' ');
+            tbSPATK.Text = tbSPATK.Text.Trim(' ');
+            tbSPDEF.Text = tbSPDEF.Text.Trim(' ');
+            tbSPD.Text = tbSPD.Text.Trim(' ');
+            tbHeight.Text = tbHeight.Text.Trim(' ');
+            tbWeight.Text = tbWeight.Text.Trim(' ');
+            tbGender.Text = tbGender.Text.Trim(' ');
+            tbEgg.Text = tbEgg.Text.Trim(' ');
+            tbHatch.Text = tbHatch.Text.Trim(' ');
             XDocument doc = XDocument.Load(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Pokemon.xml");
             XElement pokemon = new XElement("Pokemon",
                 new XElement("number", tbNumber.Text),
@@ -94,6 +108,15 @@ namespace GenesisDex
             {
                 if (cbXY.Checked == true)
                 {
+                    tbMegaName.Text = tbMegaName.Text.Trim(' ');
+                    tbMegaType.Text = tbMegaType.Text.Trim(' ');
+                    tbMegaHP.Text = tbMegaHP.Text.Trim(' ');
+                    tbMegaATK.Text = tbMegaATK.Text.Trim(' ');
+                    tbMegaDEF.Text = tbMegaDEF.Text.Trim(' ');
+                    tbMegaSPATK.Text = tbMegaSPATK.Text.Trim(' ');
+                    tbMegaSPDEF.Text = tbMegaSPDEF.Text.Trim(' ');
+                    tbMegaSPD.Text = tbMegaSPD.Text.Trim(' ');
+                    tbMegaAbility.Text = tbMegaAbility.Text.Trim(' ');
                     XElement megax = new XElement("MegaX" + tbNumber.Text,
                         new XElement("id", tbMegaName.Text),
                         new XElement("type", tbMegaType.Text),
@@ -105,6 +128,15 @@ namespace GenesisDex
                         new XElement("spd", tbMegaSPD.Text),
                         new XElement("ability", tbMegaAbility.Text));
                     doc.Root.Add(megax);
+                    tbMega2Name.Text = tbMega2Name.Text.Trim(' ');
+                    tbMega2Type.Text = tbMega2Type.Text.Trim(' ');
+                    tbMega2HP.Text = tbMega2HP.Text.Trim(' ');
+                    tbMega2ATK.Text = tbMega2ATK.Text.Trim(' ');
+                    tbMega2DEF.Text = tbMega2DEF.Text.Trim(' ');
+                    tbMega2SPATK.Text = tbMega2SPATK.Text.Trim(' ');
+                    tbMega2SPDEF.Text = tbMega2SPDEF.Text.Trim(' ');
+                    tbMega2SPD.Text = tbMega2SPD.Text.Trim(' ');
+                    tbMega2Ability.Text = tbMega2Ability.Text.Trim(' ');
                     XElement megay = new XElement("MegaY" + tbNumber.Text,
                         new XElement("id", tbMega2Name.Text),
                         new XElement("type", tbMega2Type.Text),
@@ -119,6 +151,15 @@ namespace GenesisDex
                 }
                 else
                 {
+                    tbMegaName.Text = tbMegaName.Text.Trim(' ');
+                    tbMegaType.Text = tbMegaType.Text.Trim(' ');
+                    tbMegaHP.Text = tbMegaHP.Text.Trim(' ');
+                    tbMegaATK.Text = tbMegaATK.Text.Trim(' ');
+                    tbMegaDEF.Text = tbMegaDEF.Text.Trim(' ');
+                    tbMegaSPATK.Text = tbMegaSPATK.Text.Trim(' ');
+                    tbMegaSPDEF.Text = tbMegaSPDEF.Text.Trim(' ');
+                    tbMegaSPD.Text = tbMegaSPD.Text.Trim(' ');
+                    tbMegaAbility.Text = tbMegaAbility.Text.Trim(' ');
                     XElement mega = new XElement("Mega" + tbNumber.Text,
                         new XElement("id", tbMegaName.Text),
                         new XElement("type", tbMegaType.Text),
@@ -148,6 +189,7 @@ namespace GenesisDex
         {
             if (tbCapAdd.Text != "")
             {
+                tbCapAdd.Text = tbCapAdd.Text.Trim(' ');
                 listCap.Items.Add(tbCapAdd.Text);
                 CAP = listCap.Items.Count - 1;
                 tbCapAdd.Text = "";
@@ -158,6 +200,7 @@ namespace GenesisDex
         {
             if (tbEvoAdd.Text != "")
             {
+                tbEvoAdd.Text = tbEvoAdd.Text.Trim(' ');
                 listEvo.Items.Add(tbEvoAdd.Text);
                 EVO = listEvo.Items.Count - 1;
                 tbEvoAdd.Text = "";
@@ -168,6 +211,7 @@ namespace GenesisDex
         {
             if (tbMoveAdd.Text != "")
             {
+                tbMoveAdd.Text = tbMoveAdd.Text.Trim(' ');
                 listMoves.Items.Add(tbMoveAdd.Text);
                 MOV = listMoves.Items.Count - 1;
                 tbMoveAdd.Text = "";

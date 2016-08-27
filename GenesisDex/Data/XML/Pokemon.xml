@@ -774,7 +774,7 @@
     <egg>Monster / Water 1</egg>
     <hatch>10 Days</hatch>
     <diet>Herbivore</diet>
-    <habitat>Beah, Freshwater, Ocean</habitat>
+    <habitat>Beach, Freshwater, Ocean</habitat>
     <List007>
       <Ability>
         <ability>Shell Armor</ability>
@@ -1109,7 +1109,7 @@
         <move>32 Aqua Tail - Water</move>
       </Moves>
       <Moves>
-        <move> 39 Skull Bash - Normal</move>
+        <move>39 Skull Bash - Normal</move>
       </Moves>
       <Moves>
         <move>46 Iron Defense - Steel</move>

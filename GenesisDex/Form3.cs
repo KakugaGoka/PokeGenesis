@@ -39,6 +39,9 @@ namespace GenesisDex
         List<string> habitats = new List<string>();
         List<string> types = new List<string>();
         int nature { get; set; }
+        Pokemon IChooseYou = new Pokemon();
+        int TrueLevel = new int();
+        int Page = 1;
 
         public FormScan()
         {
@@ -122,30 +125,33 @@ namespace GenesisDex
             CheckHabitat();
             CheckType();
             Pokemon HeyYou = GetPokemon();
+            if (HeyYou == null){ return; }
             Pokemon Pikachu = GetNature(HeyYou);
             int Level = GetLevel();
             Pokemon throwspokeball = GetGender(Pikachu);
-            Pokemon IChooseYou = LevelPokemon(throwspokeball, Level);
-            pbPokemon.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + IChooseYou.number + ".gif");
+            Pokemon PokeBall = LevelPokemon(throwspokeball, Level);
+            if (pkCanBeShiny.Checked == true)
+            {
+                int i = rng.Next(1, 101);
+                if (i == 1 || i == 100)
+                {
+                    pbPokemon.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + PokeBall.number + ".gif");
+                }
+                else
+                {
+                    pbPokemon.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + PokeBall.number + ".gif");
+                }
+
+            }
+            else
+            {
+                pbPokemon.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + PokeBall.number + ".gif");
+            }
             SetImage();
-            rtbInfo1.Text = "Number: " + IChooseYou.number + Environment.NewLine +
-                "Name: " + IChooseYou.id + Environment.NewLine +
-                "Type: " + IChooseYou.type + Environment.NewLine +
-                Environment.NewLine +
-                "Level: " + Level + Environment.NewLine +
-                "Nature: " + natureList[nature].id + Environment.NewLine +
-                Environment.NewLine +
-                "Stats:" + Environment.NewLine +
-                "HP:\t\t" + IChooseYou.hp + Environment.NewLine +
-                "ATK:\t\t" + IChooseYou.atk + Environment.NewLine +
-                "DEF:\t\t" + IChooseYou.def + Environment.NewLine +
-                "SPATK:\t\t" + IChooseYou.spatk + Environment.NewLine +
-                "SPDEF:\t\t" + IChooseYou.spdef + Environment.NewLine +
-                "SPD:\t\t" + IChooseYou.spd + Environment.NewLine +
-                Environment.NewLine +
-                "Gender: " + IChooseYou.gender + Environment.NewLine +
-                "Size: " + IChooseYou.size + Environment.NewLine +
-                "Weight: " + IChooseYou.weight;
+            IChooseYou = PokeBall;
+            TrueLevel = Level;
+            UpdatePage();
+
                 
         }
 
@@ -172,16 +178,7 @@ namespace GenesisDex
             if (Habitat == "Any") { return; }
             for(var e = 0; e < pokeList.Count; e++)
             {
-                capList = capXML.createList(pokeList[e].number);
-                for (var c = 0; c < capList.Count; c++)
-                {
-                    if (capList[c].cap.Contains(Habitat) != true)
-                    {
-                        capList.RemoveAt(c);
-                        c -= 1;
-                    }
-                }
-                if (capList.Count == 0)
+                if (pokeList[e].habitat.Contains(Habitat) == false)
                 {
                     pokeList.RemoveAt(e);
                     e -= 1;
@@ -196,7 +193,7 @@ namespace GenesisDex
             if ( Type == "Any") { return; }
             for (var e = 0; e < pokeList.Count; e++)
             {
-                if (pokeList[e].type.Contains(Type) != true)
+                if (pokeList[e].type.Contains(Type) == false)
                 {
                     pokeList.RemoveAt(e);
                     e -= 1;
@@ -240,7 +237,8 @@ namespace GenesisDex
         private Pokemon GetPokemon()
         {
             int i = rng.Next(0, pokeList.Count);
-            return pokeList[i];
+            try { return pokeList[i]; } catch { MessageBox.Show("There are no registered Pokemon that fit this criteria..."); return null; }
+            
         }
 
         private int GetLevel()
@@ -330,17 +328,7 @@ namespace GenesisDex
                 m = gendermale[0];
                 m = m.Trim();
             }
-            string f = gender[3];
-            f = f.Replace("%", " ");
-            f = f.Trim();
-            if (f.Contains('.'))
-            {
-                string[] genderfemale = f.Split('.');
-                f = genderfemale[0];
-                f = f.Trim();
-            }
             int male = Convert.ToInt32(m);
-            int female = Convert.ToInt32(f);
             int i = rng.Next(0, 101);
             if (i <= male)
             {
@@ -352,6 +340,70 @@ namespace GenesisDex
                 poke.gender = "Female";
                 return poke;
             }
+        }
+
+        private void UpdatePage()
+        {
+            if (Page == 0) { Page = 2; }
+            if (Page == 1) { WriteInfo(); }
+            if (Page == 2) { WriteMoves(); }
+            if (Page == 3) { Page = 1; }
+
+        }
+
+        private void WriteInfo()
+        {
+            rtbInfo1.Text = "Number: " + IChooseYou.number + Environment.NewLine +
+                "Name: " + IChooseYou.id + Environment.NewLine +
+                "Type: " + IChooseYou.type + Environment.NewLine +
+                Environment.NewLine +
+                "Level: " + TrueLevel + Environment.NewLine +
+                "Nature: " + natureList[nature].id + Environment.NewLine +
+                Environment.NewLine +
+                "Stats:" + Environment.NewLine +
+                "HP:\t\t" + IChooseYou.hp + Environment.NewLine +
+                "ATK:\t\t" + IChooseYou.atk + Environment.NewLine +
+                "DEF:\t\t" + IChooseYou.def + Environment.NewLine +
+                "SPATK:\t\t" + IChooseYou.spatk + Environment.NewLine +
+                "SPDEF:\t\t" + IChooseYou.spdef + Environment.NewLine +
+                "SPD:\t\t" + IChooseYou.spd + Environment.NewLine +
+                Environment.NewLine +
+                "Gender: " + IChooseYou.gender + Environment.NewLine +
+                "Size: " + IChooseYou.size + Environment.NewLine +
+                "Weight: " + IChooseYou.weight;
+        }
+
+        private void WriteMoves()
+        {
+            int i = TrueLevel;
+            MoveList moveXML = new MoveList();
+            List<string> moves = new List<string>();
+            moveList.Clear();
+            moveList = moveXML.createList(IChooseYou.number);
+            rtbInfo1.Text = ("Moves:" + Environment.NewLine);
+            for (var e = 0; e < moveList.Count; e++)
+            {
+                string[] moveLevel = moveList[e].move.Split(' ');
+                int lvl = Convert.ToInt32(moveLevel[0]);
+                if (lvl <= i) { moves.Add(moveList[e].move); }
+                if (moves.Count > 6) { moves.RemoveAt(0); }
+            }
+            for (var w = 0; w < moves.Count; w++)
+            {
+                rtbInfo1.Text += "-" + moves[w] + Environment.NewLine;
+            }
+        }
+
+        private void infoBack_Click(object sender, EventArgs e)
+        {
+            Page--;
+            UpdatePage();
+        }
+
+        private void infoForward_Click(object sender, EventArgs e)
+        {
+            Page++;
+            UpdatePage();
         }
     }
 }
