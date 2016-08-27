@@ -2,110 +2,182 @@
 <Namespace>
   <Nature>
     <id>Cuddly</id>
+    <up>hp</up>
+    <down>atk</down>
   </Nature>
   <Nature>
     <id>Distracted</id>
+    <up>hp</up>
+    <down>def</down>
   </Nature>
   <Nature>
     <id>Proud</id>
+    <up>hp</up>
+    <down>spatk</down>
   </Nature>
   <Nature>
     <id>Decisive</id>
+    <up>hp</up>
+    <down>spdef</down>
   </Nature>
   <Nature>
     <id>Patient</id>
+    <up>hp</up>
+    <down>spd</down>
   </Nature>
   <Nature>
     <id>Desperate</id>
+    <up>atk</up>
+    <down>hp</down>
   </Nature>
   <Nature>
     <id>Lonely</id>
+    <up>atk</up>
+    <down>def</down>
   </Nature>
   <Nature>
     <id>Adamant</id>
+    <up>atk</up>
+    <down>spatk</down>
   </Nature>
   <Nature>
     <id>Naughty</id>
+    <up>atk</up>
+    <down>spdef</down>
   </Nature>
   <Nature>
     <id>Brave</id>
+    <up>atk</up>
+    <down>spd</down>
   </Nature>
   <Nature>
     <id>Stark</id>
+    <up>def</up>
+    <down>hp</down>
   </Nature>
   <Nature>
     <id>Bold</id>
+    <up>def</up>
+    <down>atk</down>
   </Nature>
   <Nature>
     <id>Impish</id>
+    <up>def</up>
+    <down>spatk</down>
   </Nature>
   <Nature>
     <id>Lax</id>
+    <up>def</up>
+    <down>spdef</down>
   </Nature>
   <Nature>
     <id>Relaxed</id>
+    <up>def</up>
+    <down>spd</down>
   </Nature>
   <Nature>
     <id>Curious</id>
+    <up>spatk</up>
+    <down>hp</down>
   </Nature>
   <Nature>
     <id>Modest</id>
+    <up>spatk</up>
+    <down>atk</down>
   </Nature>
   <Nature>
     <id>Mild</id>
+    <up>spatk</up>
+    <down>def</down>
   </Nature>
   <Nature>
     <id>Rash</id>
+    <up>spatk</up>
+    <down>spdef</down>
   </Nature>
   <Nature>
     <id>Quiet</id>
+    <up>spatk</up>
+    <down>spd</down>
   </Nature>
   <Nature>
     <id>Dreamy</id>
+    <up>spdef</up>
+    <down>hp</down>
   </Nature>
   <Nature>
     <id>Calm</id>
+    <up>spdef</up>
+    <down>atk</down>
   </Nature>
   <Nature>
     <id>Gentle</id>
+    <up>spdef</up>
+    <down>def</down>
   </Nature>
   <Nature>
     <id>Careful</id>
+    <up>spdef</up>
+    <down>spatk</down>
   </Nature>
   <Nature>
     <id>Sassy</id>
+    <up>spdef</up>
+    <down>spd</down>
   </Nature>
   <Nature>
     <id>Skittish</id>
+    <up>spd</up>
+    <down>hp</down>
   </Nature>
   <Nature>
     <id>Timid</id>
+    <up>spd</up>
+    <down>atk</down>
   </Nature>
   <Nature>
     <id>Hasty</id>
+    <up>spd</up>
+    <down>def</down>
   </Nature>
   <Nature>
     <id>Jolly</id>
+    <up>spd</up>
+    <down>spatk</down>
   </Nature>
   <Nature>
     <id>Naive</id>
+    <up>spd</up>
+    <down>spdef</down>
   </Nature>
   <Nature>
     <id>Composed</id>
+    <up>hp</up>
+    <down>hp</down>
   </Nature>
   <Nature>
     <id>Hardy</id>
+    <up>atk</up>
+    <down>atk</down>
   </Nature>
   <Nature>
     <id>Docile</id>
+    <up>def</up>
+    <down>def</down>
   </Nature>
   <Nature>
     <id>Bashful</id>
+    <up>spatk</up>
+    <down>spatk</down>
   </Nature>
   <Nature>
     <id>Quirky</id>
+    <up>spdef</up>
+    <down>spdef</down>
   </Nature>
   <Nature>
     <id>Serious</id>
+    <up>spd</up>
+    <down>spd</down>
   </Nature>
 </Namespace>

@@ -23,7 +23,7 @@ namespace GenesisDex
         SkillList skillXML = new SkillList();
         CapabilityList capXML = new CapabilityList();
         ItemList typeXML = new ItemList();
-        ItemList natureXML = new ItemList();
+        NatureList natureXML = new NatureList();
         ItemList habitatXML = new ItemList();
         List<Pokemon> pokeList = new List<Pokemon>();
         List<Move> moveList = new List<Move>();
@@ -35,9 +35,10 @@ namespace GenesisDex
         int pbPokeLocY { get; set; }
         List<Items> habitatList = new List<Items>();
         List<Items> typeList = new List<Items>();
-        List<Items> natureList = new List<Items>();
+        List<Nature> natureList = new List<Nature>();
         List<string> habitats = new List<string>();
         List<string> types = new List<string>();
+        int nature { get; set; }
 
         public FormScan()
         {
@@ -120,10 +121,11 @@ namespace GenesisDex
             pokeList = pokeXML.createList("Pokemon");
             CheckHabitat();
             CheckType();
-            string Nature = GetNature();
-            Pokemon Pikachu = GetPokemon();
+            Pokemon HeyYou = GetPokemon();
+            Pokemon Pikachu = GetNature(HeyYou);
             int Level = GetLevel();
-            Pokemon IChooseYou = LevelPokemon(Pikachu, Level);
+            Pokemon throwspokeball = GetGender(Pikachu);
+            Pokemon IChooseYou = LevelPokemon(throwspokeball, Level);
             pbPokemon.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + IChooseYou.number + ".gif");
             SetImage();
             rtbInfo1.Text = "Number: " + IChooseYou.number + Environment.NewLine +
@@ -131,6 +133,7 @@ namespace GenesisDex
                 "Type: " + IChooseYou.type + Environment.NewLine +
                 Environment.NewLine +
                 "Level: " + Level + Environment.NewLine +
+                "Nature: " + natureList[nature].id + Environment.NewLine +
                 Environment.NewLine +
                 "Stats:" + Environment.NewLine +
                 "HP:\t\t" + IChooseYou.hp + Environment.NewLine +
@@ -140,6 +143,7 @@ namespace GenesisDex
                 "SPDEF:\t\t" + IChooseYou.spdef + Environment.NewLine +
                 "SPD:\t\t" + IChooseYou.spd + Environment.NewLine +
                 Environment.NewLine +
+                "Gender: " + IChooseYou.gender + Environment.NewLine +
                 "Size: " + IChooseYou.size + Environment.NewLine +
                 "Weight: " + IChooseYou.weight;
                 
@@ -164,7 +168,7 @@ namespace GenesisDex
 
         private void CheckHabitat()
         {
-            string Habitat = pkHabitat.SelectedText;
+            string Habitat = pkHabitat.Text;
             if (Habitat == "Any") { return; }
             for(var e = 0; e < pokeList.Count; e++)
             {
@@ -188,7 +192,7 @@ namespace GenesisDex
 
         private void CheckType()
         {
-            string Type = pkType.SelectedText;
+            string Type = pkType.Text;
             if ( Type == "Any") { return; }
             for (var e = 0; e < pokeList.Count; e++)
             {
@@ -201,16 +205,41 @@ namespace GenesisDex
             }
         }
 
-        private string GetNature()
+        private Pokemon GetNature(Pokemon poke)
         {
             natureList = natureXML.createList("Natures", "Nature");
             int i = rng.Next(0, natureList.Count - 1);
-            return natureList[i].id;
+            int hp = Convert.ToInt32(poke.hp);
+            int atk = Convert.ToInt32(poke.atk);
+            int def = Convert.ToInt32(poke.def);
+            int spatk = Convert.ToInt32(poke.spatk);
+            int spdef = Convert.ToInt32(poke.spdef);
+            int spd = Convert.ToInt32(poke.spd);
+            if (natureList[i].up == "hp") { hp++; }
+            else if (natureList[i].up == "atk") { atk += 2; }
+            else if (natureList[i].up == "def") { def += 2; }
+            else if (natureList[i].up == "spatk") { spatk += 2; }
+            else if (natureList[i].up == "spdef") { spdef += 2; }
+            else if (natureList[i].up == "spd") { spd += 2; }
+            if (natureList[i].down == "hp") { hp--; }
+            else if (natureList[i].down == "atk") { atk -= 2; }
+            else if (natureList[i].down == "def") { def -= 2; }
+            else if (natureList[i].down == "spatk") { spatk -= 2; }
+            else if (natureList[i].down == "spdef") { spdef -= 2; }
+            else if (natureList[i].down == "spd") { spd -= 2; }
+            poke.hp = hp.ToString();
+            poke.atk = atk.ToString();
+            poke.def = def.ToString();
+            poke.spatk = spatk.ToString();
+            poke.spdef = spdef.ToString();
+            poke.spd = spd.ToString();
+            nature = i;
+            return poke;
         }
 
         private Pokemon GetPokemon()
         {
-            int i = rng.Next(0, pokeList.Count - 1);
+            int i = rng.Next(0, pokeList.Count);
             return pokeList[i];
         }
 
@@ -232,118 +261,97 @@ namespace GenesisDex
 
         private Pokemon LevelPokemon(Pokemon poke, int level)
         {
-            List<int> stats = new List<int>();
-            List<int> oldstats = new List<int>();
-            stats.Clear();
-            stats.Add(Convert.ToInt32(poke.hp));
-            stats.Add(Convert.ToInt32(poke.atk));
-            stats.Add(Convert.ToInt32(poke.def));
-            stats.Add(Convert.ToInt32(poke.spatk));
-            stats.Add(Convert.ToInt32(poke.spdef));
-            stats.Add(Convert.ToInt32(poke.spd));
-            oldstats = stats;
+            List<Stat> stats = new List<Stat>();
+            StatList getstats = new StatList();
+            int hp = Convert.ToInt32(poke.hp);
+            int atk = Convert.ToInt32(poke.atk);
+            int def = Convert.ToInt32(poke.def);
+            int spatk = Convert.ToInt32(poke.spatk);
+            int spdef = Convert.ToInt32(poke.spdef);
+            int spd = Convert.ToInt32(poke.spd);
+            stats = getstats.createList(hp, atk, def, spatk, spdef, spd);
             SortStats(stats);
-            var x = 0;
-            int hp = 0;
-            int atk = 0;
-            int def = 0;
-            int spatk = 0;
-            int spdef = 0;
-            int spd = 0;
-            for (x = 0; x < stats.Count; x++)
-            {
-                if (stats[x] == oldstats[5]) { hp = x; }
-            }
-            for (x = 0; x < stats.Count; x++)
-            {
-                if (stats[x] == oldstats[4]) { atk = x; }
-            }
-            for (x = 0; x < stats.Count; x++)
-            {
-                if (stats[x] == oldstats[3]) { def = x; }
-            }
-            for (x = 0; x < stats.Count; x++)
-            {
-                if (stats[x] == oldstats[2]) { spatk = x; }
-            }
-            for (x = 0; x < stats.Count; x++)
-            {
-                if (stats[x] == oldstats[1]) { spdef = x; }
-            }
-            for (x = 0; x < stats.Count; x++)
-            {
-                if (stats[x] == oldstats[0]) { spd = x; }
-            }
-            int a = stats[0];
-            int b = stats[1];
-            int c = stats[2];
-            int d = stats[3];
-            int e = stats[4];
-            int f = stats[5];
-            for (var l = level; l > 0; l-= 1)
-            {
-                int z = rng.Next(0, 5) + 1;
-                if (z == 1)
-                {
-                    if (b == a) { a += 1; }
-                    else if (b > a - 2) { z += 1; }
-                    else { a += 1; }
-                }
-                else if (z == 2)
-                {
-                    if (c == b) { b += 1; }
-                    else if (c > b - 2) { z += 1; }
-                    else { b += 1; }
-                }
-                else if (z == 3)
-                {
-                    if (d == c) { c += 1; }
-                    else if (d > c - 2) { z += 1; }
-                    else { c += 1; }
-                }
-                else if (z == 4)
-                {
-                    if (e == d) { d += 1; }
-                    else if (e > d - 2) { z += 1; }
-                    else { d += 1; }
-                }
-                else if (z == 5)
-                {
-                    if (f == e) { e += 1; }
-                    else if (f > e - 2) { z += 1; }
-                    else { e += 1; }
-                }
-                else if (z == 6)
-                {
-                    if (f == e) { e += 1; }
-                    else if (f == e-1) { l += 1; }
-                    else { e += 1; }
-                }
-            }
-            stats[0] = a;
-            stats[1] = b;
-            stats[2] = c;
-            stats[3] = d;
-            stats[4] = e;
-            stats[5] = f;
 
-            poke.hp = stats[hp].ToString();
-            poke.atk = stats[atk].ToString();
-            poke.def = stats[def].ToString();
-            poke.spatk = stats[spatk].ToString();
-            poke.spdef = stats[spdef].ToString();
-            poke.spd = stats[spd].ToString();
-
+            for (var l = level; l > 0; l--)
+            {
+                int i = rng.Next(1, 7);
+                if ( i == 1) { if (stats[5].stat <= stats[4].stat) { stats[5].stat++; } else { l++; } }
+                else if (i == 2) { if (stats[4].stat <= stats[3].stat) { stats[4].stat++; } else { l++; } }
+                else if (i == 3) { if (stats[3].stat <= stats[2].stat) { stats[3].stat++; } else { l++; } }
+                else if (i == 4) { if (stats[2].stat <= stats[1].stat) { stats[2].stat++; } else { l++; } }
+                else if (i == 5) { if (stats[1].stat <= stats[0].stat) { stats[1].stat++; } else { l++; } }
+                else if (i == 6) { stats[0].stat++; }
+            }
+            for (var z = 0; z < stats.Count; z++)
+            {
+                if (stats[z].id == "hp") { poke.hp = stats[z].stat.ToString(); }
+            }
+            for (var z = 0; z < stats.Count; z++)
+            {
+                if (stats[z].id == "atk") { poke.atk = stats[z].stat.ToString(); }
+            }
+            for (var z = 0; z < stats.Count; z++)
+            {
+                if (stats[z].id == "def") { poke.def = stats[z].stat.ToString(); }
+            }
+            for (var z = 0; z < stats.Count; z++)
+            {
+                if (stats[z].id == "spatk") { poke.spatk = stats[z].stat.ToString(); }
+            }
+            for (var z = 0; z < stats.Count; z++)
+            {
+                if (stats[z].id == "spdef") { poke.spdef = stats[z].stat.ToString(); }
+            }
+            for (var z = 0; z < stats.Count; z++)
+            {
+                if (stats[z].id == "spd") { poke.spd = stats[z].stat.ToString(); }
+            }
             return poke;
 
         }
 
-        private void SortStats(List<int> stats)
+        private void SortStats(List<Stat> stats)
         {
-            stats.Sort(delegate (int x, int y)
+            stats.Sort(delegate (Stat x, Stat y)
             {
-                return y.CompareTo(x);
+                return y.stat.CompareTo(x.stat);
             });
+        }
+
+        private Pokemon GetGender(Pokemon poke)
+        {
+            string[] gender = poke.gender.Split(' ');
+            string m = gender[0];
+            m = m.Replace("%"," ");
+            m = m.Trim();
+            if (m.Contains('.'))
+            {
+                string[] gendermale = m.Split('.');
+                m = gendermale[0];
+                m = m.Trim();
+            }
+            string f = gender[3];
+            f = f.Replace("%", " ");
+            f = f.Trim();
+            if (f.Contains('.'))
+            {
+                string[] genderfemale = f.Split('.');
+                f = genderfemale[0];
+                f = f.Trim();
+            }
+            int male = Convert.ToInt32(m);
+            int female = Convert.ToInt32(f);
+            int i = rng.Next(0, 101);
+            if (i <= male)
+            {
+                poke.gender = "Male";
+                return poke;
+            }
+            else
+            {
+                poke.gender = "Female";
+                return poke;
+            }
         }
     }
 }

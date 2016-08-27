@@ -72,22 +72,14 @@ namespace GenesisDexEngine
         public string move { get; set; }
     }
 
-    class TM
+    class Nature
     {
-        public string tm { get; set; }
+        public string id { get; set; }
+        public string up { get; set; }
+        public string down { get; set; }
     }
 
-    class Egg
-    {
-        public string egg { get; set; }
-    }
-
-    class Tutor
-    {
-        public string tut { get; set; }
-    }
-
-    class PokemonList
+class PokemonList
     {
         public List<Pokemon> createList(string decend)
         {
@@ -156,6 +148,25 @@ namespace GenesisDexEngine
                         select new Items
                         {
                             id = (string)node.Element("id")
+                        };
+            idList = query.ToList();
+            return idList;
+        }
+    }
+
+    class NatureList
+    {
+        public List<Nature> createList(string xml, string decend)
+        {
+            string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\" + xml + ".xml");
+            List<Nature> idList = new List<Nature>();
+            XDocument doc = XDocument.Load(fileName);
+            var query = from node in doc.Descendants(decend)
+                        select new Nature
+                        {
+                            id = (string)node.Element("id"),
+                            up = (string)node.Element("up"),
+                            down = (string)node.Element("down")
                         };
             idList = query.ToList();
             return idList;
@@ -241,6 +252,33 @@ namespace GenesisDexEngine
                         };
             idList = query.ToList();
             return idList;
+        }
+    }
+
+    class Stat
+    {
+        public int stat { get; set; }
+        public string id { get; set; }
+    }
+
+    class StatList
+    {
+        public List<Stat> createList(int hp, int atk, int def, int spatk, int spdef, int spd)
+        {
+            Stat HP = new Stat { id = "hp", stat = hp };
+            Stat ATK = new Stat { id = "atk", stat = atk };
+            Stat DEF = new Stat { id = "def", stat = def };
+            Stat SPATK = new Stat { id = "spatk", stat = spatk };
+            Stat SPDEF = new Stat { id = "spdef", stat = spdef };
+            Stat SPD = new Stat { id = "spd", stat = spd };
+            List<Stat> statList = new List<Stat>();
+            statList.Add(HP);
+            statList.Add(ATK);
+            statList.Add(DEF);
+            statList.Add(SPATK);
+            statList.Add(SPDEF);
+            statList.Add(SPD);
+            return statList;
         }
     }
 }
