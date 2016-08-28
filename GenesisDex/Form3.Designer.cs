@@ -49,6 +49,10 @@
             this.pkHasItem = new System.Windows.Forms.CheckBox();
             this.pkHasUnique = new System.Windows.Forms.CheckBox();
             this.pkCanBeShiny = new System.Windows.Forms.CheckBox();
+            this.pkItem = new System.Windows.Forms.PictureBox();
+            this.pkHeld = new System.Windows.Forms.Label();
+            this.pkItem2 = new System.Windows.Forms.PictureBox();
+            this.pkGasp = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbOverlay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoForward)).BeginInit();
@@ -58,6 +62,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbScanPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkLevelMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkLevelMax)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pkItem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pkItem2)).BeginInit();
             this.SuspendLayout();
             // 
             // pbOverlay
@@ -143,7 +149,7 @@
             // 
             this.pbScanPokemon.BackColor = System.Drawing.Color.Transparent;
             this.pbScanPokemon.Image = global::GenesisDex.Properties.Resources.ScanPokemon;
-            this.pbScanPokemon.Location = new System.Drawing.Point(109, 542);
+            this.pbScanPokemon.Location = new System.Drawing.Point(40, 542);
             this.pbScanPokemon.Name = "pbScanPokemon";
             this.pbScanPokemon.Size = new System.Drawing.Size(157, 33);
             this.pbScanPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -155,7 +161,7 @@
             // 
             // pkLevelMin
             // 
-            this.pkLevelMin.Location = new System.Drawing.Point(109, 393);
+            this.pkLevelMin.Location = new System.Drawing.Point(65, 393);
             this.pkLevelMin.Maximum = new decimal(new int[] {
             99,
             0,
@@ -174,13 +180,14 @@
             0,
             0,
             0});
+            this.pkLevelMin.ValueChanged += new System.EventHandler(this.pkLevelMin_ValueChanged);
             // 
             // pkHabitat
             // 
             this.pkHabitat.FormattingEnabled = true;
-            this.pkHabitat.Location = new System.Drawing.Point(109, 419);
+            this.pkHabitat.Location = new System.Drawing.Point(65, 419);
             this.pkHabitat.Name = "pkHabitat";
-            this.pkHabitat.Size = new System.Drawing.Size(162, 21);
+            this.pkHabitat.Size = new System.Drawing.Size(90, 21);
             this.pkHabitat.TabIndex = 47;
             // 
             // label1
@@ -188,7 +195,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Silver;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(68, 395);
+            this.label1.Location = new System.Drawing.Point(24, 395);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 15);
             this.label1.TabIndex = 48;
@@ -199,7 +206,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Silver;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Location = new System.Drawing.Point(60, 422);
+            this.label2.Location = new System.Drawing.Point(16, 422);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 15);
             this.label2.TabIndex = 49;
@@ -208,9 +215,9 @@
             // pkType
             // 
             this.pkType.FormattingEnabled = true;
-            this.pkType.Location = new System.Drawing.Point(109, 446);
+            this.pkType.Location = new System.Drawing.Point(65, 446);
             this.pkType.Name = "pkType";
-            this.pkType.Size = new System.Drawing.Size(162, 21);
+            this.pkType.Size = new System.Drawing.Size(90, 21);
             this.pkType.TabIndex = 50;
             // 
             // label3
@@ -218,7 +225,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Silver;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Location = new System.Drawing.Point(70, 449);
+            this.label3.Location = new System.Drawing.Point(26, 449);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(33, 15);
             this.label3.TabIndex = 51;
@@ -226,7 +233,7 @@
             // 
             // pkLevelMax
             // 
-            this.pkLevelMax.Location = new System.Drawing.Point(157, 393);
+            this.pkLevelMax.Location = new System.Drawing.Point(113, 393);
             this.pkLevelMax.Maximum = new decimal(new int[] {
             99,
             0,
@@ -245,13 +252,14 @@
             0,
             0,
             0});
+            this.pkLevelMax.ValueChanged += new System.EventHandler(this.pkLevelMax_ValueChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Silver;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Location = new System.Drawing.Point(163, 375);
+            this.label4.Location = new System.Drawing.Point(119, 375);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 15);
             this.label4.TabIndex = 53;
@@ -262,7 +270,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Silver;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Location = new System.Drawing.Point(115, 375);
+            this.label5.Location = new System.Drawing.Point(71, 375);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(26, 15);
             this.label5.TabIndex = 54;
@@ -274,11 +282,11 @@
             this.pkHasItem.BackColor = System.Drawing.Color.Silver;
             this.pkHasItem.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.pkHasItem.FlatAppearance.BorderSize = 5;
-            this.pkHasItem.Location = new System.Drawing.Point(109, 473);
+            this.pkHasItem.Location = new System.Drawing.Point(65, 473);
             this.pkHasItem.Name = "pkHasItem";
-            this.pkHasItem.Size = new System.Drawing.Size(206, 17);
+            this.pkHasItem.Size = new System.Drawing.Size(126, 17);
             this.pkHasItem.TabIndex = 55;
-            this.pkHasItem.Text = "Can gernerate with items or TM/HMs?";
+            this.pkHasItem.Text = "Generate with Items?";
             this.pkHasItem.UseVisualStyleBackColor = false;
             // 
             // pkHasUnique
@@ -287,11 +295,11 @@
             this.pkHasUnique.BackColor = System.Drawing.Color.Silver;
             this.pkHasUnique.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.pkHasUnique.FlatAppearance.BorderSize = 5;
-            this.pkHasUnique.Location = new System.Drawing.Point(109, 496);
+            this.pkHasUnique.Location = new System.Drawing.Point(65, 496);
             this.pkHasUnique.Name = "pkHasUnique";
-            this.pkHasUnique.Size = new System.Drawing.Size(183, 17);
+            this.pkHasUnique.Size = new System.Drawing.Size(113, 17);
             this.pkHasUnique.TabIndex = 56;
-            this.pkHasUnique.Text = "Can gernerate with unique items?";
+            this.pkHasUnique.Text = "Generate Unique?";
             this.pkHasUnique.UseVisualStyleBackColor = false;
             // 
             // pkCanBeShiny
@@ -300,12 +308,55 @@
             this.pkCanBeShiny.BackColor = System.Drawing.Color.Silver;
             this.pkCanBeShiny.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.pkCanBeShiny.FlatAppearance.BorderSize = 5;
-            this.pkCanBeShiny.Location = new System.Drawing.Point(109, 519);
+            this.pkCanBeShiny.Location = new System.Drawing.Point(65, 519);
             this.pkCanBeShiny.Name = "pkCanBeShiny";
-            this.pkCanBeShiny.Size = new System.Drawing.Size(93, 17);
+            this.pkCanBeShiny.Size = new System.Drawing.Size(105, 17);
             this.pkCanBeShiny.TabIndex = 57;
-            this.pkCanBeShiny.Text = "Can be shiny?";
+            this.pkCanBeShiny.Text = "Generate Shiny?";
             this.pkCanBeShiny.UseVisualStyleBackColor = false;
+            // 
+            // pkItem
+            // 
+            this.pkItem.BackColor = System.Drawing.Color.Black;
+            this.pkItem.Location = new System.Drawing.Point(565, 244);
+            this.pkItem.Name = "pkItem";
+            this.pkItem.Size = new System.Drawing.Size(100, 100);
+            this.pkItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pkItem.TabIndex = 59;
+            this.pkItem.TabStop = false;
+            // 
+            // pkHeld
+            // 
+            this.pkHeld.AutoSize = true;
+            this.pkHeld.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.pkHeld.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pkHeld.Location = new System.Drawing.Point(471, 138);
+            this.pkHeld.Name = "pkHeld";
+            this.pkHeld.Size = new System.Drawing.Size(0, 13);
+            this.pkHeld.TabIndex = 58;
+            // 
+            // pkItem2
+            // 
+            this.pkItem2.BackColor = System.Drawing.Color.Black;
+            this.pkItem2.Location = new System.Drawing.Point(565, 436);
+            this.pkItem2.Name = "pkItem2";
+            this.pkItem2.Size = new System.Drawing.Size(100, 100);
+            this.pkItem2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pkItem2.TabIndex = 60;
+            this.pkItem2.TabStop = false;
+            // 
+            // pkGasp
+            // 
+            this.pkGasp.AcceptsTab = true;
+            this.pkGasp.BackColor = System.Drawing.Color.Black;
+            this.pkGasp.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pkGasp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.pkGasp.Location = new System.Drawing.Point(234, 375);
+            this.pkGasp.Name = "pkGasp";
+            this.pkGasp.ReadOnly = true;
+            this.pkGasp.Size = new System.Drawing.Size(152, 200);
+            this.pkGasp.TabIndex = 61;
+            this.pkGasp.Text = "";
             // 
             // FormScan
             // 
@@ -314,6 +365,11 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = global::GenesisDex.Properties.Resources.MainMenu;
             this.ClientSize = new System.Drawing.Size(822, 616);
+            this.Controls.Add(this.pkGasp);
+            this.Controls.Add(this.pkItem2);
+            this.Controls.Add(this.pbPokemon);
+            this.Controls.Add(this.pkItem);
+            this.Controls.Add(this.pkHeld);
             this.Controls.Add(this.pkCanBeShiny);
             this.Controls.Add(this.pkHasUnique);
             this.Controls.Add(this.pkHasItem);
@@ -333,7 +389,6 @@
             this.Controls.Add(this.infoForward);
             this.Controls.Add(this.rtbInfo1);
             this.Controls.Add(this.pbExit);
-            this.Controls.Add(this.pbPokemon);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormScan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -351,6 +406,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbScanPokemon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkLevelMin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkLevelMax)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pkItem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pkItem2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -378,5 +435,9 @@
         private System.Windows.Forms.CheckBox pkHasItem;
         private System.Windows.Forms.CheckBox pkHasUnique;
         private System.Windows.Forms.CheckBox pkCanBeShiny;
+        private System.Windows.Forms.PictureBox pkItem;
+        private System.Windows.Forms.Label pkHeld;
+        private System.Windows.Forms.PictureBox pkItem2;
+        private System.Windows.Forms.RichTextBox pkGasp;
     }
 }

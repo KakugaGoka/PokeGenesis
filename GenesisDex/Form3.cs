@@ -42,16 +42,29 @@ namespace GenesisDex
         Pokemon IChooseYou = new Pokemon();
         int TrueLevel = new int();
         int Page = 1;
+        List<Berry> berryList = new List<Berry>();
+        BerryList berryXML = new BerryList();
+        List<TM> TMList = new List<TM>();
+        TMList TMXML = new TMList();
+        List<PokeBall> pokeballList = new List<PokeBall>();
+        PokeBallList pokeballXML = new PokeBallList();
+        List<TM> HMList = new List<TM>();
+        string Item { get; set; }
+        string Item2 { get; set; }
+        bool isItem2 = false;
 
         public FormScan()
         {
             InitializeComponent();
+            pkGasp.Text = "";
             pbPokeLocX = pbPokemon.Location.X;
             pbPokeLocY = pbPokemon.Location.Y;
             pokeList = pokeXML.createList("Pokemon");
             typeList = typeXML.createList("Types", "Type");
             habitatList = habitatXML.createList("Habitats", "Habitat");
             natureList = natureXML.createList("Natures", "Nature");
+            infoBack.Visible = false;
+            infoForward.Visible = false;
             habitats.Clear();
             types.Clear();
             for (var h = 0; h < habitatList.Count; h++)
@@ -120,6 +133,11 @@ namespace GenesisDex
 
         private void pbScanPokemon_Click(object sender, EventArgs e)
         {
+            pkGasp.Clear();
+            infoForward.Visible = true;
+            infoBack.Visible = true;
+            pkLevelMin_ValueChanged(this, new EventArgs());
+            pkLevelMax_ValueChanged(this, new EventArgs());
             pokeList.Clear();
             pokeList = pokeXML.createList("Pokemon");
             CheckHabitat();
@@ -135,6 +153,7 @@ namespace GenesisDex
                 int i = rng.Next(1, 101);
                 if (i == 1 || i == 100)
                 {
+                    pkGasp.Text += "It's a Shiny!" + Environment.NewLine;
                     pbPokemon.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + PokeBall.number + ".gif");
                 }
                 else
@@ -146,6 +165,16 @@ namespace GenesisDex
             else
             {
                 pbPokemon.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + PokeBall.number + ".gif");
+            }
+            if (pkHasItem.Checked == true) { GetItem(); } else { Item = null; Item2 = null; }
+            if (pkHasUnique.Checked == true ) { GetUnique(); }
+            if ( Item != null && Item2 != null)
+            {
+                pkGasp.Text += "It is carrying stuff!" + Environment.NewLine;
+            }
+            else if (Item != null)
+            {
+                pkGasp.Text += "It is holding something!" + Environment.NewLine;
             }
             SetImage();
             IChooseYou = PokeBall;
@@ -342,17 +371,10 @@ namespace GenesisDex
             }
         }
 
-        private void UpdatePage()
-        {
-            if (Page == 0) { Page = 2; }
-            if (Page == 1) { WriteInfo(); }
-            if (Page == 2) { WriteMoves(); }
-            if (Page == 3) { Page = 1; }
-
-        }
-
         private void WriteInfo()
         {
+            pkItem2.Visible = false;
+            pkItem.Visible = false;
             rtbInfo1.Text = "Number: " + IChooseYou.number + Environment.NewLine +
                 "Name: " + IChooseYou.id + Environment.NewLine +
                 "Type: " + IChooseYou.type + Environment.NewLine +
@@ -375,6 +397,8 @@ namespace GenesisDex
 
         private void WriteMoves()
         {
+            pkItem.Visible = false;
+            pkItem2.Visible = false;
             int i = TrueLevel;
             MoveList moveXML = new MoveList();
             List<string> moves = new List<string>();
@@ -394,16 +418,174 @@ namespace GenesisDex
             }
         }
 
+        private void WriteItems()
+        {
+            pkItem2.Visible = true;
+            pkItem.Visible = true;
+            if (Item2 == null)
+            {
+                rtbInfo1.Text = Item;
+            }
+            else
+            {
+                rtbInfo1.Text = Item + Environment.NewLine +
+                    Environment.NewLine +
+                    Environment.NewLine +
+                    Environment.NewLine +
+                    Environment.NewLine +
+                    Environment.NewLine +
+                    Environment.NewLine +
+                    Environment.NewLine +
+                    Environment.NewLine +
+                    Environment.NewLine +
+                    Environment.NewLine +
+                    Item2 + Environment.NewLine;
+            }
+        }
+
         private void infoBack_Click(object sender, EventArgs e)
         {
             Page--;
-            UpdatePage();
+            if (Page == 0) { Page = 3; }
+            if (Page == 1) { WriteInfo(); }
+            if (Page == 2) { WriteMoves(); }
+            if (Page == 3) { if (Item == null) { WriteMoves(); Page = 2; } else { WriteItems(); } }
+            if (Page == 4) { Page = 1; }
         }
 
         private void infoForward_Click(object sender, EventArgs e)
         {
             Page++;
-            UpdatePage();
+            if (Page == 0) { Page = 3; }
+            if (Page == 1) { WriteInfo(); }
+            if (Page == 2) { WriteMoves(); }
+            if (Page == 3) { if (Item == null) { WriteInfo(); } else { WriteItems(); } }
+            if (Page == 4) { Page = 1; }
+        }
+
+        private void UpdatePage()
+        {
+            if (Page == 0) { Page = 3; }
+            if (Page == 1) { WriteInfo(); }
+            if (Page == 2) { WriteMoves(); }
+            if (Page == 3) { if (Item == null) { WriteInfo(); Page = 1; } else { WriteItems(); } }
+            if (Page == 4) { Page = 1; }
+        }
+
+        private void GetItem()
+        {
+            int i = rng.Next(1, 101);
+            if (i < 40)
+            {
+                i = rng.Next(1, 11);
+                if (i == 10) { isItem2 = true; GetItem2(); }
+                else { pkItem2.Image = null; Item2 = null; GetItem1(); }
+            }
+            else
+            {
+                Item = null;
+                Item2 = null;
+                return;
+            }
+        }
+
+        private void GetItem1()
+        {
+            int i = rng.Next(1, 101);
+            if (i < 79) { GetBerry(); }
+            else if (i < 89) { GetPokeball(); }
+            else if (i < 99) { GetTM(); }
+            else if (i < 101) { GetHM(); }
+        }
+
+        private void GetItem2()
+        {
+            int i = rng.Next(1, 101);
+            if (i < 79) { GetBerry(); }
+            else if (i < 89) { GetPokeball(); }
+            else if (i < 99) { GetTM(); }
+            else if (i < 101) { GetHM(); }
+            isItem2 = false;
+            GetItem1();
+        }
+
+        private void GetUnique()
+        {
+
+        }
+
+        private void GetBerry()
+        {
+            berryList = berryXML.createList("Berry", "Berry");
+            int i = rng.Next(0, berryList.Count);
+            if (isItem2 == true)
+            {
+                Item2 = berryList[i].id + ": " + berryList[i].desc;
+                pkItem2.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Berry\\" + berryList[i].id + ".png");
+            }
+            else
+            {
+                pkItem.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Berry\\" + berryList[i].id + ".png");
+                Item = berryList[i].id + ": " + berryList[i].desc;
+            }
+        }
+
+        private void GetPokeball()
+        {
+            pokeballList = pokeballXML.createList("Pokeball", "PokeBall");
+            int i = rng.Next(0, pokeballList.Count);
+            if (isItem2 == true)
+            {
+                Item2 = pokeballList[i].id + ": " + pokeballList[i].desc;
+                pkItem2.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokeball\\" + pokeballList[i].id + ".png");
+            }
+            else
+            {
+                Item = pokeballList[i].id + ": " + pokeballList[i].desc;
+                pkItem.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokeball\\" + pokeballList[i].id + ".png");
+            }
+        }
+
+        private void GetTM()
+        {
+            TMList = TMXML.createList("TM-HM", "TM");
+            int i = rng.Next(0, TMList.Count);
+            if (isItem2 == true)
+            {
+                Item2 = "TM" + TMList[i].number + " " + TMList[i].id + " - " + TMList[i].type;
+                pkItem2.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\TM-HM\\" + TMList[i].type + ".png");
+            }
+            else
+            {
+                Item = "TM" + TMList[i].number + " " + TMList[i].id + " - " + TMList[i].type;
+                pkItem.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\TM-HM\\" + TMList[i].type + ".png");
+            }
+        }
+
+        private void GetHM()
+        {
+            HMList = TMXML.createList("TM-HM", "HM");
+            int i = rng.Next(0, HMList.Count);
+            if (isItem2 == true)
+            {
+                Item2 = "HM" + HMList[i].number + " " + HMList[i].id + " - " + HMList[i].type;
+                pkItem2.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\TM-HM\\" + HMList[i].type + "HM.png");
+            }
+            else
+            {
+                Item = "HM" + HMList[i].number + " " + HMList[i].id + " - " + HMList[i].type;
+                pkItem.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\TM-HM\\" + HMList[i].type + "HM.png");
+            }
+        }
+
+        private void pkLevelMin_ValueChanged(object sender, EventArgs e)
+        {
+            if (pkLevelMin.Value > pkLevelMax.Value) { pkLevelMax.Value = pkLevelMin.Value; }
+        }
+
+        private void pkLevelMax_ValueChanged(object sender, EventArgs e)
+        {
+            if (pkLevelMax.Value < pkLevelMin.Value) { pkLevelMin.Value = pkLevelMax.Value; }
         }
     }
 }

@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Namespace>
+  <TM>
+    <number>1</number>
+    <id>Hone Claws</id>
+    <type>Dark</type>
+  </TM>
+  <TM>
+    <number>2</number>
+    <id>Dragon Claw</id>
+    <type>Dragon</type>
+  </TM>
+  <TM>
+    <number>3</number>
+    <id>Psyshock</id>
+    <type>Psychic</type>
+  </TM>
+  <TM>
+    <number>4</number>
+    <id>Calm Mind</id>
+    <type>Psychic</type>
+  </TM>
+  <TM>
+    <number>5</number>
+    <id>Roar</id>
+    <type>Normal</type>
+  </TM>
+  <TM>
+    <number>6</number>
+    <id>Toxic</id>
+    <type>Poison</type>
+  </TM>
+  <TM>
+    <number>7</number>
+    <id>Hail</id>
+    <type>Ice</type>
+  </TM>
+  <TM>
+    <number>8</number>
+    <id>Bulk Up</id>
+    <type>Fighting</type>
+  </TM>
+  <TM>
+    <number>9</number>
+    <id>Venoshock</id>
+    <type>Poison</type>
+  </TM>
+  <TM>
+    <number>10</number>
+    <id>Hidden Power</id>
+    <type>Normal</type>
+  </TM>
+  <TM>
+    <number>11</number>
+    <id>Sunny Day</id>
+    <type>Fire</type>
+  </TM>
+  <TM>
+    <number>12</number>
+    <id>Taunt</id>
+    <type>Dark</type>
+  </TM>
+  <TM>
+    <number>13</number>
+    <id>Ice Beam</id>
+    <type>Ice</type>
+  </TM>
+  <TM>
+    <number>14</number>
+    <id>Blizzard</id>
+    <type>Ice</type>
+  </TM>
+  <TM>
+    <number>15</number>
+    <id>Hyper Beam</id>
+    <type>Normal</type>
+  </TM>
+  <TM>
+    <number>16</number>
+    <id>Light Screen</id>
+    <type>Psychic</type>
+  </TM>
+  <TM>
+    <number>17</number>
+    <id>Protect</id>
+    <type>Normal</type>
+  </TM>
+  <TM>
+    <number>18</number>
+    <id>Rain Dance</id>
+    <type>Water</type>
+  </TM>
+  <TM>
+    <number>19</number>
+    <id>Roost</id>
+    <type>Flying</type>
+  </TM>
+  <TM>
+    <number>20</number>
+    <id>Safeguard</id>
+    <type>Normal</type>
+  </TM>
+  <TM>
+    <number>21</number>
+    <id>Frustration</id>
+    <type>Normal</type>
+  </TM>
+  <TM>
+    <number>22</number>
+    <id>Solar Beam</id>
+    <type>Grass</type>
+  </TM>
+  <TM>
+    <number>23</number>
+    <id>Smack Down</id>
+    <type>Rock</type>
+  </TM>
+  <TM>
+    <number>24</number>
+    <id>Thunderbolt</id>
+    <type>Electric</type>
+  </TM>
+  <TM>
+    <number>25</number>
+    <id>Thunder</id>
+    <type>Electric</type>
+  </TM>
+  <TM>
+    <number>26</number>
+    <id>Earthquake</id>
+    <type>Ground</type>
+  </TM>
+  <TM>
+    <number>27</number>
+    <id>Return</id>
+    <type>Normal</type>
+  </TM>
+  <TM>
+    <number>28</number>
+    <id>Dig</id>
+    <type>Ground</type>
+  </TM>
+  <TM>
+    <number>29</number>
+    <id>Psychic</id>
+    <type>Psychic</type>
+  </TM>
+  <TM>
+    <number>30</number>
+    <id>Shadow Ball</id>
+    <type>Ghost</type>
+  </TM>
+  <TM>
+    <number>31</number>
+    <id>Brick Break</id>
+    <type>Fighting</type>
+  </TM>
+  <TM>
+    <number>32</number>
+    <id>Double Team</id>
+    <type>Normal</type>
+  </TM>
+  <TM>
+    <number>33</number>
+    <id>Reflect</id>
+    <type>Psychic</type>
+  </TM>
+  <TM>
+    <number>34</number>
+    <id>Sludge Wave</id>
+    <type>Poison</type>
+  </TM>
+  <TM>
+    <number>35</number>
+    <id>Flamethrower</id>
+    <type>Fire</type>
+  </TM>
+  <TM>
+    <number>36</number>
+    <id>Sludge Bomb</id>
+    <type>Poison</type>
+  </TM>
+  <TM>
+    <number>37</number>
+    <id>Sandstorm</id>
+    <type>Rock</type>
+  </TM>
+  <TM>
+    <number>38</number>
+    <id>Fire Blast</id>
+    <type>Fire</type>
+  </TM>
+  <TM>
+    <number>39</number>
+    <id>Rock Tomb</id>
+    <type>Rock</type>
+  </TM>
+  <TM>
+    <number>40</number>
+    <id>Aerial Ace</id>
+    <type>Flying</type>
+  </TM>
+  <TM>
+    <number>41</number>
+    <id>Torment</id>
+    <type>Dark</type>
+  </TM>
+  <TM>
+    <number>42</number>
+    <id>Facade</id>
+    <type>Normal</type>
+  </TM>
+  <TM>
+    <number>43</number>
+    <id>Flame Charge</id>
+    <type>Fire</type>
+  </TM>
+  <TM>
+    <number>44</number>
+    <id>Rest</id>
+    <type>Psychic</type>
+  </TM>
+  <TM>
+    <number>45</number>
+    <id>Attract</id>
+    <type>Normal</type>
+  </TM>
+  <TM>
+    <number>46</number>
+    <id>Thief</id>
+    <type>Dark</type>
+  </TM>
+  <TM>
+    <number>47</number>
+    <id>Low Sweep</id>
+    <type>Fighting</type>
+  </TM>
+  <TM>
+    <number>48</number>
+    <id>Round</id>
+    <type>Normal</type>
+  </TM>
+  <TM>
+    <number>49</number>
+    <id>Echoed Voice</id>
+    <type>Normal</type>
+  </TM>
+  <TM>
+    <number>50</number>
+    <id>Overheat</id>
+    <type>Fire</type>
+  </TM>
+  <TM>
+    <number>51</number>
+    <id>Steel Wing</id>
+    <type>Steel</type>
+  </TM>
+  <TM>
+    <number>52</number>
+    <id>Focus Blast</id>
+    <type>Fighting</type>
+  </TM>
+  <TM>
+    <number>53</number>
+    <id>Energy Ball</id>
+    <type>Grass</type>
+  </TM>
+  <TM>
+    <number>54</number>
+    <id>False Swipe</id>
+    <type>Normal</type>
+  </TM>
+  <TM>
+    <number>55</number>
+    <id>Scald</id>
+    <type>Water</type>
+  </TM>
+  <TM>
+    <number>56</number>
+    <id>Fling</id>
+    <type>Dark</type>
+  </TM>
+  <TM>
+    <number>57</number>
+    <id>Charge Beam</id>
+    <type>Electric</type>
+  </TM>
+  <TM>
+    <number>58</number>
+    <id>Sky Drop</id>
+    <type>Flying</type>
+  </TM>
+  <TM>
+    <number>59</number>
+    <id>Incinerate</id>
+    <type>Fire</type>
+  </TM>
+  <TM>
+    <number>60</number>
+    <id>Quash</id>
+    <type>Dark</type>
+  </TM>
+  <TM>
+    <number>61</number>
+    <id>Will-O-Wisp</id>
+    <type>Fire</type>
+  </TM>
+  <TM>
+    <number>62</number>
+    <id>Acrobatics</id>
+    <type>Flying</type>
+  </TM>
+  <TM>
+    <number>63</number>
+    <id>Embargo</id>
+    <type>Dark</type>
+  </TM>
+  <TM>
+    <number>64</number>
+    <id>Explosion</id>
+    <type>Normal</type>
+  </TM>
+  <TM>
+    <number>65</number>
+    <id>Shadow Claw</id>
+    <type>Ghost</type>
+  </TM>
+  <TM>
+    <number>66</number>
+    <id>Payback</id>
+    <type>Dark</type>
+  </TM>
+  <TM>
+    <number>67</number>
+    <id>Retaliate</id>
+    <type>Normal</type>
+  </TM>
+  <TM>
+    <number>68</number>
+    <id>Giga Impact</id>
+    <type>Normal</type>
+  </TM>
+  <TM>
+    <number>69</number>
+    <id>Rock Polish</id>
+    <type>Rock</type>
+  </TM>
+  <TM>
+    <number>70</number>
+    <id>Flash</id>
+    <type>Normal</type>
+  </TM>
+  <TM>
+    <number>71</number>
+    <id>Stone Edge</id>
+    <type>Rock</type>
+  </TM>
+  <TM>
+    <number>72</number>
+    <id>Volt Switch</id>
+    <type>Electric</type>
+  </TM>
+  <TM>
+    <number>73</number>
+    <id>Thunder Wave</id>
+    <type>Electric</type>
+  </TM>
+  <TM>
+    <number>74</number>
+    <id>Gyro Ball</id>
+    <type>Steel</type>
+  </TM>
+  <TM>
+    <number>75</number>
+    <id>Swords Dance</id>
+    <type>Normal</type>
+  </TM>
+  <TM>
+    <number>76</number>
+    <id>Struggle Bug</id>
+    <type>Bug</type>
+  </TM>
+  <TM>
+    <number>77</number>
+    <id>Psych Up</id>
+    <type>Normal</type>
+  </TM>
+  <TM>
+    <number>78</number>
+    <id>Bulldoze</id>
+    <type>Ground</type>
+  </TM>
+  <TM>
+    <number>79</number>
+    <id>Frost Breath</id>
+    <type>Ice</type>
+  </TM>
+  <TM>
+    <number>80</number>
+    <id>Rock Slide</id>
+    <type>Rock</type>
+  </TM>
+  <TM>
+    <number>81</number>
+    <id>X-Scissor</id>
+    <type>Bug</type>
+  </TM>
+  <TM>
+    <number>82</number>
+    <id>Dragon Tail</id>
+    <type>Dragon</type>
+  </TM>
+  <TM>
+    <number>83</number>
+    <id>Infestation</id>
+    <type>Bug</type>
+  </TM>
+  <TM>
+    <number>84</number>
+    <id>Poison Jab</id>
+    <type>Poison</type>
+  </TM>
+  <TM>
+    <number>85</number>
+    <id>Dream Eater</id>
+    <type>Psychic</type>
+  </TM>
+  <TM>
+    <number>86</number>
+    <id>Grass Knot</id>
+    <type>Grass</type>
+  </TM>
+  <TM>
+    <number>87</number>
+    <id>Swagger</id>
+    <type>Normal</type>
+  </TM>
+  <TM>
+    <number>88</number>
+    <id>Sleep Talk</id>
+    <type>Normal</type>
+  </TM>
+  <TM>
+    <number>89</number>
+    <id>U-turn</id>
+    <type>Bug</type>
+  </TM>
+  <TM>
+    <number>90</number>
+    <id>Substitute</id>
+    <type>Normal</type>
+  </TM>
+  <TM>
+    <number>91</number>
+    <id>Flash Cannon</id>
+    <type>Steel</type>
+  </TM>
+  <TM>
+    <number>92</number>
+    <id>Trick Room</id>
+    <type>Psychic</type>
+  </TM>
+  <TM>
+    <number>93</number>
+    <id>Wild Charge</id>
+    <type>Electric</type>
+  </TM>
+  <TM>
+    <number>94</number>
+    <id>Secret Power</id>
+    <type>Normal</type>
+  </TM>
+  <TM>
+    <number>95</number>
+    <id>Snarl</id>
+    <type>Dark</type>
+  </TM>
+  <TM>
+    <number>96</number>
+    <id>Nature Power</id>
+    <type>Normal</type>
+  </TM>
+  <TM>
+    <number>97</number>
+    <id>Dark Pulse</id>
+    <type>Dark</type>
+  </TM>
+  <TM>
+    <number>98</number>
+    <id>Power-Up Punch</id>
+    <type>Fighting</type>
+  </TM>
+  <TM>
+    <number>99</number>
+    <id>Dazzling Gleam</id>
+    <type>Fairy</type>
+  </TM>
+  <TM>
+    <number>100</number>
+    <id>Confide</id>
+    <type>Normal</type>
+  </TM>
+  <HM>
+    <number>A1</number>
+    <id>Cut</id>
+    <type>Normal</type>
+  </HM>
+  <HM>
+    <number>A2</number>
+    <id>Fly</id>
+    <type>Flying</type>
+  </HM>
+  <HM>
+    <number>A3</number>
+    <id>Surf</id>
+    <type>Water</type>
+  </HM>
+  <HM>
+    <number>A4</number>
+    <id>Strength</id>
+    <type>Normal</type>
+  </HM>
+  <HM>
+    <number>A5</number>
+    <id>Waterfall</id>
+    <type>Water</type>
+  </HM>
+  <HM>
+    <number>A6</number>
+    <id>Rock Smash</id>
+    <type>Fighting</type>
+  </HM>
+  <HM>
+    <number>A7</number>
+    <id>Dive</id>
+    <type>Water</type>
+  </HM>
+</Namespace>

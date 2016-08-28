@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Namespace>
+  <Berry>
+    <id>Cheri Berry</id>
+    <desc>Cures Paralysis, Cool Poffin Ingredient</desc>
+  </Berry>
+  <Berry>
+    <id>Chesto Berry</id>
+    <desc>Cures Sleep, Beauty Poffin Ingredient</desc>
+  </Berry>
+  <Berry>
+    <id>Pecha Berry</id>
+    <desc>Cures Poison, Cute Poffin Ingredient</desc>
+  </Berry>
+  <Berry>
+    <id>Rawst Berry</id>
+    <desc>Cures Burn, Smart Poffin Ingredient</desc>
+  </Berry>
+  <Berry>
+    <id>Aspear Berry</id>
+    <desc>Cures Freeze, Tough Poffin Ingredient</desc>
+  </Berry>
+  <Berry>
+    <id>Oran Berry</id>
+    <desc>Restores 5 Hit Points</desc>
+  </Berry>
+  <Berry>
+    <id>Persim Berry</id>
+    <desc>Cures Confusion</desc>
+  </Berry>
+  <Berry>
+    <id>Razz Berry</id>
+    <desc>Cool Poffin Ingredient</desc>
+  </Berry>
+  <Berry>
+    <id>Bluk Berry</id>
+    <desc>Beauty Poffin Ingredient</desc>
+  </Berry>
+  <Berry>
+    <id>Nanab Berry</id>
+    <desc>Cute Poffin Ingredient</desc>
+  </Berry>
+  <Berry>
+    <id>Wepear Berry</id>
+    <desc>Smart Poffin Ingredient</desc>
+  </Berry>
+  <Berry>
+    <id>Pinap Berry</id>
+    <desc>Tough Poffin Ingredient</desc>
+  </Berry>
+  <Berry>
+    <id>Lum Berry</id>
+    <desc>Cures any single status ailment</desc>
+  </Berry>
+  <Berry>
+    <id>Sitrus Berry</id>
+    <desc>Restores 15 Hit Points</desc>
+  </Berry>
+  <Berry>
+    <id>Figy Berry</id>
+    <desc>Spicy Treat, Cool Poffin Ingredient</desc>
+  </Berry>
+  <Berry>
+    <id>Wiki Berry</id>
+    <desc>Dry Treat, Beauty Poffin Ingredient</desc>
+  </Berry>
+  <Berry>
+    <id>Mago Berry</id>
+    <desc>Sweet Treat, Cute Poffin Ingredient</desc>
+  </Berry>
+  <Berry>
+    <id>Aguav Berry</id>
+    <desc>Bitter Treat, Smart Poffin Ingredient</desc>
+  </Berry>
+  <Berry>
+    <id>Iapapa Berry</id>
+    <desc>Sour Treat, Tough Poffin Ingredient</desc>
+  </Berry>
+  <Berry>
+    <id>Liechi Berry</id>
+    <desc>+1 Attack CS</desc>
+  </Berry>
+  <Berry>
+    <id>Ganlon Berry</id>
+    <desc>+1 Defense CS</desc>
+  </Berry>
+  <Berry>
+    <id>Salac Berry</id>
+    <desc>+1 Speed CS</desc>
+  </Berry>
+  <Berry>
+    <id>Petaya Berry</id>
+    <desc>+1 Special Attack CS</desc>
+  </Berry>
+  <Berry>
+    <id>Apicot Berry</id>
+    <desc>+1 Special Defense CS</desc>
+  </Berry>
+  <Berry>
+    <id>Lansat Berry</id>
+    <desc>Increases Critical Range by +1 for the remainder of the encounter</desc>
+  </Berry>
+  <Berry>
+    <id>Starf Berry</id>
+    <desc>+2 CS to a random Stat. May be used only at 25% HP or lower</desc>
+  </Berry>
+  <Berry>
+    <id>Enigma Berry</id>
+    <desc>User gains Temporary HP equal to 1/6th of their Max HP when hit by a Super Effective Move</desc>
+  </Berry>
+  <Berry>
+    <id>Micle Berry</id>
+    <desc>Increases Accuracy by +1</desc>
+  </Berry>
+  <Berry>
+    <id>Jaboca Berry</id>
+    <desc>Foe dealing Physical Damage to the user loses 1/8 of their Maximum HP</desc>
+  </Berry>
+  <Berry>
+    <id>Rowap Berry</id>
+    <desc>Foe dealing Special Damage to the user loses 1/8 of their Maximum HP</desc>
+  </Berry>
+  <Berry>
+    <id>Cornn Berry</id>
+    <desc>Cures Disabled Condition</desc>
+  </Berry>
+  <Berry>
+    <id>Magost Berry</id>
+    <desc>Cures Enraged condition</desc>
+  </Berry>
+  <Berry>
+    <id>Rabuta Berry</id>
+    <desc>Cures Suppressed condition</desc>
+  </Berry>
+  <Berry>
+    <id>Nomel Berry</id>
+    <desc>Cures Infatuated condition</desc>
+  </Berry>
+  <Berry>
+    <id>Spelon Berry</id>
+    <desc>Cool or Beauty Poffin Ingredient</desc>
+  </Berry>
+  <Berry>
+    <id>Pamtre Berry</id>
+    <desc>Cute or Beauty Poffin Ingredient</desc>
+  </Berry>
+  <Berry>
+    <id>Watmel Berry</id>
+    <desc>Cute or Smart Poffin Ingredient</desc>
+  </Berry>
+  <Berry>
+    <id>Durin Berry</id>
+    <desc>Smart or Tough Poffin Ingredient</desc>
+  </Berry>
+  <Berry>
+    <id>Belue Berry</id>
+    <desc>Cool or Tough Poffin Ingredient</desc>
+  </Berry>
+  <Berry>
+    <id>Leppa Berry</id>
+    <desc>Restores a Scene Move</desc>
+  </Berry>
+  <Berry>
+    <id>Pomeg Berry</id>
+    <desc>HP Suppressant</desc>
+  </Berry>
+  <Berry>
+    <id>Kelpsy Berry</id>
+    <desc>Attack Suppressant</desc>
+  </Berry>
+  <Berry>
+    <id>Qualot Berry</id>
+    <desc>Defense Suppressant</desc>
+  </Berry>
+  <Berry>
+    <id>Hondew Berry</id>
+    <desc>Special Attack Suppressant</desc>
+  </Berry>
+  <Berry>
+    <id>Greppa Berry</id>
+    <desc>Special Defense Suppressant</desc>
+  </Berry>
+  <Berry>
+    <id>Tamato Berry</id>
+    <desc>Speed Suppressant</desc>
+  </Berry>
+  <Berry>
+    <id>Occa Berry</id>
+    <desc>Weakens foe’s super effective Fire-type move</desc>
+  </Berry>
+  <Berry>
+    <id>Passho Berry</id>
+    <desc>Weakens foe’s super effective Water-type move</desc>
+  </Berry>
+  <Berry>
+    <id>Wacan Berry</id>
+    <desc>Weakens foe’s super effective Electric-type move</desc>
+  </Berry>
+  <Berry>
+    <id>Rindo Berry</id>
+    <desc>Weakens foe’s super effective Grass-type move</desc>
+  </Berry>
+  <Berry>
+    <id>Yache Berry</id>
+    <desc>Weakens foe’s super effective Ice-type move</desc>
+  </Berry>
+  <Berry>
+    <id>Chople Berry</id>
+    <desc>Weakens foe’s super effective Fighting-type move</desc>
+  </Berry>
+  <Berry>
+    <id>Kebia Berry</id>
+    <desc>Weakens foe’s super effective Poison-type move</desc>
+  </Berry>
+  <Berry>
+    <id>Shuca Berry</id>
+    <desc>Weakens foe’s super effective Ground-type move</desc>
+  </Berry>
+  <Berry>
+    <id>Coba Berry</id>
+    <desc>Weakens foe’s super effective Flying-type move</desc>
+  </Berry>
+  <Berry>
+    <id>Payapa Berry</id>
+    <desc>Weakens foe’s super effective Psychic-type move</desc>
+  </Berry>
+  <Berry>
+    <id>Tanga Berry</id>
+    <desc>Weakens foe’s super effective Bug-type move</desc>
+  </Berry>
+  <Berry>
+    <id>Charti Berry</id>
+    <desc>Weakens foe’s super effective Rock-type move</desc>
+  </Berry>
+  <Berry>
+    <id>Kasib Berry</id>
+    <desc>Weakens foe’s super effective Ghost-type move</desc>
+  </Berry>
+  <Berry>
+    <id>Haban Berry</id>
+    <desc>Weakens foe’s super effective Dragon-type move</desc>
+  </Berry>
+  <Berry>
+    <id>Colbur Berry</id>
+    <desc>Weakens foe’s super effective Dark-type move</desc>
+  </Berry>
+  <Berry>
+    <id>Babiri Berry</id>
+    <desc> Weakens foe’s super effective Steel-type move</desc>
+  </Berry>
+  <Berry>
+    <id>Chilan Berry</id>
+    <desc>Weakens foe’s Normal type move</desc>
+  </Berry>
+  <Berry>
+    <id>Roseli Berry</id>
+    <desc>Weakens foe’s super effective Fairytype move
+    </desc>
+  </Berry>
+  <Berry>
+    <id>Custap Berry</id>
+    <desc>Grants the Priority keyword to any Move. May only be used at 25% HP or lower</desc>
+  </Berry>
+  <Berry>
+    <id>Kee Berry</id>
+    <desc>+1 Defense CS. Activates as a Free Action when hit by a Physical Move</desc>
+  </Berry>
+  <Berry>
+    <id>Maranga Berry</id>
+    <desc>+1 Special Defense CS. Activates as a Free Action when hit by a Special Move</desc>
+  </Berry>
+</Namespace>

@@ -79,6 +79,25 @@ namespace GenesisDexEngine
         public string down { get; set; }
     }
 
+    class Berry
+    {
+        public string id { get; set; }
+        public string desc { get; set; }
+    }
+
+    class PokeBall
+    {
+        public string id { get; set; }
+        public string desc { get; set; }
+    }
+
+    class TM
+    {
+        public string id { get; set; }
+        public string number { get; set; }
+        public string type { get; set; }
+    }
+
 class PokemonList
     {
         public List<Pokemon> createList(string decend)
@@ -148,6 +167,61 @@ class PokemonList
                         select new Items
                         {
                             id = (string)node.Element("id")
+                        };
+            idList = query.ToList();
+            return idList;
+        }
+    }
+
+    class BerryList
+    {
+        public List<Berry> createList(string xml, string decend)
+        {
+            string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\" + xml + ".xml");
+            List<Berry> idList = new List<Berry>();
+            XDocument doc = XDocument.Load(fileName);
+            var query = from node in doc.Descendants(decend)
+                        select new Berry
+                        {
+                            id = (string)node.Element("id"),
+                            desc = (string)node.Element("desc")
+                        };
+            idList = query.ToList();
+            return idList;
+        }
+    }
+
+    class TMList
+    {
+        public List<TM> createList(string xml, string decend)
+        {
+            string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\" + xml + ".xml");
+            List<TM> idList = new List<TM>();
+            XDocument doc = XDocument.Load(fileName);
+            var query = from node in doc.Descendants(decend)
+                        select new TM
+                        {
+                            id = (string)node.Element("id"),
+                            number = (string)node.Element("number"),
+                            type = (string)node.Element("type")
+                        };
+            idList = query.ToList();
+            return idList;
+        }
+    }
+
+    class PokeBallList
+    {
+        public List<PokeBall> createList(string xml, string decend)
+        {
+            string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\" + xml + ".xml");
+            List<PokeBall> idList = new List<PokeBall>();
+            XDocument doc = XDocument.Load(fileName);
+            var query = from node in doc.Descendants(decend)
+                        select new PokeBall
+                        {
+                            id = (string)node.Element("id"),
+                            desc = (string)node.Element("desc")
                         };
             idList = query.ToList();
             return idList;
