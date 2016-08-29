@@ -55,6 +55,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.pkPokemon = new System.Windows.Forms.ComboBox();
             this.rtbInfo2 = new System.Windows.Forms.RichTextBox();
+            this.pkCanBeLegend = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbOverlay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoForward)).BeginInit();
@@ -151,7 +152,7 @@
             // 
             this.pbScanPokemon.BackColor = System.Drawing.Color.Transparent;
             this.pbScanPokemon.Image = global::GenesisDex.Properties.Resources.ScanPokemon;
-            this.pbScanPokemon.Location = new System.Drawing.Point(229, 444);
+            this.pbScanPokemon.Location = new System.Drawing.Point(229, 473);
             this.pbScanPokemon.Name = "pbScanPokemon";
             this.pbScanPokemon.Size = new System.Drawing.Size(157, 33);
             this.pbScanPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -344,7 +345,7 @@
             this.pkGasp.BackColor = System.Drawing.Color.Black;
             this.pkGasp.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pkGasp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.pkGasp.Location = new System.Drawing.Point(229, 483);
+            this.pkGasp.Location = new System.Drawing.Point(229, 512);
             this.pkGasp.Name = "pkGasp";
             this.pkGasp.ReadOnly = true;
             this.pkGasp.Size = new System.Drawing.Size(157, 56);
@@ -387,6 +388,19 @@
             this.rtbInfo2.TabIndex = 64;
             this.rtbInfo2.Text = "";
             // 
+            // pkCanBeLegend
+            // 
+            this.pkCanBeLegend.AutoSize = true;
+            this.pkCanBeLegend.BackColor = System.Drawing.Color.Silver;
+            this.pkCanBeLegend.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.pkCanBeLegend.FlatAppearance.BorderSize = 5;
+            this.pkCanBeLegend.Location = new System.Drawing.Point(229, 448);
+            this.pkCanBeLegend.Name = "pkCanBeLegend";
+            this.pkCanBeLegend.Size = new System.Drawing.Size(137, 17);
+            this.pkCanBeLegend.TabIndex = 65;
+            this.pkCanBeLegend.Text = "Generate Legendaries?";
+            this.pkCanBeLegend.UseVisualStyleBackColor = false;
+            // 
             // FormScan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -394,6 +408,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = global::GenesisDex.Properties.Resources.MainMenu;
             this.ClientSize = new System.Drawing.Size(822, 616);
+            this.Controls.Add(this.pkCanBeLegend);
             this.Controls.Add(this.pkItem2);
             this.Controls.Add(this.rtbInfo2);
             this.Controls.Add(this.label6);
@@ -472,5 +487,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox pkPokemon;
         private System.Windows.Forms.RichTextBox rtbInfo2;
+        private System.Windows.Forms.CheckBox pkCanBeLegend;
     }
 }

@@ -9,6 +9,7 @@ using System.Xml.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GenesisDexEngine;
 
 namespace GenesisDex
 {
@@ -53,6 +54,9 @@ namespace GenesisDex
             tbGender.Text = tbGender.Text.Trim(' ');
             tbEgg.Text = tbEgg.Text.Trim(' ');
             tbHatch.Text = tbHatch.Text.Trim(' ');
+            int c = 0;
+            int e = 0;
+            int m = 0;
             XDocument doc = XDocument.Load(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Pokemon.xml");
             XElement pokemon = new XElement("Pokemon",
                 new XElement("number", tbNumber.Text),
@@ -73,36 +77,27 @@ namespace GenesisDex
                 new XElement("habitat", tbHabitat.Text),
                 new XElement("List" + tbNumber.Text,
                     new XElement("Ability",
-                        new XElement("ability", tbBasic1.Text)),
-                    new XElement("Ability",
-                        new XElement("ability", tbBasic2.Text)),
-                    new XElement("Ability",
-                        new XElement("ability", tbAdv1.Text)),
-                    new XElement("Ability",
-                        new XElement("ability", tbAdv2.Text)),
-                    new XElement("Ability",
-                        new XElement("ability", tbHigh1.Text)),
+                        new XElement("basicability1", "Basic Ability 1 - " + tbBasic1.Text),
+                        new XElement("basicability2", "Basic Ability 2 - " + tbBasic2.Text),
+                        new XElement("advability1", "Advanced Ability 1 - " + tbAdv1.Text),
+                        new XElement("advability2", "Advanced Ability 2 - " + tbAdv2.Text),
+                        new XElement("highability", "High Ability - " + tbHigh1.Text)),
                     new XElement("Skills",
-                        new XElement("skill", "Athl " + tbAth.Text)),
-                    new XElement("Skills",
-                        new XElement("skill", "Acro " + tbAcr.Text)),
-                    new XElement("Skills",
-                        new XElement("skill", "Combat " + tbCom.Text)),
-                    new XElement("Skills",
-                        new XElement("skill", "Stealth " + tbSte.Text)),
-                    new XElement("Skills",
-                        new XElement("skill", "Percep " + tbPer.Text)),
-                    new XElement("Skills",
-                        new XElement("skill", "Focus " + tbFoc.Text)),
+                        new XElement("athl", tbAth.Text),
+                        new XElement("acro", tbAcr.Text),
+                        new XElement("combat", tbCom.Text),
+                        new XElement("stealth", tbSte.Text),
+                        new XElement("percep", tbPer.Text),
+                        new XElement("focus", tbFoc.Text)),
+                    new XElement("Capability",
                         from s in Capabilities
-                        select new XElement("Capability",
-                            new XElement("cap", s)),
+                        select new XElement("cap", new XAttribute("id", c++), s)),
+                    new XElement("Evolution",
                         from s in Evo
-                        select new XElement("Evolution",
-                            new XElement("evo", s)),
+                        select new XElement("evo", new XAttribute("id", e++), s)),
+                     new XElement("Moves",
                         from s in Moves
-                        select new XElement("Moves",
-                            new XElement("move", s))));
+                        select new XElement("move", new XAttribute("id", m++), s))));
             doc.Root.Add(pokemon);
             if (cbMega.Checked == true)
             {
@@ -173,7 +168,15 @@ namespace GenesisDex
                     doc.Root.Add(mega);
                 }
             }
-            doc.Descendants().Where(e => string.IsNullOrEmpty(e.Value)).Remove();
+            if  (cbLegend.Checked == true)
+            {
+                XElement megay = new XElement("legendary", "true");
+            }
+            else
+            {
+                XElement megay = new XElement("legendary", "false");
+            }
+            doc.Descendants().Where(f => string.IsNullOrEmpty(f.Value)).Remove();
             doc.Save(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Pokemon.xml");
             DialogResult result = MessageBox.Show(tbName.Text + " has been added to the Pokedex!");
             if (result == DialogResult.OK) { this.Close(); }

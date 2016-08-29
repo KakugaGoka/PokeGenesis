@@ -154,6 +154,10 @@ namespace GenesisDex
             {
                 CheckHabitat();
                 CheckType();
+                if (pkCanBeLegend.Checked != true)
+                {
+                    GetLegend();
+                }
                 HeyYou = GetPokemon();
                 if (HeyYou == null) { return; }
             }
@@ -191,7 +195,15 @@ namespace GenesisDex
             {
                 pbPokemon.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + PokeBall.number + ".gif");
             }
-            if (pkHasItem.Checked == true) { GetItem(); } else { Item = null; Item2 = null; }
+            if (pkHasItem.Checked == true)
+            {
+                GetItem();
+            }
+            else
+            {
+                Item = null;
+                Item2 = null;
+            }
             if ( Item != null && Item2 != null)
             {
                 pkGasp.Text += "It is carrying stuff!" + Environment.NewLine;
@@ -203,7 +215,7 @@ namespace GenesisDex
             SetImage();
             IChooseYou = PokeBall;
             TrueLevel = Level;
-            UpdatePage();
+            UpdatePage(1);
 
                 
         }
@@ -373,7 +385,7 @@ namespace GenesisDex
         {
             stats.Sort(delegate (Pokemon x, Pokemon y)
             {
-                return x.id.CompareTo(y.id);
+                return x.number.CompareTo(y.number);
             });
         }
 
@@ -400,6 +412,18 @@ namespace GenesisDex
             {
                 poke.gender = "Female";
                 return poke;
+            }
+        }
+
+        private void GetLegend()
+        {
+            for (var l = 0; l < pokeList.Count; l++)
+            {
+                if (pokeList[l].legendary == "true")
+                {
+                    pokeList.RemoveAt(l);
+                    l -= 1;
+                }
             }
         }
 
@@ -454,6 +478,8 @@ namespace GenesisDex
 
         private void WriteItems()
         {
+            pkItem2.Visible = false;
+            rtbInfo2.Visible = false;
             pkItem.Visible = true;
             rtbInfo1.Text = Environment.NewLine +
                 Environment.NewLine +
@@ -479,38 +505,53 @@ namespace GenesisDex
         private void infoBack_Click(object sender, EventArgs e)
         {
             Page--;
-            if (Page == 0) { Page = 3;  UpdatePage(); }
+            if (Page == 0) { Page = 3;  UpdatePage(2); }
             if (Page == 1) { WriteInfo(); }
             if (Page == 2) { WriteMoves(); }
-            if (Page == 3) { if (Item != null) { WriteItems(); } else { Page--; UpdatePage(); } }
-            if (Page == 4) { Page = 1; UpdatePage(); }
+            if (Page == 3) { if (Item != null) { WriteItems(); } else { Page = 2; UpdatePage(2); } }
+            if (Page == 4) { Page = 1; UpdatePage(2); }
         }
 
         private void infoForward_Click(object sender, EventArgs e)
         {
             Page++;
-            if (Page == 0) { Page = 3; UpdatePage(); }
+            if (Page == 0) { Page = 3; UpdatePage(1); }
             if (Page == 1) { WriteInfo(); }
             if (Page == 2) { WriteMoves(); }
-            if (Page == 3) { if (Item != null) { WriteItems(); } else { Page++; UpdatePage(); } }
-            if (Page == 4) { Page = 1; UpdatePage(); }
+            if (Page == 3) { if (Item != null) { WriteItems(); } else { Page = 1; UpdatePage(1); } }
+            if (Page == 4) { Page = 1; UpdatePage(1); }
         }
 
-        private void UpdatePage()
+        private void UpdatePage(int input)
         {
-            if (Page == 0) { Page = 2; infoForward_Click(this, new EventArgs()); }
             if (Page == 1) { WriteInfo(); }
             if (Page == 2) { WriteMoves(); }
-            if (Page == 3) { if (Item != null) { WriteItems(); } else { Page = 3; infoForward_Click(this, new EventArgs()); } }
-            if (Page == 4) { Page = 0; infoForward_Click(this, new EventArgs()); }
+            if (Page == 3)
+            {
+                if (Item != null)
+                {
+                    WriteItems();
+                }
+                else
+                {
+                    if (input == 1)
+                    {
+                        infoForward_Click(this, new EventArgs());
+                    }
+                    else if (input == 2)
+                    {
+                        infoBack_Click(this, new EventArgs());
+                    }
+                }
+            }
         }
 
         private void GetItem()
         {
             int i = rng.Next(1, 101);
-            if (i < 100)
+            if (i < 40)
             {
-                i = rng.Next(10, 11);
+                i = rng.Next(1, 11);
                 if (i == 10) { isItem2 = true; GetItem2(); }
                 else { pkItem2.Image = null; Item2 = null; GetItem1(); }
             }
@@ -622,11 +663,13 @@ namespace GenesisDex
             {
                 pkHabitat.Enabled = false;
                 pkType.Enabled = false;
+                pkCanBeLegend.Enabled = false;
             }
             else
             {
                 pkHabitat.Enabled = true;
                 pkType.Enabled = true;
+                pkCanBeLegend.Enabled = true;
             }
         }
     }

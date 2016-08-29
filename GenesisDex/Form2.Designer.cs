@@ -152,6 +152,7 @@
             this.tbRemove = new System.Windows.Forms.TextBox();
             this.label45 = new System.Windows.Forms.Label();
             this.cbRemove = new System.Windows.Forms.CheckBox();
+            this.cbLegend = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             this.gbMega.SuspendLayout();
             this.gbMega2.SuspendLayout();
@@ -471,7 +472,7 @@
             // 
             this.tbNumber.Location = new System.Drawing.Point(89, 86);
             this.tbNumber.Name = "tbNumber";
-            this.tbNumber.Size = new System.Drawing.Size(202, 20);
+            this.tbNumber.Size = new System.Drawing.Size(109, 20);
             this.tbNumber.TabIndex = 1;
             // 
             // tbName
@@ -1153,7 +1154,7 @@
             // 
             this.label44.AutoSize = true;
             this.label44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label44.Location = new System.Drawing.Point(297, 89);
+            this.label44.Location = new System.Drawing.Point(204, 89);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(15, 15);
             this.label44.TabIndex = 131;
@@ -1212,11 +1213,23 @@
             this.cbRemove.UseVisualStyleBackColor = true;
             this.cbRemove.CheckedChanged += new System.EventHandler(this.cbRemove_CheckedChanged);
             // 
+            // cbLegend
+            // 
+            this.cbLegend.AutoSize = true;
+            this.cbLegend.Location = new System.Drawing.Point(231, 89);
+            this.cbLegend.Name = "cbLegend";
+            this.cbLegend.Size = new System.Drawing.Size(82, 17);
+            this.cbLegend.TabIndex = 134;
+            this.cbLegend.TabStop = false;
+            this.cbLegend.Text = "Legendary?";
+            this.cbLegend.UseVisualStyleBackColor = true;
+            // 
             // FormAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1199, 650);
+            this.Controls.Add(this.cbLegend);
             this.Controls.Add(this.cbRemove);
             this.Controls.Add(this.gbRemove);
             this.Controls.Add(this.label44);
@@ -1442,5 +1455,6 @@
         private System.Windows.Forms.TextBox tbRemove;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.CheckBox cbRemove;
+        private System.Windows.Forms.CheckBox cbLegend;
     }
 }

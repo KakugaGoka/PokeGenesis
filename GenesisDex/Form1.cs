@@ -32,7 +32,7 @@ namespace GenesisDex
         List<string> updateList = new List<string>();
         int carryi { get; set; }
         int page = 1;
-        int imageDisplayed = 1;
+        int imageDisplayed = 0;
         int pbPokeLocX { get; set; }
         int pbPokeLocY { get; set; }
         bool mega { get; set; }
@@ -121,6 +121,7 @@ namespace GenesisDex
             }
             catch { }
             int n = 0;
+            done = false;
             while (done == false)
             {
                 n++;
@@ -553,11 +554,17 @@ namespace GenesisDex
             {
                 rtbInfo1.Text += "-" + capList[e].cap + Environment.NewLine;
             }
-            rtbInfo1.Text += (Environment.NewLine + "Skills:" + Environment.NewLine);
-            for (var e = 0; e < skillList.Count; e++)
+            try
             {
-                rtbInfo1.Text += "-" + skillList[e].skill + Environment.NewLine;
+                rtbInfo1.Text += Environment.NewLine + "Skills:" + Environment.NewLine +
+                    "Athl:\t\t" + skillList[0].athl + Environment.NewLine +
+                    "Acro:\t\t" + skillList[0].acro + Environment.NewLine +
+                    "Combat:\t" + skillList[0].combat + Environment.NewLine +
+                    "Stealth:\t" + skillList[0].stealth + Environment.NewLine +
+                    "Percep:\t\t" + skillList[0].percep + Environment.NewLine +
+                    "Focus:\t\t" + skillList[0].focus + Environment.NewLine;
             }
+            catch { }
         }
 
         private void writeMoves()
@@ -587,21 +594,12 @@ namespace GenesisDex
             AbilityList abiXML = new AbilityList();
             abiList.Clear();
             abiList = abiXML.createList(pokeList[i].number);
-            rtbInfo1.Text += Environment.NewLine + "Basic Abilities:" + Environment.NewLine;
-            for (var e = 0; e < abiList.Count - 3; e++)
-            {
-                rtbInfo1.Text += "-" + abiList[e].ability + Environment.NewLine;
-            }
-            rtbInfo1.Text += Environment.NewLine + "Advanced Abilities:" + Environment.NewLine;
-            for (var e = 2; e < abiList.Count - 1; e++)
-            {
-                rtbInfo1.Text += "-" + abiList[e].ability + Environment.NewLine;
-            }
-            rtbInfo1.Text += Environment.NewLine + "High Ability:" + Environment.NewLine;
-            for (var e = 4; e < abiList.Count; e++)
-            {
-                rtbInfo1.Text += "-" + abiList[e].ability + Environment.NewLine;
-            }
+            rtbInfo1.Text += Environment.NewLine + "Abilities:" +
+                Environment.NewLine + abiList[0].basicability1 +
+                Environment.NewLine + abiList[0].basicability2 +
+                Environment.NewLine + abiList[0].advability1 +
+                Environment.NewLine + abiList[0].advability2 +
+                Environment.NewLine + abiList[0].highability + Environment.NewLine;
             MegaList megaAbility = new MegaList();
             if (viewMega == true)
             {

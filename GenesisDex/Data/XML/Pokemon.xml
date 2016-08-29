@@ -17,108 +17,51 @@
     <hatch>10 Day</hatch>
     <diet>Herbivore, Phototroph</diet>
     <habitat>Forest, Grassland, Rainforest</habitat>
+    <legendary>false</legendary>
     <List001>
       <Evolution>
-        <evo>Bulbasaur</evo>
-      </Evolution>
-      <Evolution>
-        <evo>Ivysaur Minimum 15</evo>
-      </Evolution>
-      <Evolution>
-        <evo>Venusaur Minimum 30</evo>
+        <evo id="1">Bulbasaur</evo>
+        <evo id="2">Ivysaur Minimum 15</evo>
+        <evo id="3">Venusaur Minimum 30</evo>
       </Evolution>
       <Ability>
-        <ability>Confidence</ability>
+        <basicability1>Basic Ability 1 - Confidence</basicability1>
+        <basicability2>Basic Ability 2 - Photosynthesis</basicability2>
+        <advability1>Advanced Ability 1 - Chlorophyll</advability1>
+        <advability2>Advanced Ability 2 - Leaf Gaurd</advability2>
+        <highability>High Ability - Courage</highability>
       </Ability>
-      <Ability>
-        <ability>Photosynthesis</ability>
-      </Ability>
-      <Ability>
-        <ability>Chlorophyll</ability>
-      </Ability>
-      <Ability>
-        <ability>Leaf Gaurd</ability>
-      </Ability>
-      <Ability>
-        <ability>Courage</ability>
-      </Ability>
-      <Capability>
-        <cap>Overland 5</cap>
-      </Capability>
-      <Capability>
-        <cap>Swim 3</cap>
-      </Capability>
-      <Capability>
-        <cap>Jump 0/2</cap>
-      </Capability>
-      <Capability>
-        <cap>Power 2</cap>
-      </Capability>
-      <Capability>
-        <cap>Naturewalk (Grassland, Forest)</cap>
-      </Capability>
-      <Capability>
-        <cap>Underdog</cap>
-      </Capability>
       <Skills>
-        <skill>Athl 3d6+2</skill>
+        <athl>3d6+2</athl>
+        <acro>2d6</acro>
+        <combat>2d6</combat>
+        <stealth>2d6</stealth>
+        <percep>2d6</percep>
+        <focus>2d6+1</focus>
       </Skills>
-      <Skills>
-        <skill>Acro 2d6</skill>
-      </Skills>
-      <Skills>
-        <skill>Combat 2d6</skill>
-      </Skills>
-      <Skills>
-        <skill>Stealth 2d6</skill>
-      </Skills>
-      <Skills>
-        <skill>Percep 2d6</skill>
-      </Skills>
-      <Skills>
-        <skill>Focus 2d6+1</skill>
-      </Skills>
+      <Capability>
+        <cap id="0">Overland 5</cap>
+        <cap id="1">Swim 3</cap>
+        <cap id="2">Jump 0/2</cap>
+        <cap id="3">Power 2</cap>
+        <cap id="4">Naturewalk (Grassland, Forest)</cap>
+        <cap id="5">Underdog</cap>
+      </Capability>
       <Moves>
-        <move>1 Tackle - Normal</move>
-      </Moves>
-      <Moves>
-        <move>3 Growl - Normal</move>
-      </Moves>
-      <Moves>
-        <move>7 Leech Seed - Grass</move>
-      </Moves>
-      <Moves>
-        <move>9 Vine Whip - Grass</move>
-      </Moves>
-      <Moves>
-        <move>13 Poison Powder - Poison</move>
-      </Moves>
-      <Moves>
-        <move>13 Sleep Powder - Grass</move>
-      </Moves>
-      <Moves>
-        <move>15 Take Down - Normal</move>
-      </Moves>
-      <Moves>
-        <move>19 Razor Leaf - Grass</move>
-      </Moves>
-      <Moves>
-        <move>21 Sweet Scent - Normal</move>
-      </Moves>
-      <Moves>
-        <move>25 Growth - Normal</move>
-      </Moves>
-      <Moves>
-        <move>27 Double-Edge - Normal</move>
-      </Moves>
-      <Moves>
-        <move>31 Worry Seed - Grass</move>
-      </Moves>
-      <Moves>
-        <move>33 Synthesis - Grass</move>
-      </Moves>
-      <Moves>
-        <move>37 Seed Bomb - Grass</move>
+        <move id="0">1 Tackle - Normal</move>
+        <move id="1">3 Growl - Normal</move>
+        <move id="2">7 Leech Seed - Grass</move>
+        <move id="3">9 Vine Whip - Grass</move>
+        <move id="4">13 Poison Powder - Poison</move>
+        <move id="5">13 Sleep Powder - Grass</move>
+        <move id="6">15 Take Down - Normal</move>
+        <move id="7">19 Razor Leaf - Grass</move>
+        <move id="8">21 Sweet Scent - Normal</move>
+        <move id="9">25 Growth - Normal</move>
+        <move id="10">27 Double-Edge - Normal</move>
+        <move id="11">31 Worry Seed - Grass</move>
+        <move id="12">33 Synthesis - Grass</move>
+        <move id="13">37 Seed Bomb - Grass</move>
       </Moves>
     </List001>
   </Pokemon>
@@ -139,6 +82,7 @@
     <hatch>n/a</hatch>
     <diet>Omnivore, Phototroph</diet>
     <habitat>Forest, Grassland, Rainforest</habitat>
+    <legendary>false</legendary>
     <List002>
       <Evolution>
         <evo>Bulbasaur</evo>
@@ -258,6 +202,7 @@
     <hatch>n/a</hatch>
     <diet>Omnivore, Phototroph</diet>
     <habitat>Forest, Grassland, Rainforest</habitat>
+    <legendary>false</legendary>
     <List003>
       <Evolution>
         <evo>Bulbasaur</evo>
@@ -392,6 +337,7 @@
     <hatch>10 Days</hatch>
     <diet>Herbivore</diet>
     <habitat>Cave, Mountain</habitat>
+    <legendary>false</legendary>
     <List004>
       <Ability>
         <ability>Flame Body</ability>
@@ -513,6 +459,7 @@
     <egg>Monster / Dragon</egg>
     <diet>Carnivore</diet>
     <habitat>Cave, Mountain</habitat>
+    <legendary>false</legendary>
     <List005>
       <Ability>
         <ability>Flame Body</ability>
@@ -628,6 +575,7 @@
     <egg>Monster / Dragon</egg>
     <diet>Carnivore</diet>
     <habitat>Cave, Mountain</habitat>
+    <legendary>false</legendary>
     <List006>
       <Ability>
         <ability>Flame Body</ability>
@@ -775,6 +723,7 @@
     <hatch>10 Days</hatch>
     <diet>Herbivore</diet>
     <habitat>Beach, Freshwater, Ocean</habitat>
+    <legendary>false</legendary>
     <List007>
       <Ability>
         <ability>Shell Armor</ability>
@@ -896,6 +845,7 @@
     <egg>Monster / Water 1</egg>
     <diet>Omnivore</diet>
     <habitat>Beach, Freshwater, Ocean</habitat>
+    <legendary>false</legendary>
     <List008>
       <Ability>
         <ability>Shell Armor</ability>
@@ -1017,6 +967,7 @@
     <egg>Monster / Water 1</egg>
     <diet>Omnivore</diet>
     <habitat>Beach, Freshwater, Ocean</habitat>
+    <legendary>false</legendary>
     <List009>
       <Ability>
         <ability>Shell Armor</ability>
@@ -1148,6 +1099,7 @@
     <hatch>7 Days</hatch>
     <diet>Herbivore</diet>
     <habitat>Forest</habitat>
+    <legendary>false</legendary>
     <List010>
       <Ability>
         <ability>Shield Dust</ability>
@@ -1242,6 +1194,7 @@
     <egg>Bug</egg>
     <diet>Nullivore</diet>
     <habitat>Forest</habitat>
+    <legendary>false</legendary>
     <List011>
       <Ability>
         <ability>Shed Skin</ability>
@@ -1327,6 +1280,7 @@
     <egg>Bug</egg>
     <diet>Herbivore</diet>
     <habitat>Forest</habitat>
+    <legendary>false</legendary>
     <List012>
       <Ability>
         <ability>Compound Eyes</ability>
@@ -1461,6 +1415,7 @@
     <hatch>7 Days</hatch>
     <diet>Herbivore</diet>
     <habitat>Forest</habitat>
+    <legendary>false</legendary>
     <List013>
       <Ability>
         <ability>Shield Dust</ability>
@@ -1555,6 +1510,7 @@
     <egg>Bug</egg>
     <diet>Nullivore</diet>
     <habitat>Forest</habitat>
+    <legendary>false</legendary>
     <List014>
       <Ability>
         <ability>Shed Skin</ability>
@@ -1640,6 +1596,7 @@
     <egg>Bug</egg>
     <diet>Herbivore</diet>
     <habitat>Forest</habitat>
+    <legendary>false</legendary>
     <List015>
       <Ability>
         <ability>Sniper</ability>
@@ -1764,6 +1721,7 @@
     <hatch>7 Days</hatch>
     <diet>Herbivore</diet>
     <habitat>Forest, Urban</habitat>
+    <legendary>false</legendary>
     <List016>
       <Ability>
         <ability>Keen Eye</ability>
@@ -1885,6 +1843,7 @@
     <egg>Flying</egg>
     <diet>Carnivore</diet>
     <habitat>Forest</habitat>
+    <legendary>false</legendary>
     <List017>
       <Ability>
         <ability>Keen Eye</ability>
@@ -2003,6 +1962,7 @@
     <egg>Flying</egg>
     <diet>Carnivore</diet>
     <habitat>Forest</habitat>
+    <legendary>false</legendary>
     <List018>
       <Ability>
         <ability>Keen Eye</ability>
@@ -2133,6 +2093,7 @@
     <hatch>7 Days</hatch>
     <diet>Omnivore</diet>
     <habitat>Cave, Forest, Grassland, Mountain, Urban</habitat>
+    <legendary>false</legendary>
     <List019>
       <Ability>
         <ability>Run Away</ability>
@@ -2251,6 +2212,7 @@
     <egg>Field</egg>
     <diet>Omnivore</diet>
     <habitat>Cave, Forest, Grassland, Mountain</habitat>
+    <legendary>false</legendary>
     <List020>
       <Ability>
         <ability>Run Away</ability>
@@ -2370,6 +2332,7 @@
     <hatch>7 Days</hatch>
     <diet>Omnivore</diet>
     <habitat>Forest, Grassland, Mountain, Urban</habitat>
+    <legendary>false</legendary>
     <List021>
       <Ability>
         <ability>Keen Eye</ability>
@@ -2479,6 +2442,7 @@
     <egg>Flrying</egg>
     <diet>Omnivore</diet>
     <habitat>Forest, Grassland, Mountain</habitat>
+    <legendary>false</legendary>
     <List022>
       <Ability>
         <ability>Keen Eye</ability>
@@ -2589,6 +2553,7 @@
     <hatch>10 Days</hatch>
     <diet>Carnivore</diet>
     <habitat>Grassland, Marsh</habitat>
+    <legendary>false</legendary>
     <List023>
       <Ability>
         <ability>Shed Skin</ability>
@@ -2719,6 +2684,7 @@
     <egg>Field / Dragon</egg>
     <diet>Carnivore</diet>
     <habitat>Grassland Marsh</habitat>
+    <legendary>false</legendary>
     <List024>
       <Ability>
         <ability>Shed Skin</ability>
@@ -2846,6 +2812,7 @@
     <egg>Field / Fairy</egg>
     <diet>Herbivore</diet>
     <habitat>Forest, Grassland, Urban</habitat>
+    <legendary>false</legendary>
     <List025>
       <Ability>
         <ability>Static</ability>
@@ -2973,6 +2940,7 @@
     <egg>Field / Fairy</egg>
     <diet>Herbivore</diet>
     <habitat>Forest</habitat>
+    <legendary>false</legendary>
     <List026>
       <Ability>
         <ability>Static</ability>
@@ -3100,6 +3068,7 @@
     <egg>Field</egg>
     <diet>Herbivore</diet>
     <habitat>Cave, Desert, Grassland</habitat>
+    <legendary>false</legendary>
     <List027>
       <Ability>
         <ability>Sand Veil</ability>
@@ -3233,6 +3202,7 @@
     <egg>Field</egg>
     <diet>Herbivore</diet>
     <habitat>Cave, Desert, Grassland</habitat>
+    <legendary>false</legendary>
     <List028>
       <Ability>
         <ability>Sand Veil</ability>
@@ -3364,6 +3334,7 @@
     <hatch>10 Days</hatch>
     <diet>Herbivore</diet>
     <habitat>Grassland</habitat>
+    <legendary>false</legendary>
     <List029>
       <Ability>
         <ability>Poison Point</ability>
@@ -3485,6 +3456,7 @@
     <egg>Monster / Field</egg>
     <diet>Herbivore</diet>
     <habitat>Grassland</habitat>
+    <legendary>false</legendary>
     <List030>
       <Ability>
         <ability>Poison Point</ability>
@@ -3600,6 +3572,7 @@
     <egg>Monster / Field</egg>
     <diet>Omnivore</diet>
     <habitat>Grassland, Mountain</habitat>
+    <legendary>false</legendary>
     <List031>
       <Ability>
         <ability>Poison Point</ability>
@@ -3734,6 +3707,7 @@
     <hatch>10 Days</hatch>
     <diet>Herbivore</diet>
     <habitat>Grassland</habitat>
+    <legendary>false</legendary>
     <List032>
       <Ability>
         <ability>Poison Point</ability>
@@ -3855,6 +3829,7 @@
     <egg>Monster / Field</egg>
     <diet>Omnivore</diet>
     <habitat>Grassland</habitat>
+    <legendary>false</legendary>
     <List033>
       <Ability>
         <ability>Poison Point</ability>
@@ -3970,6 +3945,7 @@
     <egg>Monster / Field</egg>
     <diet>Omnivore</diet>
     <habitat>Grassland, Mountain</habitat>
+    <legendary>false</legendary>
     <List034>
       <Ability>
         <ability>Poison Point</ability>
@@ -4103,6 +4079,7 @@
     <egg>Fairy</egg>
     <diet>Herbivore</diet>
     <habitat>Cave, Mountain</habitat>
+    <legendary>false</legendary>
     <List035>
       <Ability>
         <ability>Cute Charm</ability>
@@ -4239,6 +4216,7 @@
     <egg>Fairy</egg>
     <diet>Herbivore</diet>
     <habitat>Cave, Mountain</habitat>
+    <legendary>false</legendary>
     <List036>
       <Ability>
         <ability>Cute Charm</ability>
@@ -4370,6 +4348,7 @@
     <hatch>10 Days</hatch>
     <diet>Herbivore</diet>
     <habitat>Grassland, Mountain, Urban</habitat>
+    <legendary>false</legendary>
     <List037>
       <Ability>
         <ability>Flash Fire</ability>
@@ -4509,6 +4488,7 @@
     <egg>Field</egg>
     <diet>Omnivore</diet>
     <habitat>Grassland, Mountain</habitat>
+    <legendary>false</legendary>
     <List038>
       <Ability>
         <ability>Flash Fire</ability>
@@ -4645,6 +4625,7 @@
     <egg>Fairy</egg>
     <diet>Herbivore</diet>
     <habitat>Cave, Grassland, Urban</habitat>
+    <legendary>false</legendary>
     <List039>
       <Ability>
         <ability>Cute Charm</ability>
