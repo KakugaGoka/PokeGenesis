@@ -38,7 +38,7 @@
   </PokeBall>
   <PokeBall>
     <id>Love Ball</id>
-    <desc>-30 Modifier if the user has an active Pokémon that is of the same evolutionary line as the target, and the opposite gender. Does not work with genderless Pokémon</desc>
+    <desc>-30 Modifier if the user has an active Pokémon that is of the same evolutionary line as the target, and the opposite gender</desc>
   </PokeBall>
   <PokeBall>
     <id>Heavy Ball</id>

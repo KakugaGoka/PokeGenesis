@@ -43,6 +43,7 @@
             this.pbPokeAdd = new System.Windows.Forms.PictureBox();
             this.pbOverlay = new System.Windows.Forms.PictureBox();
             this.pbScan = new System.Windows.Forms.PictureBox();
+            this.tbSearch = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMega)).BeginInit();
@@ -220,6 +221,21 @@
             this.pbScan.MouseLeave += new System.EventHandler(this.pbScan_MouseLeave);
             this.pbScan.MouseHover += new System.EventHandler(this.pbScan_MouseHover_1);
             // 
+            // tbSearch
+            // 
+            this.tbSearch.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.tbSearch.BackColor = System.Drawing.Color.Black;
+            this.tbSearch.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.tbSearch.Location = new System.Drawing.Point(23, 540);
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.Size = new System.Drawing.Size(360, 21);
+            this.tbSearch.TabIndex = 33;
+            this.tbSearch.Tag = "";
+            this.tbSearch.Text = "Search";
+            this.tbSearch.Click += new System.EventHandler(this.tbSearch_Click);
+            this.tbSearch.TextChanged += new System.EventHandler(this.tbSearch_TextChanged);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -227,6 +243,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(822, 616);
+            this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.pbScan);
             this.Controls.Add(this.pbOverlay);
             this.Controls.Add(this.pbPokeAdd);
@@ -263,6 +280,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbOverlay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbScan)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -282,6 +300,7 @@
         private System.Windows.Forms.PictureBox pbPokeAdd;
         private System.Windows.Forms.PictureBox pbOverlay;
         private System.Windows.Forms.PictureBox pbScan;
+        private System.Windows.Forms.TextBox tbSearch;
     }
 }
 

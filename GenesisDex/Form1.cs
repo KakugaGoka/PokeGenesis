@@ -829,5 +829,35 @@ namespace GenesisDex
         {
             pbScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Scan.png");
         }
+
+        private void tbSearch_TextChanged(object sender, EventArgs e)
+        {
+            if (tbSearch.Text != "")
+            {
+                List<string> searchDex = new List<string>();
+                searchDex.Clear();
+                foreach (string s in pokeDex)
+                {
+                    if (s.StartsWith(tbSearch.Text, StringComparison.OrdinalIgnoreCase) == true)
+                    {
+                        searchDex.Add(s);
+                    }
+                }
+                lbPokemon.DataSource = searchDex;
+            }
+            else
+            {
+                lbPokemon.DataSource = updateList;
+                lbPokemon.DataSource = pokeDex;
+            }
+        }
+
+        private void tbSearch_Click(object sender, EventArgs e)
+        {
+            if (tbSearch.Text != "")
+            {
+                tbSearch.Text = "";
+            }
+        }
     }
 }

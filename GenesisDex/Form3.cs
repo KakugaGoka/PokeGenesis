@@ -52,14 +52,17 @@ namespace GenesisDex
         string Item { get; set; }
         string Item2 { get; set; }
         bool isItem2 = false;
+        List<string> pokeDex = new List<string>();
 
         public FormScan()
         {
             InitializeComponent();
+            rtbInfo2.Visible = false;
             pkGasp.Text = "";
             pbPokeLocX = pbPokemon.Location.X;
             pbPokeLocY = pbPokemon.Location.Y;
             pokeList = pokeXML.createList("Pokemon");
+            SortPokemon(pokeList);
             typeList = typeXML.createList("Types", "Type");
             habitatList = habitatXML.createList("Habitats", "Habitat");
             natureList = natureXML.createList("Natures", "Nature");
@@ -75,8 +78,14 @@ namespace GenesisDex
             {
                 types.Add(typeList[t].id);
             }
+            pokeDex.Add("Any");
+            for (var p = 0; p < pokeList.Count; p++)
+            {
+                pokeDex.Add(pokeList[p].id);
+            }
             pkHabitat.DataSource = habitats;
             pkType.DataSource = types;
+            pkPokemon.DataSource = pokeDex;
         }
 
         private void pbExit_Click(object sender, EventArgs e)
@@ -133,6 +142,7 @@ namespace GenesisDex
 
         private void pbScanPokemon_Click(object sender, EventArgs e)
         {
+            Pokemon HeyYou = null;
             pkGasp.Clear();
             infoForward.Visible = true;
             infoBack.Visible = true;
@@ -140,9 +150,24 @@ namespace GenesisDex
             pkLevelMax_ValueChanged(this, new EventArgs());
             pokeList.Clear();
             pokeList = pokeXML.createList("Pokemon");
-            CheckHabitat();
-            CheckType();
-            Pokemon HeyYou = GetPokemon();
+            if (pkPokemon.Text == "Any")
+            {
+                CheckHabitat();
+                CheckType();
+                HeyYou = GetPokemon();
+                if (HeyYou == null) { return; }
+            }
+            else
+            {
+                for (var p = 0; p < pokeList.Count; p++)
+                {
+                    if (pokeList[p].id == pkPokemon.Text)
+                    {
+                        HeyYou = pokeList[p];
+                        break;
+                    }
+                }
+            }
             if (HeyYou == null){ return; }
             Pokemon Pikachu = GetNature(HeyYou);
             int Level = GetLevel();
@@ -167,7 +192,6 @@ namespace GenesisDex
                 pbPokemon.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + PokeBall.number + ".gif");
             }
             if (pkHasItem.Checked == true) { GetItem(); } else { Item = null; Item2 = null; }
-            if (pkHasUnique.Checked == true ) { GetUnique(); }
             if ( Item != null && Item2 != null)
             {
                 pkGasp.Text += "It is carrying stuff!" + Environment.NewLine;
@@ -345,6 +369,14 @@ namespace GenesisDex
             });
         }
 
+        private void SortPokemon(List<Pokemon> stats)
+        {
+            stats.Sort(delegate (Pokemon x, Pokemon y)
+            {
+                return x.id.CompareTo(y.id);
+            });
+        }
+
         private Pokemon GetGender(Pokemon poke)
         {
             string[] gender = poke.gender.Split(' ');
@@ -373,6 +405,7 @@ namespace GenesisDex
 
         private void WriteInfo()
         {
+            rtbInfo2.Visible = false;
             pkItem2.Visible = false;
             pkItem.Visible = false;
             rtbInfo1.Text = "Number: " + IChooseYou.number + Environment.NewLine +
@@ -397,6 +430,7 @@ namespace GenesisDex
 
         private void WriteMoves()
         {
+            rtbInfo2.Visible = false;
             pkItem.Visible = false;
             pkItem2.Visible = false;
             int i = TrueLevel;
@@ -420,64 +454,63 @@ namespace GenesisDex
 
         private void WriteItems()
         {
-            pkItem2.Visible = true;
             pkItem.Visible = true;
-            if (Item2 == null)
+            rtbInfo1.Text = Environment.NewLine +
+                Environment.NewLine +
+                Environment.NewLine +
+                Environment.NewLine +
+                Environment.NewLine + 
+                Environment.NewLine +
+                Item;
+            if (Item2 != null)
             {
-                rtbInfo1.Text = Item;
-            }
-            else
-            {
-                rtbInfo1.Text = Item + Environment.NewLine +
-                    Environment.NewLine +
-                    Environment.NewLine +
-                    Environment.NewLine +
-                    Environment.NewLine +
-                    Environment.NewLine +
-                    Environment.NewLine +
-                    Environment.NewLine +
-                    Environment.NewLine +
-                    Environment.NewLine +
-                    Environment.NewLine +
-                    Item2 + Environment.NewLine;
+                rtbInfo2.Visible = true;
+                pkItem2.Visible = true;
+                rtbInfo2.Text = Environment.NewLine +
+                Environment.NewLine +
+                Environment.NewLine +
+                Environment.NewLine +
+                Environment.NewLine + 
+                Environment.NewLine +
+                Item2;
             }
         }
 
         private void infoBack_Click(object sender, EventArgs e)
         {
             Page--;
-            if (Page == 0) { Page = 3; }
+            if (Page == 0) { Page = 3;  UpdatePage(); }
             if (Page == 1) { WriteInfo(); }
             if (Page == 2) { WriteMoves(); }
-            if (Page == 3) { if (Item == null) { WriteMoves(); Page = 2; } else { WriteItems(); } }
-            if (Page == 4) { Page = 1; }
+            if (Page == 3) { if (Item != null) { WriteItems(); } else { Page--; UpdatePage(); } }
+            if (Page == 4) { Page = 1; UpdatePage(); }
         }
 
         private void infoForward_Click(object sender, EventArgs e)
         {
             Page++;
-            if (Page == 0) { Page = 3; }
+            if (Page == 0) { Page = 3; UpdatePage(); }
             if (Page == 1) { WriteInfo(); }
             if (Page == 2) { WriteMoves(); }
-            if (Page == 3) { if (Item == null) { WriteInfo(); } else { WriteItems(); } }
-            if (Page == 4) { Page = 1; }
+            if (Page == 3) { if (Item != null) { WriteItems(); } else { Page++; UpdatePage(); } }
+            if (Page == 4) { Page = 1; UpdatePage(); }
         }
 
         private void UpdatePage()
         {
-            if (Page == 0) { Page = 3; }
+            if (Page == 0) { Page = 2; infoForward_Click(this, new EventArgs()); }
             if (Page == 1) { WriteInfo(); }
             if (Page == 2) { WriteMoves(); }
-            if (Page == 3) { if (Item == null) { WriteInfo(); Page = 1; } else { WriteItems(); } }
-            if (Page == 4) { Page = 1; }
+            if (Page == 3) { if (Item != null) { WriteItems(); } else { Page = 3; infoForward_Click(this, new EventArgs()); } }
+            if (Page == 4) { Page = 0; infoForward_Click(this, new EventArgs()); }
         }
 
         private void GetItem()
         {
             int i = rng.Next(1, 101);
-            if (i < 40)
+            if (i < 100)
             {
-                i = rng.Next(1, 11);
+                i = rng.Next(10, 11);
                 if (i == 10) { isItem2 = true; GetItem2(); }
                 else { pkItem2.Image = null; Item2 = null; GetItem1(); }
             }
@@ -507,11 +540,6 @@ namespace GenesisDex
             else if (i < 101) { GetHM(); }
             isItem2 = false;
             GetItem1();
-        }
-
-        private void GetUnique()
-        {
-
         }
 
         private void GetBerry()
@@ -586,6 +614,20 @@ namespace GenesisDex
         private void pkLevelMax_ValueChanged(object sender, EventArgs e)
         {
             if (pkLevelMax.Value < pkLevelMin.Value) { pkLevelMin.Value = pkLevelMax.Value; }
+        }
+
+        private void pkPokemon_TextChanged(object sender, EventArgs e)
+        {
+            if (pkPokemon.Text != "Any")
+            {
+                pkHabitat.Enabled = false;
+                pkType.Enabled = false;
+            }
+            else
+            {
+                pkHabitat.Enabled = true;
+                pkType.Enabled = true;
+            }
         }
     }
 }
