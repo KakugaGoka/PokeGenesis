@@ -4239,7 +4239,7 @@
     <egg>Fairy</egg>
     <diet>Herbivore</diet>
     <habitat>Cave, Mountain</habitat>
-    <List>
+    <List036>
       <Ability>
         <ability>Cute Charm</ability>
       </Ability>
@@ -4351,7 +4351,7 @@
       <Moves>
         <move>58  After You - Normal</move>
       </Moves>
-    </List>
+    </List036>
   </Pokemon>
   <Pokemon>
     <number>037</number>
@@ -4628,5 +4628,132 @@
         <move>50  Inferno - Fire</move>
       </Moves>
     </List038>
+  </Pokemon>
+  <Pokemon>
+    <number>039</number>
+    <id>Jigglypuff</id>
+    <type>Normal / Fairy</type>
+    <hp>12</hp>
+    <atk>5</atk>
+    <def>2</def>
+    <spatk>5</spatk>
+    <spdef>3</spdef>
+    <spd>2</spd>
+    <size>1’ 8” / 0.5m (Small)</size>
+    <weight>12.1 lbs. / 5.5kg (1)</weight>
+    <gender>25% M / 75% F</gender>
+    <egg>Fairy</egg>
+    <diet>Herbivore</diet>
+    <habitat>Cave, Grassland, Urban</habitat>
+    <List039>
+      <Ability>
+        <ability>Cute Charm</ability>
+      </Ability>
+      <Ability>
+        <ability>Lullaby</ability>
+      </Ability>
+      <Ability>
+        <ability>Friend Guard</ability>
+      </Ability>
+      <Ability>
+        <ability>Competitive</ability>
+      </Ability>
+      <Ability>
+        <ability>Exploit</ability>
+      </Ability>
+      <Skills>
+        <skill>Athl 2d6+1</skill>
+      </Skills>
+      <Skills>
+        <skill>Acro 3d6+1</skill>
+      </Skills>
+      <Skills>
+        <skill>Combat 2d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Stealth 3d6</skill>
+      </Skills>
+      <Skills>
+        <skill>Percep 2d6+2</skill>
+      </Skills>
+      <Skills>
+        <skill>Focus 3d6+2</skill>
+      </Skills>
+      <Capability>
+        <cap>Overland 5</cap>
+      </Capability>
+      <Capability>
+        <cap>Swim 2</cap>
+      </Capability>
+      <Capability>
+        <cap>Jump 1/1</cap>
+      </Capability>
+      <Capability>
+        <cap>Power 1</cap>
+      </Capability>
+      <Capability>
+        <cap>Inflatable</cap>
+      </Capability>
+      <Capability>
+        <cap>Naturewalk (Grassland, Urban)</cap>
+      </Capability>
+      <Capability>
+        <cap>Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo>Igglybuff</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Jigglypuff Minimum 10</evo>
+      </Evolution>
+      <Evolution>
+        <evo>Wigglytuff Moon Stone Minimum 20</evo>
+      </Evolution>
+      <Moves>
+        <move>5 Defense Curl - Normal</move>
+      </Moves>
+      <Moves>
+        <move>9 Pound - Normal</move>
+      </Moves>
+      <Moves>
+        <move>10 Play Nice - Normal</move>
+      </Moves>
+      <Moves>
+        <move>13 Disarming Voice - Fairy</move>
+      </Moves>
+      <Moves>
+        <move>15 Disable - Normal</move>
+      </Moves>
+      <Moves>
+        <move>18 Double Slap - Normal</move>
+      </Moves>
+      <Moves>
+        <move>21 Rollout - Rock</move>
+      </Moves>
+      <Moves>
+        <move>24 Round - Normal</move>
+      </Moves>
+      <Moves>
+        <move>28 Wake-Up Slap - Fighting</move>
+      </Moves>
+      <Moves>
+        <move>32 Rest - Psychic</move>
+      </Moves>
+      <Moves>
+        <move>35 Body Slam - Normal</move>
+      </Moves>
+      <Moves>
+        <move>37 Mimic - Normal</move>
+      </Moves>
+      <Moves>
+        <move>40 Gyro Ball - Steel</move>
+      </Moves>
+      <Moves>
+        <move>44 Hyper Voice - Normal</move>
+      </Moves>
+      <Moves>
+        <move>49 Double-Edge - Normal</move>
+      </Moves>
+    </List039>
   </Pokemon>
 </Namespace>
