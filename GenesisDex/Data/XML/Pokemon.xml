@@ -2552,4 +2552,71 @@
       </Moves>
     </List039>
   </Pokemon>
+  <Pokemon>
+    <number>041</number>
+    <id>Zubat</id>
+    <type>Poison / Flying</type>
+    <hp>4</hp>
+    <atk>5</atk>
+    <def>4</def>
+    <spatk>3</spatk>
+    <spdef>4</spdef>
+    <spd>6</spd>
+    <size>2’ 7” / 0.8m (Small)</size>
+    <weight>16.5 lbs. / 7.5kg (1)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Flying</egg>
+    <hatch>7 Days</hatch>
+    <diet>Carnivore</diet>
+    <habitat>Cave</habitat>
+    <List041>
+      <Ability>
+        <basicability1>Inner Focus</basicability1>
+        <basicability2>Infiltrator</basicability2>
+        <advability1>Instinct</advability1>
+        <advability2>Insomnia</advability2>
+        <highability>Vanguard</highability>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 1d6+2</skill>
+        <skill id="1">Acro 2d6+2</skill>
+        <skill id="2">Combat 2d6</skill>
+        <skill id="3">Stealth 3d6</skill>
+        <skill id="4">Percep 1d6+2</skill>
+        <skill id="5">Focus 2d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 2</cap>
+        <cap id="1">Swim 1</cap>
+        <cap id="2">Sky 5</cap>
+        <cap id="3">Jump 1/1</cap>
+        <cap id="4">Power 1</cap>
+        <cap id="5">Blindsense</cap>
+        <cap id="6">Tracker</cap>
+        <cap id="7">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">Zubat</evo>
+        <evo id="1">Golbat Minimum 20</evo>
+        <evo id="2">Crobat Minimum 30</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1  Leech Life - Bug</move>
+        <move id="1">5  Supersonic - Normal</move>
+        <move id="2">7  Astonish - Ghost</move>
+        <move id="3">11  Bite - Dark</move>
+        <move id="4">13  Wing Attack - Flying</move>
+        <move id="5">17  Confuse Ray - Ghost</move>
+        <move id="6">19  Air Cutter - Flying</move>
+        <move id="7">23  Swift - Normal</move>
+        <move id="8">25  Poison Fang</move>
+        <move id="9">29  Mean Look</move>
+        <move id="10">31  Acrobatics - Flying</move>
+        <move id="11">35  Haze - Ice</move>
+        <move id="12">37  Venoshock - Poison</move>
+        <move id="13">41  Air Slash - Flying</move>
+        <move id="14">43  Quick Guard</move>
+      </Moves>
+    </List041>
+  </Pokemon>
 </Namespace>
