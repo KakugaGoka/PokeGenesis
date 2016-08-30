@@ -184,7 +184,7 @@ namespace GenesisDex
             Pokemon Final = PokeBall;
             if (pkCanBeShiny.Checked == true)
             {
-                int i = rng.Next(1, 101);
+                int i = rng.Next(100, 101);
                 if (i == 1 || i == 100)
                 {
                     pkGasp.Text += "It's a Shiny!" + Environment.NewLine;
@@ -595,16 +595,38 @@ namespace GenesisDex
             int i = rng.Next(1, typeList.Count);
             string newtype = typeList[i].id;
             StringBuilder build = new StringBuilder();
-            build.Append(newtype);
+            if (type.Count() <= 1)
+            {
+                List<string> fix = new List<string>();
+                fix.Add(type[0]);
+                fix.Add("/");
+                fix.Add("placeholder");
+                type = fix.ToArray();
+            }
             foreach (string s in type)
             {
-                if (s != type[0])
+                if (s != type[2])
                 {
-                    build.Append(" ");
                     build.Append(s);
+                    build.Append(" ");
                 }
             }
-            poke.type = build.ToString();
+            build.Append(newtype);
+            try
+            {
+                if (newtype == type[0])
+                {
+                    poke.type = newtype;
+                }
+                else
+                {
+                    poke.type = build.ToString();
+                }
+            }
+            catch
+            {
+                poke.type = build.ToString();
+            }
             typeShiny = newtype;
             return poke;
         }

@@ -3,7 +3,7 @@
   <Pokemon>
     <number>001</number>
     <id>Bulbasaur</id>
-    <type>Grass/Poison</type>
+    <type>Grass / Poison</type>
     <hp>5</hp>
     <atk>5</atk>
     <def>5</def>
@@ -68,7 +68,7 @@
   <Pokemon>
     <number>002</number>
     <id>Ivysaur</id>
-    <type>Grass/Poison</type>
+    <type>Grass / Poison</type>
     <hp>6</hp>
     <atk>6</atk>
     <def>6</def>
@@ -132,7 +132,7 @@
   <Pokemon>
     <number>003</number>
     <id>Venusaur</id>
-    <type>Grass/Poison</type>
+    <type>Grass / Poison</type>
     <hp>8</hp>
     <atk>8</atk>
     <def>8</def>
