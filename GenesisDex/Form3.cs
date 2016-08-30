@@ -184,7 +184,7 @@ namespace GenesisDex
             Pokemon Final = PokeBall;
             if (pkCanBeShiny.Checked == true)
             {
-                int i = rng.Next(100, 101);
+                int i = rng.Next(1, 101);
                 if (i == 1 || i == 100)
                 {
                     pkGasp.Text += "It's a Shiny!" + Environment.NewLine;
