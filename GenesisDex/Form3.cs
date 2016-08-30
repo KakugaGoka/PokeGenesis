@@ -54,6 +54,8 @@ namespace GenesisDex
         bool isItem2 = false;
         List<string> pokeDex = new List<string>();
         List<string> moves = new List<string>();
+        List<string> ability = new List<string>();
+        List<string> skill = new List<string>();
         bool isShiny = false;
         string typeShiny { get; set; }
 
@@ -222,6 +224,8 @@ namespace GenesisDex
             IChooseYou = Final;
             TrueLevel = Level;
             GetMoves();
+            GetAbilities();
+            GetSkills();
             SetImage();
             UpdatePage(1);
 
@@ -470,6 +474,16 @@ namespace GenesisDex
             {
                 rtbInfo1.Text += "-" + moves[w] + Environment.NewLine;
             }
+            rtbInfo1.Text += Environment.NewLine + "Abilities:" + Environment.NewLine;
+            for (var a = 0; a < ability.Count; a++)
+            {
+                rtbInfo1.Text += "-" + ability[a] + Environment.NewLine;
+            }
+            rtbInfo1.Text += Environment.NewLine + "Skills:" + Environment.NewLine;
+            for (var s = 0; s < skill.Count; s++)
+            {
+                rtbInfo1.Text += "-" + skill[s] + Environment.NewLine;
+            }
         }
 
         private void WriteItems()
@@ -538,6 +552,138 @@ namespace GenesisDex
                     {
                         infoBack_Click(this, new EventArgs());
                     }
+                }
+            }
+        }
+
+        private void GetAbilities()
+        {
+            abiList = abiXML.createList(IChooseYou.number);
+            ability.Clear();
+            string one = abiList[0].basicability1;
+            string two = abiList[0].basicability2;
+            string three = abiList[0].advability1;
+            string four = abiList[0].advability2;
+            string five = abiList[0].highability;
+            int roll = rng.Next(1, 3);
+            if (roll == 1) { if (one == "") { ability.Add(two); } else { ability.Add(one); } }
+            if (roll == 2) { if (one == "") { ability.Add(one); } else { ability.Add(two); } }
+            if (TrueLevel >= 20) 
+            {
+                roll = rng.Next(1, 3);
+                if (roll == 1) { if (one == "") { ability.Add(four); } else { ability.Add(three); } }
+                if (roll == 2) { if (one == "") { ability.Add(three); } else { ability.Add(four); } }
+            }
+            if (TrueLevel >= 40)
+            {
+                ability.Add(five);
+            }
+
+        }
+
+        private void GetSkills()
+        {
+            skillList = skillXML.createList(IChooseYou.number);
+            skill.Clear();
+            StringBuilder build = new StringBuilder();
+            int store2a = 10;
+            int store3a = 10;
+            int store2b = 10;
+            int store3b = 10;
+            int skills = rng.Next(1, 4);
+            for (var sk = skills; sk > 0; sk--)
+            {
+                int i;
+                bool store = false;
+                build.Clear();
+                do
+                {
+                    i = rng.Next(0, 6);
+                    store = (i != store2a && i != store3a);
+                } while (store == false);
+                string tes = skillList[i].skill;
+                string[] skil = tes.Split('d');
+                string[] num = skil[0].Split(' ');
+                int temp = Convert.ToInt32(num[1]);
+                temp++;
+                num[1] = temp.ToString();
+                build.Append(num[0]);
+                build.Append(' ');
+                build.Append(num[1]);
+                build.Append('d');
+                build.Append(skil[1]);
+                skillList.RemoveAt(i);
+                skillList.Add(new Skill { skill = build.ToString() });
+                if (sk == 2) { store2a = i; }
+                else if (sk == 3) { store3a = i; }
+            }
+            for (var sk = skills; sk > 0; sk--)
+            {
+                int i;
+                bool store = false;
+                build.Clear();
+                do
+                {
+                    i = rng.Next(0, 6);
+                    store = (i != store2b && i != store3b);
+                } while (store == false) ;
+                string tes = skillList[i].skill;
+                string[] skil = tes.Split('d');
+                string[] num = skil[0].Split(' ');
+                int temp = Convert.ToInt32(num[1]);
+                temp--;
+                num[1] = temp.ToString();
+                build.Append(num[0]);
+                build.Append(' ');
+                build.Append(num[1]);
+                build.Append('d');
+                build.Append(skil[1]);
+                skillList.RemoveAt(i);
+                skillList.Add(new Skill { skill = build.ToString() });
+                if (sk == 2) { store2b = i; }
+                else if (sk == 3) { store3b = i; }
+
+            }
+            for (var q = 0; q < skillList.Count; q++)
+            {
+                if(skillList[q].skill.Contains("Athl"))
+                {
+                skill.Add(skillList[q].skill);
+                }
+            }
+            for (var q = 0; q < skillList.Count; q++)
+            {
+                if (skillList[q].skill.Contains("Acro"))
+                {
+                    skill.Add(skillList[q].skill);
+                }
+            }
+            for (var q = 0; q < skillList.Count; q++)
+            {
+                if (skillList[q].skill.Contains("Combat"))
+                {
+                    skill.Add(skillList[q].skill);
+                }
+            }
+            for (var q = 0; q < skillList.Count; q++)
+            {
+                if (skillList[q].skill.Contains("Stealth"))
+                {
+                    skill.Add(skillList[q].skill);
+                }
+            }
+            for (var q = 0; q < skillList.Count; q++)
+            {
+                if (skillList[q].skill.Contains("Percep"))
+                {
+                    skill.Add(skillList[q].skill);
+                }
+            }
+            for (var q = 0; q < skillList.Count; q++)
+            {
+                if (skillList[q].skill.Contains("Focus"))
+                {
+                    skill.Add(skillList[q].skill);
                 }
             }
         }
