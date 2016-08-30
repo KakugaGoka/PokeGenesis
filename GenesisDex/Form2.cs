@@ -18,6 +18,7 @@ namespace GenesisDex
         int CAP { get; set; }
         int EVO { get; set; }
         int MOV { get; set; }
+        int SKI { get; set; }
         private bool dragging = false;
         private Point dragCursorPoint;
         private Point dragFormPoint;
@@ -40,6 +41,7 @@ namespace GenesisDex
             string[] Capabilities = listCap.Items.Cast<String>().ToArray();
             string[] Moves = listMoves.Items.Cast<String>().ToArray();
             string[] Evo = listEvo.Items.Cast<String>().ToArray();
+            string[] Skills = listSkill.Items.Cast<String>().ToArray();
             tbNumber.Text = tbNumber.Text.Trim(' ');
             tbName.Text = tbName.Text.Trim(' ');
             tbType.Text = tbType.Text.Trim(' ');
@@ -57,6 +59,7 @@ namespace GenesisDex
             int c = 0;
             int e = 0;
             int m = 0;
+            int k = 0;
             XDocument doc = XDocument.Load(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Pokemon.xml");
             XElement pokemon = new XElement("Pokemon",
                 new XElement("number", tbNumber.Text),
@@ -77,18 +80,14 @@ namespace GenesisDex
                 new XElement("habitat", tbHabitat.Text),
                 new XElement("List" + tbNumber.Text,
                     new XElement("Ability",
-                        new XElement("basicability1", "Basic Ability 1 - " + tbBasic1.Text),
-                        new XElement("basicability2", "Basic Ability 2 - " + tbBasic2.Text),
-                        new XElement("advability1", "Advanced Ability 1 - " + tbAdv1.Text),
-                        new XElement("advability2", "Advanced Ability 2 - " + tbAdv2.Text),
-                        new XElement("highability", "High Ability - " + tbHigh1.Text)),
+                        new XElement("basicability1", tbBasic1.Text),
+                        new XElement("basicability2", tbBasic2.Text),
+                        new XElement("advability1", tbAdv1.Text),
+                        new XElement("advability2", tbAdv2.Text),
+                        new XElement("highability", tbHigh1.Text)),
                     new XElement("Skills",
-                        new XElement("athl", tbAth.Text),
-                        new XElement("acro", tbAcr.Text),
-                        new XElement("combat", tbCom.Text),
-                        new XElement("stealth", tbSte.Text),
-                        new XElement("percep", tbPer.Text),
-                        new XElement("focus", tbFoc.Text)),
+                        from s in Skills
+                        select new XElement("skill", new XAttribute("id", k++), s)),
                     new XElement("Capability",
                         from s in Capabilities
                         select new XElement("cap", new XAttribute("id", c++), s)),
@@ -168,7 +167,7 @@ namespace GenesisDex
                     doc.Root.Add(mega);
                 }
             }
-            if  (cbLegend.Checked == true)
+            if (cbLegend.Checked == true)
             {
                 XElement megay = new XElement("legendary", "true");
             }
@@ -376,6 +375,35 @@ namespace GenesisDex
         private void FormAdd_MouseUp(object sender, MouseEventArgs e)
         {
             dragging = false;
+        }
+
+        private void btSkillAdd_Click(object sender, EventArgs e)
+        {
+            if (tbSkillAdd.Text != "")
+            {
+                tbSkillAdd.Text = tbSkillAdd.Text.Trim(' ');
+                listSkill.Items.Add(tbSkillAdd.Text);
+                SKI = listSkill.Items.Count - 1;
+                tbSkillAdd.Text = "";
+            }
+        }
+
+        private void btSkillClear_Click(object sender, EventArgs e)
+        {
+            if (listSkill.Items.Count == 0) { }
+            else
+            {
+                listSkill.Items.RemoveAt(SKI);
+                SKI = listSkill.Items.Count - 1;
+            }
+        }
+
+        private void tbSkillAdd_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btSkillAdd_Click(this, new EventArgs());
+            }
         }
     }
 }

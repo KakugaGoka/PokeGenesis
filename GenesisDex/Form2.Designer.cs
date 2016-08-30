@@ -55,12 +55,6 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
@@ -80,12 +74,6 @@
             this.tbDEF = new System.Windows.Forms.TextBox();
             this.tbATK = new System.Windows.Forms.TextBox();
             this.tbHP = new System.Windows.Forms.TextBox();
-            this.tbFoc = new System.Windows.Forms.TextBox();
-            this.tbPer = new System.Windows.Forms.TextBox();
-            this.tbSte = new System.Windows.Forms.TextBox();
-            this.tbCom = new System.Windows.Forms.TextBox();
-            this.tbAcr = new System.Windows.Forms.TextBox();
-            this.tbAth = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.listCap = new System.Windows.Forms.ListBox();
@@ -153,6 +141,10 @@
             this.label45 = new System.Windows.Forms.Label();
             this.cbRemove = new System.Windows.Forms.CheckBox();
             this.cbLegend = new System.Windows.Forms.CheckBox();
+            this.btSkillClear = new System.Windows.Forms.Button();
+            this.btSkillAdd = new System.Windows.Forms.Button();
+            this.tbSkillAdd = new System.Windows.Forms.TextBox();
+            this.listSkill = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             this.gbMega.SuspendLayout();
             this.gbMega2.SuspendLayout();
@@ -173,7 +165,7 @@
             // 
             this.pbExit.BackColor = System.Drawing.Color.Transparent;
             this.pbExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbExit.BackgroundImage")));
-            this.pbExit.Location = new System.Drawing.Point(12, 12);
+            this.pbExit.Location = new System.Drawing.Point(1163, 12);
             this.pbExit.Name = "pbExit";
             this.pbExit.Size = new System.Drawing.Size(24, 23);
             this.pbExit.TabIndex = 16;
@@ -387,60 +379,6 @@
             this.label23.TabIndex = 39;
             this.label23.Text = "Skills";
             // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(328, 193);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(47, 13);
-            this.label24.TabIndex = 40;
-            this.label24.Text = "Athletics";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(318, 219);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(57, 13);
-            this.label25.TabIndex = 41;
-            this.label25.Text = "Acrobatics";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(332, 245);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(43, 13);
-            this.label26.TabIndex = 42;
-            this.label26.Text = "Combat";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(335, 271);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(40, 13);
-            this.label27.TabIndex = 43;
-            this.label27.Text = "Stealth";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(317, 297);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(58, 13);
-            this.label28.TabIndex = 44;
-            this.label28.Text = "Perception";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(339, 323);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(36, 13);
-            this.label29.TabIndex = 45;
-            this.label29.Text = "Focus";
-            // 
             // label30
             // 
             this.label30.AutoSize = true;
@@ -579,48 +517,6 @@
             this.tbHP.Name = "tbHP";
             this.tbHP.Size = new System.Drawing.Size(75, 20);
             this.tbHP.TabIndex = 11;
-            // 
-            // tbFoc
-            // 
-            this.tbFoc.Location = new System.Drawing.Point(381, 320);
-            this.tbFoc.Name = "tbFoc";
-            this.tbFoc.Size = new System.Drawing.Size(205, 20);
-            this.tbFoc.TabIndex = 22;
-            // 
-            // tbPer
-            // 
-            this.tbPer.Location = new System.Drawing.Point(381, 294);
-            this.tbPer.Name = "tbPer";
-            this.tbPer.Size = new System.Drawing.Size(205, 20);
-            this.tbPer.TabIndex = 21;
-            // 
-            // tbSte
-            // 
-            this.tbSte.Location = new System.Drawing.Point(381, 268);
-            this.tbSte.Name = "tbSte";
-            this.tbSte.Size = new System.Drawing.Size(205, 20);
-            this.tbSte.TabIndex = 20;
-            // 
-            // tbCom
-            // 
-            this.tbCom.Location = new System.Drawing.Point(381, 242);
-            this.tbCom.Name = "tbCom";
-            this.tbCom.Size = new System.Drawing.Size(205, 20);
-            this.tbCom.TabIndex = 19;
-            // 
-            // tbAcr
-            // 
-            this.tbAcr.Location = new System.Drawing.Point(381, 216);
-            this.tbAcr.Name = "tbAcr";
-            this.tbAcr.Size = new System.Drawing.Size(205, 20);
-            this.tbAcr.TabIndex = 18;
-            // 
-            // tbAth
-            // 
-            this.tbAth.Location = new System.Drawing.Point(381, 190);
-            this.tbAth.Name = "tbAth";
-            this.tbAth.Size = new System.Drawing.Size(205, 20);
-            this.tbAth.TabIndex = 17;
             // 
             // label33
             // 
@@ -1079,7 +975,7 @@
             this.tbEvoAdd.Name = "tbEvoAdd";
             this.tbEvoAdd.Size = new System.Drawing.Size(156, 20);
             this.tbEvoAdd.TabIndex = 47;
-            this.tbEvoAdd.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbEvoAdd_KeyDown);
+            this.tbEvoAdd.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbSkillAdd_KeyDown);
             // 
             // tbMoveAdd
             // 
@@ -1168,7 +1064,7 @@
             this.gbRemove.Controls.Add(this.btRemove);
             this.gbRemove.Controls.Add(this.tbRemove);
             this.gbRemove.Controls.Add(this.label45);
-            this.gbRemove.Location = new System.Drawing.Point(777, 12);
+            this.gbRemove.Location = new System.Drawing.Point(640, 12);
             this.gbRemove.Name = "gbRemove";
             this.gbRemove.Size = new System.Drawing.Size(410, 49);
             this.gbRemove.TabIndex = 132;
@@ -1204,7 +1100,7 @@
             // cbRemove
             // 
             this.cbRemove.AutoSize = true;
-            this.cbRemove.Location = new System.Drawing.Point(759, 7);
+            this.cbRemove.Location = new System.Drawing.Point(622, 7);
             this.cbRemove.Name = "cbRemove";
             this.cbRemove.Size = new System.Drawing.Size(215, 17);
             this.cbRemove.TabIndex = 133;
@@ -1224,11 +1120,52 @@
             this.cbLegend.Text = "Legendary?";
             this.cbLegend.UseVisualStyleBackColor = true;
             // 
+            // btSkillClear
+            // 
+            this.btSkillClear.Location = new System.Drawing.Point(535, 202);
+            this.btSkillClear.Name = "btSkillClear";
+            this.btSkillClear.Size = new System.Drawing.Size(51, 20);
+            this.btSkillClear.TabIndex = 138;
+            this.btSkillClear.Text = "Clear";
+            this.btSkillClear.UseVisualStyleBackColor = true;
+            this.btSkillClear.Click += new System.EventHandler(this.btSkillClear_Click);
+            // 
+            // btSkillAdd
+            // 
+            this.btSkillAdd.Location = new System.Drawing.Point(535, 182);
+            this.btSkillAdd.Name = "btSkillAdd";
+            this.btSkillAdd.Size = new System.Drawing.Size(51, 20);
+            this.btSkillAdd.TabIndex = 137;
+            this.btSkillAdd.Text = "Add";
+            this.btSkillAdd.UseVisualStyleBackColor = true;
+            this.btSkillAdd.Click += new System.EventHandler(this.btSkillAdd_Click);
+            // 
+            // tbSkillAdd
+            // 
+            this.tbSkillAdd.Location = new System.Drawing.Point(381, 183);
+            this.tbSkillAdd.Name = "tbSkillAdd";
+            this.tbSkillAdd.Size = new System.Drawing.Size(156, 20);
+            this.tbSkillAdd.TabIndex = 135;
+            this.tbSkillAdd.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbSkillAdd_KeyDown);
+            // 
+            // listSkill
+            // 
+            this.listSkill.FormattingEnabled = true;
+            this.listSkill.Location = new System.Drawing.Point(381, 202);
+            this.listSkill.Name = "listSkill";
+            this.listSkill.Size = new System.Drawing.Size(205, 134);
+            this.listSkill.TabIndex = 136;
+            // 
             // FormAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1199, 650);
+            this.Controls.Add(this.btSkillClear);
+            this.Controls.Add(this.pbExit);
+            this.Controls.Add(this.btSkillAdd);
+            this.Controls.Add(this.tbSkillAdd);
+            this.Controls.Add(this.listSkill);
             this.Controls.Add(this.cbLegend);
             this.Controls.Add(this.cbRemove);
             this.Controls.Add(this.gbRemove);
@@ -1256,12 +1193,6 @@
             this.Controls.Add(this.listCap);
             this.Controls.Add(this.label34);
             this.Controls.Add(this.label33);
-            this.Controls.Add(this.tbAth);
-            this.Controls.Add(this.tbAcr);
-            this.Controls.Add(this.tbCom);
-            this.Controls.Add(this.tbSte);
-            this.Controls.Add(this.tbPer);
-            this.Controls.Add(this.tbFoc);
             this.Controls.Add(this.tbHP);
             this.Controls.Add(this.tbATK);
             this.Controls.Add(this.tbDEF);
@@ -1281,12 +1212,6 @@
             this.Controls.Add(this.label32);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.label30);
-            this.Controls.Add(this.label29);
-            this.Controls.Add(this.label28);
-            this.Controls.Add(this.label27);
-            this.Controls.Add(this.label26);
-            this.Controls.Add(this.label25);
-            this.Controls.Add(this.label24);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label21);
@@ -1310,7 +1235,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pbExit);
             this.Controls.Add(this.btAddPKMN);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormAdd";
@@ -1358,12 +1282,6 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
@@ -1383,12 +1301,6 @@
         private System.Windows.Forms.TextBox tbDEF;
         private System.Windows.Forms.TextBox tbATK;
         private System.Windows.Forms.TextBox tbHP;
-        private System.Windows.Forms.TextBox tbFoc;
-        private System.Windows.Forms.TextBox tbPer;
-        private System.Windows.Forms.TextBox tbSte;
-        private System.Windows.Forms.TextBox tbCom;
-        private System.Windows.Forms.TextBox tbAcr;
-        private System.Windows.Forms.TextBox tbAth;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.ListBox listCap;
@@ -1456,5 +1368,9 @@
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.CheckBox cbRemove;
         private System.Windows.Forms.CheckBox cbLegend;
+        private System.Windows.Forms.Button btSkillClear;
+        private System.Windows.Forms.Button btSkillAdd;
+        private System.Windows.Forms.TextBox tbSkillAdd;
+        private System.Windows.Forms.ListBox listSkill;
     }
 }

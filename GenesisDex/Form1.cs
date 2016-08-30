@@ -554,17 +554,12 @@ namespace GenesisDex
             {
                 rtbInfo1.Text += "-" + capList[e].cap + Environment.NewLine;
             }
-            try
+            rtbInfo1.Text += Environment.NewLine + "Skills:" + Environment.NewLine;
+            for (var e = 0; e < skillList.Count; e++)
             {
-                rtbInfo1.Text += Environment.NewLine + "Skills:" + Environment.NewLine +
-                    "Athl:\t\t" + skillList[0].athl + Environment.NewLine +
-                    "Acro:\t\t" + skillList[0].acro + Environment.NewLine +
-                    "Combat:\t" + skillList[0].combat + Environment.NewLine +
-                    "Stealth:\t" + skillList[0].stealth + Environment.NewLine +
-                    "Percep:\t\t" + skillList[0].percep + Environment.NewLine +
-                    "Focus:\t\t" + skillList[0].focus + Environment.NewLine;
+                rtbInfo1.Text += "-" + skillList[e].skill + Environment.NewLine;
             }
-            catch { }
+
         }
 
         private void writeMoves()
@@ -595,11 +590,11 @@ namespace GenesisDex
             abiList.Clear();
             abiList = abiXML.createList(pokeList[i].number);
             rtbInfo1.Text += Environment.NewLine + "Abilities:";
-            if (abiList[0].basicability1 != null) { rtbInfo1.Text += Environment.NewLine + abiList[0].basicability1; }
-            if (abiList[0].basicability2 != null) { rtbInfo1.Text += Environment.NewLine + abiList[0].basicability2; }
-            if (abiList[0].advability1 != null) { rtbInfo1.Text += Environment.NewLine + abiList[0].advability1; }
-            if (abiList[0].advability2 != null) { rtbInfo1.Text += Environment.NewLine + abiList[0].advability2; }
-            if (abiList[0].highability != null) { rtbInfo1.Text += Environment.NewLine + abiList[0].highability; }
+            if (abiList[0].basicability1 != null) { rtbInfo1.Text += Environment.NewLine + "Basic Ability - " + abiList[0].basicability1; }
+            if (abiList[0].basicability2 != null) { rtbInfo1.Text += Environment.NewLine + "Basic Ability - " + abiList[0].basicability2; }
+            if (abiList[0].advability1 != null) { rtbInfo1.Text += Environment.NewLine + "Advanced Ability - " + abiList[0].advability1; }
+            if (abiList[0].advability2 != null) { rtbInfo1.Text += Environment.NewLine + "Advanced Ability - " + abiList[0].advability2; }
+            if (abiList[0].highability != null) { rtbInfo1.Text += Environment.NewLine + "High Ability - " + abiList[0].highability; }
             MegaList megaAbility = new MegaList();
             if (viewMega == true)
             {
@@ -733,7 +728,7 @@ namespace GenesisDex
 
         private void pbPokeAdd_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            //this.Hide();
             FormAdd fc = new FormAdd();
             fc.FormClosing += FormAddIsClosing;
             fc.Show();

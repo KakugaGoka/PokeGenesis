@@ -69,12 +69,7 @@ namespace GenesisDexEngine
 
     class Skill
     {
-        public string athl { get; set; }
-        public string acro { get; set; }
-        public string combat { get; set; }
-        public string stealth { get; set; }
-        public string percep { get; set; }
-        public string focus { get; set; }
+        public string skill { get; set; }
     }
 
     class OldSkill
@@ -306,15 +301,10 @@ class PokemonList
             string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\Pokemon.xml");
             List<Skill> idList = new List<Skill>();
             XDocument doc = XDocument.Load(fileName);
-            var query = from node in doc.Descendants("List" + decend).Descendants("Skills")
+            var query = from node in doc.Descendants("List" + decend).Descendants("Skills").Descendants("skill")
                         select new Skill
                         {
-                            athl = (string)node.Element("athl"),
-                            acro = (string)node.Element("acro"),
-                            combat = (string)node.Element("combat"),
-                            stealth = (string)node.Element("stealth"),
-                            percep = (string)node.Element("percep"),
-                            focus = (string)node.Element("focus")
+                            skill = (string)node.Value
                         };
             idList = query.ToList();
             return idList;
