@@ -1821,7 +1821,7 @@
   </Pokemon>
   <Pokemon>
     <number>029</number>
-    <id>Nidoran F</id>
+    <id>Nidoran ♀</id>
     <type>Poison</type>
     <hp>6</hp>
     <atk>5</atk>
@@ -1863,7 +1863,7 @@
         <cap id="6">Underdog</cap>
       </Capability>
       <Evolution>
-        <evo id="0">Nidoran F</evo>
+        <evo id="0">Nidoran ♀</evo>
         <evo id="1">Nidorina Minimum 15</evo>
         <evo id="2">Nidoqueen Moon Stone Minimum 25</evo>
       </Evolution>
@@ -1927,7 +1927,7 @@
         <cap id="6">Underdog</cap>
       </Capability>
       <Evolution>
-        <evo id="0">Nidoran F</evo>
+        <evo id="0">Nidoran ♀</evo>
         <evo id="1">Nidorina Minimum 15</evo>
         <evo id="2">Nidoqueen Moon Stone Minimum 25</evo>
       </Evolution>
@@ -1991,7 +1991,7 @@
         <cap id="8">Mountable 1</cap>
       </Capability>
       <Evolution>
-        <evo id="0">Nidoran F</evo>
+        <evo id="0">Nidoran ♀</evo>
         <evo id="1">Nidorina Minimum 15</evo>
         <evo id="2">Nidoqueen Moon Stone Minimum 25</evo>
       </Evolution>
@@ -2016,7 +2016,7 @@
   </Pokemon>
   <Pokemon>
     <number>032</number>
-    <id>Nidoran M</id>
+    <id>Nidoran ♂</id>
     <type>Poison</type>
     <hp>5</hp>
     <atk>6</atk>
@@ -2058,7 +2058,7 @@
         <cap id="6">Underdog</cap>
       </Capability>
       <Evolution>
-        <evo id="0">Nidoran M</evo>
+        <evo id="0">Nidoran ♂</evo>
         <evo id="1">Nidorino Minimum 15</evo>
         <evo id="2">Nidoking Moon Stone Minimum 25</evo>
       </Evolution>
@@ -2122,7 +2122,7 @@
         <cap id="6">Underdog</cap>
       </Capability>
       <Evolution>
-        <evo id="0">Nidoran M</evo>
+        <evo id="0">Nidoran ♂</evo>
         <evo id="1">Nidorino Minimum 15</evo>
         <evo id="2">Nidoking Moon Stone Minimum 25</evo>
       </Evolution>
@@ -2186,7 +2186,7 @@
         <cap id="8">Mountable 1</cap>
       </Capability>
       <Evolution>
-        <evo id="0">Nidoran M</evo>
+        <evo id="0">Nidoran ♂</evo>
         <evo id="1">Nidorino Minimum 15</evo>
         <evo id="2">Nidoking Moon Stone Minimum 25</evo>
       </Evolution>

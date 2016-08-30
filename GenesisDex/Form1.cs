@@ -608,12 +608,12 @@ namespace GenesisDex
                     if (onMegaX == true)
                     {
                         megaList = megaAbility.createList("MegaX" + pokeList[i].number);
-                        rtbInfo1.Text += string.Format(Environment.NewLine + "Mega Ability X -" + megaList[0].ability);
+                        rtbInfo1.Text += string.Format(Environment.NewLine + "Mega Ability X - " + megaList[0].ability);
                     }
                     else
                     {
                         megaList = megaAbility.createList("MegaY" + pokeList[i].number);
-                        rtbInfo1.Text += string.Format(Environment.NewLine + "Mega Ability Y -" + megaList[0].ability);
+                        rtbInfo1.Text += string.Format(Environment.NewLine + "Mega Ability Y - " + megaList[0].ability);
                     }
                 }
             }

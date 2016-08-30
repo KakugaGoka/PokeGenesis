@@ -330,8 +330,13 @@ namespace GenesisDex
             XmlDocument doc = new XmlDocument();
             doc.Load(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Pokemon.xml");
             string ItemCode = tbRemove.Text;
+            string num = null;
             XmlNode node = doc.SelectSingleNode("/*/Pokemon[contains(id,'" + ItemCode + "')]");
-            string num = doc.SelectSingleNode("/*/Pokemon[contains(id,'" + ItemCode + "')]/number").InnerText;
+            try
+            {
+                num = doc.SelectSingleNode("/*/Pokemon[contains(id,'" + ItemCode + "')]/number").InnerText;
+            }
+            catch { MessageBox.Show("This Pokemon does not exist in the Pokedex... Maybe check your spelling?"); return; }
             XmlNode node1 = doc.SelectSingleNode("/*/Mega" + num);
             XmlNode node2 = doc.SelectSingleNode("/*/MegaX" + num);
             XmlNode node3 = doc.SelectSingleNode("/*/MegaY" + num);
