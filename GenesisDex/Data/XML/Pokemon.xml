@@ -20,9 +20,9 @@
     <legendary>false</legendary>
     <List001>
       <Evolution>
-        <evo id="1">Bulbasaur</evo>
-        <evo id="2">Ivysaur Minimum 15</evo>
-        <evo id="3">Venusaur Minimum 30</evo>
+        <evo id="0">Bulbasaur</evo>
+        <evo id="1">Ivysaur Minimum 15</evo>
+        <evo id="2">Venusaur Minimum 30</evo>
       </Evolution>
       <Ability>
         <basicability1>Basic Ability 1 - Confidence</basicability1>
@@ -85,103 +85,47 @@
     <legendary>false</legendary>
     <List002>
       <Evolution>
-        <evo>Bulbasaur</evo>
-      </Evolution>
-      <Evolution>
-        <evo>Ivysaur Mimimum 15</evo>
-      </Evolution>
-      <Evolution>
-        <evo>Venusaur Mimimum 30</evo>
+        <evo id="0">Bulbasaur</evo>
+        <evo id="1">Ivysaur Mimimum 15</evo>
+        <evo id="2">Venusaur Mimimum 30</evo>
       </Evolution>
       <Ability>
-        <ability>Confidence</ability>
-      </Ability>
-      <Ability>
-        <ability>Photosynthesis</ability>
-      </Ability>
-      <Ability>
-        <ability>Chlorophyll</ability>
-      </Ability>
-      <Ability>
-        <ability>Leaf Gaurd</ability>
-      </Ability>
-      <Ability>
-        <ability>Courage</ability>
+        <basicability1>Confidence</basicability1>
+        <basicability2>Photosynthesis</basicability2>
+        <advability1>Chlorophyll</advability1>
+        <advability2>Leaf Gaurd</advability2>
+        <highability>Courage</highability>
       </Ability>
       <Capability>
-        <cap>Overland 6</cap>
-      </Capability>
-      <Capability>
-        <cap>Swim 3</cap>
-      </Capability>
-      <Capability>
-        <cap>Jump 1/1</cap>
-      </Capability>
-      <Capability>
-        <cap>Power 3</cap>
-      </Capability>
-      <Capability>
-        <cap>Naturewalk (Grassland, Forest)</cap>
-      </Capability>
-      <Capability>
-        <cap>Underdog</cap>
+        <cap id="0">Overland 6</cap>
+        <cap id="1">Swim 3</cap>
+        <cap id="2">Jump 1/1</cap>
+        <cap id="3">Power 3</cap>
+        <cap id="4">Naturewalk (Grassland, Forest)</cap>
+        <cap id="5">Underdog</cap>
       </Capability>
       <Skills>
-        <skill>Athl 4d6+3</skill>
-      </Skills>
-      <Skills>
-        <skill>Acro 2d6</skill>
-      </Skills>
-      <Skills>
-        <skill>Combat 3d6</skill>
-      </Skills>
-      <Skills>
-        <skill>Stealth 2d6</skill>
-      </Skills>
-      <Skills>
-        <skill>Percep 2d6</skill>
-      </Skills>
-      <Skills>
-        <skill>Focus 3d6+2</skill>
+        <athl>4d6+3</athl>
+        <acro>2d6</acro>
+        <combat>3d6</combat>
+        <stealth>2d6</stealth>
+        <percep>2d6</percep>
+        <focus>3d6+2</focus>
       </Skills>
       <Moves>
-        <move>3 Growl - Normal</move>
-      </Moves>
-      <Moves>
-        <move>7 Leech Seed - Grass</move>
-      </Moves>
-      <Moves>
-        <move>9 Vine Whip - Grass</move>
-      </Moves>
-      <Moves>
-        <move>13 Poison Powder - Poison</move>
-      </Moves>
-      <Moves>
-        <move>13 Sleep Powder - Grass</move>
-      </Moves>
-      <Moves>
-        <move>15 Take Down - Normal</move>
-      </Moves>
-      <Moves>
-        <move>20 Razor Leaf - Grass</move>
-      </Moves>
-      <Moves>
-        <move>23 Sweet Scent - Normal</move>
-      </Moves>
-      <Moves>
-        <move>28 Growth - Normal</move>
-      </Moves>
-      <Moves>
-        <move>31 Double-Edge - Normal</move>
-      </Moves>
-      <Moves>
-        <move>36 Worry Seed - Grass</move>
-      </Moves>
-      <Moves>
-        <move>39 Synthesis - Grass</move>
-      </Moves>
-      <Moves>
-        <move>44 Solar Beam - Grass</move>
+        <move id="0">3 Growl - Normal</move>
+        <move id="1">7 Leech Seed - Grass</move>
+        <move id="2">9 Vine Whip - Grass</move>
+        <move id="3">13 Poison Powder - Poison</move>
+        <move id="4">13 Sleep Powder - Grass</move>
+        <move id="5">15 Take Down - Normal</move>
+        <move id="6">20 Razor Leaf - Grass</move>
+        <move id="7">23 Sweet Scent - Normal</move>
+        <move id="8">28 Growth - Normal</move>
+        <move id="9">31 Double-Edge - Normal</move>
+        <move id="10">36 Worry Seed - Grass</move>
+        <move id="11">39 Synthesis - Grass</move>
+        <move id="12">44 Solar Beam - Grass</move>
       </Moves>
     </List002>
   </Pokemon>
@@ -206,107 +150,47 @@
     <List003>
       <Evolution>
         <evo>Bulbasaur</evo>
-      </Evolution>
-      <Evolution>
         <evo>Ivysaur Mimimum 15</evo>
-      </Evolution>
-      <Evolution>
         <evo>Venusaur Mimimum 30</evo>
       </Evolution>
       <Ability>
         <ability>Confidence</ability>
-      </Ability>
-      <Ability>
         <ability>Photosynthesis</ability>
-      </Ability>
-      <Ability>
         <ability>Chlorophyll</ability>
-      </Ability>
-      <Ability>
         <ability>Aroma Veil</ability>
-      </Ability>
-      <Ability>
         <ability>Courage</ability>
       </Ability>
       <Capability>
         <cap>Overland 6</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 4</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 2/2</cap>
-      </Capability>
-      <Capability>
         <cap>Power 8</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Grassland, Forest)</cap>
-      </Capability>
-      <Capability>
         <cap>Alluring (only in Rain)</cap>
       </Capability>
       <Skills>
         <skill>Athl 5d6+3</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 1d6</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 4d6</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 1d6</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 5d6+3</skill>
       </Skills>
       <Moves>
         <move>3 Growl - Normal</move>
-      </Moves>
-      <Moves>
         <move>7 Leech Seed - Grass</move>
-      </Moves>
-      <Moves>
         <move>9 Vine Whip - Grass</move>
-      </Moves>
-      <Moves>
         <move>13 Poison Powder - Poison</move>
-      </Moves>
-      <Moves>
         <move>13 Sleep Powder - Grass</move>
-      </Moves>
-      <Moves>
         <move>15 Take Down - Normal</move>
-      </Moves>
-      <Moves>
         <move>20 Razor Leaf - Grass</move>
-      </Moves>
-      <Moves>
         <move>23 Sweet Scent - Normal</move>
-      </Moves>
-      <Moves>
         <move>28 Growth - Normal</move>
-      </Moves>
-      <Moves>
         <move>31 Double-Edge - Normal</move>
-      </Moves>
-      <Moves>
         <move>32 Petal Dance - Grass</move>
-      </Moves>
-      <Moves>
         <move>39 Worry Seed - Grass</move>
-      </Moves>
-      <Moves>
         <move>45 Synthesis - Grass</move>
-      </Moves>
-      <Moves>
         <move>50 Petal Blizzard - Grass</move>
-      </Moves>
-      <Moves>
         <move>53 Solar Beam - Grass</move>
       </Moves>
     </List003>
@@ -341,104 +225,46 @@
     <List004>
       <Ability>
         <ability>Flame Body</ability>
-      </Ability>
-      <Ability>
         <ability>Rattled</ability>
-      </Ability>
-      <Ability>
         <ability>Solar Power</ability>
-      </Ability>
-      <Ability>
         <ability>White Flame</ability>
-      </Ability>
-      <Ability>
         <ability>Courage</ability>
       </Ability>
       <Capability>
         <cap>Overland 5</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 3</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 1/1</cap>
-      </Capability>
-      <Capability>
         <cap>Power 2</cap>
-      </Capability>
-      <Capability>
         <cap>Firestarter</cap>
-      </Capability>
-      <Capability>
         <cap>Glow</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Mountain)</cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>Charmander</evo>
-      </Evolution>
-      <Evolution>
         <evo>Charmeleon Minimum 15</evo>
-      </Evolution>
-      <Evolution>
         <evo>Charizard Minimum 30</evo>
       </Evolution>
       <Skills>
         <skill>Athl 2d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 2d6</skill>
       </Skills>
       <Moves>
         <move>1 Scratch - Normal</move>
-      </Moves>
-      <Moves>
         <move>3 Growl - Normal</move>
-      </Moves>
-      <Moves>
         <move>7 Ember - Fire</move>
-      </Moves>
-      <Moves>
         <move>10 Smokescreen - Normal</move>
-      </Moves>
-      <Moves>
         <move>16 Dragon Rage - Dragon</move>
-      </Moves>
-      <Moves>
         <move>19 Scary Face - Normal</move>
-      </Moves>
-      <Moves>
         <move>25 Fire Fang - Fire</move>
-      </Moves>
-      <Moves>
         <move>28 Flame Burst - Fire</move>
-      </Moves>
-      <Moves>
         <move>34 Slash - Normal</move>
-      </Moves>
-      <Moves>
         <move>37 Flamethrower - Fire</move>
-      </Moves>
-      <Moves>
         <move>43 Fire Spin - Fire</move>
-      </Moves>
-      <Moves>
         <move>46 Inferno - Fire</move>
       </Moves>
     </List004>
@@ -463,98 +289,44 @@
     <List005>
       <Ability>
         <ability>Flame Body</ability>
-      </Ability>
-      <Ability>
         <ability>Intimidate</ability>
-      </Ability>
-      <Ability>
         <ability>Solar Power</ability>
-      </Ability>
-      <Ability>
         <ability>White Flame</ability>
-      </Ability>
-      <Ability>
         <ability>Courage</ability>
       </Ability>
       <Capability>
         <cap>Overland 6 </cap>
-      </Capability>
-      <Capability>
         <cap>Swim 4</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 1/1</cap>
-      </Capability>
-      <Capability>
         <cap>Power 4</cap>
-      </Capability>
-      <Capability>
         <cap>Firestarter</cap>
-      </Capability>
-      <Capability>
         <cap>Glow</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Mountain)</cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>1 - Charmander</evo>
-      </Evolution>
-      <Evolution>
         <evo>2 - Charmeleon Minimum 15</evo>
-      </Evolution>
-      <Evolution>
         <evo>3 - Charizard Minimum 30</evo>
       </Evolution>
       <Skills>
         <skill>Athl 4d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 3d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 3d6</skill>
       </Skills>
       <Moves>
         <move>7 Ember - Fire</move>
-      </Moves>
-      <Moves>
         <move>10 Smokescreen - Normal</move>
-      </Moves>
-      <Moves>
         <move>17 Dragon Rage - Dragon</move>
-      </Moves>
-      <Moves>
         <move>21 Scary Face - Normal</move>
-      </Moves>
-      <Moves>
         <move>28 Fire Fang - Fire</move>
-      </Moves>
-      <Moves>
         <move>32 Flame Burst - Fire</move>
-      </Moves>
-      <Moves>
         <move>39 Slash - Normal</move>
-      </Moves>
-      <Moves>
         <move>43 Flamethrower - Fire</move>
-      </Moves>
-      <Moves>
         <move>50 Fire Spin - Fire</move>
-      </Moves>
-      <Moves>
         <move>54 Inferno - Fire</move>
       </Moves>
     </List005>
@@ -579,113 +351,49 @@
     <List006>
       <Ability>
         <ability>Flame Body</ability>
-      </Ability>
-      <Ability>
         <ability>Intimidate</ability>
-      </Ability>
-      <Ability>
         <ability>Solar Power</ability>
-      </Ability>
-      <Ability>
         <ability>White Flame</ability>
-      </Ability>
-      <Ability>
         <ability>Courage</ability>
       </Ability>
       <Capability>
         <cap>Overland 6 </cap>
-      </Capability>
-      <Capability>
         <cap>Swim 5</cap>
-      </Capability>
-      <Capability>
         <cap>Sky 8</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 2/3</cap>
-      </Capability>
-      <Capability>
         <cap>Power 8</cap>
-      </Capability>
-      <Capability>
         <cap>Firestarter</cap>
-      </Capability>
-      <Capability>
         <cap>Glow</cap>
-      </Capability>
-      <Capability>
         <cap>Heater</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Mountain)</cap>
-      </Capability>
-      <Capability>
         <cap>Mountable 1</cap>
       </Capability>
       <Evolution>
         <evo>Charmander</evo>
-      </Evolution>
-      <Evolution>
         <evo>Charmeleon Minimum 15</evo>
-      </Evolution>
-      <Evolution>
         <evo>Charizard Minimum 30</evo>
       </Evolution>
       <Skills>
         <skill>Athl 5d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 4d6+3</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 1d6</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 4d6</skill>
       </Skills>
       <Moves>
         <move>7 Ember - Fire</move>
-      </Moves>
-      <Moves>
         <move>10 Smokescreen - Normal</move>
-      </Moves>
-      <Moves>
         <move>17 Dragon Rage - Dragon</move>
-      </Moves>
-      <Moves>
         <move>21 Scary Face - Normal</move>
-      </Moves>
-      <Moves>
         <move>28 Fire Fang - Fire</move>
-      </Moves>
-      <Moves>
         <move>32 Flame Burst - Fire</move>
-      </Moves>
-      <Moves>
         <move>36 Wing Attack - Flying </move>
-      </Moves>
-      <Moves>
         <move>41 Slash - Normal</move>
-      </Moves>
-      <Moves>
         <move>47 Flamethrower - Fire</move>
-      </Moves>
-      <Moves>
         <move>56 Fire Spin - Fire</move>
-      </Moves>
-      <Moves>
         <move>62 Inferno - Fire</move>
-      </Moves>
-      <Moves>
         <move>71 Heat Wave - Fire</move>
-      </Moves>
-      <Moves>
         <move>77 Flare Blitz - Fire</move>
       </Moves>
     </List006>
@@ -727,104 +435,46 @@
     <List007>
       <Ability>
         <ability>Shell Armor</ability>
-      </Ability>
-      <Ability>
         <ability>Overcoat</ability>
-      </Ability>
-      <Ability>
         <ability>Rain Dish</ability>
-      </Ability>
-      <Ability>
         <ability>Shell Shield</ability>
-      </Ability>
-      <Ability>
         <ability>Courage</ability>
       </Ability>
       <Skills>
         <skill>Athl 2d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 3d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 2d6+3</skill>
       </Skills>
       <Capability>
         <cap>Overland 6</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 6</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 1/1</cap>
-      </Capability>
-      <Capability>
         <cap>Power 2</cap>
-      </Capability>
-      <Capability>
         <cap>Fountain</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Wetlands)</cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>Squirtle</evo>
-      </Evolution>
-      <Evolution>
         <evo>Wartortrle Minimum 15</evo>
-      </Evolution>
-      <Evolution>
         <evo>Blastoise Minimum 30</evo>
       </Evolution>
       <Moves>
         <move>1 Tackle - Normal</move>
-      </Moves>
-      <Moves>
         <move>4 Tail Whip - Normal</move>
-      </Moves>
-      <Moves>
         <move>7 Bubble - Water</move>
-      </Moves>
-      <Moves>
         <move>10 Withdraw - Water</move>
-      </Moves>
-      <Moves>
         <move>13 Water Gun - Water</move>
-      </Moves>
-      <Moves>
         <move>16 Bite - Dark</move>
-      </Moves>
-      <Moves>
         <move>19 Rapid Spin - Normal</move>
-      </Moves>
-      <Moves>
         <move>22 Protect - Normal</move>
-      </Moves>
-      <Moves>
         <move>25 Water Pulse - Water</move>
-      </Moves>
-      <Moves>
         <move>31 Skull Bash - Normal</move>
-      </Moves>
-      <Moves>
         <move>34 Iron Defense - Steel</move>
-      </Moves>
-      <Moves>
         <move>37 Rain Dance - Water</move>
-      </Moves>
-      <Moves>
         <move>40 Hydro Pump - Water</move>
       </Moves>
     </List007>
@@ -849,104 +499,46 @@
     <List008>
       <Ability>
         <ability>Shell Armor</ability>
-      </Ability>
-      <Ability>
         <ability>Overcoat</ability>
-      </Ability>
-      <Ability>
         <ability>Rain Dish</ability>
-      </Ability>
-      <Ability>
         <ability>Shell Shield</ability>
-      </Ability>
-      <Ability>
         <ability>Courage</ability>
       </Ability>
       <Skills>
         <skill>Athl 3d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 3d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 3d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 3d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 3d6+3</skill>
       </Skills>
       <Capability>
         <cap>Overland 6</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 6</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 1/1</cap>
-      </Capability>
-      <Capability>
         <cap>Power 4</cap>
-      </Capability>
-      <Capability>
         <cap>Fountain</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Wetlands)</cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>Squirtle</evo>
-      </Evolution>
-      <Evolution>
         <evo>Wartortle Minimum 15</evo>
-      </Evolution>
-      <Evolution>
         <evo>Blastoise Mimimum 30</evo>
       </Evolution>
       <Moves>
         <move>4 Tail Whip - Normal</move>
-      </Moves>
-      <Moves>
         <move>7 Bubble - Water</move>
-      </Moves>
-      <Moves>
         <move>10 Withdraw - Water</move>
-      </Moves>
-      <Moves>
         <move>13 Water Gun - Water</move>
-      </Moves>
-      <Moves>
         <move>16 Bite - Dark</move>
-      </Moves>
-      <Moves>
         <move>20 Rapid Spin - Normal</move>
-      </Moves>
-      <Moves>
         <move>24 Protect - Normal</move>
-      </Moves>
-      <Moves>
         <move>28 Water Pulse - Water</move>
-      </Moves>
-      <Moves>
         <move>32 - Aqua Tail - Water</move>
-      </Moves>
-      <Moves>
         <move>36 Skull Bash - Normal</move>
-      </Moves>
-      <Moves>
         <move>40 Iron Defense - Steel</move>
-      </Moves>
-      <Moves>
         <move>44 Rain Dance - Water</move>
-      </Moves>
-      <Moves>
         <move>48 Hydro Pump - Water</move>
       </Moves>
     </List008>
@@ -971,104 +563,46 @@
     <List009>
       <Ability>
         <ability>Shell Armor</ability>
-      </Ability>
-      <Ability>
         <ability>Overcoat</ability>
-      </Ability>
-      <Ability>
         <ability>Rain Dish</ability>
-      </Ability>
-      <Ability>
         <ability>ShellCannon</ability>
-      </Ability>
-      <Ability>
         <ability>Courage</ability>
       </Ability>
       <Skills>
         <skill>Athl 4d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 1d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 4d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 1d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 3d6+3</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 4d6+3</skill>
       </Skills>
       <Capability>
         <cap>Overland 6</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 9</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 1/1 </cap>
-      </Capability>
-      <Capability>
         <cap>Power 9</cap>
-      </Capability>
-      <Capability>
         <cap>Fountain</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Grassland)</cap>
-      </Capability>
-      <Capability>
         <cap>Mountable 1</cap>
       </Capability>
       <Evolution>
         <evo>Squirtle</evo>
-      </Evolution>
-      <Evolution>
         <evo>Wartortle Minimum 15</evo>
-      </Evolution>
-      <Evolution>
         <evo>Blastoise Minimum 30</evo>
       </Evolution>
       <Moves>
         <move>4 Tail Whip - Normal</move>
-      </Moves>
-      <Moves>
         <move>7 Bubble - Water</move>
-      </Moves>
-      <Moves>
         <move>10 Withdraw - Water </move>
-      </Moves>
-      <Moves>
         <move>13 Water Gun - Water</move>
-      </Moves>
-      <Moves>
         <move>16 Bite - Dark</move>
-      </Moves>
-      <Moves>
         <move>20 Rapid Spin - Normal</move>
-      </Moves>
-      <Moves>
         <move>24 Protect - Normal</move>
-      </Moves>
-      <Moves>
         <move>28 Water Pulse - Water </move>
-      </Moves>
-      <Moves>
         <move>32 Aqua Tail - Water</move>
-      </Moves>
-      <Moves>
         <move>39 Skull Bash - Normal</move>
-      </Moves>
-      <Moves>
         <move>46 Iron Defense - Steel</move>
-      </Moves>
-      <Moves>
         <move>53 Rain Dance - Water</move>
-      </Moves>
-      <Moves>
         <move>60 Hydro Pump - Water</move>
       </Moves>
     </List009>
@@ -1103,77 +637,37 @@
     <List010>
       <Ability>
         <ability>Shield Dust</ability>
-      </Ability>
-      <Ability>
         <ability>Run Away</ability>
-      </Ability>
-      <Ability>
         <ability>Silk Threads</ability>
-      </Ability>
-      <Ability>
         <ability>Suction Cups</ability>
-      </Ability>
-      <Ability>
         <ability>Run Up</ability>
       </Ability>
       <Skills>
         <skill>Athl 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 1d6</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 3d6</skill>
       </Skills>
       <Capability>
         <cap>Overland 5</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 2</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 1/1 </cap>
-      </Capability>
-      <Capability>
         <cap>Power1</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Grassland, Forest)</cap>
-      </Capability>
-      <Capability>
         <cap>Wallclimber</cap>
-      </Capability>
-      <Capability>
         <cap>Threaded</cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>Caterpie</evo>
-      </Evolution>
-      <Evolution>
         <evo>Metapod Minimum 5</evo>
-      </Evolution>
-      <Evolution>
         <evo>Butterfree Minimum 10</evo>
       </Evolution>
       <Moves>
         <move>1 String Shot - Bug</move>
-      </Moves>
-      <Moves>
         <move>1 Tackle - Normal</move>
-      </Moves>
-      <Moves>
         <move>15 Bug Bite - Bug</move>
       </Moves>
     </List010>
@@ -1198,65 +692,31 @@
     <List011>
       <Ability>
         <ability>Shed Skin</ability>
-      </Ability>
-      <Ability>
         <ability>Battle Armor</ability>
-      </Ability>
-      <Ability>
         <ability>Silk Threads</ability>
-      </Ability>
-      <Ability>
         <ability>Magic Guard</ability>
-      </Ability>
-      <Ability>
         <ability>Sturdy</ability>
       </Ability>
       <Skills>
         <skill>Athl 1d6</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 1d6</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 3d6</skill>
       </Skills>
       <Capability>
         <cap>Overland 2</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 2</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 1/1</cap>
-      </Capability>
-      <Capability>
         <cap>Power1</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Grassland, Forest)</cap>
-      </Capability>
-      <Capability>
         <cap>Threaded</cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>Caterpie</evo>
-      </Evolution>
-      <Evolution>
         <evo>Metapod Minimum 5</evo>
-      </Evolution>
-      <Evolution>
         <evo>Butterfree Minimum 10</evo>
       </Evolution>
       <Moves>
@@ -1284,116 +744,50 @@
     <List012>
       <Ability>
         <ability>Compound Eyes</ability>
-      </Ability>
-      <Ability>
         <ability>Tinted Lens</ability>
-      </Ability>
-      <Ability>
         <ability>Keen Eye</ability>
-      </Ability>
-      <Ability>
         <ability>Flutter</ability>
-      </Ability>
-      <Ability>
         <ability>Blow Away</ability>
       </Ability>
       <Skills>
         <skill>Athl 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 6d6+3</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 5d6</skill>
       </Skills>
       <Capability>
         <cap>Overland 3</cap>
-      </Capability>
-      <Capability>
         <cap>Sky 8</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 2</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 1/1</cap>
-      </Capability>
-      <Capability>
         <cap>Power2</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Grassland, Forest)</cap>
-      </Capability>
-      <Capability>
         <cap>Wallclimber</cap>
-      </Capability>
-      <Capability>
         <cap>Threaded</cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>Caterpie</evo>
-      </Evolution>
-      <Evolution>
         <evo>Metapod Minimum 5</evo>
-      </Evolution>
-      <Evolution>
         <evo>Butterfree Minimum 10</evo>
       </Evolution>
       <Moves>
         <move>10 Confusion - Psychic</move>
-      </Moves>
-      <Moves>
         <move>12 Poison Powder - Poison</move>
-      </Moves>
-      <Moves>
         <move>12 Sleep Powder - Grass</move>
-      </Moves>
-      <Moves>
         <move>12 Stun Spore - Grass</move>
-      </Moves>
-      <Moves>
         <move>16 Gust - Flying</move>
-      </Moves>
-      <Moves>
         <move>18 Supersonic - Normal</move>
-      </Moves>
-      <Moves>
         <move>22 Whirlwind - Normal</move>
-      </Moves>
-      <Moves>
         <move>24 Psybeam - Psychic</move>
-      </Moves>
-      <Moves>
         <move>28 Silver Wind - Bug</move>
-      </Moves>
-      <Moves>
         <move>30 Tailwind - Flying</move>
-      </Moves>
-      <Moves>
         <move>34 Rage Powder - Bug</move>
-      </Moves>
-      <Moves>
         <move>36 Safeguard - Normal</move>
-      </Moves>
-      <Moves>
         <move>40 Captivate - Normal</move>
-      </Moves>
-      <Moves>
         <move>42 Bug Buzz - Bug</move>
-      </Moves>
-      <Moves>
         <move>46 Quiver Dance - Bug</move>
       </Moves>
     </List012>
@@ -1419,77 +813,37 @@
     <List013>
       <Ability>
         <ability>Shield Dust</ability>
-      </Ability>
-      <Ability>
         <ability>Run Away</ability>
-      </Ability>
-      <Ability>
         <ability>Silk Threads</ability>
-      </Ability>
-      <Ability>
         <ability>Swarm</ability>
-      </Ability>
-      <Ability>
         <ability>Poison Touch</ability>
       </Ability>
       <Skills>
         <skill>Athl 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 1d6</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 2d6</skill>
       </Skills>
       <Capability>
         <cap>Overland 5</cap>
-      </Capability>
-      <Capability>
         <cap>Burrow 1</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 1/1</cap>
-      </Capability>
-      <Capability>
         <cap>Power 1</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Grassland, Forest)</cap>
-      </Capability>
-      <Capability>
         <cap>Threaded</cap>
-      </Capability>
-      <Capability>
         <cap>Wallclimber</cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>Weedle </evo>
-      </Evolution>
-      <Evolution>
         <evo>Kakuna Minimum 5</evo>
-      </Evolution>
-      <Evolution>
         <evo>Beedrill Minimum 10</evo>
       </Evolution>
       <Moves>
         <move>1 Poison Sting - Poison</move>
-      </Moves>
-      <Moves>
         <move>1 String Shot - Bug</move>
-      </Moves>
-      <Moves>
         <move>15 Bug Bite - Bug</move>
       </Moves>
     </List013>
@@ -1514,65 +868,31 @@
     <List014>
       <Ability>
         <ability>Shed Skin</ability>
-      </Ability>
-      <Ability>
         <ability>Battle Armor</ability>
-      </Ability>
-      <Ability>
         <ability>Silk Threads</ability>
-      </Ability>
-      <Ability>
         <ability>Magic Guard</ability>
-      </Ability>
-      <Ability>
         <ability>Sturdy</ability>
       </Ability>
       <Skills>
         <skill>Athl 1d6</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 1d6</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 3d6</skill>
       </Skills>
       <Capability>
         <cap>Overland 2</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 2</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 1/1</cap>
-      </Capability>
-      <Capability>
         <cap>Power 1</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Grassland, Forest)</cap>
-      </Capability>
-      <Capability>
         <cap>Threaded</cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>Weedle </evo>
-      </Evolution>
-      <Evolution>
         <evo>Kakuna Minimum 5</evo>
-      </Evolution>
-      <Evolution>
         <evo>Beedrill Mimimum 10</evo>
       </Evolution>
       <Moves>
@@ -1600,98 +920,44 @@
     <List015>
       <Ability>
         <ability>Sniper</ability>
-      </Ability>
-      <Ability>
         <ability>Poison Touch</ability>
-      </Ability>
-      <Ability>
         <ability>Technician</ability>
-      </Ability>
-      <Ability>
         <ability>Swarm</ability>
-      </Ability>
-      <Ability>
         <ability>Vanguard</ability>
       </Ability>
       <Skills>
         <skill>Athl 3d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 5d6+3</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 4d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 3d6+3</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 3d6+3</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 3d6+3</skill>
       </Skills>
       <Capability>
         <cap>Overland 2</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 2</cap>
-      </Capability>
-      <Capability>
         <cap>Sky 8</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 3/4</cap>
-      </Capability>
-      <Capability>
         <cap>Power 4</cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>Weedle</evo>
-      </Evolution>
-      <Evolution>
         <evo>Kakuna Minimum 5</evo>
-      </Evolution>
-      <Evolution>
         <evo>Beedrill Minimum 10</evo>
       </Evolution>
       <Moves>
         <move>10 Fury Attack - Normal</move>
-      </Moves>
-      <Moves>
         <move>13 Focus Energy - Normal</move>
-      </Moves>
-      <Moves>
         <move>16 Twineedle - Bug</move>
-      </Moves>
-      <Moves>
         <move>19 Rage - Normal</move>
-      </Moves>
-      <Moves>
         <move>22 Pursuit - Dark</move>
-      </Moves>
-      <Moves>
         <move>25 Toxic Spikes - Poison</move>
-      </Moves>
-      <Moves>
         <move>28 Pin Missile - Bug</move>
-      </Moves>
-      <Moves>
         <move>31 Agility - Psychic</move>
-      </Moves>
-      <Moves>
         <move>34 Assurance - Dark</move>
-      </Moves>
-      <Moves>
         <move>37 Poison Jab - Poison</move>
-      </Moves>
-      <Moves>
         <move>40 Endeavor - Normal</move>
-      </Moves>
-      <Moves>
         <move>45 Fell Stinger - Bug</move>
       </Moves>
     </List015>
@@ -1725,104 +991,46 @@
     <List016>
       <Ability>
         <ability>Keen Eye</ability>
-      </Ability>
-      <Ability>
         <ability>Tangled Feet</ability>
-      </Ability>
-      <Ability>
         <ability>Big Pecks</ability>
-      </Ability>
-      <Ability>
         <ability>Blow Away</ability>
-      </Ability>
-      <Ability>
         <ability>Run Away</ability>
       </Ability>
       <Skills>
         <skill>Athl 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 2d6</skill>
       </Skills>
       <Capability>
         <cap>Overland 2</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 2</cap>
-      </Capability>
-      <Capability>
         <cap>Sky 5</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 1/1</cap>
-      </Capability>
-      <Capability>
         <cap>Power 1</cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>Pidgey</evo>
-      </Evolution>
-      <Evolution>
         <evo>Pidgeotto Minimum 15</evo>
-      </Evolution>
-      <Evolution>
         <evo>Pidgeot Minimum 30</evo>
       </Evolution>
       <Moves>
         <move>1 Tackle - Normal</move>
-      </Moves>
-      <Moves>
         <move>5 Sand Attack - Ground</move>
-      </Moves>
-      <Moves>
         <move>9 Gust - Flying</move>
-      </Moves>
-      <Moves>
         <move>13 Quick Attack - Normal</move>
-      </Moves>
-      <Moves>
         <move>17 Whirlwind - Normal</move>
-      </Moves>
-      <Moves>
         <move>21 Twister - Dragon</move>
-      </Moves>
-      <Moves>
         <move>25 Feather Dance - Flying</move>
-      </Moves>
-      <Moves>
         <move>29 Agility - Psychic</move>
-      </Moves>
-      <Moves>
         <move>33 Wing Attack - Flying</move>
-      </Moves>
-      <Moves>
         <move>37 Roost - Flying </move>
-      </Moves>
-      <Moves>
         <move>41 Tailwind - Flying</move>
-      </Moves>
-      <Moves>
         <move>45 Mirror Move - Flying</move>
-      </Moves>
-      <Moves>
         <move>49 Air Slash - Flying</move>
-      </Moves>
-      <Moves>
         <move>53 Hurricane - Flying</move>
       </Moves>
     </List016>
@@ -1847,101 +1055,45 @@
     <List017>
       <Ability>
         <ability>Keen Eye</ability>
-      </Ability>
-      <Ability>
         <ability>Tangled Feet</ability>
-      </Ability>
-      <Ability>
         <ability>Big Pecks </ability>
-      </Ability>
-      <Ability>
         <ability>Blow Away</ability>
-      </Ability>
-      <Ability>
         <ability>Competitive</ability>
       </Ability>
       <Skills>
         <skill>Athl 3d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 3d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 2d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 3d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 3d6</skill>
       </Skills>
       <Capability>
         <cap>Overland 3</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 2</cap>
-      </Capability>
-      <Capability>
         <cap>Sky 7</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 2/2 </cap>
-      </Capability>
-      <Capability>
         <cap>Power 3</cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>Pidgey</evo>
-      </Evolution>
-      <Evolution>
         <evo>Pidgeotto Minimum 15</evo>
-      </Evolution>
-      <Evolution>
         <evo>Pidgeot Minimum 30</evo>
       </Evolution>
       <Moves>
         <move>5 Sand Attack - Ground</move>
-      </Moves>
-      <Moves>
         <move>9 Gust - Flying</move>
-      </Moves>
-      <Moves>
         <move>13 Quick Attack - Normal</move>
-      </Moves>
-      <Moves>
         <move>17 Whirlwind - Normal</move>
-      </Moves>
-      <Moves>
         <move>22 Twister - Dragon</move>
-      </Moves>
-      <Moves>
         <move>27 Feather Dance - Flying</move>
-      </Moves>
-      <Moves>
         <move>32 Agility - Psychic</move>
-      </Moves>
-      <Moves>
         <move>37 Wing Attack - Flying</move>
-      </Moves>
-      <Moves>
         <move>42 Roost - Flying</move>
-      </Moves>
-      <Moves>
         <move>47 Tailwind - Flying </move>
-      </Moves>
-      <Moves>
         <move>52 Mirror Move - Flying</move>
-      </Moves>
-      <Moves>
         <move>57 Air Slash - Flying</move>
-      </Moves>
-      <Moves>
         <move>62 Hurricane - Flying</move>
       </Moves>
     </List017>
@@ -1966,104 +1118,46 @@
     <List018>
       <Ability>
         <ability>Keen Eye</ability>
-      </Ability>
-      <Ability>
         <ability>Tangled Feet</ability>
-      </Ability>
-      <Ability>
         <ability>Rocket</ability>
-      </Ability>
-      <Ability>
         <ability>Blow Away</ability>
-      </Ability>
-      <Ability>
         <ability>Competitive</ability>
       </Ability>
       <Skills>
         <skill>Athl 4d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 4d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 4d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 4d6+3</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 4d6</skill>
       </Skills>
       <Capability>
         <cap>Overland 4</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 3</cap>
-      </Capability>
-      <Capability>
         <cap>Sky 9</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 3/3 </cap>
-      </Capability>
-      <Capability>
         <cap>Power 5</cap>
-      </Capability>
-      <Capability>
         <cap>Guster</cap>
-      </Capability>
-      <Capability>
         <cap>Mountable 1 </cap>
       </Capability>
       <Evolution>
         <evo>Pidgey</evo>
-      </Evolution>
-      <Evolution>
         <evo>Pidgeotto Minimum 15</evo>
-      </Evolution>
-      <Evolution>
         <evo>Pidgeot Minimum 30</evo>
       </Evolution>
       <Moves>
         <move>5 Sand Attack - Ground</move>
-      </Moves>
-      <Moves>
         <move>9 Gust - Flying</move>
-      </Moves>
-      <Moves>
         <move>13 Quick Attack - Normal</move>
-      </Moves>
-      <Moves>
         <move>17 Whirlwind - Normal</move>
-      </Moves>
-      <Moves>
         <move>22 Twister - Dragon</move>
-      </Moves>
-      <Moves>
         <move>27 Feather Dance - Flying</move>
-      </Moves>
-      <Moves>
         <move>32 Agility - Psychic</move>
-      </Moves>
-      <Moves>
         <move>38 Wing Attack - Flying</move>
-      </Moves>
-      <Moves>
         <move>44 Roost - Flying</move>
-      </Moves>
-      <Moves>
         <move>50 Tailwind - Flying</move>
-      </Moves>
-      <Moves>
         <move>56 Mirror Move - Flying</move>
-      </Moves>
-      <Moves>
         <move>62 Air Slash - Flying</move>
-      </Moves>
-      <Moves>
         <move>68 Hurricane - Flying</move>
       </Moves>
     </List018>
@@ -2097,101 +1191,45 @@
     <List019>
       <Ability>
         <ability>Run Away</ability>
-      </Ability>
-      <Ability>
         <ability>Guts</ability>
-      </Ability>
-      <Ability>
         <ability>Hustle</ability>
-      </Ability>
-      <Ability>
         <ability>Instinct</ability>
-      </Ability>
-      <Ability>
         <ability>Intimidate</ability>
       </Ability>
       <Skills>
         <skill>Athl 1d6</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 2d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 4d6</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 2d6</skill>
       </Skills>
       <Capability>
         <cap>Overland 6</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 4</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 2/2</cap>
-      </Capability>
-      <Capability>
         <cap>Power 1</cap>
-      </Capability>
-      <Capability>
         <cap>Stealth</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Grassland, Urban) </cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>Rattata</evo>
-      </Evolution>
-      <Evolution>
         <evo>Raticate Minimum 20</evo>
       </Evolution>
       <Moves>
         <move>1 Tackle - Normal</move>
-      </Moves>
-      <Moves>
         <move>1 Tail Whip - Normal</move>
-      </Moves>
-      <Moves>
         <move>4 Quick Attack - Normal</move>
-      </Moves>
-      <Moves>
         <move>7 Focus Energy - Normal</move>
-      </Moves>
-      <Moves>
         <move>10 Bite - Dark </move>
-      </Moves>
-      <Moves>
         <move>13 Pursuit - Dark</move>
-      </Moves>
-      <Moves>
         <move>16 Hyper Fang - Normal</move>
-      </Moves>
-      <Moves>
         <move>19 Sucker Punch - Dark</move>
-      </Moves>
-      <Moves>
         <move>22 Crunch - Dark</move>
-      </Moves>
-      <Moves>
         <move>25 Assurance - Dark</move>
-      </Moves>
-      <Moves>
         <move>28 Super Fang - Normal</move>
-      </Moves>
-      <Moves>
         <move>31 Double-Edge - Normal</move>
-      </Moves>
-      <Moves>
         <move>34 Endeavor - Normal</move>
       </Moves>
     </List019>
@@ -2216,101 +1254,45 @@
     <List020>
       <Ability>
         <ability>Run Away</ability>
-      </Ability>
-      <Ability>
         <ability>Guts</ability>
-      </Ability>
-      <Ability>
         <ability>Hustle</ability>
-      </Ability>
-      <Ability>
         <ability>Instinct</ability>
-      </Ability>
-      <Ability>
         <ability>Intimidate</ability>
       </Ability>
       <Skills>
         <skill>Athl 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 3d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 4d6</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 5d6</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 3d6</skill>
       </Skills>
       <Capability>
         <cap>Overland 7</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 6</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 2/2</cap>
-      </Capability>
-      <Capability>
         <cap>Power 3</cap>
-      </Capability>
-      <Capability>
         <cap>Tracker</cap>
-      </Capability>
-      <Capability>
         <cap>Stealth</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Grassland, Urban)</cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>Rattata</evo>
-      </Evolution>
-      <Evolution>
         <evo>Raticate Minimum 20</evo>
       </Evolution>
       <Moves>
         <move>4 Quick Attack - Normal</move>
-      </Moves>
-      <Moves>
         <move>7 Focus Energy - Normal</move>
-      </Moves>
-      <Moves>
         <move>10 Bite - Dark</move>
-      </Moves>
-      <Moves>
         <move>13 Pursuit - Dark</move>
-      </Moves>
-      <Moves>
         <move>16 Hyper Fang - Normal</move>
-      </Moves>
-      <Moves>
         <move>19 Sucker Punch - Dark</move>
-      </Moves>
-      <Moves>
         <move>20 Scary Face - Normal</move>
-      </Moves>
-      <Moves>
         <move>24 Crunch - Dark</move>
-      </Moves>
-      <Moves>
         <move>29 Assurance - Dark</move>
-      </Moves>
-      <Moves>
         <move>34 Super Fang - Normal</move>
-      </Moves>
-      <Moves>
         <move>39 Double-Edge - Normal</move>
-      </Moves>
-      <Moves>
         <move>44 Endeavor - Normal</move>
       </Moves>
     </List020>
@@ -2336,92 +1318,42 @@
     <List021>
       <Ability>
         <ability>Keen Eye</ability>
-      </Ability>
-      <Ability>
         <ability>Sniper</ability>
-      </Ability>
-      <Ability>
         <ability>Scrappy</ability>
-      </Ability>
-      <Ability>
         <ability>Early Bird</ability>
-      </Ability>
-      <Ability>
         <ability>Vanguard</ability>
       </Ability>
       <Skills>
         <skill>Athl 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 2d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 3d6</skill>
       </Skills>
       <Capability>
         <cap>Overland 4</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 2</cap>
-      </Capability>
-      <Capability>
         <cap>Sky 5</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 3/3</cap>
-      </Capability>
-      <Capability>
         <cap>Power 1 </cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>Spearow</evo>
-      </Evolution>
-      <Evolution>
         <evo>Fearow Minimum 20</evo>
       </Evolution>
       <Moves>
         <move>1 Growl - Normal</move>
-      </Moves>
-      <Moves>
         <move>1 Peck - Flying</move>
-      </Moves>
-      <Moves>
         <move>5 Leer - Normal</move>
-      </Moves>
-      <Moves>
         <move>9 Fury Attack - Normal</move>
-      </Moves>
-      <Moves>
         <move>13 Pursuit - Dark </move>
-      </Moves>
-      <Moves>
         <move>17 Areal Ace - Flying</move>
-      </Moves>
-      <Moves>
         <move>21 Mirror Move - Flying</move>
-      </Moves>
-      <Moves>
         <move>25 Agiligy - Psychic</move>
-      </Moves>
-      <Moves>
         <move>29 Assurance - Dark</move>
-      </Moves>
-      <Moves>
         <move>33 Roost - Flying</move>
-      </Moves>
-      <Moves>
         <move>37 Drill Peck - Flying</move>
       </Moves>
     </List021>
@@ -2446,92 +1378,42 @@
     <List022>
       <Ability>
         <ability>Keen Eye</ability>
-      </Ability>
-      <Ability>
         <ability>Sniper</ability>
-      </Ability>
-      <Ability>
         <ability>Scrappy</ability>
-      </Ability>
-      <Ability>
         <ability>Early Bird</ability>
-      </Ability>
-      <Ability>
         <ability>Vanguard</ability>
       </Ability>
       <Skills>
         <skill>Athl 4d6</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 4d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 4d6</skill>
       </Skills>
       <Capability>
         <cap>Overland 5</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 3</cap>
-      </Capability>
-      <Capability>
         <cap>Sky 8</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 3/3</cap>
-      </Capability>
-      <Capability>
         <cap>Power 5</cap>
-      </Capability>
-      <Capability>
         <cap>Mountable 1</cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>Spearow</evo>
-      </Evolution>
-      <Evolution>
         <evo>Fearow Minimuim 20</evo>
       </Evolution>
       <Moves>
         <move>5 Leer - Normal</move>
-      </Moves>
-      <Moves>
         <move>9 Fury Attack - Normal</move>
-      </Moves>
-      <Moves>
         <move>13 Pursuit - Dark</move>
-      </Moves>
-      <Moves>
         <move>17 Aerial Ace - Flying</move>
-      </Moves>
-      <Moves>
         <move>23 Mirror Move - Flying</move>
-      </Moves>
-      <Moves>
         <move>29 Agility - Psychic</move>
-      </Moves>
-      <Moves>
         <move>35 Assurance - Dark</move>
-      </Moves>
-      <Moves>
         <move>41 Roost - Flying</move>
-      </Moves>
-      <Moves>
         <move>47 Drill Peck - Flying</move>
-      </Moves>
-      <Moves>
         <move>53 Drill Run - Ground</move>
       </Moves>
     </List022>
@@ -2556,114 +1438,50 @@
     <legendary>false</legendary>
     <List023>
       <Ability>
-        <ability>Shed Skin</ability>
-      </Ability>
-      <Ability>
-        <ability>Intimidate</ability>
-      </Ability>
-      <Ability>
-        <ability>Unnerve</ability>
-      </Ability>
-      <Ability>
-        <ability>Keen Eye</ability>
+        <basicability1>Basic Ability 1 - Shed Skin</basicability1>
+        <basicability2>Basic Ability 2 - Intimidate</basicability2>
+        <advability1>Adv Ability 1 - Unnerve</advability1>
+        <highability>High Ability - Keen Eye</highability>
       </Ability>
       <Skills>
-        <skill>Athl 2d6+1</skill>
-      </Skills>
-      <Skills>
-        <skill>Acro 2d6</skill>
-      </Skills>
-      <Skills>
-        <skill>Combat 2d6</skill>
-      </Skills>
-      <Skills>
-        <skill>Stealth 3d6+1</skill>
-      </Skills>
-      <Skills>
-        <skill>Percep 2d6</skill>
-      </Skills>
-      <Skills>
-        <skill>Focus 2d6</skill>
+        <athl>2d6+1</athl>
+        <acro>Acro 2d6</acro>
+        <combat>Combat 2d6</combat>
+        <stealth>Stealth 3d6+1</stealth>
+        <percep>Percep 2d6</percep>
+        <focus>Focus 2d6</focus>
       </Skills>
       <Capability>
         <cap>Overland 5 </cap>
-      </Capability>
-      <Capability>
         <cap>Swim 3</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 1/1</cap>
-      </Capability>
-      <Capability>
         <cap>Power 1</cap>
-      </Capability>
-      <Capability>
         <cap>Darkvision</cap>
-      </Capability>
-      <Capability>
         <cap>Stealth</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Grassland)</cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>Ekans</evo>
-      </Evolution>
-      <Evolution>
         <evo>Arbok Minimum 20</evo>
       </Evolution>
       <Moves>
         <move>1 Leer - Normal</move>
-      </Moves>
-      <Moves>
         <move>1 Wrap - Normal</move>
-      </Moves>
-      <Moves>
         <move>4 Poison Sting - Poison</move>
-      </Moves>
-      <Moves>
         <move>9 Bite - Dark</move>
-      </Moves>
-      <Moves>
         <move>12 Glare - Normal</move>
-      </Moves>
-      <Moves>
         <move>17 Screech - Normal</move>
-      </Moves>
-      <Moves>
         <move>20 Acid - Poison</move>
-      </Moves>
-      <Moves>
         <move>25 Spit Up - Normal</move>
-      </Moves>
-      <Moves>
         <move>25 Stockpile - Normal</move>
-      </Moves>
-      <Moves>
         <move>25 Swallow - Normal</move>
-      </Moves>
-      <Moves>
         <move>28 Acid Spray - Poison</move>
-      </Moves>
-      <Moves>
         <move>33 Mud Bomb - Ground</move>
-      </Moves>
-      <Moves>
         <move>36 Gastro Acid - Poison</move>
-      </Moves>
-      <Moves>
         <move>38 Belch - Poison</move>
-      </Moves>
-      <Moves>
         <move>41 Haze - Ice </move>
-      </Moves>
-      <Moves>
         <move>44 Coil - Poison</move>
-      </Moves>
-      <Moves>
         <move>49 Gunk Shot - Poison</move>
       </Moves>
     </List023>
@@ -2688,110 +1506,48 @@
     <List024>
       <Ability>
         <ability>Shed Skin</ability>
-      </Ability>
-      <Ability>
         <ability>Intimidate</ability>
-      </Ability>
-      <Ability>
         <ability>Serpent's Mark</ability>
-      </Ability>
-      <Ability>
         <ability>Serpent's Mark</ability>
       </Ability>
       <Skills>
         <skill>Athl 4d6</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 3d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 4d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 2d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 3d6</skill>
       </Skills>
       <Capability>
         <cap>Overland 6</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 4</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 1/2</cap>
-      </Capability>
-      <Capability>
         <cap>Power 3</cap>
-      </Capability>
-      <Capability>
         <cap>Darkvision</cap>
-      </Capability>
-      <Capability>
         <cap>Stealth</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Grassland)</cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>Ekans</evo>
-      </Evolution>
-      <Evolution>
         <evo>Arbok Minimum 20</evo>
       </Evolution>
       <Moves>
         <move>4 Poison Sting - Poison</move>
-      </Moves>
-      <Moves>
         <move>9 Bite - Dark</move>
-      </Moves>
-      <Moves>
         <move>12 Glare - Normal</move>
-      </Moves>
-      <Moves>
         <move>17 Screech - Normal</move>
-      </Moves>
-      <Moves>
         <move>20 Acid - Poison</move>
-      </Moves>
-      <Moves>
         <move>22 Crunch - Dark</move>
-      </Moves>
-      <Moves>
         <move>27 Spit Up - Normal</move>
-      </Moves>
-      <Moves>
         <move>27 Stockpile - Normal</move>
-      </Moves>
-      <Moves>
         <move>27 Swallow - Normal</move>
-      </Moves>
-      <Moves>
         <move>34 Acid Spray - Poison</move>
-      </Moves>
-      <Moves>
         <move>39 Mud Bomb - Ground</move>
-      </Moves>
-      <Moves>
         <move>44 Gastro Acid - Poison</move>
-      </Moves>
-      <Moves>
         <move>48 Belch - Poison</move>
-      </Moves>
-      <Moves>
         <move>51 Haze - Ice</move>
-      </Moves>
-      <Moves>
         <move>56 Coil - Poison</move>
-      </Moves>
-      <Moves>
         <move>63 Gunk Shot - Poison</move>
       </Moves>
     </List024>
@@ -2816,110 +1572,48 @@
     <List025>
       <Ability>
         <ability>Static</ability>
-      </Ability>
-      <Ability>
         <ability>Cute Charm</ability>
-      </Ability>
-      <Ability>
         <ability>Lightning Rod</ability>
-      </Ability>
-      <Ability>
         <ability>Sprint</ability>
-      </Ability>
-      <Ability>
         <ability>Sequence</ability>
       </Ability>
       <Skills>
         <skill>Athl 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 3d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 3d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 2d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 3d6+2</skill>
       </Skills>
       <Capability>
         <cap>Overland 7 </cap>
-      </Capability>
-      <Capability>
         <cap>Swim 2</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 2/2</cap>
-      </Capability>
-      <Capability>
         <cap>Power 2</cap>
-      </Capability>
-      <Capability>
         <cap>Zapper</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Forest, Urban)</cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>Pichu</evo>
-      </Evolution>
-      <Evolution>
         <evo>Pikachu Minimum 10</evo>
-      </Evolution>
-      <Evolution>
         <evo>Raichu Thunderstone Minimuim 10</evo>
       </Evolution>
       <Moves>
         <move>5 Tail Whip - Normal</move>
-      </Moves>
-      <Moves>
         <move>7 Play Nice - Normal</move>
-      </Moves>
-      <Moves>
         <move>10 Quick Attack - Normal</move>
-      </Moves>
-      <Moves>
         <move>13 Electro Ball - Electric</move>
-      </Moves>
-      <Moves>
         <move>18 Thunder Wave - Electric</move>
-      </Moves>
-      <Moves>
         <move>21 Feint - Normal</move>
-      </Moves>
-      <Moves>
         <move>26 Spark - Electric</move>
-      </Moves>
-      <Moves>
         <move>29 Nuzzle - Electric</move>
-      </Moves>
-      <Moves>
         <move>34 Discharge - Electric</move>
-      </Moves>
-      <Moves>
         <move>37 Slam - Normal</move>
-      </Moves>
-      <Moves>
         <move>42 Thunderbolt - Electric</move>
-      </Moves>
-      <Moves>
         <move>45 Agility - Psychic</move>
-      </Moves>
-      <Moves>
         <move>50 Wild Charge - Electric</move>
-      </Moves>
-      <Moves>
         <move>53 Light Screen - Psychic</move>
-      </Moves>
-      <Moves>
         <move>58 Thunder - Electric</move>
       </Moves>
     </List025>
@@ -2944,110 +1638,48 @@
     <List026>
       <Ability>
         <ability>Static</ability>
-      </Ability>
-      <Ability>
         <ability>Motor Drive</ability>
-      </Ability>
-      <Ability>
         <ability>Lightning Rod</ability>
-      </Ability>
-      <Ability>
         <ability>Sprint</ability>
-      </Ability>
-      <Ability>
         <ability>Sequence</ability>
       </Ability>
       <Skills>
         <skill>Athl 4d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 2d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 4d6</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 2d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 4d6+3</skill>
       </Skills>
       <Capability>
         <cap>Overland 6</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 3</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 2/2</cap>
-      </Capability>
-      <Capability>
         <cap>Power 4</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Forest, Urban)</cap>
-      </Capability>
-      <Capability>
         <cap>Zapper</cap>
       </Capability>
       <Evolution>
         <evo>Pichu</evo>
-      </Evolution>
-      <Evolution>
         <evo>Pikachu Minimum 10</evo>
-      </Evolution>
-      <Evolution>
         <evo>Raichu Thunderstone</evo>
       </Evolution>
       <Moves>
         <move>5 Tail Whip - Normal</move>
-      </Moves>
-      <Moves>
         <move>7 Play Nice - Normal</move>
-      </Moves>
-      <Moves>
         <move>10 Quick Attack - Normal</move>
-      </Moves>
-      <Moves>
         <move>13 Electro Ball - Electric</move>
-      </Moves>
-      <Moves>
         <move>18 Thunder Wave - Electric</move>
-      </Moves>
-      <Moves>
         <move>21 Feint - Normal</move>
-      </Moves>
-      <Moves>
         <move>23 Double Team - Normal</move>
-      </Moves>
-      <Moves>
         <move>26 Spark - Electric</move>
-      </Moves>
-      <Moves>
         <move>29 Nuzzle - Electric</move>
-      </Moves>
-      <Moves>
         <move>34 Discharge - Electric</move>
-      </Moves>
-      <Moves>
         <move>37 Slam - Normal</move>
-      </Moves>
-      <Moves>
         <move>42 Thunderbolt - Electric</move>
-      </Moves>
-      <Moves>
         <move>45 Agility - Psychic</move>
-      </Moves>
-      <Moves>
         <move>50 Wild Charge - Electric</move>
-      </Moves>
-      <Moves>
         <move>53 Light Screen - Psychic</move>
-      </Moves>
-      <Moves>
         <move>58 Thunder - Electric</move>
       </Moves>
     </List026>
@@ -3072,116 +1704,50 @@
     <List027>
       <Ability>
         <ability>Sand Veil</ability>
-      </Ability>
-      <Ability>
         <ability>Pickup</ability>
-      </Ability>
-      <Ability>
         <ability>Quick Curl</ability>
-      </Ability>
-      <Ability>
         <ability>Sand Rush</ability>
-      </Ability>
-      <Ability>
         <ability>Dig Away</ability>
       </Ability>
       <Skills>
         <skill>Athl 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 3d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 2d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 2d6+1</skill>
       </Skills>
       <Capability>
         <cap>Overland 5</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 2</cap>
-      </Capability>
-      <Capability>
         <cap>Burrow 5</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 1/1</cap>
-      </Capability>
-      <Capability>
         <cap>Power 3</cap>
-      </Capability>
-      <Capability>
         <cap>Tremorsense</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Grassland, Desert)</cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>Sandshrew</evo>
-      </Evolution>
-      <Evolution>
         <evo>Sandslash Minimum 20</evo>
       </Evolution>
       <Moves>
         <move>1 Scratch - Normal</move>
-      </Moves>
-      <Moves>
         <move>1 Defense Curl - Normal</move>
-      </Moves>
-      <Moves>
         <move>3 Sand Attack - Ground</move>
-      </Moves>
-      <Moves>
         <move>5 Poison Sting - Poison</move>
-      </Moves>
-      <Moves>
         <move>7 Rollout - Rock</move>
-      </Moves>
-      <Moves>
         <move>9 Rapid Spin - Normal</move>
-      </Moves>
-      <Moves>
         <move>11 Fury Cutter - Bug</move>
-      </Moves>
-      <Moves>
         <move>14 Magnitude - Ground</move>
-      </Moves>
-      <Moves>
         <move>17 Swift - Normal</move>
-      </Moves>
-      <Moves>
         <move>20 Fury Swipes - Normal</move>
-      </Moves>
-      <Moves>
         <move>23 Sand Tomb - Ground</move>
-      </Moves>
-      <Moves>
         <move>26 Slash - Normal</move>
-      </Moves>
-      <Moves>
         <move>30 Dig - Ground</move>
-      </Moves>
-      <Moves>
         <move>34 Gyro Ball - Steel</move>
-      </Moves>
-      <Moves>
         <move>38 Swords Dance - Normal</move>
-      </Moves>
-      <Moves>
         <move>42 Sandstorm - Rock</move>
-      </Moves>
-      <Moves>
         <move>46 Earthquake</move>
       </Moves>
     </List027>
@@ -3206,113 +1772,49 @@
     <List028>
       <Ability>
         <ability>Sand Veil</ability>
-      </Ability>
-      <Ability>
         <ability>Rough Skin</ability>
-      </Ability>
-      <Ability>
         <ability>Quick Curl</ability>
-      </Ability>
-      <Ability>
         <ability>Sand Rush</ability>
-      </Ability>
-      <Ability>
         <ability>Dig Away</ability>
       </Ability>
       <Skills>
         <skill>Athl 4d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 4d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 4d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 3d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 3d6+1</skill>
       </Skills>
       <Capability>
         <cap>Overland 6</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 3</cap>
-      </Capability>
-      <Capability>
         <cap>Burrow 6</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 1/2</cap>
-      </Capability>
-      <Capability>
         <cap>Power 4</cap>
-      </Capability>
-      <Capability>
         <cap>Groundshaper</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Grassland, Desert)</cap>
-      </Capability>
-      <Capability>
         <cap>Tremorsense</cap>
       </Capability>
       <Evolution>
         <evo>Sandshrew</evo>
-      </Evolution>
-      <Evolution>
         <evo>Sandslash Minimum 20</evo>
       </Evolution>
       <Moves>
         <move>3  Sand Attack - Ground </move>
-      </Moves>
-      <Moves>
         <move>5  Poison Sting - Poison </move>
-      </Moves>
-      <Moves>
         <move>7  Rollout - Rock </move>
-      </Moves>
-      <Moves>
         <move>9  Rapid Spin - Normal </move>
-      </Moves>
-      <Moves>
         <move>11  Fury Cutter - Bug </move>
-      </Moves>
-      <Moves>
         <move>14  Magnitude - Ground </move>
-      </Moves>
-      <Moves>
         <move>17  Swift - Normal</move>
-      </Moves>
-      <Moves>
         <move>20  Fury Swipes - Normal </move>
-      </Moves>
-      <Moves>
         <move>22  Crush Claw - Normal </move>
-      </Moves>
-      <Moves>
         <move>24  Sand Tomb - Ground </move>
-      </Moves>
-      <Moves>
         <move>28  Slash - Normal </move>
-      </Moves>
-      <Moves>
         <move>33  Dig - Ground </move>
-      </Moves>
-      <Moves>
         <move>38  Gyro Ball - Steel</move>
-      </Moves>
-      <Moves>
         <move>43  Swords Dance - Normal </move>
-      </Moves>
-      <Moves>
         <move>48  Sandstorm - Rock </move>
-      </Moves>
-      <Moves>
         <move>53  Earthquake - Ground </move>
       </Moves>
     </List028>
@@ -3338,104 +1840,46 @@
     <List029>
       <Ability>
         <ability>Poison Point</ability>
-      </Ability>
-      <Ability>
         <ability>Rivalry</ability>
-      </Ability>
-      <Ability>
         <ability>Hustle</ability>
-      </Ability>
-      <Ability>
         <ability>Celebrate</ability>
-      </Ability>
-      <Ability>
         <ability>Bodyguard</ability>
       </Ability>
       <Skills>
         <skill>Athl 2d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 3d6-1</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 3d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 2d6</skill>
       </Skills>
       <Capability>
         <cap>Overland 5</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 3</cap>
-      </Capability>
-      <Capability>
         <cap>Burrow 2</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 1/1 </cap>
-      </Capability>
-      <Capability>
         <cap>Power 2</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Grassland)</cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>Nidoran F</evo>
-      </Evolution>
-      <Evolution>
         <evo>Nidorina Minimum 15</evo>
-      </Evolution>
-      <Evolution>
         <evo>Nidoqueen Moon Stone Minimum 25</evo>
       </Evolution>
       <Moves>
         <move>1  Growl - Normal</move>
-      </Moves>
-      <Moves>
         <move>1  Scratch - Normal </move>
-      </Moves>
-      <Moves>
         <move>7  Tail Whip - Normal</move>
-      </Moves>
-      <Moves>
         <move>9  Double Kick - Fighting </move>
-      </Moves>
-      <Moves>
         <move>13  Poison Sting - Poison  </move>
-      </Moves>
-      <Moves>
         <move>19  Fury Swipes - Normal </move>
-      </Moves>
-      <Moves>
         <move>21  Bite - Dark </move>
-      </Moves>
-      <Moves>
         <move>25  Helping Hand - Normal </move>
-      </Moves>
-      <Moves>
         <move>31  Toxic Spikes - Poison </move>
-      </Moves>
-      <Moves>
         <move>33  Flatter - Dark </move>
-      </Moves>
-      <Moves>
         <move>37  Crunch - Dark </move>
-      </Moves>
-      <Moves>
         <move>43  Captivate - Normal</move>
-      </Moves>
-      <Moves>
         <move>45  Poison Fang - Poison </move>
       </Moves>
     </List029>
@@ -3460,98 +1904,44 @@
     <List030>
       <Ability>
         <ability>Poison Point</ability>
-      </Ability>
-      <Ability>
         <ability>Rivalry</ability>
-      </Ability>
-      <Ability>
         <ability>Hustle</ability>
-      </Ability>
-      <Ability>
         <ability>Celebrate</ability>
-      </Ability>
-      <Ability>
         <ability>Bodyguard</ability>
       </Ability>
       <Skills>
         <skill>Athl 4d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 3d6+3</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 3d6</skill>
       </Skills>
       <Capability>
         <cap>Overland 6</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 4</cap>
-      </Capability>
-      <Capability>
         <cap>Burrow 3</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 1/2</cap>
-      </Capability>
-      <Capability>
         <cap>Power 5</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Grassland) </cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>Nidoran F</evo>
-      </Evolution>
-      <Evolution>
         <evo>Nidorina Minimum 15</evo>
-      </Evolution>
-      <Evolution>
         <evo>Nidoqueen Moon Stone Minimum 25</evo>
       </Evolution>
       <Moves>
         <move>7  Tail Whip - Normal </move>
-      </Moves>
-      <Moves>
         <move>9  Double Kick - Fighting </move>
-      </Moves>
-      <Moves>
         <move>13  Poison Sting - Poison </move>
-      </Moves>
-      <Moves>
         <move>20  Fury Swipes - Normal </move>
-      </Moves>
-      <Moves>
         <move>23  Bite - Dark </move>
-      </Moves>
-      <Moves>
         <move>28  Helping Hand - Normal </move>
-      </Moves>
-      <Moves>
         <move>35  Toxic Spikes - Poison </move>
-      </Moves>
-      <Moves>
         <move>38  Flatter - Dark </move>
-      </Moves>
-      <Moves>
         <move>43  Crunch - Dark </move>
-      </Moves>
-      <Moves>
         <move>50  Captivate - Normal  </move>
-      </Moves>
-      <Moves>
         <move>58  Poison Fang - Poison </move>
       </Moves>
     </List030>
@@ -3576,116 +1966,50 @@
     <List031>
       <Ability>
         <ability>Poison Point</ability>
-      </Ability>
-      <Ability>
         <ability>Rivalry</ability>
-      </Ability>
-      <Ability>
         <ability>Hustle</ability>
-      </Ability>
-      <Ability>
         <ability>Sheer Force</ability>
-      </Ability>
-      <Ability>
         <ability>Bodyguard</ability>
       </Ability>
       <Skills>
         <skill>Athl 5d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 4d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 1d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 3d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 4d6+2</skill>
       </Skills>
       <Capability>
         <cap>Overland 6</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 4</cap>
-      </Capability>
-      <Capability>
         <cap>Burrow 2</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 1/2</cap>
-      </Capability>
-      <Capability>
         <cap>Power 8</cap>
-      </Capability>
-      <Capability>
         <cap>Groundshaper</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Grassland)</cap>
-      </Capability>
-      <Capability>
         <cap>Pack Mon</cap>
-      </Capability>
-      <Capability>
         <cap>Mountable 1</cap>
       </Capability>
       <Evolution>
         <evo>Nidoran F</evo>
-      </Evolution>
-      <Evolution>
         <evo>Nidorina Minimum 15</evo>
-      </Evolution>
-      <Evolution>
         <evo>Nidoqueen Moon Stone Minimum 25</evo>
       </Evolution>
       <Moves>
         <move>7  Tail Whip - Normal </move>
-      </Moves>
-      <Moves>
         <move>9  Double Kick - Fighting </move>
-      </Moves>
-      <Moves>
         <move>13  Poison Sting - Poison </move>
-      </Moves>
-      <Moves>
         <move>20  Fury Swipes - Normal </move>
-      </Moves>
-      <Moves>
         <move>23  Bite - Dark </move>
-      </Moves>
-      <Moves>
         <move>25  Chip Away - Normal </move>
-      </Moves>
-      <Moves>
         <move>28  Helping Hand - Normal </move>
-      </Moves>
-      <Moves>
         <move>35  Toxic Spikes - Poison </move>
-      </Moves>
-      <Moves>
         <move>35  Body Slam - Normal </move>
-      </Moves>
-      <Moves>
         <move>38  Flatter - Dark</move>
-      </Moves>
-      <Moves>
         <move>43  Crunch - Dark</move>
-      </Moves>
-      <Moves>
         <move>43  Earth Power - Ground </move>
-      </Moves>
-      <Moves>
         <move>50  Captivate - Normal </move>
-      </Moves>
-      <Moves>
         <move>58  Poison Fang - Poison </move>
-      </Moves>
-      <Moves>
         <move>58  Superpower - Fighting </move>
       </Moves>
     </List031>
@@ -3711,104 +2035,46 @@
     <List032>
       <Ability>
         <ability>Poison Point</ability>
-      </Ability>
-      <Ability>
         <ability>Rivalry</ability>
-      </Ability>
-      <Ability>
         <ability>Hustle</ability>
-      </Ability>
-      <Ability>
         <ability>Celebrate</ability>
-      </Ability>
-      <Ability>
         <ability>Bodyguard</ability>
       </Ability>
       <Skills>
         <skill>Athl 2d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 3d6-1</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 3d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 2d6</skill>
       </Skills>
       <Capability>
         <cap>Overland 5</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 3</cap>
-      </Capability>
-      <Capability>
         <cap>Burrow 2</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 1/1 </cap>
-      </Capability>
-      <Capability>
         <cap>Power 2</cap>
-      </Capability>
-      <Capability>
         <cap> Nautewalk (Grassland) </cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>Nidoran M</evo>
-      </Evolution>
-      <Evolution>
         <evo>Nidorino Minimum 15</evo>
-      </Evolution>
-      <Evolution>
         <evo>Nidoking Moon Stone Minimum 25</evo>
       </Evolution>
       <Moves>
         <move>1  Leer - Normal </move>
-      </Moves>
-      <Moves>
         <move>1  Peck - Flying</move>
-      </Moves>
-      <Moves>
         <move>7  Focus Energy - Normal </move>
-      </Moves>
-      <Moves>
         <move>9  Double Kick - Fighting </move>
-      </Moves>
-      <Moves>
         <move>13  Poison Sting - Poison</move>
-      </Moves>
-      <Moves>
         <move>19  Fury Attack - Normal </move>
-      </Moves>
-      <Moves>
         <move>21  Horn Attack - Normal</move>
-      </Moves>
-      <Moves>
         <move>25  Helping Hand - Normal </move>
-      </Moves>
-      <Moves>
         <move>31  Toxic Spikes - Poison </move>
-      </Moves>
-      <Moves>
         <move>33  Flatter - Dark </move>
-      </Moves>
-      <Moves>
         <move>37  Poison Jab - Poison  </move>
-      </Moves>
-      <Moves>
         <move>43  Captivate - Normal </move>
-      </Moves>
-      <Moves>
         <move>45  Horn Drill - Normal </move>
       </Moves>
     </List032>
@@ -3833,98 +2099,44 @@
     <List033>
       <Ability>
         <ability>Poison Point</ability>
-      </Ability>
-      <Ability>
         <ability>Rivalry</ability>
-      </Ability>
-      <Ability>
         <ability>Hustle</ability>
-      </Ability>
-      <Ability>
         <ability>Celebrate</ability>
-      </Ability>
-      <Ability>
         <ability>Bodyguard</ability>
       </Ability>
       <Skills>
         <skill>Athl 4d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 3d6+3</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 3d6</skill>
       </Skills>
       <Capability>
         <cap>Overland 6</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 4</cap>
-      </Capability>
-      <Capability>
         <cap>Burrow 3</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 1/2</cap>
-      </Capability>
-      <Capability>
         <cap>Power 5</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Grassland) </cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>Nidoran M</evo>
-      </Evolution>
-      <Evolution>
         <evo>Nidorino Minimum 15</evo>
-      </Evolution>
-      <Evolution>
         <evo>Nidoking Moon Stone Minimum 25</evo>
       </Evolution>
       <Moves>
         <move>7  Focus Energy - Normal</move>
-      </Moves>
-      <Moves>
         <move>9  Double Kick - Fighting </move>
-      </Moves>
-      <Moves>
         <move>13  Poison Sting - Poison</move>
-      </Moves>
-      <Moves>
         <move>20  Fury Attack - Normal </move>
-      </Moves>
-      <Moves>
         <move>23  Horn Attack - Normal</move>
-      </Moves>
-      <Moves>
         <move>28  Helping Hand - Normal </move>
-      </Moves>
-      <Moves>
         <move>35  Toxic Spikes - Poison </move>
-      </Moves>
-      <Moves>
         <move>38  Flatter - Dark</move>
-      </Moves>
-      <Moves>
         <move>43  Poison Jab - Poison </move>
-      </Moves>
-      <Moves>
         <move>50  Captivate - Normal </move>
-      </Moves>
-      <Moves>
         <move>58  Horn Drill - Normal </move>
       </Moves>
     </List033>
@@ -3949,116 +2161,50 @@
     <List034>
       <Ability>
         <ability>Poison Point</ability>
-      </Ability>
-      <Ability>
         <ability>Rivalry</ability>
-      </Ability>
-      <Ability>
         <ability>Hustle</ability>
-      </Ability>
-      <Ability>
         <ability>Sheer Force</ability>
-      </Ability>
-      <Ability>
         <ability>Bodyguard</ability>
       </Ability>
       <Skills>
         <skill>Athl 5d6+3</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 4d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 1d6</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 4d6</skill>
       </Skills>
       <Capability>
         <cap>Overland 6</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 4</cap>
-      </Capability>
-      <Capability>
         <cap>Burrow 2</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 1/2</cap>
-      </Capability>
-      <Capability>
         <cap>Power 9</cap>
-      </Capability>
-      <Capability>
         <cap>Groundshaper</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Grassland)</cap>
-      </Capability>
-      <Capability>
         <cap>Pack Mon</cap>
-      </Capability>
-      <Capability>
         <cap>Mountable 1</cap>
       </Capability>
       <Evolution>
         <evo>Nidoran M</evo>
-      </Evolution>
-      <Evolution>
         <evo>Nidorino Minimum 15</evo>
-      </Evolution>
-      <Evolution>
         <evo>Nidoking Moon Stone Minimum 25</evo>
       </Evolution>
       <Moves>
         <move>7  Focus Energy - Normal </move>
-      </Moves>
-      <Moves>
         <move>9  Double Kick - Fighting </move>
-      </Moves>
-      <Moves>
         <move>13  Poison Sting - Poison </move>
-      </Moves>
-      <Moves>
         <move>20  Fury Attack - Normal </move>
-      </Moves>
-      <Moves>
         <move>23  Horn Attack - Normal</move>
-      </Moves>
-      <Moves>
         <move>25  Chip Away - Normal</move>
-      </Moves>
-      <Moves>
         <move>28  Helping Hand - Normal </move>
-      </Moves>
-      <Moves>
         <move>35  Toxic Spikes - Poison</move>
-      </Moves>
-      <Moves>
         <move>35  Thrash - Normal </move>
-      </Moves>
-      <Moves>
         <move>38  Flatter - Dark </move>
-      </Moves>
-      <Moves>
         <move>43  Poison Jab - Poison</move>
-      </Moves>
-      <Moves>
         <move>43  Earth Power - Ground </move>
-      </Moves>
-      <Moves>
         <move>50  Captivate - Normal </move>
-      </Moves>
-      <Moves>
         <move>58  Horn Drill - Normal</move>
-      </Moves>
-      <Moves>
         <move>58  Megahorn - Bug</move>
       </Moves>
     </List034>
@@ -4083,119 +2229,51 @@
     <List035>
       <Ability>
         <ability>Cute Charm</ability>
-      </Ability>
-      <Ability>
         <ability>Magic Guard</ability>
-      </Ability>
-      <Ability>
         <ability>Friend Guard</ability>
-      </Ability>
-      <Ability>
         <ability>Frisk</ability>
-      </Ability>
-      <Ability>
         <ability>Unaware</ability>
       </Ability>
       <Skills>
         <skill>Athl 2d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 2d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 3d6+2</skill>
       </Skills>
       <Capability>
         <cap>Overland 5</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 3</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 1/2</cap>
-      </Capability>
-      <Capability>
         <cap>Power 2</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Cave)</cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>Cleffa</evo>
-      </Evolution>
-      <Evolution>
         <evo>Clefairy Minimum 10</evo>
-      </Evolution>
-      <Evolution>
         <evo>Clefable Moon Stone Minimum 20</evo>
       </Evolution>
       <Moves>
         <move>4  Encore - Normal</move>
-      </Moves>
-      <Moves>
         <move>7  Sing - Normal </move>
-      </Moves>
-      <Moves>
         <move>10  Double Slap - Normal </move>
-      </Moves>
-      <Moves>
         <move>13  Defense Curl - Normal </move>
-      </Moves>
-      <Moves>
         <move>16  Follow Me - Normal</move>
-      </Moves>
-      <Moves>
         <move>19  Bestow - Normal </move>
-      </Moves>
-      <Moves>
         <move>22  Wake-Up Slap - Fighting </move>
-      </Moves>
-      <Moves>
         <move>25  Minimize - Normal</move>
-      </Moves>
-      <Moves>
         <move>28  Stored Power - Psychic </move>
-      </Moves>
-      <Moves>
         <move>31  Metronome - Normal  </move>
-      </Moves>
-      <Moves>
         <move>34  Cosmic Power - Psychic</move>
-      </Moves>
-      <Moves>
         <move>37  Lucky Chant - Psychic</move>
-      </Moves>
-      <Moves>
         <move>40  Body Slam - Normal </move>
-      </Moves>
-      <Moves>
         <move>43  Moonlight - Fairy </move>
-      </Moves>
-      <Moves>
         <move>46  Moonblast - Fairy</move>
-      </Moves>
-      <Moves>
         <move>49  Gravity - Psychic </move>
-      </Moves>
-      <Moves>
         <move>52  Meteor Mash - Steel</move>
-      </Moves>
-      <Moves>
         <move>55  Healing Wish - Psychic </move>
-      </Moves>
-      <Moves>
         <move>58  After You - Normal</move>
       </Moves>
     </List035>
@@ -4220,113 +2298,50 @@
     <List036>
       <Ability>
         <ability>Cute Charm</ability>
-      </Ability>
-      <Ability>
         <ability>Magic Guard</ability>
-      </Ability>
-      <Ability>
         <ability>Friend Guard</ability>
-      </Ability>
-      <Ability>
         <ability>Frisk</ability>
-      </Ability>
-      <Ability>
         <ability>Unaware</ability>
       </Ability>
       <Skills>
         <skill>Athl 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 3d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 2d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 4d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 4d6+3</skill>
       </Skills>
       <Capability>
         <cap>Overland 6</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 4</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 2/2</cap>
-      </Capability>
-      <Capability>
         <cap>Power 4</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Cave)</cap>
       </Capability>
       <Evolution>
         <evo>Cleffa</evo>
-      </Evolution>
-      <Evolution>
         <evo>Clefairy Minimum 10</evo>
+        <evo>Clefable Moon Stone Minimum 20</evo>
       </Evolution>
       <Moves>
         <move>4  Encore - Normal </move>
-      </Moves>
-      <Moves>
         <move>7  Sing - Normal</move>
-      </Moves>
-      <Moves>
         <move>10  Double Slap - Normal </move>
-      </Moves>
-      <Moves>
         <move>13  Defense Curl - Normal</move>
-      </Moves>
-      <Moves>
         <move>16  Follow Me - Normal</move>
-      </Moves>
-      <Moves>
         <move>19  Bestow - Normal  </move>
-      </Moves>
-      <Moves>
         <move>22  Wake-Up Slap - Fighting </move>
-      </Moves>
-      <Moves>
         <move>25  Minimize - Normal</move>
-      </Moves>
-      <Moves>
         <move>28  Stored Power - Psychic </move>
-      </Moves>
-      <Moves>
         <move>31  Metronome - Normal </move>
-      </Moves>
-      <Moves>
         <move>34  Cosmic Power - Psychic </move>
-      </Moves>
-      <Moves>
         <move>37  Lucky Chant - Psychic </move>
-      </Moves>
-      <Moves>
         <move>40  Body Slam - Normal </move>
-      </Moves>
-      <Moves>
         <move>43  Moonlight - Fairy </move>
-      </Moves>
-      <Moves>
         <move>46  Moonblast - Fairy</move>
-      </Moves>
-      <Moves>
         <move>49  Gravity - Psychic </move>
-      </Moves>
-      <Moves>
         <move>52  Meteor Mash - Steel</move>
-      </Moves>
-      <Moves>
         <move>55  Healing Wish - Psychic </move>
-      </Moves>
-      <Moves>
         <move>58  After You - Normal</move>
       </Moves>
     </List036>
@@ -4352,122 +2367,52 @@
     <List037>
       <Ability>
         <ability>Flash Fire</ability>
-      </Ability>
-      <Ability>
         <ability>Fox Fire</ability>
-      </Ability>
-      <Ability>
         <ability>Competitive</ability>
-      </Ability>
-      <Ability>
         <ability>Cute Charm</ability>
-      </Ability>
-      <Ability>
         <ability>Drought</ability>
       </Ability>
       <Skills>
         <skill>Athl 3d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 3d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 2d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 3d6+1</skill>
       </Skills>
       <Capability>
         <cap>Overland 4</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 2</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 1/2</cap>
-      </Capability>
-      <Capability>
         <cap>Power 2</cap>
-      </Capability>
-      <Capability>
         <cap>Tracker</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Forest, Mountain)</cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>Vulpix</evo>
-      </Evolution>
-      <Evolution>
         <evo>Ninetales Fire Stone Minimum 20</evo>
       </Evolution>
       <Moves>
         <move>1  Ember - Fire </move>
-      </Moves>
-      <Moves>
         <move>4  Tail Whip - Normal </move>
-      </Moves>
-      <Moves>
         <move>7  Roar - Normal </move>
-      </Moves>
-      <Moves>
         <move>9  Baby-Doll Eyes - Fairy </move>
-      </Moves>
-      <Moves>
         <move>10  Quick Attack - Normal </move>
-      </Moves>
-      <Moves>
         <move>12  Confuse Ray - Ghost </move>
-      </Moves>
-      <Moves>
         <move>15  Fire Spin - Fire </move>
-      </Moves>
-      <Moves>
         <move>18  Payback - Dark </move>
-      </Moves>
-      <Moves>
         <move>20  Will-O-Wisp - Fire</move>
-      </Moves>
-      <Moves>
         <move>23  Feint Attack - Dark</move>
-      </Moves>
-      <Moves>
         <move>26  Hex - Ghost</move>
-      </Moves>
-      <Moves>
         <move>28  Flame Burst - Fire </move>
-      </Moves>
-      <Moves>
         <move>31  Extrasensory - Psychic </move>
-      </Moves>
-      <Moves>
         <move>34  Safeguard  - Normal </move>
-      </Moves>
-      <Moves>
         <move>36  Flamethrower - Fire </move>
-      </Moves>
-      <Moves>
         <move>39  Imprison - Psychic</move>
-      </Moves>
-      <Moves>
         <move>42  Fire Blast - Fire</move>
-      </Moves>
-      <Moves>
         <move>44  Grudge - Ghost </move>
-      </Moves>
-      <Moves>
         <move>47  Captivate - Normal </move>
-      </Moves>
-      <Moves>
         <move>50  Inferno - Fire </move>
       </Moves>
     </List037>
@@ -4492,119 +2437,51 @@
     <List038>
       <Ability>
         <ability>Flash Fire</ability>
-      </Ability>
-      <Ability>
         <ability>Fox Fire</ability>
-      </Ability>
-      <Ability>
         <ability>Competitive</ability>
-      </Ability>
-      <Ability>
         <ability>Cursed Body</ability>
-      </Ability>
-      <Ability>
         <ability>Drought</ability>
       </Ability>
       <Skills>
         <skill>Athl 4d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 3d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 3d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 4d6+3</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 4d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 5d6+2</skill>
       </Skills>
       <Capability>
         <cap>Overland 6</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 3</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 1/2</cap>
-      </Capability>
-      <Capability>
         <cap>Power 4</cap>
-      </Capability>
-      <Capability>
         <cap>Firestarter</cap>
-      </Capability>
-      <Capability>
         <cap>Tracker </cap>
       </Capability>
       <Evolution>
         <evo>Vulpix</evo>
-      </Evolution>
-      <Evolution>
         <evo>Ninetales Firestone Minimum 20</evo>
       </Evolution>
       <Moves>
         <move>1  Ember - Fire </move>
-      </Moves>
-      <Moves>
         <move>4  Tail Whip - Normal </move>
-      </Moves>
-      <Moves>
         <move>7  Roar - Normal </move>
-      </Moves>
-      <Moves>
         <move>9  Baby-Doll Eyes - Fairy </move>
-      </Moves>
-      <Moves>
         <move>10  Quick Attack - Normal </move>
-      </Moves>
-      <Moves>
         <move>12  Confuse Ray - Ghost </move>
-      </Moves>
-      <Moves>
         <move>15  Fire Spin - Fire </move>
-      </Moves>
-      <Moves>
         <move>18  Payback - Dark </move>
-      </Moves>
-      <Moves>
         <move>20  Will-O-Wisp - Fire </move>
-      </Moves>
-      <Moves>
         <move>23  Feint Attack - Dark </move>
-      </Moves>
-      <Moves>
         <move>26  Hex - Ghost</move>
-      </Moves>
-      <Moves>
         <move>28  Flame Burst - Fire</move>
-      </Moves>
-      <Moves>
         <move>31  Extrasensory - Psychic </move>
-      </Moves>
-      <Moves>
         <move>34  Safeguard  - Normal</move>
-      </Moves>
-      <Moves>
         <move>36  Flamethrower - Fire </move>
-      </Moves>
-      <Moves>
         <move>39  Imprison - Psychic </move>
-      </Moves>
-      <Moves>
         <move>42  Fire Blast - Fire </move>
-      </Moves>
-      <Moves>
         <move>44  Grudge - Ghost </move>
-      </Moves>
-      <Moves>
         <move>47  Captivate - Normal </move>
-      </Moves>
-      <Moves>
         <move>50  Inferno - Fire</move>
       </Moves>
     </List038>
@@ -4629,110 +2506,48 @@
     <List039>
       <Ability>
         <ability>Cute Charm</ability>
-      </Ability>
-      <Ability>
         <ability>Lullaby</ability>
-      </Ability>
-      <Ability>
         <ability>Friend Guard</ability>
-      </Ability>
-      <Ability>
         <ability>Competitive</ability>
-      </Ability>
-      <Ability>
         <ability>Exploit</ability>
       </Ability>
       <Skills>
         <skill>Athl 2d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Acro 3d6+1</skill>
-      </Skills>
-      <Skills>
         <skill>Combat 2d6</skill>
-      </Skills>
-      <Skills>
         <skill>Stealth 3d6</skill>
-      </Skills>
-      <Skills>
         <skill>Percep 2d6+2</skill>
-      </Skills>
-      <Skills>
         <skill>Focus 3d6+2</skill>
       </Skills>
       <Capability>
         <cap>Overland 5</cap>
-      </Capability>
-      <Capability>
         <cap>Swim 2</cap>
-      </Capability>
-      <Capability>
         <cap>Jump 1/1</cap>
-      </Capability>
-      <Capability>
         <cap>Power 1</cap>
-      </Capability>
-      <Capability>
         <cap>Inflatable</cap>
-      </Capability>
-      <Capability>
         <cap>Naturewalk (Grassland, Urban)</cap>
-      </Capability>
-      <Capability>
         <cap>Underdog</cap>
       </Capability>
       <Evolution>
         <evo>Igglybuff</evo>
-      </Evolution>
-      <Evolution>
         <evo>Jigglypuff Minimum 10</evo>
-      </Evolution>
-      <Evolution>
         <evo>Wigglytuff Moon Stone Minimum 20</evo>
       </Evolution>
       <Moves>
         <move>5 Defense Curl - Normal</move>
-      </Moves>
-      <Moves>
         <move>9 Pound - Normal</move>
-      </Moves>
-      <Moves>
         <move>10 Play Nice - Normal</move>
-      </Moves>
-      <Moves>
         <move>13 Disarming Voice - Fairy</move>
-      </Moves>
-      <Moves>
         <move>15 Disable - Normal</move>
-      </Moves>
-      <Moves>
         <move>18 Double Slap - Normal</move>
-      </Moves>
-      <Moves>
         <move>21 Rollout - Rock</move>
-      </Moves>
-      <Moves>
         <move>24 Round - Normal</move>
-      </Moves>
-      <Moves>
         <move>28 Wake-Up Slap - Fighting</move>
-      </Moves>
-      <Moves>
         <move>32 Rest - Psychic</move>
-      </Moves>
-      <Moves>
         <move>35 Body Slam - Normal</move>
-      </Moves>
-      <Moves>
         <move>37 Mimic - Normal</move>
-      </Moves>
-      <Moves>
         <move>40 Gyro Ball - Steel</move>
-      </Moves>
-      <Moves>
         <move>44 Hyper Voice - Normal</move>
-      </Moves>
-      <Moves>
         <move>49 Double-Edge - Normal</move>
       </Moves>
     </List039>

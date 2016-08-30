@@ -594,34 +594,31 @@ namespace GenesisDex
             AbilityList abiXML = new AbilityList();
             abiList.Clear();
             abiList = abiXML.createList(pokeList[i].number);
-            rtbInfo1.Text += Environment.NewLine + "Abilities:" +
-                Environment.NewLine + abiList[0].basicability1 +
-                Environment.NewLine + abiList[0].basicability2 +
-                Environment.NewLine + abiList[0].advability1 +
-                Environment.NewLine + abiList[0].advability2 +
-                Environment.NewLine + abiList[0].highability + Environment.NewLine;
+            rtbInfo1.Text += Environment.NewLine + "Abilities:";
+            if (abiList[0].basicability1 != null) { rtbInfo1.Text += Environment.NewLine + abiList[0].basicability1; }
+            if (abiList[0].basicability2 != null) { rtbInfo1.Text += Environment.NewLine + abiList[0].basicability2; }
+            if (abiList[0].advability1 != null) { rtbInfo1.Text += Environment.NewLine + abiList[0].advability1; }
+            if (abiList[0].advability2 != null) { rtbInfo1.Text += Environment.NewLine + abiList[0].advability2; }
+            if (abiList[0].highability != null) { rtbInfo1.Text += Environment.NewLine + abiList[0].highability; }
             MegaList megaAbility = new MegaList();
             if (viewMega == true)
             {
                 if (mega == true)
                 {
                     megaList = megaAbility.createList("Mega" + pokeList[i].number);
-                    rtbInfo1.Text += string.Format(Environment.NewLine + Environment.NewLine + "Mega Ability:" + Environment.NewLine +
-                        "-" + megaList[0].ability);
+                    rtbInfo1.Text += string.Format(Environment.NewLine + "Mega Ability - " + megaList[0].ability);
                 }
                 else if (megax == true)
                 {
                     if (onMegaX == true)
                     {
                         megaList = megaAbility.createList("MegaX" + pokeList[i].number);
-                        rtbInfo1.Text += string.Format(Environment.NewLine + Environment.NewLine + "Mega Ability X:" + Environment.NewLine +
-                            "-" + megaList[0].ability);
+                        rtbInfo1.Text += string.Format(Environment.NewLine + "Mega Ability X -" + megaList[0].ability);
                     }
                     else
                     {
                         megaList = megaAbility.createList("MegaY" + pokeList[i].number);
-                        rtbInfo1.Text += string.Format(Environment.NewLine + Environment.NewLine + "Mega Ability Y:" + Environment.NewLine +
-                            "-" + megaList[0].ability);
+                        rtbInfo1.Text += string.Format(Environment.NewLine + "Mega Ability Y -" + megaList[0].ability);
                     }
                 }
             }
