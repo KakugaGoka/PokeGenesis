@@ -2552,4 +2552,69 @@
       </Moves>
     </List039>
   </Pokemon>
+  <Pokemon>
+    <number>040</number>
+    <id>Wigglytuff</id>
+    <type>Normal / Fairy</type>
+    <hp>14</hp>
+    <atk>7</atk>
+    <def>5</def>
+    <spatk>9</spatk>
+    <spdef>5</spdef>
+    <spd>5</spd>
+    <size>3’ 3” / 1m (Medium)</size>
+    <weight>26.5 lbs. / 12kg (2)</weight>
+    <gender>25% M / 75% F</gender>
+    <egg>Fairy</egg>
+    <diet>Herbivore</diet>
+    <habitat>Cave, Grassland</habitat>
+    <List040>
+      <Ability>
+        <basicability1>Cute Charm</basicability1>
+        <basicability2>Lullaby</basicability2>
+        <advability1>Frisk</advability1>
+        <advability2>Competitive</advability2>
+        <highability>Exploit</highability>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 3d6+1</skill>
+        <skill id="1">Acro 4d6+1</skill>
+        <skill id="2">Combat 2d6+2</skill>
+        <skill id="3">Stealth 2d6+2</skill>
+        <skill id="4">Percep 3d6+2</skill>
+        <skill id="5">Focus 4d6+3</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 6</cap>
+        <cap id="1">Swim 3</cap>
+        <cap id="2">Jump 1/2</cap>
+        <cap id="3">Power 3</cap>
+        <cap id="4">Inflatable</cap>
+        <cap id="5">Naturewalk (Grassland, Urban)</cap>
+        <cap id="6">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">Igglybuff</evo>
+        <evo id="1">Jigglypuff Minimum 10</evo>
+        <evo id="2">Wigglytuff Moon Stone Minimum 20</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">5 Defense Curl - Normal</move>
+        <move id="1">9 Pound - Normal</move>
+        <move id="2">10 Play Nice - Normal</move>
+        <move id="3">13 Disarming Voice - Fairy</move>
+        <move id="4">15 Disable - Normal</move>
+        <move id="5">18 Double Slap - Normal</move>
+        <move id="6">21 Rollout - Rock</move>
+        <move id="7">24 Round - Normal</move>
+        <move id="8">28 Wake-Up Slap - Fighting</move>
+        <move id="9">32 Rest - Psychic</move>
+        <move id="10">35 Body Slam - Normal</move>
+        <move id="11">37 Mimic - Normal</move>
+        <move id="12">40 Gyro Ball - Steel</move>
+        <move id="13">44 Hyper Voice - Normal</move>
+        <move id="14">49 Double-Edge - Normal</move>
+      </Moves>
+    </List040>
+  </Pokemon>
 </Namespace>

@@ -975,7 +975,7 @@
             this.tbEvoAdd.Name = "tbEvoAdd";
             this.tbEvoAdd.Size = new System.Drawing.Size(156, 20);
             this.tbEvoAdd.TabIndex = 47;
-            this.tbEvoAdd.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbSkillAdd_KeyDown);
+            this.tbEvoAdd.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbEvoAdd_KeyDown);
             // 
             // tbMoveAdd
             // 
@@ -1145,7 +1145,7 @@
             this.tbSkillAdd.Location = new System.Drawing.Point(381, 183);
             this.tbSkillAdd.Name = "tbSkillAdd";
             this.tbSkillAdd.Size = new System.Drawing.Size(156, 20);
-            this.tbSkillAdd.TabIndex = 135;
+            this.tbSkillAdd.TabIndex = 17;
             this.tbSkillAdd.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbSkillAdd_KeyDown);
             // 
             // listSkill
