@@ -53,6 +53,9 @@ namespace GenesisDex
         string Item2 { get; set; }
         bool isItem2 = false;
         List<string> pokeDex = new List<string>();
+        List<string> moves = new List<string>();
+        bool isShiny = false;
+        string typeShiny { get; set; }
 
         public FormScan()
         {
@@ -146,6 +149,7 @@ namespace GenesisDex
             pkGasp.Clear();
             infoForward.Visible = true;
             infoBack.Visible = true;
+            isShiny = false;
             pkLevelMin_ValueChanged(this, new EventArgs());
             pkLevelMax_ValueChanged(this, new EventArgs());
             pokeList.Clear();
@@ -177,6 +181,7 @@ namespace GenesisDex
             int Level = GetLevel();
             Pokemon throwspokeball = GetGender(Pikachu);
             Pokemon PokeBall = LevelPokemon(throwspokeball, Level);
+            Pokemon Final = PokeBall;
             if (pkCanBeShiny.Checked == true)
             {
                 int i = rng.Next(1, 101);
@@ -184,6 +189,8 @@ namespace GenesisDex
                 {
                     pkGasp.Text += "It's a Shiny!" + Environment.NewLine;
                     pbPokemon.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + PokeBall.number + ".gif");
+                    isShiny = true;
+                    Final = GetShiny(PokeBall);
                 }
                 else
                 {
@@ -212,9 +219,10 @@ namespace GenesisDex
             {
                 pkGasp.Text += "It is holding something!" + Environment.NewLine;
             }
-            SetImage();
-            IChooseYou = PokeBall;
+            IChooseYou = Final;
             TrueLevel = Level;
+            GetMoves();
+            SetImage();
             UpdatePage(1);
 
                 
@@ -457,19 +465,7 @@ namespace GenesisDex
             rtbInfo2.Visible = false;
             pkItem.Visible = false;
             pkItem2.Visible = false;
-            int i = TrueLevel;
-            MoveList moveXML = new MoveList();
-            List<string> moves = new List<string>();
-            moveList.Clear();
-            moveList = moveXML.createList(IChooseYou.number);
             rtbInfo1.Text = ("Moves:" + Environment.NewLine);
-            for (var e = 0; e < moveList.Count; e++)
-            {
-                string[] moveLevel = moveList[e].move.Split(' ');
-                int lvl = Convert.ToInt32(moveLevel[0]);
-                if (lvl <= i) { moves.Add(moveList[e].move); }
-                if (moves.Count > 6) { moves.RemoveAt(0); }
-            }
             for (var w = 0; w < moves.Count; w++)
             {
                 rtbInfo1.Text += "-" + moves[w] + Environment.NewLine;
@@ -544,6 +540,73 @@ namespace GenesisDex
                     }
                 }
             }
+        }
+
+        private void GetMoves()
+        {
+            int i = TrueLevel;
+            moveXML = new MoveList();
+            moves = new List<string>();
+            moveList.Clear();
+            moveList = moveXML.createList(IChooseYou.number);
+            StringBuilder build = new StringBuilder();
+            for (var e = 0; e < moveList.Count; e++)
+            {
+                string[] moveLevel = moveList[e].move.Split(' ');
+                int lvl = Convert.ToInt32(moveLevel[0]);
+                if (lvl <= i)
+                {
+                    build.Clear();
+                    foreach (string s in moveLevel)
+                    {
+                        if (s != moveLevel[0])
+                        {
+                            build.Append(s);
+                            build.Append(" ");
+                        }
+                    }
+                    string mov = build.ToString();
+                    mov = mov.Trim();
+                    moves.Add(mov);
+                }
+                if (moves.Count > 6) { moves.RemoveAt(0); }
+            }
+            bool done = false;
+            if (isShiny == true)
+            {
+                TMList = TMXML.createList("TM-HM", "TM");
+                do
+                {
+                    i = rng.Next(0, TMList.Count);
+                    if (TMList[i].type == typeShiny)
+                    {
+                        done = true;
+                    }
+                } while (done == false);
+                if (moves.Count >= 6) { moves.RemoveAt(0); }
+                string newmove = TMList[i].id + " - " + TMList[i].type;
+                moves.Add(newmove);
+            }
+        }
+
+        private Pokemon GetShiny(Pokemon poke)
+        {
+            string[] type = poke.type.Split(' ');
+            int i = rng.Next(1, typeList.Count);
+            string newtype = typeList[i].id;
+            StringBuilder build = new StringBuilder();
+            build.Append(newtype);
+            foreach (string s in type)
+            {
+                if (s != type[0])
+                {
+                    build.Append(" ");
+                    build.Append(s);
+                }
+            }
+            poke.type = build.ToString();
+            typeShiny = newtype;
+            return poke;
         }
 
         private void GetItem()

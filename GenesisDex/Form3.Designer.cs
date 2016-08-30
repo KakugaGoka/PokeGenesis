@@ -171,7 +171,7 @@
             0,
             0});
             this.pkLevelMin.Minimum = new decimal(new int[] {
-            3,
+            1,
             0,
             0,
             0});
@@ -179,7 +179,7 @@
             this.pkLevelMin.Size = new System.Drawing.Size(42, 20);
             this.pkLevelMin.TabIndex = 46;
             this.pkLevelMin.Value = new decimal(new int[] {
-            3,
+            15,
             0,
             0,
             0});
@@ -247,7 +247,7 @@
             0,
             0});
             this.pkLevelMax.Minimum = new decimal(new int[] {
-            3,
+            1,
             0,
             0,
             0});
@@ -255,7 +255,7 @@
             this.pkLevelMax.Size = new System.Drawing.Size(42, 20);
             this.pkLevelMax.TabIndex = 52;
             this.pkLevelMax.Value = new decimal(new int[] {
-            3,
+            15,
             0,
             0,
             0});
