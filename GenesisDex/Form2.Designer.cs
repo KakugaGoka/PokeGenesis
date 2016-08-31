@@ -157,6 +157,7 @@
             this.btAddPKMN.Name = "btAddPKMN";
             this.btAddPKMN.Size = new System.Drawing.Size(498, 49);
             this.btAddPKMN.TabIndex = 49;
+            this.btAddPKMN.TabStop = false;
             this.btAddPKMN.Text = "Add Pokemon to the Pokedex!";
             this.btAddPKMN.UseVisualStyleBackColor = true;
             this.btAddPKMN.Click += new System.EventHandler(this.btAddPKMN_Click);
@@ -498,6 +499,7 @@
             this.listCap.Name = "listCap";
             this.listCap.Size = new System.Drawing.Size(221, 251);
             this.listCap.TabIndex = 73;
+            this.listCap.TabStop = false;
             // 
             // listEvo
             // 
@@ -506,6 +508,7 @@
             this.listEvo.Name = "listEvo";
             this.listEvo.Size = new System.Drawing.Size(205, 251);
             this.listEvo.TabIndex = 74;
+            this.listEvo.TabStop = false;
             // 
             // listMoves
             // 
@@ -514,6 +517,7 @@
             this.listMoves.Name = "listMoves";
             this.listMoves.Size = new System.Drawing.Size(205, 524);
             this.listMoves.TabIndex = 75;
+            this.listMoves.TabStop = false;
             // 
             // tbAbi5
             // 
@@ -527,28 +531,28 @@
             this.tbAbi4.Location = new System.Drawing.Point(723, 170);
             this.tbAbi4.Name = "tbAbi4";
             this.tbAbi4.Size = new System.Drawing.Size(174, 20);
-            this.tbAbi4.TabIndex = 26;
+            this.tbAbi4.TabIndex = 25;
             // 
             // tbAbi3
             // 
             this.tbAbi3.Location = new System.Drawing.Point(723, 144);
             this.tbAbi3.Name = "tbAbi3";
             this.tbAbi3.Size = new System.Drawing.Size(174, 20);
-            this.tbAbi3.TabIndex = 25;
+            this.tbAbi3.TabIndex = 23;
             // 
             // tbAbi2
             // 
             this.tbAbi2.Location = new System.Drawing.Point(723, 118);
             this.tbAbi2.Name = "tbAbi2";
             this.tbAbi2.Size = new System.Drawing.Size(174, 20);
-            this.tbAbi2.TabIndex = 24;
+            this.tbAbi2.TabIndex = 21;
             // 
             // tbAbi1
             // 
             this.tbAbi1.Location = new System.Drawing.Point(723, 92);
             this.tbAbi1.Name = "tbAbi1";
             this.tbAbi1.Size = new System.Drawing.Size(174, 20);
-            this.tbAbi1.TabIndex = 23;
+            this.tbAbi1.TabIndex = 19;
             // 
             // cbMega
             // 
@@ -946,6 +950,7 @@
             this.btCapAdd.Name = "btCapAdd";
             this.btCapAdd.Size = new System.Drawing.Size(51, 20);
             this.btCapAdd.TabIndex = 125;
+            this.btCapAdd.TabStop = false;
             this.btCapAdd.Text = "Add\r\n";
             this.btCapAdd.UseVisualStyleBackColor = true;
             this.btCapAdd.Click += new System.EventHandler(this.btCapAdd_Click);
@@ -957,6 +962,7 @@
             this.btEvoAdd.Name = "btEvoAdd";
             this.btEvoAdd.Size = new System.Drawing.Size(51, 20);
             this.btEvoAdd.TabIndex = 126;
+            this.btEvoAdd.TabStop = false;
             this.btEvoAdd.Text = "Add";
             this.btEvoAdd.UseVisualStyleBackColor = true;
             this.btEvoAdd.Click += new System.EventHandler(this.btEvoAdd_Click);
@@ -967,6 +973,7 @@
             this.btMoveAdd.Name = "btMoveAdd";
             this.btMoveAdd.Size = new System.Drawing.Size(51, 20);
             this.btMoveAdd.TabIndex = 127;
+            this.btMoveAdd.TabStop = false;
             this.btMoveAdd.Text = "Add";
             this.btMoveAdd.UseVisualStyleBackColor = true;
             this.btMoveAdd.Click += new System.EventHandler(this.btMoveAdd_Click);
@@ -977,6 +984,7 @@
             this.btCapClear.Name = "btCapClear";
             this.btCapClear.Size = new System.Drawing.Size(51, 20);
             this.btCapClear.TabIndex = 128;
+            this.btCapClear.TabStop = false;
             this.btCapClear.Text = "Clear";
             this.btCapClear.UseVisualStyleBackColor = true;
             this.btCapClear.Click += new System.EventHandler(this.btCapClear_Click);
@@ -987,6 +995,7 @@
             this.btEvoClear.Name = "btEvoClear";
             this.btEvoClear.Size = new System.Drawing.Size(51, 20);
             this.btEvoClear.TabIndex = 129;
+            this.btEvoClear.TabStop = false;
             this.btEvoClear.Text = "Clear";
             this.btEvoClear.UseVisualStyleBackColor = true;
             this.btEvoClear.Click += new System.EventHandler(this.btEvoClear_Click);
@@ -997,6 +1006,7 @@
             this.btMoveClear.Name = "btMoveClear";
             this.btMoveClear.Size = new System.Drawing.Size(51, 20);
             this.btMoveClear.TabIndex = 130;
+            this.btMoveClear.TabStop = false;
             this.btMoveClear.Text = "Clear";
             this.btMoveClear.UseVisualStyleBackColor = true;
             this.btMoveClear.Click += new System.EventHandler(this.btMoveClear_Click);
@@ -1031,6 +1041,7 @@
             this.btRemove.Name = "btRemove";
             this.btRemove.Size = new System.Drawing.Size(88, 32);
             this.btRemove.TabIndex = 134;
+            this.btRemove.TabStop = false;
             this.btRemove.Text = "Remove";
             this.btRemove.UseVisualStyleBackColor = true;
             this.btRemove.Click += new System.EventHandler(this.btRemove_Click);
@@ -1041,6 +1052,7 @@
             this.tbRemove.Name = "tbRemove";
             this.tbRemove.Size = new System.Drawing.Size(221, 20);
             this.tbRemove.TabIndex = 20;
+            this.tbRemove.TabStop = false;
             this.tbRemove.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbRemove_KeyDown);
             // 
             // label45
@@ -1081,6 +1093,7 @@
             this.btSkillClear.Name = "btSkillClear";
             this.btSkillClear.Size = new System.Drawing.Size(51, 20);
             this.btSkillClear.TabIndex = 138;
+            this.btSkillClear.TabStop = false;
             this.btSkillClear.Text = "Clear";
             this.btSkillClear.UseVisualStyleBackColor = true;
             this.btSkillClear.Click += new System.EventHandler(this.btSkillClear_Click);
@@ -1091,6 +1104,7 @@
             this.btSkillAdd.Name = "btSkillAdd";
             this.btSkillAdd.Size = new System.Drawing.Size(51, 20);
             this.btSkillAdd.TabIndex = 137;
+            this.btSkillAdd.TabStop = false;
             this.btSkillAdd.Text = "Add";
             this.btSkillAdd.UseVisualStyleBackColor = true;
             this.btSkillAdd.Click += new System.EventHandler(this.btSkillAdd_Click);
@@ -1110,6 +1124,7 @@
             this.listSkill.Name = "listSkill";
             this.listSkill.Size = new System.Drawing.Size(205, 134);
             this.listSkill.TabIndex = 136;
+            this.listSkill.TabStop = false;
             // 
             // cbAbi1
             // 
@@ -1117,7 +1132,7 @@
             this.cbAbi1.Location = new System.Drawing.Point(642, 92);
             this.cbAbi1.Name = "cbAbi1";
             this.cbAbi1.Size = new System.Drawing.Size(75, 21);
-            this.cbAbi1.TabIndex = 139;
+            this.cbAbi1.TabIndex = 18;
             // 
             // cbAbi2
             // 
@@ -1125,7 +1140,7 @@
             this.cbAbi2.Location = new System.Drawing.Point(642, 118);
             this.cbAbi2.Name = "cbAbi2";
             this.cbAbi2.Size = new System.Drawing.Size(75, 21);
-            this.cbAbi2.TabIndex = 140;
+            this.cbAbi2.TabIndex = 20;
             // 
             // cbAbi3
             // 
@@ -1133,7 +1148,7 @@
             this.cbAbi3.Location = new System.Drawing.Point(642, 145);
             this.cbAbi3.Name = "cbAbi3";
             this.cbAbi3.Size = new System.Drawing.Size(75, 21);
-            this.cbAbi3.TabIndex = 141;
+            this.cbAbi3.TabIndex = 22;
             // 
             // cbAbi4
             // 
@@ -1141,7 +1156,7 @@
             this.cbAbi4.Location = new System.Drawing.Point(642, 170);
             this.cbAbi4.Name = "cbAbi4";
             this.cbAbi4.Size = new System.Drawing.Size(75, 21);
-            this.cbAbi4.TabIndex = 142;
+            this.cbAbi4.TabIndex = 24;
             // 
             // cbAbi5
             // 
@@ -1149,7 +1164,7 @@
             this.cbAbi5.Location = new System.Drawing.Point(642, 196);
             this.cbAbi5.Name = "cbAbi5";
             this.cbAbi5.Size = new System.Drawing.Size(75, 21);
-            this.cbAbi5.TabIndex = 143;
+            this.cbAbi5.TabIndex = 26;
             // 
             // FormAdd
             // 
