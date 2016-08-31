@@ -56,7 +56,8 @@
             this.pkPokemon = new System.Windows.Forms.ComboBox();
             this.rtbInfo2 = new System.Windows.Forms.RichTextBox();
             this.pkCanBeLegend = new System.Windows.Forms.CheckBox();
-            this.pkOnlyBasic = new System.Windows.Forms.CheckBox();
+            this.pkStageAllowed = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbOverlay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoForward)).BeginInit();
@@ -153,7 +154,7 @@
             // 
             this.pbScanPokemon.BackColor = System.Drawing.Color.Transparent;
             this.pbScanPokemon.Image = global::GenesisDex.Properties.Resources.ScanPokemon;
-            this.pbScanPokemon.Location = new System.Drawing.Point(229, 522);
+            this.pbScanPokemon.Location = new System.Drawing.Point(140, 536);
             this.pbScanPokemon.Name = "pbScanPokemon";
             this.pbScanPokemon.Size = new System.Drawing.Size(157, 33);
             this.pbScanPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -165,7 +166,7 @@
             // 
             // pkLevelMin
             // 
-            this.pkLevelMin.Location = new System.Drawing.Point(94, 393);
+            this.pkLevelMin.Location = new System.Drawing.Point(94, 392);
             this.pkLevelMin.Maximum = new decimal(new int[] {
             99,
             0,
@@ -201,7 +202,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Silver;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(53, 395);
+            this.label1.Location = new System.Drawing.Point(53, 394);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 15);
             this.label1.TabIndex = 48;
@@ -241,7 +242,7 @@
             // 
             // pkLevelMax
             // 
-            this.pkLevelMax.Location = new System.Drawing.Point(142, 393);
+            this.pkLevelMax.Location = new System.Drawing.Point(142, 392);
             this.pkLevelMax.Maximum = new decimal(new int[] {
             99,
             0,
@@ -267,7 +268,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Silver;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Location = new System.Drawing.Point(148, 375);
+            this.label4.Location = new System.Drawing.Point(148, 374);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 15);
             this.label4.TabIndex = 53;
@@ -278,7 +279,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Silver;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Location = new System.Drawing.Point(100, 375);
+            this.label5.Location = new System.Drawing.Point(100, 374);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(26, 15);
             this.label5.TabIndex = 54;
@@ -290,7 +291,7 @@
             this.pkHasItem.BackColor = System.Drawing.Color.Silver;
             this.pkHasItem.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.pkHasItem.FlatAppearance.BorderSize = 5;
-            this.pkHasItem.Location = new System.Drawing.Point(229, 419);
+            this.pkHasItem.Location = new System.Drawing.Point(230, 450);
             this.pkHasItem.Name = "pkHasItem";
             this.pkHasItem.Size = new System.Drawing.Size(126, 17);
             this.pkHasItem.TabIndex = 55;
@@ -303,7 +304,7 @@
             this.pkCanBeShiny.BackColor = System.Drawing.Color.Silver;
             this.pkCanBeShiny.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.pkCanBeShiny.FlatAppearance.BorderSize = 5;
-            this.pkCanBeShiny.Location = new System.Drawing.Point(229, 446);
+            this.pkCanBeShiny.Location = new System.Drawing.Point(230, 477);
             this.pkCanBeShiny.Name = "pkCanBeShiny";
             this.pkCanBeShiny.Size = new System.Drawing.Size(105, 17);
             this.pkCanBeShiny.TabIndex = 57;
@@ -346,10 +347,10 @@
             this.pkGasp.BackColor = System.Drawing.Color.Black;
             this.pkGasp.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pkGasp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.pkGasp.Location = new System.Drawing.Point(34, 511);
+            this.pkGasp.Location = new System.Drawing.Point(204, 392);
             this.pkGasp.Name = "pkGasp";
             this.pkGasp.ReadOnly = true;
-            this.pkGasp.Size = new System.Drawing.Size(173, 56);
+            this.pkGasp.Size = new System.Drawing.Size(173, 48);
             this.pkGasp.TabIndex = 61;
             this.pkGasp.Text = "";
             // 
@@ -395,27 +396,33 @@
             this.pkCanBeLegend.BackColor = System.Drawing.Color.Silver;
             this.pkCanBeLegend.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.pkCanBeLegend.FlatAppearance.BorderSize = 5;
-            this.pkCanBeLegend.Location = new System.Drawing.Point(229, 473);
+            this.pkCanBeLegend.Location = new System.Drawing.Point(230, 504);
             this.pkCanBeLegend.Name = "pkCanBeLegend";
             this.pkCanBeLegend.Size = new System.Drawing.Size(137, 17);
             this.pkCanBeLegend.TabIndex = 65;
             this.pkCanBeLegend.Text = "Generate Legendaries?";
             this.pkCanBeLegend.UseVisualStyleBackColor = false;
             // 
-            // pkOnlyBasic
+            // pkStageAllowed
             // 
-            this.pkOnlyBasic.AutoSize = true;
-            this.pkOnlyBasic.BackColor = System.Drawing.Color.Silver;
-            this.pkOnlyBasic.Checked = true;
-            this.pkOnlyBasic.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.pkOnlyBasic.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.pkOnlyBasic.FlatAppearance.BorderSize = 5;
-            this.pkOnlyBasic.Location = new System.Drawing.Point(229, 393);
-            this.pkOnlyBasic.Name = "pkOnlyBasic";
-            this.pkOnlyBasic.Size = new System.Drawing.Size(131, 17);
-            this.pkOnlyBasic.TabIndex = 66;
-            this.pkOnlyBasic.Text = "Generate only basics?";
-            this.pkOnlyBasic.UseVisualStyleBackColor = false;
+            this.pkStageAllowed.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.pkStageAllowed.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.pkStageAllowed.FormattingEnabled = true;
+            this.pkStageAllowed.Location = new System.Drawing.Point(94, 500);
+            this.pkStageAllowed.Name = "pkStageAllowed";
+            this.pkStageAllowed.Size = new System.Drawing.Size(90, 21);
+            this.pkStageAllowed.TabIndex = 66;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Silver;
+            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label7.Location = new System.Drawing.Point(51, 503);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(37, 15);
+            this.label7.TabIndex = 67;
+            this.label7.Text = "Stage";
             // 
             // FormScan
             // 
@@ -424,8 +431,9 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = global::GenesisDex.Properties.Resources.MainMenu;
             this.ClientSize = new System.Drawing.Size(822, 616);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.pkStageAllowed);
             this.Controls.Add(this.pbOverlay);
-            this.Controls.Add(this.pkOnlyBasic);
             this.Controls.Add(this.pkCanBeLegend);
             this.Controls.Add(this.pkItem2);
             this.Controls.Add(this.rtbInfo2);
@@ -505,6 +513,7 @@
         private System.Windows.Forms.ComboBox pkPokemon;
         private System.Windows.Forms.RichTextBox rtbInfo2;
         private System.Windows.Forms.CheckBox pkCanBeLegend;
-        private System.Windows.Forms.CheckBox pkOnlyBasic;
+        private System.Windows.Forms.ComboBox pkStageAllowed;
+        private System.Windows.Forms.Label label7;
     }
 }

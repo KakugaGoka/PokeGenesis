@@ -60,6 +60,7 @@ namespace GenesisDex
         List<string> moves = new List<string>();
         List<string> ability = new List<string>();
         List<string> skill = new List<string>();
+        List<string> stages = new List<string>();
         bool isShiny = false;
         string typeShiny { get; set; }
 
@@ -95,6 +96,11 @@ namespace GenesisDex
             pkHabitat.DataSource = habitats;
             pkType.DataSource = types;
             pkPokemon.DataSource = pokeDex;
+            stages.Add("Any");
+            stages.Add("1");
+            stages.Add("2");
+            stages.Add("3");
+            pkStageAllowed.DataSource = stages;
         }
 
         private void pbExit_Click(object sender, EventArgs e)
@@ -256,25 +262,32 @@ namespace GenesisDex
 
         private void CheckEvo()
         {
-            for (var e = 0; e < pokeList.Count; e++)
+            if (pkStageAllowed.Text != "Any")
             {
-                evoList = evoXML.createList(pokeList[e].number);
-                if (evoList.Count > 1)
+                int sA = Convert.ToInt32(pkStageAllowed.Text);
+                for (var e = 0; e < pokeList.Count; e++)
                 {
+                    evoList = evoXML.createList(pokeList[e].number);
                     for (var x = 0; x < evoList.Count; x++)
                     {
                         string[] split = evoList[x].evo.Split(' ');
                         string name = split[0];
                         if (pokeList[e].id == name)
                         {
-                            if (evoList[x].id >= 1)
+                            if (evoList[x].id != sA - 1)
                             {
                                 pokeList.RemoveAt(e);
                                 e -= 1;
+                                break;
                             }
+
                         }
                     }
                 }
+            }
+            else
+            {
+                return;
             }
         }
 
@@ -879,14 +892,14 @@ namespace GenesisDex
                 pkHabitat.Enabled = false;
                 pkType.Enabled = false;
                 pkCanBeLegend.Enabled = false;
-                pkOnlyBasic.Enabled = false;
+                pkStageAllowed.Enabled = false;
             }
             else
             {
                 pkHabitat.Enabled = true;
                 pkType.Enabled = true;
                 pkCanBeLegend.Enabled = true;
-                pkOnlyBasic.Enabled = true;
+                pkStageAllowed.Enabled = true;
             }
         }
     }
