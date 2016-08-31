@@ -51,6 +51,7 @@ namespace GenesisDexEngine
     class Evolution
     {
         public string evo { get; set; }
+        public int id { get; set; }
     }
 
     class Ability
@@ -270,7 +271,8 @@ class PokemonList
             var query = from node in doc.Descendants("List" + decend).Descendants("Evolution").Descendants("evo")
                         select new Evolution
                         {
-                            evo = (string)node.Value
+                            evo = (string)node.Value,
+                            id = (int)node.Attribute("id")
                         };
             idList = query.ToList();
             return idList;

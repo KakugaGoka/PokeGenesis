@@ -27,11 +27,13 @@ namespace GenesisDex
         ItemList typeXML = new ItemList();
         NatureList natureXML = new NatureList();
         ItemList habitatXML = new ItemList();
+        EvolutionList evoXML = new EvolutionList();
         List<Pokemon> pokeList = new List<Pokemon>();
         List<Move> moveList = new List<Move>();
         List<Ability> abiList = new List<Ability>();
         List<Skill> skillList = new List<Skill>();
         List<Capability> capList = new List<Capability>();
+        List<Evolution> evoList = new List<Evolution>();
         Random rng = new Random();
         int pbPokeLocX { get; set; }
         int pbPokeLocY { get; set; }
@@ -160,6 +162,7 @@ namespace GenesisDex
             pokeList = pokeXML.createList("Pokemon");
             if (pkPokemon.Text == "Any")
             {
+                CheckEvo();
                 CheckHabitat();
                 CheckType();
                 if (pkCanBeLegend.Checked != true)
@@ -248,6 +251,30 @@ namespace GenesisDex
             else
             {
                 return Image.FromFile(null);
+            }
+        }
+
+        private void CheckEvo()
+        {
+            for (var e = 0; e < pokeList.Count; e++)
+            {
+                evoList = evoXML.createList(pokeList[e].number);
+                if (evoList.Count > 1)
+                {
+                    for (var x = 0; x < evoList.Count; x++)
+                    {
+                        string[] split = evoList[x].evo.Split(' ');
+                        string name = split[0];
+                        if (pokeList[e].id == name)
+                        {
+                            if (evoList[x].id >= 1)
+                            {
+                                pokeList.RemoveAt(e);
+                                e -= 1;
+                            }
+                        }
+                    }
+                }
             }
         }
 
@@ -405,27 +432,34 @@ namespace GenesisDex
 
         private Pokemon GetGender(Pokemon poke)
         {
-            string[] gender = poke.gender.Split(' ');
-            string m = gender[0];
-            m = m.Replace("%"," ");
-            m = m.Trim();
-            if (m.Contains('.'))
+            if (poke.gender == "Genderless")
             {
-                string[] gendermale = m.Split('.');
-                m = gendermale[0];
-                m = m.Trim();
-            }
-            int male = Convert.ToInt32(m);
-            int i = rng.Next(0, 101);
-            if (i <= male)
-            {
-                poke.gender = "Male";
                 return poke;
             }
             else
             {
-                poke.gender = "Female";
-                return poke;
+                string[] gender = poke.gender.Split(' ');
+                string m = gender[0];
+                m = m.Replace("%", " ");
+                m = m.Trim();
+                if (m.Contains('.'))
+                {
+                    string[] gendermale = m.Split('.');
+                    m = gendermale[0];
+                    m = m.Trim();
+                }
+                int male = Convert.ToInt32(m);
+                int i = rng.Next(0, 101);
+                if (i <= male)
+                {
+                    poke.gender = "Male";
+                    return poke;
+                }
+                else
+                {
+                    poke.gender = "Female";
+                    return poke;
+                }
             }
         }
 
@@ -845,12 +879,14 @@ namespace GenesisDex
                 pkHabitat.Enabled = false;
                 pkType.Enabled = false;
                 pkCanBeLegend.Enabled = false;
+                pkOnlyBasic.Enabled = false;
             }
             else
             {
                 pkHabitat.Enabled = true;
                 pkType.Enabled = true;
                 pkCanBeLegend.Enabled = true;
+                pkOnlyBasic.Enabled = true;
             }
         }
     }
