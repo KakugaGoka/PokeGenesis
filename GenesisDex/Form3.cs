@@ -578,110 +578,63 @@ namespace GenesisDex
             }
         }
 
+        private string SkillUp(int i)
+        {
+            StringBuilder build = new StringBuilder();
+            string skil = skillList[i].skill;
+            string[] up1 = skil.Split('d');
+            string[] up2 = up1[0].Split(' ');
+            int temp = Convert.ToInt32(up2[1]);
+            int fin = temp + 1;
+            build.Append(up2[0] + " " + fin + "d" + up1[1]);
+            return build.ToString();
+        }
+
+        private string SkillDn(int i)
+        {
+            StringBuilder build = new StringBuilder();
+            string skil = skillList[i].skill;
+            string[] up1 = skil.Split('d');
+            string[] up2 = up1[0].Split(' ');
+            int temp = Convert.ToInt32(up2[1]);
+            int fin = temp - 1;
+            build.Append(up2[0] + " " + fin + "d" + up1[1]);
+            return build.ToString();
+        }
+
         private void GetSkills()
         {
             skillList = skillXML.createList(IChooseYou.number);
+            List<string> tempskill = new List<string>();
             skill.Clear();
-            StringBuilder build = new StringBuilder();
-            int store2a = 10;
-            int store3a = 10;
-            int store2b = 10;
-            int store3b = 10;
-            int skills = rng.Next(1, 4);
-            for (var sk = skills; sk > 0; sk--)
+            var values = Enumerable.Range(0, 6).OrderBy(x => Guid.NewGuid().GetHashCode()).ToArray();
+            int sk = rng.Next(1, 4);
+            if (sk == 1)
             {
-                int i;
-                bool store = false;
-                build.Clear();
-                do
-                {
-                    i = rng.Next(0, 6);
-                    store = (i != store2a && i != store3a);
-                } while (store == false);
-                string tes = skillList[i].skill;
-                string[] skil = tes.Split('d');
-                string[] num = skil[0].Split(' ');
-                int temp = Convert.ToInt32(num[1]);
-                temp++;
-                num[1] = temp.ToString();
-                build.Append(num[0]);
-                build.Append(' ');
-                build.Append(num[1]);
-                build.Append('d');
-                build.Append(skil[1]);
-                skillList.RemoveAt(i);
-                skillList.Add(new Skill { skill = build.ToString() });
-                if (sk == 2) { store2a = i; }
-                else if (sk == 3) { store3a = i; }
+                skill.Add(SkillUp(values[0]));
+                skill.Add(SkillDn(values[1]));
+                skill.Add(skillList[values[2]].skill);
+                skill.Add(skillList[values[3]].skill);
+                skill.Add(skillList[values[4]].skill);
+                skill.Add(skillList[values[5]].skill);
             }
-            for (var sk = skills; sk > 0; sk--)
+            else if (sk == 2)
             {
-                int i;
-                bool store = false;
-                build.Clear();
-                do
-                {
-                    i = rng.Next(0, 6);
-                    store = (i != store2b && i != store3b);
-                } while (store == false) ;
-                string tes = skillList[i].skill;
-                string[] skil = tes.Split('d');
-                string[] num = skil[0].Split(' ');
-                int temp = Convert.ToInt32(num[1]);
-                temp--;
-                num[1] = temp.ToString();
-                build.Append(num[0]);
-                build.Append(' ');
-                build.Append(num[1]);
-                build.Append('d');
-                build.Append(skil[1]);
-                skillList.RemoveAt(i);
-                skillList.Add(new Skill { skill = build.ToString() });
-                if (sk == 2) { store2b = i; }
-                else if (sk == 3) { store3b = i; }
-
+                skill.Add(SkillUp(values[0]));
+                skill.Add(SkillDn(values[1]));
+                skill.Add(SkillUp(values[2]));
+                skill.Add(SkillDn(values[3]));
+                skill.Add(skillList[values[4]].skill);
+                skill.Add(skillList[values[5]].skill);
             }
-            for (var q = 0; q < skillList.Count; q++)
+            else if (sk == 3)
             {
-                if(skillList[q].skill.Contains("Athl"))
-                {
-                skill.Add(skillList[q].skill);
-                }
-            }
-            for (var q = 0; q < skillList.Count; q++)
-            {
-                if (skillList[q].skill.Contains("Acro"))
-                {
-                    skill.Add(skillList[q].skill);
-                }
-            }
-            for (var q = 0; q < skillList.Count; q++)
-            {
-                if (skillList[q].skill.Contains("Combat"))
-                {
-                    skill.Add(skillList[q].skill);
-                }
-            }
-            for (var q = 0; q < skillList.Count; q++)
-            {
-                if (skillList[q].skill.Contains("Stealth"))
-                {
-                    skill.Add(skillList[q].skill);
-                }
-            }
-            for (var q = 0; q < skillList.Count; q++)
-            {
-                if (skillList[q].skill.Contains("Percep"))
-                {
-                    skill.Add(skillList[q].skill);
-                }
-            }
-            for (var q = 0; q < skillList.Count; q++)
-            {
-                if (skillList[q].skill.Contains("Focus"))
-                {
-                    skill.Add(skillList[q].skill);
-                }
+                skill.Add(SkillUp(values[0]));
+                skill.Add(SkillDn(values[1]));
+                skill.Add(SkillUp(values[2]));
+                skill.Add(SkillDn(values[3]));
+                skill.Add(SkillUp(values[4]));
+                skill.Add(SkillDn(values[5]));
             }
         }
 
