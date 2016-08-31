@@ -51,6 +51,12 @@ namespace GenesisDex
 
         private void AddPokemon()
         {
+            if ( tbName.Text.Trim() == "" || tbNumber.Text.Trim() == "" || tbGender.Text.Trim() == "" || tbHP.Text.Trim() == "" || tbATK.Text.Trim() == "" || tbDEF.Text.Trim() == "" || tbSPATK.Text.Trim() == "" ||
+                 tbSPDEF.Text.Trim() == "" || tbSPD.Text.Trim() == "" || tbType.Text.Trim() == "" || listEvo.Items.Count == 0 || listMoves.Items.Count == 0)
+            {
+                MessageBox.Show("Please complete the form before attempting to add to the Pokedex.");
+                return;
+            }
             string[] Capabilities = listCap.Items.Cast<String>().ToArray();
             string[] Moves = listMoves.Items.Cast<String>().ToArray();
             string[] Evo = listEvo.Items.Cast<String>().ToArray();

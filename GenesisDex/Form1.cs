@@ -76,7 +76,7 @@ namespace GenesisDex
             var i = 0;
             for (i = 0; i < pokeList.Count; i++)
             {
-                if (lbPokemon.Text == pokeList[i].id.ToString()) { break; }
+                try { if (lbPokemon.Text == pokeList[i].id.ToString()) { break; } } catch { }
             }
             pbY.Visible = false;
             pbX.Visible = false;
@@ -805,7 +805,7 @@ namespace GenesisDex
         {
             pokeList.Sort(delegate (Pokemon x, Pokemon y)
             {
-                return x.number.CompareTo(y.number);
+                try { return x.number.CompareTo(y.number); } catch { return 0; }
             });
         }
 
