@@ -19,7 +19,9 @@ namespace GenesisDex
         private Point dragFormPoint;
         PokemonList pokeXML = new PokemonList();
         MoveList moveXML = new MoveList();
-        AbilityList abiXML = new AbilityList();
+        BasicAbiList basicXML = new BasicAbiList();
+        AdvAbiList advXML = new AdvAbiList();
+        HighAbiList highXML = new HighAbiList();
         SkillList skillXML = new SkillList();
         CapabilityList capXML = new CapabilityList();
         ItemList typeXML = new ItemList();
@@ -558,27 +560,22 @@ namespace GenesisDex
 
         private void GetAbilities()
         {
-            abiList = abiXML.createList(IChooseYou.number);
+            abiList = basicXML.createList(IChooseYou.number);
             ability.Clear();
-            string one = abiList[0].basicability1;
-            string two = abiList[0].basicability2;
-            string three = abiList[0].advability1;
-            string four = abiList[0].advability2;
-            string five = abiList[0].highability;
-            int roll = rng.Next(1, 3);
-            if (roll == 1) { if (one == "") { ability.Add(two); } else { ability.Add(one); } }
-            if (roll == 2) { if (one == "") { ability.Add(one); } else { ability.Add(two); } }
-            if (TrueLevel >= 20) 
+            int i = rng.Next(0, abiList.Count);
+            ability.Add(abiList[i].basicability);
+            if (TrueLevel >= 20)
             {
-                roll = rng.Next(1, 3);
-                if (roll == 1) { if (one == "") { ability.Add(four); } else { ability.Add(three); } }
-                if (roll == 2) { if (one == "") { ability.Add(three); } else { ability.Add(four); } }
+                abiList = advXML.createList(IChooseYou.number);
+                i = rng.Next(0, abiList.Count);
+                ability.Add(abiList[i].advability);
             }
             if (TrueLevel >= 40)
             {
-                ability.Add(five);
+                abiList = highXML.createList(IChooseYou.number);
+                i = rng.Next(0, abiList.Count);
+                ability.Add(abiList[i].highability);
             }
-
         }
 
         private void GetSkills()

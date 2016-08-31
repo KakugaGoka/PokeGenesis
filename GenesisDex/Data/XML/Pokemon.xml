@@ -25,11 +25,11 @@
         <evo id="2">Venusaur Minimum 30</evo>
       </Evolution>
       <Ability>
-        <basicability1>Confidence</basicability1>
-        <basicability2>Photosynthesis</basicability2>
-        <advability1>Chlorophyll</advability1>
-        <advability2>Leaf Gaurd</advability2>
-        <highability>Courage</highability>
+        <BasicAbility>Confidence</BasicAbility>
+        <BasicAbility>Photosynthesis</BasicAbility>
+        <AdvancedAbility>Chlorophyll</AdvancedAbility>
+        <AdvancedAbility>Leaf Gaurd</AdvancedAbility>
+        <HighAbility>Courage</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 3d6+2</skill>
@@ -90,11 +90,11 @@
         <evo id="2">Venusaur Mimimum 30</evo>
       </Evolution>
       <Ability>
-        <basicability1>Confidence</basicability1>
-        <basicability2>Photosynthesis</basicability2>
-        <advability1>Chlorophyll</advability1>
-        <advability2>Leaf Gaurd</advability2>
-        <highability>Courage</highability>
+        <BasicAbility>Confidence</BasicAbility>
+        <BasicAbility>Photosynthesis</BasicAbility>
+        <AdvancedAbility>Chlorophyll</AdvancedAbility>
+        <AdvancedAbility>Leaf Gaurd</AdvancedAbility>
+        <HighAbility>Courage</HighAbility>
       </Ability>
       <Capability>
         <cap id="0">Overland 6</cap>
@@ -154,11 +154,11 @@
         <evo id="2">Venusaur Mimimum 30</evo>
       </Evolution>
       <Ability>
-        <basicability1>Confidence</basicability1>
-        <basicability2>Photosynthesis</basicability2>
-        <advability1>Chlorophyll</advability1>
-        <advability2>Aroma Veil</advability2>
-        <highability>Courage</highability>
+        <BasicAbility>Confidence</BasicAbility>
+        <BasicAbility>Photosynthesis</BasicAbility>
+        <AdvancedAbility>Chlorophyll</AdvancedAbility>
+        <AdvancedAbility>Aroma Veil</AdvancedAbility>
+        <HighAbility>Courage</HighAbility>
       </Ability>
       <Capability>
         <cap id="0">Overland 6</cap>
@@ -224,11 +224,11 @@
     <legendary>false</legendary>
     <List004>
       <Ability>
-        <basicability1>Flame Body</basicability1>
-        <basicability2>Rattled</basicability2>
-        <advability1>Solar Power</advability1>
-        <advability2>White Flame</advability2>
-        <highability>Courage</highability>
+        <BasicAbility>Flame Body</BasicAbility>
+        <BasicAbility>Rattled</BasicAbility>
+        <AdvancedAbility>Solar Power</AdvancedAbility>
+        <AdvancedAbility>White Flame</AdvancedAbility>
+        <HighAbility>Courage</HighAbility>
       </Ability>
       <Capability>
         <cap id="0">Overland 5</cap>
@@ -288,11 +288,11 @@
     <legendary>false</legendary>
     <List005>
       <Ability>
-        <basicability1>Flame Body</basicability1>
-        <basicability2>Intimidate</basicability2>
-        <advability1>Solar Power</advability1>
-        <advability2>White Flame</advability2>
-        <highability>Courage</highability>
+        <BasicAbility>Flame Body</BasicAbility>
+        <BasicAbility>Intimidate</BasicAbility>
+        <AdvancedAbility>Solar Power</AdvancedAbility>
+        <AdvancedAbility>White Flame</AdvancedAbility>
+        <HighAbility>Courage</HighAbility>
       </Ability>
       <Capability>
         <cap id="0">Overland 6 </cap>
@@ -350,11 +350,11 @@
     <legendary>false</legendary>
     <List006>
       <Ability>
-        <basicability1>Flame Body</basicability1>
-        <basicability2>Intimidate</basicability2>
-        <advability1>Solar Power</advability1>
-        <advability2>White Flame</advability2>
-        <highability>Courage</highability>
+        <BasicAbility>Flame Body</BasicAbility>
+        <BasicAbility>Intimidate</BasicAbility>
+        <AdvancedAbility>Solar Power</AdvancedAbility>
+        <AdvancedAbility>White Flame</AdvancedAbility>
+        <HighAbility>Courage</HighAbility>
       </Ability>
       <Capability>
         <cap id="0">Overland 6 </cap>
@@ -434,11 +434,11 @@
     <legendary>false</legendary>
     <List007>
       <Ability>
-        <basicability1>Shell Armor</basicability1>
-        <basicability2>Overcoat</basicability2>
-        <advability1>Rain Dish</advability1>
-        <advability2>Shell Shield</advability2>
-        <highability>Courage</highability>
+        <BasicAbility>Shell Armor</BasicAbility>
+        <BasicAbility>Overcoat</BasicAbility>
+        <AdvancedAbility>Rain Dish</AdvancedAbility>
+        <AdvancedAbility>Shell Shield</AdvancedAbility>
+        <HighAbility>Courage</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 2d6+2</skill>
@@ -498,11 +498,11 @@
     <legendary>false</legendary>
     <List008>
       <Ability>
-        <basicability1>Shell Armor</basicability1>
-        <basicability2>Overcoat</basicability2>
-        <advability1>Rain Dish</advability1>
-        <advability2>Shell Shield</advability2>
-        <highability>Courage</highability>
+        <BasicAbility>Shell Armor</BasicAbility>
+        <BasicAbility>Overcoat</BasicAbility>
+        <AdvancedAbility>Rain Dish</AdvancedAbility>
+        <AdvancedAbility>Shell Shield</AdvancedAbility>
+        <HighAbility>Courage</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 3d6+2</skill>
@@ -562,11 +562,11 @@
     <legendary>false</legendary>
     <List009>
       <Ability>
-        <basicability1>Shell Armor</basicability1>
-        <basicability2>Overcoat</basicability2>
-        <advability1>Rain Dish</advability1>
-        <advability2>ShellCannon</advability2>
-        <highability>Courage</highability>
+        <BasicAbility>Shell Armor</BasicAbility>
+        <BasicAbility>Overcoat</BasicAbility>
+        <AdvancedAbility>Rain Dish</AdvancedAbility>
+        <AdvancedAbility>ShellCannon</AdvancedAbility>
+        <HighAbility>Courage</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 4d6+2</skill>
@@ -636,11 +636,11 @@
     <legendary>false</legendary>
     <List010>
       <Ability>
-        <basicability1>Shield Dust</basicability1>
-        <basicability2>Run Away</basicability2>
-        <advability1>Silk Threads</advability1>
-        <advability2>Suction Cups</advability2>
-        <highability>Run Up</highability>
+        <BasicAbility>Shield Dust</BasicAbility>
+        <BasicAbility>Run Away</BasicAbility>
+        <AdvancedAbility>Silk Threads</AdvancedAbility>
+        <AdvancedAbility>Suction Cups</AdvancedAbility>
+        <HighAbility>Run Up</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 3d6</skill>
@@ -691,11 +691,11 @@
     <legendary>false</legendary>
     <List011>
       <Ability>
-        <basicability1>Shed Skin</basicability1>
-        <basicability2>Battle Armor</basicability2>
-        <advability1>Silk Threads</advability1>
-        <advability2>Magic Guard</advability2>
-        <highability>Sturdy</highability>
+        <BasicAbility>Shed Skin</BasicAbility>
+        <BasicAbility>Battle Armor</BasicAbility>
+        <AdvancedAbility>Silk Threads</AdvancedAbility>
+        <AdvancedAbility>Magic Guard</AdvancedAbility>
+        <HighAbility>Sturdy</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 1d6</skill>
@@ -743,11 +743,11 @@
     <legendary>false</legendary>
     <List012>
       <Ability>
-        <basicability1>Compound Eyes</basicability1>
-        <basicability2>Tinted Lens</basicability2>
-        <advability1>Keen Eye</advability1>
-        <advability2>Flutter</advability2>
-        <highability>Blow Away</highability>
+        <BasicAbility>Compound Eyes</BasicAbility>
+        <BasicAbility>Tinted Lens</BasicAbility>
+        <AdvancedAbility>Keen Eye</AdvancedAbility>
+        <AdvancedAbility>Flutter</AdvancedAbility>
+        <HighAbility>Blow Away</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 3d6</skill>
@@ -812,11 +812,11 @@
     <legendary>false</legendary>
     <List013>
       <Ability>
-        <basicability1>Shield Dust</basicability1>
-        <basicability2>Run Away</basicability2>
-        <advability1>Silk Threads</advability1>
-        <advability2>Swarm</advability2>
-        <highability>Poison Touch</highability>
+        <BasicAbility>Shield Dust</BasicAbility>
+        <BasicAbility>Run Away</BasicAbility>
+        <AdvancedAbility>Silk Threads</AdvancedAbility>
+        <AdvancedAbility>Swarm</AdvancedAbility>
+        <HighAbility>Poison Touch</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 3d6</skill>
@@ -867,11 +867,11 @@
     <legendary>false</legendary>
     <List014>
       <Ability>
-        <basicability1>Shed Skin</basicability1>
-        <basicability2>Battle Armor</basicability2>
-        <advability1>Silk Threads</advability1>
-        <advability2>Magic Guard</advability2>
-        <highability>Sturdy</highability>
+        <BasicAbility>Shed Skin</BasicAbility>
+        <BasicAbility>Battle Armor</BasicAbility>
+        <AdvancedAbility>Silk Threads</AdvancedAbility>
+        <AdvancedAbility>Magic Guard</AdvancedAbility>
+        <HighAbility>Sturdy</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 1d6</skill>
@@ -919,11 +919,11 @@
     <legendary>false</legendary>
     <List015>
       <Ability>
-        <basicability1>Sniper</basicability1>
-        <basicability2>Poison Touch</basicability2>
-        <advability1>Technician</advability1>
-        <advability2>Swarm</advability2>
-        <highability>Vanguard</highability>
+        <BasicAbility>Sniper</BasicAbility>
+        <BasicAbility>Poison Touch</BasicAbility>
+        <AdvancedAbility>Technician</AdvancedAbility>
+        <AdvancedAbility>Swarm</AdvancedAbility>
+        <HighAbility>Vanguard</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 3d6+2</skill>
@@ -990,11 +990,11 @@
     <legendary>false</legendary>
     <List016>
       <Ability>
-        <basicability1>Keen Eye</basicability1>
-        <basicability2>Tangled Feet</basicability2>
-        <advability1>Big Pecks</advability1>
-        <advability2>Blow Away</advability2>
-        <highability>Run Away</highability>
+        <BasicAbility>Keen Eye</BasicAbility>
+        <BasicAbility>Tangled Feet</BasicAbility>
+        <AdvancedAbility>Big Pecks</AdvancedAbility>
+        <AdvancedAbility>Blow Away</AdvancedAbility>
+        <HighAbility>Run Away</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 2d6</skill>
@@ -1054,11 +1054,11 @@
     <legendary>false</legendary>
     <List017>
       <Ability>
-        <basicability1>Keen Eye</basicability1>
-        <basicability2>Tangled Feet</basicability2>
-        <advability1>Big Pecks </advability1>
-        <advability2>Blow Away</advability2>
-        <highability>Competitive</highability>
+        <BasicAbility>Keen Eye</BasicAbility>
+        <BasicAbility>Tangled Feet</BasicAbility>
+        <AdvancedAbility>Big Pecks </AdvancedAbility>
+        <AdvancedAbility>Blow Away</AdvancedAbility>
+        <HighAbility>Competitive</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 3d6+1</skill>
@@ -1190,11 +1190,11 @@
     <legendary>false</legendary>
     <List019>
       <Ability>
-        <basicability1>Run Away</basicability1>
-        <basicability2>Guts</basicability2>
-        <advability1>Hustle</advability1>
-        <advability2>Instinct</advability2>
-        <highability>Intimidate</highability>
+        <BasicAbility>Run Away</BasicAbility>
+        <BasicAbility>Guts</BasicAbility>
+        <AdvancedAbility>Hustle</AdvancedAbility>
+        <AdvancedAbility>Instinct</AdvancedAbility>
+        <HighAbility>Intimidate</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 1d6</skill>
@@ -1253,11 +1253,11 @@
     <legendary>false</legendary>
     <List020>
       <Ability>
-        <basicability1>Run Away</basicability1>
-        <basicability2>Guts</basicability2>
-        <advability1>Hustle</advability1>
-        <advability2>Instinct</advability2>
-        <highability>Intimidate</highability>
+        <BasicAbility>Run Away</BasicAbility>
+        <BasicAbility>Guts</BasicAbility>
+        <AdvancedAbility>Hustle</AdvancedAbility>
+        <AdvancedAbility>Instinct</AdvancedAbility>
+        <HighAbility>Intimidate</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 3d6</skill>
@@ -1317,11 +1317,11 @@
     <legendary>false</legendary>
     <List021>
       <Ability>
-        <basicability1>Keen Eye</basicability1>
-        <basicability2>Sniper</basicability2>
-        <advability1>Scrappy</advability1>
-        <advability2>Early Bird</advability2>
-        <highability>Vanguard</highability>
+        <BasicAbility>Keen Eye</BasicAbility>
+        <BasicAbility>Sniper</BasicAbility>
+        <AdvancedAbility>Scrappy</AdvancedAbility>
+        <AdvancedAbility>Early Bird</AdvancedAbility>
+        <HighAbility>Vanguard</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 2d6</skill>
@@ -1377,11 +1377,11 @@
     <legendary>false</legendary>
     <List022>
       <Ability>
-        <basicability1>Keen Eye</basicability1>
-        <basicability2>Sniper</basicability2>
-        <advability1>Scrappy</advability1>
-        <advability2>Early Bird</advability2>
-        <highability>Vanguard</highability>
+        <BasicAbility>Keen Eye</BasicAbility>
+        <BasicAbility>Sniper</BasicAbility>
+        <AdvancedAbility>Scrappy</AdvancedAbility>
+        <AdvancedAbility>Early Bird</AdvancedAbility>
+        <HighAbility>Vanguard</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 4d6</skill>
@@ -1438,10 +1438,10 @@
     <legendary>false</legendary>
     <List023>
       <Ability>
-        <basicability1>Shed Skin</basicability1>
-        <basicability2>Intimidate</basicability2>
-        <advability1>Unnerve</advability1>
-        <highability>Keen Eye</highability>
+        <BasicAbility>Shed Skin</BasicAbility>
+        <BasicAbility>Intimidate</BasicAbility>
+        <AdvancedAbility>Unnerve</AdvancedAbility>
+        <HighAbility>Keen Eye</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 2d6+1</skill>
@@ -1505,10 +1505,10 @@
     <legendary>false</legendary>
     <List024>
       <Ability>
-        <basicability1>Shed Skin</basicability1>
-        <basicability2>Intimidate</basicability2>
-        <advability1>Serpent's Mark</advability1>
-        <highability>Serpent's Mark</highability>
+        <BasicAbility>Shed Skin</BasicAbility>
+        <BasicAbility>Intimidate</BasicAbility>
+        <AdvancedAbility>Serpent's Mark</AdvancedAbility>
+        <HighAbility>Serpent's Mark</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 4d6</skill>
@@ -1571,11 +1571,11 @@
     <legendary>false</legendary>
     <List025>
       <Ability>
-        <basicability1>Static</basicability1>
-        <basicability2>Cute Charm</basicability2>
-        <advability1>Lightning Rod</advability1>
-        <advability2>Sprint</advability2>
-        <highability>Sequence</highability>
+        <BasicAbility>Static</BasicAbility>
+        <BasicAbility>Cute Charm</BasicAbility>
+        <AdvancedAbility>Lightning Rod</AdvancedAbility>
+        <AdvancedAbility>Sprint</AdvancedAbility>
+        <HighAbility>Sequence</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 3d6</skill>
@@ -1637,11 +1637,11 @@
     <legendary>false</legendary>
     <List026>
       <Ability>
-        <basicability1>Static</basicability1>
-        <basicability2>Motor Drive</basicability2>
-        <advability1>Lightning Rod</advability1>
-        <advability2>Sprint</advability2>
-        <highability>Sequence</highability>
+        <BasicAbility>Static</BasicAbility>
+        <BasicAbility>Motor Drive</BasicAbility>
+        <AdvancedAbility>Lightning Rod</AdvancedAbility>
+        <AdvancedAbility>Sprint</AdvancedAbility>
+        <HighAbility>Sequence</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 4d6+1</skill>
@@ -1703,11 +1703,11 @@
     <legendary>false</legendary>
     <List027>
       <Ability>
-        <basicability1>Sand Veil</basicability1>
-        <basicability2>Pickup</basicability2>
-        <advability1>Quick Curl</advability1>
-        <advability2>Sand Rush</advability2>
-        <highability>Dig Away</highability>
+        <BasicAbility>Sand Veil</BasicAbility>
+        <BasicAbility>Pickup</BasicAbility>
+        <AdvancedAbility>Quick Curl</AdvancedAbility>
+        <AdvancedAbility>Sand Rush</AdvancedAbility>
+        <HighAbility>Dig Away</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 3d6</skill>
@@ -1771,11 +1771,11 @@
     <legendary>false</legendary>
     <List028>
       <Ability>
-        <basicability1>Sand Veil</basicability1>
-        <basicability2>Rough Skin</basicability2>
-        <advability1>Quick Curl</advability1>
-        <advability2>Sand Rush</advability2>
-        <highability>Dig Away</highability>
+        <BasicAbility>Sand Veil</BasicAbility>
+        <BasicAbility>Rough Skin</BasicAbility>
+        <AdvancedAbility>Quick Curl</AdvancedAbility>
+        <AdvancedAbility>Sand Rush</AdvancedAbility>
+        <HighAbility>Dig Away</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 4d6+1</skill>
@@ -1839,11 +1839,11 @@
     <legendary>false</legendary>
     <List029>
       <Ability>
-        <basicability1>Poison Point</basicability1>
-        <basicability2>Rivalry</basicability2>
-        <advability1>Hustle</advability1>
-        <advability2>Celebrate</advability2>
-        <highability>Bodyguard</highability>
+        <BasicAbility>Poison Point</BasicAbility>
+        <BasicAbility>Rivalry</BasicAbility>
+        <AdvancedAbility>Hustle</AdvancedAbility>
+        <AdvancedAbility>Celebrate</AdvancedAbility>
+        <HighAbility>Bodyguard</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 2d6+1</skill>
@@ -1903,11 +1903,11 @@
     <legendary>false</legendary>
     <List030>
       <Ability>
-        <basicability1>Poison Point</basicability1>
-        <basicability2>Rivalry</basicability2>
-        <advability1>Hustle</advability1>
-        <advability2>Celebrate</advability2>
-        <highability>Bodyguard</highability>
+        <BasicAbility>Poison Point</BasicAbility>
+        <BasicAbility>Rivalry</BasicAbility>
+        <AdvancedAbility>Hustle</AdvancedAbility>
+        <AdvancedAbility>Celebrate</AdvancedAbility>
+        <HighAbility>Bodyguard</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 4d6+1</skill>
@@ -1965,11 +1965,11 @@
     <legendary>false</legendary>
     <List031>
       <Ability>
-        <basicability1>Poison Point</basicability1>
-        <basicability2>Rivalry</basicability2>
-        <advability1>Hustle</advability1>
-        <advability2>Sheer Force</advability2>
-        <highability>Bodyguard</highability>
+        <BasicAbility>Poison Point</BasicAbility>
+        <BasicAbility>Rivalry</BasicAbility>
+        <AdvancedAbility>Hustle</AdvancedAbility>
+        <AdvancedAbility>Sheer Force</AdvancedAbility>
+        <HighAbility>Bodyguard</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 5d6+2</skill>
@@ -2034,11 +2034,11 @@
     <legendary>false</legendary>
     <List032>
       <Ability>
-        <basicability1>Poison Point</basicability1>
-        <basicability2>Rivalry</basicability2>
-        <advability1>Hustle</advability1>
-        <advability2>Celebrate</advability2>
-        <highability>Bodyguard</highability>
+        <BasicAbility>Poison Point</BasicAbility>
+        <BasicAbility>Rivalry</BasicAbility>
+        <AdvancedAbility>Hustle</AdvancedAbility>
+        <AdvancedAbility>Celebrate</AdvancedAbility>
+        <HighAbility>Bodyguard</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 2d6+1</skill>
@@ -2098,11 +2098,11 @@
     <legendary>false</legendary>
     <List033>
       <Ability>
-        <basicability1>Poison Point</basicability1>
-        <basicability2>Rivalry</basicability2>
-        <advability1>Hustle</advability1>
-        <advability2>Celebrate</advability2>
-        <highability>Bodyguard</highability>
+        <BasicAbility>Poison Point</BasicAbility>
+        <BasicAbility>Rivalry</BasicAbility>
+        <AdvancedAbility>Hustle</AdvancedAbility>
+        <AdvancedAbility>Celebrate</AdvancedAbility>
+        <HighAbility>Bodyguard</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 4d6+1</skill>
@@ -2160,11 +2160,11 @@
     <legendary>false</legendary>
     <List034>
       <Ability>
-        <basicability1>Poison Point</basicability1>
-        <basicability2>Rivalry</basicability2>
-        <advability1>Hustle</advability1>
-        <advability2>Sheer Force</advability2>
-        <highability>Bodyguard</highability>
+        <BasicAbility>Poison Point</BasicAbility>
+        <BasicAbility>Rivalry</BasicAbility>
+        <AdvancedAbility>Hustle</AdvancedAbility>
+        <AdvancedAbility>Sheer Force</AdvancedAbility>
+        <HighAbility>Bodyguard</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 5d6+3</skill>
@@ -2228,11 +2228,11 @@
     <legendary>false</legendary>
     <List035>
       <Ability>
-        <basicability1>Cute Charm</basicability1>
-        <basicability2>Magic Guard</basicability2>
-        <advability1>Friend Guard</advability1>
-        <advability2>Frisk</advability2>
-        <highability>Unaware</highability>
+        <BasicAbility>Cute Charm</BasicAbility>
+        <BasicAbility>Magic Guard</BasicAbility>
+        <AdvancedAbility>Friend Guard</AdvancedAbility>
+        <AdvancedAbility>Frisk</AdvancedAbility>
+        <HighAbility>Unaware</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 2d6+1</skill>
@@ -2297,11 +2297,11 @@
     <legendary>false</legendary>
     <List036>
       <Ability>
-        <basicability1>Cute Charm</basicability1>
-        <basicability2>Magic Guard</basicability2>
-        <advability1>Friend Guard</advability1>
-        <advability2>Frisk</advability2>
-        <highability>Unaware</highability>
+        <BasicAbility>Cute Charm</BasicAbility>
+        <BasicAbility>Magic Guard</BasicAbility>
+        <AdvancedAbility>Friend Guard</AdvancedAbility>
+        <AdvancedAbility>Frisk</AdvancedAbility>
+        <HighAbility>Unaware</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 3d6</skill>
@@ -2366,11 +2366,11 @@
     <legendary>false</legendary>
     <List037>
       <Ability>
-        <basicability1>Flash Fire</basicability1>
-        <basicability2>Fox Fire</basicability2>
-        <advability1>Competitive</advability1>
-        <advability2>Cute Charm</advability2>
-        <highability>Drought</highability>
+        <BasicAbility>Flash Fire</BasicAbility>
+        <BasicAbility>Fox Fire</BasicAbility>
+        <AdvancedAbility>Competitive</AdvancedAbility>
+        <AdvancedAbility>Cute Charm</AdvancedAbility>
+        <HighAbility>Drought</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 3d6+1</skill>
@@ -2436,11 +2436,11 @@
     <legendary>false</legendary>
     <List038>
       <Ability>
-        <basicability1>Flash Fire</basicability1>
-        <basicability2>Fox Fire</basicability2>
-        <advability1>Competitive</advability1>
-        <advability2>Cursed Body</advability2>
-        <highability>Drought</highability>
+        <BasicAbility>Flash Fire</BasicAbility>
+        <BasicAbility>Fox Fire</BasicAbility>
+        <AdvancedAbility>Competitive</AdvancedAbility>
+        <AdvancedAbility>Cursed Body</AdvancedAbility>
+        <HighAbility>Drought</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 4d6+2</skill>
@@ -2505,11 +2505,11 @@
     <legendary>false</legendary>
     <List039>
       <Ability>
-        <basicability1>Cute Charm</basicability1>
-        <basicability2>Lullaby</basicability2>
-        <advability1>Friend Guard</advability1>
-        <advability2>Competitive</advability2>
-        <highability>Exploit</highability>
+        <BasicAbility>Cute Charm</BasicAbility>
+        <BasicAbility>Lullaby</BasicAbility>
+        <AdvancedAbility>Friend Guard</AdvancedAbility>
+        <AdvancedAbility>Competitive</AdvancedAbility>
+        <HighAbility>Exploit</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 2d6+1</skill>
@@ -2568,13 +2568,14 @@
     <egg>Fairy</egg>
     <diet>Herbivore</diet>
     <habitat>Cave, Grassland</habitat>
+    <legendary>false</legendary>
     <List040>
       <Ability>
-        <basicability1>Cute Charm</basicability1>
-        <basicability2>Lullaby</basicability2>
-        <advability1>Frisk</advability1>
-        <advability2>Competitive</advability2>
-        <highability>Exploit</highability>
+        <BasicAbility>Cute Charm</BasicAbility>
+        <BasicAbility>Lullaby</BasicAbility>
+        <AdvancedAbility>Frisk</AdvancedAbility>
+        <AdvancedAbility>Competitive</AdvancedAbility>
+        <HighAbility>Exploit</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 3d6+1</skill>
@@ -2634,13 +2635,14 @@
     <hatch>7 Days</hatch>
     <diet>Carnivore</diet>
     <habitat>Cave</habitat>
+    <legendary>false</legendary>
     <List041>
       <Ability>
-        <basicability1>Inner Focus</basicability1>
-        <basicability2>Infiltrator</basicability2>
-        <advability1>Instinct</advability1>
-        <advability2>Insomnia</advability2>
-        <highability>Vanguard</highability>
+        <BasicAbility>Inner Focus</BasicAbility>
+        <BasicAbility>Infiltrator</BasicAbility>
+        <AdvancedAbility>Instinct</AdvancedAbility>
+        <AdvancedAbility>Insomnia</AdvancedAbility>
+        <HighAbility>Vanguard</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 1d6+2</skill>
@@ -2683,5 +2685,143 @@
         <move id="14">43  Quick Guard</move>
       </Moves>
     </List041>
+  </Pokemon>
+  <Pokemon>
+    <number>718</number>
+    <id>Zygarde</id>
+    <type>Dragon / Ground</type>
+    <hp>11</hp>
+    <atk>10</atk>
+    <def>12</def>
+    <spatk>8</spatk>
+    <spdef>10</spdef>
+    <spd>10</spd>
+    <size>16’ 05” / 5m (Huge)</size>
+    <weight>672.4 lbs. / 305 kg (6)</weight>
+    <gender>Genderless</gender>
+    <hatch>75 Days</hatch>
+    <diet>Nullivore</diet>
+    <habitat>Cave</habitat>
+    <legendary>true</legendary>
+    <List718>
+      <Ability>
+        <BasicAbility>Aura Break</BasicAbility>
+        <AdvancedAbility>Interference</AdvancedAbility>
+        <AdvancedAbility>Air Lock</AdvancedAbility>
+        <AdvancedAbility>Filter</AdvancedAbility>
+        <HighAbility>Pressure</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 4d6+2</skill>
+        <skill id="1">Acro 3d6</skill>
+        <skill id="2">Combat 4d6</skill>
+        <skill id="3">Stealth 4d6+2</skill>
+        <skill id="4">Percep 6d6+2</skill>
+        <skill id="5">Focus 5d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 7</cap>
+        <cap id="1">Swim 5</cap>
+        <cap id="2">Burrow 9</cap>
+        <cap id="3">Jump 2/2</cap>
+        <cap id="4">Power 9</cap>
+        <cap id="5">Darkvision</cap>
+        <cap id="6">Groundshaper</cap>
+        <cap id="7">Tremorsense</cap>
+        <cap id="8">Mountable 4</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">Zygarde</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Glare - Normal</move>
+        <move id="1">1 Bulldoze - Ground</move>
+        <move id="2">1 Dragon Breath - Dragon</move>
+        <move id="3">1 Bite - Dark</move>
+        <move id="4">10 Safeguard - Normal</move>
+        <move id="5">15 Dig - Ground</move>
+        <move id="6">22 Bind - Normal</move>
+        <move id="7">28 Land's Wrath - Ground</move>
+        <move id="8">36 Sandstorm - Ground</move>
+        <move id="9">43 Haze - Ice</move>
+        <move id="10">51 Crunch - Dark</move>
+        <move id="11">55 Earthquake - Ground</move>
+        <move id="12">59 Camouflage - Normal</move>
+        <move id="13">63 Dragon Pulse - Dragon</move>
+        <move id="14">72 Dragon Dance - Dragon</move>
+        <move id="15">80 Coil - Poison</move>
+        <move id="16">88 Extreme Speed - Normal</move>
+        <move id="17">93 Outrage - Dragon</move>
+      </Moves>
+    </List718>
+  </Pokemon>
+  <Pokemon>
+    <number>717</number>
+    <id>Yveltal</id>
+    <type>Dark / Flying</type>
+    <hp>13</hp>
+    <atk>13</atk>
+    <def>10</def>
+    <spatk>13</spatk>
+    <spdef>10</spdef>
+    <spd>10</spd>
+    <size>19' 00" / 5.8m (Huge)</size>
+    <weight>447.5 lbs. / 203 kg (6)</weight>
+    <gender>Genderless</gender>
+    <hatch>75 Days</hatch>
+    <diet>Carnivore</diet>
+    <habitat>Mountain</habitat>
+    <legendary>true</legendary>
+    <List717>
+      <Ability>
+        <BasicAbility>Dark Aura</BasicAbility>
+        <AdvancedAbility>Cruelty</AdvancedAbility>
+        <AdvancedAbility>Pressure</AdvancedAbility>
+        <AdvancedAbility>Shackle</AdvancedAbility>
+        <HighAbility>Soulstealer</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 4d6</skill>
+        <skill id="1">Acro 6d6+2</skill>
+        <skill id="2">Combat 5d6+2</skill>
+        <skill id="3">Stealth 3d6</skill>
+        <skill id="4">Percep 4d6+2</skill>
+        <skill id="5">Focus 4d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 5</cap>
+        <cap id="1">Swim 5</cap>
+        <cap id="2">Sky 8</cap>
+        <cap id="3">Jump 2/2</cap>
+        <cap id="4">Power 8</cap>
+        <cap id="5">Guster</cap>
+        <cap id="6">Darkvision</cap>
+        <cap id="7">Mindlock</cap>
+        <cap id="8">Mountable 2</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">Yveltal</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Hurricane - Flying</move>
+        <move id="1">1 Razor Wind - Normal</move>
+        <move id="2">1 Taunt - Dark</move>
+        <move id="3">1 Roost - Flying</move>
+        <move id="4">10 Double Team - Normal</move>
+        <move id="5">15 Air Slash - Flying</move>
+        <move id="6">22 Snarl - Dark</move>
+        <move id="7">28 Oblivion Wing - Flying</move>
+        <move id="8">36 Disable - Normal</move>
+        <move id="9">43 Dark Pulse - Dark</move>
+        <move id="10">51 Foul Play - Dark</move>
+        <move id="11">55 Phantom Force - Ghost</move>
+        <move id="12">59 Psychic - Psychic</move>
+        <move id="13">63 Dragon Rush - Dragon</move>
+        <move id="14">72 Focus Blast - Fighting</move>
+        <move id="15">80 Sucker Punch - Dark</move>
+        <move id="16">88 Hyper Beam - Normal</move>
+        <move id="17">93 Sky Attack - Flying</move>
+      </Moves>
+    </List717>
   </Pokemon>
 </Namespace>

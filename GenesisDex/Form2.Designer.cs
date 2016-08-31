@@ -49,11 +49,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
@@ -79,11 +74,11 @@
             this.listCap = new System.Windows.Forms.ListBox();
             this.listEvo = new System.Windows.Forms.ListBox();
             this.listMoves = new System.Windows.Forms.ListBox();
-            this.tbHigh1 = new System.Windows.Forms.TextBox();
-            this.tbAdv2 = new System.Windows.Forms.TextBox();
-            this.tbAdv1 = new System.Windows.Forms.TextBox();
-            this.tbBasic2 = new System.Windows.Forms.TextBox();
-            this.tbBasic1 = new System.Windows.Forms.TextBox();
+            this.tbAbi5 = new System.Windows.Forms.TextBox();
+            this.tbAbi4 = new System.Windows.Forms.TextBox();
+            this.tbAbi3 = new System.Windows.Forms.TextBox();
+            this.tbAbi2 = new System.Windows.Forms.TextBox();
+            this.tbAbi1 = new System.Windows.Forms.TextBox();
             this.cbMega = new System.Windows.Forms.CheckBox();
             this.cbXY = new System.Windows.Forms.CheckBox();
             this.tbMegaHP = new System.Windows.Forms.TextBox();
@@ -145,6 +140,11 @@
             this.btSkillAdd = new System.Windows.Forms.Button();
             this.tbSkillAdd = new System.Windows.Forms.TextBox();
             this.listSkill = new System.Windows.Forms.ListBox();
+            this.cbAbi1 = new System.Windows.Forms.ComboBox();
+            this.cbAbi2 = new System.Windows.Forms.ComboBox();
+            this.cbAbi3 = new System.Windows.Forms.ComboBox();
+            this.cbAbi4 = new System.Windows.Forms.ComboBox();
+            this.cbAbi5 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             this.gbMega.SuspendLayout();
             this.gbMega2.SuspendLayout();
@@ -324,51 +324,6 @@
             this.label17.Size = new System.Drawing.Size(42, 13);
             this.label17.TabIndex = 33;
             this.label17.Text = "Abilities";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(624, 94);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(72, 13);
-            this.label18.TabIndex = 34;
-            this.label18.Text = "Basic Ability 1";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(624, 120);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(72, 13);
-            this.label19.TabIndex = 35;
-            this.label19.Text = "Basic Ability 2";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(601, 146);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(95, 13);
-            this.label20.TabIndex = 36;
-            this.label20.Text = "Advanced Ability 1";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(601, 172);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(95, 13);
-            this.label21.TabIndex = 37;
-            this.label21.Text = "Advanced Ability 2";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(637, 198);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(59, 13);
-            this.label22.TabIndex = 38;
-            this.label22.Text = "High Ability";
             // 
             // label23
             // 
@@ -560,40 +515,40 @@
             this.listMoves.Size = new System.Drawing.Size(205, 524);
             this.listMoves.TabIndex = 75;
             // 
-            // tbHigh1
+            // tbAbi5
             // 
-            this.tbHigh1.Location = new System.Drawing.Point(702, 195);
-            this.tbHigh1.Name = "tbHigh1";
-            this.tbHigh1.Size = new System.Drawing.Size(205, 20);
-            this.tbHigh1.TabIndex = 27;
+            this.tbAbi5.Location = new System.Drawing.Point(723, 196);
+            this.tbAbi5.Name = "tbAbi5";
+            this.tbAbi5.Size = new System.Drawing.Size(174, 20);
+            this.tbAbi5.TabIndex = 27;
             // 
-            // tbAdv2
+            // tbAbi4
             // 
-            this.tbAdv2.Location = new System.Drawing.Point(702, 169);
-            this.tbAdv2.Name = "tbAdv2";
-            this.tbAdv2.Size = new System.Drawing.Size(205, 20);
-            this.tbAdv2.TabIndex = 26;
+            this.tbAbi4.Location = new System.Drawing.Point(723, 170);
+            this.tbAbi4.Name = "tbAbi4";
+            this.tbAbi4.Size = new System.Drawing.Size(174, 20);
+            this.tbAbi4.TabIndex = 26;
             // 
-            // tbAdv1
+            // tbAbi3
             // 
-            this.tbAdv1.Location = new System.Drawing.Point(702, 143);
-            this.tbAdv1.Name = "tbAdv1";
-            this.tbAdv1.Size = new System.Drawing.Size(205, 20);
-            this.tbAdv1.TabIndex = 25;
+            this.tbAbi3.Location = new System.Drawing.Point(723, 144);
+            this.tbAbi3.Name = "tbAbi3";
+            this.tbAbi3.Size = new System.Drawing.Size(174, 20);
+            this.tbAbi3.TabIndex = 25;
             // 
-            // tbBasic2
+            // tbAbi2
             // 
-            this.tbBasic2.Location = new System.Drawing.Point(702, 117);
-            this.tbBasic2.Name = "tbBasic2";
-            this.tbBasic2.Size = new System.Drawing.Size(205, 20);
-            this.tbBasic2.TabIndex = 24;
+            this.tbAbi2.Location = new System.Drawing.Point(723, 118);
+            this.tbAbi2.Name = "tbAbi2";
+            this.tbAbi2.Size = new System.Drawing.Size(174, 20);
+            this.tbAbi2.TabIndex = 24;
             // 
-            // tbBasic1
+            // tbAbi1
             // 
-            this.tbBasic1.Location = new System.Drawing.Point(702, 91);
-            this.tbBasic1.Name = "tbBasic1";
-            this.tbBasic1.Size = new System.Drawing.Size(205, 20);
-            this.tbBasic1.TabIndex = 23;
+            this.tbAbi1.Location = new System.Drawing.Point(723, 92);
+            this.tbAbi1.Name = "tbAbi1";
+            this.tbAbi1.Size = new System.Drawing.Size(174, 20);
+            this.tbAbi1.TabIndex = 23;
             // 
             // cbMega
             // 
@@ -1156,11 +1111,56 @@
             this.listSkill.Size = new System.Drawing.Size(205, 134);
             this.listSkill.TabIndex = 136;
             // 
+            // cbAbi1
+            // 
+            this.cbAbi1.FormattingEnabled = true;
+            this.cbAbi1.Location = new System.Drawing.Point(642, 92);
+            this.cbAbi1.Name = "cbAbi1";
+            this.cbAbi1.Size = new System.Drawing.Size(75, 21);
+            this.cbAbi1.TabIndex = 139;
+            // 
+            // cbAbi2
+            // 
+            this.cbAbi2.FormattingEnabled = true;
+            this.cbAbi2.Location = new System.Drawing.Point(642, 118);
+            this.cbAbi2.Name = "cbAbi2";
+            this.cbAbi2.Size = new System.Drawing.Size(75, 21);
+            this.cbAbi2.TabIndex = 140;
+            // 
+            // cbAbi3
+            // 
+            this.cbAbi3.FormattingEnabled = true;
+            this.cbAbi3.Location = new System.Drawing.Point(642, 145);
+            this.cbAbi3.Name = "cbAbi3";
+            this.cbAbi3.Size = new System.Drawing.Size(75, 21);
+            this.cbAbi3.TabIndex = 141;
+            // 
+            // cbAbi4
+            // 
+            this.cbAbi4.FormattingEnabled = true;
+            this.cbAbi4.Location = new System.Drawing.Point(642, 170);
+            this.cbAbi4.Name = "cbAbi4";
+            this.cbAbi4.Size = new System.Drawing.Size(75, 21);
+            this.cbAbi4.TabIndex = 142;
+            // 
+            // cbAbi5
+            // 
+            this.cbAbi5.FormattingEnabled = true;
+            this.cbAbi5.Location = new System.Drawing.Point(642, 196);
+            this.cbAbi5.Name = "cbAbi5";
+            this.cbAbi5.Size = new System.Drawing.Size(75, 21);
+            this.cbAbi5.TabIndex = 143;
+            // 
             // FormAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1199, 650);
+            this.Controls.Add(this.cbAbi5);
+            this.Controls.Add(this.cbAbi4);
+            this.Controls.Add(this.cbAbi3);
+            this.Controls.Add(this.cbAbi2);
+            this.Controls.Add(this.cbAbi1);
             this.Controls.Add(this.btSkillClear);
             this.Controls.Add(this.pbExit);
             this.Controls.Add(this.btSkillAdd);
@@ -1183,11 +1183,11 @@
             this.Controls.Add(this.gbMega);
             this.Controls.Add(this.cbXY);
             this.Controls.Add(this.cbMega);
-            this.Controls.Add(this.tbBasic1);
-            this.Controls.Add(this.tbBasic2);
-            this.Controls.Add(this.tbAdv1);
-            this.Controls.Add(this.tbAdv2);
-            this.Controls.Add(this.tbHigh1);
+            this.Controls.Add(this.tbAbi1);
+            this.Controls.Add(this.tbAbi2);
+            this.Controls.Add(this.tbAbi3);
+            this.Controls.Add(this.tbAbi4);
+            this.Controls.Add(this.tbAbi5);
             this.Controls.Add(this.listMoves);
             this.Controls.Add(this.listEvo);
             this.Controls.Add(this.listCap);
@@ -1213,11 +1213,6 @@
             this.Controls.Add(this.label31);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.label23);
-            this.Controls.Add(this.label22);
-            this.Controls.Add(this.label21);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
@@ -1276,11 +1271,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
@@ -1306,11 +1296,11 @@
         private System.Windows.Forms.ListBox listCap;
         private System.Windows.Forms.ListBox listEvo;
         private System.Windows.Forms.ListBox listMoves;
-        private System.Windows.Forms.TextBox tbHigh1;
-        private System.Windows.Forms.TextBox tbAdv2;
-        private System.Windows.Forms.TextBox tbAdv1;
-        private System.Windows.Forms.TextBox tbBasic2;
-        private System.Windows.Forms.TextBox tbBasic1;
+        private System.Windows.Forms.TextBox tbAbi5;
+        private System.Windows.Forms.TextBox tbAbi4;
+        private System.Windows.Forms.TextBox tbAbi3;
+        private System.Windows.Forms.TextBox tbAbi2;
+        private System.Windows.Forms.TextBox tbAbi1;
         private System.Windows.Forms.CheckBox cbMega;
         private System.Windows.Forms.CheckBox cbXY;
         private System.Windows.Forms.TextBox tbMegaHP;
@@ -1372,5 +1362,10 @@
         private System.Windows.Forms.Button btSkillAdd;
         private System.Windows.Forms.TextBox tbSkillAdd;
         private System.Windows.Forms.ListBox listSkill;
+        private System.Windows.Forms.ComboBox cbAbi1;
+        private System.Windows.Forms.ComboBox cbAbi2;
+        private System.Windows.Forms.ComboBox cbAbi3;
+        private System.Windows.Forms.ComboBox cbAbi4;
+        private System.Windows.Forms.ComboBox cbAbi5;
     }
 }

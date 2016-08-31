@@ -29,6 +29,19 @@ namespace GenesisDex
             gbMega.Visible = false;
             gbMega2.Visible = false;
             gbRemove.Visible = false;
+            List<string> abilitymod = new List<string>();
+            abilitymod.Add("Basic");
+            abilitymod.Add("Advanced");
+            abilitymod.Add("High");
+            cbAbi1.DataSource = abilitymod;
+            cbAbi2.BindingContext = new BindingContext();
+            cbAbi2.DataSource = abilitymod;
+            cbAbi3.BindingContext = new BindingContext();
+            cbAbi3.DataSource = abilitymod;
+            cbAbi4.BindingContext = new BindingContext();
+            cbAbi4.DataSource = abilitymod;
+            cbAbi5.BindingContext = new BindingContext();
+            cbAbi5.DataSource = abilitymod;
         }
 
         private void btAddPKMN_Click(object sender, EventArgs e)
@@ -60,6 +73,15 @@ namespace GenesisDex
             int e = 0;
             int m = 0;
             int k = 0;
+            string legend;
+            if (cbLegend.Checked == true)
+            {
+                legend = "true";
+            }
+            else
+            {
+                legend = "false";
+            }
             XDocument doc = XDocument.Load(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Pokemon.xml");
             XElement pokemon = new XElement("Pokemon",
                 new XElement("number", tbNumber.Text),
@@ -78,13 +100,14 @@ namespace GenesisDex
                 new XElement("hatch", tbHatch.Text),
                 new XElement("diet", tbDiet.Text),
                 new XElement("habitat", tbHabitat.Text),
+                new XElement("legendary", legend),
                 new XElement("List" + tbNumber.Text,
                     new XElement("Ability",
-                        new XElement("basicability1", tbBasic1.Text),
-                        new XElement("basicability2", tbBasic2.Text),
-                        new XElement("advability1", tbAdv1.Text),
-                        new XElement("advability2", tbAdv2.Text),
-                        new XElement("highability", tbHigh1.Text)),
+                        new XElement(cbAbi1.Text + "Ability", tbAbi1.Text),
+                        new XElement(cbAbi2.Text + "Ability", tbAbi2.Text),
+                        new XElement(cbAbi3.Text + "Ability", tbAbi3.Text),
+                        new XElement(cbAbi4.Text + "Ability", tbAbi4.Text),
+                        new XElement(cbAbi5.Text + "Ability", tbAbi5.Text)),
                     new XElement("Skills",
                         from s in Skills
                         select new XElement("skill", new XAttribute("id", k++), s)),
@@ -167,14 +190,6 @@ namespace GenesisDex
                     doc.Root.Add(mega);
                 }
             }
-            if (cbLegend.Checked == true)
-            {
-                XElement megay = new XElement("legendary", "true");
-            }
-            else
-            {
-                XElement megay = new XElement("legendary", "false");
-            }
             doc.Descendants().Where(f => string.IsNullOrEmpty(f.Value)).Remove();
             doc.Save(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Pokemon.xml");
             DialogResult result = MessageBox.Show(tbName.Text + " has been added to the Pokedex!");
@@ -191,7 +206,8 @@ namespace GenesisDex
         {
             if (tbCapAdd.Text != "")
             {
-                tbCapAdd.Text = tbCapAdd.Text.Trim(' ');
+                string capAdd = tbCapAdd.Text.Trim(' ');
+                tbCapAdd.Text = capAdd;
                 listCap.Items.Add(tbCapAdd.Text);
                 CAP = listCap.Items.Count - 1;
                 tbCapAdd.Text = "";
@@ -202,7 +218,8 @@ namespace GenesisDex
         {
             if (tbEvoAdd.Text != "")
             {
-                tbEvoAdd.Text = tbEvoAdd.Text.Trim(' ');
+                string evoAdd = tbEvoAdd.Text.Trim(' ');
+                tbEvoAdd.Text = evoAdd;
                 listEvo.Items.Add(tbEvoAdd.Text);
                 EVO = listEvo.Items.Count - 1;
                 tbEvoAdd.Text = "";
@@ -213,7 +230,8 @@ namespace GenesisDex
         {
             if (tbMoveAdd.Text != "")
             {
-                tbMoveAdd.Text = tbMoveAdd.Text.Trim(' ');
+                string moveAdd = tbMoveAdd.Text.Trim(' ');
+                tbMoveAdd.Text = moveAdd;
                 listMoves.Items.Add(tbMoveAdd.Text);
                 MOV = listMoves.Items.Count - 1;
                 tbMoveAdd.Text = "";
@@ -386,7 +404,8 @@ namespace GenesisDex
         {
             if (tbSkillAdd.Text != "")
             {
-                tbSkillAdd.Text = tbSkillAdd.Text.Trim(' ');
+                string skillAdd = tbSkillAdd.Text.Trim(' ');
+                tbSkillAdd.Text = skillAdd;
                 listSkill.Items.Add(tbSkillAdd.Text);
                 SKI = listSkill.Items.Count - 1;
                 tbSkillAdd.Text = "";

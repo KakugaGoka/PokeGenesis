@@ -51,6 +51,7 @@ namespace GenesisDex
             InitializeComponent();
             pbPokeLocX = pbPokemon.Location.X;
             pbPokeLocY = pbPokemon.Location.Y;
+            imageDisplayed = 0;
             updateList.Add("updating...");
             pbY.Visible = false;
             pbX.Visible = false;
@@ -586,15 +587,26 @@ namespace GenesisDex
             {
                 rtbInfo1.Text += "-" + evoList[e].evo + Environment.NewLine;
             }
-            AbilityList abiXML = new AbilityList();
+            BasicAbiList basicXML = new BasicAbiList();
+            AdvAbiList advXML = new AdvAbiList();
+            HighAbiList highXML = new HighAbiList();
             abiList.Clear();
-            abiList = abiXML.createList(pokeList[i].number);
+            abiList = basicXML.createList(pokeList[i].number);
             rtbInfo1.Text += Environment.NewLine + "Abilities:";
-            if (abiList[0].basicability1 != null) { rtbInfo1.Text += Environment.NewLine + "Basic Ability - " + abiList[0].basicability1; }
-            if (abiList[0].basicability2 != null) { rtbInfo1.Text += Environment.NewLine + "Basic Ability - " + abiList[0].basicability2; }
-            if (abiList[0].advability1 != null) { rtbInfo1.Text += Environment.NewLine + "Advanced Ability - " + abiList[0].advability1; }
-            if (abiList[0].advability2 != null) { rtbInfo1.Text += Environment.NewLine + "Advanced Ability - " + abiList[0].advability2; }
-            if (abiList[0].highability != null) { rtbInfo1.Text += Environment.NewLine + "High Ability - " + abiList[0].highability; }
+            for (var s = 0; s < abiList.Count; s++)
+            {
+                rtbInfo1.Text += Environment.NewLine + "Basic Ability - " + abiList[s].basicability;
+            }
+            abiList = advXML.createList(pokeList[i].number);
+            for (var s = 0; s < abiList.Count; s++)
+            {
+                rtbInfo1.Text += Environment.NewLine + "Advanced Ability - " + abiList[s].advability;
+            }
+            abiList = highXML.createList(pokeList[i].number);
+            for (var s = 0; s < abiList.Count; s++)
+            {
+                rtbInfo1.Text += Environment.NewLine + "High Ability - " + abiList[s].highability;
+            }
             MegaList megaAbility = new MegaList();
             if (viewMega == true)
             {

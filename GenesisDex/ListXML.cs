@@ -55,10 +55,8 @@ namespace GenesisDexEngine
 
     class Ability
     {
-        public string basicability1 { get; set; }
-        public string basicability2 { get; set; }
-        public string advability1 { get; set; }
-        public string advability2 { get; set; }
+        public string basicability { get; set; }
+        public string advability { get; set; }
         public string highability { get; set; }
     }
 
@@ -316,7 +314,6 @@ class PokemonList
         public List<Move> createList(string decend)
         {
             string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\Pokemon.xml");
-            int m = 0;
             List<Move> idList = new List<Move>();
             XDocument doc = XDocument.Load(fileName);
             var query = from node in doc.Descendants("List" + decend).Descendants("Moves").Descendants("move")
@@ -329,21 +326,51 @@ class PokemonList
         }
     }
 
-    class AbilityList
+    class BasicAbiList
     {
         public List<Ability> createList(string decend)
         {
             string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\Pokemon.xml");
             List<Ability> idList = new List<Ability>();
             XDocument doc = XDocument.Load(fileName);
-            var query = from node in doc.Descendants("List" + decend).Descendants("Ability")
+            var query = from node in doc.Descendants("List" + decend).Descendants("Ability").Descendants("BasicAbility")
                         select new Ability
                         {
-                            basicability1 = (string)node.Element("basicability1"),
-                            basicability2 = (string)node.Element("basicability2"),
-                            advability1 = (string)node.Element("advability1"),
-                            advability2 = (string)node.Element("advability2"),
-                            highability = (string)node.Element("highability")
+                            basicability = (string)node.Value
+                        };
+            idList = query.ToList();
+            return idList;
+        }
+    }
+
+    class AdvAbiList
+    {
+        public List<Ability> createList(string decend)
+        {
+            string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\Pokemon.xml");
+            List<Ability> idList = new List<Ability>();
+            XDocument doc = XDocument.Load(fileName);
+            var query = from node in doc.Descendants("List" + decend).Descendants("Ability").Descendants("AdvancedAbility")
+                        select new Ability
+                        {
+                            advability = (string)node.Value
+                        };
+            idList = query.ToList();
+            return idList;
+        }
+    }
+
+    class HighAbiList
+    {
+        public List<Ability> createList(string decend)
+        {
+            string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\Pokemon.xml");
+            List<Ability> idList = new List<Ability>();
+            XDocument doc = XDocument.Load(fileName);
+            var query = from node in doc.Descendants("List" + decend).Descendants("Ability").Descendants("HighAbility")
+                        select new Ability
+                        {
+                            highability = (string)node.Value
                         };
             idList = query.ToList();
             return idList;
