@@ -3165,7 +3165,7 @@
   </Pokemon>
   <Pokemon>
     <number>709</number>
-    <id>Trevanant</id>
+    <id>Trevenant</id>
     <type>Ghost / Grass</type>
     <hp>9</hp>
     <atk>11</atk>
@@ -3207,7 +3207,7 @@
       </Capability>
       <Evolution>
         <evo id="0">1 - Phantump</evo>
-        <evo id="1">2 - Trevanant Minimum 25</evo>
+        <evo id="1">2 - Trevenant Minimum 25</evo>
       </Evolution>
       <Moves>
         <move id="0">1 Tackle - Normal</move>
