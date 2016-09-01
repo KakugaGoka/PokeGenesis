@@ -72,15 +72,6 @@ namespace GenesisDexEngine
         public string skill { get; set; }
     }
 
-    class OldSkill
-    {
-        public string skill { get; set; }
-    }
-    class OldAbility
-    {
-        public string ability { get; set; }
-    }
-
     class Move
     {
         public string move { get; set; }

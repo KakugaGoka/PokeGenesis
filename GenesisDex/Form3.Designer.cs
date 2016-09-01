@@ -298,7 +298,7 @@
             this.pkHasItem.BackColor = System.Drawing.Color.Silver;
             this.pkHasItem.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.pkHasItem.FlatAppearance.BorderSize = 5;
-            this.pkHasItem.Location = new System.Drawing.Point(230, 450);
+            this.pkHasItem.Location = new System.Drawing.Point(222, 473);
             this.pkHasItem.Name = "pkHasItem";
             this.pkHasItem.Size = new System.Drawing.Size(126, 17);
             this.pkHasItem.TabIndex = 55;
@@ -311,7 +311,7 @@
             this.pkCanBeShiny.BackColor = System.Drawing.Color.Silver;
             this.pkCanBeShiny.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.pkCanBeShiny.FlatAppearance.BorderSize = 5;
-            this.pkCanBeShiny.Location = new System.Drawing.Point(230, 477);
+            this.pkCanBeShiny.Location = new System.Drawing.Point(222, 500);
             this.pkCanBeShiny.Name = "pkCanBeShiny";
             this.pkCanBeShiny.Size = new System.Drawing.Size(105, 17);
             this.pkCanBeShiny.TabIndex = 57;
@@ -354,10 +354,10 @@
             this.pkGasp.BackColor = System.Drawing.Color.Black;
             this.pkGasp.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pkGasp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.pkGasp.Location = new System.Drawing.Point(204, 392);
+            this.pkGasp.Location = new System.Drawing.Point(205, 382);
             this.pkGasp.Name = "pkGasp";
             this.pkGasp.ReadOnly = true;
-            this.pkGasp.Size = new System.Drawing.Size(173, 48);
+            this.pkGasp.Size = new System.Drawing.Size(173, 82);
             this.pkGasp.TabIndex = 61;
             this.pkGasp.Text = "";
             // 
@@ -403,7 +403,7 @@
             this.pkCanBeLegend.BackColor = System.Drawing.Color.Silver;
             this.pkCanBeLegend.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.pkCanBeLegend.FlatAppearance.BorderSize = 5;
-            this.pkCanBeLegend.Location = new System.Drawing.Point(230, 504);
+            this.pkCanBeLegend.Location = new System.Drawing.Point(222, 527);
             this.pkCanBeLegend.Name = "pkCanBeLegend";
             this.pkCanBeLegend.Size = new System.Drawing.Size(137, 17);
             this.pkCanBeLegend.TabIndex = 65;

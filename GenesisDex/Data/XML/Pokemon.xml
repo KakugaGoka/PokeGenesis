@@ -2937,8 +2937,8 @@
         <cap id="6">Mountable 1</cap>
       </Capability>
       <Evolution>
-        <evo id="0">1 - Noibat</evo>
-        <evo id="1">2 - Noivern Minimum 35</evo>
+        <evo id="0">Noibat</evo>
+        <evo id="1">Noivern Minimum 35</evo>
       </Evolution>
       <Moves>
         <move id="0">1 Scratch - Normal</move>
@@ -2951,8 +2951,8 @@
         <move id="7">18 Agility - Psychic</move>
         <move id="8">23 Air Cutter - Flying</move>
         <move id="9">27 Roost - Flying</move>
-        <move id="10">31 - Razor Wind - Normal</move>
-        <move id="11">35 - Tailwind - Flying</move>
+        <move id="10">31 Razor Wind - Normal</move>
+        <move id="11">35 Tailwind - Flying</move>
         <move id="12">40 Whirlwind - Normal</move>
         <move id="13">43 Super Fang - Normal</move>
         <move id="14">53 Air Slash - Flying</move>
@@ -3006,8 +3006,8 @@
         <cap id="6">Underdog</cap>
       </Capability>
       <Evolution>
-        <evo id="0">1 - Noibat</evo>
-        <evo id="1">2 - Noivern Minimum 35</evo>
+        <evo id="0">Noibat</evo>
+        <evo id="1">Noivern Minimum 35</evo>
       </Evolution>
       <Moves>
         <move id="0">1 Scratch - Normal</move>
@@ -3073,8 +3073,8 @@
         <cap id="6">Underdog</cap>
       </Capability>
       <Evolution>
-        <evo id="0">1 - Bergmite</evo>
-        <evo id="1">2 - Avalugg Minimum 35</evo>
+        <evo id="0">Bergmite</evo>
+        <evo id="1">Avalugg Minimum 35</evo>
       </Evolution>
       <Moves>
         <move id="0">1 Tackle - Normal</move>
@@ -3139,8 +3139,8 @@
         <cap id="6">Mountable 3</cap>
       </Capability>
       <Evolution>
-        <evo id="0">1 - Bergmite</evo>
-        <evo id="1">2 - Avalugg Minimum 35</evo>
+        <evo id="0">Bergmite</evo>
+        <evo id="1">Avalugg Minimum 35</evo>
       </Evolution>
       <Moves>
         <move id="0">1 Tackle - Normal</move>
@@ -3206,8 +3206,8 @@
         <cap id="6">Invisibility</cap>
       </Capability>
       <Evolution>
-        <evo id="0">1 - Phantump</evo>
-        <evo id="1">2 - Trevenant Minimum 25</evo>
+        <evo id="0">Phantump</evo>
+        <evo id="1">Trevenant Minimum 25</evo>
       </Evolution>
       <Moves>
         <move id="0">1 Tackle - Normal</move>
@@ -3275,8 +3275,8 @@
         <cap id="9">Underdog</cap>
       </Capability>
       <Evolution>
-        <evo id="0">1 - Phantump</evo>
-        <evo id="1">2 - Trevenant Minimum 25</evo>
+        <evo id="0">Phantump</evo>
+        <evo id="1">Trevenant Minimum 25</evo>
       </Evolution>
       <Moves>
         <move id="0">1 Tackle - Normal</move>
@@ -3339,7 +3339,7 @@
         <cap id="5">Dead Silent</cap>
       </Capability>
       <Evolution>
-        <evo id="0">1 - Klefki</evo>
+        <evo id="0">Klefki</evo>
       </Evolution>
       <Moves>
         <move id="0">1 Tackle - Normal</move>
@@ -3402,9 +3402,9 @@
         <cap id="4">Amorphous</cap>
       </Capability>
       <Evolution>
-        <evo id="0">1 - Goomy</evo>
-        <evo id="1">2 - Sligoo Minimum 40</evo>
-        <evo id="2">3- Goodra Minimum 50 in Rain</evo>
+        <evo id="0">Goomy</evo>
+        <evo id="1">Sligoo Minimum 40</evo>
+        <evo id="2">Goodra Minimum 50 in Rain</evo>
       </Evolution>
       <Moves>
         <move id="0">1 Tackle - Normal</move>
@@ -3467,9 +3467,9 @@
         <cap id="6">Underdog</cap>
       </Capability>
       <Evolution>
-        <evo id="0">1 - Goomy</evo>
-        <evo id="1">2 - Sligoo Minimum 40</evo>
-        <evo id="2">3 - Goodra Minimum 50 in Rain</evo>
+        <evo id="0">Goomy</evo>
+        <evo id="1">Sligoo Minimum 40</evo>
+        <evo id="2">Goodra Minimum 50 in Rain</evo>
       </Evolution>
       <Moves>
         <move id="0">1 Tackle - Normal</move>

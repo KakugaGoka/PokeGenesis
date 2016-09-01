@@ -53,8 +53,6 @@ namespace GenesisDex
         List<PokeBall> pokeballList = new List<PokeBall>();
         PokeBallList pokeballXML = new PokeBallList();
         List<TM> HMList = new List<TM>();
-        string Item { get; set; }
-        string Item2 { get; set; }
         bool getItem2 = false;
         List<string> pokeDex = new List<string>();
         List<string> moves = new List<string>();
@@ -68,13 +66,13 @@ namespace GenesisDex
         List<Image> AllImages = new List<Image>();
         List<Pokemon> AllPokemon = new List<Pokemon>();
         List<int> AllLevels = new List<int>();
-        List<Items> Items = new List<Items>();
-        List<List<Items>> AllItems = new List<List<Items>>();
-        List<string> ItemDesc = new List<string>();
-        List<List<string>> AllItemDesc = new List<List<string>>();
+        List<Image> AllItems1 = new List<Image>();
+        List<Image> AllItems2 = new List<Image>();
+        List<string> AllDesc1 = new List<string>();
+        List<string> AllDesc2 = new List<string>();
+        List<string[]> Info = new List<string[]>();
         int Current = 0;
         int Amount = 0;
-
         bool isShiny = false;
         string typeShiny { get; set; }
 
@@ -181,27 +179,16 @@ namespace GenesisDex
             AllImages.Clear();
             AllPokemon.Clear();
             AllNatures.Clear();
-            Items.Clear();
-            AllItems.Clear();
-            ItemDesc.Clear();
-            AllItemDesc.Clear();
+            AllItems1.Clear();
+            AllItems2.Clear();
+            AllDesc1.Clear();
+            AllDesc2.Clear();
             AllLevels.Clear();
-            if (pkAmount.Value > 1)
-            {
-                pbPokeRight.Visible = true;
-                pbPokeLeft.Visible = true;
-            }
-            else
-            {
-                pbPokeRight.Visible = false;
-                pbPokeLeft.Visible = false;
-            }
+            Info.Clear();
             Amount = Convert.ToInt32(pkAmount.Value);
             for (var z = 0; z < Amount; z++)
             {
                 Pokemon HeyYou = null;
-                Items.Clear();
-                ItemDesc.Clear();
                 pkGasp.Clear();
                 infoForward.Visible = true;
                 infoBack.Visible = true;
@@ -239,6 +226,7 @@ namespace GenesisDex
                 Pokemon throwspokeball = GetGender(Pikachu); if (throwspokeball == null) { return; }
                 Pokemon PokeBall = LevelPokemon(throwspokeball, Level); if (PokeBall == null) { return; }
                 Pokemon Final = PokeBall;
+                pkGasp.Text += "It is a " + Final.id + Environment.NewLine;
                 if (pkCanBeShiny.Checked == true)
                 {
                     int i = rng.Next(1, 101);
@@ -246,7 +234,7 @@ namespace GenesisDex
                     {
                         pkGasp.Text += "It's a Shiny!" + Environment.NewLine;
                         isShiny = true;
-                        Final = GetShiny(PokeBall);
+                        Final = GetShiny(Final);
                         AllImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + PokeBall.number + ".gif"));
                     }
                     else
@@ -262,24 +250,13 @@ namespace GenesisDex
                 if (pkHasItem.Checked == true)
                 {
                     GetItem();
-                    AllItems.Add(Items);
                 }
                 else
                 {
-                    Items.Add(new GenesisDexEngine.Items
-                    {
-                        id = "Blank",
-                        desc = "There are no items."
-                    });
-                    AllItems.Add(Items);
-                }
-                if (Item != null && Item2 != null)
-                {
-                    pkGasp.Text += "It is carrying stuff!" + Environment.NewLine;
-                }
-                else if (Item != null)
-                {
-                    pkGasp.Text += "It is holding something!" + Environment.NewLine;
+                    AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Blank.png"));
+                    AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Blank.png"));
+                    AllDesc1.Add("There are no items.");
+                    AllDesc2.Add("-");
                 }
                 IChooseYou = Final;
                 AllPokemon.Add(IChooseYou);
@@ -291,11 +268,24 @@ namespace GenesisDex
                 AllAbilities.Add(ability);
                 GetSkills();
                 AllSkills.Add(skill);
+                string[] info = pkGasp.Lines;
+                Info.Add(info);
             }
             Current = 0;
             pbPokemon.Image = AllImages[Current];
             SetImage();
+            if (AllPokemon.Count > 1)
+            {
+                pbPokeRight.Visible = true;
+                pbPokeLeft.Visible = true;
+            }
+            else
+            {
+                pbPokeRight.Visible = false;
+                pbPokeLeft.Visible = false;
+            }
             UpdatePage();
+            SetGasp();
 
                 
         }
@@ -327,9 +317,7 @@ namespace GenesisDex
                     evoList = evoXML.createList(pokeList[e].number);
                     for (var x = 0; x < evoList.Count; x++)
                     {
-                        string[] split = evoList[x].evo.Split(' ');
-                        string name = split[0];
-                        if (pokeList[e].id == name)
+                        if (evoList[x].evo.Contains(pokeList[e].id) == true)
                         {
                             if (evoList[x].id != sA - 1)
                             {
@@ -611,30 +599,26 @@ namespace GenesisDex
             pkItem2.Visible = false;
             rtbInfo2.Visible = false;
             pkItem.Visible = true;
-            List<Items> Check = new List<Items>();
-            List<string> Description = new List<string>();
-            Check = AllItems[Current];
-            pkItem.Image = pkItem2.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\" + Check[0].id + ".png");
+            pkItem.Image = null;
+            pkItem.Image = AllItems1[Current];
             rtbInfo1.Text = Environment.NewLine +
                 Environment.NewLine +
                 Environment.NewLine +
                 Environment.NewLine +
                 Environment.NewLine +
                 Environment.NewLine +
-                Check[0].desc;
-            if (Check.Count > 1)
-            {
-                rtbInfo2.Visible = true;
-                pkItem2.Visible = true;
-                pkItem2.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\" + Check[1].id + ".png");
-                rtbInfo2.Text = Environment.NewLine +
+                AllDesc1[Current];
+            rtbInfo2.Visible = true;
+            pkItem2.Visible = true;
+            pkItem2.Image = null;
+            pkItem2.Image = AllItems2[Current];
+            rtbInfo2.Text = Environment.NewLine +
                 Environment.NewLine +
                 Environment.NewLine +
                 Environment.NewLine +
                 Environment.NewLine +
                 Environment.NewLine +
-                Check[1].desc;
-            }
+                AllDesc2[Current];
 
         }
 
@@ -711,8 +695,12 @@ namespace GenesisDex
             List<string> tempskill = new List<string>();
             skill.Clear();
             var values = Enumerable.Range(0, 6).OrderBy(x => Guid.NewGuid().GetHashCode()).ToArray();
-            int sk = rng.Next(1, 4);
-            if (sk == 1)
+            int sk = rng.Next(0, 4);
+            if (sk == 0)
+            {
+                return;
+            }
+            else if (sk == 1)
             {
                 skill.Add(SkillUp(values[0]));
                 skill.Add(SkillDn(values[1]));
@@ -837,18 +825,14 @@ namespace GenesisDex
             int i = rng.Next(1, 101);
             if (i < 40)
             {
-                i = rng.Next(1, 11);
-                if (i == 10) { getItem2 = true; GetItem1(); }
-                else { GetItem1(); }
+                GetItem1(); 
             }
             else
             {
-                Items.Add(new GenesisDexEngine.Items
-                {
-                    id = "Blank",
-                    desc = "There are no items."
-                });
-                AllItems.Add(Items);
+                AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Blank.png"));
+                AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Blank.png"));
+                AllDesc1.Add("There are no items.");
+                AllDesc2.Add("-");
                 return;
             }
         }
@@ -860,7 +844,19 @@ namespace GenesisDex
             else if (i < 89) { GetPokeball(); }
             else if (i < 99) { GetTM(); }
             else if (i < 101) { GetHM(); }
-            if (getItem2 == true) { GetItem2(); }
+            i = rng.Next(1, 11);
+            if (i == 10)
+            {
+                pkGasp.Text += "It has a few things!" + Environment.NewLine;
+                getItem2 = true;
+                GetItem2();
+            }
+            else
+            {
+                pkGasp.Text += "It has something!" + Environment.NewLine;
+                AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Blank.png"));
+                AllDesc2.Add("-");
+            }
         }
 
         private void GetItem2()
@@ -876,52 +872,64 @@ namespace GenesisDex
         {
             berryList = berryXML.createList("Berry", "Berry");
             int i = rng.Next(0, berryList.Count);
-            ItemDesc.Add(berryList[i].id + ": " + berryList[i].desc);
-            Items item = new Items
+            if (getItem2 == true)
             {
-                id = "Berry\\" + berryList[i].id,
-                desc = berryList[i].desc
-            };
-            Items.Add(item);
+                AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Berry\\" + berryList[i].id + ".png"));
+                AllDesc2.Add(berryList[i].id + ": " + berryList[i].desc);
+            }
+            else
+            {
+                AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Berry\\" + berryList[i].id + ".png"));
+                AllDesc1.Add(berryList[i].id + ": " + berryList[i].desc);
+            }
         }
 
         private void GetPokeball()
         {
             pokeballList = pokeballXML.createList("Pokeball", "PokeBall");
             int i = rng.Next(0, pokeballList.Count);
-            ItemDesc.Add(pokeballList[i].id + ": " + pokeballList[i].desc);
-            Items item = new Items
+            if (getItem2 == true)
             {
-                id = "PokeBall\\" + pokeballList[i].id,
-                desc = pokeballList[i].desc
-            };
-            Items.Add(item);
+                AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\PokeBall\\" + pokeballList[i].id + ".png"));
+                AllDesc2.Add(pokeballList[i].id + ": " + pokeballList[i].desc);
+            }
+            else
+            {
+                AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\PokeBall\\" + pokeballList[i].id + ".png"));
+                AllDesc1.Add(pokeballList[i].id + ": " + pokeballList[i].desc);
+            }
         }
 
         private void GetTM()
         {
             TMList = TMXML.createList("TM-HM", "TM");
             int i = rng.Next(0, TMList.Count);
-            ItemDesc.Add("TM" + TMList[i].number + " " + TMList[i].id + " - " + TMList[i].type);
-            Items item = new Items
+            if (getItem2 == true)
             {
-                id = "TM-HM\\" + TMList[i].id,
-                desc = "TM" + TMList[i].number + " " + TMList[i].id + " - " + TMList[i].type
-            };
-            Items.Add(item);
+                AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\TM-HM\\" + TMList[i].type + ".png"));
+                AllDesc2.Add("TM" + TMList[i].number + " " + TMList[i].id + " - " + TMList[i].type);
+            }
+            else
+            {
+                AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\TM-HM\\" + TMList[i].type + ".png"));
+                AllDesc1.Add("TM" + TMList[i].number + " " + TMList[i].id + " - " + TMList[i].type);
+            }
         }
 
         private void GetHM()
         {
             HMList = TMXML.createList("TM-HM", "HM");
             int i = rng.Next(0, HMList.Count);
-            ItemDesc.Add("HM" + HMList[i].number + " " + HMList[i].id + " - " + HMList[i].type);
-            Items item = new Items
+            if (getItem2 == true)
             {
-                id = "TM-HM\\" + HMList[i].id,
-                desc = "HM" + HMList[i].number + " " + HMList[i].id + " - " + HMList[i].type
-            };
-            Items.Add(item);
+                AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\TM-HM\\" + HMList[i].type + ".png"));
+                AllDesc2.Add("HM" + HMList[i].number + " " + HMList[i].id + " - " + HMList[i].type);
+            }
+            else
+            {
+                AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\TM-HM\\" + HMList[i].type + ".png"));
+                AllDesc1.Add("HM" + HMList[i].number + " " + HMList[i].id + " - " + HMList[i].type);
+            }
         }
 
         private void pkLevelMin_ValueChanged(object sender, EventArgs e)
@@ -964,6 +972,7 @@ namespace GenesisDex
             }
             pbPokemon.Image = AllImages[Current];
             SetImage();
+            SetGasp();
             UpdatePage();
         }
 
@@ -979,7 +988,17 @@ namespace GenesisDex
             }
             pbPokemon.Image = AllImages[Current];
             SetImage();
+            SetGasp();
             UpdatePage();
+        }
+
+        private void SetGasp()
+        {
+            pkGasp.Text = "";
+            foreach (string s in Info[Current])
+            {
+                pkGasp.Text += s + Environment.NewLine;
+            }
         }
     }
 }
