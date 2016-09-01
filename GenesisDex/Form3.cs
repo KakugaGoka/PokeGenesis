@@ -645,6 +645,9 @@ namespace GenesisDex
 
         private void GetAbilities()
         {
+            abiList = new List<Ability>();
+            ability = new List<string>();
+            abiList.Clear();
             abiList = basicXML.createList(IChooseYou.number);
             ability.Clear();
             int i = rng.Next(0, abiList.Count);
@@ -691,14 +694,21 @@ namespace GenesisDex
 
         private void GetSkills()
         {
+            skillList = new List<Skill>();
+            skill = new List<string>();
+            skillList.Clear();
             skillList = skillXML.createList(IChooseYou.number);
-            List<string> tempskill = new List<string>();
             skill.Clear();
             var values = Enumerable.Range(0, 6).OrderBy(x => Guid.NewGuid().GetHashCode()).ToArray();
             int sk = rng.Next(0, 4);
             if (sk == 0)
             {
-                return;
+                skill.Add(skillList[values[0]].skill);
+                skill.Add(skillList[values[1]].skill);
+                skill.Add(skillList[values[2]].skill);
+                skill.Add(skillList[values[3]].skill);
+                skill.Add(skillList[values[4]].skill);
+                skill.Add(skillList[values[5]].skill);
             }
             else if (sk == 1)
             {
