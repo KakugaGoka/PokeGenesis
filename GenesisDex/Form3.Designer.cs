@@ -62,6 +62,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.pbPokeRight = new System.Windows.Forms.PictureBox();
             this.pbPokeLeft = new System.Windows.Forms.PictureBox();
+            this.tbPokeCount = new System.Windows.Forms.RichTextBox();
+            this.tbPageCount = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbOverlay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoForward)).BeginInit();
@@ -93,7 +95,7 @@
             // 
             this.infoBack.BackColor = System.Drawing.Color.Transparent;
             this.infoBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("infoBack.BackgroundImage")));
-            this.infoBack.Location = new System.Drawing.Point(468, 551);
+            this.infoBack.Location = new System.Drawing.Point(561, 551);
             this.infoBack.Name = "infoBack";
             this.infoBack.Size = new System.Drawing.Size(38, 35);
             this.infoBack.TabIndex = 37;
@@ -104,7 +106,7 @@
             // 
             this.infoForward.BackColor = System.Drawing.Color.Transparent;
             this.infoForward.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("infoForward.BackgroundImage")));
-            this.infoForward.Location = new System.Drawing.Point(729, 551);
+            this.infoForward.Location = new System.Drawing.Point(636, 551);
             this.infoForward.Name = "infoForward";
             this.infoForward.Size = new System.Drawing.Size(33, 35);
             this.infoForward.TabIndex = 36;
@@ -120,7 +122,7 @@
             this.rtbInfo1.Location = new System.Drawing.Point(468, 158);
             this.rtbInfo1.Name = "rtbInfo1";
             this.rtbInfo1.ReadOnly = true;
-            this.rtbInfo1.Size = new System.Drawing.Size(294, 388);
+            this.rtbInfo1.Size = new System.Drawing.Size(294, 387);
             this.rtbInfo1.TabIndex = 35;
             this.rtbInfo1.Text = "";
             // 
@@ -393,7 +395,7 @@
             this.rtbInfo2.Location = new System.Drawing.Point(470, 351);
             this.rtbInfo2.Name = "rtbInfo2";
             this.rtbInfo2.ReadOnly = true;
-            this.rtbInfo2.Size = new System.Drawing.Size(290, 191);
+            this.rtbInfo2.Size = new System.Drawing.Size(290, 190);
             this.rtbInfo2.TabIndex = 64;
             this.rtbInfo2.Text = "";
             // 
@@ -434,11 +436,6 @@
             // pkAmount
             // 
             this.pkAmount.Location = new System.Drawing.Point(94, 527);
-            this.pkAmount.Maximum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
             this.pkAmount.Minimum = new decimal(new int[] {
             1,
             0,
@@ -467,7 +464,7 @@
             // pbPokeRight
             // 
             this.pbPokeRight.BackColor = System.Drawing.Color.Transparent;
-            this.pbPokeRight.Location = new System.Drawing.Point(294, 255);
+            this.pbPokeRight.Location = new System.Drawing.Point(294, 254);
             this.pbPokeRight.Name = "pbPokeRight";
             this.pbPokeRight.Size = new System.Drawing.Size(54, 50);
             this.pbPokeRight.TabIndex = 71;
@@ -477,12 +474,38 @@
             // pbPokeLeft
             // 
             this.pbPokeLeft.BackColor = System.Drawing.Color.Transparent;
-            this.pbPokeLeft.Location = new System.Drawing.Point(55, 255);
+            this.pbPokeLeft.Location = new System.Drawing.Point(55, 254);
             this.pbPokeLeft.Name = "pbPokeLeft";
             this.pbPokeLeft.Size = new System.Drawing.Size(54, 50);
             this.pbPokeLeft.TabIndex = 70;
             this.pbPokeLeft.TabStop = false;
             this.pbPokeLeft.Click += new System.EventHandler(this.pbPokeLeft_Click);
+            // 
+            // tbPokeCount
+            // 
+            this.tbPokeCount.AcceptsTab = true;
+            this.tbPokeCount.BackColor = System.Drawing.Color.Black;
+            this.tbPokeCount.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPokeCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.tbPokeCount.Location = new System.Drawing.Point(285, 108);
+            this.tbPokeCount.Name = "tbPokeCount";
+            this.tbPokeCount.ReadOnly = true;
+            this.tbPokeCount.Size = new System.Drawing.Size(93, 25);
+            this.tbPokeCount.TabIndex = 72;
+            this.tbPokeCount.Text = "";
+            // 
+            // tbPageCount
+            // 
+            this.tbPageCount.AcceptsTab = true;
+            this.tbPageCount.BackColor = System.Drawing.Color.Black;
+            this.tbPageCount.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPageCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.tbPageCount.Location = new System.Drawing.Point(602, 551);
+            this.tbPageCount.Name = "tbPageCount";
+            this.tbPageCount.ReadOnly = true;
+            this.tbPageCount.Size = new System.Drawing.Size(28, 25);
+            this.tbPageCount.TabIndex = 73;
+            this.tbPageCount.Text = "";
             // 
             // FormScan
             // 
@@ -491,6 +514,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = global::GenesisDex.Properties.Resources.MainMenu;
             this.ClientSize = new System.Drawing.Size(822, 616);
+            this.Controls.Add(this.tbPageCount);
+            this.Controls.Add(this.tbPokeCount);
             this.Controls.Add(this.pbPokeRight);
             this.Controls.Add(this.pbPokeLeft);
             this.Controls.Add(this.label8);
@@ -587,5 +612,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pbPokeRight;
         private System.Windows.Forms.PictureBox pbPokeLeft;
+        private System.Windows.Forms.RichTextBox tbPokeCount;
+        private System.Windows.Forms.RichTextBox tbPageCount;
     }
 }

@@ -44,6 +44,7 @@
             this.pbOverlay = new System.Windows.Forms.PictureBox();
             this.pbScan = new System.Windows.Forms.PictureBox();
             this.tbSearch = new System.Windows.Forms.TextBox();
+            this.tbPageCount = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMega)).BeginInit();
@@ -123,7 +124,7 @@
             // 
             this.infoForward.BackColor = System.Drawing.Color.Transparent;
             this.infoForward.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("infoForward.BackgroundImage")));
-            this.infoForward.Location = new System.Drawing.Point(729, 551);
+            this.infoForward.Location = new System.Drawing.Point(636, 551);
             this.infoForward.Name = "infoForward";
             this.infoForward.Size = new System.Drawing.Size(33, 35);
             this.infoForward.TabIndex = 23;
@@ -136,7 +137,7 @@
             // 
             this.infoBack.BackColor = System.Drawing.Color.Transparent;
             this.infoBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("infoBack.BackgroundImage")));
-            this.infoBack.Location = new System.Drawing.Point(468, 551);
+            this.infoBack.Location = new System.Drawing.Point(561, 551);
             this.infoBack.Name = "infoBack";
             this.infoBack.Size = new System.Drawing.Size(38, 35);
             this.infoBack.TabIndex = 24;
@@ -236,6 +237,19 @@
             this.tbSearch.Click += new System.EventHandler(this.tbSearch_Click);
             this.tbSearch.TextChanged += new System.EventHandler(this.tbSearch_TextChanged);
             // 
+            // tbPageCount
+            // 
+            this.tbPageCount.AcceptsTab = true;
+            this.tbPageCount.BackColor = System.Drawing.Color.Black;
+            this.tbPageCount.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPageCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.tbPageCount.Location = new System.Drawing.Point(602, 551);
+            this.tbPageCount.Name = "tbPageCount";
+            this.tbPageCount.ReadOnly = true;
+            this.tbPageCount.Size = new System.Drawing.Size(28, 25);
+            this.tbPageCount.TabIndex = 74;
+            this.tbPageCount.Text = "";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -243,6 +257,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(822, 616);
+            this.Controls.Add(this.tbPageCount);
             this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.pbScan);
             this.Controls.Add(this.pbOverlay);
@@ -302,6 +317,7 @@
         private System.Windows.Forms.PictureBox pbOverlay;
         private System.Windows.Forms.PictureBox pbScan;
         private System.Windows.Forms.TextBox tbSearch;
+        private System.Windows.Forms.RichTextBox tbPageCount;
     }
 }
 

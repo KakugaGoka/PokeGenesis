@@ -649,6 +649,7 @@ namespace GenesisDex
         {
             if (page == 5) { page = 1; }
             if (page == 0) { page = 4; }
+            tbPageCount.Text = page.ToString() + "/4";
             if (page == 1) { writeInfo(); }
             if (page == 2) { writeStats(); }
             if (page == 3) { writeMoves(); }

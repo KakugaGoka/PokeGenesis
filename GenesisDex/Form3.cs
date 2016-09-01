@@ -272,6 +272,7 @@ namespace GenesisDex
                 Info.Add(info);
             }
             Current = 0;
+            tbPokeCount.Text = (Current + 1).ToString() + "/" + Amount.ToString();
             pbPokemon.Image = AllImages[Current];
             SetImage();
             if (AllPokemon.Count > 1)
@@ -638,6 +639,7 @@ namespace GenesisDex
 
         private void UpdatePage()
         {
+            tbPageCount.Text = Page + "/3";
             if (Page == 1) { WriteInfo(); }
             if (Page == 2) { WriteMoves(); }
             if (Page == 3) { WriteItems(); }
@@ -980,6 +982,7 @@ namespace GenesisDex
             {
                 Current--;
             }
+            tbPokeCount.Text = (Current + 1).ToString() + "/" + Amount.ToString();
             pbPokemon.Image = AllImages[Current];
             SetImage();
             SetGasp();
@@ -996,6 +999,7 @@ namespace GenesisDex
             {
                 Current++;
             }
+            tbPokeCount.Text = (Current + 1).ToString() + "/" + Amount.ToString();
             pbPokemon.Image = AllImages[Current];
             SetImage();
             SetGasp();
