@@ -253,6 +253,7 @@ namespace GenesisDex
             int pokeH = (pokePic.Height);
             int pbH = pbPokemon.Height;
             pbPokemon.Location = new Point(pbPokeLocX, (pbPokeLocY + ((pbH/2) - (pokeH/2))));
+            imageDisplayed = 0;
             updatePage();
         }
 

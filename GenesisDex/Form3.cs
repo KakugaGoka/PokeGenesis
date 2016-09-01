@@ -55,12 +55,26 @@ namespace GenesisDex
         List<TM> HMList = new List<TM>();
         string Item { get; set; }
         string Item2 { get; set; }
-        bool isItem2 = false;
+        bool getItem2 = false;
         List<string> pokeDex = new List<string>();
         List<string> moves = new List<string>();
         List<string> ability = new List<string>();
         List<string> skill = new List<string>();
         List<string> stages = new List<string>();
+        List<List<string>> AllMoves = new List<List<string>>();
+        List<List<string>> AllAbilities = new List<List<string>>();
+        List<List<string>> AllSkills = new List<List<string>>();
+        List<string> AllNatures = new List<string>();
+        List<Image> AllImages = new List<Image>();
+        List<Pokemon> AllPokemon = new List<Pokemon>();
+        List<int> AllLevels = new List<int>();
+        List<Items> Items = new List<Items>();
+        List<List<Items>> AllItems = new List<List<Items>>();
+        List<string> ItemDesc = new List<string>();
+        List<List<string>> AllItemDesc = new List<List<string>>();
+        int Current = 0;
+        int Amount = 0;
+
         bool isShiny = false;
         string typeShiny { get; set; }
 
@@ -69,6 +83,10 @@ namespace GenesisDex
             InitializeComponent();
             rtbInfo2.Visible = false;
             pkGasp.Text = "";
+            pbPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonLeft.gif");
+            pbPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRight.gif");
+            pbPokeLeft.Visible = false;
+            pbPokeRight.Visible = false;
             pbPokeLocX = pbPokemon.Location.X;
             pbPokeLocY = pbPokemon.Location.Y;
             pokeList = pokeXML.createList("Pokemon");
@@ -157,88 +175,127 @@ namespace GenesisDex
 
         private void pbScanPokemon_Click(object sender, EventArgs e)
         {
-            Pokemon HeyYou = null;
-            pkGasp.Clear();
-            infoForward.Visible = true;
-            infoBack.Visible = true;
-            isShiny = false;
-            pkLevelMin_ValueChanged(this, new EventArgs());
-            pkLevelMax_ValueChanged(this, new EventArgs());
-            pokeList.Clear();
-            pokeList = pokeXML.createList("Pokemon");
-            if (pkPokemon.Text == "Any")
+            AllSkills.Clear();
+            AllAbilities.Clear();
+            AllMoves.Clear();
+            AllImages.Clear();
+            AllPokemon.Clear();
+            AllNatures.Clear();
+            Items.Clear();
+            AllItems.Clear();
+            ItemDesc.Clear();
+            AllItemDesc.Clear();
+            AllLevels.Clear();
+            if (pkAmount.Value > 1)
             {
-                CheckEvo();
-                CheckHabitat();
-                CheckType();
-                if (pkCanBeLegend.Checked != true)
-                {
-                    GetLegend();
-                }
-                HeyYou = GetPokemon();
-                if (HeyYou == null) { return; }
+                pbPokeRight.Visible = true;
+                pbPokeLeft.Visible = true;
             }
             else
             {
-                for (var p = 0; p < pokeList.Count; p++)
-                {
-                    if (pokeList[p].id == pkPokemon.Text)
-                    {
-                        HeyYou = pokeList[p];
-                        break;
-                    }
-                }
+                pbPokeRight.Visible = false;
+                pbPokeLeft.Visible = false;
             }
-            if (HeyYou == null){ return; }
-            Pokemon Pikachu = GetNature(HeyYou); if (Pikachu == null) { return; }
-            int Level = GetLevel();
-            Pokemon throwspokeball = GetGender(Pikachu); if (throwspokeball == null) { return; }
-            Pokemon PokeBall = LevelPokemon(throwspokeball, Level); if (PokeBall == null) { return; }
-            Pokemon Final = PokeBall;
-            if (pkCanBeShiny.Checked == true)
+            Amount = Convert.ToInt32(pkAmount.Value);
+            for (var z = 0; z < Amount; z++)
             {
-                int i = rng.Next(1, 101);
-                if (i == 1 || i == 100)
+                Pokemon HeyYou = null;
+                Items.Clear();
+                ItemDesc.Clear();
+                pkGasp.Clear();
+                infoForward.Visible = true;
+                infoBack.Visible = true;
+                isShiny = false;
+                pkLevelMin_ValueChanged(this, new EventArgs());
+                pkLevelMax_ValueChanged(this, new EventArgs());
+                pokeList.Clear();
+                pokeList = pokeXML.createList("Pokemon");
+                if (pkPokemon.Text == "Any")
                 {
-                    pkGasp.Text += "It's a Shiny!" + Environment.NewLine;
-                    pbPokemon.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + PokeBall.number + ".gif");
-                    isShiny = true;
-                    Final = GetShiny(PokeBall);
+                    CheckEvo();
+                    CheckHabitat();
+                    CheckType();
+                    if (pkCanBeLegend.Checked != true)
+                    {
+                        GetLegend();
+                    }
+                    HeyYou = GetPokemon();
+                    if (HeyYou == null) { return; }
                 }
                 else
                 {
-                    pbPokemon.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + PokeBall.number + ".gif");
+                    for (var p = 0; p < pokeList.Count; p++)
+                    {
+                        if (pokeList[p].id == pkPokemon.Text)
+                        {
+                            HeyYou = pokeList[p];
+                            break;
+                        }
+                    }
                 }
+                if (HeyYou == null) { return; }
+                Pokemon Pikachu = GetNature(HeyYou); if (Pikachu == null) { return; }
+                int Level = GetLevel();
+                Pokemon throwspokeball = GetGender(Pikachu); if (throwspokeball == null) { return; }
+                Pokemon PokeBall = LevelPokemon(throwspokeball, Level); if (PokeBall == null) { return; }
+                Pokemon Final = PokeBall;
+                if (pkCanBeShiny.Checked == true)
+                {
+                    int i = rng.Next(1, 101);
+                    if (i == 1 || i == 100)
+                    {
+                        pkGasp.Text += "It's a Shiny!" + Environment.NewLine;
+                        isShiny = true;
+                        Final = GetShiny(PokeBall);
+                        AllImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + PokeBall.number + ".gif"));
+                    }
+                    else
+                    {
+                        AllImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + PokeBall.number + ".gif"));
+                    }
 
+                }
+                else
+                {
+                        AllImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + PokeBall.number + ".gif"));
+                }
+                if (pkHasItem.Checked == true)
+                {
+                    GetItem();
+                    AllItems.Add(Items);
+                }
+                else
+                {
+                    Items.Add(new GenesisDexEngine.Items
+                    {
+                        id = "Blank",
+                        desc = "There are no items."
+                    });
+                    AllItems.Add(Items);
+                }
+                if (Item != null && Item2 != null)
+                {
+                    pkGasp.Text += "It is carrying stuff!" + Environment.NewLine;
+                }
+                else if (Item != null)
+                {
+                    pkGasp.Text += "It is holding something!" + Environment.NewLine;
+                }
+                IChooseYou = Final;
+                AllPokemon.Add(IChooseYou);
+                TrueLevel = Level;
+                AllLevels.Add(TrueLevel);
+                GetMoves();
+                AllMoves.Add(moves);
+                GetAbilities();
+                AllAbilities.Add(ability);
+                GetSkills();
+                AllSkills.Add(skill);
             }
-            else
-            {
-                pbPokemon.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + PokeBall.number + ".gif");
-            }
-            if (pkHasItem.Checked == true)
-            {
-                GetItem();
-            }
-            else
-            {
-                Item = null;
-                Item2 = null;
-            }
-            if ( Item != null && Item2 != null)
-            {
-                pkGasp.Text += "It is carrying stuff!" + Environment.NewLine;
-            }
-            else if (Item != null)
-            {
-                pkGasp.Text += "It is holding something!" + Environment.NewLine;
-            }
-            IChooseYou = Final;
-            TrueLevel = Level;
-            GetMoves();
-            GetAbilities();
-            GetSkills();
+            Current = 0;
+            pbPokemon.Image = AllImages[Current];
             SetImage();
-            UpdatePage(1);
+            UpdatePage();
 
                 
         }
@@ -355,7 +412,7 @@ namespace GenesisDex
             poke.spatk = spatk.ToString();
             poke.spdef = spdef.ToString();
             poke.spd = spd.ToString();
-            nature = i;
+            AllNatures.Add(natureList[i].id);
             return poke;
         }
 
@@ -507,24 +564,24 @@ namespace GenesisDex
             rtbInfo2.Visible = false;
             pkItem2.Visible = false;
             pkItem.Visible = false;
-            rtbInfo1.Text = "Number: " + IChooseYou.number + Environment.NewLine +
-                "Name: " + IChooseYou.id + Environment.NewLine +
-                "Type: " + IChooseYou.type + Environment.NewLine +
+            rtbInfo1.Text = "Number: " + AllPokemon[Current].number + Environment.NewLine +
+                "Name: " + AllPokemon[Current].id + Environment.NewLine +
+                "Type: " + AllPokemon[Current].type + Environment.NewLine +
                 Environment.NewLine +
-                "Level: " + TrueLevel + Environment.NewLine +
-                "Nature: " + natureList[nature].id + Environment.NewLine +
+                "Level: " + AllLevels[Current] + Environment.NewLine +
+                "Nature: " + AllNatures[Current] + Environment.NewLine +
                 Environment.NewLine +
                 "Stats:" + Environment.NewLine +
-                "HP:\t\t" + IChooseYou.hp + Environment.NewLine +
-                "ATK:\t\t" + IChooseYou.atk + Environment.NewLine +
-                "DEF:\t\t" + IChooseYou.def + Environment.NewLine +
-                "SPATK:\t\t" + IChooseYou.spatk + Environment.NewLine +
-                "SPDEF:\t\t" + IChooseYou.spdef + Environment.NewLine +
-                "SPD:\t\t" + IChooseYou.spd + Environment.NewLine +
+                "HP:\t\t" + AllPokemon[Current].hp + Environment.NewLine +
+                "ATK:\t\t" + AllPokemon[Current].atk + Environment.NewLine +
+                "DEF:\t\t" + AllPokemon[Current].def + Environment.NewLine +
+                "SPATK:\t\t" + AllPokemon[Current].spatk + Environment.NewLine +
+                "SPDEF:\t\t" + AllPokemon[Current].spdef + Environment.NewLine +
+                "SPD:\t\t" + AllPokemon[Current].spd + Environment.NewLine +
                 Environment.NewLine +
-                "Gender: " + IChooseYou.gender + Environment.NewLine +
-                "Size: " + IChooseYou.size + Environment.NewLine +
-                "Weight: " + IChooseYou.weight;
+                "Gender: " + AllPokemon[Current].gender + Environment.NewLine +
+                "Size: " + AllPokemon[Current].size + Environment.NewLine +
+                "Weight: " + AllPokemon[Current].weight;
         }
 
         private void WriteMoves()
@@ -533,19 +590,19 @@ namespace GenesisDex
             pkItem.Visible = false;
             pkItem2.Visible = false;
             rtbInfo1.Text = ("Moves:" + Environment.NewLine);
-            for (var w = 0; w < moves.Count; w++)
+            for (var w = 0; w < AllMoves[Current].Count; w++)
             {
-                rtbInfo1.Text += "-" + moves[w] + Environment.NewLine;
+                rtbInfo1.Text += "-" + AllMoves[Current][w] + Environment.NewLine;
             }
             rtbInfo1.Text += Environment.NewLine + "Abilities:" + Environment.NewLine;
-            for (var a = 0; a < ability.Count; a++)
+            for (var a = 0; a < AllAbilities[Current].Count; a++)
             {
-                rtbInfo1.Text += "-" + ability[a] + Environment.NewLine;
+                rtbInfo1.Text += "-" + AllAbilities[Current][a] + Environment.NewLine;
             }
             rtbInfo1.Text += Environment.NewLine + "Skills:" + Environment.NewLine;
-            for (var s = 0; s < skill.Count; s++)
+            for (var s = 0; s < AllSkills[Current].Count; s++)
             {
-                rtbInfo1.Text += "-" + skill[s] + Environment.NewLine;
+                rtbInfo1.Text += "-" + AllSkills[Current][s] + Environment.NewLine;
             }
         }
 
@@ -554,69 +611,52 @@ namespace GenesisDex
             pkItem2.Visible = false;
             rtbInfo2.Visible = false;
             pkItem.Visible = true;
+            List<Items> Check = new List<Items>();
+            List<string> Description = new List<string>();
+            Check = AllItems[Current];
+            pkItem.Image = pkItem2.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\" + Check[0].id + ".png");
             rtbInfo1.Text = Environment.NewLine +
                 Environment.NewLine +
                 Environment.NewLine +
                 Environment.NewLine +
-                Environment.NewLine + 
                 Environment.NewLine +
-                Item;
-            if (Item2 != null)
+                Environment.NewLine +
+                Check[0].desc;
+            if (Check.Count > 1)
             {
                 rtbInfo2.Visible = true;
                 pkItem2.Visible = true;
+                pkItem2.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\" + Check[1].id + ".png");
                 rtbInfo2.Text = Environment.NewLine +
                 Environment.NewLine +
                 Environment.NewLine +
                 Environment.NewLine +
-                Environment.NewLine + 
                 Environment.NewLine +
-                Item2;
+                Environment.NewLine +
+                Check[1].desc;
             }
+
         }
 
         private void infoBack_Click(object sender, EventArgs e)
         {
             Page--;
-            if (Page == 0) { Page = 3;  UpdatePage(2); }
-            if (Page == 1) { WriteInfo(); }
-            if (Page == 2) { WriteMoves(); }
-            if (Page == 3) { if (Item != null) { WriteItems(); } else { Page = 2; UpdatePage(2); } }
-            if (Page == 4) { Page = 1; UpdatePage(2); }
+            if (Page == 0) { Page = 3; }
+            UpdatePage();
         }
 
         private void infoForward_Click(object sender, EventArgs e)
         {
             Page++;
-            if (Page == 0) { Page = 3; UpdatePage(1); }
-            if (Page == 1) { WriteInfo(); }
-            if (Page == 2) { WriteMoves(); }
-            if (Page == 3) { if (Item != null) { WriteItems(); } else { Page = 1; UpdatePage(1); } }
-            if (Page == 4) { Page = 1; UpdatePage(1); }
+            if (Page == 4) { Page = 1; }
+            UpdatePage();
         }
 
-        private void UpdatePage(int input)
+        private void UpdatePage()
         {
             if (Page == 1) { WriteInfo(); }
             if (Page == 2) { WriteMoves(); }
-            if (Page == 3)
-            {
-                if (Item != null)
-                {
-                    WriteItems();
-                }
-                else
-                {
-                    if (input == 1)
-                    {
-                        infoForward_Click(this, new EventArgs());
-                    }
-                    else if (input == 2)
-                    {
-                        infoBack_Click(this, new EventArgs());
-                    }
-                }
-            }
+            if (Page == 3) { WriteItems(); }
         }
 
         private void GetAbilities()
@@ -793,17 +833,22 @@ namespace GenesisDex
 
         private void GetItem()
         {
+            getItem2 = false;
             int i = rng.Next(1, 101);
             if (i < 40)
             {
                 i = rng.Next(1, 11);
-                if (i == 10) { isItem2 = true; GetItem2(); }
-                else { pkItem2.Image = null; Item2 = null; GetItem1(); }
+                if (i == 10) { getItem2 = true; GetItem1(); }
+                else { GetItem1(); }
             }
             else
             {
-                Item = null;
-                Item2 = null;
+                Items.Add(new GenesisDexEngine.Items
+                {
+                    id = "Blank",
+                    desc = "There are no items."
+                });
+                AllItems.Add(Items);
                 return;
             }
         }
@@ -815,6 +860,7 @@ namespace GenesisDex
             else if (i < 89) { GetPokeball(); }
             else if (i < 99) { GetTM(); }
             else if (i < 101) { GetHM(); }
+            if (getItem2 == true) { GetItem2(); }
         }
 
         private void GetItem2()
@@ -824,72 +870,58 @@ namespace GenesisDex
             else if (i < 89) { GetPokeball(); }
             else if (i < 99) { GetTM(); }
             else if (i < 101) { GetHM(); }
-            isItem2 = false;
-            GetItem1();
         }
 
         private void GetBerry()
         {
             berryList = berryXML.createList("Berry", "Berry");
             int i = rng.Next(0, berryList.Count);
-            if (isItem2 == true)
+            ItemDesc.Add(berryList[i].id + ": " + berryList[i].desc);
+            Items item = new Items
             {
-                Item2 = berryList[i].id + ": " + berryList[i].desc;
-                pkItem2.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Berry\\" + berryList[i].id + ".png");
-            }
-            else
-            {
-                pkItem.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Berry\\" + berryList[i].id + ".png");
-                Item = berryList[i].id + ": " + berryList[i].desc;
-            }
+                id = "Berry\\" + berryList[i].id,
+                desc = berryList[i].desc
+            };
+            Items.Add(item);
         }
 
         private void GetPokeball()
         {
             pokeballList = pokeballXML.createList("Pokeball", "PokeBall");
             int i = rng.Next(0, pokeballList.Count);
-            if (isItem2 == true)
+            ItemDesc.Add(pokeballList[i].id + ": " + pokeballList[i].desc);
+            Items item = new Items
             {
-                Item2 = pokeballList[i].id + ": " + pokeballList[i].desc;
-                pkItem2.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokeball\\" + pokeballList[i].id + ".png");
-            }
-            else
-            {
-                Item = pokeballList[i].id + ": " + pokeballList[i].desc;
-                pkItem.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokeball\\" + pokeballList[i].id + ".png");
-            }
+                id = "PokeBall\\" + pokeballList[i].id,
+                desc = pokeballList[i].desc
+            };
+            Items.Add(item);
         }
 
         private void GetTM()
         {
             TMList = TMXML.createList("TM-HM", "TM");
             int i = rng.Next(0, TMList.Count);
-            if (isItem2 == true)
+            ItemDesc.Add("TM" + TMList[i].number + " " + TMList[i].id + " - " + TMList[i].type);
+            Items item = new Items
             {
-                Item2 = "TM" + TMList[i].number + " " + TMList[i].id + " - " + TMList[i].type;
-                pkItem2.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\TM-HM\\" + TMList[i].type + ".png");
-            }
-            else
-            {
-                Item = "TM" + TMList[i].number + " " + TMList[i].id + " - " + TMList[i].type;
-                pkItem.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\TM-HM\\" + TMList[i].type + ".png");
-            }
+                id = "TM-HM\\" + TMList[i].id,
+                desc = "TM" + TMList[i].number + " " + TMList[i].id + " - " + TMList[i].type
+            };
+            Items.Add(item);
         }
 
         private void GetHM()
         {
             HMList = TMXML.createList("TM-HM", "HM");
             int i = rng.Next(0, HMList.Count);
-            if (isItem2 == true)
+            ItemDesc.Add("HM" + HMList[i].number + " " + HMList[i].id + " - " + HMList[i].type);
+            Items item = new Items
             {
-                Item2 = "HM" + HMList[i].number + " " + HMList[i].id + " - " + HMList[i].type;
-                pkItem2.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\TM-HM\\" + HMList[i].type + "HM.png");
-            }
-            else
-            {
-                Item = "HM" + HMList[i].number + " " + HMList[i].id + " - " + HMList[i].type;
-                pkItem.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\TM-HM\\" + HMList[i].type + "HM.png");
-            }
+                id = "TM-HM\\" + HMList[i].id,
+                desc = "HM" + HMList[i].number + " " + HMList[i].id + " - " + HMList[i].type
+            };
+            Items.Add(item);
         }
 
         private void pkLevelMin_ValueChanged(object sender, EventArgs e)
@@ -918,6 +950,36 @@ namespace GenesisDex
                 pkCanBeLegend.Enabled = true;
                 pkStageAllowed.Enabled = true;
             }
+        }
+
+        private void pbPokeLeft_Click(object sender, EventArgs e)
+        {
+            if (Current <= 0)
+            {
+                Current = Amount - 1;
+            }
+            else
+            {
+                Current--;
+            }
+            pbPokemon.Image = AllImages[Current];
+            SetImage();
+            UpdatePage();
+        }
+
+        private void pbPokeRight_Click(object sender, EventArgs e)
+        {
+            if (Current >= Amount - 1)
+            {
+                Current = 0;
+            }
+            else
+            {
+                Current++;
+            }
+            pbPokemon.Image = AllImages[Current];
+            SetImage();
+            UpdatePage();
         }
     }
 }

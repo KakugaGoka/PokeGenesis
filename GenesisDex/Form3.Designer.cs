@@ -58,6 +58,10 @@
             this.pkCanBeLegend = new System.Windows.Forms.CheckBox();
             this.pkStageAllowed = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.pkAmount = new System.Windows.Forms.NumericUpDown();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pbPokeRight = new System.Windows.Forms.PictureBox();
+            this.pbPokeLeft = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbOverlay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoForward)).BeginInit();
@@ -69,6 +73,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pkLevelMax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pkAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPokeRight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPokeLeft)).BeginInit();
             this.SuspendLayout();
             // 
             // pbOverlay
@@ -154,7 +161,7 @@
             // 
             this.pbScanPokemon.BackColor = System.Drawing.Color.Transparent;
             this.pbScanPokemon.Image = global::GenesisDex.Properties.Resources.ScanPokemon;
-            this.pbScanPokemon.Location = new System.Drawing.Point(140, 536);
+            this.pbScanPokemon.Location = new System.Drawing.Point(132, 551);
             this.pbScanPokemon.Name = "pbScanPokemon";
             this.pbScanPokemon.Size = new System.Drawing.Size(157, 33);
             this.pbScanPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -424,6 +431,59 @@
             this.label7.TabIndex = 67;
             this.label7.Text = "Stage";
             // 
+            // pkAmount
+            // 
+            this.pkAmount.Location = new System.Drawing.Point(94, 527);
+            this.pkAmount.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.pkAmount.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.pkAmount.Name = "pkAmount";
+            this.pkAmount.Size = new System.Drawing.Size(90, 20);
+            this.pkAmount.TabIndex = 68;
+            this.pkAmount.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Silver;
+            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label8.Location = new System.Drawing.Point(43, 529);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(45, 15);
+            this.label8.TabIndex = 69;
+            this.label8.Text = "Amount";
+            // 
+            // pbPokeRight
+            // 
+            this.pbPokeRight.BackColor = System.Drawing.Color.Transparent;
+            this.pbPokeRight.Location = new System.Drawing.Point(294, 255);
+            this.pbPokeRight.Name = "pbPokeRight";
+            this.pbPokeRight.Size = new System.Drawing.Size(54, 50);
+            this.pbPokeRight.TabIndex = 71;
+            this.pbPokeRight.TabStop = false;
+            this.pbPokeRight.Click += new System.EventHandler(this.pbPokeRight_Click);
+            // 
+            // pbPokeLeft
+            // 
+            this.pbPokeLeft.BackColor = System.Drawing.Color.Transparent;
+            this.pbPokeLeft.Location = new System.Drawing.Point(55, 255);
+            this.pbPokeLeft.Name = "pbPokeLeft";
+            this.pbPokeLeft.Size = new System.Drawing.Size(54, 50);
+            this.pbPokeLeft.TabIndex = 70;
+            this.pbPokeLeft.TabStop = false;
+            this.pbPokeLeft.Click += new System.EventHandler(this.pbPokeLeft_Click);
+            // 
             // FormScan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -431,6 +491,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = global::GenesisDex.Properties.Resources.MainMenu;
             this.ClientSize = new System.Drawing.Size(822, 616);
+            this.Controls.Add(this.pbPokeRight);
+            this.Controls.Add(this.pbPokeLeft);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.pkAmount);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pkStageAllowed);
             this.Controls.Add(this.pbOverlay);
@@ -480,6 +544,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pkLevelMax)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pkAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPokeRight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPokeLeft)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -516,5 +583,9 @@
         private System.Windows.Forms.CheckBox pkCanBeLegend;
         private System.Windows.Forms.ComboBox pkStageAllowed;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.NumericUpDown pkAmount;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.PictureBox pbPokeRight;
+        private System.Windows.Forms.PictureBox pbPokeLeft;
     }
 }

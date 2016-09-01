@@ -46,6 +46,7 @@ namespace GenesisDexEngine
     class Items
     {
         public string id { get; set; }
+        public string desc { get; set; }
     }
 
     class Evolution
