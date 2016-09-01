@@ -2893,4 +2893,597 @@
       </Moves>
     </List716>
   </Pokemon>
+  <Pokemon>
+    <number>715</number>
+    <id>Noivern</id>
+    <type>Flying / Dragon</type>
+    <hp>9</hp>
+    <atk>7</atk>
+    <def>8</def>
+    <spatk>10</spatk>
+    <spdef>8</spdef>
+    <spd>12</spd>
+    <size>1’ 08” / 0.5m (Small)</size>
+    <weight>17.6 lbs. / 8 kg (1)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Flying</egg>
+    <hatch>20 Days</hatch>
+    <diet>Omnivore</diet>
+    <habitat>Cave</habitat>
+    <legendary>false</legendary>
+    <List715>
+      <Ability>
+        <BasicAbility>Frisk</BasicAbility>
+        <BasicAbility>Infiltrator</BasicAbility>
+        <AdvancedAbility>Telepathy</AdvancedAbility>
+        <AdvancedAbility>Instinct</AdvancedAbility>
+        <HighAbility>Sound Lance</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 4d6</skill>
+        <skill id="1">Acro 6d6+2</skill>
+        <skill id="2">Combat 4d6</skill>
+        <skill id="3">Stealth 4d6+2</skill>
+        <skill id="4">Percep 4d6+2</skill>
+        <skill id="5">Focus 3d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 4</cap>
+        <cap id="1">Swim 3</cap>
+        <cap id="2">Sky 8</cap>
+        <cap id="3">Jump 2/2</cap>
+        <cap id="4">Power 6</cap>
+        <cap id="5">Darkvision</cap>
+        <cap id="6">Mountable 1</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Noibat</evo>
+        <evo id="1">2 - Noivern Minimum 35</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Scratch - Normal</move>
+        <move id="1">1 Supersonic - Normal</move>
+        <move id="2">1 Tackle - Normal</move>
+        <move id="3">5 Leech Life - Bug</move>
+        <move id="4">11 Gust - Flying</move>
+        <move id="5">13 Bite - Dark</move>
+        <move id="6">16 Wing Attack - Flying</move>
+        <move id="7">18 Agility - Psychic</move>
+        <move id="8">23 Air Cutter - Flying</move>
+        <move id="9">27 Roost - Flying</move>
+        <move id="10">31 - Razor Wind - Normal</move>
+        <move id="11">35 - Tailwind - Flying</move>
+        <move id="12">40 Whirlwind - Normal</move>
+        <move id="13">43 Super Fang - Normal</move>
+        <move id="14">53 Air Slash - Flying</move>
+        <move id="15">62 Hurricane - Flying</move>
+        <move id="16">70 Dragon Pulse - Dragon</move>
+        <move id="17">75 Boomburst - Normal</move>
+      </Moves>
+    </List715>
+  </Pokemon>
+  <Pokemon>
+    <number>714</number>
+    <id>Noibat</id>
+    <type>Flying / Dragon</type>
+    <hp>4</hp>
+    <atk>3</atk>
+    <def>4</def>
+    <spatk>5</spatk>
+    <spdef>4</spdef>
+    <spd>6</spd>
+    <size>1’ 08” / 0.5m (Small)</size>
+    <weight>17.6 lbs. / 8 kg (1)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Flying</egg>
+    <hatch>20 Days</hatch>
+    <diet>Omnivore</diet>
+    <habitat>Cave</habitat>
+    <legendary>false</legendary>
+    <List714>
+      <Ability>
+        <BasicAbility>Frisk</BasicAbility>
+        <BasicAbility>Infiltrator</BasicAbility>
+        <AdvancedAbility>Telepathy</AdvancedAbility>
+        <AdvancedAbility>Instinct </AdvancedAbility>
+        <HighAbility>Sound Lance </HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 2d6</skill>
+        <skill id="1">Acro 4d6</skill>
+        <skill id="2">Combat 3d6</skill>
+        <skill id="3">Stealth 3d6+2</skill>
+        <skill id="4">Percep 3d6+2</skill>
+        <skill id="5">Focus 2d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 2</cap>
+        <cap id="1">Swim 2</cap>
+        <cap id="2">Sky 5</cap>
+        <cap id="3">Jump1/1</cap>
+        <cap id="4">Power 1</cap>
+        <cap id="5">Darkvision</cap>
+        <cap id="6">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Noibat</evo>
+        <evo id="1">2 - Noivern Minimum 35</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Scratch - Normal</move>
+        <move id="1">1 Supersonic - Normal</move>
+        <move id="2">1 Tackle - Normal</move>
+        <move id="3">5 Leech Life - Bug</move>
+        <move id="4">11 Gust - Flying</move>
+        <move id="5">13 Bite - Dark</move>
+        <move id="6">16 Wing Attack - Flying</move>
+        <move id="7">18 Agility - Psychic</move>
+        <move id="8">23 Air Cutter - Flying</move>
+        <move id="9">27 Roost - Flying</move>
+        <move id="10">31 Razor Wind - Normal</move>
+        <move id="11">35 Tailwind - Flying</move>
+        <move id="12">40 Whirlwind - Normal</move>
+        <move id="13">43 Super Fang - Normal</move>
+        <move id="14">48 Air Slash - Flying</move>
+        <move id="15">58 Hurricane - Flying</move>
+      </Moves>
+    </List714>
+  </Pokemon>
+  <Pokemon>
+    <number>712</number>
+    <id>Bergmite</id>
+    <type>Ice</type>
+    <hp>6</hp>
+    <atk>7</atk>
+    <def>9</def>
+    <spatk>3</spatk>
+    <spdef>4</spdef>
+    <spd>3</spd>
+    <size>3’ 03” / 1.0m (Small)</size>
+    <weight>219.4 lbs. / 99.5 kg (4)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Monster</egg>
+    <hatch>10 Days</hatch>
+    <diet>Terravore</diet>
+    <habitat>Arctic, Mountain, Tundra</habitat>
+    <legendary>false</legendary>
+    <List712>
+      <Ability>
+        <BasicAbility>Sturdy</BasicAbility>
+        <BasicAbility>Winter's Kiss</BasicAbility>
+        <AdvancedAbility>Ice Body</AdvancedAbility>
+        <AdvancedAbility>Own Tempo</AdvancedAbility>
+        <HighAbility>Permafrost</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 3d6+1</skill>
+        <skill id="1">Acto 1d6</skill>
+        <skill id="2">Combat 2d6</skill>
+        <skill id="3">Stealth 3d6+1</skill>
+        <skill id="4">Percep 2d6</skill>
+        <skill id="5">Focus 3d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 4</cap>
+        <cap id="1">Swim 2</cap>
+        <cap id="2">Jump 1/1</cap>
+        <cap id="3">Power 3</cap>
+        <cap id="4">Freezer</cap>
+        <cap id="5">Naturewalk (Tundra)</cap>
+        <cap id="6">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Bergmite</evo>
+        <evo id="1">2 - Avalugg Minimum 35</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Tackle - Normal</move>
+        <move id="1">1 Bite - Dark</move>
+        <move id="2">1 Harden - Normal</move>
+        <move id="3">5 Powder Snow - Ice</move>
+        <move id="4">10 Icy Wind - Ice</move>
+        <move id="5">15 Take Down - Normal</move>
+        <move id="6">20 Sharpen - Normal</move>
+        <move id="7">22 Curse - Ghost</move>
+        <move id="8">26 Ice Fang - Ice</move>
+        <move id="9">30 Ice Ball - Ice</move>
+        <move id="10">35 Rapid Spin - Normal</move>
+        <move id="11">39 Avalanche - Ice</move>
+        <move id="12">43 Blizzard - Ice</move>
+        <move id="13">47 Recover - Normal</move>
+        <move id="14">49 Double Edge - Normal</move>
+      </Moves>
+    </List712>
+  </Pokemon>
+  <Pokemon>
+    <number>713</number>
+    <id>Avalugg</id>
+    <type>Ice</type>
+    <hp>10</hp>
+    <atk>12</atk>
+    <def>18</def>
+    <spatk>4</spatk>
+    <spdef>5</spdef>
+    <spd>3</spd>
+    <size>6’ 07” / 2.0m (Huge)</size>
+    <weight>1113.3 lbs. / 505 kg (6)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Monster</egg>
+    <hatch>10 Days</hatch>
+    <diet>Terravore</diet>
+    <habitat>Arctic, Mountain, Tundra</habitat>
+    <legendary>false</legendary>
+    <List713>
+      <Ability>
+        <BasicAbility>Sturdy</BasicAbility>
+        <BasicAbility>Winter's Kiss</BasicAbility>
+        <AdvancedAbility>Ice Body</AdvancedAbility>
+        <AdvancedAbility>Own Tempo</AdvancedAbility>
+        <HighAbility>Permafrost</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 6d6+2</skill>
+        <skill id="1">Acro 1d6</skill>
+        <skill id="2">Combat 4d6</skill>
+        <skill id="3">Stealth 3d6+1</skill>
+        <skill id="4">Percep 3d6</skill>
+        <skill id="5">Focus 4d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 6</cap>
+        <cap id="1">Swim 3</cap>
+        <cap id="2">Jump 0/1</cap>
+        <cap id="3">Power 8</cap>
+        <cap id="4">Freezer</cap>
+        <cap id="5">Naturewalk (Tundra)</cap>
+        <cap id="6">Mountable 3</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Bergmite</evo>
+        <evo id="1">2 - Avalugg Minimum 35</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Tackle - Normal</move>
+        <move id="1">1 Bite - Dark</move>
+        <move id="2">1 Harden - Normal</move>
+        <move id="3">5 Powder Snow - Ice</move>
+        <move id="4">10 Icy Wind - Ice</move>
+        <move id="5">15 Take Down - Normal</move>
+        <move id="6">20 Sharpen - Normal</move>
+        <move id="7">22 Curse - Ghost</move>
+        <move id="8">26 Ice Fang - Ice</move>
+        <move id="9">30 Ice Ball - Ice</move>
+        <move id="10">35 Rapid Spin - Normal</move>
+        <move id="11">42 Avalanche - Ice</move>
+        <move id="12">46 Blizzard - Ice</move>
+        <move id="13">51 Recover - Normal</move>
+        <move id="14">56 Double-Edge - Normal</move>
+        <move id="15">60 Skull Bash - Normal</move>
+        <move id="16">65 Crunch - Dark</move>
+      </Moves>
+    </List713>
+  </Pokemon>
+  <Pokemon>
+    <number>709</number>
+    <id>Trevanant</id>
+    <type>Ghost / Grass</type>
+    <hp>9</hp>
+    <atk>11</atk>
+    <def>8</def>
+    <spatk>7</spatk>
+    <spdef>8</spdef>
+    <spd>6</spd>
+    <size>4’ 11” / 1.5m (Large)</size>
+    <weight>156.5 lbs. / 71 kg (4)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Grass and Amorphous</egg>
+    <diet>Nullivore</diet>
+    <habitat>Forest</habitat>
+    <legendary>false</legendary>
+    <List709>
+      <Ability>
+        <BasicAbility>Natural Cure</BasicAbility>
+        <BasicAbility>Frisk</BasicAbility>
+        <AdvancedAbility>Harvest</AdvancedAbility>
+        <AdvancedAbility>Forest Lord</AdvancedAbility>
+        <HighAbility>Leaf Guard </HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 4d6+1</skill>
+        <skill id="1">Acro 2d6</skill>
+        <skill id="2">Combat 4d6</skill>
+        <skill id="3">Stealth 4d6+3</skill>
+        <skill id="4">Percep 3d6+2</skill>
+        <skill id="5">Focus 4d6+2</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 6</cap>
+        <cap id="1">Swim 3</cap>
+        <cap id="2">Jump 1/2</cap>
+        <cap id="3">Power 6</cap>
+        <cap id="4">Naturewalk (Grassland, Forest)</cap>
+        <cap id="5">Phasing</cap>
+        <cap id="6">Invisibility</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Phantump</evo>
+        <evo id="1">2 - Trevanant Minimum 25</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Tackle - Normal</move>
+        <move id="1">1 Confuse Ray - Ghost</move>
+        <move id="2">5 Astonish - Ghost</move>
+        <move id="3">8 Growth - Normal</move>
+        <move id="4">13 Ingrain - Grass</move>
+        <move id="5">19 Feint Attack - Dark</move>
+        <move id="6">23 Leech Seed - Grass</move>
+        <move id="7">28 Curse - Ghost</move>
+        <move id="8">31 Will-O-Wisp - Fire</move>
+        <move id="9">35 Forest's Curse - Grass</move>
+        <move id="10">39 Destiny Bond - Ghost</move>
+        <move id="11">45 Phantom Force - Ghost</move>
+        <move id="12">49 Wood Hammer - Grass</move>
+        <move id="13">55 Shadow Claw - Ghost</move>
+        <move id="14">62 Horn Leech - Grass</move>
+      </Moves>
+    </List709>
+  </Pokemon>
+  <Pokemon>
+    <number>708</number>
+    <id>Phantump</id>
+    <type>Ghost / Grass</type>
+    <hp>4</hp>
+    <atk>7</atk>
+    <def>5</def>
+    <spatk>5</spatk>
+    <spdef>6</spdef>
+    <spd>4</spd>
+    <size>Height : 1’ 04” / 0.4m (Small)</size>
+    <weight>15.4 lbs. / 7 kg (1)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Grass and Amorphous</egg>
+    <hatch>13 Days</hatch>
+    <diet>Nullivore</diet>
+    <habitat>Forest</habitat>
+    <legendary>false</legendary>
+    <List708>
+      <Ability>
+        <BasicAbility>Natural Cure</BasicAbility>
+        <BasicAbility>Frisk</BasicAbility>
+        <AdvancedAbility>Harvest</AdvancedAbility>
+        <AdvancedAbility>Life Force</AdvancedAbility>
+        <HighAbility>Leaf Guard</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 2d6</skill>
+        <skill id="1">Acro 3d6+1</skill>
+        <skill id="2">Combat 2d6</skill>
+        <skill id="3">Stealth 3d6+2</skill>
+        <skill id="4">Percep 3d6</skill>
+        <skill id="5">Focus 2d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 2</cap>
+        <cap id="1">Swim 2</cap>
+        <cap id="2">Levitate 5</cap>
+        <cap id="3">Jump 0/1</cap>
+        <cap id="4">Power 1</cap>
+        <cap id="5">Naturewalk (Grassland, Forest)</cap>
+        <cap id="6">Phasing</cap>
+        <cap id="7">Invisibility</cap>
+        <cap id="8">Dead Silent</cap>
+        <cap id="9">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Phantump</evo>
+        <evo id="1">2 - Trevenant Minimum 25</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Tackle - Normal</move>
+        <move id="1">1 Confuse Ray - Ghost</move>
+        <move id="2">5 Astonish - Ghost</move>
+        <move id="3">8 Growth - Normal</move>
+        <move id="4">13 Ingrain - Grass</move>
+        <move id="5">19 Feint Attack - Dark</move>
+        <move id="6">23 Leech Seed - Grass</move>
+        <move id="7">28 Curse - Ghost</move>
+        <move id="8">31 Will-O-Wisp - Fire</move>
+        <move id="9">35 Forest's Curse - Grass</move>
+        <move id="10">39 Destiny Bond - Ghost</move>
+        <move id="11">45 Phantom Force - Ghost</move>
+        <move id="12">49 Wood Hammer - Grass</move>
+        <move id="13">54 Horn Leech - Grass</move>
+      </Moves>
+    </List708>
+  </Pokemon>
+  <Pokemon>
+    <number>707</number>
+    <id>Klefki</id>
+    <type>Steel / Fairy</type>
+    <hp>6</hp>
+    <atk>8</atk>
+    <def>9</def>
+    <spatk>8</spatk>
+    <spdef>9</spdef>
+    <spd>8</spd>
+    <size>0’ 08” / 0.2m (Small)</size>
+    <weight>6.6 lbs. / 3 kg (1)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Mineral</egg>
+    <hatch>13 Days</hatch>
+    <diet>Nullivore</diet>
+    <habitat>Grassland, Urban</habitat>
+    <legendary>false</legendary>
+    <List707>
+      <Ability>
+        <BasicAbility>Prankster</BasicAbility>
+        <AdvancedAbility>Magician</AdvancedAbility>
+        <AdvancedAbility>Pickup</AdvancedAbility>
+        <AdvancedAbility>Run Away</AdvancedAbility>
+        <HighAbility>Infiltrator</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 2d6</skill>
+        <skill id="1">Acro 4d6+3</skill>
+        <skill id="2">Combat 3d6</skill>
+        <skill id="3">Stealth 5d6+2</skill>
+        <skill id="4">Percep 4d6</skill>
+        <skill id="5">Focus 3d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 1</cap>
+        <cap id="1">Swim 1</cap>
+        <cap id="2">Levitate 6</cap>
+        <cap id="3">Jump 0/1</cap>
+        <cap id="4">Power 1</cap>
+        <cap id="5">Dead Silent</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Klefki</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Tackle - Normal</move>
+        <move id="1">1 Fairy Lock - Fairy</move>
+        <move id="2">5 Fairy Wind - Fairy</move>
+        <move id="3">8 Astonish - Ghost</move>
+        <move id="4">12 Metal Sound - Steel</move>
+        <move id="5">15 Spikes - Ground</move>
+        <move id="6">18 Draining Kiss - Fairy</move>
+        <move id="7">23 Crafty Shield - Fairy</move>
+        <move id="8">27 Foul Play - Dark</move>
+        <move id="9">32 Torment - Dark</move>
+        <move id="10">34 Mirror Shot - Steel</move>
+        <move id="11">36 Imprison - Psychic</move>
+        <move id="12">40 Recycle - Normal</move>
+        <move id="13">43 Play Rough - Fairy</move>
+        <move id="14">44 Magic Room - Psychic</move>
+        <move id="15">50 Heal Block - Psychic</move>
+      </Moves>
+    </List707>
+  </Pokemon>
+  <Pokemon>
+    <number>706</number>
+    <id>Goodra</id>
+    <type>Dragon</type>
+    <hp>9</hp>
+    <atk>10</atk>
+    <def>7</def>
+    <spatk>11</spatk>
+    <spdef>15</spdef>
+    <spd>8</spd>
+    <size>6’ 07” / 2m (Large)</size>
+    <weight>331.8 lbs. / 150.5 kg (5)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Dragon</egg>
+    <diet>Herbivore</diet>
+    <habitat>Marsh, Rainforest</habitat>
+    <legendary>false</legendary>
+    <List706>
+      <Ability>
+        <BasicAbility>Sap Sipper</BasicAbility>
+        <BasicAbility>Dry Skin</BasicAbility>
+        <AdvancedAbility>Hydration</AdvancedAbility>
+        <AdvancedAbility>Gooey</AdvancedAbility>
+        <HighAbility>Absorb Force</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 5d6+2</skill>
+        <skill id="1">Acro 3d6</skill>
+        <skill id="2">Combat 4d6</skill>
+        <skill id="3">Stealth 2d6</skill>
+        <skill id="4">Percep 4d6</skill>
+        <skill id="5">Focus 4d6+2</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 7</cap>
+        <cap id="1">Swim 4</cap>
+        <cap id="2">Jump 2/2</cap>
+        <cap id="3">Power 8</cap>
+        <cap id="4">Amorphous</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Goomy</evo>
+        <evo id="1">2 - Sligoo Minimum 40</evo>
+        <evo id="2">3- Goodra Minimum 50 in Rain</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Tackle - Normal</move>
+        <move id="1">1 Bubble - Water</move>
+        <move id="2">5 Absorb - Grass</move>
+        <move id="3">9 Protect - Normal</move>
+        <move id="4">13 Bide - Normal</move>
+        <move id="5">18 Dragon Breath - Dragon</move>
+        <move id="6">25 Rain Dance - Water</move>
+        <move id="7">28 Flail - Normal</move>
+        <move id="8">32 Body Slam - Normal</move>
+        <move id="9">38 Muddy Water - Water</move>
+        <move id="10">47 Dragon Pulse - Dragon</move>
+        <move id="11">50 Aqua Tail - Water</move>
+        <move id="12">55 Power Whip - Grass</move>
+        <move id="13">63 Outrage - Dragon</move>
+      </Moves>
+    </List706>
+  </Pokemon>
+  <Pokemon>
+    <number>705</number>
+    <id>Sligoo</id>
+    <type>Dragon</type>
+    <hp>7</hp>
+    <atk>8</atk>
+    <def>5</def>
+    <spatk>8</spatk>
+    <spdef>11</spdef>
+    <spd>6</spd>
+    <size>2’ 07” / 0.8m (Small)</size>
+    <weight>38.6 lbs. / 17.5 kg (2)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Dragon</egg>
+    <diet>Herbivore</diet>
+    <habitat>Marsh, Rainforest</habitat>
+    <legendary>false</legendary>
+    <List705>
+      <Ability>
+        <BasicAbility>Sap Sipper</BasicAbility>
+        <BasicAbility>Dry Skin</BasicAbility>
+        <AdvancedAbility>Hydration</AdvancedAbility>
+        <AdvancedAbility>Gooey</AdvancedAbility>
+        <HighAbility>Absorb Force</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 3d6</skill>
+        <skill id="1">Acro 1d6</skill>
+        <skill id="2">Combat 3d6</skill>
+        <skill id="3">Stealth 4d6+2</skill>
+        <skill id="4">Percep 3d6</skill>
+        <skill id="5">Focus 3d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 5</cap>
+        <cap id="1">Swim 3</cap>
+        <cap id="2">Jump 0/1</cap>
+        <cap id="3">Power 2</cap>
+        <cap id="4">Amorphous</cap>
+        <cap id="5">Blindsense</cap>
+        <cap id="6">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Goomy</evo>
+        <evo id="1">2 - Sligoo Minimum 40</evo>
+        <evo id="2">3 - Goodra Minimum 50 in Rain</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Tackle - Normal</move>
+        <move id="1">1 Bubble - Water</move>
+        <move id="2">5 Absorb - Grass</move>
+        <move id="3">9 Protect - Normal</move>
+        <move id="4">13 Bide - Normal</move>
+        <move id="5">18 Dragon Breath - Dragon</move>
+        <move id="6">25 Rain Dance - Water</move>
+        <move id="7">28 Flail - Normal</move>
+        <move id="8">32 Body Slam - Normal</move>
+        <move id="9">38 Muddy Water - Water</move>
+        <move id="10">47 Dragon Pulse - Dragon</move>
+      </Moves>
+    </List705>
+  </Pokemon>
 </Namespace>
