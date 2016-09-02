@@ -3486,4 +3486,626 @@
       </Moves>
     </List705>
   </Pokemon>
+  <Pokemon>
+    <number>704</number>
+    <id>Goomy</id>
+    <type>Dragon</type>
+    <hp>5</hp>
+    <atk>5</atk>
+    <def>4</def>
+    <spatk>6</spatk>
+    <spdef>8</spdef>
+    <spd>4</spd>
+    <size>1’ 00” / 0.3m (Small)</size>
+    <weight>6.2 lbs. / 2.8 kg (1)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Dragon</egg>
+    <hatch>25 Days</hatch>
+    <diet>Herbivore</diet>
+    <habitat>Marsh, Rainforest</habitat>
+    <legendary>false</legendary>
+    <List704>
+      <Ability>
+        <BasicAbility>Sap Sipper</BasicAbility>
+        <BasicAbility>Dry Skin</BasicAbility>
+        <AdvancedAbility>Hydration</AdvancedAbility>
+        <AdvancedAbility>Gooey</AdvancedAbility>
+        <HighAbility>Absorb Force</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 2d6</skill>
+        <skill id="1">Acro 1d6</skill>
+        <skill id="2">Combat 2d6</skill>
+        <skill id="3">Stealth 3d6+2</skill>
+        <skill id="4">Percep 2d6</skill>
+        <skill id="5">Focus 3d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 4</cap>
+        <cap id="1">Swim 2</cap>
+        <cap id="2">Jump 0/0</cap>
+        <cap id="3">Power 1</cap>
+        <cap id="4">Amorphous</cap>
+        <cap id="5">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">Goomy</evo>
+        <evo id="1">Sligoo Minimum 40</evo>
+        <evo id="2">Goodra Minimum 50 in Rain</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Tackle - Normal</move>
+        <move id="1">1 Bubble - Water</move>
+        <move id="2">5 Absorb - Grass</move>
+        <move id="3">9 Protect - Normal</move>
+        <move id="4">13 Bide - Normal</move>
+        <move id="5">18 Dragon Breath - Dragon</move>
+        <move id="6">25 Rain Dance - Water</move>
+        <move id="7">28 Flail - Normal</move>
+        <move id="8">32 Body Slam - Normal</move>
+        <move id="9">38 Muddy Water - Water</move>
+        <move id="10">42 Dragon Pulse - Dragon</move>
+      </Moves>
+    </List704>
+  </Pokemon>
+  <Pokemon>
+    <number>710</number>
+    <id>Pumpkaboo (average)</id>
+    <type>Ghost / Grass</type>
+    <hp>5</hp>
+    <atk>7</atk>
+    <def>7</def>
+    <spatk>4</spatk>
+    <spdef>5</spdef>
+    <spd>5</spd>
+    <size>1’ 00’’ to 2’ 07” / 0.3m to .8m (Small)</size>
+    <weight>7.7 lbs. to 33.1 lbs / 3.5 kg (1) to 15 kg (2)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Amorphous</egg>
+    <hatch>13 Days</hatch>
+    <diet>Nullivore</diet>
+    <habitat>Forest, Grassland</habitat>
+    <legendary>false</legendary>
+    <List710>
+      <Ability>
+        <BasicAbility>Pickup</BasicAbility>
+        <BasicAbility>Frisk</BasicAbility>
+        <AdvancedAbility>Insomnia</AdvancedAbility>
+        <AdvancedAbility>Life Force</AdvancedAbility>
+        <HighAbility>Flash Fire</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 2d6</skill>
+        <skill id="1">Acro 2d6</skill>
+        <skill id="2">Combat 2d6</skill>
+        <skill id="3">Stealth 3d6+1</skill>
+        <skill id="4">Percep 3d6+2</skill>
+        <skill id="5">Focus 3d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 2</cap>
+        <cap id="1">Swim 2</cap>
+        <cap id="2">Levitate 5</cap>
+        <cap id="3">Jump 0/1</cap>
+        <cap id="4">Power 1</cap>
+        <cap id="5">Naturewalk (Grassland, Forest)</cap>
+        <cap id="6">Phasing</cap>
+        <cap id="7">Invisibility</cap>
+        <cap id="8">Dead Silent</cap>
+        <cap id="9">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">Pumpkaboo (average)</evo>
+        <evo id="1">Gourgeist (average) Minimum 25</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Astonish - Ghost</move>
+        <move id="1">1 Trick - Psychic</move>
+        <move id="2">1 Confuse Ray - Ghost</move>
+        <move id="3">4 Scary Face - Normal</move>
+        <move id="4">6 Trick-or-Treat - Ghost</move>
+        <move id="5">11 Worry Seed - Grass</move>
+        <move id="6">16 Razor Leaf - Grass</move>
+        <move id="7">20 Leech Seed - Grass</move>
+        <move id="8">23 Trick-or-Treat - Ghost</move>
+        <move id="9">26 Bullet Seed - Grass</move>
+        <move id="10">30 Shadow Sneak - Ghost</move>
+        <move id="11">36 Shadow Ball - Ghost</move>
+        <move id="12">40 Trick-or-Treat - Ghost</move>
+        <move id="13">42 Pain Split - Normal</move>
+        <move id="14">48 Seed Bomb - Grass</move>
+      </Moves>
+    </List710>
+  </Pokemon>
+  <Pokemon>
+    <number>710-small</number>
+    <id>Pumpkaboo (small)</id>
+    <type>Ghost / Grass</type>
+    <hp>4</hp>
+    <atk>7</atk>
+    <def>7</def>
+    <spatk>4</spatk>
+    <spdef>6</spdef>
+    <spd>6</spd>
+    <size>1’ 00’’ to 2’ 07” / 0.3m to .8m (Small)</size>
+    <weight>7.7 lbs. to 33.1 lbs / 3.5 kg (1) to 15 kg (2)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Amorphous</egg>
+    <hatch>13 Days</hatch>
+    <diet>Nullivore</diet>
+    <habitat>Forest, Grassland</habitat>
+    <legendary>false</legendary>
+    <List710-small>
+      <Ability>
+        <BasicAbility>Pickup</BasicAbility>
+        <BasicAbility>Frisk</BasicAbility>
+        <AdvancedAbility>Insomnia</AdvancedAbility>
+        <AdvancedAbility>Life Force</AdvancedAbility>
+        <HighAbility>Flash Fire</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 2d6</skill>
+        <skill id="1">Acro 2d6</skill>
+        <skill id="2">Combat 2d6</skill>
+        <skill id="3">Stealth 3d6+1</skill>
+        <skill id="4">Percep 3d6+2</skill>
+        <skill id="5">Focus 3d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 2</cap>
+        <cap id="1">Swim 2</cap>
+        <cap id="2">Levitate 5</cap>
+        <cap id="3">Jump 0/1</cap>
+        <cap id="4">Power 1</cap>
+        <cap id="5">Naturewalk (Grassland, Forest)</cap>
+        <cap id="6">Phasing</cap>
+        <cap id="7">Invisibility</cap>
+        <cap id="8">Dead Silent</cap>
+        <cap id="9">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">Pumpkaboo (small)</evo>
+        <evo id="1">Gourgeist (small) Minimum 25</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Astonish - Ghost</move>
+        <move id="1">1 Trick - Psychic</move>
+        <move id="2">1 Confuse Ray - Ghost</move>
+        <move id="3">4 Scary Face - Normal</move>
+        <move id="4">6 Trick-or-Treat - Ghost</move>
+        <move id="5">11 Worry Seed - Grass</move>
+        <move id="6">16 Razor Leaf - Grass</move>
+        <move id="7">20 Leech Seed - Grass</move>
+        <move id="8">23 Trick-or-Treat - Ghost</move>
+        <move id="9">26 Bullet Seed - Grass</move>
+        <move id="10">30 Shadow Sneak - Ghost</move>
+        <move id="11">36 Shadow Ball - Ghost</move>
+        <move id="12">40 Trick-or-Treat - Ghost</move>
+        <move id="13">42 Pain Split - Normal</move>
+        <move id="14">48 Seed Bomb - Grass</move>
+      </Moves>
+    </List710-small>
+  </Pokemon>
+  <Pokemon>
+    <number>710-large</number>
+    <id>Pumpkaboo (large)</id>
+    <type>Ghost / Grass</type>
+    <hp>5</hp>
+    <atk>7</atk>
+    <def>7</def>
+    <spatk>4</spatk>
+    <spdef>6</spdef>
+    <spd>4</spd>
+    <size>1’ 00’’ to 2’ 07” / 0.3m to .8m (Small)</size>
+    <weight>7.7 lbs. to 33.1 lbs / 3.5 kg (1) to 15 kg (2)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Amorphous</egg>
+    <hatch>13 Days</hatch>
+    <diet>Nullivore</diet>
+    <habitat>Forest, Grassland</habitat>
+    <legendary>false</legendary>
+    <List710-large>
+      <Ability>
+        <BasicAbility>Pickup</BasicAbility>
+        <BasicAbility>Frisk</BasicAbility>
+        <AdvancedAbility>Insomnia</AdvancedAbility>
+        <AdvancedAbility>Life Force</AdvancedAbility>
+        <HighAbility>Flash Fire</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 2d6</skill>
+        <skill id="1">Acro 2d6</skill>
+        <skill id="2">Combat 2d6</skill>
+        <skill id="3">Stealth 3d6+1</skill>
+        <skill id="4">Percep 3d6+2</skill>
+        <skill id="5">Focus 3d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 2</cap>
+        <cap id="1">Swim 2</cap>
+        <cap id="2">Levitate 5</cap>
+        <cap id="3">Jump 0/1</cap>
+        <cap id="4">Power 1</cap>
+        <cap id="5">Naturewalk (Grassland, Forest)</cap>
+        <cap id="6">Phasing</cap>
+        <cap id="7">Invisibility</cap>
+        <cap id="8">Dead Silent</cap>
+        <cap id="9">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">Pumpkaboo (large)</evo>
+        <evo id="1">Gourgeist (large) Minimum 25</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Astonish - Ghost</move>
+        <move id="1">1 Trick - Psychic</move>
+        <move id="2">1 Confuse Ray - Ghost</move>
+        <move id="3">4 Scary Face - Normal</move>
+        <move id="4">6 Trick-or-Treat - Ghost</move>
+        <move id="5">11 Worry Seed - Grass</move>
+        <move id="6">16 Razor Leaf - Grass</move>
+        <move id="7">20 Leech Seed - Grass</move>
+        <move id="8">23 Trick-or-Treat - Ghost</move>
+        <move id="9">26 Bullet Seed - Grass</move>
+        <move id="10">30 Shadow Sneak - Ghost</move>
+        <move id="11">36 Shadow Ball - Ghost</move>
+        <move id="12">40 Trick-or-Treat - Ghost</move>
+        <move id="13">42 Pain Split - Normal</move>
+        <move id="14">48 Seed Bomb - Grass</move>
+      </Moves>
+    </List710-large>
+  </Pokemon>
+  <Pokemon>
+    <number>710-super</number>
+    <id>Pumpkaboo (super)</id>
+    <type>Ghost / Grass</type>
+    <hp>6</hp>
+    <atk>7</atk>
+    <def>7</def>
+    <spatk>4</spatk>
+    <spdef>6</spdef>
+    <spd>4</spd>
+    <size>1’ 00’’ to 2’ 07” / 0.3m to .8m (Small)</size>
+    <weight>7.7 lbs. to 33.1 lbs / 3.5 kg (1) to 15 kg (2)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Amorphous</egg>
+    <hatch>13 Days</hatch>
+    <diet>Nullivore</diet>
+    <habitat>Forest, Grassland</habitat>
+    <legendary>false</legendary>
+    <List710-super>
+      <Ability>
+        <BasicAbility>Pickup</BasicAbility>
+        <BasicAbility>Frisk</BasicAbility>
+        <AdvancedAbility>Insomnia</AdvancedAbility>
+        <AdvancedAbility>Life Force</AdvancedAbility>
+        <HighAbility>Flash Fire</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 2d6</skill>
+        <skill id="1">Acro 2d6</skill>
+        <skill id="2">Combat 2d6</skill>
+        <skill id="3">Stealth 3d6+1</skill>
+        <skill id="4">Percep 3d6+2</skill>
+        <skill id="5">Focus 3d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 2</cap>
+        <cap id="1">Swim 2</cap>
+        <cap id="2">Levitate 5</cap>
+        <cap id="3">Jump 0/1</cap>
+        <cap id="4">Power 1</cap>
+        <cap id="5">Naturewalk (Grassland, Forest)</cap>
+        <cap id="6">Phasing</cap>
+        <cap id="7">Invisibility</cap>
+        <cap id="8">Dead Silent</cap>
+        <cap id="9">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">Pumpkaboo (super)</evo>
+        <evo id="1">Gourgeist (super) Minimum 25</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Astonish - Ghost</move>
+        <move id="1">1 Trick - Psychic</move>
+        <move id="2">1 Confuse Ray - Ghost</move>
+        <move id="3">4 Scary Face - Normal</move>
+        <move id="4">6 Trick-or-Treat - Ghost</move>
+        <move id="5">11 Worry Seed - Grass</move>
+        <move id="6">16 Razor Leaf - Grass</move>
+        <move id="7">20 Leech Seed - Grass</move>
+        <move id="8">23 Trick-or-Treat - Ghost</move>
+        <move id="9">26 Bullet Seed - Grass</move>
+        <move id="10">30 Shadow Sneak - Ghost</move>
+        <move id="11">36 Shadow Ball - Ghost</move>
+        <move id="12">40 Trick-or-Treat - Ghost</move>
+        <move id="13">42 Pain Split - Normal</move>
+        <move id="14">48 Seed Bomb - Grass</move>
+      </Moves>
+    </List710-super>
+  </Pokemon>
+  <Pokemon>
+    <number>711</number>
+    <id>Gourgeist (average)</id>
+    <type>Ghost / Grass</type>
+    <hp>7</hp>
+    <atk>9</atk>
+    <def>12</def>
+    <spatk>6</spatk>
+    <spdef>8</spdef>
+    <spd>8</spd>
+    <size>2’ 04’’ to 5’ 07” / 0.7m (S) to 1.7m (L)</size>
+    <weight>20.9 lbs. to 86 lbs / 9.5 kg (1) to 39 kg (3)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Amorphous</egg>
+    <diet>Nullivore</diet>
+    <habitat>Forest, Grassland</habitat>
+    <legendary>false</legendary>
+    <List711>
+      <Ability>
+        <BasicAbility>Pickup</BasicAbility>
+        <BasicAbility>Frisk</BasicAbility>
+        <AdvancedAbility>Insomnia</AdvancedAbility>
+        <AdvancedAbility>Pumpkingrab</AdvancedAbility>
+        <HighAbility>Flash Fire</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 4d6</skill>
+        <skill id="1">Acro 2d6</skill>
+        <skill id="2">Combat 3d6</skill>
+        <skill id="3">Stealth 2d6</skill>
+        <skill id="4">Percep 5d6+2</skill>
+        <skill id="5">Focus 3d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 3</cap>
+        <cap id="1">Swim 3</cap>
+        <cap id="2">Levitate 6</cap>
+        <cap id="3">Jump 2/2</cap>
+        <cap id="4">Power 3</cap>
+        <cap id="5">Naturewalk (Grassland, Forest)</cap>
+        <cap id="6">Phasing</cap>
+        <cap id="7">Invisibility</cap>
+        <cap id="8">Dead Silent</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">Pumpkaboo (average)</evo>
+        <evo id="1">Gourgeist (average) Minimum 25</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Astonish - Ghost</move>
+        <move id="1">1 Trick - Psychic</move>
+        <move id="2">1 Confuse Ray - Ghost</move>
+        <move id="3">4 Scary Face - Normal</move>
+        <move id="4">6 Trick-or-Treat - Ghost</move>
+        <move id="5">11 Worry Seed - Grass</move>
+        <move id="6">16 Razor Leaf - Grass</move>
+        <move id="7">20 Leech Seed - Grass</move>
+        <move id="8">23 Trick-or-Treat - Ghost</move>
+        <move id="9">26 Bullet Seed - Grass</move>
+        <move id="10">30 Shadow Sneak - Ghost</move>
+        <move id="11">36 Shadow Ball - Ghost</move>
+        <move id="12">40 Trick-or-Treat - Ghost</move>
+        <move id="13">42 Pain Split - Normal</move>
+        <move id="14">48 Seed Bomb - Grass</move>
+        <move id="15">57 Phantom Force - Ghost</move>
+        <move id="16">63 Trick-or-Treat - Ghost</move>
+        <move id="17">70 Shadow Ball - Ghost</move>
+        <move id="18">75 Explosion - Normal</move>
+      </Moves>
+    </List711>
+  </Pokemon>
+  <Pokemon>
+    <number>711-small</number>
+    <id>Gourgeist (small)</id>
+    <type>Ghost / Grass</type>
+    <hp>6</hp>
+    <atk>9</atk>
+    <def>12</def>
+    <spatk>6</spatk>
+    <spdef>8</spdef>
+    <spd>10</spd>
+    <size>2’ 04’’ to 5’ 07” / 0.7m (S) to 1.7m (L)</size>
+    <weight>20.9 lbs. to 86 lbs / 9.5 kg (1) to 39 kg (3)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Amorphous</egg>
+    <diet>Nullivore</diet>
+    <habitat>Forest, Grassland</habitat>
+    <legendary>false</legendary>
+    <List711-small>
+      <Ability>
+        <BasicAbility>Pickup</BasicAbility>
+        <BasicAbility>Frisk</BasicAbility>
+        <AdvancedAbility>Insomnia</AdvancedAbility>
+        <AdvancedAbility>Pumpkingrab</AdvancedAbility>
+        <HighAbility>Flash Fire</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 4d6</skill>
+        <skill id="1">Acro 2d6</skill>
+        <skill id="2">Combat 3d6</skill>
+        <skill id="3">Stealth 2d6</skill>
+        <skill id="4">Percep 5d6+2</skill>
+        <skill id="5">Focus 3d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 3</cap>
+        <cap id="1">Swim 3</cap>
+        <cap id="2">Levitate 6</cap>
+        <cap id="3">Jump 2/2</cap>
+        <cap id="4">Power 3</cap>
+        <cap id="5">Naturewalk (Grassland, Forest)</cap>
+        <cap id="6">Phasing</cap>
+        <cap id="7">Invisibility</cap>
+        <cap id="8">Dead Silent</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">Pumpkaboo (small)</evo>
+        <evo id="1">Gourgeist (small) Minimum 25</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Astonish - Ghost</move>
+        <move id="1">1 Trick - Psychic</move>
+        <move id="2">1 Confuse Ray - Ghost</move>
+        <move id="3">4 Scary Face - Normal</move>
+        <move id="4">6 Trick-or-Treat - Ghost</move>
+        <move id="5">11 Worry Seed - Grass</move>
+        <move id="6">16 Razor Leaf - Grass</move>
+        <move id="7">20 Leech Seed - Grass</move>
+        <move id="8">23 Trick-or-Treat - Ghost</move>
+        <move id="9">26 Bullet Seed - Grass</move>
+        <move id="10">30 Shadow Sneak - Ghost</move>
+        <move id="11">36 Shadow Ball - Ghost</move>
+        <move id="12">40 Trick-or-Treat - Ghost</move>
+        <move id="13">42 Pain Split - Normal</move>
+        <move id="14">48 Seed Bomb - Grass</move>
+        <move id="15">57 Phantom Force - Ghost</move>
+        <move id="16">63 Trick-or-Treat - Ghost</move>
+        <move id="17">70 Shadow Ball - Ghost</move>
+        <move id="18">75 Explosion - Normal</move>
+      </Moves>
+    </List711-small>
+  </Pokemon>
+  <Pokemon>
+    <number>711-large</number>
+    <id>Gourgeist (large)</id>
+    <type>Ghost / Grass</type>
+    <hp>8</hp>
+    <atk>10</atk>
+    <def>12</def>
+    <spatk>6</spatk>
+    <spdef>8</spdef>
+    <spd>7</spd>
+    <size>2’ 04’’ to 5’ 07” / 0.7m (S) to 1.7m (L)</size>
+    <weight>20.9 lbs. to 86 lbs / 9.5 kg (1) to 39 kg (3)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Amorphous</egg>
+    <diet>Nullivore</diet>
+    <habitat>Forest, Grassland</habitat>
+    <legendary>false</legendary>
+    <List711-large>
+      <Ability>
+        <BasicAbility>Pickup</BasicAbility>
+        <BasicAbility>Frisk</BasicAbility>
+        <AdvancedAbility>Insomnia</AdvancedAbility>
+        <AdvancedAbility>Pumpkingrab</AdvancedAbility>
+        <HighAbility>Flash Fire</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 4d6</skill>
+        <skill id="1">Acro 2d6</skill>
+        <skill id="2">Combat 3d6</skill>
+        <skill id="3">Stealth 2d6</skill>
+        <skill id="4">Percep 5d6+2</skill>
+        <skill id="5">Focus 3d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 3</cap>
+        <cap id="1">Swim 3</cap>
+        <cap id="2">Levitate 6</cap>
+        <cap id="3">Jump 2/2</cap>
+        <cap id="4">Power 3</cap>
+        <cap id="5">Naturewalk (Grassland, Forest)</cap>
+        <cap id="6">Phasing</cap>
+        <cap id="7">Invisibility</cap>
+        <cap id="8">Dead Silent</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">Pumpkaboo (large)</evo>
+        <evo id="1">Gourgeist (large) Minimum 25</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Astonish - Ghost</move>
+        <move id="1">1 Trick - Psychic</move>
+        <move id="2">1 Confuse Ray - Ghost</move>
+        <move id="3">4 Scary Face - Normal</move>
+        <move id="4">6 Trick-or-Treat - Ghost</move>
+        <move id="5">11 Worry Seed - Grass</move>
+        <move id="6">16 Razor Leaf - Grass</move>
+        <move id="7">20 Leech Seed - Grass</move>
+        <move id="8">23 Trick-or-Treat - Ghost</move>
+        <move id="9">26 Bullet Seed - Grass</move>
+        <move id="10">30 Shadow Sneak - Ghost</move>
+        <move id="11">36 Shadow Ball - Ghost</move>
+        <move id="12">40 Trick-or-Treat - Ghost</move>
+        <move id="13">42 Pain Split - Normal</move>
+        <move id="14">48 Seed Bomb - Grass</move>
+        <move id="15">57 Phantom Force - Ghost</move>
+        <move id="16">63 Trick-or-Treat - Ghost</move>
+        <move id="17">70 Shadow Ball - Ghost</move>
+        <move id="18">75 Explosion - Normal</move>
+      </Moves>
+    </List711-large>
+  </Pokemon>
+  <Pokemon>
+    <number>711-super</number>
+    <id>Gourgeist (super)</id>
+    <type>Ghost / Grass</type>
+    <hp>9</hp>
+    <atk>10</atk>
+    <def>12</def>
+    <spatk>6</spatk>
+    <spdef>8</spdef>
+    <spd>5</spd>
+    <size>2’ 04’’ to 5’ 07” / 0.7m (S) to 1.7m (L)</size>
+    <weight>20.9 lbs. to 86 lbs / 9.5 kg (1) to 39 kg (3)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Amorphous</egg>
+    <diet>Nullivore</diet>
+    <habitat>Forest, Grassland</habitat>
+    <legendary>false</legendary>
+    <List711-super>
+      <Ability>
+        <BasicAbility>Pickup</BasicAbility>
+        <BasicAbility>Frisk</BasicAbility>
+        <AdvancedAbility>Insomnia</AdvancedAbility>
+        <AdvancedAbility>Pumpkingrab</AdvancedAbility>
+        <HighAbility>Flash Fire</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 4d6</skill>
+        <skill id="1">Acro 2d6</skill>
+        <skill id="2">Combat 3d6</skill>
+        <skill id="3">Stealth 2d6</skill>
+        <skill id="4">Percep 5d6+2</skill>
+        <skill id="5">Focus 3d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 3</cap>
+        <cap id="1">Swim 3</cap>
+        <cap id="2">Levitate 6</cap>
+        <cap id="3">Jump 2/2</cap>
+        <cap id="4">Power 3</cap>
+        <cap id="5">Naturewalk (Grassland, Forest)</cap>
+        <cap id="6">Phasing</cap>
+        <cap id="7">Invisibility</cap>
+        <cap id="8">Dead Silent</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">Pumpkaboo (super)</evo>
+        <evo id="1">Gourgeist (super) Minimum 25</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Astonish - Ghost</move>
+        <move id="1">1 Trick - Psychic</move>
+        <move id="2">1 Confuse Ray - Ghost</move>
+        <move id="3">4 Scary Face - Normal</move>
+        <move id="4">6 Trick-or-Treat - Ghost</move>
+        <move id="5">11 Worry Seed - Grass</move>
+        <move id="6">16 Razor Leaf - Grass</move>
+        <move id="7">20 Leech Seed - Grass</move>
+        <move id="8">23 Trick-or-Treat - Ghost</move>
+        <move id="9">26 Bullet Seed - Grass</move>
+        <move id="10">30 Shadow Sneak - Ghost</move>
+        <move id="11">36 Shadow Ball - Ghost</move>
+        <move id="12">40 Trick-or-Treat - Ghost</move>
+        <move id="13">42 Pain Split - Normal</move>
+        <move id="14">48 Seed Bomb - Grass</move>
+        <move id="15">57 Phantom Force - Ghost</move>
+        <move id="16">63 Trick-or-Treat - Ghost</move>
+        <move id="17">70 Shadow Ball - Ghost</move>
+        <move id="18">75 Explosion - Normal</move>
+      </Moves>
+    </List711-super>
+  </Pokemon>
 </Namespace>
