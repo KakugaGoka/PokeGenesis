@@ -698,6 +698,7 @@ namespace GenesisDex
         {
             skillList = new List<Skill>();
             skill = new List<string>();
+            List<string> prep = new List<string>();
             skillList.Clear();
             skillList = skillXML.createList(IChooseYou.number);
             skill.Clear();
@@ -705,39 +706,63 @@ namespace GenesisDex
             int sk = rng.Next(0, 4);
             if (sk == 0)
             {
-                skill.Add(skillList[values[0]].skill);
-                skill.Add(skillList[values[1]].skill);
-                skill.Add(skillList[values[2]].skill);
-                skill.Add(skillList[values[3]].skill);
-                skill.Add(skillList[values[4]].skill);
-                skill.Add(skillList[values[5]].skill);
+                prep.Add(skillList[values[0]].skill);
+                prep.Add(skillList[values[1]].skill);
+                prep.Add(skillList[values[2]].skill);
+                prep.Add(skillList[values[3]].skill);
+                prep.Add(skillList[values[4]].skill);
+                prep.Add(skillList[values[5]].skill);
             }
             else if (sk == 1)
             {
-                skill.Add(SkillUp(values[0]));
-                skill.Add(SkillDn(values[1]));
-                skill.Add(skillList[values[2]].skill);
-                skill.Add(skillList[values[3]].skill);
-                skill.Add(skillList[values[4]].skill);
-                skill.Add(skillList[values[5]].skill);
+                prep.Add(SkillUp(values[0]));
+                prep.Add(SkillDn(values[1]));
+                prep.Add(skillList[values[2]].skill);
+                prep.Add(skillList[values[3]].skill);
+                prep.Add(skillList[values[4]].skill);
+                prep.Add(skillList[values[5]].skill);
             }
             else if (sk == 2)
             {
-                skill.Add(SkillUp(values[0]));
-                skill.Add(SkillDn(values[1]));
-                skill.Add(SkillUp(values[2]));
-                skill.Add(SkillDn(values[3]));
-                skill.Add(skillList[values[4]].skill);
-                skill.Add(skillList[values[5]].skill);
+                prep.Add(SkillUp(values[0]));
+                prep.Add(SkillDn(values[1]));
+                prep.Add(SkillUp(values[2]));
+                prep.Add(SkillDn(values[3]));
+                prep.Add(skillList[values[4]].skill);
+                prep.Add(skillList[values[5]].skill);
             }
             else if (sk == 3)
             {
-                skill.Add(SkillUp(values[0]));
-                skill.Add(SkillDn(values[1]));
-                skill.Add(SkillUp(values[2]));
-                skill.Add(SkillDn(values[3]));
-                skill.Add(SkillUp(values[4]));
-                skill.Add(SkillDn(values[5]));
+                prep.Add(SkillUp(values[0]));
+                prep.Add(SkillDn(values[1]));
+                prep.Add(SkillUp(values[2]));
+                prep.Add(SkillDn(values[3]));
+                prep.Add(SkillUp(values[4]));
+                prep.Add(SkillDn(values[5]));
+            }
+            foreach (string s in prep)
+            {
+                if (s.Contains("Athl") == true) { skill.Add(s); }
+            }
+            foreach (string s in prep)
+            {
+                if (s.Contains("Acro") == true) { skill.Add(s); }
+            }
+            foreach (string s in prep)
+            {
+                if (s.Contains("Combat") == true) { skill.Add(s); }
+            }
+            foreach (string s in prep)
+            {
+                if (s.Contains("Stealth") == true) { skill.Add(s); }
+            }
+            foreach (string s in prep)
+            {
+                if (s.Contains("Percep") == true) { skill.Add(s); }
+            }
+            foreach (string s in prep)
+            {
+                if (s.Contains("Focus") == true) { skill.Add(s); }
             }
         }
 
