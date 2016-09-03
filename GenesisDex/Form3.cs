@@ -415,7 +415,7 @@ namespace GenesisDex
         private int GetLevel()
         {
             int min = Convert.ToInt32(pkLevelMin.Value);
-            int max = Convert.ToInt32(pkLevelMax.Value);
+            int max = Convert.ToInt32(pkLevelMax.Value + 1);
             int i = rng.Next(min, max);
             return i;
         }
@@ -608,12 +608,14 @@ namespace GenesisDex
                 Environment.NewLine +
                 Environment.NewLine +
                 Environment.NewLine +
+                Environment.NewLine +
                 AllDesc1[Current];
             rtbInfo2.Visible = true;
             pkItem2.Visible = true;
             pkItem2.Image = null;
             pkItem2.Image = AllItems2[Current];
             rtbInfo2.Text = Environment.NewLine +
+                Environment.NewLine +
                 Environment.NewLine +
                 Environment.NewLine +
                 Environment.NewLine +
