@@ -310,43 +310,43 @@
   </Item>
   <Item>
     <id>Repel</id>
-    <desc>Lasts 5 hour; causes Pokemon of level 35 or lower to flee</desc>
+    <desc>Lasts 5 hour; causes Pokemon of level 35 or lower to flee.</desc>
   </Item>
   <Item>
     <id>Great Ball</id>
-    <desc>A better Poke Ball with no special effects</desc>
+    <desc>A better Poke Ball with no special effects.</desc>
   </Item>
   <Item>
     <id>Level Ball</id>
-    <desc>-20 Modifier if the target is under half the level your active Pokémon is</desc>
+    <desc>-20 Modifier if the target is under half the level your active Pokémon is.</desc>
   </Item>
   <Item>
     <id>Lure Ball</id>
-    <desc>-20 Modifier if the target was baited into the encounter with food</desc>
+    <desc>-20 Modifier if the target was baited into the encounter with food.</desc>
   </Item>
   <Item>
     <id>Moon Ball</id>
-    <desc>-20 Modifier if the target evolves with an Evolution Stone</desc>
+    <desc>-20 Modifier if the target evolves with an Evolution Stone.</desc>
   </Item>
   <Item>
     <id>Friend Ball</id>
-    <desc>A caught Pokémon will start with +1 Loyalty</desc>
+    <desc>A caught Pokémon will start with +1 Loyalty.</desc>
   </Item>
   <Item>
     <id>Love Ball</id>
-    <desc>-30 Modifier if the user has an active Pokémon that is of the same evolutionary line as the target, and the opposite gender</desc>
+    <desc>-30 Modifier if the user has an active Pokémon that is of the same evolutionary line as the target, and the opposite gender.</desc>
   </Item>
   <Item>
     <id>Heavy Ball</id>
-    <desc>-5 Modifier for each Weight Class the target is above 1</desc>
+    <desc>-5 Modifier for each Weight Class the target is above 1.</desc>
   </Item>
   <Item>
     <id>Fast Ball</id>
-    <desc>-20 Modifier if the target has a Movement Capability above 7</desc>
+    <desc>-20 Modifier if the target has a Movement Capability above 7.</desc>
   </Item>
   <Item>
     <id>Repeat Ball</id>
-    <desc>-20 Modifier if you already own a Pokemon of the target’s species</desc>
+    <desc>-20 Modifier if you already own a Pokemon of the target’s species.</desc>
   </Item>
   <Item>
     <id>Timer Ball</id>
@@ -354,11 +354,11 @@
   </Item>
   <Item>
     <id>Nest Ball</id>
-    <desc>.20 Modifier if the target is under level 10</desc>
+    <desc>.20 Modifier if the target is under level 10.</desc>
   </Item>
   <Item>
     <id>Net Ball</id>
-    <desc>-20 Modifier, if the target is Water or Bug type</desc>
+    <desc>-20 Modifier, if the target is Water or Bug type.</desc>
   </Item>
   <Item>
     <id>Dive Ball</id>
@@ -366,27 +366,27 @@
   </Item>
   <Item>
     <id>Luxury Ball</id>
-    <desc>A caught Pokemon is easily pleased and starts with a raised happiness</desc>
+    <desc>A caught Pokemon is easily pleased and starts with a raised happiness.</desc>
   </Item>
   <Item>
     <id>Heal Ball</id>
-    <desc>A caught Pokemon will heal to Max HP immediately upon capture</desc>
+    <desc>A caught Pokemon will heal to Max HP immediately upon capture.</desc>
   </Item>
   <Item>
     <id>Quick Ball</id>
-    <desc>+5 to Modifier after 1 round of the encounter, +10 to Modifier after round 2, +20 to modifier after round 3</desc>
+    <desc>+5 to Modifier after 1 round of the encounter, +10 to Modifier after round 2, +20 to modifier after round 3.</desc>
   </Item>
   <Item>
     <id>Dusk Ball</id>
-    <desc>-20 Modifier if it is dark, or if there is very little light out, when used</desc>
+    <desc>-20 Modifier if it is dark, or if there is very little light out, when used.</desc>
   </Item>
   <Item>
     <id>Pinap Berry</id>
-    <desc>Tough Poffin Ingredient</desc>
+    <desc>Tough Poffin Ingredient.</desc>
   </Item>
   <Item>
     <id>Lum Berry</id>
-    <desc>Cures any single status ailment</desc>
+    <desc>Cures any single status ailment.</desc>
   </Item>
   <Item>
     <id>Sitrus Berry</id>
@@ -394,102 +394,114 @@
   </Item>
   <Item>
     <id>Figy Berry</id>
-    <desc>Spicy Treat, Cool Poffin Ingredient</desc>
+    <desc>Spicy Treat, Cool Poffin Ingredient.</desc>
   </Item>
   <Item>
     <id>Wiki Berry</id>
-    <desc>Dry Treat, Beauty Poffin Ingredient</desc>
+    <desc>Dry Treat, Beauty Poffin Ingredient.</desc>
   </Item>
   <Item>
     <id>Mago Berry</id>
-    <desc>Sweet Treat, Cute Poffin Ingredient</desc>
+    <desc>Sweet Treat, Cute Poffin Ingredient.</desc>
   </Item>
   <Item>
     <id>Aguav Berry</id>
-    <desc>Bitter Treat, Smart Poffin Ingredient</desc>
+    <desc>Bitter Treat, Smart Poffin Ingredient.</desc>
   </Item>
   <Item>
     <id>Iapapa Berry</id>
-    <desc>Sour Treat, Tough Poffin Ingredient</desc>
+    <desc>Sour Treat, Tough Poffin Ingredient.</desc>
   </Item>
   <Item>
     <id>Liechi Berry</id>
-    <desc>+1 Attack CS</desc>
+    <desc>+1 Attack CS.</desc>
   </Item>
   <Item>
     <id>Ganlon Berry</id>
-    <desc>+1 Defense CS</desc>
+    <desc>+1 Defense CS.</desc>
   </Item>
   <Item>
     <id>Salac Berry</id>
-    <desc>+1 Speed CS</desc>
+    <desc>+1 Speed CS.</desc>
   </Item>
   <Item>
     <id>Petaya Berry</id>
-    <desc>+1 Special Attack CS</desc>
+    <desc>+1 Special Attack CS.</desc>
   </Item>
   <Item>
     <id>Apicot Berry</id>
-    <desc>+1 Special Defense CS</desc>
+    <desc>+1 Special Defense CS.</desc>
   </Item>
   <Item>
     <id>Lansat Berry</id>
-    <desc>Increases Critical Range by +1 for the remainder of the encounter</desc>
+    <desc>Increases Critical Range by +1 for the remainder of the encounter.</desc>
   </Item>
   <Item>
     <id>Starf Berry</id>
-    <desc>+2 CS to a random Stat. May be used only at 25% HP or lower</desc>
+    <desc>+2 CS to a random Stat. May be used only at 25% HP or lower.</desc>
   </Item>
   <Item>
     <id>Enigma Berry</id>
-    <desc>User gains Temporary HP equal to 1/6th of their Max HP when hit by a Super Effective Move</desc>
+    <desc>User gains Temporary HP equal to 1/6th of their Max HP when hit by a Super Effective Move.</desc>
   </Item>
   <Item>
     <id>Micle Berry</id>
-    <desc>Increases Accuracy by +1</desc>
+    <desc>Increases Accuracy by +1.</desc>
   </Item>
   <Item>
     <id>Jaboca Berry</id>
-    <desc>Foe dealing Physical Damage to the user loses 1/8 of their Maximum HP</desc>
+    <desc>Foe dealing Physical Damage to the user loses 1/8 of their Maximum HP.</desc>
   </Item>
   <Item>
     <id>Rowap Berry</id>
-    <desc>Foe dealing Special Damage to the user loses 1/8 of their Maximum HP</desc>
+    <desc>Foe dealing Special Damage to the user loses 1/8 of their Maximum HP.</desc>
   </Item>
   <Item>
     <id>Cornn Berry</id>
-    <desc>Cures Disabled Condition</desc>
+    <desc>Cures Disabled Condition.</desc>
   </Item>
   <Item>
     <id>Magost Berry</id>
-    <desc>Cures Enraged condition</desc>
+    <desc>Cures Enraged condition.</desc>
   </Item>
   <Item>
     <id>Rabuta Berry</id>
-    <desc>Cures Suppressed condition</desc>
+    <desc>Cures Suppressed condition.</desc>
   </Item>
   <Item>
     <id>Nomel Berry</id>
-    <desc>Cures Infatuated condition</desc>
+    <desc>Cures Infatuated condition.</desc>
   </Item>
   <Item>
     <id>Spelon Berry</id>
-    <desc>Cool or Beauty Poffin Ingredient</desc>
+    <desc>Cool or Beauty Poffin Ingredient.</desc>
   </Item>
   <Item>
     <id>Pamtre Berry</id>
-    <desc>Cute or Beauty Poffin Ingredient</desc>
+    <desc>Cute or Beauty Poffin Ingredient.</desc>
   </Item>
   <Item>
     <id>Watmel Berry</id>
-    <desc>Cute or Smart Poffin Ingredient</desc>
+    <desc>Cute or Smart Poffin Ingredient.</desc>
   </Item>
   <Item>
     <id>Durin Berry</id>
-    <desc>Smart or Tough Poffin Ingredient</desc>
+    <desc>Smart or Tough Poffin Ingredient.</desc>
   </Item>
   <Item>
     <id>Belue Berry</id>
-    <desc>Cool or Tough Poffin Ingredient</desc>
+    <desc>Cool or Tough Poffin Ingredient.</desc>
+  </Item>
+  <Item>
+    <id>Fluffy Tail</id>
+    <desc>A toy that attracts the attention of a Pokémon. It guarantees escape from any battle with wild Pokémon.</desc>
+  </Item>
+  <Item>
+    <id>Poke Toy</id>
+    <desc>A toy that attracts the attention of a Pokémon. It guarantees escape from any battle with wild Pokémon.</desc>
+  </Item>
+  <Item>
+    <id>Poke Doll</id>
+    <desc>A doll that attracts the attention of a Pokémon. It guarantees escape from any battle with wild Pokémon.</desc>
   </Item>
 </Namespace>

@@ -234,6 +234,7 @@
     <Content Include="Data\Images\Items\Figy Berry.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Data\Images\Items\Fluffy Tail.png" />
     <Content Include="Data\Images\Items\Ganlon Berry.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -333,6 +334,8 @@
     <Content Include="Data\Images\Items\Pink Pearl.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Data\Images\Items\Poke Doll.png" />
+    <Content Include="Data\Images\Items\Poke Toy.png" />
     <Content Include="Data\Images\Items\Pomeg Berry.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
