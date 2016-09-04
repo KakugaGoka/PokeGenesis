@@ -24,9 +24,9 @@ namespace GenesisDex
         HighAbiList highXML = new HighAbiList();
         SkillList skillXML = new SkillList();
         CapabilityList capXML = new CapabilityList();
-        ItemList typeXML = new ItemList();
+        NameList typeXML = new NameList();
         NatureList natureXML = new NatureList();
-        ItemList habitatXML = new ItemList();
+        NameList habitatXML = new NameList();
         EvolutionList evoXML = new EvolutionList();
         List<Pokemon> pokeList = new List<Pokemon>();
         List<Move> moveList = new List<Move>();
@@ -46,13 +46,10 @@ namespace GenesisDex
         Pokemon IChooseYou = new Pokemon();
         int TrueLevel = new int();
         int Page = 1;
-        List<Berry> berryList = new List<Berry>();
-        BerryList berryXML = new BerryList();
+        List<Items> itemList = new List<Items>();
+        ItemList itemXML = new ItemList();
         List<TM> TMList = new List<TM>();
         TMList TMXML = new TMList();
-        List<PokeBall> pokeballList = new List<PokeBall>();
-        PokeBallList pokeballXML = new PokeBallList();
-        List<TM> HMList = new List<TM>();
         bool getItem2 = false;
         List<string> pokeDex = new List<string>();
         List<string> moves = new List<string>();
@@ -79,12 +76,13 @@ namespace GenesisDex
         public FormScan()
         {
             InitializeComponent();
-            rtbInfo2.Visible = false;
             pkGasp.Text = "";
             pbPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonLeft.gif");
             pbPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRight.gif");
             pbPokeLeft.Visible = false;
             pbPokeRight.Visible = false;
+            pbGotoPage.Enabled = false;
+            pkGoto.Enabled = false;
             pbPokeLocX = pbPokemon.Location.X;
             pbPokeLocY = pbPokemon.Location.Y;
             pokeList = pokeXML.createList("Pokemon");
@@ -256,7 +254,7 @@ namespace GenesisDex
                     AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Blank.png"));
                     AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Blank.png"));
                     AllDesc1.Add("There are no items.");
-                    AllDesc2.Add("-");
+                    AllDesc2.Add("There are no items.");
                 }
                 IChooseYou = Final;
                 AllPokemon.Add(IChooseYou);
@@ -279,11 +277,16 @@ namespace GenesisDex
             {
                 pbPokeRight.Visible = true;
                 pbPokeLeft.Visible = true;
+                pbGotoPage.Enabled = true;
+                pkGoto.Enabled = true;
+                pkGoto.Maximum = Amount;
             }
             else
             {
                 pbPokeRight.Visible = false;
                 pbPokeLeft.Visible = false;
+                pbGotoPage.Enabled = false;
+                pkGoto.Enabled = false;
             }
             UpdatePage();
             SetGasp();
@@ -422,10 +425,14 @@ namespace GenesisDex
 
         private void SetImage()
         {
-            var pokePic = pbPokemon.Image;
-            int pokeH = (pokePic.Height);
-            int pbH = pbPokemon.Height;
-            pbPokemon.Location = new Point(pbPokeLocX, (pbPokeLocY + ((pbH / 2) - (pokeH / 2))));
+            pbPokemon.Size = pbPokemon.Image.Size;
+            pbPokemon.Location = new Point(203 - (pbPokemon.Width / 2), 305 - (pbPokemon.Height));
+        }
+
+        private void SetItem()
+        {
+            pkItem.Size = pkItem.Image.Size;
+            pkItem.Location = new Point(615 - (pkItem.Width / 2), 512 - (pkItem.Height));
         }
 
         private Pokemon LevelPokemon(Pokemon poke, int level)
@@ -550,8 +557,6 @@ namespace GenesisDex
 
         private void WriteInfo()
         {
-            rtbInfo2.Visible = false;
-            pkItem2.Visible = false;
             pkItem.Visible = false;
             rtbInfo1.Text = "Number: " + AllPokemon[Current].number + Environment.NewLine +
                 "Name: " + AllPokemon[Current].id + Environment.NewLine +
@@ -575,9 +580,7 @@ namespace GenesisDex
 
         private void WriteMoves()
         {
-            rtbInfo2.Visible = false;
             pkItem.Visible = false;
-            pkItem2.Visible = false;
             rtbInfo1.Text = ("Moves:" + Environment.NewLine);
             for (var w = 0; w < AllMoves[Current].Count; w++)
             {
@@ -595,32 +598,22 @@ namespace GenesisDex
             }
         }
 
-        private void WriteItems()
+        private void WriteItem1()
         {
-            pkItem2.Visible = false;
-            rtbInfo2.Visible = false;
             pkItem.Visible = true;
             pkItem.Image = null;
             pkItem.Image = AllItems1[Current];
-            rtbInfo1.Text = Environment.NewLine +
-                Environment.NewLine +
-                Environment.NewLine +
-                Environment.NewLine +
-                Environment.NewLine +
-                Environment.NewLine +
-                Environment.NewLine +
+            SetItem();
+            rtbInfo1.Text = "Item 1-" + Environment.NewLine +
                 AllDesc1[Current];
-            rtbInfo2.Visible = true;
-            pkItem2.Visible = true;
-            pkItem2.Image = null;
-            pkItem2.Image = AllItems2[Current];
-            rtbInfo2.Text = Environment.NewLine +
-                Environment.NewLine +
-                Environment.NewLine +
-                Environment.NewLine +
-                Environment.NewLine +
-                Environment.NewLine +
-                Environment.NewLine +
+        }
+        private void WriteItem2()
+        {
+            pkItem.Visible = true;
+            pkItem.Image = null;
+            pkItem.Image = AllItems2[Current];
+            SetItem();
+            rtbInfo1.Text = "Item 2-" + Environment.NewLine +
                 AllDesc2[Current];
 
         }
@@ -628,23 +621,24 @@ namespace GenesisDex
         private void infoBack_Click(object sender, EventArgs e)
         {
             Page--;
-            if (Page == 0) { Page = 3; }
+            if (Page == 0) { Page = 4; }
             UpdatePage();
         }
 
         private void infoForward_Click(object sender, EventArgs e)
         {
             Page++;
-            if (Page == 4) { Page = 1; }
+            if (Page == 5) { Page = 1; }
             UpdatePage();
         }
 
         private void UpdatePage()
         {
-            tbPageCount.Text = Page + "/3";
+            tbPageCount.Text = Page + "/4";
             if (Page == 1) { WriteInfo(); }
             if (Page == 2) { WriteMoves(); }
-            if (Page == 3) { WriteItems(); }
+            if (Page == 3) { WriteItem1(); }
+            if (Page == 4) { WriteItem2(); }
         }
 
         private void GetAbilities()
@@ -862,7 +856,7 @@ namespace GenesisDex
         {
             getItem2 = false;
             int i = rng.Next(1, 101);
-            if (i < 40)
+            if (i < 26)
             {
                 GetItem1(); 
             }
@@ -871,7 +865,7 @@ namespace GenesisDex
                 AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Blank.png"));
                 AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Blank.png"));
                 AllDesc1.Add("There are no items.");
-                AllDesc2.Add("-");
+                AllDesc2.Add("There are no items.");
                 return;
             }
         }
@@ -879,10 +873,10 @@ namespace GenesisDex
         private void GetItem1()
         {
             int i = rng.Next(1, 101);
-            if (i < 79) { GetBerry(); }
-            else if (i < 89) { GetPokeball(); }
-            else if (i < 99) { GetTM(); }
-            else if (i < 101) { GetHM(); }
+            if (i < 79) { Tier1(); }
+            else if (i < 94) { Tier2(); }
+            else if (i < 100) { Tier3(); }
+            else if (i < 101) { Tier4(); }
             i = rng.Next(1, 11);
             if (i == 10)
             {
@@ -894,80 +888,80 @@ namespace GenesisDex
             {
                 pkGasp.Text += "It has something!" + Environment.NewLine;
                 AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Blank.png"));
-                AllDesc2.Add("-");
+                AllDesc2.Add("There are no items.");
             }
         }
 
         private void GetItem2()
         {
             int i = rng.Next(1, 101);
-            if (i < 79) { GetBerry(); }
-            else if (i < 89) { GetPokeball(); }
-            else if (i < 99) { GetTM(); }
-            else if (i < 101) { GetHM(); }
+            if (i < 79) { Tier1(); }
+            else if (i < 94) { Tier2(); }
+            else if (i < 100) { Tier3(); }
+            else if (i < 101) { Tier4(); }
         }
-
-        private void GetBerry()
+        
+        private void Tier1()
         {
-            berryList = berryXML.createList("Berry", "Berry");
-            int i = rng.Next(0, berryList.Count);
+            itemList = itemXML.createList("Tier1", "Item");
+            int i = rng.Next(0, itemList.Count);
             if (getItem2 == true)
             {
-                AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Berry\\" + berryList[i].id + ".png"));
-                AllDesc2.Add(berryList[i].id + ": " + berryList[i].desc);
+                AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Items\\" + itemList[i].id + ".png"));
+                AllDesc2.Add(itemList[i].id + ": " + itemList[i].desc);
             }
             else
             {
-                AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Berry\\" + berryList[i].id + ".png"));
-                AllDesc1.Add(berryList[i].id + ": " + berryList[i].desc);
+                AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Items\\" + itemList[i].id + ".png"));
+                AllDesc1.Add(itemList[i].id + ": " + itemList[i].desc);
             }
         }
 
-        private void GetPokeball()
+        private void Tier2()
         {
-            pokeballList = pokeballXML.createList("Pokeball", "PokeBall");
-            int i = rng.Next(0, pokeballList.Count);
+            itemList = itemXML.createList("Tier2", "Item");
+            int i = rng.Next(0, itemList.Count);
             if (getItem2 == true)
             {
-                AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\PokeBall\\" + pokeballList[i].id + ".png"));
-                AllDesc2.Add(pokeballList[i].id + ": " + pokeballList[i].desc);
+                AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Items\\" + itemList[i].id + ".png"));
+                AllDesc2.Add(itemList[i].id + ": " + itemList[i].desc);
             }
             else
             {
-                AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\PokeBall\\" + pokeballList[i].id + ".png"));
-                AllDesc1.Add(pokeballList[i].id + ": " + pokeballList[i].desc);
+                AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Items\\" + itemList[i].id + ".png"));
+                AllDesc1.Add(itemList[i].id + ": " + itemList[i].desc);
             }
         }
 
-        private void GetTM()
+        private void Tier3()
         {
-            TMList = TMXML.createList("TM-HM", "TM");
-            int i = rng.Next(0, TMList.Count);
+            itemList = itemXML.createList("Tier3", "Item");
+            int i = rng.Next(0, itemList.Count);
             if (getItem2 == true)
             {
-                AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\TM-HM\\" + TMList[i].type + ".png"));
-                AllDesc2.Add("TM" + TMList[i].number + " " + TMList[i].id + " - " + TMList[i].type);
+                AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Items\\" + itemList[i].id + ".png"));
+                AllDesc2.Add(itemList[i].id + ": " + itemList[i].desc);
             }
             else
             {
-                AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\TM-HM\\" + TMList[i].type + ".png"));
-                AllDesc1.Add("TM" + TMList[i].number + " " + TMList[i].id + " - " + TMList[i].type);
+                AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Items\\" + itemList[i].id + ".png"));
+                AllDesc1.Add(itemList[i].id + ": " + itemList[i].desc);
             }
         }
 
-        private void GetHM()
+        private void Tier4()
         {
-            HMList = TMXML.createList("TM-HM", "HM");
-            int i = rng.Next(0, HMList.Count);
+            itemList = itemXML.createList("Tier4", "Item");
+            int i = rng.Next(0, itemList.Count);
             if (getItem2 == true)
             {
-                AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\TM-HM\\" + HMList[i].type + ".png"));
-                AllDesc2.Add("HM" + HMList[i].number + " " + HMList[i].id + " - " + HMList[i].type);
+                AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Items\\" + itemList[i].id + ".png"));
+                AllDesc2.Add(itemList[i].id + ": " + itemList[i].desc);
             }
             else
             {
-                AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\TM-HM\\" + HMList[i].type + ".png"));
-                AllDesc1.Add("HM" + HMList[i].number + " " + HMList[i].id + " - " + HMList[i].type);
+                AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Items\\" + itemList[i].id + ".png"));
+                AllDesc1.Add(itemList[i].id + ": " + itemList[i].desc);
             }
         }
 
@@ -1040,6 +1034,38 @@ namespace GenesisDex
             {
                 pkGasp.Text += s + Environment.NewLine;
             }
+        }
+
+        private void pictureBox1_MouseHover(object sender, EventArgs e)
+        {
+            pbGotoPage.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\GotoPageHover.png");
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            pbGotoPage.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\GotoPage.png");
+        }
+
+        private void pkGoto_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                pbGotoPage_Click(this, new EventArgs());
+            }
+        }
+
+        private void pbGotoPage_Click(object sender, EventArgs e)
+        {
+            Current = Convert.ToInt32(pkGoto.Value) - 1;
+            if (Current > Amount - 1)
+            {
+                Current = 0;
+            }
+            tbPokeCount.Text = (Current + 1).ToString() + "/" + Amount.ToString();
+            pbPokemon.Image = AllImages[Current];
+            SetImage();
+            SetGasp();
+            UpdatePage();
         }
     }
 }

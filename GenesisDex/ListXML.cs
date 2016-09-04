@@ -84,18 +84,6 @@ namespace GenesisDexEngine
         public string down { get; set; }
     }
 
-    class Berry
-    {
-        public string id { get; set; }
-        public string desc { get; set; }
-    }
-
-    class PokeBall
-    {
-        public string id { get; set; }
-        public string desc { get; set; }
-    }
-
     class TM
     {
         public string id { get; set; }
@@ -162,7 +150,7 @@ class PokemonList
         }
     }
 
-    class ItemList
+    class NameList
     {
         public List<Items> createList(string xml, string decend)
         {
@@ -179,15 +167,15 @@ class PokemonList
         }
     }
 
-    class BerryList
+    class ItemList
     {
-        public List<Berry> createList(string xml, string decend)
+        public List<Items> createList(string xml, string decend)
         {
-            string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\" + xml + ".xml");
-            List<Berry> idList = new List<Berry>();
+            string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\Items\\" + xml + ".xml");
+            List<Items> idList = new List<Items>();
             XDocument doc = XDocument.Load(fileName);
             var query = from node in doc.Descendants(decend)
-                        select new Berry
+                        select new Items
                         {
                             id = (string)node.Element("id"),
                             desc = (string)node.Element("desc")
@@ -210,24 +198,6 @@ class PokemonList
                             id = (string)node.Element("id"),
                             number = (string)node.Element("number"),
                             type = (string)node.Element("type")
-                        };
-            idList = query.ToList();
-            return idList;
-        }
-    }
-
-    class PokeBallList
-    {
-        public List<PokeBall> createList(string xml, string decend)
-        {
-            string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\" + xml + ".xml");
-            List<PokeBall> idList = new List<PokeBall>();
-            XDocument doc = XDocument.Load(fileName);
-            var query = from node in doc.Descendants(decend)
-                        select new PokeBall
-                        {
-                            id = (string)node.Element("id"),
-                            desc = (string)node.Element("desc")
                         };
             idList = query.ToList();
             return idList;

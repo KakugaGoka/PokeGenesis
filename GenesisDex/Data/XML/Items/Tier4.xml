@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Namespace>
+  <Item>
+    <id>Rare Candy</id>
+    <desc>These very rare treats, When ingested by a Pokemon, grant the eater enough experience to reach its next Level. Pokemon may benefit from up to five Rare Candies in their lifetime.</desc>
+  </Item>
+  <Item>
+    <id>Peral String</id>
+    <desc>Can be sold for $25000.</desc>
+  </Item>
+  <Item>
+    <id>Big Nugget</id>
+    <desc>Can be sold for $30000.</desc>
+  </Item>
+  <Item>
+    <id>Comet Shard</id>
+    <desc>Can be sold for $60000.</desc>
+  </Item>
+  <!--<Item>
+    <id>Master Ball</id>
+    <desc>Incredibly Rare. Worth at least $300,000. Sold nowhere</desc>
+  </Item>-->
+</Namespace>

@@ -249,10 +249,7 @@ namespace GenesisDex
             viewMega = false;
             carryi = i;
             pbPokemon.Image = pokeImages[0];
-            var pokePic = pbPokemon.Image;
-            int pokeH = (pokePic.Height);
-            int pbH = pbPokemon.Height;
-            pbPokemon.Location = new Point(pbPokeLocX, (pbPokeLocY + ((pbH/2) - (pokeH/2))));
+            SetImage();
             imageDisplayed = 0;
             updatePage();
         }
@@ -333,10 +330,7 @@ namespace GenesisDex
                     pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOffHover.PNG");
                     viewMega = false;
                     pbPokemon.Image = pokeImages[0];
-                    var pokePic = pbPokemon.Image;
-                    int pokeH = (pokePic.Height);
-                    int pbH = pbPokemon.Height;
-                    pbPokemon.Location = new Point(pbPokeLocX, (pbPokeLocY + ((pbH / 2) - (pokeH / 2))));
+                    SetImage();
                     updatePage();
                 }
                 else
@@ -344,10 +338,7 @@ namespace GenesisDex
                     pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOnHover.PNG");
                     viewMega = true;
                     pbPokemon.Image = megaImages[0];
-                    var pokePic = pbPokemon.Image;
-                    int pokeH = (pokePic.Height);
-                    int pbH = pbPokemon.Height;
-                    pbPokemon.Location = new Point(pbPokeLocX, (pbPokeLocY + ((pbH / 2) - (pokeH / 2))));
+                    SetImage();
                     updatePage();
                 }
             }
@@ -358,10 +349,7 @@ namespace GenesisDex
                     pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOffHover.PNG");
                     viewMega = false;
                     pbPokemon.Image = pokeImages[0];
-                    var pokePic = pbPokemon.Image;
-                    int pokeH = (pokePic.Height);
-                    int pbH = pbPokemon.Height;
-                    pbPokemon.Location = new Point(pbPokeLocX, (pbPokeLocY + ((pbH / 2) - (pokeH / 2))));
+                    SetImage();
                     pbY.Visible = false;
                     pbX.Visible = false;
                     updatePage();
@@ -385,10 +373,7 @@ namespace GenesisDex
             {
                 onMegaX = true;
                 pbPokemon.Image = megaxImages[0];
-                var pokePic = pbPokemon.Image;
-                int pokeH = (pokePic.Height);
-                int pbH = pbPokemon.Height;
-                pbPokemon.Location = new Point(pbPokeLocX, (pbPokeLocY + ((pbH / 2) - (pokeH / 2))));
+                SetImage();
                 pbY.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYOff.PNG");
                 pbX.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaXOn.PNG");
                 updatePage();
@@ -398,10 +383,7 @@ namespace GenesisDex
             {
                 onMegaX = false;
                 pbPokemon.Image = megayImages[0];
-                var pokePic = pbPokemon.Image;
-                int pokeH = (pokePic.Height);
-                int pbH = pbPokemon.Height;
-                pbPokemon.Location = new Point(pbPokeLocX, (pbPokeLocY + ((pbH / 2) - (pokeH / 2))));
+                SetImage();
                 pbY.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYOn.PNG");
                 pbX.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaXOff.PNG");
                 updatePage();
@@ -862,6 +844,12 @@ namespace GenesisDex
             {
                 tbSearch.Text = "";
             }
+        }
+
+        private void SetImage()
+        {
+            pbPokemon.Size = pbPokemon.Image.Size;
+            pbPokemon.Location = new Point(203 - (pbPokemon.Width / 2), 305 - (pbPokemon.Height));
         }
     }
 }

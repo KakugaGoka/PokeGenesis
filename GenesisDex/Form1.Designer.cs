@@ -45,6 +45,7 @@
             this.pbScan = new System.Windows.Forms.PictureBox();
             this.tbSearch = new System.Windows.Forms.TextBox();
             this.tbPageCount = new System.Windows.Forms.RichTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMega)).BeginInit();
@@ -57,14 +58,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbPokeAdd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOverlay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbScan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pbPokemon
             // 
+            this.pbPokemon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pbPokemon.BackColor = System.Drawing.Color.Transparent;
-            this.pbPokemon.Location = new System.Drawing.Point(114, 165);
+            this.pbPokemon.Location = new System.Drawing.Point(115, 158);
             this.pbPokemon.Name = "pbPokemon";
-            this.pbPokemon.Size = new System.Drawing.Size(175, 140);
+            this.pbPokemon.Size = new System.Drawing.Size(175, 159);
             this.pbPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbPokemon.TabIndex = 0;
             this.pbPokemon.TabStop = false;
@@ -159,7 +163,7 @@
             // pbPokeRight
             // 
             this.pbPokeRight.BackColor = System.Drawing.Color.Transparent;
-            this.pbPokeRight.Location = new System.Drawing.Point(294, 254);
+            this.pbPokeRight.Location = new System.Drawing.Point(296, 254);
             this.pbPokeRight.Name = "pbPokeRight";
             this.pbPokeRight.Size = new System.Drawing.Size(54, 50);
             this.pbPokeRight.TabIndex = 26;
@@ -179,7 +183,7 @@
             // pbY
             // 
             this.pbY.BackColor = System.Drawing.Color.Transparent;
-            this.pbY.Location = new System.Drawing.Point(294, 182);
+            this.pbY.Location = new System.Drawing.Point(296, 182);
             this.pbY.Name = "pbY";
             this.pbY.Size = new System.Drawing.Size(54, 50);
             this.pbY.TabIndex = 28;
@@ -201,10 +205,10 @@
             // pbOverlay
             // 
             this.pbOverlay.BackColor = System.Drawing.Color.Transparent;
-            this.pbOverlay.BackgroundImage = global::GenesisDex.Properties.Resources.MainMenuOverlay;
-            this.pbOverlay.Location = new System.Drawing.Point(15, 139);
+            this.pbOverlay.BackgroundImage = global::GenesisDex.Properties.Resources.MainMenuOverlay1;
+            this.pbOverlay.Location = new System.Drawing.Point(17, 108);
             this.pbOverlay.Name = "pbOverlay";
-            this.pbOverlay.Size = new System.Drawing.Size(377, 23);
+            this.pbOverlay.Size = new System.Drawing.Size(371, 54);
             this.pbOverlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbOverlay.TabIndex = 30;
             this.pbOverlay.TabStop = false;
@@ -250,6 +254,17 @@
             this.tbPageCount.TabIndex = 74;
             this.tbPageCount.Text = "";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::GenesisDex.Properties.Resources.MainMenuOverlayBottom;
+            this.pictureBox1.Location = new System.Drawing.Point(15, 313);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(377, 57);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 78;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -257,11 +272,13 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(822, 616);
+            this.Controls.Add(this.pbPokeAdd);
+            this.Controls.Add(this.pbMega);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tbPageCount);
             this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.pbScan);
             this.Controls.Add(this.pbOverlay);
-            this.Controls.Add(this.pbPokeAdd);
             this.Controls.Add(this.pbY);
             this.Controls.Add(this.pbX);
             this.Controls.Add(this.pbPokeRight);
@@ -269,7 +286,6 @@
             this.Controls.Add(this.infoBack);
             this.Controls.Add(this.infoForward);
             this.Controls.Add(this.rtbInfo1);
-            this.Controls.Add(this.pbMega);
             this.Controls.Add(this.lbPokemon);
             this.Controls.Add(this.pbExit);
             this.Controls.Add(this.pbPokemon);
@@ -295,6 +311,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbPokeAdd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOverlay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbScan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -318,6 +335,7 @@
         private System.Windows.Forms.PictureBox pbScan;
         private System.Windows.Forms.TextBox tbSearch;
         private System.Windows.Forms.RichTextBox tbPageCount;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

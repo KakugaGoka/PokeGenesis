@@ -50,11 +50,9 @@
             this.pkCanBeShiny = new System.Windows.Forms.CheckBox();
             this.pkItem = new System.Windows.Forms.PictureBox();
             this.pkHeld = new System.Windows.Forms.Label();
-            this.pkItem2 = new System.Windows.Forms.PictureBox();
             this.pkGasp = new System.Windows.Forms.RichTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.pkPokemon = new System.Windows.Forms.ComboBox();
-            this.rtbInfo2 = new System.Windows.Forms.RichTextBox();
             this.pkCanBeLegend = new System.Windows.Forms.CheckBox();
             this.pkStageAllowed = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -64,6 +62,9 @@
             this.pbPokeLeft = new System.Windows.Forms.PictureBox();
             this.tbPokeCount = new System.Windows.Forms.RichTextBox();
             this.tbPageCount = new System.Windows.Forms.RichTextBox();
+            this.pbGotoPage = new System.Windows.Forms.PictureBox();
+            this.pkGoto = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbOverlay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoForward)).BeginInit();
@@ -74,19 +75,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.pkLevelMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkLevelMax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkItem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pkItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkAmount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokeRight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokeLeft)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbGotoPage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pkGoto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pbOverlay
             // 
             this.pbOverlay.BackColor = System.Drawing.Color.Transparent;
-            this.pbOverlay.BackgroundImage = global::GenesisDex.Properties.Resources.MainMenuOverlay;
-            this.pbOverlay.Location = new System.Drawing.Point(15, 139);
+            this.pbOverlay.BackgroundImage = global::GenesisDex.Properties.Resources.MainMenuOverlay1;
+            this.pbOverlay.Location = new System.Drawing.Point(17, 108);
             this.pbOverlay.Name = "pbOverlay";
-            this.pbOverlay.Size = new System.Drawing.Size(377, 23);
+            this.pbOverlay.Size = new System.Drawing.Size(371, 53);
             this.pbOverlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbOverlay.TabIndex = 43;
             this.pbOverlay.TabStop = false;
@@ -140,9 +143,9 @@
             // pbPokemon
             // 
             this.pbPokemon.BackColor = System.Drawing.Color.Transparent;
-            this.pbPokemon.Location = new System.Drawing.Point(114, 165);
+            this.pbPokemon.Location = new System.Drawing.Point(115, 158);
             this.pbPokemon.Name = "pbPokemon";
-            this.pbPokemon.Size = new System.Drawing.Size(175, 140);
+            this.pbPokemon.Size = new System.Drawing.Size(175, 159);
             this.pbPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbPokemon.TabIndex = 31;
             this.pbPokemon.TabStop = false;
@@ -163,7 +166,7 @@
             // 
             this.pbScanPokemon.BackColor = System.Drawing.Color.Transparent;
             this.pbScanPokemon.Image = global::GenesisDex.Properties.Resources.ScanPokemon;
-            this.pbScanPokemon.Location = new System.Drawing.Point(132, 551);
+            this.pbScanPokemon.Location = new System.Drawing.Point(138, 553);
             this.pbScanPokemon.Name = "pbScanPokemon";
             this.pbScanPokemon.Size = new System.Drawing.Size(157, 33);
             this.pbScanPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -323,7 +326,7 @@
             // pkItem
             // 
             this.pkItem.BackColor = System.Drawing.Color.Black;
-            this.pkItem.Location = new System.Drawing.Point(565, 160);
+            this.pkItem.Location = new System.Drawing.Point(565, 412);
             this.pkItem.Name = "pkItem";
             this.pkItem.Size = new System.Drawing.Size(100, 100);
             this.pkItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -339,16 +342,6 @@
             this.pkHeld.Name = "pkHeld";
             this.pkHeld.Size = new System.Drawing.Size(0, 13);
             this.pkHeld.TabIndex = 58;
-            // 
-            // pkItem2
-            // 
-            this.pkItem2.BackColor = System.Drawing.Color.Black;
-            this.pkItem2.Location = new System.Drawing.Point(565, 349);
-            this.pkItem2.Name = "pkItem2";
-            this.pkItem2.Size = new System.Drawing.Size(100, 100);
-            this.pkItem2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pkItem2.TabIndex = 60;
-            this.pkItem2.TabStop = false;
             // 
             // pkGasp
             // 
@@ -384,20 +377,6 @@
             this.pkPokemon.Size = new System.Drawing.Size(90, 21);
             this.pkPokemon.TabIndex = 62;
             this.pkPokemon.TextChanged += new System.EventHandler(this.pkPokemon_TextChanged);
-            // 
-            // rtbInfo2
-            // 
-            this.rtbInfo2.AcceptsTab = true;
-            this.rtbInfo2.BackColor = System.Drawing.Color.Black;
-            this.rtbInfo2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtbInfo2.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbInfo2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.rtbInfo2.Location = new System.Drawing.Point(470, 351);
-            this.rtbInfo2.Name = "rtbInfo2";
-            this.rtbInfo2.ReadOnly = true;
-            this.rtbInfo2.Size = new System.Drawing.Size(290, 190);
-            this.rtbInfo2.TabIndex = 64;
-            this.rtbInfo2.Text = "";
             // 
             // pkCanBeLegend
             // 
@@ -464,7 +443,7 @@
             // pbPokeRight
             // 
             this.pbPokeRight.BackColor = System.Drawing.Color.Transparent;
-            this.pbPokeRight.Location = new System.Drawing.Point(294, 254);
+            this.pbPokeRight.Location = new System.Drawing.Point(296, 254);
             this.pbPokeRight.Name = "pbPokeRight";
             this.pbPokeRight.Size = new System.Drawing.Size(54, 50);
             this.pbPokeRight.TabIndex = 71;
@@ -487,10 +466,10 @@
             this.tbPokeCount.BackColor = System.Drawing.Color.Black;
             this.tbPokeCount.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPokeCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.tbPokeCount.Location = new System.Drawing.Point(285, 108);
+            this.tbPokeCount.Location = new System.Drawing.Point(337, 82);
             this.tbPokeCount.Name = "tbPokeCount";
             this.tbPokeCount.ReadOnly = true;
-            this.tbPokeCount.Size = new System.Drawing.Size(93, 25);
+            this.tbPokeCount.Size = new System.Drawing.Size(42, 25);
             this.tbPokeCount.TabIndex = 72;
             this.tbPokeCount.Text = "";
             // 
@@ -507,6 +486,49 @@
             this.tbPageCount.TabIndex = 73;
             this.tbPageCount.Text = "";
             // 
+            // pbGotoPage
+            // 
+            this.pbGotoPage.BackColor = System.Drawing.Color.Transparent;
+            this.pbGotoPage.Image = global::GenesisDex.Properties.Resources.GotoPage;
+            this.pbGotoPage.Location = new System.Drawing.Point(205, 107);
+            this.pbGotoPage.Name = "pbGotoPage";
+            this.pbGotoPage.Size = new System.Drawing.Size(126, 26);
+            this.pbGotoPage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbGotoPage.TabIndex = 75;
+            this.pbGotoPage.TabStop = false;
+            this.pbGotoPage.Click += new System.EventHandler(this.pbGotoPage_Click);
+            this.pbGotoPage.MouseLeave += new System.EventHandler(this.pictureBox1_MouseLeave);
+            this.pbGotoPage.MouseHover += new System.EventHandler(this.pictureBox1_MouseHover);
+            // 
+            // pkGoto
+            // 
+            this.pkGoto.Location = new System.Drawing.Point(337, 113);
+            this.pkGoto.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.pkGoto.Name = "pkGoto";
+            this.pkGoto.Size = new System.Drawing.Size(41, 20);
+            this.pkGoto.TabIndex = 76;
+            this.pkGoto.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.pkGoto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pkGoto_KeyDown);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::GenesisDex.Properties.Resources.MainMenuOverlayBottom;
+            this.pictureBox1.Location = new System.Drawing.Point(15, 313);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(377, 57);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 77;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormScan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -514,8 +536,11 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = global::GenesisDex.Properties.Resources.MainMenu;
             this.ClientSize = new System.Drawing.Size(822, 616);
-            this.Controls.Add(this.tbPageCount);
             this.Controls.Add(this.tbPokeCount);
+            this.Controls.Add(this.pkGoto);
+            this.Controls.Add(this.pbGotoPage);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.tbPageCount);
             this.Controls.Add(this.pbPokeRight);
             this.Controls.Add(this.pbPokeLeft);
             this.Controls.Add(this.label8);
@@ -524,8 +549,6 @@
             this.Controls.Add(this.pkStageAllowed);
             this.Controls.Add(this.pbOverlay);
             this.Controls.Add(this.pkCanBeLegend);
-            this.Controls.Add(this.pkItem2);
-            this.Controls.Add(this.rtbInfo2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pkPokemon);
             this.Controls.Add(this.pkGasp);
@@ -568,10 +591,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pkLevelMin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkLevelMax)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkItem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pkItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkAmount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokeRight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokeLeft)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbGotoPage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pkGoto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -600,11 +625,9 @@
         private System.Windows.Forms.CheckBox pkCanBeShiny;
         private System.Windows.Forms.PictureBox pkItem;
         private System.Windows.Forms.Label pkHeld;
-        private System.Windows.Forms.PictureBox pkItem2;
         private System.Windows.Forms.RichTextBox pkGasp;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox pkPokemon;
-        private System.Windows.Forms.RichTextBox rtbInfo2;
         private System.Windows.Forms.CheckBox pkCanBeLegend;
         private System.Windows.Forms.ComboBox pkStageAllowed;
         private System.Windows.Forms.Label label7;
@@ -614,5 +637,8 @@
         private System.Windows.Forms.PictureBox pbPokeLeft;
         private System.Windows.Forms.RichTextBox tbPokeCount;
         private System.Windows.Forms.RichTextBox tbPageCount;
+        private System.Windows.Forms.PictureBox pbGotoPage;
+        private System.Windows.Forms.NumericUpDown pkGoto;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Namespace>
+  <Item>
+    <id>Big Root</id>
+    <desc>HP stealing moves restore double HP. Cannot be used by Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Bright Powder</id>
+    <desc>+2 to Speed Evasion. Cannot be used by Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Contest Accessory</id>
+    <desc>The user rolls +2d6 during the Introduction Stage of a Contest. Cannot be used by Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Yellow Scarf</id>
+    <desc>When held, once per Contest, the holder may re-roll any 1s made when using a Tough Move. Cannot be used by Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Red Scarf</id>
+    <desc>When held, once per Contest, the holder may re-roll any 1s made when using a Cool Move. Cannot be used by Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Pink Scarf</id>
+    <desc>When held, once per Contest, the holder may re-roll any 1s made when using a Cute Move. Cannot be used by Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Green Scarf</id>
+    <desc>When held, once per Contest, the holder may re-roll any 1s made when using a Smart Move. Cannot be used by Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Blue Scarf</id>
+    <desc>When held, once per Contest, the holder may re-roll any 1s made when using a Beauty Move. Cannot be used by Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Everstone</id>
+    <desc>Evolution is prevented for the holder. Cannot be used by Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Go-Goggles</id>
+    <desc>The user does not take damage from Sandstorm. Head Item for Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Iron Ball</id>
+    <desc>The Holder's Speed is halved, and any immunity to Ground Type is lost. Hand Item for Trainers. Standard Action to drop.</desc>
+  </Item>
+  <Item>
+    <id>Lagging Tail</id>
+    <desc>The Lagging Items are tied to a specific Stat. When held, they set that Stat to -4 Combat Stages. Cannot be used by Trainers. Standard Action to drop.</desc>
+  </Item>
+  <Item>
+    <id>Safety Goggles</id>
+    <desc>The holder is immune to Moves with the Powder Keyword. Accessory or Head Item for Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Black Belt</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Fighting-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Black Glasses</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Dark-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Charcoal</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Fire-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Dragon Fang</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Dragon-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Hard Stone</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Rock-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Magnet</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Electric-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Metal Coat</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Steel-Type Moves performed by the user. Accessory Item for Trainers. Can be used by Onix and Scyther to evolve.</desc>
+  </Item>
+  <Item>
+    <id>Miracle Seed</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Grass-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Mystic Water</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Water-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Poison Barb</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Poison-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Sharp Beak</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Flying-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Silk Scarf</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Fairy-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Silver Powder</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Bug-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Soft Sand</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Ground-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Spell Tag</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Ghost-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Never Melt Ice</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Ice-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Twisted Spoon</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Psychic-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item>
+    <id>Winter Cloak</id>
+    <desc>The user does not take damage from Hail. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item>
+    <id>HP Down</id>
+    <desc>Lowers the user's HP Base Stat 1.</desc>
+  </Item>
+  <Item>
+    <id>Anti-Protein</id>
+    <desc>Lowers the user's Attack Base Stat 1.</desc>
+  </Item>
+  <Item>
+    <id>Anti-Iron</id>
+    <desc>Lowers the user's Defense Base Stat 1.</desc>
+  </Item>
+  <Item>
+    <id>Anti-Calcium</id>
+    <desc>Lowers the user's Special Attack Base Stat 1.</desc>
+  </Item>
+  <Item>
+    <id>Anti-Zinc</id>
+    <desc>Lowers the user's Special Defense Base Stat 1.</desc>
+  </Item>
+  <Item>
+    <id>Anti-Carbos</id>
+    <desc>Lowers the user's Speed Base Stat 1.</desc>
+  </Item>
+  <Item>
+    <id>Blue Shard</id>
+    <desc>A bit of colored energized crystal used for various crafting purposes. Blue Shards are associated with Water, Ice, and Flying types.</desc>
+  </Item>
+  <Item>
+    <id>Green Shard</id>
+    <desc>A bit of colored energized crystal used for various crafting purposes. Green Shards are associated with Bug, Grass, and Ground types.</desc>
+  </Item>
+  <Item>
+    <id>Red Shard</id>
+    <desc>A bit of colored energized crystal used for various crafting purposes. Red Shards are associated with Fire, Fairy, and Psychic types.</desc>
+  </Item>
+  <Item>
+    <id>Yellow Shard</id>
+    <desc>A bit of colored energized crystal used for various crafting purposes. Yellow Shards are associated with Electric, Rock, and Steel types.</desc>
+  </Item>
+  <Item>
+    <id>Orange Shard</id>
+    <desc>A bit of colored energized crystal used for various crafting purposes. Orange Shards are associated with Normal, Fighting, and Dragon types.</desc>
+  </Item>
+  <Item>
+    <id>Violet Shard</id>
+    <desc>A bit of colored energized crystal used for various crafting purposes. Violet Shards are associated with Poison, Dark, and Ghost types.</desc>
+  </Item>
+  <Item>
+    <id>X Attack</id>
+    <desc>Increases the Pokemon's Attack by two Combat Stages</desc>
+  </Item>
+  <Item>
+    <id>X Defend</id>
+    <desc>Increases the Pokemon's Defense by two Combat Stages</desc>
+  </Item>
+  <Item>
+    <id>X Special</id>
+    <desc>Increases the Pokemon's Special Attack by two Combat Stages</desc>
+  </Item>
+  <Item>
+    <id>X Sp. Def</id>
+    <desc>Increases the Pokemon's Special Defense by two Combat Stages</desc>
+  </Item>
+  <Item>
+    <id>X Speed</id>
+    <desc>Increases the Pokemon's Speed by two Combat Stages</desc>
+  </Item>
+  <Item>
+    <id>Dire Hit</id>
+    <desc>Increases Critical Hit Range of all moves by +2.</desc>
+  </Item>
+  <Item>
+    <id>X Accuracy</id>
+    <desc>Increases Accuracy by +2</desc>
+  </Item>
+  <Item>
+    <id>Guard Spec</id>
+    <desc>Prevents reduction of Combat Stages or Accuracy on the Pokemon for 5 Turns</desc>
+  </Item>
+  <Item>
+    <id>Potion</id>
+    <desc>Heals 20 Hit Points</desc>
+  </Item>
+  <Item>
+    <id>Super Potion</id>
+    <desc>Heals 35 Hit Points</desc>
+  </Item>
+  <Item>
+    <id>Hyper Potion</id>
+    <desc>Heals 70 Hit Points</desc>
+  </Item>
+  <Item>
+    <id>Antidote</id>
+    <desc>Cures Poison</desc>
+  </Item>
+  <Item>
+    <id>Paralyze Heal</id>
+    <desc>Cures Paralysis</desc>
+  </Item>
+  <Item>
+    <id>Burn Heal</id>
+    <desc>Cures Burns</desc>
+  </Item>
+  <Item>
+    <id>Ice Heal</id>
+    <desc>Cures Freezing</desc>
+  </Item>
+  <Item>
+    <id>Full Heal</id>
+    <desc>Cures all Persistent Status Afflictions</desc>
+  </Item>
+  <Item>
+    <id>Full Restore</id>
+    <desc>Heals a Pokemon for 80 Hit Points and cures any Status Afflictions</desc>
+  </Item>
+  <Item>
+    <id>Revive</id>
+    <desc>Revives fainted Pokemon and sets to 20 Hit Points</desc>
+  </Item>
+  <Item>
+    <id>Enriched Water</id>
+    <desc>Heals 20 Hit Points.</desc>
+  </Item>
+  <Item>
+    <id>Shuckle's Berry Juice</id>
+    <desc>Heals 30 Hit Points.</desc>
+  </Item>
+  <Item>
+    <id>Super Soda Pop</id>
+    <desc>Heals 30 Hit Points.</desc>
+  </Item>
+  <Item>
+    <id>Sparkling Lemonade</id>
+    <desc>Heals 50 Hit Points.</desc>
+  </Item>
+  <Item>
+    <id>MooMoo Milk</id>
+    <desc>Heals 80 Hit Points.</desc>
+  </Item>
+  <Item>
+    <id>Candy Bar</id>
+    <desc>Snack. Grants a Digestion Buff that heals 5 Hit Points.</desc>
+  </Item>
+  <Item>
+    <id>Honey</id>
+    <desc>Snack. Grants a Digestion Buff that heals 5 Hit Points. May be used as Bait</desc>
+  </Item>
+  <Item>
+    <id>Leftovers</id>
+    <desc>Snack. When their Digestion Buff is traded in, the user recovers 1/16th of their max Hit Points at the beginning of each turn for the rest of the encounter.</desc>
+  </Item>
+  <Item>
+    <id>Black Sludge</id>
+    <desc>Poison-Type Pokemon may consume the Black Sludge as a Snack Item; when the Digestion Buff is traded in, they recover 1/8th of their Max Hit Points at the beginning of each turn for the rest of the encounter.</desc>
+  </Item>
+  <Item>
+    <id>Energy Powder</id>
+    <desc>Heals 25 Hit Points - Repulsive</desc>
+  </Item>
+  <Item>
+    <id>Heal Powder</id>
+    <desc>Cure all Persistent Status Afflictions - Repulsive</desc>
+  </Item>
+  <Item>
+    <id>Repel</id>
+    <desc>Lasts 1 hour; causes Pokemon of level 15 or lower to flee</desc>
+  </Item>
+  <Item>
+    <id>Super Repel</id>
+    <desc>Lasts 2 hour; causes Pokemon of level 25 or lower to flee</desc>
+  </Item>
+  <Item>
+    <id>Basic Ball</id>
+    <desc>Basic Poke Ball; often called just a “Poke Ball”</desc>
+  </Item>
+  <Item>
+    <id>Safari Ball</id>
+    <desc>Used during Safari hunts</desc>
+  </Item>
+  <Item>
+    <id>Premier Ball</id>
+    <desc>Given as promotional balls during sales</desc>
+  </Item>
+  <Item>
+    <id>Cherish Ball</id>
+    <desc>A decorative Poke Ball often given out during special events</desc>
+  </Item>
+  <Item>
+    <id>Park Ball</id>
+    <desc>Used during Safari hunts</desc>
+  </Item>
+  <Item>
+    <id>Sport Ball</id>
+    <desc>Used during Safari hunts</desc>
+  </Item>
+  <Item>
+    <id>Cheri Berry</id>
+    <desc>Cures Paralysis, Cool Poffin Ingredient</desc>
+  </Item>
+  <Item>
+    <id>Chesto Berry</id>
+    <desc>Cures Sleep, Beauty Poffin Ingredient</desc>
+  </Item>
+  <Item>
+    <id>Pecha Berry</id>
+    <desc>Cures Poison, Cute Poffin Ingredient</desc>
+  </Item>
+  <Item>
+    <id>Rawst Berry</id>
+    <desc>Cures Burn, Smart Poffin Ingredient</desc>
+  </Item>
+  <Item>
+    <id>Aspear Berry</id>
+    <desc>Cures Freeze, Tough Poffin Ingredient</desc>
+  </Item>
+  <Item>
+    <id>Oran Berry</id>
+    <desc>Restores 5 Hit Points</desc>
+  </Item>
+  <Item>
+    <id>Persim Berry</id>
+    <desc>Cures Confusion</desc>
+  </Item>
+  <Item>
+    <id>Razz Berry</id>
+    <desc>Cool Poffin Ingredient</desc>
+  </Item>
+  <Item>
+    <id>Bluk Berry</id>
+    <desc>Beauty Poffin Ingredient</desc>
+  </Item>
+  <Item>
+    <id>Nanab Berry</id>
+    <desc>Cute Poffin Ingredient</desc>
+  </Item>
+  <Item>
+    <id>Wepear Berry</id>
+    <desc>Smart Poffin Ingredient</desc>
+  </Item>
+</Namespace>
