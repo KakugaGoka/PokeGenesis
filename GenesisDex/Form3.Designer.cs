@@ -406,7 +406,7 @@
             this.pkStageAllowed.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.pkStageAllowed.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.pkStageAllowed.BackColor = System.Drawing.Color.Black;
-            this.pkStageAllowed.ForeColor = System.Drawing.Color.Black;
+            this.pkStageAllowed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.pkStageAllowed.FormattingEnabled = true;
             this.pkStageAllowed.Location = new System.Drawing.Point(94, 500);
             this.pkStageAllowed.Name = "pkStageAllowed";
