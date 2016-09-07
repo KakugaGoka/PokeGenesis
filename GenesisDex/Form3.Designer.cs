@@ -166,7 +166,7 @@
             // 
             this.pbScanPokemon.BackColor = System.Drawing.Color.Transparent;
             this.pbScanPokemon.Image = global::GenesisDex.Properties.Resources.ScanPokemon;
-            this.pbScanPokemon.Location = new System.Drawing.Point(138, 553);
+            this.pbScanPokemon.Location = new System.Drawing.Point(133, 553);
             this.pbScanPokemon.Name = "pbScanPokemon";
             this.pbScanPokemon.Size = new System.Drawing.Size(157, 33);
             this.pbScanPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -178,6 +178,8 @@
             // 
             // pkLevelMin
             // 
+            this.pkLevelMin.BackColor = System.Drawing.Color.Black;
+            this.pkLevelMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.pkLevelMin.Location = new System.Drawing.Point(94, 392);
             this.pkLevelMin.Maximum = new decimal(new int[] {
             99,
@@ -203,6 +205,8 @@
             // 
             this.pkHabitat.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.pkHabitat.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.pkHabitat.BackColor = System.Drawing.Color.Black;
+            this.pkHabitat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.pkHabitat.FormattingEnabled = true;
             this.pkHabitat.Location = new System.Drawing.Point(94, 446);
             this.pkHabitat.Name = "pkHabitat";
@@ -235,6 +239,8 @@
             // 
             this.pkType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.pkType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.pkType.BackColor = System.Drawing.Color.Black;
+            this.pkType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.pkType.FormattingEnabled = true;
             this.pkType.Location = new System.Drawing.Point(94, 473);
             this.pkType.Name = "pkType";
@@ -254,6 +260,8 @@
             // 
             // pkLevelMax
             // 
+            this.pkLevelMax.BackColor = System.Drawing.Color.Black;
+            this.pkLevelMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.pkLevelMax.Location = new System.Drawing.Point(142, 392);
             this.pkLevelMax.Maximum = new decimal(new int[] {
             99,
@@ -371,6 +379,8 @@
             // 
             this.pkPokemon.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.pkPokemon.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.pkPokemon.BackColor = System.Drawing.Color.Black;
+            this.pkPokemon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.pkPokemon.FormattingEnabled = true;
             this.pkPokemon.Location = new System.Drawing.Point(94, 419);
             this.pkPokemon.Name = "pkPokemon";
@@ -395,6 +405,8 @@
             // 
             this.pkStageAllowed.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.pkStageAllowed.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.pkStageAllowed.BackColor = System.Drawing.Color.Black;
+            this.pkStageAllowed.ForeColor = System.Drawing.Color.Black;
             this.pkStageAllowed.FormattingEnabled = true;
             this.pkStageAllowed.Location = new System.Drawing.Point(94, 500);
             this.pkStageAllowed.Name = "pkStageAllowed";
@@ -414,6 +426,8 @@
             // 
             // pkAmount
             // 
+            this.pkAmount.BackColor = System.Drawing.Color.Black;
+            this.pkAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.pkAmount.Location = new System.Drawing.Point(94, 527);
             this.pkAmount.Minimum = new decimal(new int[] {
             1,
