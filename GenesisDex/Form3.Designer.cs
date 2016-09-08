@@ -480,10 +480,10 @@
             this.tbPokeCount.BackColor = System.Drawing.Color.Black;
             this.tbPokeCount.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPokeCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.tbPokeCount.Location = new System.Drawing.Point(337, 82);
+            this.tbPokeCount.Location = new System.Drawing.Point(196, 323);
             this.tbPokeCount.Name = "tbPokeCount";
             this.tbPokeCount.ReadOnly = true;
-            this.tbPokeCount.Size = new System.Drawing.Size(42, 25);
+            this.tbPokeCount.Size = new System.Drawing.Size(68, 25);
             this.tbPokeCount.TabIndex = 72;
             this.tbPokeCount.Text = "";
             // 
