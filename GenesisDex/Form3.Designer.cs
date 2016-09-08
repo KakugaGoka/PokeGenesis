@@ -166,7 +166,7 @@
             // 
             this.pbScanPokemon.BackColor = System.Drawing.Color.Transparent;
             this.pbScanPokemon.Image = global::GenesisDex.Properties.Resources.ScanPokemon;
-            this.pbScanPokemon.Location = new System.Drawing.Point(70, 551);
+            this.pbScanPokemon.Location = new System.Drawing.Point(57, 548);
             this.pbScanPokemon.Name = "pbScanPokemon";
             this.pbScanPokemon.Size = new System.Drawing.Size(157, 33);
             this.pbScanPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -181,7 +181,7 @@
             this.pkLevelMin.BackColor = System.Drawing.Color.Black;
             this.pkLevelMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pkLevelMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.pkLevelMin.Location = new System.Drawing.Point(252, 409);
+            this.pkLevelMin.Location = new System.Drawing.Point(252, 404);
             this.pkLevelMin.Maximum = new decimal(new int[] {
             99,
             0,
@@ -210,7 +210,7 @@
             this.pkHabitat.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pkHabitat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.pkHabitat.FormattingEnabled = true;
-            this.pkHabitat.Location = new System.Drawing.Point(71, 449);
+            this.pkHabitat.Location = new System.Drawing.Point(71, 444);
             this.pkHabitat.Name = "pkHabitat";
             this.pkHabitat.Size = new System.Drawing.Size(143, 33);
             this.pkHabitat.TabIndex = 47;
@@ -220,7 +220,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Silver;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(293, 378);
+            this.label1.Location = new System.Drawing.Point(293, 373);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 15);
             this.label1.TabIndex = 48;
@@ -231,7 +231,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Silver;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Location = new System.Drawing.Point(27, 450);
+            this.label2.Location = new System.Drawing.Point(27, 445);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 15);
             this.label2.TabIndex = 49;
@@ -245,7 +245,7 @@
             this.pkType.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pkType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.pkType.FormattingEnabled = true;
-            this.pkType.Location = new System.Drawing.Point(71, 413);
+            this.pkType.Location = new System.Drawing.Point(71, 408);
             this.pkType.Name = "pkType";
             this.pkType.Size = new System.Drawing.Size(143, 33);
             this.pkType.TabIndex = 50;
@@ -255,7 +255,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Silver;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Location = new System.Drawing.Point(37, 414);
+            this.label3.Location = new System.Drawing.Point(37, 409);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(33, 15);
             this.label3.TabIndex = 51;
@@ -266,7 +266,7 @@
             this.pkLevelMax.BackColor = System.Drawing.Color.Black;
             this.pkLevelMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pkLevelMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.pkLevelMax.Location = new System.Drawing.Point(328, 409);
+            this.pkLevelMax.Location = new System.Drawing.Point(328, 404);
             this.pkLevelMax.Maximum = new decimal(new int[] {
             99,
             0,
@@ -292,7 +292,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Silver;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Location = new System.Drawing.Point(333, 391);
+            this.label4.Location = new System.Drawing.Point(333, 386);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 15);
             this.label4.TabIndex = 53;
@@ -303,7 +303,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Silver;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Location = new System.Drawing.Point(263, 391);
+            this.label5.Location = new System.Drawing.Point(263, 386);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(26, 15);
             this.label5.TabIndex = 54;
@@ -316,7 +316,7 @@
             this.pkHasItem.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.pkHasItem.FlatAppearance.BorderSize = 5;
             this.pkHasItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pkHasItem.Location = new System.Drawing.Point(71, 507);
+            this.pkHasItem.Location = new System.Drawing.Point(247, 525);
             this.pkHasItem.Name = "pkHasItem";
             this.pkHasItem.Size = new System.Drawing.Size(125, 20);
             this.pkHasItem.TabIndex = 55;
@@ -330,7 +330,7 @@
             this.pkCanBeShiny.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.pkCanBeShiny.FlatAppearance.BorderSize = 5;
             this.pkCanBeShiny.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pkCanBeShiny.Location = new System.Drawing.Point(71, 486);
+            this.pkCanBeShiny.Location = new System.Drawing.Point(247, 498);
             this.pkCanBeShiny.Name = "pkCanBeShiny";
             this.pkCanBeShiny.Size = new System.Drawing.Size(126, 20);
             this.pkCanBeShiny.TabIndex = 57;
@@ -363,10 +363,10 @@
             this.pkGasp.BackColor = System.Drawing.Color.Black;
             this.pkGasp.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pkGasp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.pkGasp.Location = new System.Drawing.Point(236, 507);
+            this.pkGasp.Location = new System.Drawing.Point(57, 480);
             this.pkGasp.Name = "pkGasp";
             this.pkGasp.ReadOnly = true;
-            this.pkGasp.Size = new System.Drawing.Size(152, 77);
+            this.pkGasp.Size = new System.Drawing.Size(157, 62);
             this.pkGasp.TabIndex = 61;
             this.pkGasp.Text = "";
             // 
@@ -375,7 +375,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Silver;
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label6.Location = new System.Drawing.Point(16, 378);
+            this.label6.Location = new System.Drawing.Point(16, 373);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(54, 15);
             this.label6.TabIndex = 63;
@@ -389,7 +389,7 @@
             this.pkPokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pkPokemon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.pkPokemon.FormattingEnabled = true;
-            this.pkPokemon.Location = new System.Drawing.Point(71, 377);
+            this.pkPokemon.Location = new System.Drawing.Point(71, 372);
             this.pkPokemon.Name = "pkPokemon";
             this.pkPokemon.Size = new System.Drawing.Size(143, 33);
             this.pkPokemon.TabIndex = 62;
@@ -402,7 +402,7 @@
             this.pkCanBeLegend.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.pkCanBeLegend.FlatAppearance.BorderSize = 5;
             this.pkCanBeLegend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pkCanBeLegend.Location = new System.Drawing.Point(71, 528);
+            this.pkCanBeLegend.Location = new System.Drawing.Point(234, 553);
             this.pkCanBeLegend.Name = "pkCanBeLegend";
             this.pkCanBeLegend.Size = new System.Drawing.Size(156, 20);
             this.pkCanBeLegend.TabIndex = 65;
@@ -417,7 +417,7 @@
             this.pkStageAllowed.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pkStageAllowed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.pkStageAllowed.FormattingEnabled = true;
-            this.pkStageAllowed.Location = new System.Drawing.Point(236, 467);
+            this.pkStageAllowed.Location = new System.Drawing.Point(236, 457);
             this.pkStageAllowed.Name = "pkStageAllowed";
             this.pkStageAllowed.Size = new System.Drawing.Size(67, 33);
             this.pkStageAllowed.TabIndex = 66;
@@ -427,7 +427,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Silver;
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label7.Location = new System.Drawing.Point(252, 449);
+            this.label7.Location = new System.Drawing.Point(252, 439);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(37, 15);
             this.label7.TabIndex = 67;
@@ -438,7 +438,7 @@
             this.pkAmount.BackColor = System.Drawing.Color.Black;
             this.pkAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pkAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.pkAmount.Location = new System.Drawing.Point(321, 469);
+            this.pkAmount.Location = new System.Drawing.Point(321, 459);
             this.pkAmount.Minimum = new decimal(new int[] {
             1,
             0,
@@ -458,7 +458,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Silver;
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label8.Location = new System.Drawing.Point(333, 451);
+            this.label8.Location = new System.Drawing.Point(333, 441);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(45, 15);
             this.label8.TabIndex = 69;

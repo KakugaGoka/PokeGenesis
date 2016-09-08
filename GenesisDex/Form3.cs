@@ -171,6 +171,10 @@ namespace GenesisDex
 
         private void pbScanPokemon_Click(object sender, EventArgs e)
         {
+            if (pkPokemon.Items.Contains(pkPokemon.Text) == false) { MessageBox.Show("That is not a Pokemon."); return; }
+            if (pkType.Items.Contains(pkType.Text) == false) { MessageBox.Show("That is not a Type."); return; }
+            if (pkHabitat.Items.Contains(pkHabitat.Text) == false) { MessageBox.Show("That is not a Habitat."); return; }
+            if (pkStageAllowed.Items.Contains(pkStageAllowed.Text) == false) { MessageBox.Show("That is not a Evolutionary Stage."); return; }
             AllSkills.Clear();
             AllAbilities.Clear();
             AllMoves.Clear();
@@ -224,13 +228,13 @@ namespace GenesisDex
                 Pokemon throwspokeball = GetGender(Pikachu); if (throwspokeball == null) { return; }
                 Pokemon PokeBall = LevelPokemon(throwspokeball, Level); if (PokeBall == null) { return; }
                 Pokemon Final = PokeBall;
-                pkGasp.Text += "It is a " + Final.id + Environment.NewLine;
+                pkGasp.Text += "It is a " + Final.id;
                 if (pkCanBeShiny.Checked == true)
                 {
                     int i = rng.Next(1, 101);
                     if (i == 1 || i == 100)
                     {
-                        pkGasp.Text += "It's a Shiny!" + Environment.NewLine;
+                        pkGasp.Text += Environment.NewLine + "It's a Shiny!";
                         isShiny = true;
                         Final = GetShiny(Final);
                         AllImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + PokeBall.number + ".gif"));
@@ -880,13 +884,13 @@ namespace GenesisDex
             i = rng.Next(1, 11);
             if (i == 10)
             {
-                pkGasp.Text += "It has a few things!" + Environment.NewLine;
+                pkGasp.Text += Environment.NewLine +  "It has a few things!";
                 getItem2 = true;
                 GetItem2();
             }
             else
             {
-                pkGasp.Text += "It has something!" + Environment.NewLine;
+                pkGasp.Text += Environment.NewLine + "It has something!";
                 AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Blank.png"));
                 AllDesc2.Add("There are no items.");
             }
