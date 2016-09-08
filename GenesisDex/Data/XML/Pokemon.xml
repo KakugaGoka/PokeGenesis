@@ -4234,4 +4234,538 @@
       </Moves>
     </List702>
   </Pokemon>
+  <Pokemon>
+    <number>703</number>
+    <id>Carbink</id>
+    <type>Rock / Fairy</type>
+    <hp>5</hp>
+    <atk>5</atk>
+    <def>15</def>
+    <spatk>5</spatk>
+    <spdef>15</spdef>
+    <spd>5</spd>
+    <size>1’ 00” / 0.3m (Small)</size>
+    <weight>12.6 lbs. / 5.7 kg (1)</weight>
+    <gender>Genderless</gender>
+    <egg>Fairy and Mineral</egg>
+    <hatch>13 Days</hatch>
+    <diet>Nullivore</diet>
+    <habitat>Cave</habitat>
+    <legendary>false</legendary>
+    <List703>
+      <Ability>
+        <BasicAbility>Clear Body</BasicAbility>
+        <AdvancedAbility>Simple</AdvancedAbility>
+        <AdvancedAbility>Solid Rock</AdvancedAbility>
+        <AdvancedAbility>Sturdy</AdvancedAbility>
+        <HighAbility>Filter</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 1d6,</skill>
+        <skill id="1">Acro 3d6</skill>
+        <skill id="2">Combat 2d6</skill>
+        <skill id="3">Stealth 4d6</skill>
+        <skill id="4">Percep 4d6+1</skill>
+        <skill id="5">Focus 4d6+2</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 2</cap>
+        <cap id="1">Swim 2</cap>
+        <cap id="2">Levitate 5</cap>
+        <cap id="3">Burrow 5</cap>
+        <cap id="4">Jump 0/1</cap>
+        <cap id="5">Power 1</cap>
+        <cap id="6">Materializer</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">Carbink</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Tackle - Normal</move>
+        <move id="1">5 Rock Throw - Rock</move>
+        <move id="2">8 Sharpen - Normal</move>
+        <move id="3">12 Smack Down - Rock</move>
+        <move id="4">18 Reflect - Psychic</move>
+        <move id="5">21 Stealth Rock - Rock</move>
+        <move id="6">27 Guard Split - Psychic</move>
+        <move id="7">31 Ancient Power - Rock</move>
+        <move id="8">35 Flail - Normal</move>
+        <move id="9">40 Skill Swap - Psychic</move>
+        <move id="10">46 Power Gem - Rock</move>
+        <move id="11">49 Stone Edge - Rock</move>
+        <move id="12">50 Moonblast - Fairy</move>
+        <move id="13">60 Light Screen - Psychic</move>
+        <move id="14">70 Safeguard - Normal</move>
+      </Moves>
+    </List703>
+  </Pokemon>
+  <Pokemon>
+    <number>700</number>
+    <id>Sylveon</id>
+    <type>Fairy</type>
+    <hp>10</hp>
+    <atk>7</atk>
+    <def>7</def>
+    <spatk>11</spatk>
+    <spdef>13</spdef>
+    <spd>6</spd>
+    <size>3’ 03” / 1m (Medium)</size>
+    <weight>51.8 lbs. / 23.5 kg (2)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Field</egg>
+    <diet>Herbivore</diet>
+    <habitat>Grassland, Urban</habitat>
+    <legendary>false</legendary>
+    <List700>
+      <Ability>
+        <BasicAbility>Cute Charm</BasicAbility>
+        <BasicAbility>Gentle Vibe</BasicAbility>
+        <AdvancedAbility>Pixilate</AdvancedAbility>
+        <AdvancedAbility>Friend Guard</AdvancedAbility>
+        <HighAbility>Celebrate</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 3d6+2</skill>
+        <skill id="1">Acro 3d6+1</skill>
+        <skill id="2">Combat 3d6+1</skill>
+        <skill id="3">Stealth 3d6+2</skill>
+        <skill id="4">Percep 5d6+2</skill>
+        <skill id="5">Focus 5d6+2</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 6</cap>
+        <cap id="1">Swim 4</cap>
+        <cap id="2">Jump 1/2</cap>
+        <cap id="3">Power 3</cap>
+        <cap id="4">Tracker</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">Eevee</evo>
+        <evo id="1">Vaporeon Water Stone</evo>
+        <evo id="2">Jolteon Thunderstone</evo>
+        <evo id="3">Flareon Fire Stone</evo>
+        <evo id="4">Espeon Dawn Stone</evo>
+        <evo id="5">Umbreon Dusk Stone</evo>
+        <evo id="6">Leafeon Leaf Stone</evo>
+        <evo id="7">Glaceon Shiny Stone</evo>
+        <evo id="8">Sylveon Moon Stone</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Tackle - Normal</move>
+        <move id="1">1 Tail Whip - Normal</move>
+        <move id="2">1 Helping Hand - Normal</move>
+        <move id="3">5 Sand Attack - Ground</move>
+        <move id="4">9 Fairy Wind - Fairy</move>
+        <move id="5">13 Quick Attack - Normal</move>
+        <move id="6">17 Swift - Normal</move>
+        <move id="7">20 Draining Kiss - Fairy</move>
+        <move id="8">25 Skill Swap - Psychic</move>
+        <move id="9">29 Misty Terrain - Fairy</move>
+        <move id="10">33 Light Screen - Psychic</move>
+        <move id="11">37 Moonblast - Fairy</move>
+        <move id="12">41 Last Resort - Normal</move>
+        <move id="13">45 Psych Up - Normal</move>
+      </Moves>
+    </List700>
+  </Pokemon>
+  <Pokemon>
+    <number>699</number>
+    <id>Aurorus</id>
+    <type>Rock / Ice</type>
+    <hp>12</hp>
+    <atk>8</atk>
+    <def>7</def>
+    <spatk>10</spatk>
+    <spdef>9</spdef>
+    <spd>6</spd>
+    <size>8' 10” / 2.7m (Huge)</size>
+    <weight>496 lbs. / 225 kg (6)</weight>
+    <gender>87.5% M / 12.5% F</gender>
+    <egg>Monster</egg>
+    <diet>Herbivore</diet>
+    <habitat>Cave, Mountain</habitat>
+    <legendary>false</legendary>
+    <List699>
+      <Ability>
+        <BasicAbility>Ice Shield</BasicAbility>
+        <BasicAbility>Solid Rock</BasicAbility>
+        <AdvancedAbility>Ice Body</AdvancedAbility>
+        <AdvancedAbility>Refrigerate</AdvancedAbility>
+        <HighAbility>Snow Warning</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 5d6</skill>
+        <skill id="1">Acro 2d6</skill>
+        <skill id="2">Combat 3d6</skill>
+        <skill id="3">Stealth 3d6</skill>
+        <skill id="4">Percep 4d6+1</skill>
+        <skill id="5">Focus 4d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 6</cap>
+        <cap id="1">Swim 3</cap>
+        <cap id="2">Jump 1/1</cap>
+        <cap id="3">Power 8</cap>
+        <cap id="4">Freezer</cap>
+        <cap id="5">Naturewalk (Tundra)</cap>
+        <cap id="6">Mountable 2</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">Amaura</evo>
+        <evo id="1">Aurorus Minimum 35</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Growl - Normal</move>
+        <move id="1">1 Powder Snow - Ice</move>
+        <move id="2">5 Thunder Wave - Electric</move>
+        <move id="3">10 Rock Throw - Rock</move>
+        <move id="4">13 Icy Wind - Ice</move>
+        <move id="5">15 Take Down - Normal</move>
+        <move id="6">18 Mist - Ice</move>
+        <move id="7">20 Aurora Beam - Ice</move>
+        <move id="8">26 Ancient Power - Rock</move>
+        <move id="9">30 Round - Normal</move>
+        <move id="10">34 Avalanche - Ice</move>
+        <move id="11">38 Hail - Ice</move>
+        <move id="12">43 Nature Power - Normal</move>
+        <move id="13">46 Encore - Normal</move>
+        <move id="14">50 - Light Screen - Psychic</move>
+        <move id="15">56 Ice Beam - Ice</move>
+        <move id="16">63 Hyper Beam - Ice</move>
+        <move id="17">74 Blizzard - Ice</move>
+        <move id="18">77 Freeze Dry - Ice</move>
+      </Moves>
+    </List699>
+  </Pokemon>
+  <Pokemon>
+    <number>698</number>
+    <id>Amaura</id>
+    <type>Rock / Ice</type>
+    <hp>8</hp>
+    <atk>6</atk>
+    <def>5</def>
+    <spatk>7</spatk>
+    <spdef>6</spdef>
+    <spd>5</spd>
+    <size>4’ 03” / 1.3m (Medium)</size>
+    <weight>55.6 lbs. / 25.2 kg (3)</weight>
+    <gender>87.5% M / 12.5% F</gender>
+    <egg>Monster</egg>
+    <hatch>16 Days</hatch>
+    <diet>Herbivore</diet>
+    <habitat>Cave, Mountain</habitat>
+    <legendary>false</legendary>
+    <List698>
+      <Ability>
+        <BasicAbility>Ice Shield</BasicAbility>
+        <BasicAbility>Solid Rock</BasicAbility>
+        <AdvancedAbility>Ice Body</AdvancedAbility>
+        <AdvancedAbility>Refrigerate</AdvancedAbility>
+        <HighAbility>Snow Warning</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 3d6</skill>
+        <skill id="1">Acro 2d6</skill>
+        <skill id="2">Combat 2d6</skill>
+        <skill id="3">Stealth 3d6</skill>
+        <skill id="4">Percep 3d6+1</skill>
+        <skill id="5">Focus 2d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 5</cap>
+        <cap id="1">Swim 3</cap>
+        <cap id="2">Jump 1/1</cap>
+        <cap id="3">Power 2</cap>
+        <cap id="4">Chilled</cap>
+        <cap id="5">Freezer</cap>
+        <cap id="6">Naturewalk (Tundra)</cap>
+        <cap id="7">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">Amaura</evo>
+        <evo id="1">Aurorus Minimum 35</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Growl - Normal</move>
+        <move id="1">1 Powder Snow - Ice</move>
+        <move id="2">5 Thunder Wave - Electric</move>
+        <move id="3">10 Rock Throw - Rock</move>
+        <move id="4">13 Icy Wind - Ice</move>
+        <move id="5">15 Take Down - Normal</move>
+        <move id="6">18 Mist - Ice</move>
+        <move id="7">20 Aurora Beam - Ice</move>
+        <move id="8">26 Ancient Power - Rock</move>
+        <move id="9">30 Round - Normal</move>
+        <move id="10">34 Avalanche - Ice</move>
+        <move id="11">38 Hail - Ice</move>
+        <move id="12">41 Nature Power - Normal</move>
+        <move id="13">44 Encore - Normal</move>
+        <move id="14">47 Light Screen - Psychic</move>
+        <move id="15">50 Ice Beam - Ice</move>
+        <move id="16">57 Hyper Beam - Ice</move>
+        <move id="17">65 Blizzard - Ice</move>
+      </Moves>
+    </List698>
+  </Pokemon>
+  <Pokemon>
+    <number>042</number>
+    <id>Golbat</id>
+    <type>Poison / Flying</type>
+    <hp>8</hp>
+    <atk>8</atk>
+    <def>7</def>
+    <spatk>7</spatk>
+    <spdef>8</spdef>
+    <spd>9</spd>
+    <size>5’ 3” / 1.6m (Medium)</size>
+    <weight>121.3 lbs. / 55kg (4)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Flying</egg>
+    <diet>Carnivore</diet>
+    <habitat>Cave</habitat>
+    <legendary>false</legendary>
+    <List042>
+      <Ability>
+        <BasicAbility>Inner Focus</BasicAbility>
+        <BasicAbility>Infiltrator</BasicAbility>
+        <AdvancedAbility>Instinct</AdvancedAbility>
+        <AdvancedAbility>Insomnia</AdvancedAbility>
+        <HighAbility>Vanguard</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 2d6+2</skill>
+        <skill id="1">Acro 3d6+2</skill>
+        <skill id="2">Combat 3d6</skill>
+        <skill id="3">Stealth 3d6</skill>
+        <skill id="4">Percep 2d6</skill>
+        <skill id="5">Focus 3d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 3</cap>
+        <cap id="1">Swim 2</cap>
+        <cap id="2">Sky 5</cap>
+        <cap id="3">Jump 1/1</cap>
+        <cap id="4">Power 3</cap>
+        <cap id="5">Darkvision</cap>
+        <cap id="6">Tracker</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Zubat</evo>
+        <evo id="1">2 - Golbat Minimum 20</evo>
+        <evo id="2">3 - Crobat Minimum 30</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">5  Supersonic - Normal</move>
+        <move id="1">7  Astonish - Ghost</move>
+        <move id="2">11  Bite - Dark</move>
+        <move id="3">13  Wing Attack - Flying</move>
+        <move id="4">17  Confuse Ray - Ghost</move>
+        <move id="5">19  Air Cutter - Flying</move>
+        <move id="6">24  Swift - Normal</move>
+        <move id="7">27  Poison Fang</move>
+        <move id="8">32  Mean Look</move>
+        <move id="9">35  Acrobatics - Flying</move>
+        <move id="10">40  Haze - Ice</move>
+        <move id="11">43  Venoshock - Poison</move>
+        <move id="12">48  Air Slash - Flying</move>
+        <move id="13">51  Quick Guard</move>
+      </Moves>
+    </List042>
+  </Pokemon>
+  <Pokemon>
+    <number>043</number>
+    <id>Oddish</id>
+    <type>Grass / Poison</type>
+    <hp>5</hp>
+    <atk>5</atk>
+    <def>6</def>
+    <spatk>8</spatk>
+    <spdef>7</spdef>
+    <spd>3</spd>
+    <size>1’ 8” / 0.5m (Small)</size>
+    <weight>11.9 lbs. / 5.4kg (1)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Plant</egg>
+    <hatch>10 Days</hatch>
+    <diet>Phototroph</diet>
+    <habitat>Forest, Grassland, Marsh, Rainforest </habitat>
+    <legendary>false</legendary>
+    <List043>
+      <Ability>
+        <BasicAbility>Photosynthesis</BasicAbility>
+        <BasicAbility>Run Away</BasicAbility>
+        <AdvancedAbility>Chlorophyll</AdvancedAbility>
+        <AdvancedAbility>Oblivious</AdvancedAbility>
+        <HighAbility>Life Force</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 2d6</skill>
+        <skill id="1">Acro 2d6</skill>
+        <skill id="2">Combat 1d6+2</skill>
+        <skill id="3">Stealth 4d6</skill>
+        <skill id="4">Percep 2d6</skill>
+        <skill id="5">Focus 2d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 4</cap>
+        <cap id="1">Swim 2</cap>
+        <cap id="2">Burrow 1</cap>
+        <cap id="3">Jump 1/1</cap>
+        <cap id="4">Power 1</cap>
+        <cap id="5">Naturewalk (Grassland, Forest)</cap>
+        <cap id="6">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Oddish</evo>
+        <evo id="1">2 - Gloom Minimum 20</evo>
+        <evo id="2">3 - Vileplume Leaf Stone Minimum 30</evo>
+        <evo id="3">4 - Bellossom Sun Stone Minimum 30</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1  Absorb - Gras</move>
+        <move id="1">5  Sweet Scent - Normal</move>
+        <move id="2">9  Acid - Poison</move>
+        <move id="3">13  Poison Powder - Poison</move>
+        <move id="4">14  Stun Spore - Grass</move>
+        <move id="5">15  Sleep Powder - Grass</move>
+        <move id="6">19  Mega Drain - Grass</move>
+        <move id="7">23  Lucky Chant - Normal</move>
+        <move id="8">27  Moonlight - Fairy</move>
+        <move id="9">31  Giga Drain - Grass</move>
+        <move id="10">35  Toxic - Poison</move>
+        <move id="11">39  Natural Gift - Normal</move>
+        <move id="12">43  Moonblast - Fairy</move>
+        <move id="13">47  Grassy Terrain - Grass</move>
+        <move id="14">51  Petal Dance - Grass</move>
+      </Moves>
+    </List043>
+  </Pokemon>
+  <Pokemon>
+    <number>044</number>
+    <id>Gloom</id>
+    <type>Grass / Poison</type>
+    <hp>6</hp>
+    <atk>7</atk>
+    <def>7</def>
+    <spatk>9</spatk>
+    <spdef>8</spdef>
+    <spd>4</spd>
+    <size>2’ 7” / 0.8m (Small)</size>
+    <weight>19 lbs. / 8.6kg (1)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Plant</egg>
+    <diet>Phototroph</diet>
+    <habitat>Forest, Grassland, Marsh, Rainforest </habitat>
+    <legendary>false</legendary>
+    <List044>
+      <Ability>
+        <BasicAbility>Effect Spore</BasicAbility>
+        <BasicAbility>Run Away</BasicAbility>
+        <AdvancedAbility>Stench</AdvancedAbility>
+        <AdvancedAbility>Oblivious </AdvancedAbility>
+        <HighAbility>Life Force</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 3d6</skill>
+        <skill id="1">Acro 2d6</skill>
+        <skill id="2">Combat 2d6+1</skill>
+        <skill id="3">Stealth 3d6</skill>
+        <skill id="4">Percep 2d6</skill>
+        <skill id="5">Focus 3d6+1</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 5</cap>
+        <cap id="1">Swim 2</cap>
+        <cap id="2">Jump 1/1</cap>
+        <cap id="3">Power 2</cap>
+        <cap id="4">Naturewalk (Grassland, Forest)</cap>
+        <cap id="5">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Oddish</evo>
+        <evo id="1">2 - Gloom Minimum 20</evo>
+        <evo id="2">3 - Vileplume Leaf Stone Minimum 30</evo>
+        <evo id="3">4 - Bellossom Sun Stone Minimum 30</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">5  Sweet Scent - Norma</move>
+        <move id="1">9  Acid - Poison</move>
+        <move id="2">13  Poison Powder - Poison</move>
+        <move id="3">14  Stun Spore - Grass</move>
+        <move id="4">15  Sleep Powder - Grass</move>
+        <move id="5">19  Mega Drain - Grass</move>
+        <move id="6">24  Lucky Chant - Normal</move>
+        <move id="7">29  Moonlight - Fairy</move>
+        <move id="8">34  Giga Drain - Grass</move>
+        <move id="9">39  Toxic - Poison</move>
+        <move id="10">44  Natural Gift - Normal</move>
+        <move id="11">49  Petal Blizzard - Grass</move>
+        <move id="12">54  Grassy Terrain - Grass</move>
+        <move id="13">59  Petal Dance - Grass</move>
+      </Moves>
+    </List044>
+  </Pokemon>
+  <Pokemon>
+    <number>045</number>
+    <id>Vileplume</id>
+    <type>Grass / Poison</type>
+    <hp>8</hp>
+    <atk>8</atk>
+    <def>9</def>
+    <spatk>11</spatk>
+    <spdef>9</spdef>
+    <spd>5</spd>
+    <size>3’ 11” / 1.2m (Medium)</size>
+    <weight>41 lbs. / 18.6kg (2)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Plant</egg>
+    <diet>Phototroph</diet>
+    <habitat>Forest, Grassland, Marsh, Rainforest </habitat>
+    <legendary>false</legendary>
+    <List045>
+      <Ability>
+        <BasicAbility>Effect Spore</BasicAbility>
+        <BasicAbility>Hay Fever</BasicAbility>
+        <AdvancedAbility>Stench</AdvancedAbility>
+        <AdvancedAbility>Dust Cloud</AdvancedAbility>
+        <HighAbility>Life Force</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 3d6+1</skill>
+        <skill id="1">Acro 2d6+1</skill>
+        <skill id="2">Combat 3d6+3</skill>
+        <skill id="3">Stealth 4d6</skill>
+        <skill id="4">Percep 3d6</skill>
+        <skill id="5">Focus 4d6+1</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 5</cap>
+        <cap id="1">Swim 3</cap>
+        <cap id="2">Jump 1/1</cap>
+        <cap id="3">Power 2</cap>
+        <cap id="4">Naturewalk (Grassland, Forest)</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Oddish</evo>
+        <evo id="1">2 - Gloom Minimum 20</evo>
+        <evo id="2">3 - Vileplume Leaf Stone Minimum 30</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">5  Sweet Scent - Normal</move>
+        <move id="1">9  Acid - Poison</move>
+        <move id="2">13  Poison Powder - Poison</move>
+        <move id="3">14  Stun Spore - Grass</move>
+        <move id="4">15  Sleep Powder - Grass</move>
+        <move id="5">19  Mega Drain - Grass</move>
+        <move id="6">24  Lucky Chant - Normal</move>
+        <move id="7">29  Moonlight - Fairy</move>
+        <move id="8">34  Giga Drain - Grass</move>
+        <move id="9">39  Toxic - Poison</move>
+        <move id="10">44  Natural Gift - Normal</move>
+        <move id="11">49  Petal Blizzard - Grass</move>
+        <move id="12">59  Petal Dance - Grass</move>
+        <move id="13">64  Solar Beam - Grass</move>
+      </Moves>
+    </List045>
+  </Pokemon>
 </Namespace>
