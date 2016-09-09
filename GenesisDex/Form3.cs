@@ -81,7 +81,7 @@ namespace GenesisDex
             pbPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRight.gif");
             pbPokeLeft.Visible = false;
             pbPokeRight.Visible = false;
-            pbGotoPage.Enabled = false;
+            pbGotoPage.Visible = false;
             pkGoto.Enabled = false;
             pbPokeLocX = pbPokemon.Location.X;
             pbPokeLocY = pbPokemon.Location.Y;
@@ -281,7 +281,7 @@ namespace GenesisDex
             {
                 pbPokeRight.Visible = true;
                 pbPokeLeft.Visible = true;
-                pbGotoPage.Enabled = true;
+                pbGotoPage.Visible = true;
                 pkGoto.Enabled = true;
                 pkGoto.Maximum = Amount;
             }
@@ -289,7 +289,7 @@ namespace GenesisDex
             {
                 pbPokeRight.Visible = false;
                 pbPokeLeft.Visible = false;
-                pbGotoPage.Enabled = false;
+                pbGotoPage.Visible = false;
                 pkGoto.Enabled = false;
             }
             UpdatePage();
@@ -561,7 +561,7 @@ namespace GenesisDex
 
         private void WriteInfo()
         {
-            pkItem.Visible = false;
+            pkItem.Image = null;
             rtbInfo1.Text = "Number: " + AllPokemon[Current].number + Environment.NewLine +
                 "Name: " + AllPokemon[Current].id + Environment.NewLine +
                 "Type: " + AllPokemon[Current].type + Environment.NewLine +
@@ -584,7 +584,7 @@ namespace GenesisDex
 
         private void WriteMoves()
         {
-            pkItem.Visible = false;
+            pkItem.Image = null;
             rtbInfo1.Text = ("Moves:" + Environment.NewLine);
             for (var w = 0; w < AllMoves[Current].Count; w++)
             {
@@ -604,19 +604,17 @@ namespace GenesisDex
 
         private void WriteItem1()
         {
-            pkItem.Visible = true;
             pkItem.Image = null;
             pkItem.Image = AllItems1[Current];
-            SetItem();
+            //SetItem();
             rtbInfo1.Text = "Item 1-" + Environment.NewLine +
                 AllDesc1[Current];
         }
         private void WriteItem2()
         {
-            pkItem.Visible = true;
             pkItem.Image = null;
             pkItem.Image = AllItems2[Current];
-            SetItem();
+            //SetItem();
             rtbInfo1.Text = "Item 2-" + Environment.NewLine +
                 AllDesc2[Current];
 

@@ -89,13 +89,13 @@
             // lbPokemon
             // 
             this.lbPokemon.BackColor = System.Drawing.Color.Black;
-            this.lbPokemon.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPokemon.Font = new System.Drawing.Font("Sitka Small", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPokemon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.lbPokemon.FormattingEnabled = true;
-            this.lbPokemon.ItemHeight = 18;
+            this.lbPokemon.ItemHeight = 31;
             this.lbPokemon.Location = new System.Drawing.Point(23, 375);
             this.lbPokemon.Name = "lbPokemon";
-            this.lbPokemon.Size = new System.Drawing.Size(360, 166);
+            this.lbPokemon.Size = new System.Drawing.Size(360, 159);
             this.lbPokemon.TabIndex = 16;
             this.lbPokemon.SelectedIndexChanged += new System.EventHandler(this.lbPokemon_SelectedIndexChanged);
             // 
@@ -230,11 +230,11 @@
             // 
             this.tbSearch.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.tbSearch.BackColor = System.Drawing.Color.Black;
-            this.tbSearch.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSearch.Font = new System.Drawing.Font("Sitka Small", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.tbSearch.Location = new System.Drawing.Point(23, 540);
+            this.tbSearch.Location = new System.Drawing.Point(23, 534);
             this.tbSearch.Name = "tbSearch";
-            this.tbSearch.Size = new System.Drawing.Size(360, 21);
+            this.tbSearch.Size = new System.Drawing.Size(360, 34);
             this.tbSearch.TabIndex = 33;
             this.tbSearch.Tag = "";
             this.tbSearch.Text = "Search";
