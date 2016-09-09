@@ -670,6 +670,7 @@ namespace GenesisDex
                 if (imageDisplayed >= pokeImages.Count) { imageDisplayed = 0; }
                 pbPokemon.Image = pokeImages[imageDisplayed];
             }
+            SetImage();
         }
         private void pbPokeLeft_Click(object sender, EventArgs e)
         {
@@ -703,7 +704,7 @@ namespace GenesisDex
                 else { imageDisplayed -= 1; }
                 pbPokemon.Image = pokeImages[imageDisplayed];
             }
-
+            SetImage();
         }
 
         private void pbX_Click(object sender, EventArgs e)
