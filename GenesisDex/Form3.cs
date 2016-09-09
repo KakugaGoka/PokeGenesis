@@ -29,6 +29,7 @@ namespace GenesisDex
         NameList habitatXML = new NameList();
         EvolutionList evoXML = new EvolutionList();
         List<Pokemon> pokeList = new List<Pokemon>();
+        List<Pokemon> permaList = new List<Pokemon>();
         List<Move> moveList = new List<Move>();
         List<Ability> abiList = new List<Ability>();
         List<Skill> skillList = new List<Skill>();
@@ -68,10 +69,15 @@ namespace GenesisDex
         List<string> AllDesc1 = new List<string>();
         List<string> AllDesc2 = new List<string>();
         List<string[]> Info = new List<string[]>();
+        List<string> Gender = new List<string>();
+        List<string> Stat = new List<string>();
+        List<List<string>> AllStat = new List<List<string>>();
+        List<string> Type = new List<string>();
         int Current = 0;
         int Amount = 0;
         bool isShiny = false;
         string typeShiny { get; set; }
+        string newShiny { get; set; }
 
         public FormScan()
         {
@@ -169,6 +175,39 @@ namespace GenesisDex
             pbScanPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanPokemon.png");
         }
 
+        private void CreateScanList()
+        {
+            permaList = new List<Pokemon>();
+            pokeList = new List<Pokemon>();
+            pokeList = pokeXML.createList("Pokemon");
+            if (pkPokemon.Text == "Any")
+            {
+                CheckEvo();
+                CheckHabitat();
+                CheckType();
+                if (pkCanBeLegend.Checked != true)
+                {
+                    GetLegend();
+                }
+                for (var p = 0; p < pokeList.Count; p++)
+                {
+                    permaList.Add(pokeList[p]);
+                }
+            }
+            else
+            {
+                foreach (Pokemon p in pokeList)
+                {
+                    if (p.id.Contains(pkPokemon.Text) == true)
+                    {
+                        permaList.Add(p);
+                        break;
+                    }
+                }
+            }
+        }
+
+
         private void pbScanPokemon_Click(object sender, EventArgs e)
         {
             if (pkPokemon.Items.Contains(pkPokemon.Text) == false) { MessageBox.Show("That is not a Pokemon."); return; }
@@ -187,47 +226,33 @@ namespace GenesisDex
             AllDesc2.Clear();
             AllLevels.Clear();
             Info.Clear();
+            Gender.Clear();
+            AllStat.Clear();
+            Type.Clear();
+            CreateScanList();
             Amount = Convert.ToInt32(pkAmount.Value);
             for (var z = 0; z < Amount; z++)
             {
+                IChooseYou = null;
+                pokeList = new List<Pokemon>();
+                for (var p = 0; p < permaList.Count; p++)
+                {
+                    pokeList.Add(permaList[p]);
+                }
                 Pokemon HeyYou = null;
+                Pokemon PokeBall = null;
+                Pokemon Final = null;
                 pkGasp.Clear();
                 infoForward.Visible = true;
                 infoBack.Visible = true;
                 isShiny = false;
                 pkLevelMin_ValueChanged(this, new EventArgs());
                 pkLevelMax_ValueChanged(this, new EventArgs());
-                pokeList.Clear();
-                pokeList = pokeXML.createList("Pokemon");
-                if (pkPokemon.Text == "Any")
-                {
-                    CheckEvo();
-                    CheckHabitat();
-                    CheckType();
-                    if (pkCanBeLegend.Checked != true)
-                    {
-                        GetLegend();
-                    }
-                    HeyYou = GetPokemon();
-                    if (HeyYou == null) { return; }
-                }
-                else
-                {
-                    for (var p = 0; p < pokeList.Count; p++)
-                    {
-                        if (pokeList[p].id == pkPokemon.Text)
-                        {
-                            HeyYou = pokeList[p];
-                            break;
-                        }
-                    }
-                }
+                HeyYou = GetPokemon();
                 if (HeyYou == null) { return; }
-                Pokemon Pikachu = GetNature(HeyYou); if (Pikachu == null) { return; }
                 int Level = GetLevel();
-                Pokemon throwspokeball = GetGender(Pikachu); if (throwspokeball == null) { return; }
-                Pokemon PokeBall = LevelPokemon(throwspokeball, Level); if (PokeBall == null) { return; }
-                Pokemon Final = PokeBall;
+                PokeBall = GetGender(HeyYou); if (PokeBall == null) { return; }
+                Final = PokeBall;
                 pkGasp.Text += "It is a " + Final.id;
                 if (pkCanBeShiny.Checked == true)
                 {
@@ -236,18 +261,21 @@ namespace GenesisDex
                     {
                         pkGasp.Text += Environment.NewLine + "It's a Shiny!";
                         isShiny = true;
-                        Final = GetShiny(Final);
+                        GetShiny(Final);
+                        Type.Add(newShiny);
                         AllImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + PokeBall.number + ".gif"));
                     }
                     else
                     {
                         AllImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + PokeBall.number + ".gif"));
+                        Type.Add(Final.type);
                     }
 
                 }
                 else
                 {
                         AllImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + PokeBall.number + ".gif"));
+                        Type.Add(Final.type);
                 }
                 if (pkHasItem.Checked == true)
                 {
@@ -270,6 +298,9 @@ namespace GenesisDex
                 AllAbilities.Add(ability);
                 GetSkills();
                 AllSkills.Add(skill);
+                GetStats(Final, TrueLevel);
+                GetNature();
+                AllStat.Add(Stat);
                 string[] info = pkGasp.Lines;
                 Info.Add(info);
             }
@@ -374,7 +405,7 @@ namespace GenesisDex
             }
         }
 
-        private Pokemon GetNature(Pokemon poke)
+        private void GetNature()
         {
             natureList = natureXML.createList("Natures", "Nature");
             int i = rng.Next(0, natureList.Count - 1);
@@ -384,12 +415,12 @@ namespace GenesisDex
             int spatk;
             int spdef;
             int spd;
-            try { hp = Convert.ToInt32(poke.hp); } catch { MessageBox.Show(poke.id + "'s hp is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return poke = null; }
-            try { atk = Convert.ToInt32(poke.atk); } catch { MessageBox.Show(poke.id + "'s atk is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return poke = null; }
-            try { def = Convert.ToInt32(poke.def); } catch { MessageBox.Show(poke.id + "'s def is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return poke = null; }
-            try { spatk = Convert.ToInt32(poke.spatk); } catch { MessageBox.Show(poke.id + "'s spatk is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return poke = null; }
-            try { spdef = Convert.ToInt32(poke.spdef); } catch { MessageBox.Show(poke.id + "'s spdef is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return poke = null; }
-            try { spd = Convert.ToInt32(poke.spd); } catch { MessageBox.Show(poke.id + "'s spd is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return poke = null; }
+            hp = Convert.ToInt32(Stat[0]); 
+            atk = Convert.ToInt32(Stat[1]);
+            def = Convert.ToInt32(Stat[2]); 
+            spatk = Convert.ToInt32(Stat[3]);
+            spdef = Convert.ToInt32(Stat[4]); 
+            spd = Convert.ToInt32(Stat[5]);
             if (natureList[i].up == "hp") { hp++; }
             else if (natureList[i].up == "atk") { atk += 2; }
             else if (natureList[i].up == "def") { def += 2; }
@@ -402,14 +433,14 @@ namespace GenesisDex
             else if (natureList[i].down == "spatk") { spatk -= 2; }
             else if (natureList[i].down == "spdef") { spdef -= 2; }
             else if (natureList[i].down == "spd") { spd -= 2; }
-            poke.hp = hp.ToString();
-            poke.atk = atk.ToString();
-            poke.def = def.ToString();
-            poke.spatk = spatk.ToString();
-            poke.spdef = spdef.ToString();
-            poke.spd = spd.ToString();
+            Stat[0] = hp.ToString();
+            Stat[1] = atk.ToString();
+            Stat[2] = def.ToString();
+            Stat[3] = spatk.ToString();
+            Stat[4] = spdef.ToString();
+            Stat[5] = spd.ToString();
             AllNatures.Add(natureList[i].id);
-            return poke;
+            return;
         }
 
         private Pokemon GetPokemon()
@@ -436,25 +467,26 @@ namespace GenesisDex
         private void SetItem()
         {
             pkItem.Size = pkItem.Image.Size;
-            pkItem.Location = new Point(615 - (pkItem.Width / 2), 512 - (pkItem.Height));
+            pkItem.Location = new Point(623 - (pkItem.Width / 2), 512 - (pkItem.Height));
         }
 
-        private Pokemon LevelPokemon(Pokemon poke, int level)
+        private void GetStats(Pokemon poke, int level)
         {
             List<Stat> stats = new List<Stat>();
             StatList getstats = new StatList();
+            Stat = new List<string>();
             int hp;
             int atk;
             int def;
             int spatk;
             int spdef;
             int spd;
-            try { hp = Convert.ToInt32(poke.hp); } catch { MessageBox.Show(poke.id + "'s hp is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return poke = null; }
-            try { atk = Convert.ToInt32(poke.atk); } catch { MessageBox.Show(poke.id + "'s atk is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return poke = null; }
-            try { def = Convert.ToInt32(poke.def); } catch { MessageBox.Show(poke.id + "'s def is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return poke = null; }
-            try { spatk = Convert.ToInt32(poke.spatk); } catch { MessageBox.Show(poke.id + "'s spatk is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return poke = null; }
-            try { spdef = Convert.ToInt32(poke.spdef); } catch { MessageBox.Show(poke.id + "'s spdef is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return poke = null; }
-            try { spd = Convert.ToInt32(poke.spd); } catch { MessageBox.Show(poke.id + "'s spd is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return poke = null; }
+            try { hp = Convert.ToInt32(poke.hp); } catch { MessageBox.Show(poke.id + "'s hp is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return; }
+            try { atk = Convert.ToInt32(poke.atk); } catch { MessageBox.Show(poke.id + "'s atk is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return; }
+            try { def = Convert.ToInt32(poke.def); } catch { MessageBox.Show(poke.id + "'s def is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return; }
+            try { spatk = Convert.ToInt32(poke.spatk); } catch { MessageBox.Show(poke.id + "'s spatk is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return; }
+            try { spdef = Convert.ToInt32(poke.spdef); } catch { MessageBox.Show(poke.id + "'s spdef is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return; }
+            try { spd = Convert.ToInt32(poke.spd); } catch { MessageBox.Show(poke.id + "'s spd is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return; }
             stats = getstats.createList(hp, atk, def, spatk, spdef, spd);
             SortStats(stats);
 
@@ -470,29 +502,29 @@ namespace GenesisDex
             }
             for (var z = 0; z < stats.Count; z++)
             {
-                if (stats[z].id == "hp") { poke.hp = stats[z].stat.ToString(); }
+                if (stats[z].id == "hp") { Stat.Add(stats[z].stat.ToString()); }
             }
             for (var z = 0; z < stats.Count; z++)
             {
-                if (stats[z].id == "atk") { poke.atk = stats[z].stat.ToString(); }
+                if (stats[z].id == "atk") { Stat.Add(stats[z].stat.ToString()); }
             }
             for (var z = 0; z < stats.Count; z++)
             {
-                if (stats[z].id == "def") { poke.def = stats[z].stat.ToString(); }
+                if (stats[z].id == "def") { Stat.Add(stats[z].stat.ToString()); }
             }
             for (var z = 0; z < stats.Count; z++)
             {
-                if (stats[z].id == "spatk") { poke.spatk = stats[z].stat.ToString(); }
+                if (stats[z].id == "spatk") { Stat.Add(stats[z].stat.ToString()); }
             }
             for (var z = 0; z < stats.Count; z++)
             {
-                if (stats[z].id == "spdef") { poke.spdef = stats[z].stat.ToString(); }
+                if (stats[z].id == "spdef") { Stat.Add(stats[z].stat.ToString()); }
             }
             for (var z = 0; z < stats.Count; z++)
             {
-                if (stats[z].id == "spd") { poke.spd = stats[z].stat.ToString(); }
+                if (stats[z].id == "spd") { Stat.Add(stats[z].stat.ToString()); }
             }
-            return poke;
+            return;
 
         }
 
@@ -516,12 +548,14 @@ namespace GenesisDex
         {
             if (poke.gender == "Genderless")
             {
+                Gender.Add("Genderless");
                 return poke;
             }
             else
             {
                 string[] gender;
-                try { gender = poke.gender.Split(' '); } catch { MessageBox.Show(poke.id + "'s Gender Ratio is not entered correctly. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return poke = null; }
+                try { gender = poke.gender.Split(' '); } catch { MessageBox.Show(poke.id + "'s Gender Ratio is not entered correctly. Please take a " +
+                    "look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return poke = null; }
                 string m = gender[0];
                 m = m.Replace("%", " ");
                 m = m.Trim();
@@ -532,16 +566,17 @@ namespace GenesisDex
                     m = m.Trim();
                 }
                 int male;
-                try { male = Convert.ToInt32(m); } catch { MessageBox.Show(poke.id + "'s Gender Ratio is not entered correctly. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return poke = null; }
+                try { male = Convert.ToInt32(m); } catch { MessageBox.Show(poke.id + "'s Gender Ratio is not entered correctly. Please take a " + 
+                    "look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return poke = null; }
                 int i = rng.Next(0, 101);
                 if (i <= male)
                 {
-                    poke.gender = "Male";
+                    Gender.Add("Male");
                     return poke;
                 }
                 else
                 {
-                    poke.gender = "Female";
+                    Gender.Add("Female");
                     return poke;
                 }
             }
@@ -561,30 +596,30 @@ namespace GenesisDex
 
         private void WriteInfo()
         {
-            pkItem.Image = null;
+            pkItem.Visible = false;
             rtbInfo1.Text = "Number: " + AllPokemon[Current].number + Environment.NewLine +
                 "Name: " + AllPokemon[Current].id + Environment.NewLine +
-                "Type: " + AllPokemon[Current].type + Environment.NewLine +
+                "Type: " + Type[Current] + Environment.NewLine +
                 Environment.NewLine +
                 "Level: " + AllLevels[Current] + Environment.NewLine +
                 "Nature: " + AllNatures[Current] + Environment.NewLine +
                 Environment.NewLine +
                 "Stats:" + Environment.NewLine +
-                "HP:\t\t" + AllPokemon[Current].hp + Environment.NewLine +
-                "ATK:\t\t" + AllPokemon[Current].atk + Environment.NewLine +
-                "DEF:\t\t" + AllPokemon[Current].def + Environment.NewLine +
-                "SPATK:\t\t" + AllPokemon[Current].spatk + Environment.NewLine +
-                "SPDEF:\t\t" + AllPokemon[Current].spdef + Environment.NewLine +
-                "SPD:\t\t" + AllPokemon[Current].spd + Environment.NewLine +
+                "HP:\t\t" + AllStat[Current][0] + Environment.NewLine +
+                "ATK:\t\t" + AllStat[Current][1] + Environment.NewLine +
+                "DEF:\t\t" + AllStat[Current][2] + Environment.NewLine +
+                "SPATK:\t" + AllStat[Current][3] + Environment.NewLine +
+                "SPDEF:\t" + AllStat[Current][4] + Environment.NewLine +
+                "SPD:\t\t" + AllStat[Current][5] + Environment.NewLine +
                 Environment.NewLine +
-                "Gender: " + AllPokemon[Current].gender + Environment.NewLine +
+                "Gender: " + Gender[Current] + Environment.NewLine +
                 "Size: " + AllPokemon[Current].size + Environment.NewLine +
                 "Weight: " + AllPokemon[Current].weight;
         }
 
         private void WriteMoves()
         {
-            pkItem.Image = null;
+            pkItem.Visible = false;
             rtbInfo1.Text = ("Moves:" + Environment.NewLine);
             for (var w = 0; w < AllMoves[Current].Count; w++)
             {
@@ -604,17 +639,17 @@ namespace GenesisDex
 
         private void WriteItem1()
         {
-            pkItem.Image = null;
+            pkItem.Visible = true;
             pkItem.Image = AllItems1[Current];
-            //SetItem();
+            SetItem();
             rtbInfo1.Text = "Item 1-" + Environment.NewLine +
                 AllDesc1[Current];
         }
         private void WriteItem2()
         {
-            pkItem.Image = null;
+            pkItem.Visible = true;
             pkItem.Image = AllItems2[Current];
-            //SetItem();
+            SetItem();
             rtbInfo1.Text = "Item 2-" + Environment.NewLine +
                 AllDesc2[Current];
 
@@ -669,7 +704,7 @@ namespace GenesisDex
         private string SkillUp(int i)
         {
             StringBuilder build = new StringBuilder();
-            string skil = skillList[i].skill;
+            string skil = skillList[i].skill.ToString();
             string[] up1 = skil.Split('d');
             string[] up2 = up1[0].Split(' ');
             int temp;
@@ -682,7 +717,7 @@ namespace GenesisDex
         private string SkillDn(int i)
         {
             StringBuilder build = new StringBuilder();
-            string skil = skillList[i].skill;
+            string skil = skillList[i].skill.ToString();
             string[] up1 = skil.Split('d');
             string[] up2 = up1[0].Split(' ');
             int temp;
@@ -697,6 +732,7 @@ namespace GenesisDex
             skillList = new List<Skill>();
             skill = new List<string>();
             List<string> prep = new List<string>();
+            prep.Clear();
             skillList.Clear();
             skillList = skillXML.createList(IChooseYou.number);
             skill.Clear();
@@ -812,7 +848,7 @@ namespace GenesisDex
             }
         }
 
-        private Pokemon GetShiny(Pokemon poke)
+        private void GetShiny(Pokemon poke)
         {
             string[] type = poke.type.Split(' ');
             int i = rng.Next(1, typeList.Count);
@@ -835,23 +871,9 @@ namespace GenesisDex
                 }
             }
             build.Append(newtype);
-            try
-            {
-                if (newtype == type[0])
-                {
-                    poke.type = newtype;
-                }
-                else
-                {
-                    poke.type = build.ToString();
-                }
-            }
-            catch
-            {
-                poke.type = build.ToString();
-            }
             typeShiny = newtype;
-            return poke;
+            newShiny = build.ToString();
+            return;
         }
 
         private void GetItem()

@@ -89,13 +89,13 @@
             // lbPokemon
             // 
             this.lbPokemon.BackColor = System.Drawing.Color.Black;
-            this.lbPokemon.Font = new System.Drawing.Font("Sitka Small", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPokemon.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPokemon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.lbPokemon.FormattingEnabled = true;
-            this.lbPokemon.ItemHeight = 31;
+            this.lbPokemon.ItemHeight = 19;
             this.lbPokemon.Location = new System.Drawing.Point(23, 375);
             this.lbPokemon.Name = "lbPokemon";
-            this.lbPokemon.Size = new System.Drawing.Size(360, 159);
+            this.lbPokemon.Size = new System.Drawing.Size(360, 175);
             this.lbPokemon.TabIndex = 16;
             this.lbPokemon.SelectedIndexChanged += new System.EventHandler(this.lbPokemon_SelectedIndexChanged);
             // 
@@ -115,12 +115,12 @@
             // 
             this.rtbInfo1.AcceptsTab = true;
             this.rtbInfo1.BackColor = System.Drawing.Color.Black;
-            this.rtbInfo1.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbInfo1.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbInfo1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.rtbInfo1.Location = new System.Drawing.Point(468, 158);
+            this.rtbInfo1.Location = new System.Drawing.Point(461, 158);
             this.rtbInfo1.Name = "rtbInfo1";
             this.rtbInfo1.ReadOnly = true;
-            this.rtbInfo1.Size = new System.Drawing.Size(294, 387);
+            this.rtbInfo1.Size = new System.Drawing.Size(322, 387);
             this.rtbInfo1.TabIndex = 20;
             this.rtbInfo1.Text = "";
             // 
@@ -128,7 +128,7 @@
             // 
             this.infoForward.BackColor = System.Drawing.Color.Transparent;
             this.infoForward.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("infoForward.BackgroundImage")));
-            this.infoForward.Location = new System.Drawing.Point(636, 551);
+            this.infoForward.Location = new System.Drawing.Point(643, 551);
             this.infoForward.Name = "infoForward";
             this.infoForward.Size = new System.Drawing.Size(33, 35);
             this.infoForward.TabIndex = 23;
@@ -141,7 +141,7 @@
             // 
             this.infoBack.BackColor = System.Drawing.Color.Transparent;
             this.infoBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("infoBack.BackgroundImage")));
-            this.infoBack.Location = new System.Drawing.Point(561, 551);
+            this.infoBack.Location = new System.Drawing.Point(563, 551);
             this.infoBack.Name = "infoBack";
             this.infoBack.Size = new System.Drawing.Size(38, 35);
             this.infoBack.TabIndex = 24;
@@ -230,11 +230,11 @@
             // 
             this.tbSearch.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.tbSearch.BackColor = System.Drawing.Color.Black;
-            this.tbSearch.Font = new System.Drawing.Font("Sitka Small", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSearch.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.tbSearch.Location = new System.Drawing.Point(23, 534);
+            this.tbSearch.Location = new System.Drawing.Point(23, 550);
             this.tbSearch.Name = "tbSearch";
-            this.tbSearch.Size = new System.Drawing.Size(360, 34);
+            this.tbSearch.Size = new System.Drawing.Size(360, 24);
             this.tbSearch.TabIndex = 33;
             this.tbSearch.Tag = "";
             this.tbSearch.Text = "Search";
@@ -245,12 +245,12 @@
             // 
             this.tbPageCount.AcceptsTab = true;
             this.tbPageCount.BackColor = System.Drawing.Color.Black;
-            this.tbPageCount.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPageCount.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPageCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.tbPageCount.Location = new System.Drawing.Point(602, 551);
+            this.tbPageCount.Location = new System.Drawing.Point(604, 551);
             this.tbPageCount.Name = "tbPageCount";
             this.tbPageCount.ReadOnly = true;
-            this.tbPageCount.Size = new System.Drawing.Size(28, 25);
+            this.tbPageCount.Size = new System.Drawing.Size(33, 25);
             this.tbPageCount.TabIndex = 74;
             this.tbPageCount.Text = "";
             // 

@@ -508,8 +508,8 @@ namespace GenesisDex
                     "HP:\t\t{3}" + Environment.NewLine +
                     "ATK:\t\t{4}" + Environment.NewLine +
                     "DEF:\t\t{5}" + Environment.NewLine +
-                    "SPATK:\t\t{6}" + Environment.NewLine +
-                    "SPDEF:\t\t{7}" + Environment.NewLine +
+                    "SPATK:\t{6}" + Environment.NewLine +
+                    "SPDEF:\t{7}" + Environment.NewLine +
                     "SPD:\t\t{8}" + Environment.NewLine + Environment.NewLine +
                     "Height: {9}" + Environment.NewLine +
                     "Weight: {10}" + Environment.NewLine + Environment.NewLine +
