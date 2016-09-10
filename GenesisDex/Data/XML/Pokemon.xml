@@ -6438,7 +6438,7 @@
     <spd>10</spd>
     <size>2’ 00” / 0.6m (Small)</size>
     <weight>18.7 lbs. / 8.5 kg (1)</weight>
-    <gender>50% M / 50% F</gender>
+    <gender>0% M / 100% F</gender>
     <egg>Field</egg>
     <diet>Herbivore</diet>
     <habitat>Grassland, Urban</habitat>
@@ -6505,7 +6505,7 @@
     <spd>10</spd>
     <size>2’ 00” / 0.6m (Small)</size>
     <weight>18.7 lbs. / 8.5 kg (1)</weight>
-    <gender>50% M / 50% F</gender>
+    <gender>100% M / 0% F</gender>
     <egg>Field</egg>
     <diet>Herbivore</diet>
     <habitat>Grassland, Urban</habitat>

@@ -3753,10 +3753,10 @@
     <Content Include="Data\Images\Pokemon\677.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Pokemon\678-1.gif">
+    <Content Include="Data\Images\Pokemon\678-f.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Pokemon\678.gif">
+    <Content Include="Data\Images\Pokemon\678-m.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Images\Pokemon\679.gif">
@@ -6237,10 +6237,10 @@
     <Content Include="Data\Images\Shiny\677.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Shiny\678-1.gif">
+    <Content Include="Data\Images\Shiny\678-f.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Shiny\678.gif">
+    <Content Include="Data\Images\Shiny\678-m.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Images\Shiny\679.gif">

@@ -298,7 +298,7 @@ namespace GenesisDex
                 AllAbilities.Add(ability);
                 GetSkills();
                 AllSkills.Add(skill);
-                GetStats(Final, TrueLevel);
+                GetStats(Final, TrueLevel+10);
                 GetNature();
                 AllStat.Add(Stat);
                 string[] info = pkGasp.Lines;
