@@ -494,14 +494,14 @@
   </Item>
   <Item>
     <id>Fluffy Tail</id>
-    <desc>A toy that attracts the attention of a Pokémon. It guarantees escape from any battle with wild Pokémon.</desc>
+    <desc>A toy that attracts the attention of a Pokemon. It guarantees escape from any battle with wild Pokemon.</desc>
   </Item>
   <Item>
     <id>Poke Toy</id>
-    <desc>A toy that attracts the attention of a Pokémon. It guarantees escape from any battle with wild Pokémon.</desc>
+    <desc>A toy that attracts the attention of a Pokemon. It guarantees escape from any battle with wild Pokemon.</desc>
   </Item>
   <Item>
     <id>Poke Doll</id>
-    <desc>A doll that attracts the attention of a Pokémon. It guarantees escape from any battle with wild Pokémon.</desc>
+    <desc>A doll that attracts the attention of a Pokemon. It guarantees escape from any battle with wild Pokemon.</desc>
   </Item>
 </Namespace>

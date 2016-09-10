@@ -6469,8 +6469,8 @@
         <cap id="6">Naturewalk (Grassland)</cap>
       </Capability>
       <Evolution>
-        <evo id="0">Espurr</evo>
-        <evo id="1">Meowstic Minimum 25</evo>
+        <evo id="0">Espurr (female)</evo>
+        <evo id="1">Meowstic (female) Minimum 25</evo>
       </Evolution>
       <Moves>
         <move id="0">1 Scratch - Normal</move>
@@ -6536,8 +6536,8 @@
         <cap id="6">Naturewalk (Grassland)</cap>
       </Capability>
       <Evolution>
-        <evo id="0">Espurr</evo>
-        <evo id="1">Meowstic Minimum 25</evo>
+        <evo id="0">Espurr (male)</evo>
+        <evo id="1">Meowstic (male) Minimum 25</evo>
       </Evolution>
       <Moves>
         <move id="0">1 Scratch - Normal</move>

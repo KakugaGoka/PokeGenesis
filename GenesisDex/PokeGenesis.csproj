@@ -260,7 +260,9 @@
     <Content Include="Data\Images\Items\Figy Berry.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Items\Fluffy Tail.png" />
+    <Content Include="Data\Images\Items\Fluffy Tail.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Data\Images\Items\Ganlon Berry.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -360,8 +362,12 @@
     <Content Include="Data\Images\Items\Pink Pearl.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Items\Poke Doll.png" />
-    <Content Include="Data\Images\Items\Poke Toy.png" />
+    <Content Include="Data\Images\Items\Poke Doll.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Images\Items\Poke Toy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Data\Images\Items\Pomeg Berry.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -452,7 +458,7 @@
     <Content Include="Data\Images\Items\Accuracy Booster.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Items\Anit-Carbos.png">
+    <Content Include="Data\Images\Items\Anti-Carbos.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Images\Items\Anti-Calcium.png">
@@ -494,7 +500,7 @@
     <Content Include="Data\Images\Items\Black Sludge.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Items\BlackGlasses.png">
+    <Content Include="Data\Images\Items\Black Glasses.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Images\Items\Blue Apricorn.png">
@@ -506,7 +512,7 @@
     <Content Include="Data\Images\Items\Blue Shard.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Items\BrightPowder.png">
+    <Content Include="Data\Images\Items\Bright Powder.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Images\Items\Bug Gem.png">
@@ -803,7 +809,7 @@
     <Content Include="Data\Images\Items\Mystic Water.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Items\NeverMeltIce.png">
+    <Content Include="Data\Images\Items\Never Melt Ice.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Images\Items\Normal Gem.png">
@@ -998,7 +1004,7 @@
     <Content Include="Data\Images\Items\Thunder Stone.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Items\TinyMushroom.png">
+    <Content Include="Data\Images\Items\Tiny Mushroom.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Images\Items\Toxic Brace.png">
@@ -1010,7 +1016,7 @@
     <Content Include="Data\Images\Items\Toxic Plate.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Items\TwistedSpoon.png">
+    <Content Include="Data\Images\Items\Twisted Spoon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Images\Items\Up-Grade.png">
@@ -1049,7 +1055,7 @@
     <Content Include="Data\Images\Items\X Defend.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Items\X Sp..png">
+    <Content Include="Data\Images\Items\X Sp. Def.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Images\Items\X Special.png">
