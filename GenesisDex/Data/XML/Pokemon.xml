@@ -8542,7 +8542,7 @@
     <hatch>40 Days</hatch>
     <diet>Omnivore</diet>
     <habitat>Mountain</habitat>
-    <legendary>false</legendary>
+    <legendary>true</legendary>
     <List645>
       <Ability>
         <BasicAbility>Intimidate</BasicAbility>
