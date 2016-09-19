@@ -7,6 +7,7 @@ using System.Linq;
 using System.Xml;
 using System.Xml.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using GenesisDexEngine;
@@ -51,24 +52,89 @@ namespace GenesisDex
 
         private void AddPokemon()
         {
-            if ( tbName.Text.Trim() == "" || tbNumber.Text.Trim() == "" || tbGender.Text.Trim() == "" || tbHP.Text.Trim() == "" || tbATK.Text.Trim() == "" || tbDEF.Text.Trim() == "" || tbSPATK.Text.Trim() == "" ||
+            if (tbName.Text.Trim() == "" || tbNumber.Text.Trim() == "" || tbGender.Text.Trim() == "" || tbHP.Text.Trim() == "" || tbATK.Text.Trim() == "" || tbDEF.Text.Trim() == "" || tbSPATK.Text.Trim() == "" ||
                  tbSPDEF.Text.Trim() == "" || tbSPD.Text.Trim() == "" || tbType.Text.Trim() == "" || listEvo.Text.Trim() == "" || listMoves.Text.Trim() == "")
             {
                 MessageBox.Show("Please complete the form before attempting to add to the Pokedex.");
                 return;
             }
-            string[] Capabilities = listCap.Text.Split(',');
-            foreach (string s in Capabilities)
-                s.Trim();
-            string[] Moves = listMoves.Text.Split(new string[] { "\n" }, StringSplitOptions.None);
+            List<string> Capabilities = new List<string>();
+            List<string> Moves = new List<string>();
+            List<string> Evo = new List<string>();
+            List<string> Skills = new List<string>();
+            List<string> tC = new List<string>();
+            List<string> tS = new List<string>();
+            string[] tempCap = listCap.Text.Split(',');
+            foreach (string s in tempCap)
+                tC.Add(s);
+            for ( var s = 0; s < tC.Count; s++) 
+            {
+                string newString = tC[s];
+                string nextString = Regex.Replace(newString, @"\s+", " ");
+                Capabilities.Add(nextString.Trim());
+            }
+            int count = Capabilities.Count;
+            StringBuilder build = new StringBuilder();
+            bool building = false;
+            for (var s = 0; s < count; s++)
+            {
+                if (building == false)
+                {
+                    if (Capabilities[s].Contains("(") == true)
+                    {
+                        build.Append(Capabilities[s] + ", ");
+                        Capabilities.RemoveAt(s);
+                        s--;
+                        count--;
+                        building = true;
+                    }
+                }
+                else
+                {
+                    if (Capabilities[s].Contains(")") == true)
+                    {
+                        build.Append(Capabilities[s]);
+                        Capabilities.RemoveAt(s);
+                        Capabilities.Add(build.ToString());
+                        s--;
+                        count--;
+                        build.Clear();
+                        building = false;
+                    }
+                    else
+                    {
+                        build.Append(Capabilities[s]);
+                        Capabilities.RemoveAt(s);
+                        count--;
+                        s--;
+                    }
+                }
+            }
+            string[] tempMove = listMoves.Text.Split(new string[] { "\n" }, StringSplitOptions.None);
+            foreach (string s in tempMove)
+                Moves.Add(s);
             foreach (string s in Moves)
+            {
                 s.Trim();
-            string[] Evo = listEvo.Text.Split(new string[] { "\n" }, StringSplitOptions.None);
+                s.Replace(@"\t|\n|\r", "");
+            }
+            string[] tempEvo = listEvo.Text.Split(new string[] { "\n" }, StringSplitOptions.None);
+            foreach (string s in tempEvo)
+                Evo.Add(s);
             foreach (string s in Evo)
+            {
                 s.Trim();
-            string[] Skills = listSkills.Text.Split(',');
-            foreach (string s in Skills)
-                s.Trim();
+                s.Replace(@"\t|\n|\r", "");
+            }
+            string[] tempSkills = listSkills.Text.Split(',');
+            foreach (string s in tempSkills)
+                tS.Add(s);
+            for (var s = 0; s < tS.Count; s++)
+            {
+                string newString = tS[s];
+                string nextString = Regex.Replace(newString, @"\s+", " ");
+                Skills.Add(nextString.Trim());
+            }
             tbNumber.Text = tbNumber.Text.Trim(' ');
             tbName.Text = tbName.Text.Trim(' ');
             tbType.Text = tbType.Text.Trim(' ');
