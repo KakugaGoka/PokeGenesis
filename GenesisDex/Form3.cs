@@ -383,6 +383,12 @@ namespace GenesisDex
             {
                 for (var e = 0; e < pokeList.Count; e++)
                 {
+                    if (pokeList[e].habitat == null)
+                    {
+                        MessageBox.Show(pokeList[e].id + "'s habitat is not entered...");
+                        pokeList.RemoveAt(e);
+                        e -= 1;
+                    }
                     if (pokeList[e].habitat.Contains(Habitat) == false)
                     {
                         pokeList.RemoveAt(e);
@@ -398,6 +404,12 @@ namespace GenesisDex
             if ( Type == "Any") { return; }
             for (var e = 0; e < pokeList.Count; e++)
             {
+                if (pokeList[e].type == null)
+                {
+                    MessageBox.Show(pokeList[e].id + "'s type is not entered...");
+                    pokeList.RemoveAt(e);
+                    e -= 1;
+                }
                 if (pokeList[e].type.Contains(Type) == false)
                 {
                     pokeList.RemoveAt(e);
