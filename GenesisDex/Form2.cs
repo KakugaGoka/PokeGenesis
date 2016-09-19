@@ -39,10 +39,17 @@ namespace GenesisDex
             cbAbi2.DataSource = abilitymod;
             cbAbi3.BindingContext = new BindingContext();
             cbAbi3.DataSource = abilitymod;
+            cbAbi3.SelectedIndex = 1;
             cbAbi4.BindingContext = new BindingContext();
             cbAbi4.DataSource = abilitymod;
+            cbAbi4.SelectedIndex = 1;
             cbAbi5.BindingContext = new BindingContext();
             cbAbi5.DataSource = abilitymod;
+            cbAbi5.SelectedIndex = 2;
+            AddContextMenu(listCap);
+            AddContextMenu(listSkills);
+            AddContextMenu(listEvo);
+            AddContextMenu(listMoves);
         }
 
         private void btAddPKMN_Click(object sender, EventArgs e)
@@ -388,6 +395,24 @@ namespace GenesisDex
         private void FormAdd_MouseUp(object sender, MouseEventArgs e)
         {
             dragging = false;
+        }
+
+        private void AddContextMenu(RichTextBox rtb)
+        {
+            if (rtb.ContextMenuStrip == null)
+            {
+                ContextMenuStrip cms = new ContextMenuStrip { ShowImageMargin = false };
+                ToolStripMenuItem tsmiCut = new ToolStripMenuItem("Cut");
+                tsmiCut.Click += (sender, e) => rtb.Cut();
+                cms.Items.Add(tsmiCut);
+                ToolStripMenuItem tsmiCopy = new ToolStripMenuItem("Copy");
+                tsmiCopy.Click += (sender, e) => rtb.Copy();
+                cms.Items.Add(tsmiCopy);
+                ToolStripMenuItem tsmiPaste = new ToolStripMenuItem("Paste");
+                tsmiPaste.Click += (sender, e) => rtb.Paste();
+                cms.Items.Add(tsmiPaste);
+                rtb.ContextMenuStrip = cms;
+            }
         }
     }
 }
