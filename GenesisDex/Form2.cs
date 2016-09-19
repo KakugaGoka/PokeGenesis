@@ -52,15 +52,23 @@ namespace GenesisDex
         private void AddPokemon()
         {
             if ( tbName.Text.Trim() == "" || tbNumber.Text.Trim() == "" || tbGender.Text.Trim() == "" || tbHP.Text.Trim() == "" || tbATK.Text.Trim() == "" || tbDEF.Text.Trim() == "" || tbSPATK.Text.Trim() == "" ||
-                 tbSPDEF.Text.Trim() == "" || tbSPD.Text.Trim() == "" || tbType.Text.Trim() == "" || listEvo.Items.Count == 0 || listMoves.Items.Count == 0)
+                 tbSPDEF.Text.Trim() == "" || tbSPD.Text.Trim() == "" || tbType.Text.Trim() == "" || listEvo.Text.Trim() == "" || listMoves.Text.Trim() == "")
             {
                 MessageBox.Show("Please complete the form before attempting to add to the Pokedex.");
                 return;
             }
-            string[] Capabilities = listCap.Items.Cast<String>().ToArray();
-            string[] Moves = listMoves.Items.Cast<String>().ToArray();
-            string[] Evo = listEvo.Items.Cast<String>().ToArray();
-            string[] Skills = listSkill.Items.Cast<String>().ToArray();
+            string[] Capabilities = listCap.Text.Split(',');
+            foreach (string s in Capabilities)
+                s.Trim();
+            string[] Moves = listMoves.Text.Split(new string[] { "\n" }, StringSplitOptions.None);
+            foreach (string s in Moves)
+                s.Trim();
+            string[] Evo = listEvo.Text.Split(new string[] { "\n" }, StringSplitOptions.None);
+            foreach (string s in Evo)
+                s.Trim();
+            string[] Skills = listSkills.Text.Split(',');
+            foreach (string s in Skills)
+                s.Trim();
             tbNumber.Text = tbNumber.Text.Trim(' ');
             tbName.Text = tbName.Text.Trim(' ');
             tbType.Text = tbType.Text.Trim(' ');
@@ -208,42 +216,6 @@ namespace GenesisDex
             this.Close();
         }
 
-        private void btCapAdd_Click(object sender, EventArgs e)
-        {
-            if (tbCapAdd.Text != "")
-            {
-                string capAdd = tbCapAdd.Text.Trim(' ');
-                tbCapAdd.Text = capAdd;
-                listCap.Items.Add(tbCapAdd.Text);
-                CAP = listCap.Items.Count - 1;
-                tbCapAdd.Text = "";
-            }
-        }
-
-        private void btEvoAdd_Click(object sender, EventArgs e)
-        {
-            if (tbEvoAdd.Text != "")
-            {
-                string evoAdd = tbEvoAdd.Text.Trim(' ');
-                tbEvoAdd.Text = evoAdd;
-                listEvo.Items.Add(tbEvoAdd.Text);
-                EVO = listEvo.Items.Count - 1;
-                tbEvoAdd.Text = "";
-            }
-        }
-
-        private void btMoveAdd_Click(object sender, EventArgs e)
-        {
-            if (tbMoveAdd.Text != "")
-            {
-                string moveAdd = tbMoveAdd.Text.Trim(' ');
-                tbMoveAdd.Text = moveAdd;
-                listMoves.Items.Add(tbMoveAdd.Text);
-                MOV = listMoves.Items.Count - 1;
-                tbMoveAdd.Text = "";
-            }
-        }
-
         private void cbMega_CheckedChanged(object sender, EventArgs e)
         {
             if (cbMega.Checked == true)
@@ -280,60 +252,6 @@ namespace GenesisDex
             {
                 gbMega2.Visible = false;
                 gbMega.Text = "Mega Info";
-            }
-        }
-
-        private void btCapClear_Click(object sender, EventArgs e)
-        {
-            if (listCap.Items.Count == 0) { }
-            else
-            {
-                listCap.Items.RemoveAt(CAP);
-                CAP = listCap.Items.Count - 1;
-            }
-        }
-
-        private void btEvoClear_Click(object sender, EventArgs e)
-        {
-            if (listEvo.Items.Count == 0) { }
-            else
-            {
-                listEvo.Items.RemoveAt(EVO);
-                EVO = listEvo.Items.Count - 1;
-            }
-        }
-
-        private void btMoveClear_Click(object sender, EventArgs e)
-        {
-            if (listMoves.Items.Count == 0) { }
-            else
-            {
-                listMoves.Items.RemoveAt(MOV);
-                MOV = listMoves.Items.Count - 1;
-            }
-        }
-
-        private void tbCapAdd_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                btCapAdd_Click(this, new EventArgs());
-            }
-        }
-
-        private void tbEvoAdd_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                btEvoAdd_Click(this, new EventArgs());
-            }
-        }
-
-        private void tbMoveAdd_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                btMoveAdd_Click(this, new EventArgs());
             }
         }
 
@@ -404,36 +322,6 @@ namespace GenesisDex
         private void FormAdd_MouseUp(object sender, MouseEventArgs e)
         {
             dragging = false;
-        }
-
-        private void btSkillAdd_Click(object sender, EventArgs e)
-        {
-            if (tbSkillAdd.Text != "")
-            {
-                string skillAdd = tbSkillAdd.Text.Trim(' ');
-                tbSkillAdd.Text = skillAdd;
-                listSkill.Items.Add(tbSkillAdd.Text);
-                SKI = listSkill.Items.Count - 1;
-                tbSkillAdd.Text = "";
-            }
-        }
-
-        private void btSkillClear_Click(object sender, EventArgs e)
-        {
-            if (listSkill.Items.Count == 0) { }
-            else
-            {
-                listSkill.Items.RemoveAt(SKI);
-                SKI = listSkill.Items.Count - 1;
-            }
-        }
-
-        private void tbSkillAdd_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                btSkillAdd_Click(this, new EventArgs());
-            }
         }
     }
 }

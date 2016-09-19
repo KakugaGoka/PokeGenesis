@@ -71,9 +71,6 @@
             this.tbHP = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
-            this.listCap = new System.Windows.Forms.ListBox();
-            this.listEvo = new System.Windows.Forms.ListBox();
-            this.listMoves = new System.Windows.Forms.ListBox();
             this.tbAbi5 = new System.Windows.Forms.TextBox();
             this.tbAbi4 = new System.Windows.Forms.TextBox();
             this.tbAbi3 = new System.Windows.Forms.TextBox();
@@ -119,15 +116,6 @@
             this.label54 = new System.Windows.Forms.Label();
             this.gbMega = new System.Windows.Forms.GroupBox();
             this.gbMega2 = new System.Windows.Forms.GroupBox();
-            this.tbCapAdd = new System.Windows.Forms.TextBox();
-            this.tbEvoAdd = new System.Windows.Forms.TextBox();
-            this.tbMoveAdd = new System.Windows.Forms.TextBox();
-            this.btCapAdd = new System.Windows.Forms.Button();
-            this.btEvoAdd = new System.Windows.Forms.Button();
-            this.btMoveAdd = new System.Windows.Forms.Button();
-            this.btCapClear = new System.Windows.Forms.Button();
-            this.btEvoClear = new System.Windows.Forms.Button();
-            this.btMoveClear = new System.Windows.Forms.Button();
             this.label44 = new System.Windows.Forms.Label();
             this.ttNumber = new System.Windows.Forms.ToolTip(this.components);
             this.gbRemove = new System.Windows.Forms.GroupBox();
@@ -136,15 +124,15 @@
             this.label45 = new System.Windows.Forms.Label();
             this.cbRemove = new System.Windows.Forms.CheckBox();
             this.cbLegend = new System.Windows.Forms.CheckBox();
-            this.btSkillClear = new System.Windows.Forms.Button();
-            this.btSkillAdd = new System.Windows.Forms.Button();
-            this.tbSkillAdd = new System.Windows.Forms.TextBox();
-            this.listSkill = new System.Windows.Forms.ListBox();
             this.cbAbi1 = new System.Windows.Forms.ComboBox();
             this.cbAbi2 = new System.Windows.Forms.ComboBox();
             this.cbAbi3 = new System.Windows.Forms.ComboBox();
             this.cbAbi4 = new System.Windows.Forms.ComboBox();
             this.cbAbi5 = new System.Windows.Forms.ComboBox();
+            this.listCap = new System.Windows.Forms.RichTextBox();
+            this.listEvo = new System.Windows.Forms.RichTextBox();
+            this.listMoves = new System.Windows.Forms.RichTextBox();
+            this.listSkills = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             this.gbMega.SuspendLayout();
             this.gbMega2.SuspendLayout();
@@ -491,33 +479,6 @@
             this.label34.Size = new System.Drawing.Size(25, 13);
             this.label34.TabIndex = 72;
             this.label34.Text = "Info";
-            // 
-            // listCap
-            // 
-            this.listCap.FormattingEnabled = true;
-            this.listCap.Location = new System.Drawing.Point(88, 383);
-            this.listCap.Name = "listCap";
-            this.listCap.Size = new System.Drawing.Size(221, 251);
-            this.listCap.TabIndex = 73;
-            this.listCap.TabStop = false;
-            // 
-            // listEvo
-            // 
-            this.listEvo.FormattingEnabled = true;
-            this.listEvo.Location = new System.Drawing.Point(380, 383);
-            this.listEvo.Name = "listEvo";
-            this.listEvo.Size = new System.Drawing.Size(205, 251);
-            this.listEvo.TabIndex = 74;
-            this.listEvo.TabStop = false;
-            // 
-            // listMoves
-            // 
-            this.listMoves.FormattingEnabled = true;
-            this.listMoves.Location = new System.Drawing.Point(951, 110);
-            this.listMoves.Name = "listMoves";
-            this.listMoves.Size = new System.Drawing.Size(205, 524);
-            this.listMoves.TabIndex = 75;
-            this.listMoves.TabStop = false;
             // 
             // tbAbi5
             // 
@@ -920,97 +881,6 @@
             this.gbMega2.TabStop = false;
             this.gbMega2.Text = "Mega Y Info";
             // 
-            // tbCapAdd
-            // 
-            this.tbCapAdd.Location = new System.Drawing.Point(88, 364);
-            this.tbCapAdd.Name = "tbCapAdd";
-            this.tbCapAdd.Size = new System.Drawing.Size(173, 20);
-            this.tbCapAdd.TabIndex = 46;
-            this.tbCapAdd.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbCapAdd_KeyDown);
-            // 
-            // tbEvoAdd
-            // 
-            this.tbEvoAdd.Location = new System.Drawing.Point(380, 364);
-            this.tbEvoAdd.Name = "tbEvoAdd";
-            this.tbEvoAdd.Size = new System.Drawing.Size(156, 20);
-            this.tbEvoAdd.TabIndex = 47;
-            this.tbEvoAdd.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbEvoAdd_KeyDown);
-            // 
-            // tbMoveAdd
-            // 
-            this.tbMoveAdd.Location = new System.Drawing.Point(951, 91);
-            this.tbMoveAdd.Name = "tbMoveAdd";
-            this.tbMoveAdd.Size = new System.Drawing.Size(156, 20);
-            this.tbMoveAdd.TabIndex = 48;
-            this.tbMoveAdd.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbMoveAdd_KeyDown);
-            // 
-            // btCapAdd
-            // 
-            this.btCapAdd.Location = new System.Drawing.Point(258, 363);
-            this.btCapAdd.Name = "btCapAdd";
-            this.btCapAdd.Size = new System.Drawing.Size(51, 20);
-            this.btCapAdd.TabIndex = 125;
-            this.btCapAdd.TabStop = false;
-            this.btCapAdd.Text = "Add\r\n";
-            this.btCapAdd.UseVisualStyleBackColor = true;
-            this.btCapAdd.Click += new System.EventHandler(this.btCapAdd_Click);
-            this.btCapAdd.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btCapAdd_Click);
-            // 
-            // btEvoAdd
-            // 
-            this.btEvoAdd.Location = new System.Drawing.Point(534, 363);
-            this.btEvoAdd.Name = "btEvoAdd";
-            this.btEvoAdd.Size = new System.Drawing.Size(51, 20);
-            this.btEvoAdd.TabIndex = 126;
-            this.btEvoAdd.TabStop = false;
-            this.btEvoAdd.Text = "Add";
-            this.btEvoAdd.UseVisualStyleBackColor = true;
-            this.btEvoAdd.Click += new System.EventHandler(this.btEvoAdd_Click);
-            // 
-            // btMoveAdd
-            // 
-            this.btMoveAdd.Location = new System.Drawing.Point(1105, 90);
-            this.btMoveAdd.Name = "btMoveAdd";
-            this.btMoveAdd.Size = new System.Drawing.Size(51, 20);
-            this.btMoveAdd.TabIndex = 127;
-            this.btMoveAdd.TabStop = false;
-            this.btMoveAdd.Text = "Add";
-            this.btMoveAdd.UseVisualStyleBackColor = true;
-            this.btMoveAdd.Click += new System.EventHandler(this.btMoveAdd_Click);
-            // 
-            // btCapClear
-            // 
-            this.btCapClear.Location = new System.Drawing.Point(258, 383);
-            this.btCapClear.Name = "btCapClear";
-            this.btCapClear.Size = new System.Drawing.Size(51, 20);
-            this.btCapClear.TabIndex = 128;
-            this.btCapClear.TabStop = false;
-            this.btCapClear.Text = "Clear";
-            this.btCapClear.UseVisualStyleBackColor = true;
-            this.btCapClear.Click += new System.EventHandler(this.btCapClear_Click);
-            // 
-            // btEvoClear
-            // 
-            this.btEvoClear.Location = new System.Drawing.Point(534, 383);
-            this.btEvoClear.Name = "btEvoClear";
-            this.btEvoClear.Size = new System.Drawing.Size(51, 20);
-            this.btEvoClear.TabIndex = 129;
-            this.btEvoClear.TabStop = false;
-            this.btEvoClear.Text = "Clear";
-            this.btEvoClear.UseVisualStyleBackColor = true;
-            this.btEvoClear.Click += new System.EventHandler(this.btEvoClear_Click);
-            // 
-            // btMoveClear
-            // 
-            this.btMoveClear.Location = new System.Drawing.Point(1105, 110);
-            this.btMoveClear.Name = "btMoveClear";
-            this.btMoveClear.Size = new System.Drawing.Size(51, 20);
-            this.btMoveClear.TabIndex = 130;
-            this.btMoveClear.TabStop = false;
-            this.btMoveClear.Text = "Clear";
-            this.btMoveClear.UseVisualStyleBackColor = true;
-            this.btMoveClear.Click += new System.EventHandler(this.btMoveClear_Click);
-            // 
             // label44
             // 
             this.label44.AutoSize = true;
@@ -1087,45 +957,6 @@
             this.cbLegend.Text = "Legendary?";
             this.cbLegend.UseVisualStyleBackColor = true;
             // 
-            // btSkillClear
-            // 
-            this.btSkillClear.Location = new System.Drawing.Point(535, 202);
-            this.btSkillClear.Name = "btSkillClear";
-            this.btSkillClear.Size = new System.Drawing.Size(51, 20);
-            this.btSkillClear.TabIndex = 138;
-            this.btSkillClear.TabStop = false;
-            this.btSkillClear.Text = "Clear";
-            this.btSkillClear.UseVisualStyleBackColor = true;
-            this.btSkillClear.Click += new System.EventHandler(this.btSkillClear_Click);
-            // 
-            // btSkillAdd
-            // 
-            this.btSkillAdd.Location = new System.Drawing.Point(535, 182);
-            this.btSkillAdd.Name = "btSkillAdd";
-            this.btSkillAdd.Size = new System.Drawing.Size(51, 20);
-            this.btSkillAdd.TabIndex = 137;
-            this.btSkillAdd.TabStop = false;
-            this.btSkillAdd.Text = "Add";
-            this.btSkillAdd.UseVisualStyleBackColor = true;
-            this.btSkillAdd.Click += new System.EventHandler(this.btSkillAdd_Click);
-            // 
-            // tbSkillAdd
-            // 
-            this.tbSkillAdd.Location = new System.Drawing.Point(381, 183);
-            this.tbSkillAdd.Name = "tbSkillAdd";
-            this.tbSkillAdd.Size = new System.Drawing.Size(156, 20);
-            this.tbSkillAdd.TabIndex = 17;
-            this.tbSkillAdd.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbSkillAdd_KeyDown);
-            // 
-            // listSkill
-            // 
-            this.listSkill.FormattingEnabled = true;
-            this.listSkill.Location = new System.Drawing.Point(381, 202);
-            this.listSkill.Name = "listSkill";
-            this.listSkill.Size = new System.Drawing.Size(205, 134);
-            this.listSkill.TabIndex = 136;
-            this.listSkill.TabStop = false;
-            // 
             // cbAbi1
             // 
             this.cbAbi1.FormattingEnabled = true;
@@ -1166,34 +997,57 @@
             this.cbAbi5.Size = new System.Drawing.Size(75, 21);
             this.cbAbi5.TabIndex = 26;
             // 
+            // listCap
+            // 
+            this.listCap.Location = new System.Drawing.Point(88, 374);
+            this.listCap.Name = "listCap";
+            this.listCap.Size = new System.Drawing.Size(222, 226);
+            this.listCap.TabIndex = 46;
+            this.listCap.Text = "";
+            // 
+            // listEvo
+            // 
+            this.listEvo.Location = new System.Drawing.Point(364, 374);
+            this.listEvo.Name = "listEvo";
+            this.listEvo.Size = new System.Drawing.Size(222, 226);
+            this.listEvo.TabIndex = 47;
+            this.listEvo.Text = "";
+            // 
+            // listMoves
+            // 
+            this.listMoves.Location = new System.Drawing.Point(934, 92);
+            this.listMoves.Name = "listMoves";
+            this.listMoves.Size = new System.Drawing.Size(222, 508);
+            this.listMoves.TabIndex = 48;
+            this.listMoves.Text = "";
+            // 
+            // listSkills
+            // 
+            this.listSkills.Location = new System.Drawing.Point(364, 183);
+            this.listSkills.Name = "listSkills";
+            this.listSkills.Size = new System.Drawing.Size(222, 157);
+            this.listSkills.TabIndex = 17;
+            this.listSkills.Text = "";
+            // 
             // FormAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1199, 650);
+            this.Controls.Add(this.listSkills);
+            this.Controls.Add(this.listMoves);
+            this.Controls.Add(this.listEvo);
+            this.Controls.Add(this.listCap);
             this.Controls.Add(this.cbAbi5);
             this.Controls.Add(this.cbAbi4);
             this.Controls.Add(this.cbAbi3);
             this.Controls.Add(this.cbAbi2);
             this.Controls.Add(this.cbAbi1);
-            this.Controls.Add(this.btSkillClear);
             this.Controls.Add(this.pbExit);
-            this.Controls.Add(this.btSkillAdd);
-            this.Controls.Add(this.tbSkillAdd);
-            this.Controls.Add(this.listSkill);
             this.Controls.Add(this.cbLegend);
             this.Controls.Add(this.cbRemove);
             this.Controls.Add(this.gbRemove);
             this.Controls.Add(this.label44);
-            this.Controls.Add(this.btMoveClear);
-            this.Controls.Add(this.btEvoClear);
-            this.Controls.Add(this.btCapClear);
-            this.Controls.Add(this.btMoveAdd);
-            this.Controls.Add(this.btEvoAdd);
-            this.Controls.Add(this.btCapAdd);
-            this.Controls.Add(this.tbMoveAdd);
-            this.Controls.Add(this.tbEvoAdd);
-            this.Controls.Add(this.tbCapAdd);
             this.Controls.Add(this.gbMega2);
             this.Controls.Add(this.gbMega);
             this.Controls.Add(this.cbXY);
@@ -1203,9 +1057,6 @@
             this.Controls.Add(this.tbAbi3);
             this.Controls.Add(this.tbAbi4);
             this.Controls.Add(this.tbAbi5);
-            this.Controls.Add(this.listMoves);
-            this.Controls.Add(this.listEvo);
-            this.Controls.Add(this.listCap);
             this.Controls.Add(this.label34);
             this.Controls.Add(this.label33);
             this.Controls.Add(this.tbHP);
@@ -1309,9 +1160,6 @@
         private System.Windows.Forms.TextBox tbHP;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.ListBox listCap;
-        private System.Windows.Forms.ListBox listEvo;
-        private System.Windows.Forms.ListBox listMoves;
         private System.Windows.Forms.TextBox tbAbi5;
         private System.Windows.Forms.TextBox tbAbi4;
         private System.Windows.Forms.TextBox tbAbi3;
@@ -1357,15 +1205,6 @@
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.GroupBox gbMega;
         private System.Windows.Forms.GroupBox gbMega2;
-        private System.Windows.Forms.TextBox tbCapAdd;
-        private System.Windows.Forms.TextBox tbEvoAdd;
-        private System.Windows.Forms.TextBox tbMoveAdd;
-        private System.Windows.Forms.Button btCapAdd;
-        private System.Windows.Forms.Button btEvoAdd;
-        private System.Windows.Forms.Button btMoveAdd;
-        private System.Windows.Forms.Button btCapClear;
-        private System.Windows.Forms.Button btEvoClear;
-        private System.Windows.Forms.Button btMoveClear;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.ToolTip ttNumber;
         private System.Windows.Forms.GroupBox gbRemove;
@@ -1374,14 +1213,14 @@
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.CheckBox cbRemove;
         private System.Windows.Forms.CheckBox cbLegend;
-        private System.Windows.Forms.Button btSkillClear;
-        private System.Windows.Forms.Button btSkillAdd;
-        private System.Windows.Forms.TextBox tbSkillAdd;
-        private System.Windows.Forms.ListBox listSkill;
         private System.Windows.Forms.ComboBox cbAbi1;
         private System.Windows.Forms.ComboBox cbAbi2;
         private System.Windows.Forms.ComboBox cbAbi3;
         private System.Windows.Forms.ComboBox cbAbi4;
         private System.Windows.Forms.ComboBox cbAbi5;
+        private System.Windows.Forms.RichTextBox listCap;
+        private System.Windows.Forms.RichTextBox listEvo;
+        private System.Windows.Forms.RichTextBox listMoves;
+        private System.Windows.Forms.RichTextBox listSkills;
     }
 }
