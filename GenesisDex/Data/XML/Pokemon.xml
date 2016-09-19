@@ -11020,4 +11020,135 @@
       </Moves>
     </List075>
   </Pokemon>
+  <Pokemon>
+    <number>076</number>
+    <id>Golem</id>
+    <type>Rock / Ground</type>
+    <hp>8</hp>
+    <atk>12</atk>
+    <def>13</def>
+    <spatk>6</spatk>
+    <spdef>7</spdef>
+    <spd>5</spd>
+    <size>4’ 7” / 1.4m (Medium)</size>
+    <weight>661.4 lbs. / 300kg (6)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>‌Mineral</egg>
+    <diet>Terravore</diet>
+    <habitat>Cave, Mountain</habitat>
+    <legendary>false</legendary>
+    <List076>
+      <Ability>
+        <BasicAbility>Run Up</BasicAbility>
+        <AdvancedAbility>Solid Rock</AdvancedAbility>
+        <AdvancedAbility>Sturdy</AdvancedAbility>
+        <AdvancedAbility>Bulletproof</AdvancedAbility>
+        <HighAbility>Rock Head</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 5d6+4</skill>
+        <skill id="1">Acro 2d6</skill>
+        <skill id="2">Combat 4d6+2</skill>
+        <skill id="3">Stealth 2d6</skill>
+        <skill id="4">Percep 3d6+2</skill>
+        <skill id="5">Focus 4d6+1</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 6</cap>
+        <cap id="1">Swim 3</cap>
+        <cap id="2">Jump 1/2</cap>
+        <cap id="3">Power 10</cap>
+        <cap id="4">Groundshaper</cap>
+        <cap id="5">Volatile Bomb</cap>
+        <cap id="6">Naturewalk (Cave, Mountain)</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Geodude</evo>
+        <evo id="1">2 - Graveler Minimum 25</evo>
+        <evo id="2">3 - Golem Minimum 35</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">4 Mud Sport - Ground</move>
+        <move id="1">6 Rock Polish - Rock</move>
+        <move id="2">10 Steamroller - Bug</move>
+        <move id="3">12 Magnitude - Ground</move>
+        <move id="4">16 Rock Throw - Rock</move>
+        <move id="5">18 Smack Down - Rock</move>
+        <move id="6">22 Bulldoze - Ground</move>
+        <move id="7">24 Self-Destruct - Normal</move>
+        <move id="8">30 Stealth Rock - Rock</move>
+        <move id="9">34 Rock Blast - Rock</move>
+        <move id="10">40 Earthquake - Ground</move>
+        <move id="11">44 Explosion - Normal</move>
+        <move id="12">50 Double-Edge - Normal</move>
+        <move id="13">54 Stone Edge - Rock</move>
+        <move id="14">60 Heavy Slam - Steel</move>
+      </Moves>
+    </List076>
+  </Pokemon>
+  <Pokemon>
+    <number>077</number>
+    <id>Ponyta</id>
+    <type>Fire</type>
+    <hp>5</hp>
+    <atk>9</atk>
+    <def>6</def>
+    <spatk>7</spatk>
+    <spdef>7</spdef>
+    <spd>9</spd>
+    <size>3’ 3” / 1m (Medium)</size>
+    <weight>66.1 lbs. / 30kg (3)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Field</egg>
+    <hatch>10 Days</hatch>
+    <diet>Herbivore</diet>
+    <habitat>Grassland</habitat>
+    <legendary>false</legendary>
+    <List077>
+      <Ability>
+        <BasicAbility>Flash Fire</BasicAbility>
+        <BasicAbility>Run Away</BasicAbility>
+        <AdvancedAbility>Flame Body</AdvancedAbility>
+        <AdvancedAbility>Sprint</AdvancedAbility>
+        <Basic0Ability>Vanguard</Basic0Ability>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 3d6+2</skill>
+        <skill id="1">Acro 3d6+1</skill>
+        <skill id="2">Combat 2d6</skill>
+        <skill id="3">Stealth 2d6</skill>
+        <skill id="4">Percep 3d6+1</skill>
+        <skill id="5">Focus 2d6+1</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 7</cap>
+        <cap id="1">Swim 2</cap>
+        <cap id="2">Jump 1/2</cap>
+        <cap id="3">Power 3 Egg Warmer</cap>
+        <cap id="4">Firestarter</cap>
+        <cap id="5">Glow</cap>
+        <cap id="6">Heater</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Ponyta</evo>
+        <evo id="1">2 - Rapidash Minimum 35</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Tackle - Normal</move>
+        <move id="1">1 Growl - Normal</move>
+        <move id="2">4 Tail Whip - Normal</move>
+        <move id="3">9 Ember - Fire</move>
+        <move id="4">13 Flame Wheel - Fire</move>
+        <move id="5">17 Stomp - Normal</move>
+        <move id="6">21 Flame Charge - Fire</move>
+        <move id="7">25 Fire Spin - Fire</move>
+        <move id="8">29 Take Down - Normal</move>
+        <move id="9">33 Inferno - Fire</move>
+        <move id="10">37 Agility - Psychic</move>
+        <move id="11">41 Fire Blast - Fire</move>
+        <move id="12">45 Bounce - Flying</move>
+        <move id="13">49 Flare Blitz - Fire</move>
+      </Moves>
+    </List077>
+  </Pokemon>
 </Namespace>
