@@ -495,12 +495,12 @@ namespace GenesisDex
             int spatk;
             int spdef;
             int spd;
-            try { hp = Convert.ToInt32(poke.hp); } catch { MessageBox.Show(poke.id + "'s hp is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return; }
-            try { atk = Convert.ToInt32(poke.atk); } catch { MessageBox.Show(poke.id + "'s atk is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return; }
-            try { def = Convert.ToInt32(poke.def); } catch { MessageBox.Show(poke.id + "'s def is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return; }
-            try { spatk = Convert.ToInt32(poke.spatk); } catch { MessageBox.Show(poke.id + "'s spatk is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return; }
-            try { spdef = Convert.ToInt32(poke.spdef); } catch { MessageBox.Show(poke.id + "'s spdef is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return; }
-            try { spd = Convert.ToInt32(poke.spd); } catch { MessageBox.Show(poke.id + "'s spd is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return; }
+            try { hp = Convert.ToInt32(poke.hp); } catch { MessageBox.Show(poke.id + "'s hp is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); hp = 1; }
+            try { atk = Convert.ToInt32(poke.atk); } catch { MessageBox.Show(poke.id + "'s atk is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); atk = 1; }
+            try { def = Convert.ToInt32(poke.def); } catch { MessageBox.Show(poke.id + "'s def is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); def = 1; }
+            try { spatk = Convert.ToInt32(poke.spatk); } catch { MessageBox.Show(poke.id + "'s spatk is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); spatk = 1; }
+            try { spdef = Convert.ToInt32(poke.spdef); } catch { MessageBox.Show(poke.id + "'s spdef is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); spdef = 1; }
+            try { spd = Convert.ToInt32(poke.spd); } catch { MessageBox.Show(poke.id + "'s spd is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); spd = 1; }
             stats = getstats.createList(hp, atk, def, spatk, spdef, spd);
             SortStats(stats);
 
@@ -569,7 +569,7 @@ namespace GenesisDex
             {
                 string[] gender;
                 try { gender = poke.gender.Split(' '); } catch { MessageBox.Show(poke.id + "'s Gender Ratio is not entered correctly. Please take a " +
-                    "look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return poke = null; }
+                    "look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue.");  Gender.Add("!ERROR!"); return poke; }
                 string m = gender[0];
                 m = m.Replace("%", " ");
                 m = m.Trim();
@@ -581,7 +581,7 @@ namespace GenesisDex
                 }
                 int male;
                 try { male = Convert.ToInt32(m); } catch { MessageBox.Show(poke.id + "'s Gender Ratio is not entered correctly. Please take a " + 
-                    "look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return poke = null; }
+                    "look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); Gender.Add("!ERROR!"); return poke; }
                 int i = rng.Next(0, 101);
                 if (i <= male)
                 {
@@ -826,7 +826,7 @@ namespace GenesisDex
             {
                 string[] moveLevel = moveList[e].move.Split(' ');
                 int lvl;
-                try { lvl = Convert.ToInt32(moveLevel[0]); } catch { MessageBox.Show(IChooseYou.id + "'s Move is not entered correctly. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue.   '" + moveList[e].move + "'"); return; }
+                try { lvl = Convert.ToInt32(moveLevel[0]); } catch { MessageBox.Show(IChooseYou.id + "'s Move is not entered correctly. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue.   '" + moveList[e].move + "'"); moves.Add("!ERROR!"); return; }
                 if (lvl <= i)
                 {
                     build.Clear();
@@ -864,6 +864,11 @@ namespace GenesisDex
 
         private void GetShiny(Pokemon poke)
         {
+            if (poke.type == null)
+            {
+                MessageBox.Show(poke.id + "'s type is not entered...");
+                return;
+            }
             string[] type = poke.type.Split(' ');
             int i = rng.Next(1, typeList.Count);
             string newtype = typeList[i].id;
