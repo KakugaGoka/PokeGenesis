@@ -182,9 +182,9 @@ namespace GenesisDex
             pokeList = pokeXML.createList("Pokemon");
             if (pkPokemon.Text == "Any")
             {
-                CheckEvo();
                 CheckHabitat();
                 CheckType();
+                CheckEvo();
                 if (pkCanBeLegend.Checked != true)
                 {
                     GetLegend();
@@ -353,12 +353,13 @@ namespace GenesisDex
                 int sA = Convert.ToInt32(pkStageAllowed.Text);
                 for (var e = 0; e < pokeList.Count; e++)
                 {
+                    string[] pokeID = pokeList[e].id.Split(' ').ToArray();
                     evoList = evoXML.createList(pokeList[e].number);
                     for (var x = 0; x < evoList.Count; x++)
                     {
-                        if (evoList[x].evo.Contains(pokeList[e].id) == true)
+                        if (evoList[x].evo.Contains(pokeID[0]) == true)
                         {
-                            if (evoList[x].id != sA - 1)
+                            if (!evoList[x].evo.Contains(sA + " -"))
                             {
                                 pokeList.RemoveAt(e);
                                 e -= 1;
@@ -378,16 +379,17 @@ namespace GenesisDex
         private void CheckHabitat()
         {
             string Habitat = pkHabitat.Text;
-            if (Habitat == "Any") { return; }
-            for(var e = 0; e < pokeList.Count; e++)
+            if (Habitat != "Any")
             {
-                if (pokeList[e].habitat.Contains(Habitat) == false)
+                for (var e = 0; e < pokeList.Count; e++)
                 {
-                    pokeList.RemoveAt(e);
-                    e -= 1;
+                    if (pokeList[e].habitat.Contains(Habitat) == false)
+                    {
+                        pokeList.RemoveAt(e);
+                        e -= 1;
+                    }
                 }
             }
-
         }
 
         private void CheckType()
