@@ -18893,4 +18893,200 @@
       </Moves>
     </List140>
   </Pokemon>
+  <Pokemon>
+    <number>141</number>
+    <id>Kabutops</id>
+    <type>Rock / Water</type>
+    <hp>6</hp>
+    <atk>12</atk>
+    <def>11</def>
+    <spatk>7</spatk>
+    <spdef>7</spdef>
+    <spd>8</spd>
+    <size>4’ 3” / 1.3m (Medium)</size>
+    <weight>89.3 lbs. / 40.5kg (3)</weight>
+    <gender>87.5% M / 12.5% F</gender>
+    <egg>Water 1 / Water 3</egg>
+    <diet>Omnivore</diet>
+    <habitat>Cave, Ocean</habitat>
+    <legendary>false</legendary>
+    <List141>
+      <Ability>
+        <BasicAbility>Battle Armor</BasicAbility>
+        <BasicAbility>Sturdy</BasicAbility>
+        <AdvancedAbility>Swift Swim</AdvancedAbility>
+        <AdvancedAbility>Wave Rider</AdvancedAbility>
+        <HighAbility>Weak Armor</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 3d6+2</skill>
+        <skill id="1">Acro 3d6+2</skill>
+        <skill id="2">Combat 4d6+2</skill>
+        <skill id="3">Stealth 4d6+2</skill>
+        <skill id="4">Percep 2d6</skill>
+        <skill id="5">Focus 4d6+1</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 6</cap>
+        <cap id="1">Swim 6</cap>
+        <cap id="2">Jump 1/1</cap>
+        <cap id="3">Power 2</cap>
+        <cap id="4">Gilled</cap>
+        <cap id="5">Naturewalk (Ocean, Cave)</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Kabuto</evo>
+        <evo id="1">2 - Kabutops Minimum 40</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">11 Leer - Normal</move>
+        <move id="1">16 Mud Shot - Ground</move>
+        <move id="2">21 Sand Attack - Ground</move>
+        <move id="3">26 Endure - Normal</move>
+        <move id="4">31 Aqua Jet - Water</move>
+        <move id="5">36 Mega Drain - Grass</move>
+        <move id="6">40 Slash - Normal</move>
+        <move id="7">45 Metal Sound - Steel</move>
+        <move id="8">54 Ancient Power - Rock</move>
+        <move id="9">63 Wring Out - Normal</move>
+        <move id="10">72 Night Slash - Dark</move>
+      </Moves>
+    </List141>
+  </Pokemon>
+  <Pokemon>
+    <number>142</number>
+    <id>Aerodactyl</id>
+    <type>Rock / Flying</type>
+    <hp>8</hp>
+    <atk>11</atk>
+    <def>7</def>
+    <spatk>6</spatk>
+    <spdef>8</spdef>
+    <spd>13</spd>
+    <size>5’ 11” / 1.8m (Huge)</size>
+    <weight>130.1 lbs. / 59kg (4)</weight>
+    <gender>87.5% M / 12.5% F</gender>
+    <egg>Flying</egg>
+    <hatch>20 Days</hatch>
+    <diet>Carnivore</diet>
+    <habitat>Cave, Mountain</habitat>
+    <legendary>false</legendary>
+    <List142>
+      <Ability>
+        <BasicAbility>Frighten</BasicAbility>
+        <BasicAbility>Unnerve</BasicAbility>
+        <AdvancedAbility>Cruelty</AdvancedAbility>
+        <AdvancedAbility>Rock Head</AdvancedAbility>
+        <HighAbility>Pressure</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 5d6+2</skill>
+        <skill id="1">Acro 4d6</skill>
+        <skill id="2">Combat 4d6</skill>
+        <skill id="3">Stealth 2d6</skill>
+        <skill id="4">Percep 3d6+1</skill>
+        <skill id="5">Focus 4d6+3</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 4</cap>
+        <cap id="1">Swim 3</cap>
+        <cap id="2">Sky 10</cap>
+        <cap id="3">Jump 2/3</cap>
+        <cap id="4">Power 8</cap>
+        <cap id="5">Mountable 1</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Aerodactyl</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Bite - Dark</move>
+        <move id="1">1 Scary Face - Normal</move>
+        <move id="2">1 Wing Attack - Flying</move>
+        <move id="3">9 Roar - Normal</move>
+        <move id="4">17 Agility - Psychic</move>
+        <move id="5">25 Ancient Power - Rock</move>
+        <move id="6">33 Crunch - Dark</move>
+        <move id="7">41 Take Down - Normal</move>
+        <move id="8">49 Sky Drop - Flying</move>
+        <move id="9">57 Iron Head - Steel</move>
+        <move id="10">65 Hyper Beam - Normal</move>
+        <move id="11">73 Rock Slide - Rock</move>
+        <move id="12">81 Giga Impact - Normal</move>
+      </Moves>
+    </List142>
+  </Pokemon>
+  <Mega142>
+    <id>Mega Aerodactyl</id>
+    <type>Rock / Flying</type>
+    <atk>+3</atk>
+    <def>+2</def>
+    <spatk>+1</spatk>
+    <spdef>+2</spdef>
+    <spd>+2</spd>
+    <ability>Tough Claws</ability>
+  </Mega142>
+  <Pokemon>
+    <number>143</number>
+    <id>Snorlax</id>
+    <type>Normal</type>
+    <hp>16</hp>
+    <atk>11</atk>
+    <def>7</def>
+    <spatk>7</spatk>
+    <spdef>11</spdef>
+    <spd>3</spd>
+    <size>6’ 11” / 2.1m (Large)</size>
+    <weight>1014.1 lbs. / 460kg (6)</weight>
+    <gender>87.5% M / 12.5% F</gender>
+    <egg>Monster</egg>
+    <diet>Omnivore</diet>
+    <habitat>Forest, Mountain, Taiga, Urban</habitat>
+    <legendary>false</legendary>
+    <List143>
+      <Ability>
+        <BasicAbility>Thick Fat</BasicAbility>
+        <BasicAbility>Immunity</BasicAbility>
+        <AdvancedAbility>Lunchbox</AdvancedAbility>
+        <AdvancedAbility>Gluttony</AdvancedAbility>
+        <HighAbility>Deep Sleep</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 6d6</skill>
+        <skill id="1">Acro 2d6</skill>
+        <skill id="2">Combat 3d6+1</skill>
+        <skill id="3">Stealth 2d6</skill>
+        <skill id="4">Percep 5d6</skill>
+        <skill id="5">Focus 4d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 5</cap>
+        <cap id="1">Swim 1</cap>
+        <cap id="2">Jump 2/2</cap>
+        <cap id="3">Power 12</cap>
+        <cap id="4">Tracke</cap>
+        <cap id="5">Naturewalk (Forest, Mountain)</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Munchlax</evo>
+        <evo id="1">2 - Snorlax Minimum 25</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">4 Defense Curl - Normal</move>
+        <move id="1">9 Amnesia - Psychic</move>
+        <move id="2">12 Lick - Ghost</move>
+        <move id="3">17 Belly Drum - Normal</move>
+        <move id="4">20 Yawn - Normal</move>
+        <move id="5">25 Chip Away - Normal</move>
+        <move id="6">28 Rest - Psychic</move>
+        <move id="7">28 Snore - Normal</move>
+        <move id="8">33 Sleep Talk - Normal</move>
+        <move id="9">36 Body Slam - Normal</move>
+        <move id="10">41 Block - Normal</move>
+        <move id="11">44 Rollout - Rock</move>
+        <move id="12">49 Crunch - Dark</move>
+        <move id="13">52 Heavy Slam - Steel</move>
+        <move id="14">57 Giga Impact - Normal</move>
+      </Moves>
+    </List143>
+  </Pokemon>
 </Namespace>
