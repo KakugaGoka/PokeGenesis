@@ -546,9 +546,9 @@ namespace GenesisDex
 
         private Pokemon GetGender(Pokemon poke)
         {
-            if (poke.gender == "Genderless" || poke.gender == "None")
+            if (poke.gender == "Genderless"|| poke.gender == "No Gender"||poke.gender == "None")
             {
-                Gender.Add("Genderless");
+                Gender.Add("No Gender");
                 return poke;
             }
             else
