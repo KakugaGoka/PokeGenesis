@@ -89,7 +89,7 @@ namespace GenesisDex
                 {
                     if (Capabilities[s].Contains("(") == true)
                     {
-                        if (Capabilities[s].Contains(")") == false)
+                        if (!Capabilities[s].Contains(")"))
                         {
                             build.Append(Capabilities[s] + ", ");
                             Capabilities.RemoveAt(s);
@@ -117,7 +117,7 @@ namespace GenesisDex
                     }
                     else
                     {
-                        build.Append(Capabilities[s] + ", ");
+                        build.Append(Capabilities[s]);
                         Capabilities.RemoveAt(s);
                         count--;
                         s--;
