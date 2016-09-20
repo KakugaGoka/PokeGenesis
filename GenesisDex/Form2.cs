@@ -46,10 +46,55 @@ namespace GenesisDex
             cbAbi5.BindingContext = new BindingContext();
             cbAbi5.DataSource = abilitymod;
             cbAbi5.SelectedIndex = 2;
-            AddContextMenu(listCap);
-            AddContextMenu(listSkills);
-            AddContextMenu(listEvo);
-            AddContextMenu(listMoves);
+            AddContextMenuRTB(listCap);
+            AddContextMenuRTB(listSkills);
+            AddContextMenuRTB(listEvo);
+            AddContextMenuRTB(listMoves);
+            AddContextMenuTB(tbNumber);
+            AddContextMenuTB(tbName);
+            AddContextMenuTB(tbHP);
+            AddContextMenuTB(tbATK);
+            AddContextMenuTB(tbDEF);
+            AddContextMenuTB(tbSPATK);
+            AddContextMenuTB(tbSPDEF);
+            AddContextMenuTB(tbSPD);
+            AddContextMenuTB(tbType);
+            AddContextMenuTB(tbAbi1);
+            AddContextMenuTB(tbAbi2);
+            AddContextMenuTB(tbAbi3);
+            AddContextMenuTB(tbAbi4);
+            AddContextMenuTB(tbAbi5);
+            AddContextMenuTB(tbHeight);
+            AddContextMenuTB(tbWeight);
+            AddContextMenuTB(tbGender);
+            AddContextMenuTB(tbDiet);
+            AddContextMenuTB(tbEgg);
+            AddContextMenuTB(tbHatch);
+            AddContextMenuTB(tbHabitat);
+            AddContextMenuTB(tbMegaName);
+            AddContextMenuTB(tbMegaType);
+            AddContextMenuTB(tbMegaHP);
+            AddContextMenuTB(tbMegaATK);
+            AddContextMenuTB(tbMegaDEF);
+            AddContextMenuTB(tbMegaSPATK);
+            AddContextMenuTB(tbMegaSPDEF);
+            AddContextMenuTB(tbMegaSPD);
+            AddContextMenuTB(tbMegaAbility);
+            AddContextMenuTB(tbMega2Name);
+            AddContextMenuTB(tbMega2Type);
+            AddContextMenuTB(tbMega2HP);
+            AddContextMenuTB(tbMega2ATK);
+            AddContextMenuTB(tbMega2DEF);
+            AddContextMenuTB(tbMega2SPATK);
+            AddContextMenuTB(tbMega2SPDEF);
+            AddContextMenuTB(tbMega2SPD);
+            AddContextMenuTB(tbMega2Ability);
+            AddContextMenuTB(tbRemove);
+            cbAbi1.ContextMenu = new ContextMenu();
+            cbAbi2.ContextMenu = new ContextMenu();
+            cbAbi3.ContextMenu = new ContextMenu();
+            cbAbi4.ContextMenu = new ContextMenu();
+            cbAbi5.ContextMenu = new ContextMenu();
         }
 
         private void btAddPKMN_Click(object sender, EventArgs e)
@@ -404,7 +449,7 @@ namespace GenesisDex
             dragging = false;
         }
 
-        private void AddContextMenu(RichTextBox rtb)
+        private void AddContextMenuRTB(RichTextBox rtb)
         {
             if (rtb.ContextMenuStrip == null)
             {
@@ -419,6 +464,56 @@ namespace GenesisDex
                 tsmiPaste.Click += (sender, e) => rtb.Paste();
                 cms.Items.Add(tsmiPaste);
                 rtb.ContextMenuStrip = cms;
+            }
+        }
+
+        private void AddContextMenuTB(TextBox tb)
+        {
+            if (tb.ContextMenuStrip == null)
+            {
+                ContextMenuStrip cms = new ContextMenuStrip { ShowImageMargin = false };
+                ToolStripMenuItem tsmiCut = new ToolStripMenuItem("Cut");
+                tsmiCut.Click += (sender, e) => tb.Cut();
+                cms.Items.Add(tsmiCut);
+                ToolStripMenuItem tsmiCopy = new ToolStripMenuItem("Copy");
+                tsmiCopy.Click += (sender, e) => tb.Copy();
+                cms.Items.Add(tsmiCopy);
+                ToolStripMenuItem tsmiPaste = new ToolStripMenuItem("Paste");
+                tsmiPaste.Click += (sender, e) => tb.Paste();
+                cms.Items.Add(tsmiPaste);
+                tb.ContextMenuStrip = cms;
+            }
+        }
+
+        private void CheckedState(CheckBox cb)
+        {
+            if (cb.Checked)
+                cb.Checked = false;
+            else
+                cb.Checked = true;
+        }
+
+        private void cbLegend_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckedState(cbLegend);
+            }
+        }
+
+        private void cbMega_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckedState(cbMega);
+            }
+        }
+
+        private void cbXY_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckedState(cbXY);
             }
         }
     }

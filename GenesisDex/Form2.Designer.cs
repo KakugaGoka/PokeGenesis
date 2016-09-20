@@ -114,7 +114,7 @@
             this.gbMega = new System.Windows.Forms.GroupBox();
             this.gbMega2 = new System.Windows.Forms.GroupBox();
             this.label44 = new System.Windows.Forms.Label();
-            this.ttNumber = new System.Windows.Forms.ToolTip(this.components);
+            this.ttPokemon = new System.Windows.Forms.ToolTip(this.components);
             this.gbRemove = new System.Windows.Forms.GroupBox();
             this.btRemove = new System.Windows.Forms.Button();
             this.tbRemove = new System.Windows.Forms.TextBox();
@@ -346,105 +346,105 @@
             this.tbName.Location = new System.Drawing.Point(69, 84);
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(204, 20);
-            this.tbName.TabIndex = 2;
+            this.tbName.TabIndex = 3;
             // 
             // tbType
             // 
             this.tbType.Location = new System.Drawing.Point(68, 206);
             this.tbType.Name = "tbType";
             this.tbType.Size = new System.Drawing.Size(205, 20);
-            this.tbType.TabIndex = 3;
+            this.tbType.TabIndex = 10;
             // 
             // tbHeight
             // 
             this.tbHeight.Location = new System.Drawing.Point(364, 58);
             this.tbHeight.Name = "tbHeight";
             this.tbHeight.Size = new System.Drawing.Size(205, 20);
-            this.tbHeight.TabIndex = 4;
+            this.tbHeight.TabIndex = 22;
             // 
             // tbHatch
             // 
             this.tbHatch.Location = new System.Drawing.Point(364, 162);
             this.tbHatch.Name = "tbHatch";
             this.tbHatch.Size = new System.Drawing.Size(205, 20);
-            this.tbHatch.TabIndex = 10;
+            this.tbHatch.TabIndex = 26;
             // 
             // tbEgg
             // 
             this.tbEgg.Location = new System.Drawing.Point(364, 136);
             this.tbEgg.Name = "tbEgg";
             this.tbEgg.Size = new System.Drawing.Size(205, 20);
-            this.tbEgg.TabIndex = 9;
+            this.tbEgg.TabIndex = 25;
             // 
             // tbGender
             // 
             this.tbGender.Location = new System.Drawing.Point(364, 110);
             this.tbGender.Name = "tbGender";
             this.tbGender.Size = new System.Drawing.Size(205, 20);
-            this.tbGender.TabIndex = 8;
+            this.tbGender.TabIndex = 24;
             // 
             // tbDiet
             // 
             this.tbDiet.Location = new System.Drawing.Point(364, 188);
             this.tbDiet.Name = "tbDiet";
             this.tbDiet.Size = new System.Drawing.Size(205, 20);
-            this.tbDiet.TabIndex = 7;
+            this.tbDiet.TabIndex = 27;
             // 
             // tbHabitat
             // 
             this.tbHabitat.Location = new System.Drawing.Point(364, 214);
             this.tbHabitat.Name = "tbHabitat";
             this.tbHabitat.Size = new System.Drawing.Size(205, 20);
-            this.tbHabitat.TabIndex = 6;
+            this.tbHabitat.TabIndex = 28;
             // 
             // tbWeight
             // 
             this.tbWeight.Location = new System.Drawing.Point(364, 84);
             this.tbWeight.Name = "tbWeight";
             this.tbWeight.Size = new System.Drawing.Size(205, 20);
-            this.tbWeight.TabIndex = 5;
+            this.tbWeight.TabIndex = 23;
             // 
             // tbSPD
             // 
             this.tbSPD.Location = new System.Drawing.Point(198, 180);
             this.tbSPD.Name = "tbSPD";
             this.tbSPD.Size = new System.Drawing.Size(75, 20);
-            this.tbSPD.TabIndex = 16;
+            this.tbSPD.TabIndex = 9;
             // 
             // tbSPDEF
             // 
             this.tbSPDEF.Location = new System.Drawing.Point(198, 154);
             this.tbSPDEF.Name = "tbSPDEF";
             this.tbSPDEF.Size = new System.Drawing.Size(75, 20);
-            this.tbSPDEF.TabIndex = 15;
+            this.tbSPDEF.TabIndex = 8;
             // 
             // tbSPATK
             // 
             this.tbSPATK.Location = new System.Drawing.Point(198, 128);
             this.tbSPATK.Name = "tbSPATK";
             this.tbSPATK.Size = new System.Drawing.Size(75, 20);
-            this.tbSPATK.TabIndex = 14;
+            this.tbSPATK.TabIndex = 7;
             // 
             // tbDEF
             // 
             this.tbDEF.Location = new System.Drawing.Point(68, 180);
             this.tbDEF.Name = "tbDEF";
             this.tbDEF.Size = new System.Drawing.Size(75, 20);
-            this.tbDEF.TabIndex = 13;
+            this.tbDEF.TabIndex = 6;
             // 
             // tbATK
             // 
             this.tbATK.Location = new System.Drawing.Point(68, 154);
             this.tbATK.Name = "tbATK";
             this.tbATK.Size = new System.Drawing.Size(75, 20);
-            this.tbATK.TabIndex = 12;
+            this.tbATK.TabIndex = 5;
             // 
             // tbHP
             // 
             this.tbHP.Location = new System.Drawing.Point(68, 128);
             this.tbHP.Name = "tbHP";
             this.tbHP.Size = new System.Drawing.Size(75, 20);
-            this.tbHP.TabIndex = 11;
+            this.tbHP.TabIndex = 4;
             // 
             // label33
             // 
@@ -460,35 +460,35 @@
             this.tbAbi5.Location = new System.Drawing.Point(149, 353);
             this.tbAbi5.Name = "tbAbi5";
             this.tbAbi5.Size = new System.Drawing.Size(124, 20);
-            this.tbAbi5.TabIndex = 27;
+            this.tbAbi5.TabIndex = 20;
             // 
             // tbAbi4
             // 
             this.tbAbi4.Location = new System.Drawing.Point(149, 327);
             this.tbAbi4.Name = "tbAbi4";
             this.tbAbi4.Size = new System.Drawing.Size(124, 20);
-            this.tbAbi4.TabIndex = 25;
+            this.tbAbi4.TabIndex = 18;
             // 
             // tbAbi3
             // 
             this.tbAbi3.Location = new System.Drawing.Point(149, 301);
             this.tbAbi3.Name = "tbAbi3";
             this.tbAbi3.Size = new System.Drawing.Size(124, 20);
-            this.tbAbi3.TabIndex = 23;
+            this.tbAbi3.TabIndex = 16;
             // 
             // tbAbi2
             // 
             this.tbAbi2.Location = new System.Drawing.Point(149, 275);
             this.tbAbi2.Name = "tbAbi2";
             this.tbAbi2.Size = new System.Drawing.Size(124, 20);
-            this.tbAbi2.TabIndex = 21;
+            this.tbAbi2.TabIndex = 14;
             // 
             // tbAbi1
             // 
             this.tbAbi1.Location = new System.Drawing.Point(149, 249);
             this.tbAbi1.Name = "tbAbi1";
             this.tbAbi1.Size = new System.Drawing.Size(124, 20);
-            this.tbAbi1.TabIndex = 19;
+            this.tbAbi1.TabIndex = 12;
             // 
             // cbMega
             // 
@@ -496,11 +496,11 @@
             this.cbMega.Location = new System.Drawing.Point(874, 115);
             this.cbMega.Name = "cbMega";
             this.cbMega.Size = new System.Drawing.Size(116, 17);
-            this.cbMega.TabIndex = 81;
-            this.cbMega.TabStop = false;
+            this.cbMega.TabIndex = 32;
             this.cbMega.Text = "Does Have Mega?";
             this.cbMega.UseVisualStyleBackColor = true;
             this.cbMega.CheckedChanged += new System.EventHandler(this.cbMega_CheckedChanged);
+            this.cbMega.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cbMega_KeyDown);
             // 
             // cbXY
             // 
@@ -508,53 +508,53 @@
             this.cbXY.Location = new System.Drawing.Point(1054, 115);
             this.cbXY.Name = "cbXY";
             this.cbXY.Size = new System.Drawing.Size(100, 17);
-            this.cbXY.TabIndex = 82;
-            this.cbXY.TabStop = false;
+            this.cbXY.TabIndex = 33;
             this.cbXY.Text = "Mega X and Y?";
             this.cbXY.UseVisualStyleBackColor = true;
             this.cbXY.CheckedChanged += new System.EventHandler(this.cbXY_CheckedChanged);
+            this.cbXY.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cbXY_KeyDown);
             // 
             // tbMegaHP
             // 
             this.tbMegaHP.Location = new System.Drawing.Point(70, 71);
             this.tbMegaHP.Name = "tbMegaHP";
             this.tbMegaHP.Size = new System.Drawing.Size(75, 20);
-            this.tbMegaHP.TabIndex = 30;
+            this.tbMegaHP.TabIndex = 36;
             // 
             // tbMegaATK
             // 
             this.tbMegaATK.Location = new System.Drawing.Point(70, 97);
             this.tbMegaATK.Name = "tbMegaATK";
             this.tbMegaATK.Size = new System.Drawing.Size(75, 20);
-            this.tbMegaATK.TabIndex = 31;
+            this.tbMegaATK.TabIndex = 37;
             // 
             // tbMegaDEF
             // 
             this.tbMegaDEF.Location = new System.Drawing.Point(70, 123);
             this.tbMegaDEF.Name = "tbMegaDEF";
             this.tbMegaDEF.Size = new System.Drawing.Size(75, 20);
-            this.tbMegaDEF.TabIndex = 32;
+            this.tbMegaDEF.TabIndex = 38;
             // 
             // tbMegaSPATK
             // 
             this.tbMegaSPATK.Location = new System.Drawing.Point(200, 71);
             this.tbMegaSPATK.Name = "tbMegaSPATK";
             this.tbMegaSPATK.Size = new System.Drawing.Size(75, 20);
-            this.tbMegaSPATK.TabIndex = 33;
+            this.tbMegaSPATK.TabIndex = 39;
             // 
             // tbMegaSPDEF
             // 
             this.tbMegaSPDEF.Location = new System.Drawing.Point(200, 97);
             this.tbMegaSPDEF.Name = "tbMegaSPDEF";
             this.tbMegaSPDEF.Size = new System.Drawing.Size(75, 20);
-            this.tbMegaSPDEF.TabIndex = 34;
+            this.tbMegaSPDEF.TabIndex = 40;
             // 
             // tbMegaSPD
             // 
             this.tbMegaSPD.Location = new System.Drawing.Point(200, 123);
             this.tbMegaSPD.Name = "tbMegaSPD";
             this.tbMegaSPD.Size = new System.Drawing.Size(75, 20);
-            this.tbMegaSPD.TabIndex = 35;
+            this.tbMegaSPD.TabIndex = 41;
             // 
             // label35
             // 
@@ -615,14 +615,14 @@
             this.tbMegaType.Location = new System.Drawing.Point(54, 45);
             this.tbMegaType.Name = "tbMegaType";
             this.tbMegaType.Size = new System.Drawing.Size(221, 20);
-            this.tbMegaType.TabIndex = 29;
+            this.tbMegaType.TabIndex = 35;
             // 
             // tbMegaName
             // 
             this.tbMegaName.Location = new System.Drawing.Point(54, 19);
             this.tbMegaName.Name = "tbMegaName";
             this.tbMegaName.Size = new System.Drawing.Size(221, 20);
-            this.tbMegaName.TabIndex = 28;
+            this.tbMegaName.TabIndex = 34;
             // 
             // label41
             // 
@@ -647,7 +647,7 @@
             this.tbMegaAbility.Location = new System.Drawing.Point(70, 149);
             this.tbMegaAbility.Name = "tbMegaAbility";
             this.tbMegaAbility.Size = new System.Drawing.Size(205, 20);
-            this.tbMegaAbility.TabIndex = 36;
+            this.tbMegaAbility.TabIndex = 42;
             // 
             // label43
             // 
@@ -663,7 +663,7 @@
             this.tbMega2Ability.Location = new System.Drawing.Point(70, 149);
             this.tbMega2Ability.Name = "tbMega2Ability";
             this.tbMega2Ability.Size = new System.Drawing.Size(205, 20);
-            this.tbMega2Ability.TabIndex = 45;
+            this.tbMega2Ability.TabIndex = 51;
             // 
             // label46
             // 
@@ -679,14 +679,14 @@
             this.tbMega2Type.Location = new System.Drawing.Point(54, 45);
             this.tbMega2Type.Name = "tbMega2Type";
             this.tbMega2Type.Size = new System.Drawing.Size(221, 20);
-            this.tbMega2Type.TabIndex = 38;
+            this.tbMega2Type.TabIndex = 44;
             // 
             // tbMega2Name
             // 
             this.tbMega2Name.Location = new System.Drawing.Point(54, 19);
             this.tbMega2Name.Name = "tbMega2Name";
             this.tbMega2Name.Size = new System.Drawing.Size(221, 20);
-            this.tbMega2Name.TabIndex = 37;
+            this.tbMega2Name.TabIndex = 43;
             // 
             // label47
             // 
@@ -711,42 +711,42 @@
             this.tbMega2HP.Location = new System.Drawing.Point(70, 71);
             this.tbMega2HP.Name = "tbMega2HP";
             this.tbMega2HP.Size = new System.Drawing.Size(75, 20);
-            this.tbMega2HP.TabIndex = 39;
+            this.tbMega2HP.TabIndex = 45;
             // 
             // tbMega2ATK
             // 
             this.tbMega2ATK.Location = new System.Drawing.Point(70, 97);
             this.tbMega2ATK.Name = "tbMega2ATK";
             this.tbMega2ATK.Size = new System.Drawing.Size(75, 20);
-            this.tbMega2ATK.TabIndex = 40;
+            this.tbMega2ATK.TabIndex = 46;
             // 
             // tbMega2DEF
             // 
             this.tbMega2DEF.Location = new System.Drawing.Point(70, 123);
             this.tbMega2DEF.Name = "tbMega2DEF";
             this.tbMega2DEF.Size = new System.Drawing.Size(75, 20);
-            this.tbMega2DEF.TabIndex = 41;
+            this.tbMega2DEF.TabIndex = 47;
             // 
             // tbMega2SPATK
             // 
             this.tbMega2SPATK.Location = new System.Drawing.Point(200, 71);
             this.tbMega2SPATK.Name = "tbMega2SPATK";
             this.tbMega2SPATK.Size = new System.Drawing.Size(75, 20);
-            this.tbMega2SPATK.TabIndex = 42;
+            this.tbMega2SPATK.TabIndex = 48;
             // 
             // tbMega2SPDEF
             // 
             this.tbMega2SPDEF.Location = new System.Drawing.Point(200, 97);
             this.tbMega2SPDEF.Name = "tbMega2SPDEF";
             this.tbMega2SPDEF.Size = new System.Drawing.Size(75, 20);
-            this.tbMega2SPDEF.TabIndex = 43;
+            this.tbMega2SPDEF.TabIndex = 49;
             // 
             // tbMega2SPD
             // 
             this.tbMega2SPD.Location = new System.Drawing.Point(200, 123);
             this.tbMega2SPD.Name = "tbMega2SPD";
             this.tbMega2SPD.Size = new System.Drawing.Size(75, 20);
-            this.tbMega2SPD.TabIndex = 44;
+            this.tbMega2SPD.TabIndex = 50;
             // 
             // label49
             // 
@@ -825,7 +825,7 @@
             this.gbMega.Location = new System.Drawing.Point(869, 139);
             this.gbMega.Name = "gbMega";
             this.gbMega.Size = new System.Drawing.Size(285, 178);
-            this.gbMega.TabIndex = 121;
+            this.gbMega.TabIndex = 100;
             this.gbMega.TabStop = false;
             this.gbMega.Text = "Mega Info";
             // 
@@ -865,7 +865,7 @@
             this.label44.Size = new System.Drawing.Size(15, 15);
             this.label44.TabIndex = 131;
             this.label44.Text = "?";
-            this.ttNumber.SetToolTip(this.label44, "This number should be the name of your sprite image. \r\nIf it is not a valid image" +
+            this.ttPokemon.SetToolTip(this.label44, "This number should be the name of your sprite image. \r\nIf it is not a valid image" +
         " found in the \'Data/Images/Pokemon\' \r\nor \'Data/Images/Shiny\' folders, then it wi" +
         "ll become a MissingNo!");
             // 
@@ -896,7 +896,7 @@
             this.tbRemove.Location = new System.Drawing.Point(47, 18);
             this.tbRemove.Name = "tbRemove";
             this.tbRemove.Size = new System.Drawing.Size(221, 20);
-            this.tbRemove.TabIndex = 20;
+            this.tbRemove.TabIndex = 150;
             this.tbRemove.TabStop = false;
             this.tbRemove.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbRemove_KeyDown);
             // 
@@ -927,10 +927,10 @@
             this.cbLegend.Location = new System.Drawing.Point(211, 61);
             this.cbLegend.Name = "cbLegend";
             this.cbLegend.Size = new System.Drawing.Size(82, 17);
-            this.cbLegend.TabIndex = 134;
-            this.cbLegend.TabStop = false;
+            this.cbLegend.TabIndex = 2;
             this.cbLegend.Text = "Legendary?";
             this.cbLegend.UseVisualStyleBackColor = true;
+            this.cbLegend.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cbLegend_KeyDown);
             // 
             // cbAbi1
             // 
@@ -938,7 +938,7 @@
             this.cbAbi1.Location = new System.Drawing.Point(68, 249);
             this.cbAbi1.Name = "cbAbi1";
             this.cbAbi1.Size = new System.Drawing.Size(75, 21);
-            this.cbAbi1.TabIndex = 18;
+            this.cbAbi1.TabIndex = 11;
             // 
             // cbAbi2
             // 
@@ -946,7 +946,7 @@
             this.cbAbi2.Location = new System.Drawing.Point(68, 275);
             this.cbAbi2.Name = "cbAbi2";
             this.cbAbi2.Size = new System.Drawing.Size(75, 21);
-            this.cbAbi2.TabIndex = 20;
+            this.cbAbi2.TabIndex = 13;
             // 
             // cbAbi3
             // 
@@ -954,7 +954,7 @@
             this.cbAbi3.Location = new System.Drawing.Point(68, 302);
             this.cbAbi3.Name = "cbAbi3";
             this.cbAbi3.Size = new System.Drawing.Size(75, 21);
-            this.cbAbi3.TabIndex = 22;
+            this.cbAbi3.TabIndex = 15;
             // 
             // cbAbi4
             // 
@@ -962,7 +962,7 @@
             this.cbAbi4.Location = new System.Drawing.Point(68, 327);
             this.cbAbi4.Name = "cbAbi4";
             this.cbAbi4.Size = new System.Drawing.Size(75, 21);
-            this.cbAbi4.TabIndex = 24;
+            this.cbAbi4.TabIndex = 17;
             // 
             // cbAbi5
             // 
@@ -970,14 +970,14 @@
             this.cbAbi5.Location = new System.Drawing.Point(68, 353);
             this.cbAbi5.Name = "cbAbi5";
             this.cbAbi5.Size = new System.Drawing.Size(75, 21);
-            this.cbAbi5.TabIndex = 26;
+            this.cbAbi5.TabIndex = 19;
             // 
             // listCap
             // 
             this.listCap.Location = new System.Drawing.Point(364, 257);
             this.listCap.Name = "listCap";
             this.listCap.Size = new System.Drawing.Size(205, 194);
-            this.listCap.TabIndex = 46;
+            this.listCap.TabIndex = 29;
             this.listCap.Text = "";
             // 
             // listEvo
@@ -985,7 +985,7 @@
             this.listEvo.Location = new System.Drawing.Point(68, 400);
             this.listEvo.Name = "listEvo";
             this.listEvo.Size = new System.Drawing.Size(205, 210);
-            this.listEvo.TabIndex = 47;
+            this.listEvo.TabIndex = 21;
             this.listEvo.Text = "";
             // 
             // listSkills
@@ -993,7 +993,7 @@
             this.listSkills.Location = new System.Drawing.Point(364, 474);
             this.listSkills.Name = "listSkills";
             this.listSkills.Size = new System.Drawing.Size(205, 136);
-            this.listSkills.TabIndex = 17;
+            this.listSkills.TabIndex = 30;
             this.listSkills.Text = "";
             // 
             // label1
@@ -1010,14 +1010,14 @@
             this.tbNumber.Location = new System.Drawing.Point(68, 58);
             this.tbNumber.Name = "tbNumber";
             this.tbNumber.Size = new System.Drawing.Size(109, 20);
-            this.tbNumber.TabIndex = 135;
+            this.tbNumber.TabIndex = 1;
             // 
             // listMoves
             // 
             this.listMoves.Location = new System.Drawing.Point(622, 87);
             this.listMoves.Name = "listMoves";
             this.listMoves.Size = new System.Drawing.Size(205, 448);
-            this.listMoves.TabIndex = 136;
+            this.listMoves.TabIndex = 31;
             this.listMoves.Text = "";
             // 
             // label18
@@ -1034,7 +1034,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1199, 650);
+            this.ClientSize = new System.Drawing.Size(1200, 650);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.listMoves);
             this.Controls.Add(this.tbNumber);
@@ -1204,7 +1204,7 @@
         private System.Windows.Forms.GroupBox gbMega;
         private System.Windows.Forms.GroupBox gbMega2;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.ToolTip ttNumber;
+        private System.Windows.Forms.ToolTip ttPokemon;
         private System.Windows.Forms.GroupBox gbRemove;
         private System.Windows.Forms.Button btRemove;
         private System.Windows.Forms.TextBox tbRemove;
