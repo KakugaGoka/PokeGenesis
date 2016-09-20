@@ -89,11 +89,18 @@ namespace GenesisDex
                 {
                     if (Capabilities[s].Contains("(") == true)
                     {
-                        build.Append(Capabilities[s] + ", ");
-                        Capabilities.RemoveAt(s);
-                        s--;
-                        count--;
-                        building = true;
+                        if (Capabilities[s].Contains(")") == false)
+                        {
+                            build.Append(Capabilities[s] + ", ");
+                            Capabilities.RemoveAt(s);
+                            s--;
+                            count--;
+                            building = true;
+                        }
+                        else
+                        {
+                            building = false;
+                        }
                     }
                 }
                 else
@@ -110,7 +117,7 @@ namespace GenesisDex
                     }
                     else
                     {
-                        build.Append(Capabilities[s]);
+                        build.Append(Capabilities[s] + ", ");
                         Capabilities.RemoveAt(s);
                         count--;
                         s--;
