@@ -1157,6 +1157,7 @@
     <Content Include="Data\Images\Items\Ultra Ball.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Data\Images\Pokemon\521-f.gif" />
     <Content Include="Data\Images\Pokemon\710-large.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -1175,6 +1176,7 @@
     <Content Include="Data\Images\Pokemon\711-super.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Data\Images\Shiny\521-f.gif" />
     <Content Include="Data\Images\Shiny\710-large.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -3135,7 +3137,7 @@
     <Content Include="Data\Images\Pokemon\520.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Pokemon\521.gif">
+    <Content Include="Data\Images\Pokemon\521-m.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Images\Pokemon\522.gif">
@@ -5670,7 +5672,7 @@
     <Content Include="Data\Images\Shiny\520.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Shiny\521.gif">
+    <Content Include="Data\Images\Shiny\521-m.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Images\Shiny\522.gif">
