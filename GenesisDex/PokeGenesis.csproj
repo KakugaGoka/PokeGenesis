@@ -2939,19 +2939,19 @@
     <Content Include="Data\Images\Pokemon\478.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Pokemon\479-1.gif">
+    <Content Include="Data\Images\Pokemon\479-fan.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Pokemon\479-2.gif">
+    <Content Include="Data\Images\Pokemon\479-frost.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Pokemon\479-3.gif">
+    <Content Include="Data\Images\Pokemon\479-heat.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Pokemon\479-4.gif">
+    <Content Include="Data\Images\Pokemon\479-mow.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Pokemon\479-5.gif">
+    <Content Include="Data\Images\Pokemon\479-wash.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Images\Pokemon\479.gif">
@@ -5525,19 +5525,19 @@
     <Content Include="Data\Images\Shiny\478.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Shiny\479-1.gif">
+    <Content Include="Data\Images\Shiny\479-fan.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Shiny\479-2.gif">
+    <Content Include="Data\Images\Shiny\479-frost.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Shiny\479-3.gif">
+    <Content Include="Data\Images\Shiny\479-heat.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Shiny\479-4.gif">
+    <Content Include="Data\Images\Shiny\479-mow.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Shiny\479-5.gif">
+    <Content Include="Data\Images\Shiny\479-wash.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Images\Shiny\479.gif">
