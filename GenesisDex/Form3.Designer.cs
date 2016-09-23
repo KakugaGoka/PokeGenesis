@@ -65,6 +65,9 @@
             this.pbGotoPage = new System.Windows.Forms.PictureBox();
             this.pkGoto = new System.Windows.Forms.NumericUpDown();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbLoot = new System.Windows.Forms.PictureBox();
+            this.nudPlayerLevel = new System.Windows.Forms.NumericUpDown();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbOverlay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoForward)).BeginInit();
@@ -81,6 +84,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbGotoPage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkGoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLoot)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPlayerLevel)).BeginInit();
             this.SuspendLayout();
             // 
             // pbOverlay
@@ -556,6 +561,54 @@
             this.pictureBox1.TabIndex = 77;
             this.pictureBox1.TabStop = false;
             // 
+            // pbLoot
+            // 
+            this.pbLoot.BackColor = System.Drawing.Color.Transparent;
+            this.pbLoot.Image = global::GenesisDex.Properties.Resources.GotoPage;
+            this.pbLoot.Location = new System.Drawing.Point(461, 126);
+            this.pbLoot.Name = "pbLoot";
+            this.pbLoot.Size = new System.Drawing.Size(126, 26);
+            this.pbLoot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbLoot.TabIndex = 78;
+            this.pbLoot.TabStop = false;
+            this.pbLoot.Click += new System.EventHandler(this.pbLoot_Click);
+            // 
+            // nudPlayerLevel
+            // 
+            this.nudPlayerLevel.BackColor = System.Drawing.Color.Black;
+            this.nudPlayerLevel.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudPlayerLevel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.nudPlayerLevel.Location = new System.Drawing.Point(510, 96);
+            this.nudPlayerLevel.Maximum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            this.nudPlayerLevel.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudPlayerLevel.Name = "nudPlayerLevel";
+            this.nudPlayerLevel.Size = new System.Drawing.Size(49, 24);
+            this.nudPlayerLevel.TabIndex = 79;
+            this.nudPlayerLevel.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Silver;
+            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label9.Location = new System.Drawing.Point(466, 94);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(38, 28);
+            this.label9.TabIndex = 80;
+            this.label9.Text = "Player\r\nLevel";
+            // 
             // FormScan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -563,6 +616,9 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = global::GenesisDex.Properties.Resources.MainMenu;
             this.ClientSize = new System.Drawing.Size(822, 616);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.nudPlayerLevel);
+            this.Controls.Add(this.pbLoot);
             this.Controls.Add(this.tbPokeCount);
             this.Controls.Add(this.pkGoto);
             this.Controls.Add(this.pbGotoPage);
@@ -624,6 +680,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbGotoPage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkGoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLoot)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPlayerLevel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -667,5 +725,8 @@
         private System.Windows.Forms.PictureBox pbGotoPage;
         private System.Windows.Forms.NumericUpDown pkGoto;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbLoot;
+        private System.Windows.Forms.NumericUpDown nudPlayerLevel;
+        private System.Windows.Forms.Label label9;
     }
 }

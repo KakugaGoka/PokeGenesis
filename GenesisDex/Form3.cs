@@ -1104,5 +1104,37 @@ namespace GenesisDex
             SetGasp();
             UpdatePage();
         }
+
+        private void pbLoot_Click(object sender, EventArgs e)
+        {
+            GetLoot();
+        }
+
+        private void GetLoot()
+        {
+            infoBack.Visible = false;
+            infoForward.Visible = false;
+            pkItem.Visible = false;
+            AllItems2.Clear();
+            AllDesc2.Clear();
+            rtbInfo1.Clear();
+            int val = Convert.ToInt32(nudPlayerLevel.Value);
+            int cash = 0;
+            getItem2 = true;
+            for (int x = 0; x < val; x++)
+            {
+                int i = rng.Next(1, 4);
+                if (i == 1)
+                    GetItem2();
+                else
+                    cash += rng.Next(1, 6) * 100;
+            }
+            for (int x = 0; x < AllDesc2.Count; x++)
+            {
+
+                rtbInfo1.Text += AllDesc2[x] + Environment.NewLine + Environment.NewLine;
+            }
+            rtbInfo1.Text += "$" + cash.ToString();
+        }
     }
 }

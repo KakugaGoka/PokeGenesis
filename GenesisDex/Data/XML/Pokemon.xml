@@ -30860,4 +30860,1814 @@
       </Moves>
     </List465>
   </Pokemon>
+  <Pokemon>
+    <number>464</number>
+    <id>Rhyperior</id>
+    <type>Ground / Rock</type>
+    <hp>12</hp>
+    <atk>14</atk>
+    <def>13</def>
+    <spatk>6</spatk>
+    <spdef>6</spdef>
+    <spd>4</spd>
+    <size>7’ 10” / 2.4m (Large)</size>
+    <weight>623.5 lbs. / 282.8kg (6)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Monster / Field</egg>
+    <diet>Herbivore</diet>
+    <habitat>Mountain</habitat>
+    <legendary>false</legendary>
+    <List464>
+      <Ability>
+        <BasicAbility>Lightning Rod</BasicAbility>
+        <BasicAbility>Solid Rock</BasicAbility>
+        <AdvancedAbility>Flash Fire</AdvancedAbility>
+        <AdvancedAbility>Rock Head</AdvancedAbility>
+        <HighAbility>Run Up</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 5d6+3</skill>
+        <skill id="1">Acro 2d6</skill>
+        <skill id="2">Combat 5d6</skill>
+        <skill id="3">Stealth 2d6</skill>
+        <skill id="4">Percep 3d6+2</skill>
+        <skill id="5">Focus 4d6+1</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 5</cap>
+        <cap id="1">Swim 2</cap>
+        <cap id="2">Jump 1/2</cap>
+        <cap id="3">Power 11</cap>
+        <cap id="4">Groundshaper</cap>
+        <cap id="5">Naturewalk (Mountain)</cap>
+        <cap id="6">Tracker</cap>
+        <cap id="7">Mountable 1</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Rhyhorn</evo>
+        <evo id="1">2 - Rhydon Minimum 40</evo>
+        <evo id="2">3 - Rhyperior Holding Protector Minimum 50</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">5 Fury Attack - Normal</move>
+        <move id="1">9 Scary Face - Normal</move>
+        <move id="2">13 Smack Down - Rock</move>
+        <move id="3">17 Stomp - Normal</move>
+        <move id="4">21 Bulldoze - Ground</move>
+        <move id="5">25 Chip Away - Normal</move>
+        <move id="6">29 Rock Blast - Rock</move>
+        <move id="7">33 Drill Run - Ground</move>
+        <move id="8">37 Take Down - Normal</move>
+        <move id="9">41 Stone Edge - Rock</move>
+        <move id="10">42 Hammer Arm - Fighting</move>
+        <move id="11">48 Earthquake - Ground</move>
+        <move id="12">55 Megahorn - Bug</move>
+        <move id="13">62 Horn Drill - Normal</move>
+        <move id="14">69 Rock Wrecker</move>
+      </Moves>
+    </List464>
+  </Pokemon>
+  <Pokemon>
+    <number>463</number>
+    <id>Lickilicky</id>
+    <type>Normal</type>
+    <hp>11</hp>
+    <atk>9</atk>
+    <def>10</def>
+    <spatk>8</spatk>
+    <spdef>10</spdef>
+    <spd>5</spd>
+    <size>5’ 7” / 1.7m (Medium)</size>
+    <weight>308.6 lbs. / 140kg (5)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Monster</egg>
+    <diet>Omnivore</diet>
+    <habitat>Forest, Grassland, Rainforest</habitat>
+    <legendary>false</legendary>
+    <List463>
+      <Ability>
+        <BasicAbility>Thick Fat</BasicAbility>
+        <BasicAbility>Own Tempo</BasicAbility>
+        <AdvancedAbility>Oblivious</AdvancedAbility>
+        <AdvancedAbility>Tingly Tongue</AdvancedAbility>
+        <HighAbility>Cloud Nine</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 4d6</skill>
+        <skill id="1">Acro 2d6</skill>
+        <skill id="2">Combat 3d6</skill>
+        <skill id="3">Stealth 2d6</skill>
+        <skill id="4">Percep 2d6</skill>
+        <skill id="5">Focus 3d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 6</cap>
+        <cap id="1">Swim 4</cap>
+        <cap id="2">Jump 3/2</cap>
+        <cap id="3">Power 5</cap>
+        <cap id="4">Reach</cap>
+        <cap id="5">Naturewalk (Grassland, Forest)</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Lickitung</evo>
+        <evo id="1">2 - Lickilicky Learn Rollout</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">5 Supersonic - Normal</move>
+        <move id="1">9 Defense Curl - Normal</move>
+        <move id="2">13 Knock Off - Dark</move>
+        <move id="3">17 Wrap - Normal</move>
+        <move id="4">21 Stomp - Normal</move>
+        <move id="5">25 Disable - Normal</move>
+        <move id="6">29 Slam - Normal</move>
+        <move id="7">33 Rollout - Rock</move>
+        <move id="8">37 Chip Away - Normal</move>
+        <move id="9">41 Me First - Normal</move>
+        <move id="10">45 Refresh - Normal</move>
+        <move id="11">49 Screech - Normal</move>
+        <move id="12">53 Power Whip - Grass</move>
+        <move id="13">57 Wring Out - Normal</move>
+        <move id="14">61 Gyro Ball - Steel</move>
+      </Moves>
+    </List463>
+  </Pokemon>
+  <Pokemon>
+    <number>462</number>
+    <id>Magnezone</id>
+    <type>Electric / Steel</type>
+    <hp>7</hp>
+    <atk>7</atk>
+    <def>12</def>
+    <spatk>13</spatk>
+    <spdef>9</spdef>
+    <spd>6</spd>
+    <size>3’ 11” / 1.2m (Medium)</size>
+    <weight>396.8 lbs. / 180kg (5)</weight>
+    <gender>No Gender</gender>
+    <egg>Mineral</egg>
+    <diet>Ergovore</diet>
+    <habitat>Mountain</habitat>
+    <legendary>false</legendary>
+    <List462>
+      <Ability>
+        <BasicAbility>Magnet Pull</BasicAbility>
+        <BasicAbility>Sturdy</BasicAbility>
+        <AdvancedAbility>Analytic</AdvancedAbility>
+        <AdvancedAbility>Soundproof</AdvancedAbility>
+        <HighAbility>Targeting System</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 4d6</skill>
+        <skill id="1">Acro 2d6</skill>
+        <skill id="2">Combat 3d6+2</skill>
+        <skill id="3">Stealth 2d6</skill>
+        <skill id="4">Percep 3d6+2</skill>
+        <skill id="5">Focus 4d6+3</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 3</cap>
+        <cap id="1">Swim 5</cap>
+        <cap id="2">Levitate 6</cap>
+        <cap id="3">Jump 1/1</cap>
+        <cap id="4">Power 6</cap>
+        <cap id="5">Magnetic</cap>
+        <cap id="6">Mountable 1</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Magnemite</evo>
+        <evo id="1">2 - Magneton Minimum 30</evo>
+        <evo id="2">3 - Magnezone Minimum 1.5 mi. above sea level</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">4 Supersonic - Normal</move>
+        <move id="1">7 Thunder Shock - Electric</move>
+        <move id="2">11 Sonic Boom - Normal</move>
+        <move id="3">13 Thunder Wave - Electric</move>
+        <move id="4">17 Magnet Bomb - Steel</move>
+        <move id="5">19 Spark - Electric</move>
+        <move id="6">23 Mirror Shot - Steel</move>
+        <move id="7">25 Metal Sound - Steel</move>
+        <move id="8">29 Electro Ball - Electric</move>
+        <move id="9">30 Tri Attack - Normal</move>
+        <move id="10">33 Flash Cannon - Steel</move>
+        <move id="11">39 Screech - Normal</move>
+        <move id="12">43 Discharge - Electric</move>
+        <move id="13">49 Lock-On - Normal</move>
+        <move id="14">53 Magnet Rise - Electric</move>
+        <move id="15">59 Gyro Ball - Steel</move>
+        <move id="16">63 Zap Cannon - Electric</move>
+      </Moves>
+    </List462>
+  </Pokemon>
+  <Pokemon>
+    <number>461</number>
+    <id>Weavile</id>
+    <type>Dark / Ice</type>
+    <hp>7</hp>
+    <atk>12</atk>
+    <def>7</def>
+    <spatk>5</spatk>
+    <spdef>9</spdef>
+    <spd>13</spd>
+    <size>3’ 7” / 1.1m (Medium)</size>
+    <weight>75 lbs. / 34kg (3)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Field</egg>
+    <diet>Omnivore</diet>
+    <habitat>Cave, Taiga, Tundra</habitat>
+    <legendary>false</legendary>
+    <List461>
+      <Ability>
+        <BasicAbility>Pressure</BasicAbility>
+        <BasicAbility>Keen Eye</BasicAbility>
+        <AdvancedAbility>Teamwork</AdvancedAbility>
+        <AdvancedAbility>Pickpocket</AdvancedAbility>
+        <HighAbility>Vicious</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 3d6+2</skill>
+        <skill id="1">Acro 5d6+1</skill>
+        <skill id="2">Combat 4d6+2</skill>
+        <skill id="3">Stealth 5d6+1</skill>
+        <skill id="4">Percep 3d6</skill>
+        <skill id="5">Focus 3d6+2</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 8</cap>
+        <cap id="1">Swim 4</cap>
+        <cap id="2">Jump 2/3</cap>
+        <cap id="3">Power 3</cap>
+        <cap id="4">Darkvision</cap>
+        <cap id="5">Stealth</cap>
+        <cap id="6">Naturewalk (Cave, Tundra)</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Sneasel</evo>
+        <evo id="1">2 - Weavile Holding Razor Claw Minimum 30</evo>
+        <evo id="2">at Night</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">8 Quick Attack - Normal</move>
+        <move id="1">10 Feint Attack - Dark</move>
+        <move id="2">14 Icy Wind - Ice</move>
+        <move id="3">16 Fury Swipes - Normal</move>
+        <move id="4">20 Nasty Plot - Dark</move>
+        <move id="5">22 Metal Claw - Steel</move>
+        <move id="6">25 Hone Claws - Dark</move>
+        <move id="7">30 Fling - Dark</move>
+        <move id="8">32 Screech - Normal</move>
+        <move id="9">35 Night Slash - Dark</move>
+        <move id="10">40 Snatch - Dark</move>
+        <move id="11">44 Punishment - Steel</move>
+        <move id="12">47 Dark Pulse - Dark</move>
+      </Moves>
+    </List461>
+  </Pokemon>
+  <Pokemon>
+    <number>460</number>
+    <id>Abomasnow</id>
+    <type>Grass / Ice</type>
+    <hp>9</hp>
+    <atk>9</atk>
+    <def>8</def>
+    <spatk>9</spatk>
+    <spdef>9</spdef>
+    <spd>6</spd>
+    <size>7’ 3” / 2.2m (Large)</size>
+    <weight>298.7 lbs. / 135.5kg (5)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Monster / Plant</egg>
+    <diet>Phototroph</diet>
+    <habitat>Taiga</habitat>
+    <legendary>false</legendary>
+    <List460>
+      <Ability>
+        <BasicAbility>Abominable</BasicAbility>
+        <BasicAbility>Snow Warning</BasicAbility>
+        <AdvancedAbility>Soundproof</AdvancedAbility>
+        <AdvancedAbility>Photosynthesis</AdvancedAbility>
+        <HighAbility>Ice Body</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 4d6+1</skill>
+        <skill id="1">Acro 2d6</skill>
+        <skill id="2">Combat 4d6</skill>
+        <skill id="3">Stealth 2d6+1</skill>
+        <skill id="4">Percep 2d6</skill>
+        <skill id="5">Focus 3d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 5</cap>
+        <cap id="1">Swim 3</cap>
+        <cap id="2">Jump 1/1</cap>
+        <cap id="3">Power 6</cap>
+        <cap id="4">Chilled</cap>
+        <cap id="5">Freezer</cap>
+        <cap id="6">Naturewalk (Grassland, ForestTundra)</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Snover</evo>
+        <evo id="1">2 - Abomasnow Minimum 40</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">5 Razor Leaf - Grass</move>
+        <move id="1">9 Icy Wind - Ice</move>
+        <move id="2">13 Grass Whistle - Grass</move>
+        <move id="3">17 Swagger - Normal</move>
+        <move id="4">21 Mist - Ice</move>
+        <move id="5">26 Ice Shard - Ice</move>
+        <move id="6">31 Ingrain - Grass</move>
+        <move id="7">36 Wood Hammer - Grass</move>
+        <move id="8">47 Blizzard - Ice</move>
+        <move id="9">58 Sheer Cold - Ice</move>
+      </Moves>
+    </List460>
+  </Pokemon>
+  <Mega460>
+    <id>Mega Abomasnow</id>
+    <type>Unchanged</type>
+    <atk>+4</atk>
+    <def>+3</def>
+    <spatk>+4</spatk>
+    <spdef>+2</spdef>
+    <spd>-3</spd>
+    <ability>Snow Warning</ability>
+  </Mega460>
+  <Pokemon>
+    <number>459</number>
+    <id>Snover</id>
+    <type>Grass / Ice</type>
+    <hp>6</hp>
+    <atk>6</atk>
+    <def>5</def>
+    <spatk>6</spatk>
+    <spdef>6</spdef>
+    <spd>4</spd>
+    <size>3’ 3” / 1m (Medium)</size>
+    <weight>111.3 lbs. / 50.5kg (4)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Monster / Plant</egg>
+    <hatch>10 Days</hatch>
+    <diet>Phototroph</diet>
+    <habitat>Taiga</habitat>
+    <legendary>false</legendary>
+    <List459>
+      <Ability>
+        <BasicAbility>Abominable</BasicAbility>
+        <BasicAbility>Snow Warning</BasicAbility>
+        <AdvancedAbility>Soundproof</AdvancedAbility>
+        <AdvancedAbility>Photosynthesis</AdvancedAbility>
+        <HighAbility>Ice Body</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 2d6+1</skill>
+        <skill id="1">Acro 2d6</skill>
+        <skill id="2">Combat 2d6</skill>
+        <skill id="3">Stealth 3d6+1</skill>
+        <skill id="4">Percep 2d6</skill>
+        <skill id="5">Focus 2d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 4</cap>
+        <cap id="1">Swim 2</cap>
+        <cap id="2">Jump 1/1</cap>
+        <cap id="3">Power 2</cap>
+        <cap id="4">Chilled</cap>
+        <cap id="5">Underdog</cap>
+        <cap id="6">Naturewalk (Grassland, Forest, Tundra)</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Snover</evo>
+        <evo id="1">2 - Abomasnow Minimum 40</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Leer - Normal</move>
+        <move id="1">1 Powder Snow - Ice</move>
+        <move id="2">5 Razor Leaf - Grass</move>
+        <move id="3">9 Icy Wind - Ice</move>
+        <move id="4">13 Grass Whistle - Grass</move>
+        <move id="5">17 Swagger - Normal</move>
+        <move id="6">21 Mist - Ice</move>
+        <move id="7">26 Ice Shard - Ice</move>
+        <move id="8">31 Ingrain - Grass</move>
+        <move id="9">36 Wood Hammer - Grass</move>
+        <move id="10">41 Blizzard - Ice</move>
+        <move id="11">46 Sheer Cold - Ice</move>
+      </Moves>
+    </List459>
+  </Pokemon>
+  <Pokemon>
+    <number>458</number>
+    <id>Mantyke</id>
+    <type>Water / Flying</type>
+    <hp>5</hp>
+    <atk>2</atk>
+    <def>5</def>
+    <spatk>6</spatk>
+    <spdef>12</spdef>
+    <spd>5</spd>
+    <size>3’ 3” / 1m (Medium)</size>
+    <weight>143.3 lbs. / 65kg (4)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Water 1</egg>
+    <hatch>13 Days</hatch>
+    <diet>Herbivore</diet>
+    <habitat>Ocean</habitat>
+    <legendary>false</legendary>
+    <List458>
+      <Ability>
+        <BasicAbility>Water Absorb</BasicAbility>
+        <BasicAbility>Wonder Skin</BasicAbility>
+        <AdvancedAbility>Serene Grace</AdvancedAbility>
+        <AdvancedAbility>Swift Swim </AdvancedAbility>
+        <HighAbility>Water Veil </HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 2d6</skill>
+        <skill id="1">Acro 3d6</skill>
+        <skill id="2">Combat 1d6</skill>
+        <skill id="3">Stealth 2d6</skill>
+        <skill id="4">Percep 2d6+1</skill>
+        <skill id="5">Focus 2d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 1</cap>
+        <cap id="1">Swim 5</cap>
+        <cap id="2">Jump 2/1</cap>
+        <cap id="3">Power 2</cap>
+        <cap id="4">Gilled</cap>
+        <cap id="5">Naturewalk (Ocean)</cap>
+        <cap id="6">Fountain</cap>
+        <cap id="7">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Mantyke</evo>
+        <evo id="1">2 - Mantine, interact wiht a Remoraid, Min. 10</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Bubble - Water</move>
+        <move id="1">1 Tackle - Normal</move>
+        <move id="2">3 Supersonic - Normal</move>
+        <move id="3">7 Bubble Beam - Water</move>
+        <move id="4">11 Confuse Ray - Ghost</move>
+        <move id="5">14 Wing Attack - Flying</move>
+        <move id="6">16 Headbutt - Normal</move>
+        <move id="7">19 Water Pulse - Water</move>
+        <move id="8">23 Wide Guard - Rock</move>
+        <move id="9">27 Take Down - Normal</move>
+        <move id="10">32 Agility - Psychic</move>
+        <move id="11">36 Air Slash - Flying</move>
+        <move id="12">39 Aqua Ring - Water</move>
+        <move id="13">46 Bounce - Flying</move>
+        <move id="14">49 Hydro Pump - Water</move>
+      </Moves>
+    </List458>
+  </Pokemon>
+  <Pokemon>
+    <number>457</number>
+    <id>Lumineon</id>
+    <type>Water</type>
+    <hp>7</hp>
+    <atk>7</atk>
+    <def>8</def>
+    <spatk>7</spatk>
+    <spdef>9</spdef>
+    <spd>9</spd>
+    <size>3’ 11” / 1.2m (Medium)</size>
+    <weight>52.9 lbs. / 24kg (2)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Water 2</egg>
+    <diet>Herbivore</diet>
+    <habitat>Ocean</habitat>
+    <legendary>false</legendary>
+    <List457>
+      <Ability>
+        <BasicAbility>Swift Swim</BasicAbility>
+        <BasicAbility>Storm Drain</BasicAbility>
+        <AdvancedAbility>Gulp </AdvancedAbility>
+        <AdvancedAbility>Illuminate</AdvancedAbility>
+        <HighAbility>Water Veil</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 2d6</skill>
+        <skill id="1">Acro 4d6</skill>
+        <skill id="2">Combat 2d6</skill>
+        <skill id="3">Stealth 3d6</skill>
+        <skill id="4">Percep 3d6</skill>
+        <skill id="5">Focus 3d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 3</cap>
+        <cap id="1">Swim 7</cap>
+        <cap id="2">Jump 2/4</cap>
+        <cap id="3">Power 2</cap>
+        <cap id="4">Gilled</cap>
+        <cap id="5">Fountain</cap>
+        <cap id="6">Naturewalk (Ocean)</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Finneon</evo>
+        <evo id="1">2 - Lumineon Minimum 30</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">6 Water Gun - Water</move>
+        <move id="1">10 Attract - Normal</move>
+        <move id="2">13 Rain Dance - Water</move>
+        <move id="3">17 Gust - Flying</move>
+        <move id="4">22 Water Pulse - Water</move>
+        <move id="5">26 Captivate - Normal</move>
+        <move id="6">29 Safeguard - Normal</move>
+        <move id="7">35 Aqua Ring - Water</move>
+        <move id="8">42 Whirlpool - Water</move>
+        <move id="9">48 U-Turn - Bug</move>
+        <move id="10">53 Bounce - Flying</move>
+        <move id="11">59 Silver Wind - Bug</move>
+        <move id="12">66 Soak - Water</move>
+      </Moves>
+    </List457>
+  </Pokemon>
+  <Pokemon>
+    <number>456</number>
+    <id>Finneon</id>
+    <type>Water</type>
+    <hp>5</hp>
+    <atk>5</atk>
+    <def>6</def>
+    <spatk>5</spatk>
+    <spdef>6</spdef>
+    <spd>7</spd>
+    <size>1’ 4” / 0.4m (Small)</size>
+    <weight>15.4 lbs. / 7kg (1)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Water 2</egg>
+    <hatch>10 Days</hatch>
+    <diet>Herbivore</diet>
+    <habitat>Ocean</habitat>
+    <legendary>false</legendary>
+    <List456>
+      <Ability>
+        <BasicAbility>Swift Swim</BasicAbility>
+        <BasicAbility>Storm Drain</BasicAbility>
+        <AdvancedAbility>Gulp</AdvancedAbility>
+        <AdvancedAbility>Illuminate</AdvancedAbility>
+        <HighAbility>Water Veil</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 1d6+2</skill>
+        <skill id="1">Acro 3d6</skill>
+        <skill id="2">Combat 2d6</skill>
+        <skill id="3">Stealth 2d6+2</skill>
+        <skill id="4">Percep 2d6</skill>
+        <skill id="5">Focus 2d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 1</cap>
+        <cap id="1">Swim 5</cap>
+        <cap id="2">Jump 2/4</cap>
+        <cap id="3">Power 1</cap>
+        <cap id="4">Gilled</cap>
+        <cap id="5">Fountain</cap>
+        <cap id="6">Naturewalk (Ocean)</cap>
+        <cap id="7">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Finneon</evo>
+        <evo id="1">2 - Lumineon Minimum 30</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Pound - Normal</move>
+        <move id="1">6 Water Gun - Water</move>
+        <move id="2">10 Attract - Normal</move>
+        <move id="3">13 Rain Dance - Water</move>
+        <move id="4">17 Gust - Flying</move>
+        <move id="5">22 Water Pulse - Water</move>
+        <move id="6">26 Captivate - Normal</move>
+        <move id="7">29 Safeguard - Normal</move>
+        <move id="8">33 Aqua Ring - Water</move>
+        <move id="9">38 Whirlpool - Water</move>
+        <move id="10">42 U-Turn - Bug</move>
+        <move id="11">45 Bounce - Flying</move>
+        <move id="12">49 Silver Wind - Bug</move>
+        <move id="13">54 Soak - Water</move>
+      </Moves>
+    </List456>
+  </Pokemon>
+  <Pokemon>
+    <number>455</number>
+    <id>Carnivine</id>
+    <type>Grass</type>
+    <hp>7</hp>
+    <atk>10</atk>
+    <def>7</def>
+    <spatk>9</spatk>
+    <spdef>7</spdef>
+    <spd>5</spd>
+    <size>4’ 7” / 1.4m (Medium)</size>
+    <weight>59.5 lbs. / 27kg (3)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Plant</egg>
+    <hatch>13 Days</hatch>
+    <diet>Carnivore, Phototroph</diet>
+    <habitat>Marsh, Rainforest</habitat>
+    <legendary>false</legendary>
+    <List455>
+      <Ability>
+        <BasicAbility>Flying Fly Trap</BasicAbility>
+        <AdvancedAbility>Ambush</AdvancedAbility>
+        <AdvancedAbility>Gluttony</AdvancedAbility>
+        <AdvancedAbility>Technician</AdvancedAbility>
+        <HighAbility>Big Swallow</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 3d6+2</skill>
+        <skill id="1">Acro 3d6+2</skill>
+        <skill id="2">Combat 3d6+2</skill>
+        <skill id="3">Stealth 4d6+2</skill>
+        <skill id="4">Percep 4d6+2</skill>
+        <skill id="5">Focus 4d6+2</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 3</cap>
+        <cap id="1">Swim 2</cap>
+        <cap id="2">Levitate 5</cap>
+        <cap id="3">Jump 1/1</cap>
+        <cap id="4">Power 4</cap>
+        <cap id="5">Underdog</cap>
+        <cap id="6">Naturewalk (Grassland, Forest)</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Carnivine</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Bind - Normal</move>
+        <move id="1">1 Growth - Normal</move>
+        <move id="2">7 Bite - Dark</move>
+        <move id="3">11 Vine Whip - Grass</move>
+        <move id="4">17 Sweet Scent - Normal</move>
+        <move id="5">21 Ingrain - Grass</move>
+        <move id="6">27 Feint Attack - Dark</move>
+        <move id="7">31 Leaf Tornado - Grass</move>
+        <move id="8">37 Spit Up - Normal</move>
+        <move id="9">37 Stockpile - Normal</move>
+        <move id="10">37 Swallow - Normal</move>
+        <move id="11">40 Crunch - Dark</move>
+        <move id="12">47 Wring Out - Normal</move>
+        <move id="13">51 Power Whip - Grass</move>
+      </Moves>
+    </List455>
+  </Pokemon>
+  <Pokemon>
+    <number>454</number>
+    <id>Toxicroak</id>
+    <type>Poison / Fighting</type>
+    <hp>8</hp>
+    <atk>11</atk>
+    <def>7</def>
+    <spatk>9</spatk>
+    <spdef>7</spdef>
+    <spd>9</spd>
+    <size>4’ 3” / 1.3m (Medium)</size>
+    <weight>97.9 lbs. / 44.4kg (3)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Humanshape</egg>
+    <diet>Herbivore</diet>
+    <habitat>Freshwater, Marsh</habitat>
+    <legendary>false</legendary>
+    <List454>
+      <Ability>
+        <BasicAbility>Dry Skin</BasicAbility>
+        <BasicAbility>Aticipation</BasicAbility>
+        <AdvancedAbility>Poison Touch</AdvancedAbility>
+        <AdvancedAbility>Dodge</AdvancedAbility>
+        <HighAbility>Deadly Poison</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 4d6+2</skill>
+        <skill id="1">Acro 3d6</skill>
+        <skill id="2">Combat 4d6+2</skill>
+        <skill id="3">Stealth 2d6+1</skill>
+        <skill id="4">Percep 3d6</skill>
+        <skill id="5">Focus 3d6+2</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 6</cap>
+        <cap id="1">Swim 6</cap>
+        <cap id="2">Jump 3/4</cap>
+        <cap id="3">Power 8</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Croagunk</evo>
+        <evo id="1">2 - Toxicroak Minimum 35</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">3 Mud-Slap - Ground</move>
+        <move id="1">8 Poison Sting - Poison</move>
+        <move id="2">10 Taunt - Dark</move>
+        <move id="3">15 Pursuit - Dark</move>
+        <move id="4">17 Feint Attack - Dark</move>
+        <move id="5">22 Revenge - Fighting</move>
+        <move id="6">24 Swagger - Normal</move>
+        <move id="7">29 Mud Bomb - Ground</move>
+        <move id="8">31 Sucker Punch - Dark</move>
+        <move id="9">36 Venoshock - Poison</move>
+        <move id="10">41 Nasty Plot - Dark</move>
+        <move id="11">49 Poison Jab - Poison</move>
+        <move id="12">54 Sludge Bomb - Poison</move>
+        <move id="13">58 Belch - Poison</move>
+        <move id="14">62 Flatter - Dark</move>
+      </Moves>
+    </List454>
+  </Pokemon>
+  <Pokemon>
+    <number>453</number>
+    <id>Croagunk</id>
+    <type>Poison / Fighting</type>
+    <hp>5</hp>
+    <atk>6</atk>
+    <def>4</def>
+    <spatk>6</spatk>
+    <spdef>4</spdef>
+    <spd>5</spd>
+    <size>2’ 4” / 0.7m (Small)</size>
+    <weight>50.7 lbs. / 23kg (2)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Humanshape</egg>
+    <hatch>4 Days</hatch>
+    <diet>Herbivore</diet>
+    <habitat>Freshwater, Marsh</habitat>
+    <legendary>false</legendary>
+    <List453>
+      <Ability>
+        <BasicAbility>Dry Skin</BasicAbility>
+        <BasicAbility>Anticipation</BasicAbility>
+        <AdvancedAbility>Poison Touch</AdvancedAbility>
+        <AdvancedAbility>Dodge</AdvancedAbility>
+        <HighAbility>Deadly Poison</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 3d6+2</skill>
+        <skill id="1">Acro 3d6</skill>
+        <skill id="2">Combat 3d6</skill>
+        <skill id="3">Stealth 3d6+1</skill>
+        <skill id="4">Percep 2d6</skill>
+        <skill id="5">Focus 2d6+1</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 5</cap>
+        <cap id="1">Swim 5</cap>
+        <cap id="2">Jump 2/3</cap>
+        <cap id="3">Power 3</cap>
+        <cap id="4">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Croagunk</evo>
+        <evo id="1">2 - Toxicroak Minimum 35</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Astonish - Ghost</move>
+        <move id="1">3 Mud-Slap - Ground</move>
+        <move id="2">8 Poison Sting - Poison</move>
+        <move id="3">10 Taunt - Dark</move>
+        <move id="4">15 Pursuit - Dark</move>
+        <move id="5">17 Feint Attack - Dark</move>
+        <move id="6">22 Revenge - Fighting</move>
+        <move id="7">24 Swagger - Normal</move>
+        <move id="8">29 Mud Bomb - Ground</move>
+        <move id="9">31 Sucker Punch - Dark</move>
+        <move id="10">36 Venoshock - Poison</move>
+        <move id="11">38 Nasty Plot - Dark</move>
+        <move id="12">43 Poison Jab - Poison</move>
+        <move id="13">45 Sludge Bomb - Poison</move>
+        <move id="14">47 Belch - Poison</move>
+        <move id="15">50 Flatter - Dark</move>
+      </Moves>
+    </List453>
+  </Pokemon>
+  <Pokemon>
+    <number>452</number>
+    <id>Drapion</id>
+    <type>Poison / Dark</type>
+    <hp>7</hp>
+    <atk>9</atk>
+    <def>11</def>
+    <spatk>6</spatk>
+    <spdef>8</spdef>
+    <spd>10</spd>
+    <size>4’ 3” / 1.3m (Medium)</size>
+    <weight>135.6 lbs. / 61.5kg (4)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Bug / Water 3</egg>
+    <diet>Carnivore</diet>
+    <habitat>Forest, Marsh, Rainforest</habitat>
+    <legendary>false</legendary>
+    <List452>
+      <Ability>
+        <BasicAbility>Battle Armor</BasicAbility>
+        <BasicAbility>Sniper</BasicAbility>
+        <AdvancedAbility>Keen Eye</AdvancedAbility>
+        <AdvancedAbility>Strong Jaw</AdvancedAbility>
+        <HighAbility>Vicious</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 4d6+2</skill>
+        <skill id="1">Acro 1d6+1</skill>
+        <skill id="2">Combat 4d6+1</skill>
+        <skill id="3">Stealth 2d6</skill>
+        <skill id="4">Percep 2d6+1</skill>
+        <skill id="5">Focus 3d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 6</cap>
+        <cap id="1">Swim 3</cap>
+        <cap id="2">Jump 1/1</cap>
+        <cap id="3">Power 7</cap>
+        <cap id="4">Naturewalk (Forest)</cap>
+        <cap id="5">Darkvision</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Skorupi</evo>
+        <evo id="1">2 - Drapion Minimum 40</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">5 Knock Off - Dark</move>
+        <move id="1">9 Pin Missile - Bug</move>
+        <move id="2">13 Acupressure - Normal</move>
+        <move id="3">16 Pursuit - Dark</move>
+        <move id="4">20 Bug Bite - Bug</move>
+        <move id="5">23 Poison Fang - Poison</move>
+        <move id="6">27 Venoshock - Poison</move>
+        <move id="7">30 Hone Claws - Dark</move>
+        <move id="8">34 Toxic Spikes - Poison</move>
+        <move id="9">38 Night Slash - Dark</move>
+        <move id="10">43 Scary Face - Normal</move>
+        <move id="11">49 Crunch - Dark</move>
+        <move id="12">53 Fell Stinger - Bug</move>
+        <move id="13">57 Cross Poison - Poison</move>
+      </Moves>
+    </List452>
+  </Pokemon>
+  <Pokemon>
+    <number>451</number>
+    <id>Skorupi</id>
+    <type>Poison / Bug</type>
+    <hp>4</hp>
+    <atk>5</atk>
+    <def>9</def>
+    <spatk>3</spatk>
+    <spdef>6</spdef>
+    <spd>7</spd>
+    <size>2’ 7” / 0.8m (Small)</size>
+    <weight>26.5 lbs. / 12kg (2)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Bug / Water 3</egg>
+    <hatch>10 Days</hatch>
+    <diet>Carnivore</diet>
+    <habitat>Forest, Marsh, Rainforest</habitat>
+    <legendary>false</legendary>
+    <List451>
+      <Ability>
+        <BasicAbility>Battle Armor</BasicAbility>
+        <BasicAbility>Sniper</BasicAbility>
+        <AdvancedAbility>Keen Eye</AdvancedAbility>
+        <AdvancedAbility>Strong Jaw</AdvancedAbility>
+        <HighAbility>Vicious</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 2d6+1</skill>
+        <skill id="1">Acro 1d6+1</skill>
+        <skill id="2">Combat 2d6+1</skill>
+        <skill id="3">Stealth 3d6+1</skill>
+        <skill id="4">Percep 2d6</skill>
+        <skill id="5">Focus 2d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 4</cap>
+        <cap id="1">Swim 2</cap>
+        <cap id="2">Jump 1/1</cap>
+        <cap id="3">Power 2</cap>
+        <cap id="4">Naturewalk (Forest)</cap>
+        <cap id="5">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Skorupi</evo>
+        <evo id="1">2 - Drapion Minimum 40</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Bite - Dark</move>
+        <move id="1">1 Poison Sting - Poison</move>
+        <move id="2">1 Leer - Normal</move>
+        <move id="3">5 Knock Off - Dark</move>
+        <move id="4">9 Pin Missile - Bug</move>
+        <move id="5">13 Acupressure - Normal</move>
+        <move id="6">16 Pursuit - Dark</move>
+        <move id="7">20 Bug Bite - Bug</move>
+        <move id="8">23 Poison Fang - Poison</move>
+        <move id="9">27 Venoshock - Poison</move>
+        <move id="10">30 Hone Claws - Dark</move>
+        <move id="11">34 Toxic Spikes - Poison</move>
+        <move id="12">38 Night Slash - Dark</move>
+        <move id="13">41 Scary Face - Normal</move>
+        <move id="14">45 Crunch - Dark</move>
+        <move id="15">47 Fell Stinger - Bug</move>
+        <move id="16">49 Cross Poison - Poison</move>
+      </Moves>
+    </List451>
+  </Pokemon>
+  <Pokemon>
+    <number>450</number>
+    <id>Hippowdon</id>
+    <type>Ground</type>
+    <hp>10</hp>
+    <atk>11</atk>
+    <def>12</def>
+    <spatk>7</spatk>
+    <spdef>7</spdef>
+    <spd>54</spd>
+    <size>6’ 7” / 2m (Large)</size>
+    <weight>661.4 lbs. / 300kg (6)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Field</egg>
+    <diet>Herbivore</diet>
+    <habitat>Cave, Desert</habitat>
+    <legendary>false</legendary>
+    <List450>
+      <Ability>
+        <BasicAbility>Sand Stream</BasicAbility>
+        <BasicAbility>Arena Trap</BasicAbility>
+        <AdvancedAbility>Sand Force</AdvancedAbility>
+        <AdvancedAbility>Enduring Rage</AdvancedAbility>
+        <HighAbility>Sand Rush</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 3d6+2</skill>
+        <skill id="1">Acro 1d6</skill>
+        <skill id="2">Combat 4d6+1</skill>
+        <skill id="3">Stealth 2d6+2</skill>
+        <skill id="4">Percep 3d6+1</skill>
+        <skill id="5">Focus 4d6+1</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 5</cap>
+        <cap id="1">Swim 3</cap>
+        <cap id="2">Burrow 3</cap>
+        <cap id="3">Jump 0/1</cap>
+        <cap id="4">Power 9</cap>
+        <cap id="5">Groundshaper</cap>
+        <cap id="6">Naturewalk (Desert)</cap>
+        <cap id="7">Tremorsense</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Hippopotas</evo>
+        <evo id="1">2 - Hippowdon Minimum 30</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">7 Bite - Dark</move>
+        <move id="1">13 Yawn - Normal</move>
+        <move id="2">19 Dig - Ground</move>
+        <move id="3">19 Take Down - Normal</move>
+        <move id="4">25 Sand Tomb - Ground</move>
+        <move id="5">31 Crunch - Dark</move>
+        <move id="6">40 Earthquake - Ground</move>
+        <move id="7">50 Double-Edge - Normal</move>
+        <move id="8">60 Fissure - Ground</move>
+      </Moves>
+    </List450>
+  </Pokemon>
+  <Pokemon>
+    <number>449</number>
+    <id>Hippopotas</id>
+    <type>Ground</type>
+    <hp>7</hp>
+    <atk>7</atk>
+    <def>8</def>
+    <spatk>4</spatk>
+    <spdef>4</spdef>
+    <spd>3</spd>
+    <size>2’ 7” / 0.8m (Small)</size>
+    <weight>109.1 lbs. / 49.5kg (3)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Field</egg>
+    <hatch>16 Days</hatch>
+    <diet>Herbivore</diet>
+    <habitat>Cave, Desert</habitat>
+    <legendary>false</legendary>
+    <List449>
+      <Ability>
+        <BasicAbility>Sand Stream</BasicAbility>
+        <BasicAbility>Oblivious</BasicAbility>
+        <AdvancedAbility>Sand Force</AdvancedAbility>
+        <AdvancedAbility>Deep Sleep</AdvancedAbility>
+        <HighAbility>Sand Rush</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 3d6+2</skill>
+        <skill id="1">Acro 1d6</skill>
+        <skill id="2">Combat 2d6</skill>
+        <skill id="3">Stealth 2d6+1</skill>
+        <skill id="4">Percep 2d6+1</skill>
+        <skill id="5">Focus 3d6+1</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 4</cap>
+        <cap id="1">Swim 2</cap>
+        <cap id="2">Burrow 2</cap>
+        <cap id="3">Jump 0/1</cap>
+        <cap id="4">Power 5</cap>
+        <cap id="5">Tremorsense</cap>
+        <cap id="6">Naturewalk (Desert)</cap>
+        <cap id="7">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Hippopotas</evo>
+        <evo id="1">2 - Hippowdon Minimum 30</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Sand Attack - Ground</move>
+        <move id="1">1 Tackle - Normal</move>
+        <move id="2">7 Bite - Dark</move>
+        <move id="3">13 Yawn - Normal</move>
+        <move id="4">19 Take Down - Normal</move>
+        <move id="5">25 Sand Tomb - Ground</move>
+        <move id="6">31 Crunch - Dark</move>
+        <move id="7">37 Earthquake - Ground</move>
+        <move id="8">44 Double-Edge - Normal</move>
+        <move id="9">50 Fissure - Ground</move>
+      </Moves>
+    </List449>
+  </Pokemon>
+  <Pokemon>
+    <number>448</number>
+    <id>Lucario</id>
+    <type>Fighting / Steel</type>
+    <hp>7</hp>
+    <atk>11</atk>
+    <def>7</def>
+    <spatk>12</spatk>
+    <spdef>7</spdef>
+    <spd>9</spd>
+    <size>3’ 11” / 1.2m (Medium)</size>
+    <weight>119 lbs. / 54kg (4)</weight>
+    <gender>87.5% M / 12.5% F</gender>
+    <egg>Field / Humanshape</egg>
+    <hatch>13 Days</hatch>
+    <diet>Omnivore</diet>
+    <habitat>Cave, Forest, Mountain</habitat>
+    <legendary>false</legendary>
+    <List448>
+      <Ability>
+        <BasicAbility>Steadfast</BasicAbility>
+        <BasicAbility>Inner Focus</BasicAbility>
+        <AdvancedAbility>Justified</AdvancedAbility>
+        <AdvancedAbility>Parry </AdvancedAbility>
+        <HighAbility>Aura Storm</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 4d6+2</skill>
+        <skill id="1">Acro 4d6+1</skill>
+        <skill id="2">Combat 5d6</skill>
+        <skill id="3">Stealth 2d6+2</skill>
+        <skill id="4">Percep 3d6+3</skill>
+        <skill id="5">Focus 5d6+1</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 8</cap>
+        <cap id="1">Swim 2</cap>
+        <cap id="2">Jump 2/3</cap>
+        <cap id="3">Power 7</cap>
+        <cap id="4">Aura Reader</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Riolu</evo>
+        <evo id="1">2 - Lucario Loyalty 3</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">6 Counter - Fighting</move>
+        <move id="1">11 Feint - Normal</move>
+        <move id="2">15 Force Palm - Fighting</move>
+        <move id="3">19 Me First - Normal</move>
+        <move id="4">24 Metal Sound - Steel</move>
+        <move id="5">29 Bone Rush - Ground</move>
+        <move id="6">33 Quick Guard - Fighting</move>
+        <move id="7">37 Swords Dance - Normal</move>
+        <move id="8">42 Heal Pulse - Psychic</move>
+        <move id="9">47 Calm Mind - Psychic</move>
+        <move id="10">51 Aura Sphere - Fighting</move>
+        <move id="11">55 Close Combat - Fighting</move>
+        <move id="12">60 Dragon Pulse - Dragon</move>
+        <move id="13">65 Extreme Speed - Normal</move>
+      </Moves>
+    </List448>
+  </Pokemon>
+  <Mega448>
+    <id>Mega Lucario</id>
+    <type>Unchanged</type>
+    <atk>+4</atk>
+    <def>+2</def>
+    <spatk>+2</spatk>
+    <spd>+2</spd>
+    <ability>Adaptability</ability>
+  </Mega448>
+  <Pokemon>
+    <number>447</number>
+    <id>Riolu</id>
+    <type>Fighting</type>
+    <hp>4</hp>
+    <atk>7</atk>
+    <def>4</def>
+    <spatk>4</spatk>
+    <spdef>4</spdef>
+    <spd>6</spd>
+    <size>2’ 4” / 0.7m (Small)</size>
+    <weight>44.5 lbs. / 20.2kg (2)</weight>
+    <gender>87.5% M / 12.5% F</gender>
+    <egg>Field / Humanshape</egg>
+    <hatch>13 Days</hatch>
+    <diet>Omnivore</diet>
+    <habitat>Cave, Mountain</habitat>
+    <legendary>false</legendary>
+    <List447>
+      <Ability>
+        <BasicAbility>Steadfast</BasicAbility>
+        <BasicAbility>Inner Focus</BasicAbility>
+        <AdvancedAbility>Celebrate</AdvancedAbility>
+        <AdvancedAbility>Sprint</AdvancedAbility>
+        <HighAbility>Prankster</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 3d6+2</skill>
+        <skill id="1">Acro 2d6+1</skill>
+        <skill id="2">Combat 3d6</skill>
+        <skill id="3">Stealth 3d6+2</skill>
+        <skill id="4">Percep 2d6+2</skill>
+        <skill id="5">Focus 3d6+1</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 6</cap>
+        <cap id="1">Jump 1/1</cap>
+        <cap id="2">Power 3</cap>
+        <cap id="3">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Riolu</evo>
+        <evo id="1">2 - Lucario Loyalty 3</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Endure - Normal</move>
+        <move id="1">1 Foresight - Normal</move>
+        <move id="2">1 Quick Attack - Normal</move>
+        <move id="3">6 Counter - Fighting</move>
+        <move id="4">11 Feint - Normal</move>
+        <move id="5">15 Force Palm - Fighting</move>
+        <move id="6">19 Copycat - Normal</move>
+        <move id="7">24 Screech - Normal</move>
+        <move id="8">29 Reversal - Fighting</move>
+        <move id="9">47 Nasty Plot - Dark</move>
+        <move id="10">55 Final Gambit - Fighting</move>
+      </Moves>
+    </List447>
+  </Pokemon>
+  <Pokemon>
+    <number>446</number>
+    <id>Munchlax</id>
+    <type>Normal</type>
+    <hp>14</hp>
+    <atk>9</atk>
+    <def>4</def>
+    <spatk>4</spatk>
+    <spdef>9</spdef>
+    <spd>1</spd>
+    <size>2’ 0” / 0.6m (Medium)</size>
+    <weight>231.5 lbs. / 105kg (4)</weight>
+    <gender>87.5% M / 12.5% F</gender>
+    <egg>Monster</egg>
+    <hatch>25 Days</hatch>
+    <diet>Omnivore</diet>
+    <habitat>Forest, Mountain, Taiga, Urban</habitat>
+    <legendary>false</legendary>
+    <List446>
+      <Ability>
+        <BasicAbility>Thick Fat</BasicAbility>
+        <BasicAbility>Pickup</BasicAbility>
+        <AdvancedAbility>Lunchbox</AdvancedAbility>
+        <AdvancedAbility>Gluttony</AdvancedAbility>
+        <HighAbility>Deep Sleep</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 3d6</skill>
+        <skill id="1">Acro 2d6</skill>
+        <skill id="2">Combat 2d6</skill>
+        <skill id="3">Stealth 2d6</skill>
+        <skill id="4">Percep 4d6</skill>
+        <skill id="5">Focus 3d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 3</cap>
+        <cap id="1">Swim 2</cap>
+        <cap id="2">Jump 2/3</cap>
+        <cap id="3">Power 4</cap>
+        <cap id="4">Tracker</cap>
+        <cap id="5">Underdog</cap>
+        <cap id="6">Naturewalk (Forest, Mountain)</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Munchlax</evo>
+        <evo id="1">2 - Snorlax Minimum 25</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Odor Sleuth - Normal</move>
+        <move id="1">1 Tackle - Normal</move>
+        <move id="2">4 Defense Curl - Normal</move>
+        <move id="3">9 Amnesia - Psychic</move>
+        <move id="4">12 Lick - Ghost</move>
+        <move id="5">17 Chip Away - Normal</move>
+        <move id="6">20 Screech - Normal</move>
+        <move id="7">25 Body Slam - Normal</move>
+        <move id="8">28 Stockpile - Normal</move>
+        <move id="9">33 Swallow - Normal</move>
+        <move id="10">36 Rollout - Rock</move>
+        <move id="11">41 Fling - Dark</move>
+        <move id="12">44 Belly Drum - Normal</move>
+        <move id="13">49 Natural Gift - Normal</move>
+        <move id="14">50 Snatch - Dark</move>
+        <move id="15">57 Last Resort - Normal</move>
+      </Moves>
+    </List446>
+  </Pokemon>
+  <Pokemon>
+    <number>445</number>
+    <id>Garchomp</id>
+    <type>Dragon / Ground</type>
+    <hp>11</hp>
+    <atk>13</atk>
+    <def>10</def>
+    <spatk>8</spatk>
+    <spdef>9</spdef>
+    <spd>10</spd>
+    <size>6’ 3” / 1.9m (Large)</size>
+    <weight>209.4 lbs. / 95kg (4)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Monster / Dragon</egg>
+    <diet>Carnivore</diet>
+    <habitat>Cave, Desert, Mountain</habitat>
+    <legendary>false</legendary>
+    <List445>
+      <Ability>
+        <BasicAbility>Sand Veil</BasicAbility>
+        <AdvancedAbility>Frighten</AdvancedAbility>
+        <AdvancedAbility>Rough Skin</AdvancedAbility>
+        <AdvancedAbility>Vital Spirit</AdvancedAbility>
+        <HighAbility>Intimidate</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 5d6+2</skill>
+        <skill id="1">Acro 5d6</skill>
+        <skill id="2">Combat 5d6</skill>
+        <skill id="3">Stealth 3d6+1</skill>
+        <skill id="4">Percep 4d6+1</skill>
+        <skill id="5">Focus 4d6+2</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 10</cap>
+        <cap id="1">Swim 5</cap>
+        <cap id="2">Sky 8</cap>
+        <cap id="3">Burrow 8</cap>
+        <cap id="4">Jump 3/3</cap>
+        <cap id="5">Power 6</cap>
+        <cap id="6">Naturewalk (Desert)</cap>
+        <cap id="7">Mountable 1</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Gible</evo>
+        <evo id="1">2 - Gabite Minimum 25</evo>
+        <evo id="2">3 - Garchomp Minimum 50</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">3 Sand Attack - Ground</move>
+        <move id="1">7 Dragon Rage - Dragon</move>
+        <move id="2">13 Sandstorm - Rock</move>
+        <move id="3">15 Take Down - Normal</move>
+        <move id="4">19 Sand Tomb - Ground</move>
+        <move id="5">24 Dual Chop - Dragon</move>
+        <move id="6">28 Slash - Normal</move>
+        <move id="7">33 Dragon Claw - Dragon</move>
+        <move id="8">40 Dig - Ground</move>
+        <move id="9">50 Crunch - Dark</move>
+        <move id="10">55 Dragon Rush - Dragon</move>
+      </Moves>
+    </List445>
+  </Pokemon>
+  <Mega445>
+    <id>Mega Garchomp</id>
+    <type>Unchanged</type>
+    <atk>+4</atk>
+    <def>+2</def>
+    <spatk>+4</spatk>
+    <spdef>+1</spdef>
+    <spd>-1</spd>
+    <ability>Sand Force</ability>
+  </Mega445>
+  <Pokemon>
+    <number>444</number>
+    <id>Gabite</id>
+    <type>Dragon / Ground</type>
+    <hp>7</hp>
+    <atk>9</atk>
+    <def>7</def>
+    <spatk>5</spatk>
+    <spdef>6</spdef>
+    <spd>8</spd>
+    <size>4’ 7” / 1.4m (Medium)</size>
+    <weight>123.5 lbs. / 56kg (4)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Monster / Dragon</egg>
+    <diet>Carnivore</diet>
+    <habitat>Cave, Desert</habitat>
+    <legendary>false</legendary>
+    <List444>
+      <Ability>
+        <BasicAbility>Sand Veil</BasicAbility>
+        <AdvancedAbility>Frighten</AdvancedAbility>
+        <AdvancedAbility>Rough Skin</AdvancedAbility>
+        <AdvancedAbility>Vital Spirit</AdvancedAbility>
+        <HighAbility>Intimidate</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 3d6+2</skill>
+        <skill id="1">Acro 3d6</skill>
+        <skill id="2">Combat 3d6</skill>
+        <skill id="3">Stealth 3d6+1</skill>
+        <skill id="4">Percep 3d6+1</skill>
+        <skill id="5">Focus 3d6+2</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 6</cap>
+        <cap id="1">Swim 3</cap>
+        <cap id="2">Burrow 4</cap>
+        <cap id="3">Jump 2/2</cap>
+        <cap id="4">Power 4</cap>
+        <cap id="5">Naturewalk (Desert)</cap>
+        <cap id="6">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Gible</evo>
+        <evo id="1">2 - Gabite Minimum 25</evo>
+        <evo id="2">3 - Garchomp Minimum 50</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">3 Sand Attack - Ground</move>
+        <move id="1">7 Dragon Rage - Dragon</move>
+        <move id="2">13 Sandstorm - Rock</move>
+        <move id="3">15 Take Down - Normal</move>
+        <move id="4">19 Sand Tomb - Ground</move>
+        <move id="5">24 Dual Chop - Dragon</move>
+        <move id="6">28 Slash - Normal</move>
+        <move id="7">33 Dragon Claw - Dragon</move>
+        <move id="8">40 Dig - Ground</move>
+        <move id="9">49 Dragon Rush - Dragon</move>
+      </Moves>
+    </List444>
+  </Pokemon>
+  <Pokemon>
+    <number>443</number>
+    <id>Gible</id>
+    <type>Dragon / Ground</type>
+    <hp>6</hp>
+    <atk>7</atk>
+    <def>5</def>
+    <spatk>4</spatk>
+    <spdef>5</spdef>
+    <spd>4</spd>
+    <size>2’ 4” / 0.7m (Small)</size>
+    <weight>45.2 lbs. / 20.5kg (2)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Monster / Dragon</egg>
+    <hatch>25 Days</hatch>
+    <diet>Carnivore</diet>
+    <habitat>Cave, Desert</habitat>
+    <legendary>false</legendary>
+    <List443>
+      <Ability>
+        <BasicAbility>Sand Veil</BasicAbility>
+        <AdvancedAbility>Frighten</AdvancedAbility>
+        <AdvancedAbility>Rough Skin</AdvancedAbility>
+        <AdvancedAbility>Vital Spirit</AdvancedAbility>
+        <HighAbility>Intimidate</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 2d6+2</skill>
+        <skill id="1">Acro 2d6</skill>
+        <skill id="2">Combat 2d6</skill>
+        <skill id="3">Stealth 3d6+1</skill>
+        <skill id="4">Percep 2d6+1</skill>
+        <skill id="5">Focus 2d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 4</cap>
+        <cap id="1">Swim 2</cap>
+        <cap id="2">Burrow 4</cap>
+        <cap id="3">Jump 1/1</cap>
+        <cap id="4">Power 3</cap>
+        <cap id="5">Naturewalk (Desert)</cap>
+        <cap id="6">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Gible</evo>
+        <evo id="1">2 - Gabite Minimum 25</evo>
+        <evo id="2">3 - Garchomp Minimum 50</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Tackle - Normal</move>
+        <move id="1">3 Sand Attack - Ground</move>
+        <move id="2">7 Dragon Rage - Dragon</move>
+        <move id="3">13 Sandstorm - Rock</move>
+        <move id="4">15 Take Down - Normal</move>
+        <move id="5">19 Sand Tomb - Ground</move>
+        <move id="6">25 Slash - Normal</move>
+        <move id="7">27 Dragon Claw - Dragon</move>
+        <move id="8">31 Dig - Ground</move>
+        <move id="9">37 Dragon Rush - Dragon</move>
+      </Moves>
+    </List443>
+  </Pokemon>
+  <Pokemon>
+    <number>442</number>
+    <id>Spiritomb</id>
+    <type>Ghost / Dark</type>
+    <hp>5</hp>
+    <atk>9</atk>
+    <def>11</def>
+    <spatk>9</spatk>
+    <spdef>11</spdef>
+    <spd>4</spd>
+    <size>3’ 3” / 1m (Medium)</size>
+    <weight>238.1 lbs. / 108kg (5)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Indeterminate</egg>
+    <hatch>16 Days</hatch>
+    <diet>Nullivore</diet>
+    <habitat>Cave, Forest, Urban</habitat>
+    <legendary>false</legendary>
+    <List442>
+      <Ability>
+        <BasicAbility>Pressure</BasicAbility>
+        <AdvancedAbility>Infiltrator</AdvancedAbility>
+        <AdvancedAbility>Cluster Mind</AdvancedAbility>
+        <AdvancedAbility>Shackle</AdvancedAbility>
+        <HighAbility>Interference</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 1d6+2</skill>
+        <skill id="1">Acro 1d6+2</skill>
+        <skill id="2">Combat 3d6</skill>
+        <skill id="3">Stealth 4d6</skill>
+        <skill id="4">Percep 4d6</skill>
+        <skill id="5">Focus 5d6+3</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 2</cap>
+        <cap id="1">Swim 3</cap>
+        <cap id="2">Levitate 5</cap>
+        <cap id="3">Jump 0/0</cap>
+        <cap id="4">Power 2</cap>
+        <cap id="5">Darkvision</cap>
+        <cap id="6">Dead Silent</cap>
+        <cap id="7">Invisibility</cap>
+        <cap id="8">Phasing</cap>
+        <cap id="9">Keystone Warp</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Spiritomb</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Confuse Ray - Ghost</move>
+        <move id="1">1 Curse - Ghost</move>
+        <move id="2">1 Pursuit - Dark</move>
+        <move id="3">1 Shadow Sneak - Ghost</move>
+        <move id="4">7 Feint Attack - Dark</move>
+        <move id="5">13 Hypnosis - Psychic</move>
+        <move id="6">19 Dream Eater - Psychic</move>
+        <move id="7">25 Ominous Wind - Ghost</move>
+        <move id="8">31 Sucker Punch - Dark</move>
+        <move id="9">37 Nasty Plot - Dark</move>
+        <move id="10">43 Memento - Dark</move>
+        <move id="11">49 Dark Pulse - Dark</move>
+      </Moves>
+    </List442>
+  </Pokemon>
+  <Pokemon>
+    <number>441</number>
+    <id>Chatot</id>
+    <type>Normal / Flying</type>
+    <hp>8</hp>
+    <atk>7</atk>
+    <def>5</def>
+    <spatk>9</spatk>
+    <spdef>4</spdef>
+    <spd>9</spd>
+    <size>1’ 8” / 0.5m (Small)</size>
+    <weight>4.2 lbs. / 1.9kg (1)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Flying</egg>
+    <hatch>10 Days</hatch>
+    <diet>Omnivore</diet>
+    <habitat>Forest, Rainforest</habitat>
+    <legendary>false</legendary>
+    <List441>
+      <Ability>
+        <BasicAbility>Keen Eye</BasicAbility>
+        <BasicAbility>Tangled Feet</BasicAbility>
+        <AdvancedAbility>Beg Pecks</AdvancedAbility>
+        <AdvancedAbility>Soundproof</AdvancedAbility>
+        <HighAbility>Drown Out</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 3d6+2</skill>
+        <skill id="1">Acro 4d6+2</skill>
+        <skill id="2">Combat 2d6</skill>
+        <skill id="3">Stealth 3d6+2</skill>
+        <skill id="4">Percep 5d6+3</skill>
+        <skill id="5">Focus 4d6+3</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 2</cap>
+        <cap id="1">Swim 1</cap>
+        <cap id="2">Sky 5</cap>
+        <cap id="3">Jump 2/2</cap>
+        <cap id="4">Power 2</cap>
+        <cap id="5">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Chatot</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Peck - Flying</move>
+        <move id="1">1 Confide - Normal</move>
+        <move id="2">5 Growl - Normal</move>
+        <move id="3">9 Mirror Move - Flying</move>
+        <move id="4">13 Sing - Normal</move>
+        <move id="5">17 Fury Attack - Normal</move>
+        <move id="6">21 Chatter - Flying</move>
+        <move id="7">25 Taunt - Dark</move>
+        <move id="8">29 Round - Normal</move>
+        <move id="9">33 Mimic - Normal</move>
+        <move id="10">37 Echoed Voice - Normal</move>
+        <move id="11">41 Roost - Flying</move>
+        <move id="12">45 Uproar - Normal</move>
+        <move id="13">49 Synchronoise - Psychic</move>
+        <move id="14">53 Feather Dance - Flying</move>
+        <move id="15">57 Hyper Voice - Normal</move>
+      </Moves>
+    </List441>
+  </Pokemon>
+  <Pokemon>
+    <number>440</number>
+    <id>Happiny</id>
+    <type>Normal</type>
+    <hp>10</hp>
+    <atk>1</atk>
+    <def>1</def>
+    <spatk>2</spatk>
+    <spdef>7</spdef>
+    <spd>3</spd>
+    <size>2’ 0” / 0.6m (Small)</size>
+    <weight>53.8 lbs. / 24.4kg (2)</weight>
+    <gender>0% M / 100% F</gender>
+    <egg>Fairy</egg>
+    <hatch>25 Days</hatch>
+    <diet>Herbivore</diet>
+    <habitat>Grassland, Urban</habitat>
+    <legendary>false</legendary>
+    <List440>
+      <Ability>
+        <BasicAbility>Natural Cure</BasicAbility>
+        <BasicAbility>Serene Grace</BasicAbility>
+        <AdvancedAbility>Friend Guard</AdvancedAbility>
+        <AdvancedAbility>Healer</AdvancedAbility>
+        <HighAbility>Blessed Touch</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 1d6+1</skill>
+        <skill id="1">Acro 3d6</skill>
+        <skill id="2">Combat 1d6</skill>
+        <skill id="3">Stealth 3d6</skill>
+        <skill id="4">Percep 2d6</skill>
+        <skill id="5">Focus 3d6+1</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 3</cap>
+        <cap id="1">Swim 1</cap>
+        <cap id="2">Jump 1/1</cap>
+        <cap id="3">Power 1</cap>
+        <cap id="4">Underdog</cap>
+        <cap id="5">Naturewalk (Grassland, Urban)</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Happiny</evo>
+        <evo id="1">2 - Chansey Holding Oval Stone Minimum 10</evo>
+        <evo id="2">3 - Blissey Minimum 40</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Charm - Fairy</move>
+        <move id="1">1 Pound - Normal</move>
+        <move id="2">1 Defense Curl - Normal</move>
+        <move id="3">5 Copycat - Normal</move>
+        <move id="4">9 Refresh - Normal</move>
+        <move id="5">12 Sweet Kiss - Fairy</move>
+      </Moves>
+    </List440>
+  </Pokemon>
+  <Pokemon>
+    <number>439</number>
+    <id>Mime Jr.</id>
+    <type>Psychic / Fairy</type>
+    <hp>2</hp>
+    <atk>3</atk>
+    <def>5</def>
+    <spatk>7</spatk>
+    <spdef>9</spdef>
+    <spd>6</spd>
+    <size>2’ 0” / 0.6m (Small)</size>
+    <weight>28.7 lbs. / 13kg (2)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Humanshape</egg>
+    <hatch>13 Days</hatch>
+    <diet>Omnivore</diet>
+    <habitat>Urban</habitat>
+    <legendary>false</legendary>
+    <List439>
+      <Ability>
+        <BasicAbility>Soundproof</BasicAbility>
+        <BasicAbility>Filter</BasicAbility>
+        <AdvancedAbility>Technician</AdvancedAbility>
+        <AdvancedAbility>Copy Master</AdvancedAbility>
+        <HighAbility>Wallmaster</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 2d6+1</skill>
+        <skill id="1">Acro 3d6+1</skill>
+        <skill id="2">Combat 1d6</skill>
+        <skill id="3">Stealth 2d6+1</skill>
+        <skill id="4">Percep 2d6</skill>
+        <skill id="5">Focus 3d6+1</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 3</cap>
+        <cap id="1">Swim 1</cap>
+        <cap id="2">Jump 1/1</cap>
+        <cap id="3">Power 2</cap>
+        <cap id="4">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Mime Jr.</evo>
+        <evo id="1">2 - Mr. Mime Learn Mimic</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Tickle - Normal</move>
+        <move id="1">1 Barrier - Psychic</move>
+        <move id="2">1 Confusion - Psychic</move>
+        <move id="3">4 Copycat - Normal</move>
+        <move id="4">8 Meditate - Psychic</move>
+        <move id="5">11 Double Slap - Normal</move>
+        <move id="6">15 Mimic - Normal</move>
+        <move id="7">18 Encore - Normal</move>
+        <move id="8">22 Light Screen - Psychic</move>
+        <move id="9">22 Reflect - Psychic</move>
+        <move id="10">25 Psybeam - Psychic</move>
+        <move id="11">29 Substitute - Normal</move>
+        <move id="12">32 Recycle - Normal</move>
+        <move id="13">36 Trick - Psychic</move>
+        <move id="14">39 Psychic - Psychic</move>
+        <move id="15">43 Role Play - Psychic</move>
+        <move id="16">46 Baton Pass - Normal</move>
+        <move id="17">50 Safeguard - Normal</move>
+      </Moves>
+    </List439>
+  </Pokemon>
+  <Pokemon>
+    <number>438</number>
+    <id>Bonsly</id>
+    <type>Rock</type>
+    <hp>5</hp>
+    <atk>8</atk>
+    <def>10</def>
+    <spatk>1</spatk>
+    <spdef>5</spdef>
+    <spd>1</spd>
+    <size>1’ 8” / 0.5m (Small)</size>
+    <weight>33.1 lbs. / 15kg (2)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Mineral</egg>
+    <hatch>10 Days</hatch>
+    <diet>Phototroph</diet>
+    <habitat>Forest, Grassland, Taiga</habitat>
+    <legendary>false</legendary>
+    <List438>
+      <Ability>
+        <BasicAbility>Copy Master</BasicAbility>
+        <AdvancedAbility>Sturdy</AdvancedAbility>
+        <AdvancedAbility>Cute Tears</AdvancedAbility>
+        <AdvancedAbility>Rattled</AdvancedAbility>
+        <HighAbility>Rock Head</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 3d6+2</skill>
+        <skill id="1">Acro 2d6</skill>
+        <skill id="2">Combat 1d6</skill>
+        <skill id="3">Stealth 3d6+1</skill>
+        <skill id="4">Percep 2d6</skill>
+        <skill id="5">Focus 3d6+1</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 3</cap>
+        <cap id="1">Swim 2</cap>
+        <cap id="2">Jump 0/1</cap>
+        <cap id="3">Power 1</cap>
+        <cap id="4">Naturewalk (Forest)</cap>
+        <cap id="5">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Bonsly</evo>
+        <evo id="1">2 - Sudowoodo Minimum Learn Mimic</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Copycat - Normal</move>
+        <move id="1">1 Fake Tears - Dark</move>
+        <move id="2">5 Flail - Normal</move>
+        <move id="3">8 Low Kick - Fighting</move>
+        <move id="4">12 Rock Throw - Rock</move>
+        <move id="5">15 Slam - Normal</move>
+        <move id="6">19 Feint Attack - Dark</move>
+        <move id="7">22 Rock Tomb - Rock</move>
+        <move id="8">26 Block - Normal</move>
+        <move id="9">29 Rock Slide - Rock</move>
+        <move id="10">33 Mimic - Normal</move>
+        <move id="11">36 Sucker Punch - Dark</move>
+        <move id="12">40 Double-Edge - Normal</move>
+      </Moves>
+    </List438>
+  </Pokemon>
+  <Pokemon>
+    <number>437</number>
+    <id>Bronzong</id>
+    <type>Steel / Psychic</type>
+    <hp>7</hp>
+    <atk>9</atk>
+    <def>12</def>
+    <spatk>8</spatk>
+    <spdef>12</spdef>
+    <spd>3</spd>
+    <size>4’ 3” / 1.3m (Medium)</size>
+    <weight>412.3 lbs. / 187kg (5)</weight>
+    <gender>No Gender</gender>
+    <egg>Mineral</egg>
+    <diet>Nullivore</diet>
+    <habitat>Cave, Mountain</habitat>
+    <legendary>false</legendary>
+    <List437>
+      <Ability>
+        <BasicAbility>Levitate</BasicAbility>
+        <AdvancedAbility>Heatproof</AdvancedAbility>
+        <AdvancedAbility>Heavy Metal</AdvancedAbility>
+        <AdvancedAbility>Magic Guard</AdvancedAbility>
+        <HighAbility>Bodyguard</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 3d6+1</skill>
+        <skill id="1">Acro 2d6</skill>
+        <skill id="2">Combat 2d6</skill>
+        <skill id="3">Stealth 3d6+1</skill>
+        <skill id="4">Percep 5d6+1</skill>
+        <skill id="5">Focus 5d6+2</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 1</cap>
+        <cap id="1">Swim 3</cap>
+        <cap id="2">Levitate 4</cap>
+        <cap id="3">Jump 1/1</cap>
+        <cap id="4">Power 8</cap>
+        <cap id="5">Dead Silent</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Bronzor</evo>
+        <evo id="1">2 - Bronzong Minimum 30</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">5 Hypnosis - Psychic</move>
+        <move id="1">9 Imprison - Psychic</move>
+        <move id="2">11 Confuse Ray - Ghost</move>
+        <move id="3">15 Psywave - Psychic</move>
+        <move id="4">19 Iron Defense - Steel</move>
+        <move id="5">21 Feint Attack - Dark</move>
+        <move id="6">25 Safeguard - Normal</move>
+        <move id="7">29 Future Sight - Psychic</move>
+        <move id="8">31 Metal Sound - Steel</move>
+        <move id="9">33 Block - Normal</move>
+        <move id="10">36 Gyro Ball - Steel</move>
+        <move id="11">42 Extrasensory - Psychic</move>
+        <move id="12">46 Payback - Dark</move>
+        <move id="13">52 Heal Block - Psychic</move>
+        <move id="14">58 Heavy Slam - Steel</move>
+      </Moves>
+    </List437>
+  </Pokemon>
 </Namespace>
