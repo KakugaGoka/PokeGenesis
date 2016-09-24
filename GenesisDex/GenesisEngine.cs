@@ -169,12 +169,12 @@ class PokemonList
 
     class ItemList
     {
-        public List<Items> createList(string xml, string decend)
+        public List<Items> createList(string tier)
         {
-            string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\Items\\" + xml + ".xml");
+            string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\Items.xml");
             List<Items> idList = new List<Items>();
             XDocument doc = XDocument.Load(fileName);
-            var query = from node in doc.Descendants(decend)
+            var query = from node in doc.Descendants("Item") where (string)node.Attribute("Tier") == tier
                         select new Items
                         {
                             id = (string)node.Element("id"),

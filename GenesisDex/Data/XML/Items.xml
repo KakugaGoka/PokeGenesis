@@ -1,0 +1,1285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Namespace>
+  <Item Tier="1">
+    <id>Big Root</id>
+    <desc>HP stealing moves restore double HP. Cannot be used by Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Bright Powder</id>
+    <desc>+2 to Speed Evasion. Cannot be used by Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Contest Accessory</id>
+    <desc>The user rolls +2d6 during the Introduction Stage of a Contest. Cannot be used by Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Yellow Scarf</id>
+    <desc>When held, once per Contest, the holder may re-roll any 1s made when using a Tough Move. Cannot be used by Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Red Scarf</id>
+    <desc>When held, once per Contest, the holder may re-roll any 1s made when using a Cool Move. Cannot be used by Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Pink Scarf</id>
+    <desc>When held, once per Contest, the holder may re-roll any 1s made when using a Cute Move. Cannot be used by Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Green Scarf</id>
+    <desc>When held, once per Contest, the holder may re-roll any 1s made when using a Smart Move. Cannot be used by Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Blue Scarf</id>
+    <desc>When held, once per Contest, the holder may re-roll any 1s made when using a Beauty Move. Cannot be used by Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Everstone</id>
+    <desc>Evolution is prevented for the holder. Cannot be used by Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Go-Goggles</id>
+    <desc>The user does not take damage from Sandstorm. Head Item for Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Iron Ball</id>
+    <desc>The Holder's Speed is halved, and any immunity to Ground Type is lost. Hand Item for Trainers. Standard Action to drop.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Lagging Tail</id>
+    <desc>The Lagging Items are tied to a specific Stat. When held, they set that Stat to -4 Combat Stages. Cannot be used by Trainers. Standard Action to drop.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Safety Goggles</id>
+    <desc>The holder is immune to Moves with the Powder Keyword. Accessory or Head Item for Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Black Belt</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Fighting-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Black Glasses</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Dark-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Charcoal</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Fire-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Dragon Fang</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Dragon-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Hard Stone</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Rock-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Magnet</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Electric-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Metal Coat</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Steel-Type Moves performed by the user. Accessory Item for Trainers. Can be used by Onix and Scyther to evolve.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Miracle Seed</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Grass-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Mystic Water</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Water-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Poison Barb</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Poison-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Sharp Beak</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Flying-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Silk Scarf</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Fairy-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Silver Powder</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Bug-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Soft Sand</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Ground-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Spell Tag</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Ghost-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Never Melt Ice</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Ice-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Twisted Spoon</id>
+    <desc>When held, it grants a +5 Damage Bonus to all direct damage Psychic-Type Moves performed by the user. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Winter Cloak</id>
+    <desc>The user does not take damage from Hail. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>HP Down</id>
+    <desc>Lowers the user's HP Base Stat 1.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Anti-Protein</id>
+    <desc>Lowers the user's Attack Base Stat 1.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Anti-Iron</id>
+    <desc>Lowers the user's Defense Base Stat 1.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Anti-Calcium</id>
+    <desc>Lowers the user's Special Attack Base Stat 1.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Anti-Zinc</id>
+    <desc>Lowers the user's Special Defense Base Stat 1.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Anti-Carbos</id>
+    <desc>Lowers the user's Speed Base Stat 1.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Blue Shard</id>
+    <desc>A bit of colored energized crystal used for various crafting purposes. Blue Shards are associated with Water, Ice, and Flying types.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Green Shard</id>
+    <desc>A bit of colored energized crystal used for various crafting purposes. Green Shards are associated with Bug, Grass, and Ground types.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Red Shard</id>
+    <desc>A bit of colored energized crystal used for various crafting purposes. Red Shards are associated with Fire, Fairy, and Psychic types.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Yellow Shard</id>
+    <desc>A bit of colored energized crystal used for various crafting purposes. Yellow Shards are associated with Electric, Rock, and Steel types.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Orange Shard</id>
+    <desc>A bit of colored energized crystal used for various crafting purposes. Orange Shards are associated with Normal, Fighting, and Dragon types.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Violet Shard</id>
+    <desc>A bit of colored energized crystal used for various crafting purposes. Violet Shards are associated with Poison, Dark, and Ghost types.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>X Attack</id>
+    <desc>Increases the Pokemon's Attack by two Combat Stages</desc>
+  </Item>
+  <Item Tier="1">
+    <id>X Defend</id>
+    <desc>Increases the Pokemon's Defense by two Combat Stages</desc>
+  </Item>
+  <Item Tier="1">
+    <id>X Special</id>
+    <desc>Increases the Pokemon's Special Attack by two Combat Stages</desc>
+  </Item>
+  <Item Tier="1">
+    <id>X Sp. Def</id>
+    <desc>Increases the Pokemon's Special Defense by two Combat Stages</desc>
+  </Item>
+  <Item Tier="1">
+    <id>X Speed</id>
+    <desc>Increases the Pokemon's Speed by two Combat Stages</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Dire Hit</id>
+    <desc>Increases Critical Hit Range of all moves by +2.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>X Accuracy</id>
+    <desc>Increases Accuracy by +2</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Guard Spec.</id>
+    <desc>Prevents reduction of Combat Stages or Accuracy on the Pokemon for 5 Turns</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Potion</id>
+    <desc>Heals 20 Hit Points</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Super Potion</id>
+    <desc>Heals 35 Hit Points</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Hyper Potion</id>
+    <desc>Heals 70 Hit Points</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Antidote</id>
+    <desc>Cures Poison</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Paralyze Heal</id>
+    <desc>Cures Paralysis</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Burn Heal</id>
+    <desc>Cures Burns</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Ice Heal</id>
+    <desc>Cures Freezing</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Full Heal</id>
+    <desc>Cures all Persistent Status Afflictions</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Full Restore</id>
+    <desc>Heals a Pokemon for 80 Hit Points and cures any Status Afflictions</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Revive</id>
+    <desc>Revives fainted Pokemon and sets to 20 Hit Points</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Enriched Water</id>
+    <desc>Heals 20 Hit Points.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Shuckle's Berry Juice</id>
+    <desc>Heals 30 Hit Points.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Super Soda Pop</id>
+    <desc>Heals 30 Hit Points.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Sparkling Lemonade</id>
+    <desc>Heals 50 Hit Points.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>MooMoo Milk</id>
+    <desc>Heals 80 Hit Points.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Candy Bar</id>
+    <desc>Snack. Grants a Digestion Buff that heals 5 Hit Points.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Honey</id>
+    <desc>Snack. Grants a Digestion Buff that heals 5 Hit Points. May be used as Bait</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Leftovers</id>
+    <desc>Snack. When their Digestion Buff is traded in, the user recovers 1/16th of their max Hit Points at the beginning of each turn for the rest of the encounter.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Black Sludge</id>
+    <desc>Poison-Type Pokemon may consume the Black Sludge as a Snack Item; when the Digestion Buff is traded in, they recover 1/8th of their Max Hit Points at the beginning of each turn for the rest of the encounter.</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Energy Powder</id>
+    <desc>Heals 25 Hit Points - Repulsive</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Heal Powder</id>
+    <desc>Cure all Persistent Status Afflictions - Repulsive</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Repel</id>
+    <desc>Lasts 1 hour; causes Pokemon of level 15 or lower to flee</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Super Repel</id>
+    <desc>Lasts 2 hour; causes Pokemon of level 25 or lower to flee</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Basic Ball</id>
+    <desc>Basic Poke Ball; often called just a “Poke Ball”</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Safari Ball</id>
+    <desc>Used during Safari hunts</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Premier Ball</id>
+    <desc>Given as promotional balls during sales</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Cherish Ball</id>
+    <desc>A decorative Poke Ball often given out during special events</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Park Ball</id>
+    <desc>Used during Safari hunts</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Sport Ball</id>
+    <desc>Used during Safari hunts</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Cheri Berry</id>
+    <desc>Cures Paralysis, Cool Poffin Ingredient</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Chesto Berry</id>
+    <desc>Cures Sleep, Beauty Poffin Ingredient</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Pecha Berry</id>
+    <desc>Cures Poison, Cute Poffin Ingredient</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Rawst Berry</id>
+    <desc>Cures Burn, Smart Poffin Ingredient</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Aspear Berry</id>
+    <desc>Cures Freeze, Tough Poffin Ingredient</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Oran Berry</id>
+    <desc>Restores 5 Hit Points</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Persim Berry</id>
+    <desc>Cures Confusion</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Razz Berry</id>
+    <desc>Cool Poffin Ingredient</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Bluk Berry</id>
+    <desc>Beauty Poffin Ingredient</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Nanab Berry</id>
+    <desc>Cute Poffin Ingredient</desc>
+  </Item>
+  <Item Tier="1">
+    <id>Wepear Berry</id>
+    <desc>Smart Poffin Ingredient</desc>
+  </Item>
+    <Item Tier="2">
+    <id>Choice Band</id>
+    <desc>While worn, Attack is +2 Combat Stages instead of 0. However, the user is Suppressed and cannot be cured until the end of Combat, even if the item is removed. Cannot be used by Trainers.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Choice Specs</id>
+    <desc>While worn, Special Attack is +2 Combat Stages instead of 0. However, the user is Suppressed and cannot be cured until the end of Combat, even if the item is removed. Cannot be used by Trainers.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Choice Scarf</id>
+    <desc>While worn, Speed is +2 Combat Stages instead of 0. However, the user is Suppressed and cannot be cured until the end of Combat, even if the item is removed. Cannot be used by Trainers.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Expert Belt</id>
+    <desc>Whenever the holder deals Super Effective Damage, they deal an additional 5 damage (this damage is not multiplied). Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Flame Orb</id>
+    <desc>Induces burn on holder. Off-Hand Item for Trainers. Standard Action to drop.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>King's Rock</id>
+    <desc>Attacks cause Flinch on a roll of 19+. This does not stack with any abilities, moves, or effects that extend flinch rate. Head Item for Trainers. Can be used by Slowpoke and Poliwhirl to evolve.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Full Incense</id>
+    <desc>The holder gains the Stall ability. Cannot be used by Trainers. Causes Snorlax to be able to produce a Munchlax Egg</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Luck Incense</id>
+    <desc>When held, it grants +1 Bonus to all Accuracy Rolls. A roll of 1 always misses. Cannot be used by Trainers. Causes Chansey and Blissey to be able to produce a Happiny Egg</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Lax Incense</id>
+    <desc>When held, it grants +1 to all Stat Evasions. Cannot be used by Trainers. Causes Wobbuffet to be able to produce a Wynaut Egg</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Odd Incense</id>
+    <desc>When held, it grants +2 to the Damage Base of Psychic-Type Move. Cannot be used by Trainers. Causes Mr. Mime to be able to produce a Mime Jr. Egg</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Pure Incense</id>
+    <desc>When held, The user cannot be Slowed, Stuck, or Trapped.The user does not provoke Attacks of Opportunity by Shifting. Cannot be used by Trainers. Causes Chimecho to be able to produce a Chingling Egg</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Rock Incense</id>
+    <desc>When held, it grants +2 to the Damage Base of Rock-Type Moves. Cannot be used by Trainers. Causes SudoWoodo to be able to produce a Bonsly Egg</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Rose Incense</id>
+    <desc>When held, it grants +2 to the Damage Base of Grass-Type Moves. Cannot be used by Trainers. Causes Roselia and Roserade to be able to produce a Budew Egg</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Sea Incense</id>
+    <desc>When held, it grants +2 to the Damage Base of Water-Type Moves. Cannot be used by Trainers. Causes Maril and Azumaril to be able to produce a Azurill Egg</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Wave Incense</id>
+    <desc>When held, it grants +2 to the Damage Base of Water-Type Moves. Cannot be used by Trainers. Causes Mantine to be able to produce a Mantyke Egg</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Life Orb</id>
+    <desc>Whenever the holder deals direct damage, increase the damage by +5, and then the holder loses Hit Points equal to 1/16th of their Max Hit Points. Off-Hand Item for Trainers.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Razor Claw</id>
+    <desc>The holder's damaging attacks have their Critical Hit Range extended by +1. Can be used by Sneasel to evolve.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Razor Fang</id>
+    <desc>The holder's damaging attacks cause an Injury on a roll of 19+. Accessory Item for Trainers. Can be used by Gilgar to evolve.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Shock Collar</id>
+    <desc>Comes with a remote activator, which when pressed, causes the Pokemon or Trainer wearing the shock collar to lose Hit Points equal to 1/6th of their Max Hit Points. This may be used to activate the �Press� Feature.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Draco Brace</id>
+    <desc>When held, it grants the holder 15 Damage Reduction against Dragon-Type Moves. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Dread Brace</id>
+    <desc>When held, it grants the holder 15 Damage Reduction against Dark-Type Moves. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Earth Brace</id>
+    <desc>When held, it grants the holder 15 Damage Reduction against Ground-Type Moves. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Flame Brace</id>
+    <desc>When held, it grants the holder 15 Damage Reduction against Fire-Type Moves. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Icicle Brace</id>
+    <desc>When held, it grants the holder 15 Damage Reduction against Ice-Type Moves. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Insect Brace</id>
+    <desc>When held, it grants the holder 15 Damage Reduction against Bug-Type Moves. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Iron Brace</id>
+    <desc>When held, it grants the holder 15 Damage Reduction against Steel-Type Moves. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Meadow Brace</id>
+    <desc>When held, it grants the holder 15 Damage Reduction against Grass-Type Moves. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Mind Brace</id>
+    <desc>When held, it grants the holder 15 Damage Reduction against Psychic-Type Moves. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Pixie Brace</id>
+    <desc>When held, it grants the holder 15 Damage Reduction against Fairy-Type Moves. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Sky Brace</id>
+    <desc>When held, it grants the holder 15 Damage Reduction against Flying-Type Moves. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Splash Brace</id>
+    <desc>When held, it grants the holder 15 Damage Reduction against Water-Type Moves. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Spooky Brace</id>
+    <desc>When held, it grants the holder 15 Damage Reduction against Ghost-Type Moves. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Stone Brace</id>
+    <desc>When held, it grants the holder 15 Damage Reduction against Rock-Type Moves. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Toxic Brace</id>
+    <desc>When held, it grants the holder 15 Damage Reduction against Poison-Type Moves. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Zap Brace</id>
+    <desc>When held, it grants the holder 15 Damage Reduction against Electric-Type Moves. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Fist Brace</id>
+    <desc>When held, it grants the holder 15 Damage Reduction against Fighting-Type Moves. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Fire Stone</id>
+    <desc>A peculiar stone that can make certain species of Pokemon evolve. The stone has a fiery orange heart.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Water Stone</id>
+    <desc>A peculiar stone that can make certain species of Pokemon evolve. It is the blue of a pool of clear water.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Thunder Stone</id>
+    <desc>A peculiar stone that can make certain species of Pokemon evolve. It has a distinct thunderbolt pattern.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Leaf Stone</id>
+    <desc>A peculiar stone that can make certain species of Pokemon evolve. It has an unmistakable leaf pattern.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Moon Stone</id>
+    <desc>A peculiar stone that can make certain species of Pokemon evolve. It is as black as the night sky.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Sun Stone</id>
+    <desc>A peculiar stone that can make certain species of Pokemon evolve. It burns as red as the evening sun.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Shiny Stone</id>
+    <desc>A peculiar stone that can make certain species of Pokemon evolve. It shines with a dazzling light.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Dusk Stone</id>
+    <desc>A peculiar stone that can make certain species of Pokemon evolve. It holds shadows as dark as can be.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Dawn Stone</id>
+    <desc>A peculiar stone that can make certain species of Pokemon evolve. It sparkles like a glittering eye.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Deep Sea Scale</id>
+    <desc>An item to be held by Clamperl. This scale shines with a faint pink and raises the holder's Sp. Def stat.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Deep Sea Tooth</id>
+    <desc>An item to be held by Clamperl. This fang gleams a sharp silver and raises the holder's Sp. Atk stat.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Dragon Scale</id>
+    <desc>Boosts the power of Dragon-type moves by 10% when held. Can be used by Seadra to evolve.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Dubious Disc</id>
+    <desc>A transparent device overflowing with dubious data. Its producer is unknown. Can be used by Porygon2 to evolve.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Electirizer</id>
+    <desc>A box packed with a tremendous amount of electric energy. It's loved by a certain Pokemon. Can be used by Electabuzz to evolve.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Magmarizer</id>
+    <desc>A box packed with a tremendous amount of magma energy. It's loved by a certain Pokemon. Can be used by Magmar to evolve.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Prism Scale</id>
+    <desc>A mysterious scale that causes Feebas to evolve. It shines in rainbow colors.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Protector</id>
+    <desc>A protective item of some sort. It is extremely stiff and heavy. It's loved by a certain Pokemon. Can be used by Rhydon to evolve.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Reaper Cloth</id>
+    <desc>A cloth imbued with horrifyingly strong spiritual energy. It's loved by a certain Pokemon. Can be used by Dusclops to evolve.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Sachet</id>
+    <desc>A sachet filled with fragrant perfumes that are just slightly too overwhelming. Yet it's loved by a certain Pokemon. Can be used by Spritzee to evolve.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Up-Grade</id>
+    <desc>A transparent device somehow filled with all sorts of data. It was produced by Silph Co. Can be used by Porygon to evolve.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Whipped Dream</id>
+    <desc>A soft and sweet treat made of fluffy, puffy, whipped and whirled cream. It's loved by a certain Pokemon. Can be used by Swirlix to evolve.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Oval Stone</id>
+    <desc>A peculiar stone that can make certain species of Pokemon evolve. It's as round as a Pokemon Egg. Can be used by Happiny to evolve.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Heart Scale</id>
+    <desc>This tiny rainbow scale from a Luvdisc is valued by Apothecary Researchers, because it can be used to create the Heart Booster vitamin.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Red Apricorn</id>
+    <desc>Used to make a Level Ball</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Yellow Apricorn</id>
+    <desc>Used to make a Moon Ball</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Blue Apricorn</id>
+    <desc>Used to make a Lure Ball</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Green Apricorn</id>
+    <desc>Used to make a Friend Ball</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Pink Apricorn</id>
+    <desc>Used to make a Love Ball</desc>
+  </Item>
+  <Item Tier="2">
+    <id>White Apricorn</id>
+    <desc>Used to make a Fast Ball</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Black Apricorn</id>
+    <desc>Used to make a Heavy Ball</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Energy Root</id>
+    <desc>Heals 70 Hit Points - Repulsive</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Revival Herb</id>
+    <desc>Revives Pokemon and sets to 50% Hit Points - Repulsive</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Mental Herb</id>
+    <desc>Cures all Volatile Status Effects.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Power Herb</id>
+    <desc>Eliminates the Set-Up turn of Moves with the Set-Up Keyword.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>White Herb</id>
+    <desc>Any negative Combat Stages are set to 0.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Pearl</id>
+    <desc>Can be sold for $1400.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Stardust</id>
+    <desc>Can be sold for $2000.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Relic Copper</id>
+    <desc>Can be sold for $1000.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Relic Vase</id>
+    <desc>The right person may want this.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Relic Statue</id>
+    <desc>The right person may want this.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Relic Band</id>
+    <desc>The right person may want this.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Repel</id>
+    <desc>Lasts 5 hour; causes Pokemon of level 35 or lower to flee.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Great Ball</id>
+    <desc>A better Poke Ball with no special effects.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Level Ball</id>
+    <desc>-20 Modifier if the target is under half the level your active Pokémon is.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Lure Ball</id>
+    <desc>-20 Modifier if the target was baited into the encounter with food.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Moon Ball</id>
+    <desc>-20 Modifier if the target evolves with an Evolution Stone.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Friend Ball</id>
+    <desc>A caught Pokémon will start with +1 Loyalty.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Love Ball</id>
+    <desc>-30 Modifier if the user has an active Pokémon that is of the same evolutionary line as the target, and the opposite gender.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Heavy Ball</id>
+    <desc>-5 Modifier for each Weight Class the target is above 1.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Fast Ball</id>
+    <desc>-20 Modifier if the target has a Movement Capability above 7.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Repeat Ball</id>
+    <desc>-20 Modifier if you already own a Pokemon of the target’s species.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Timer Ball</id>
+    <desc>-5 to the Modifier after every round since the beginning of the encounter, until the Modifier is -20.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Nest Ball</id>
+    <desc>.20 Modifier if the target is under level 10.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Net Ball</id>
+    <desc>-20 Modifier, if the target is Water or Bug type.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Dive Ball</id>
+    <desc>-20 Modifier, if the target was found underwater or underground.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Luxury Ball</id>
+    <desc>A caught Pokemon is easily pleased and starts with a raised happiness.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Heal Ball</id>
+    <desc>A caught Pokemon will heal to Max HP immediately upon capture.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Quick Ball</id>
+    <desc>+5 to Modifier after 1 round of the encounter, +10 to Modifier after round 2, +20 to modifier after round 3.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Dusk Ball</id>
+    <desc>-20 Modifier if it is dark, or if there is very little light out, when used.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Pinap Berry</id>
+    <desc>Tough Poffin Ingredient.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Lum Berry</id>
+    <desc>Cures any single status ailment.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Sitrus Berry</id>
+    <desc>Restores 15 Hit Points</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Figy Berry</id>
+    <desc>Spicy Treat, Cool Poffin Ingredient.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Wiki Berry</id>
+    <desc>Dry Treat, Beauty Poffin Ingredient.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Mago Berry</id>
+    <desc>Sweet Treat, Cute Poffin Ingredient.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Aguav Berry</id>
+    <desc>Bitter Treat, Smart Poffin Ingredient.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Iapapa Berry</id>
+    <desc>Sour Treat, Tough Poffin Ingredient.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Liechi Berry</id>
+    <desc>+1 Attack CS.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Ganlon Berry</id>
+    <desc>+1 Defense CS.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Salac Berry</id>
+    <desc>+1 Speed CS.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Petaya Berry</id>
+    <desc>+1 Special Attack CS.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Apicot Berry</id>
+    <desc>+1 Special Defense CS.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Lansat Berry</id>
+    <desc>Increases Critical Range by +1 for the remainder of the encounter.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Starf Berry</id>
+    <desc>+2 CS to a random Stat. May be used only at 25% HP or lower.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Enigma Berry</id>
+    <desc>User gains Temporary HP equal to 1/6th of their Max HP when hit by a Super Effective Move.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Micle Berry</id>
+    <desc>Increases Accuracy by +1.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Jaboca Berry</id>
+    <desc>Foe dealing Physical Damage to the user loses 1/8 of their Maximum HP.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Rowap Berry</id>
+    <desc>Foe dealing Special Damage to the user loses 1/8 of their Maximum HP.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Cornn Berry</id>
+    <desc>Cures Disabled Condition.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Magost Berry</id>
+    <desc>Cures Enraged condition.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Rabuta Berry</id>
+    <desc>Cures Suppressed condition.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Nomel Berry</id>
+    <desc>Cures Infatuated condition.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Spelon Berry</id>
+    <desc>Cool or Beauty Poffin Ingredient.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Pamtre Berry</id>
+    <desc>Cute or Beauty Poffin Ingredient.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Watmel Berry</id>
+    <desc>Cute or Smart Poffin Ingredient.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Durin Berry</id>
+    <desc>Smart or Tough Poffin Ingredient.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Belue Berry</id>
+    <desc>Cool or Tough Poffin Ingredient.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Fluffy Tail</id>
+    <desc>A toy that attracts the attention of a Pokemon. It guarantees escape from any battle with wild Pokemon.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Poke Toy</id>
+    <desc>A toy that attracts the attention of a Pokemon. It guarantees escape from any battle with wild Pokemon.</desc>
+  </Item>
+  <Item Tier="2">
+    <id>Poke Doll</id>
+    <desc>A doll that attracts the attention of a Pokemon. It guarantees escape from any battle with wild Pokemon.</desc>
+  </Item>
+    <Item Tier="3">
+    <id>Eviolite</id>
+    <desc>Only affects not-fully-evolved Pokemon of a single family, decided when the Eviolite is made. Grants a +5 Bonus to two different Stats, after Combat Stages, decided when the Eviolite is made. Prevents Pokemon from evolving when held. Cannot be used by Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Focus Band</id>
+    <desc>Whenever the user faints, roll 1d20. Once a Scene on a result of 16+, the holder does not faint, and is left with 1 Hit Point. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Focus Sash</id>
+    <desc>Once a Scene, if damage from a Move would take Focus Sash's holder's Hit Points from Max to 0 or less, Focus Sash's holder instead has 1 Hit Point remaining. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Shock Collar (Grounded)</id>
+    <desc>Comes with a remote activator, which when pressed, causes the Pokemon or Trainer wearing the shock collar to lose Hit Points equal to 1/6th of their Max Hit Points. This may be used to activate the �Press� Feature. This collar works on Ground-Type Pokemon.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Quick Claw</id>
+    <desc>The user adds +10 to their Initiative. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Shell Bell</id>
+    <desc>Whenever the user damages a foe, they gain a Tick of Temporary Hit Points. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>HP Booster</id>
+    <desc>When held, the default Stage of HP is +1 Combat Stage instead of 0. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Attack Booster</id>
+    <desc>When held, the default Stage of Attack is +1 Combat Stage instead of 0. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Defense Booster</id>
+    <desc>When held, the default Stage of Defense is +1 Combat Stage instead of 0. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Special Attack Booster</id>
+    <desc>When held, the default Stage of Special Attack +1 Combat Stage instead of 0. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Special Defense Booster</id>
+    <desc>When held, the default Stage of Special Defense +1 Combat Stage instead of 0. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Speed Booster</id>
+    <desc>When held, the default Stage of Speed +1 Combat Stage instead of 0. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Accuracy Booster</id>
+    <desc>When held, it gives +1 for Accuracy and Evasion. Accessory Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Toxic Orb</id>
+    <desc>Induces Poison on holder. Off-Hand Item for Trainers. Standard Action to drop.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Bug Gem</id>
+    <desc>When held, it can be consumed as a Free Action to give a +3 Damage Base bonus to one attack of the Bug-Type. Off-hand or Accessory Slot Item for Trainers</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Dark Gem</id>
+    <desc>When held, it can be consumed as a Free Action to give a +3 Damage Base bonus to one attack of the Dark-Type. Off-hand or Accessory Slot Item for Trainers</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Dragon Gem</id>
+    <desc>When held, it can be consumed as a Free Action to give a +3 Damage Base bonus to one attack of the Dragon-Type. Off-hand or Accessory Slot Item for Trainers</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Electric Gem</id>
+    <desc>When held, it can be consumed as a Free Action to give a +3 Damage Base bonus to one attack of the Electric-Type. Off-hand or Accessory Slot Item for Trainers</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Fairy Gem</id>
+    <desc>When held, it can be consumed as a Free Action to give a +3 Damage Base bonus to one attack of the Fairy-Type. Off-hand or Accessory Slot Item for Trainers</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Fighting Gem</id>
+    <desc>When held, it can be consumed as a Free Action to give a +3 Damage Base bonus to one attack of the Fighting-Type. Off-hand or Accessory Slot Item for Trainers</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Fire Gem</id>
+    <desc>When held, it can be consumed as a Free Action to give a +3 Damage Base bonus to one attack of the Fire-Type. Off-hand or Accessory Slot Item for Trainers</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Flying Gem</id>
+    <desc>When held, it can be consumed as a Free Action to give a +3 Damage Base bonus to one attack of the Flying-Type. Off-hand or Accessory Slot Item for Trainers</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Ghost Gem</id>
+    <desc>When held, it can be consumed as a Free Action to give a +3 Damage Base bonus to one attack of the Ghost-Type. Off-hand or Accessory Slot Item for Trainers</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Grass Gem</id>
+    <desc>When held, it can be consumed as a Free Action to give a +3 Damage Base bonus to one attack of the Grass-Type. Off-hand or Accessory Slot Item for Trainers</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Ground Gem</id>
+    <desc>When held, it can be consumed as a Free Action to give a +3 Damage Base bonus to one attack of the Ground-Type. Off-hand or Accessory Slot Item for Trainers</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Ice Gem</id>
+    <desc>When held, it can be consumed as a Free Action to give a +3 Damage Base bonus to one attack of the Ice-Type. Off-hand or Accessory Slot Item for Trainers</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Normal Gem</id>
+    <desc>When held, it can be consumed as a Free Action to give a +3 Damage Base bonus to one attack of the Normal-Type. Off-hand or Accessory Slot Item for Trainers</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Poison Gem</id>
+    <desc>When held, it can be consumed as a Free Action to give a +3 Damage Base bonus to one attack of the Poison-Type. Off-hand or Accessory Slot Item for Trainers</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Psychic Gem</id>
+    <desc>When held, it can be consumed as a Free Action to give a +3 Damage Base bonus to one attack of the Psychic-Type. Off-hand or Accessory Slot Item for Trainers</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Rock Gem</id>
+    <desc>When held, it can be consumed as a Free Action to give a +3 Damage Base bonus to one attack of the Rock-Type. Off-hand or Accessory Slot Item for Trainers</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Steel Gem</id>
+    <desc>When held, it can be consumed as a Free Action to give a +3 Damage Base bonus to one attack of the Steel-Type. Off-hand or Accessory Slot Item for Trainers</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Water Gem</id>
+    <desc>When held, it can be consumed as a Free Action to give a +3 Damage Base bonus to one attack of the Water-Type. Off-hand or Accessory Slot Item for Trainers</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Draco Plate</id>
+    <desc>When held, it act as both a Dragon Fang and a Draco Brace. Accessory Slot Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Dread Plate</id>
+    <desc>When held, it act as both a Black Glasses and a Dread Brace. Accessory Slot Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Earth Plate</id>
+    <desc>When held, it act as both a Soft Sand and an Earth Brace. Accessory Slot Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Fist Plate</id>
+    <desc>When held, it act as both a Black Belt and a Fist Brace. Accessory Slot Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Flame Plate</id>
+    <desc>When held, it act as both a Charcoal and a Flame Brace. Accessory Slot Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Icicle Plate</id>
+    <desc>When held, it act as both a Never Melt Ice and an Icicle Brace. Accessory Slot Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Insect Plate</id>
+    <desc>When held, it act as both a Silver Powder and an Insect Brace. Accessory Slot Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Iron Plate</id>
+    <desc>When held, it act as both a Metal Coat and an Iron Brace. Accessory Slot Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Meadow Plate</id>
+    <desc>When held, it act as both a Miracle Seed and a Meadow Brace. Accessory Slot Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Mind Plate</id>
+    <desc>When held, it act as both a Twisted Spoon and a Mind Brace. Accessory Slot Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Pixie Plate</id>
+    <desc>When held, it act as both a Silk Scarf and a Pixie Brace. Accessory Slot Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Sky Plate</id>
+    <desc>When held, it act as both a Sharp Beak and a Sky Brace. Accessory Slot Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Splash Plate</id>
+    <desc>When held, it act as both a Mystic Water and a Splash Brace. Accessory Slot Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Spooky Plate</id>
+    <desc>When held, it act as both a Spell Tag and a Spooky Brace. Accessory Slot Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Stone Plate</id>
+    <desc>When held, it act as both a Hard Stone and a Stone Brace. Accessory Slot Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Toxic Plate</id>
+    <desc>When held, it act as both a Poison Barb and a Toxic Brace. Accessory Slot Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Zap Plate</id>
+    <desc>When held, it act as both a Magnet and a Zap Brace. Accessory Slot Item for Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Metal Powder</id>
+    <desc>When held by an untransformed Ditto, increases both Defense and Special Defense by +2 Combat Stages. Cannot be used by Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Rare Leek</id>
+    <desc>When held by a Farfetch'd, this rare Leek increase the holder's critical range by 2. Rare Leeks are Wielded. Cannot be used by Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Thick Club</id>
+    <desc>When held by a Cubone or Marowak, this rare, dense bone grants the Pure Power Ability. Thick Clubs are Wielded. Cannot be used by Trainers.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Pink Pearl</id>
+    <desc>Acts as a Psychic Type Booster. If held by a Spoink, it also acts as a Special Attack Stat Booster.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>HP Up</id>
+    <desc>Raise the user's HP Base Stat 1.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Protein</id>
+    <desc>Raise the user's Attack Base Stat 1.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Iron</id>
+    <desc>Raise the user's Defense Base Stat 1.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Calcium</id>
+    <desc>Raise the user's Special Attack Base Stat 1.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Zinc</id>
+    <desc>Raise the user's Special Defense Base Stat 1.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Carbos</id>
+    <desc>Raise the user's Speed Base Stat 1.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Heart Booster</id>
+    <desc>The Pokemon gains 2 Tutor Points. Use only one per Pokemon.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>PP Up</id>
+    <desc>Raise one of the user's Move's Frequency one level. Use only one per Pokemon.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Tiny Mushroom</id>
+    <desc>The user loses 5 HP, and gains +1 Combat Stage in a random Stat.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Big Mushroom</id>
+    <desc>The user becomes Poisoned; if they do, they gain +1 Combat Stage in two random Stats.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Balm Mushroom</id>
+    <desc>The user is cured of Burn, Paralysis, or Poison. If they are, they lose 1 Combat Stage in a random Stat.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Nugget</id>
+    <desc>Can be sold for $10000.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Big Pearl</id>
+    <desc>Can be sold for $7500.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Star Piece</id>
+    <desc>Can be sold for $9800.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Relic Silver</id>
+    <desc>Can be sold for $5000.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Relic Gold</id>
+    <desc>Can be sold for $10000.</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Ultra Ball</id>
+    <desc>The best generic Poke Ball</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Leppa Berry</id>
+    <desc>Restores a Scene Move</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Pomeg Berry</id>
+    <desc>HP Suppressant</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Kelpsy Berry</id>
+    <desc>Attack Suppressant</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Qualot Berry</id>
+    <desc>Defense Suppressant</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Hondew Berry</id>
+    <desc>Special Attack Suppressant</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Grepa Berry</id>
+    <desc>Special Defense Suppressant</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Tamato Berry</id>
+    <desc>Speed Suppressant</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Occa Berry</id>
+    <desc>Weakens foe’s super effective Fire-type move</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Passho Berry</id>
+    <desc>Weakens foe’s super effective Water-type move</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Wacan Berry</id>
+    <desc>Weakens foe’s super effective Electric-type move</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Rindo Berry</id>
+    <desc>Weakens foe’s super effective Grass-type move</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Yache Berry</id>
+    <desc>Weakens foe’s super effective Ice-type move</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Chople Berry</id>
+    <desc>Weakens foe’s super effective Fighting-type move</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Kebia Berry</id>
+    <desc>Weakens foe’s super effective Poison-type move</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Shuca Berry</id>
+    <desc>Weakens foe’s super effective Ground-type move</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Coba Berry</id>
+    <desc>Weakens foe’s super effective Flying-type move</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Payapa Berry</id>
+    <desc>Weakens foe’s super effective Psychic-type move</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Tanga Berry</id>
+    <desc>Weakens foe’s super effective Bug-type move</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Charti Berry</id>
+    <desc>Weakens foe’s super effective Rock-type move</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Kasib Berry</id>
+    <desc>Weakens foe’s super effective Ghost-type move</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Haban Berry</id>
+    <desc>Weakens foe’s super effective Dragon-type move</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Colbur Berry</id>
+    <desc>Weakens foe’s super effective Dark-type move</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Babiri Berry</id>
+    <desc> Weakens foe’s super effective Steel-type move</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Chilan Berry</id>
+    <desc>Weakens foe’s Normal type move</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Roseli Berry</id>
+    <desc>
+      Weakens foe’s super effective Fairytype move
+    </desc>
+  </Item>
+  <Item Tier="3">
+    <id>Custap Berry</id>
+    <desc>Grants the Priority keyword to any Move. May only be used at 25% HP or lower</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Kee Berry</id>
+    <desc>+1 Defense CS. Activates as a Free Action when hit by a Physical Move</desc>
+  </Item>
+  <Item Tier="3">
+    <id>Maranga Berry</id>
+    <desc>+1 Special Defense CS. Activates as a Free Action when hit by a Special Move</desc>
+  </Item>
+    <Item Tier="4">
+    <id>Rare Candy</id>
+    <desc>These very rare treats, When ingested by a Pokemon, grant the eater enough experience to reach its next Level. Pokemon may benefit from up to five Rare Candies in their lifetime.</desc>
+  </Item>
+  <Item Tier="4">
+    <id>Peral String</id>
+    <desc>Can be sold for $25000.</desc>
+  </Item>
+  <Item Tier="4">
+    <id>Big Nugget</id>
+    <desc>Can be sold for $30000.</desc>
+  </Item>
+  <Item Tier="4">
+    <id>Comet Shard</id>
+    <desc>Can be sold for $60000.</desc>
+  </Item>
+  <!--<Item Tier="4">
+    <id>Master Ball</id>
+    <desc>Incredibly Rare. Worth at least $300,000. Sold nowhere</desc>
+  </Item>-->
+</Namespace>

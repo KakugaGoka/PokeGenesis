@@ -957,7 +957,7 @@ namespace GenesisDex
 
         private void ItemGenByTier(int tier)
         {
-            itemList = itemXML.createList("Tier" + tier, "Item");
+            itemList = itemXML.createList(tier.ToString());
             int i = rng.Next(0, itemList.Count);
             if (!onItem3)
             {
