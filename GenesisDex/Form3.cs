@@ -51,7 +51,6 @@ namespace GenesisDex
         ItemList itemXML = new ItemList();
         List<TM> TMList = new List<TM>();
         TMList TMXML = new TMList();
-        bool getItem2 = false;
         List<string> pokeDex = new List<string>();
         List<string> moves = new List<string>();
         List<string> ability = new List<string>();
@@ -68,6 +67,7 @@ namespace GenesisDex
         List<Image> AllItems2 = new List<Image>();
         List<string> AllDesc1 = new List<string>();
         List<string> AllDesc2 = new List<string>();
+        List<string> AllDesc3 = new List<string>();
         List<string[]> Info = new List<string[]>();
         List<string> Gender = new List<string>();
         List<string> Stat = new List<string>();
@@ -75,7 +75,11 @@ namespace GenesisDex
         List<string> Type = new List<string>();
         int Current = 0;
         int Amount = 0;
+        int cash = 0;
+        bool onItem2 = false;
+        bool onItem3 = false;
         bool isShiny = false;
+        bool hasScanned = false;
         string typeShiny { get; set; }
         string newShiny { get; set; }
 
@@ -210,6 +214,7 @@ namespace GenesisDex
 
         private void pbScanPokemon_Click(object sender, EventArgs e)
         {
+            hasScanned = true;
             if (pkPokemon.Items.Contains(pkPokemon.Text) == false) { MessageBox.Show("That is not a Pokemon."); return; }
             if (pkType.Items.Contains(pkType.Text) == false) { MessageBox.Show("That is not a Type."); return; }
             if (pkHabitat.Items.Contains(pkHabitat.Text) == false) { MessageBox.Show("That is not a Habitat."); return; }
@@ -668,6 +673,18 @@ namespace GenesisDex
 
         }
 
+        private void WriteLoot()
+        {
+            tbPageCount.Text = "----";
+            rtbInfo1.Clear();
+            for (int x = 0; x < AllDesc3.Count; x++)
+            {
+
+                rtbInfo1.Text += AllDesc3[x] + Environment.NewLine + Environment.NewLine;
+            }
+            rtbInfo1.Text += "$" + cash.ToString();
+        }
+
         private void infoBack_Click(object sender, EventArgs e)
         {
             Page--;
@@ -891,7 +908,7 @@ namespace GenesisDex
 
         private void GetItem()
         {
-            getItem2 = false;
+            onItem2 = false;
             int i = rng.Next(1, 101);
             if (i < 26)
             {
@@ -910,15 +927,15 @@ namespace GenesisDex
         private void GetItem1()
         {
             int i = rng.Next(1, 101);
-            if (i < 79) { Tier1(); }
-            else if (i < 94) { Tier2(); }
-            else if (i < 100) { Tier3(); }
-            else if (i < 101) { Tier4(); }
+            if (i < 79) { ItemGenByTier(1); }
+            else if (i < 94) { ItemGenByTier(2); }
+            else if (i < 100) { ItemGenByTier(3); }
+            else if (i < 101) { ItemGenByTier(4); }
             i = rng.Next(1, 11);
             if (i == 10)
             {
                 pkGasp.Text += Environment.NewLine +  "It has a few things!";
-                getItem2 = true;
+                onItem2 = true;
                 GetItem2();
             }
             else
@@ -932,73 +949,32 @@ namespace GenesisDex
         private void GetItem2()
         {
             int i = rng.Next(1, 101);
-            if (i < 79) { Tier1(); }
-            else if (i < 94) { Tier2(); }
-            else if (i < 100) { Tier3(); }
-            else if (i < 101) { Tier4(); }
-        }
-        
-        private void Tier1()
-        {
-            itemList = itemXML.createList("Tier1", "Item");
-            int i = rng.Next(0, itemList.Count);
-            if (getItem2 == true)
-            {
-                AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Items\\" + itemList[i].id + ".png"));
-                AllDesc2.Add(itemList[i].id + ": " + itemList[i].desc);
-            }
-            else
-            {
-                AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Items\\" + itemList[i].id + ".png"));
-                AllDesc1.Add(itemList[i].id + ": " + itemList[i].desc);
-            }
+            if (i < 79) { ItemGenByTier(1); }
+            else if (i < 94) { ItemGenByTier(2); }
+            else if (i < 100) { ItemGenByTier(3); }
+            else if (i < 101) { ItemGenByTier(4); }
         }
 
-        private void Tier2()
+        private void ItemGenByTier(int tier)
         {
-            itemList = itemXML.createList("Tier2", "Item");
+            itemList = itemXML.createList("Tier" + tier, "Item");
             int i = rng.Next(0, itemList.Count);
-            if (getItem2 == true)
+            if (!onItem3)
             {
-                AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Items\\" + itemList[i].id + ".png"));
-                AllDesc2.Add(itemList[i].id + ": " + itemList[i].desc);
+                if (onItem2)
+                {
+                    AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Items\\" + itemList[i].id + ".png"));
+                    AllDesc2.Add(itemList[i].id + ": " + itemList[i].desc);
+                }
+                else
+                {
+                    AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Items\\" + itemList[i].id + ".png"));
+                    AllDesc1.Add(itemList[i].id + ": " + itemList[i].desc);
+                }
             }
             else
             {
-                AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Items\\" + itemList[i].id + ".png"));
-                AllDesc1.Add(itemList[i].id + ": " + itemList[i].desc);
-            }
-        }
-
-        private void Tier3()
-        {
-            itemList = itemXML.createList("Tier3", "Item");
-            int i = rng.Next(0, itemList.Count);
-            if (getItem2 == true)
-            {
-                AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Items\\" + itemList[i].id + ".png"));
-                AllDesc2.Add(itemList[i].id + ": " + itemList[i].desc);
-            }
-            else
-            {
-                AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Items\\" + itemList[i].id + ".png"));
-                AllDesc1.Add(itemList[i].id + ": " + itemList[i].desc);
-            }
-        }
-
-        private void Tier4()
-        {
-            itemList = itemXML.createList("Tier4", "Item");
-            int i = rng.Next(0, itemList.Count);
-            if (getItem2 == true)
-            {
-                AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Items\\" + itemList[i].id + ".png"));
-                AllDesc2.Add(itemList[i].id + ": " + itemList[i].desc);
-            }
-            else
-            {
-                AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Items\\" + itemList[i].id + ".png"));
-                AllDesc1.Add(itemList[i].id + ": " + itemList[i].desc);
+                AllDesc3.Add(itemList[i].id + ": " + itemList[i].desc);
             }
         }
 
@@ -1032,6 +1008,8 @@ namespace GenesisDex
 
         private void pbPokeLeft_Click(object sender, EventArgs e)
         {
+            infoForward.Visible = true;
+            infoBack.Visible = true;
             if (Current <= 0)
             {
                 Current = Amount - 1;
@@ -1049,6 +1027,8 @@ namespace GenesisDex
 
         private void pbPokeRight_Click(object sender, EventArgs e)
         {
+            infoForward.Visible = true;
+            infoBack.Visible = true;
             if (Current >= Amount - 1)
             {
                 Current = 0;
@@ -1115,12 +1095,11 @@ namespace GenesisDex
             infoBack.Visible = false;
             infoForward.Visible = false;
             pkItem.Visible = false;
-            AllItems2.Clear();
-            AllDesc2.Clear();
+            AllDesc3.Clear();
             rtbInfo1.Clear();
             int val = Convert.ToInt32(nudPlayerLevel.Value);
-            int cash = 0;
-            getItem2 = true;
+            cash = 0;
+            onItem3 = true;
             for (int x = 0; x < val; x++)
             {
                 int i = rng.Next(1, 4);
@@ -1129,12 +1108,58 @@ namespace GenesisDex
                 else
                     cash += rng.Next(1, 6) * 100;
             }
-            for (int x = 0; x < AllDesc2.Count; x++)
-            {
+            onItem3 = false;
+            WriteLoot();
+        }
 
-                rtbInfo1.Text += AllDesc2[x] + Environment.NewLine + Environment.NewLine;
+        private void pbPokeRefresh_Click(object sender, EventArgs e)
+        {
+            if (hasScanned)
+            {
+                infoForward.Visible = true;
+                infoBack.Visible = true;
+                UpdatePage();
             }
-            rtbInfo1.Text += "$" + cash.ToString();
+        }
+
+        private void pbLootRefresh_Click(object sender, EventArgs e)
+        {
+            if (hasScanned)
+            {
+                infoForward.Visible = false;
+                infoBack.Visible = false;
+                WriteLoot();
+            }
+        }
+
+        private void pbLoot_MouseHover(object sender, EventArgs e)
+        {
+            pbLoot.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanLootHover.png");
+        }
+
+        private void pbLoot_MouseLeave(object sender, EventArgs e)
+        {
+            pbLoot.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanLoot.png");
+        }
+
+        private void pbPokeRefresh_MouseHover(object sender, EventArgs e)
+        {
+            pbPokeRefresh.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokeViewHover.png");
+        }
+
+        private void pbPokeRefresh_MouseLeave(object sender, EventArgs e)
+        {
+            pbPokeRefresh.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokeView.png");
+        }
+
+        private void pbLootRefresh_MouseHover(object sender, EventArgs e)
+        {
+            pbLootRefresh.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\LootViewHover.png");
+        }
+
+        private void pbLootRefresh_MouseLeave(object sender, EventArgs e)
+        {
+            pbLootRefresh.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\LootView.png");
         }
     }
 }

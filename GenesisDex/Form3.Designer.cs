@@ -68,6 +68,8 @@
             this.pbLoot = new System.Windows.Forms.PictureBox();
             this.nudPlayerLevel = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
+            this.pbPokeRefresh = new System.Windows.Forms.PictureBox();
+            this.pbLootRefresh = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbOverlay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoForward)).BeginInit();
@@ -86,6 +88,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLoot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPlayerLevel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPokeRefresh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLootRefresh)).BeginInit();
             this.SuspendLayout();
             // 
             // pbOverlay
@@ -335,7 +339,7 @@
             this.pkCanBeShiny.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.pkCanBeShiny.FlatAppearance.BorderSize = 5;
             this.pkCanBeShiny.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pkCanBeShiny.Location = new System.Drawing.Point(41, 534);
+            this.pkCanBeShiny.Location = new System.Drawing.Point(41, 533);
             this.pkCanBeShiny.Name = "pkCanBeShiny";
             this.pkCanBeShiny.Size = new System.Drawing.Size(126, 20);
             this.pkCanBeShiny.TabIndex = 57;
@@ -407,7 +411,7 @@
             this.pkCanBeLegend.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.pkCanBeLegend.FlatAppearance.BorderSize = 5;
             this.pkCanBeLegend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pkCanBeLegend.Location = new System.Drawing.Point(41, 560);
+            this.pkCanBeLegend.Location = new System.Drawing.Point(41, 558);
             this.pkCanBeLegend.Name = "pkCanBeLegend";
             this.pkCanBeLegend.Size = new System.Drawing.Size(156, 20);
             this.pkCanBeLegend.TabIndex = 65;
@@ -564,7 +568,7 @@
             // pbLoot
             // 
             this.pbLoot.BackColor = System.Drawing.Color.Transparent;
-            this.pbLoot.Image = global::GenesisDex.Properties.Resources.GotoPage;
+            this.pbLoot.Image = global::GenesisDex.Properties.Resources.ScanLoot;
             this.pbLoot.Location = new System.Drawing.Point(461, 126);
             this.pbLoot.Name = "pbLoot";
             this.pbLoot.Size = new System.Drawing.Size(126, 26);
@@ -572,6 +576,8 @@
             this.pbLoot.TabIndex = 78;
             this.pbLoot.TabStop = false;
             this.pbLoot.Click += new System.EventHandler(this.pbLoot_Click);
+            this.pbLoot.MouseLeave += new System.EventHandler(this.pbLoot_MouseLeave);
+            this.pbLoot.MouseHover += new System.EventHandler(this.pbLoot_MouseHover);
             // 
             // nudPlayerLevel
             // 
@@ -609,6 +615,34 @@
             this.label9.TabIndex = 80;
             this.label9.Text = "Player\r\nLevel";
             // 
+            // pbPokeRefresh
+            // 
+            this.pbPokeRefresh.BackColor = System.Drawing.Color.Transparent;
+            this.pbPokeRefresh.Image = global::GenesisDex.Properties.Resources.PokeView;
+            this.pbPokeRefresh.Location = new System.Drawing.Point(461, 554);
+            this.pbPokeRefresh.Name = "pbPokeRefresh";
+            this.pbPokeRefresh.Size = new System.Drawing.Size(98, 26);
+            this.pbPokeRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbPokeRefresh.TabIndex = 81;
+            this.pbPokeRefresh.TabStop = false;
+            this.pbPokeRefresh.Click += new System.EventHandler(this.pbPokeRefresh_Click);
+            this.pbPokeRefresh.MouseLeave += new System.EventHandler(this.pbPokeRefresh_MouseLeave);
+            this.pbPokeRefresh.MouseHover += new System.EventHandler(this.pbPokeRefresh_MouseHover);
+            // 
+            // pbLootRefresh
+            // 
+            this.pbLootRefresh.BackColor = System.Drawing.Color.Transparent;
+            this.pbLootRefresh.Image = global::GenesisDex.Properties.Resources.LootView;
+            this.pbLootRefresh.Location = new System.Drawing.Point(685, 554);
+            this.pbLootRefresh.Name = "pbLootRefresh";
+            this.pbLootRefresh.Size = new System.Drawing.Size(98, 26);
+            this.pbLootRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbLootRefresh.TabIndex = 82;
+            this.pbLootRefresh.TabStop = false;
+            this.pbLootRefresh.Click += new System.EventHandler(this.pbLootRefresh_Click);
+            this.pbLootRefresh.MouseLeave += new System.EventHandler(this.pbLootRefresh_MouseLeave);
+            this.pbLootRefresh.MouseHover += new System.EventHandler(this.pbLootRefresh_MouseHover);
+            // 
             // FormScan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -616,6 +650,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = global::GenesisDex.Properties.Resources.MainMenu;
             this.ClientSize = new System.Drawing.Size(822, 616);
+            this.Controls.Add(this.pbLootRefresh);
+            this.Controls.Add(this.pbPokeRefresh);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.nudPlayerLevel);
             this.Controls.Add(this.pbLoot);
@@ -682,6 +718,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLoot)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPlayerLevel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPokeRefresh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLootRefresh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -728,5 +766,7 @@
         private System.Windows.Forms.PictureBox pbLoot;
         private System.Windows.Forms.NumericUpDown nudPlayerLevel;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pbPokeRefresh;
+        private System.Windows.Forms.PictureBox pbLootRefresh;
     }
 }
