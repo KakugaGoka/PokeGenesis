@@ -29,7 +29,6 @@ namespace GenesisDex
         NameList habitatXML = new NameList();
         EvolutionList evoXML = new EvolutionList();
         List<Pokemon> pokeList = new List<Pokemon>();
-        List<Pokemon> permaList = new List<Pokemon>();
         List<Move> moveList = new List<Move>();
         List<Ability> abiList = new List<Ability>();
         List<Skill> skillList = new List<Skill>();
@@ -184,34 +183,16 @@ namespace GenesisDex
 
         private void CreateScanList()
         {
-            permaList = new List<Pokemon>();
             pokeList = new List<Pokemon>();
             pokeList = pokeXML.createList("Pokemon");
-            if (pkPokemon.Text == "Any")
+            CheckHabitat();
+            CheckType();
+            CheckEvo();
+            if (!pkCanBeLegend.Checked)
             {
-                CheckHabitat();
-                CheckType();
-                CheckEvo();
-                if (pkCanBeLegend.Checked != true)
-                {
-                    GetLegend();
-                }
-                for (var p = 0; p < pokeList.Count; p++)
-                {
-                    permaList.Add(pokeList[p]);
-                }
+                GetLegend();
             }
-            else
-            {
-                foreach (Pokemon p in pokeList)
-                {
-                    if (p.id.Contains(pkPokemon.Text) == true)
-                    {
-                        permaList.Add(p);
-                        break;
-                    }
-                }
-            }
+
         }
 
 
@@ -242,11 +223,6 @@ namespace GenesisDex
             for (var z = 0; z < Amount; z++)
             {
                 IChooseYou = null;
-                pokeList = new List<Pokemon>();
-                for (var p = 0; p < permaList.Count; p++)
-                {
-                    pokeList.Add(permaList[p]);
-                }
                 Pokemon HeyYou = null;
                 Pokemon PokeBall = null;
                 Pokemon Final = null;
@@ -520,9 +496,17 @@ namespace GenesisDex
 
         private Pokemon GetPokemon()
         {
-            int i = rng.Next(0, pokeList.Count);
-            try { return pokeList[i]; } catch { MessageBox.Show("There are no registered Pokemon that fit this criteria..."); return null; }
-            
+            int i;
+            if (pkPokemon.Text != "Any")
+            {
+                i = pokeList.FindIndex(x => x.id == pkPokemon.Text);
+                return pokeList[i];
+            }
+            else
+            {
+                i = rng.Next(0, pokeList.Count);
+                try { return pokeList[i]; } catch { MessageBox.Show("There are no registered Pokemon that fit this criteria..."); return null; }
+            }
         }
 
         private int GetLevel()
