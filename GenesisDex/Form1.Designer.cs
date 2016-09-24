@@ -96,7 +96,7 @@
             this.lbPokemon.Location = new System.Drawing.Point(23, 375);
             this.lbPokemon.Name = "lbPokemon";
             this.lbPokemon.Size = new System.Drawing.Size(360, 175);
-            this.lbPokemon.TabIndex = 16;
+            this.lbPokemon.TabIndex = 1;
             this.lbPokemon.SelectedIndexChanged += new System.EventHandler(this.lbPokemon_SelectedIndexChanged);
             // 
             // pbMega
@@ -122,6 +122,7 @@
             this.rtbInfo1.ReadOnly = true;
             this.rtbInfo1.Size = new System.Drawing.Size(322, 387);
             this.rtbInfo1.TabIndex = 20;
+            this.rtbInfo1.TabStop = false;
             this.rtbInfo1.Text = "";
             // 
             // infoForward
@@ -235,7 +236,7 @@
             this.tbSearch.Location = new System.Drawing.Point(23, 550);
             this.tbSearch.Name = "tbSearch";
             this.tbSearch.Size = new System.Drawing.Size(360, 24);
-            this.tbSearch.TabIndex = 33;
+            this.tbSearch.TabIndex = 2;
             this.tbSearch.Tag = "";
             this.tbSearch.Text = "Search";
             this.tbSearch.Click += new System.EventHandler(this.tbSearch_Click);
@@ -252,6 +253,7 @@
             this.tbPageCount.ReadOnly = true;
             this.tbPageCount.Size = new System.Drawing.Size(33, 25);
             this.tbPageCount.TabIndex = 74;
+            this.tbPageCount.TabStop = false;
             this.tbPageCount.Text = "";
             // 
             // pictureBox1

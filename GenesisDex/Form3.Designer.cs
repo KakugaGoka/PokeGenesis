@@ -136,6 +136,7 @@
             this.rtbInfo1.ReadOnly = true;
             this.rtbInfo1.Size = new System.Drawing.Size(322, 387);
             this.rtbInfo1.TabIndex = 35;
+            this.rtbInfo1.TabStop = false;
             this.rtbInfo1.Text = "";
             // 
             // pbExit
@@ -203,7 +204,7 @@
             0});
             this.pkLevelMin.Name = "pkLevelMin";
             this.pkLevelMin.Size = new System.Drawing.Size(44, 24);
-            this.pkLevelMin.TabIndex = 46;
+            this.pkLevelMin.TabIndex = 9;
             this.pkLevelMin.Value = new decimal(new int[] {
             15,
             0,
@@ -222,7 +223,7 @@
             this.pkHabitat.Location = new System.Drawing.Point(79, 442);
             this.pkHabitat.Name = "pkHabitat";
             this.pkHabitat.Size = new System.Drawing.Size(143, 27);
-            this.pkHabitat.TabIndex = 47;
+            this.pkHabitat.TabIndex = 4;
             // 
             // label1
             // 
@@ -257,7 +258,7 @@
             this.pkType.Location = new System.Drawing.Point(80, 475);
             this.pkType.Name = "pkType";
             this.pkType.Size = new System.Drawing.Size(143, 27);
-            this.pkType.TabIndex = 50;
+            this.pkType.TabIndex = 5;
             // 
             // label3
             // 
@@ -288,7 +289,7 @@
             0});
             this.pkLevelMax.Name = "pkLevelMax";
             this.pkLevelMax.Size = new System.Drawing.Size(44, 24);
-            this.pkLevelMax.TabIndex = 52;
+            this.pkLevelMax.TabIndex = 10;
             this.pkLevelMax.Value = new decimal(new int[] {
             15,
             0,
@@ -328,7 +329,7 @@
             this.pkHasItem.Location = new System.Drawing.Point(41, 508);
             this.pkHasItem.Name = "pkHasItem";
             this.pkHasItem.Size = new System.Drawing.Size(125, 20);
-            this.pkHasItem.TabIndex = 55;
+            this.pkHasItem.TabIndex = 6;
             this.pkHasItem.Text = "Generate Items?";
             this.pkHasItem.UseVisualStyleBackColor = false;
             // 
@@ -342,7 +343,7 @@
             this.pkCanBeShiny.Location = new System.Drawing.Point(41, 533);
             this.pkCanBeShiny.Name = "pkCanBeShiny";
             this.pkCanBeShiny.Size = new System.Drawing.Size(126, 20);
-            this.pkCanBeShiny.TabIndex = 57;
+            this.pkCanBeShiny.TabIndex = 7;
             this.pkCanBeShiny.Text = "Generate Shiny?";
             this.pkCanBeShiny.UseVisualStyleBackColor = false;
             // 
@@ -377,6 +378,7 @@
             this.pkGasp.ReadOnly = true;
             this.pkGasp.Size = new System.Drawing.Size(143, 88);
             this.pkGasp.TabIndex = 61;
+            this.pkGasp.TabStop = false;
             this.pkGasp.Text = "";
             // 
             // label6
@@ -401,7 +403,7 @@
             this.pkPokemon.Location = new System.Drawing.Point(79, 376);
             this.pkPokemon.Name = "pkPokemon";
             this.pkPokemon.Size = new System.Drawing.Size(143, 27);
-            this.pkPokemon.TabIndex = 62;
+            this.pkPokemon.TabIndex = 2;
             this.pkPokemon.TextChanged += new System.EventHandler(this.pkPokemon_TextChanged);
             // 
             // pkCanBeLegend
@@ -414,7 +416,7 @@
             this.pkCanBeLegend.Location = new System.Drawing.Point(41, 558);
             this.pkCanBeLegend.Name = "pkCanBeLegend";
             this.pkCanBeLegend.Size = new System.Drawing.Size(156, 20);
-            this.pkCanBeLegend.TabIndex = 65;
+            this.pkCanBeLegend.TabIndex = 8;
             this.pkCanBeLegend.Text = "Include Legendaries?";
             this.pkCanBeLegend.UseVisualStyleBackColor = false;
             // 
@@ -429,7 +431,7 @@
             this.pkStageAllowed.Location = new System.Drawing.Point(80, 409);
             this.pkStageAllowed.Name = "pkStageAllowed";
             this.pkStageAllowed.Size = new System.Drawing.Size(143, 27);
-            this.pkStageAllowed.TabIndex = 66;
+            this.pkStageAllowed.TabIndex = 3;
             // 
             // label7
             // 
@@ -455,7 +457,7 @@
             0});
             this.pkAmount.Name = "pkAmount";
             this.pkAmount.Size = new System.Drawing.Size(51, 24);
-            this.pkAmount.TabIndex = 68;
+            this.pkAmount.TabIndex = 11;
             this.pkAmount.Value = new decimal(new int[] {
             1,
             0,
@@ -504,6 +506,7 @@
             this.tbPokeCount.ReadOnly = true;
             this.tbPokeCount.Size = new System.Drawing.Size(68, 25);
             this.tbPokeCount.TabIndex = 72;
+            this.tbPokeCount.TabStop = false;
             this.tbPokeCount.Text = "";
             // 
             // tbPageCount
@@ -517,6 +520,7 @@
             this.tbPageCount.ReadOnly = true;
             this.tbPageCount.Size = new System.Drawing.Size(33, 25);
             this.tbPageCount.TabIndex = 73;
+            this.tbPageCount.TabStop = false;
             this.tbPageCount.Text = "";
             // 
             // pbGotoPage
@@ -546,7 +550,7 @@
             0});
             this.pkGoto.Name = "pkGoto";
             this.pkGoto.Size = new System.Drawing.Size(49, 24);
-            this.pkGoto.TabIndex = 76;
+            this.pkGoto.TabIndex = 1;
             this.pkGoto.Value = new decimal(new int[] {
             1,
             0,
@@ -597,7 +601,7 @@
             0});
             this.nudPlayerLevel.Name = "nudPlayerLevel";
             this.nudPlayerLevel.Size = new System.Drawing.Size(49, 24);
-            this.nudPlayerLevel.TabIndex = 79;
+            this.nudPlayerLevel.TabIndex = 12;
             this.nudPlayerLevel.Value = new decimal(new int[] {
             1,
             0,
