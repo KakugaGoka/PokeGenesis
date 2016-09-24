@@ -32670,4 +32670,257 @@
       </Moves>
     </List437>
   </Pokemon>
+  <Pokemon>
+    <number>436</number>
+    <id>Bronzor</id>
+    <type>Steel / Psychic</type>
+    <hp>6</hp>
+    <atk>2</atk>
+    <def>9</def>
+    <spatk>2</spatk>
+    <spdef>9</spdef>
+    <spd>2</spd>
+    <size>1’ 8” / 0.5m (Small)</size>
+    <weight>133.4 lbs. / 60.5kg (4)</weight>
+    <gender>No Gender</gender>
+    <egg>Mineral</egg>
+    <hatch>10 Days</hatch>
+    <diet>Nullivore</diet>
+    <habitat>Cave, Forest, Mountian</habitat>
+    <legendary>false</legendary>
+    <List436>
+      <Ability>
+        <BasicAbility>Levitate</BasicAbility>
+        <AdvancedAbility>Heatproof</AdvancedAbility>
+        <AdvancedAbility>Heavy Metal</AdvancedAbility>
+        <AdvancedAbility>Magic Guard</AdvancedAbility>
+        <HighAbility>Bodyguard</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 2d6+1</skill>
+        <skill id="1">Acro 2d6</skill>
+        <skill id="2">Combat 2d6</skill>
+        <skill id="3">Stealth 3d6+1</skill>
+        <skill id="4">Percep 3d6+1</skill>
+        <skill id="5">Focus 3d6+2</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 1</cap>
+        <cap id="1">Swim 2</cap>
+        <cap id="2">Levitate 4</cap>
+        <cap id="3">Jump 1/1</cap>
+        <cap id="4">Power 4</cap>
+        <cap id="5">Dead Silent</cap>
+        <cap id="6">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Bronzor</evo>
+        <evo id="1">2 - Bronzong Minimum 30</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Confusion - Psychic</move>
+        <move id="1">1 Tackle - Normal</move>
+        <move id="2">5 Hypnosis - Psychic</move>
+        <move id="3">9 Imprison - Psychic</move>
+        <move id="4">11 Confuse Ray - Ghost</move>
+        <move id="5">15 Psywave - Psychic</move>
+        <move id="6">19 Iron Defense - Steel</move>
+        <move id="7">21 Feint Attack - Dark</move>
+        <move id="8">25 Safeguard - Normal</move>
+        <move id="9">29 Future Sight - Psychic</move>
+        <move id="10">31 Metal Sound - Steel</move>
+        <move id="11">35 Gyro Ball - Steel</move>
+        <move id="12">39 Extrasensory - Psychic</move>
+        <move id="13">41 Payback - Dark</move>
+        <move id="14">45 Heal Block - Psychic</move>
+        <move id="15">49 Heavy Slam - Steel</move>
+      </Moves>
+    </List436>
+  </Pokemon>
+  <Pokemon>
+    <number>435</number>
+    <id>Skuntank</id>
+    <type>Poison / Dark</type>
+    <hp>10</hp>
+    <atk>9</atk>
+    <def>7</def>
+    <spatk>7</spatk>
+    <spdef>6</spdef>
+    <spd>8</spd>
+    <size>3’ 3” / 1m (Medium)</size>
+    <weight>83.8 lbs. / 38kg (3)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Field</egg>
+    <diet>Herbivore</diet>
+    <habitat>Forest, Grassland</habitat>
+    <legendary>false</legendary>
+    <List435>
+      <Ability>
+        <BasicAbility>Stench</BasicAbility>
+        <AdvancedAbility>Keen Eye</AdvancedAbility>
+        <AdvancedAbility>Odious Spray</AdvancedAbility>
+        <AdvancedAbility>Pickup</AdvancedAbility>
+        <HighAbility>Aftermath</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 4d6+2</skill>
+        <skill id="1">Acro 1d6+1</skill>
+        <skill id="2">Combat 3d6</skill>
+        <skill id="3">Stealth 2d6</skill>
+        <skill id="4">Percep 2d6+1</skill>
+        <skill id="5">Focus 3d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 6</cap>
+        <cap id="1">Swim 3</cap>
+        <cap id="2">Jump 1/2</cap>
+        <cap id="3">Power 6</cap>
+        <cap id="4">Darkvision</cap>
+        <cap id="5">Naturewalk (Grassland, Forest)</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Stunky</evo>
+        <evo id="1">2 - Skuntank Minimum 35</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">4 Poison Gas - Poison</move>
+        <move id="1">7 Screech - Normal</move>
+        <move id="2">10 Fury Swipes - Normal</move>
+        <move id="3">14 Smokescreen - Normal</move>
+        <move id="4">18 Feint - Normal</move>
+        <move id="5">22 Slash - Normal</move>
+        <move id="6">27 Toxic - Poison</move>
+        <move id="7">32 Acid Spray - Poison</move>
+        <move id="8">35 Flamethrower - Fire</move>
+        <move id="9">41 Night Slash - Dark</move>
+        <move id="10">51 Memento - Dark</move>
+        <move id="11">56 Belch - Poison</move>
+        <move id="12">61 Explosion - Normal</move>
+      </Moves>
+    </List435>
+  </Pokemon>
+  <Pokemon>
+    <number>434</number>
+    <id>Stunky</id>
+    <type>Poison / Dark</type>
+    <hp>6</hp>
+    <atk>6</atk>
+    <def>5</def>
+    <spatk>4</spatk>
+    <spdef>4</spdef>
+    <spd>7</spd>
+    <size>1’ 4” / 0.4m (Small)</size>
+    <weight>42.3 lbs. / 19.2kg (2)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Field</egg>
+    <hatch>10 Days</hatch>
+    <diet>Herbivore</diet>
+    <habitat>Forest, Grassland</habitat>
+    <legendary>false</legendary>
+    <List434>
+      <Ability>
+        <BasicAbility>Stench</BasicAbility>
+        <AdvancedAbility>Keen Eye</AdvancedAbility>
+        <AdvancedAbility>Odious Spray</AdvancedAbility>
+        <AdvancedAbility>Pickup</AdvancedAbility>
+        <HighAbility>Aftermath</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 2d6+1</skill>
+        <skill id="1">Acro 2d6+1</skill>
+        <skill id="2">Combat 2d6</skill>
+        <skill id="3">Stealth 2d6+2</skill>
+        <skill id="4">Percep 2d6</skill>
+        <skill id="5">Focus 2d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 5</cap>
+        <cap id="1">Swim 2</cap>
+        <cap id="2">Jump 1/1</cap>
+        <cap id="3">Power 2</cap>
+        <cap id="4">Darkvision</cap>
+        <cap id="5">Underdog</cap>
+        <cap id="6">Naturewalk (Grassland, Forest)</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Stunky</evo>
+        <evo id="1">2 - Skuntank Minimum 35</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Focus Energy - Normal</move>
+        <move id="1">1 Scratch - Normal</move>
+        <move id="2">4 Poison Gas - Poison</move>
+        <move id="3">7 Screech - Normal</move>
+        <move id="4">10 Fury Swipes - Normal</move>
+        <move id="5">14 Smokescreen - Normal</move>
+        <move id="6">18 Feint - Normal</move>
+        <move id="7">22 Slash - Normal</move>
+        <move id="8">27 Toxic - Poison</move>
+        <move id="9">32 Acid Spray - Poison</move>
+        <move id="10">37 Night Slash - Dark</move>
+        <move id="11">43 Memento - Dark</move>
+        <move id="12">46 Belch - Poison</move>
+        <move id="13">49 Explosion - Normal</move>
+      </Moves>
+    </List434>
+  </Pokemon>
+  <Pokemon>
+    <number>433</number>
+    <id>Chingling</id>
+    <type>Psychic</type>
+    <hp>5</hp>
+    <atk>3</atk>
+    <def>5</def>
+    <spatk>7</spatk>
+    <spdef>5</spdef>
+    <spd>5</spd>
+    <size>0’ 8” / 0.2m (Small)</size>
+    <weight>1.3 lbs. / 0.6kg (1)</weight>
+    <gender>50% M / 50% F</gender>
+    <egg>Indeterminate</egg>
+    <hatch>13 Days</hatch>
+    <diet>Herbivore</diet>
+    <habitat>Cave, Urban</habitat>
+    <legendary>false</legendary>
+    <List433>
+      <Ability>
+        <BasicAbility>Levitate</BasicAbility>
+        <AdvancedAbility>Serene Grace</AdvancedAbility>
+        <AdvancedAbility>Magic Guard</AdvancedAbility>
+        <AdvancedAbility>Probability Control</AdvancedAbility>
+        <HighAbility>Cute Charm</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 2d6+1</skill>
+        <skill id="1">Acro 2d6</skill>
+        <skill id="2">Combat 1d6</skill>
+        <skill id="3">Stealth 2d6</skill>
+        <skill id="4">Percep 3d6+1</skill>
+        <skill id="5">Focus 3d6+2</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 1</cap>
+        <cap id="1">Swim 2</cap>
+        <cap id="2">Levitate 3</cap>
+        <cap id="3">Jump 1/1</cap>
+        <cap id="4">Power 1</cap>
+        <cap id="5">Telepath</cap>
+        <cap id="6">Underdog</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Chingling</evo>
+        <evo id="1">2 - Chimecho Minimum 15 Night</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Wrap - Normal</move>
+        <move id="1">4 Growl - Normal</move>
+        <move id="2">7 Astonish - Ghost</move>
+        <move id="3">10 Confusion - Psychic</move>
+        <move id="4">13 Yawn - Normal</move>
+        <move id="5">16 Last Resort - Normal</move>
+        <move id="6">19 Entrainment - Normal</move>
+        <move id="7">32 Uproar - Normal</move>
+      </Moves>
+    </List433>
+  </Pokemon>
 </Namespace>
