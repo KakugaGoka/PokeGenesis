@@ -121,9 +121,12 @@ namespace GenesisDex
             pkType.DataSource = types;
             pkPokemon.DataSource = pokeDex;
             stages.Add("Any");
-            stages.Add("1");
-            stages.Add("2");
-            stages.Add("3");
+            stages.Add("Only 1s");
+            stages.Add("Only 2s");
+            stages.Add("Only 3s");
+            stages.Add("1s & 2s");
+            stages.Add("1s & 3s");
+            stages.Add("2s & 3s");
             pkStageAllowed.DataSource = stages;
         }
 
@@ -355,7 +358,41 @@ namespace GenesisDex
         {
             if (pkStageAllowed.Text != "Any")
             {
-                int sA = Convert.ToInt32(pkStageAllowed.Text);
+                List < string > stageAllow = new List<string>();
+                if (pkStageAllowed.Text == "Only 1s")
+                {
+                    stageAllow.Add("1 -");
+                    goto OnlyOne;
+                }
+                if (pkStageAllowed.Text == "Only 2s")
+                {
+                    stageAllow.Add("2 -");
+                    goto OnlyOne;
+                }
+                if (pkStageAllowed.Text == "Only 3s")
+                {
+                    stageAllow.Add("3 -");
+                    goto OnlyOne;
+                }
+                if (pkStageAllowed.Text == "1s & 2s")
+                {
+                    stageAllow.Add("1 -");
+                    stageAllow.Add("2 -");
+                    goto TwoStages;
+                }
+                if (pkStageAllowed.Text == "1s & 3s")
+                {
+                    stageAllow.Add("1 -");
+                    stageAllow.Add("3 -");
+                    goto TwoStages;
+                }
+                if (pkStageAllowed.Text == "2s & 3s")
+                {
+                    stageAllow.Add("2 -");
+                    stageAllow.Add("3 -");
+                    goto TwoStages;
+                }
+                OnlyOne:
                 for (var e = 0; e < pokeList.Count; e++)
                 {
                     string[] name = pokeList[e].id.Split().ToArray();
@@ -364,7 +401,7 @@ namespace GenesisDex
                     {
                         if (evoList[x].evo.Contains(name[0]))
                         {
-                            if (!evoList[x].evo.Contains(sA + " -"))
+                            if (!evoList[x].evo.Contains(stageAllow[0]))
                             {
                                 pokeList.RemoveAt(e);
                                 e -= 1;
@@ -373,6 +410,26 @@ namespace GenesisDex
                         }
                     }
                 }
+                return;
+                TwoStages:
+                for (var e = 0; e < pokeList.Count; e++)
+                {
+                    string[] name = pokeList[e].id.Split().ToArray();
+                    evoList = evoXML.createList(pokeList[e].number);
+                    for (var x = 0; x < evoList.Count; x++)
+                    {
+                        if (evoList[x].evo.Contains(name[0]))
+                        {
+                            if (!evoList[x].evo.Contains(stageAllow[0]) && !evoList[x].evo.Contains(stageAllow[1]))
+                            {
+                                pokeList.RemoveAt(e);
+                                e -= 1;
+                                break;
+                            }
+                        }
+                    }
+                }
+                return;
             }
             else
             {
