@@ -30445,9 +30445,10 @@
       <Skills>
         <skill id="0">Athl 5d6+2</skill>
         <skill id="1">Acro 3d6+1</skill>
-        <skill id="2">Combat 3d6+2Stealth 3d6+2</skill>
-        <skill id="3">Percep 3d6+2</skill>
-        <skill id="4">Focus 4d6+2</skill>
+        <skill id="2">Combat 3d6+2</skill>
+        <skill id="3">Stealth 3d6+2</skill>
+        <skill id="4">Percep 3d6+2</skill>
+        <skill id="5">Focus 4d6+2</skill>
       </Skills>
       <Capability>
         <cap id="0">Overland 6</cap>

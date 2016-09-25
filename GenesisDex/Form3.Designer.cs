@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormScan));
-            this.pbOverlay = new System.Windows.Forms.PictureBox();
             this.infoBack = new System.Windows.Forms.PictureBox();
             this.infoForward = new System.Windows.Forms.PictureBox();
             this.rtbInfo1 = new System.Windows.Forms.RichTextBox();
@@ -64,13 +63,16 @@
             this.tbPageCount = new System.Windows.Forms.RichTextBox();
             this.pbGotoPage = new System.Windows.Forms.PictureBox();
             this.pkGoto = new System.Windows.Forms.NumericUpDown();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pbLoot = new System.Windows.Forms.PictureBox();
             this.nudPlayerLevel = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
             this.pbPokeRefresh = new System.Windows.Forms.PictureBox();
             this.pbLootRefresh = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbOverlay)).BeginInit();
+            this.pkDamage = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbOverlay = new System.Windows.Forms.PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.pbDealDamage = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.infoBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoForward)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
@@ -85,23 +87,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbPokeLeft)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbGotoPage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkGoto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLoot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPlayerLevel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokeRefresh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLootRefresh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pkDamage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbOverlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDealDamage)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pbOverlay
-            // 
-            this.pbOverlay.BackColor = System.Drawing.Color.Transparent;
-            this.pbOverlay.BackgroundImage = global::GenesisDex.Properties.Resources.MainMenuOverlay1;
-            this.pbOverlay.Location = new System.Drawing.Point(17, 108);
-            this.pbOverlay.Name = "pbOverlay";
-            this.pbOverlay.Size = new System.Drawing.Size(371, 53);
-            this.pbOverlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbOverlay.TabIndex = 43;
-            this.pbOverlay.TabStop = false;
             // 
             // infoBack
             // 
@@ -501,7 +495,7 @@
             this.tbPokeCount.BackColor = System.Drawing.Color.Black;
             this.tbPokeCount.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPokeCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.tbPokeCount.Location = new System.Drawing.Point(196, 323);
+            this.tbPokeCount.Location = new System.Drawing.Point(320, 75);
             this.tbPokeCount.Name = "tbPokeCount";
             this.tbPokeCount.ReadOnly = true;
             this.tbPokeCount.Size = new System.Drawing.Size(68, 25);
@@ -557,17 +551,6 @@
             0,
             0});
             this.pkGoto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pkGoto_KeyDown);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::GenesisDex.Properties.Resources.MainMenuOverlayBottom;
-            this.pictureBox1.Location = new System.Drawing.Point(15, 313);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(377, 57);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 77;
-            this.pictureBox1.TabStop = false;
             // 
             // pbLoot
             // 
@@ -647,6 +630,79 @@
             this.pbLootRefresh.MouseLeave += new System.EventHandler(this.pbLootRefresh_MouseLeave);
             this.pbLootRefresh.MouseHover += new System.EventHandler(this.pbLootRefresh_MouseHover);
             // 
+            // pkDamage
+            // 
+            this.pkDamage.BackColor = System.Drawing.Color.Black;
+            this.pkDamage.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pkDamage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.pkDamage.Location = new System.Drawing.Point(80, 324);
+            this.pkDamage.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.pkDamage.Minimum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            -2147483648});
+            this.pkDamage.Name = "pkDamage";
+            this.pkDamage.Size = new System.Drawing.Size(53, 24);
+            this.pkDamage.TabIndex = 83;
+            this.pkDamage.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.pkDamage.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pkDamage_KeyDown);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::GenesisDex.Properties.Resources.MainMenuOverlayBottom;
+            this.pictureBox1.Location = new System.Drawing.Point(15, 313);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(377, 57);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 77;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pbOverlay
+            // 
+            this.pbOverlay.BackColor = System.Drawing.Color.Transparent;
+            this.pbOverlay.BackgroundImage = global::GenesisDex.Properties.Resources.MainMenuOverlay1;
+            this.pbOverlay.Location = new System.Drawing.Point(17, 108);
+            this.pbOverlay.Name = "pbOverlay";
+            this.pbOverlay.Size = new System.Drawing.Size(371, 53);
+            this.pbOverlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbOverlay.TabIndex = 43;
+            this.pbOverlay.TabStop = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Silver;
+            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label10.Location = new System.Drawing.Point(244, 82);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(71, 15);
+            this.label10.TabIndex = 84;
+            this.label10.Text = "Current Page";
+            // 
+            // pbDealDamage
+            // 
+            this.pbDealDamage.BackColor = System.Drawing.Color.Transparent;
+            this.pbDealDamage.Image = global::GenesisDex.Properties.Resources.DealDamage;
+            this.pbDealDamage.Location = new System.Drawing.Point(139, 323);
+            this.pbDealDamage.Name = "pbDealDamage";
+            this.pbDealDamage.Size = new System.Drawing.Size(126, 26);
+            this.pbDealDamage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbDealDamage.TabIndex = 85;
+            this.pbDealDamage.TabStop = false;
+            this.pbDealDamage.Click += new System.EventHandler(this.pbDealDamage_Click);
+            this.pbDealDamage.MouseLeave += new System.EventHandler(this.pbDealDamage_MouseLeave);
+            this.pbDealDamage.MouseHover += new System.EventHandler(this.pbDealDamage_MouseHover);
+            // 
             // FormScan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -654,6 +710,9 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = global::GenesisDex.Properties.Resources.MainMenu;
             this.ClientSize = new System.Drawing.Size(822, 616);
+            this.Controls.Add(this.pbDealDamage);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.pkDamage);
             this.Controls.Add(this.pbLootRefresh);
             this.Controls.Add(this.pbPokeRefresh);
             this.Controls.Add(this.label9);
@@ -704,7 +763,6 @@
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormScan_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FormScan_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FormScan_MouseUp);
-            ((System.ComponentModel.ISupportInitialize)(this.pbOverlay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoForward)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
@@ -719,19 +777,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbPokeLeft)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbGotoPage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkGoto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLoot)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPlayerLevel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokeRefresh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLootRefresh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pkDamage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbOverlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDealDamage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pbOverlay;
         private System.Windows.Forms.PictureBox infoBack;
         private System.Windows.Forms.PictureBox infoForward;
         private System.Windows.Forms.RichTextBox rtbInfo1;
@@ -766,11 +825,15 @@
         private System.Windows.Forms.RichTextBox tbPageCount;
         private System.Windows.Forms.PictureBox pbGotoPage;
         private System.Windows.Forms.NumericUpDown pkGoto;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pbLoot;
         private System.Windows.Forms.NumericUpDown nudPlayerLevel;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pbPokeRefresh;
         private System.Windows.Forms.PictureBox pbLootRefresh;
+        private System.Windows.Forms.NumericUpDown pkDamage;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbOverlay;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.PictureBox pbDealDamage;
     }
 }

@@ -131,6 +131,12 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\GUI\DealDamage.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\GUI\DealDamageHover.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Data\GUI\AddPokemon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -71,6 +71,10 @@ namespace GenesisDex
         List<string> Gender = new List<string>();
         List<string> Stat = new List<string>();
         List<List<string>> AllStat = new List<List<string>>();
+        List<string> Cap = new List<string>();
+        List<List<string>> AllCap = new List<List<string>>();
+        List<decimal> MaxHealth = new List<decimal>();
+        List<decimal> CurrentHealth = new List<decimal>();
         List<string> Type = new List<string>();
         int Current = 0;
         int Amount = 0;
@@ -185,16 +189,18 @@ namespace GenesisDex
         {
             pokeList = new List<Pokemon>();
             pokeList = pokeXML.createList("Pokemon");
-            CheckHabitat();
-            CheckType();
-            CheckEvo();
-            if (!pkCanBeLegend.Checked)
+            if (pkPokemon.Text == "Any")
             {
-                GetLegend();
+                CheckHabitat();
+                CheckType();
+                CheckEvo();
+                if (!pkCanBeLegend.Checked)
+                {
+                    GetLegend();
+                }
             }
 
         }
-
 
         private void pbScanPokemon_Click(object sender, EventArgs e)
         {
@@ -213,30 +219,29 @@ namespace GenesisDex
             AllItems2.Clear();
             AllDesc1.Clear();
             AllDesc2.Clear();
+            AllStat.Clear();
             AllLevels.Clear();
+            AllCap.Clear();
             Info.Clear();
             Gender.Clear();
-            AllStat.Clear();
             Type.Clear();
+            MaxHealth.Clear();
+            CurrentHealth.Clear();
+            Current = 0;
             CreateScanList();
             Amount = Convert.ToInt32(pkAmount.Value);
             for (var z = 0; z < Amount; z++)
             {
-                IChooseYou = null;
-                Pokemon HeyYou = null;
-                Pokemon PokeBall = null;
-                Pokemon Final = null;
+                IChooseYou = new Pokemon();
+                Pokemon Final = new Pokemon();
                 pkGasp.Clear();
                 infoForward.Visible = true;
                 infoBack.Visible = true;
                 isShiny = false;
                 pkLevelMin_ValueChanged(this, new EventArgs());
                 pkLevelMax_ValueChanged(this, new EventArgs());
-                HeyYou = GetPokemon();
-                if (HeyYou == null) { return; }
+                Final = GetPokemon();
                 int Level = GetLevel();
-                PokeBall = GetGender(HeyYou); if (PokeBall == null) { return; }
-                Final = PokeBall;
                 pkGasp.Text += "It is a " + Final.id;
                 if (pkCanBeShiny.Checked == true)
                 {
@@ -247,18 +252,18 @@ namespace GenesisDex
                         isShiny = true;
                         GetShiny(Final);
                         Type.Add(newShiny);
-                        AllImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + PokeBall.number + ".gif"));
+                        AllImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + Final.number + ".gif"));
                     }
                     else
                     {
-                        AllImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + PokeBall.number + ".gif"));
+                        AllImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + Final.number + ".gif"));
                         Type.Add(Final.type);
                     }
 
                 }
                 else
                 {
-                        AllImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + PokeBall.number + ".gif"));
+                        AllImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + Final.number + ".gif"));
                         Type.Add(Final.type);
                 }
                 if (pkHasItem.Checked == true)
@@ -276,17 +281,21 @@ namespace GenesisDex
                 AllPokemon.Add(IChooseYou);
                 TrueLevel = Level;
                 AllLevels.Add(TrueLevel);
+                GetGender(AllPokemon[Current]);
                 GetMoves();
                 AllMoves.Add(moves);
                 GetAbilities();
                 AllAbilities.Add(ability);
                 GetSkills();
                 AllSkills.Add(skill);
-                GetStats(Final, TrueLevel+10);
-                GetNature();
+                GetStats(AllPokemon[Current], TrueLevel+10);
                 AllStat.Add(Stat);
+                GetHealth();
+                GetCap(AllPokemon[Current]);
+                AllCap.Add(Cap);
                 string[] info = pkGasp.Lines;
                 Info.Add(info);
+                Current++;
             }
             Current = 0;
             tbPokeCount.Text = (Current + 1).ToString() + "/" + Amount.ToString();
@@ -456,51 +465,13 @@ namespace GenesisDex
             }
         }
 
-        private void GetNature()
-        {
-            natureList = natureXML.createList("Natures", "Nature");
-            int i = rng.Next(0, natureList.Count - 1);
-            int hp;
-            int atk;
-            int def;
-            int spatk;
-            int spdef;
-            int spd;
-            hp = Convert.ToInt32(Stat[0]); 
-            atk = Convert.ToInt32(Stat[1]);
-            def = Convert.ToInt32(Stat[2]); 
-            spatk = Convert.ToInt32(Stat[3]);
-            spdef = Convert.ToInt32(Stat[4]); 
-            spd = Convert.ToInt32(Stat[5]);
-            if (natureList[i].up == "hp") { hp++; }
-            else if (natureList[i].up == "atk") { atk += 2; }
-            else if (natureList[i].up == "def") { def += 2; }
-            else if (natureList[i].up == "spatk") { spatk += 2; }
-            else if (natureList[i].up == "spdef") { spdef += 2; }
-            else if (natureList[i].up == "spd") { spd += 2; }
-            if (natureList[i].down == "hp") { hp--; }
-            else if (natureList[i].down == "atk") { atk -= 2; }
-            else if (natureList[i].down == "def") { def -= 2; }
-            else if (natureList[i].down == "spatk") { spatk -= 2; }
-            else if (natureList[i].down == "spdef") { spdef -= 2; }
-            else if (natureList[i].down == "spd") { spd -= 2; }
-            Stat[0] = hp.ToString();
-            Stat[1] = atk.ToString();
-            Stat[2] = def.ToString();
-            Stat[3] = spatk.ToString();
-            Stat[4] = spdef.ToString();
-            Stat[5] = spd.ToString();
-            AllNatures.Add(natureList[i].id);
-            return;
-        }
-
         private Pokemon GetPokemon()
         {
             int i;
             if (pkPokemon.Text != "Any")
             {
-                i = pokeList.FindIndex(x => x.id == pkPokemon.Text);
-                return pokeList[i];
+                Pokemon find = pokeList.Find(x => x.id == pkPokemon.Text);
+                return find;
             }
             else
             {
@@ -515,6 +486,16 @@ namespace GenesisDex
             int max = Convert.ToInt32(pkLevelMax.Value + 1);
             int i = rng.Next(min, max);
             return i;
+        }
+
+        private void GetCap(Pokemon poke)
+        {
+            Cap = new List<string>();
+            capList = capXML.createList(poke.number);
+            foreach (Capability cap in capList)
+            {
+                Cap.Add(cap.cap);
+            }
         }
 
         private void SetImage()
@@ -547,6 +528,7 @@ namespace GenesisDex
             try { spdef = Convert.ToInt32(poke.spdef); } catch { MessageBox.Show(poke.id + "'s spdef is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); spdef = 1; return; }
             try { spd = Convert.ToInt32(poke.spd); } catch { MessageBox.Show(poke.id + "'s spd is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); spd = 1; return; }
             stats = getstats.createList(hp, atk, def, spatk, spdef, spd);
+            stats = GetNature(stats);
             SortStats(stats);
 
             for (var l = level; l > 0; l--)
@@ -584,7 +566,44 @@ namespace GenesisDex
                 if (stats[z].id == "spd") { Stat.Add(stats[z].stat.ToString()); }
             }
             return;
+        }
 
+        private List<Stat> GetNature(List<Stat> stats)
+        {
+            natureList = natureXML.createList("Natures", "Nature");
+            int i = rng.Next(0, natureList.Count - 1);
+            int hp;
+            int atk;
+            int def;
+            int spatk;
+            int spdef;
+            int spd;
+            hp = Convert.ToInt32(stats[0].stat);
+            atk = Convert.ToInt32(stats[1].stat);
+            def = Convert.ToInt32(stats[2].stat);
+            spatk = Convert.ToInt32(stats[3].stat);
+            spdef = Convert.ToInt32(stats[4].stat);
+            spd = Convert.ToInt32(stats[5].stat);
+            if (natureList[i].up == "hp") { hp++; }
+            else if (natureList[i].up == "atk") { atk += 2; }
+            else if (natureList[i].up == "def") { def += 2; }
+            else if (natureList[i].up == "spatk") { spatk += 2; }
+            else if (natureList[i].up == "spdef") { spdef += 2; }
+            else if (natureList[i].up == "spd") { spd += 2; }
+            if (natureList[i].down == "hp") { hp--; }
+            else if (natureList[i].down == "atk") { atk -= 2; }
+            else if (natureList[i].down == "def") { def -= 2; }
+            else if (natureList[i].down == "spatk") { spatk -= 2; }
+            else if (natureList[i].down == "spdef") { spdef -= 2; }
+            else if (natureList[i].down == "spd") { spd -= 2; }
+            stats[0].stat = hp;
+            stats[1].stat = atk;
+            stats[2].stat = def;
+            stats[3].stat = spatk;
+            stats[4].stat = spdef;
+            stats[5].stat = spd;
+            AllNatures.Add(natureList[i].id);
+            return stats;
         }
 
         private void SortStats(List<Stat> stats)
@@ -605,7 +624,7 @@ namespace GenesisDex
 
         private Pokemon GetGender(Pokemon poke)
         {
-            if (poke.gender == "Genderless"|| poke.gender == "No Gender"||poke.gender == "None")
+            if (poke.gender == "Genderless"|| poke.gender == "No Gender"||poke.gender == "None" || poke.gender == "Hermaphrodite")
             {
                 Gender.Add("No Gender");
                 return poke;
@@ -656,30 +675,36 @@ namespace GenesisDex
         private void WriteInfo()
         {
             pkItem.Visible = false;
-            rtbInfo1.Text = "Number: " + AllPokemon[Current].number + Environment.NewLine +
-                "Name: " + AllPokemon[Current].id + Environment.NewLine +
+            rtbInfo1.Text ="Name: " + AllPokemon[Current].id + Environment.NewLine +
                 "Type: " + Type[Current] + Environment.NewLine +
-                Environment.NewLine +
                 "Level: " + AllLevels[Current] + Environment.NewLine +
-                "Nature: " + AllNatures[Current] + Environment.NewLine +
                 Environment.NewLine +
                 "Stats:" + Environment.NewLine +
-                "HP:\t\t" + AllStat[Current][0] + Environment.NewLine +
-                "ATK:\t\t" + AllStat[Current][1] + Environment.NewLine +
-                "DEF:\t\t" + AllStat[Current][2] + Environment.NewLine +
-                "SPATK:\t" + AllStat[Current][3] + Environment.NewLine +
-                "SPDEF:\t" + AllStat[Current][4] + Environment.NewLine +
-                "SPD:\t\t" + AllStat[Current][5] + Environment.NewLine +
+                "Current Health: " + CurrentHealth[Current] + Environment.NewLine +
+                "Max Health:\t   " + MaxHealth[Current] + Environment.NewLine +
+                "HP:\t\t   " + AllStat[Current][0] + Environment.NewLine +
+                "ATK:\t\t   " + AllStat[Current][1] + Environment.NewLine +
+                "DEF:\t\t   " + AllStat[Current][2] + Environment.NewLine + 
+                "SPATK:\t   " + AllStat[Current][3] + Environment.NewLine +
+                "SPDEF:\t   " + AllStat[Current][4] + Environment.NewLine + 
+                "SPD:\t\t   " + AllStat[Current][5] + Environment.NewLine +
                 Environment.NewLine +
-                "Gender: " + Gender[Current] + Environment.NewLine +
-                "Size: " + AllPokemon[Current].size + Environment.NewLine +
-                "Weight: " + AllPokemon[Current].weight;
+                "Capabilities:" + Environment.NewLine;
+            foreach (string cap in AllCap[Current])
+            {
+                rtbInfo1.Text += cap + Environment.NewLine;
+            }
+
         }
 
         private void WriteMoves()
         {
             pkItem.Visible = false;
-            rtbInfo1.Text = ("Moves:" + Environment.NewLine);
+            rtbInfo1.Text = "Gender: " + Gender[Current] + Environment.NewLine +
+                "Nature: " + AllNatures[Current] + Environment.NewLine +
+                "Size: " + AllPokemon[Current].size + Environment.NewLine +
+                "Weight: " + AllPokemon[Current].weight + Environment.NewLine;
+            rtbInfo1.Text += (Environment.NewLine + "Moves:" + Environment.NewLine);
             for (var w = 0; w < AllMoves[Current].Count; w++)
             {
                 rtbInfo1.Text += "-" + AllMoves[Current][w] + Environment.NewLine;
@@ -689,10 +714,10 @@ namespace GenesisDex
             {
                 rtbInfo1.Text += "-" + AllAbilities[Current][a] + Environment.NewLine;
             }
-            rtbInfo1.Text += Environment.NewLine + "Skills:" + Environment.NewLine;
-            for (var s = 0; s < AllSkills[Current].Count; s++)
+            rtbInfo1.Text += Environment.NewLine + "Skills:";
+            for (var s = 0; s < AllSkills[Current].Count; s += 2)
             {
-                rtbInfo1.Text += "-" + AllSkills[Current][s] + Environment.NewLine;
+                rtbInfo1.Text += Environment.NewLine + "-" + AllSkills[Current][s] + "\t-" + AllSkills[Current][s + 1];
             }
         }
 
@@ -717,6 +742,7 @@ namespace GenesisDex
         private void WriteLoot()
         {
             tbPageCount.Text = "----";
+            pkItem.Visible = false;
             rtbInfo1.Clear();
             for (int x = 0; x < AllDesc3.Count; x++)
             {
@@ -770,6 +796,13 @@ namespace GenesisDex
                 i = rng.Next(0, abiList.Count);
                 ability.Add(abiList[i].highability);
             }
+        }
+
+        private void GetHealth()
+        {
+            int health = (Convert.ToInt32(Stat[0]) * 3) + TrueLevel + 10;
+            MaxHealth.Add(health);
+            CurrentHealth.Add(health);
         }
 
         private string SkillUp(int i)
@@ -1201,6 +1234,36 @@ namespace GenesisDex
         private void pbLootRefresh_MouseLeave(object sender, EventArgs e)
         {
             pbLootRefresh.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\LootView.png");
+        }
+
+        private void pkDamage_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                pbDealDamage_Click(this, new EventArgs());
+            }
+        }
+
+        private void pbDealDamage_Click(object sender, EventArgs e)
+        {
+            if (hasScanned)
+            {
+                if ((CurrentHealth[Current] - pkDamage.Value) > MaxHealth[Current])
+                    CurrentHealth[Current] = MaxHealth[Current];
+                else
+                    CurrentHealth[Current] -= pkDamage.Value;
+                UpdatePage();
+            }
+        }
+
+        private void pbDealDamage_MouseHover(object sender, EventArgs e)
+        {
+            pbDealDamage.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\DealDamageHover.png");
+        }
+
+        private void pbDealDamage_MouseLeave(object sender, EventArgs e)
+        {
+            pbDealDamage.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\DealDamage.png");
         }
     }
 }
