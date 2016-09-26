@@ -1265,5 +1265,37 @@ namespace GenesisDex
         {
             pbDealDamage.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\DealDamage.png");
         }
+
+        private void CheckedState(CheckBox cb)
+        {
+            if (cb.Checked)
+                cb.Checked = false;
+            else
+                cb.Checked = true;
+        }
+
+        private void pkHasItem_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckedState(pkHasItem);
+            }
+        }
+
+        private void pkCanBeShiny_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckedState(pkCanBeShiny);
+            }
+        }
+
+        private void pkCanBeLegend_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckedState(pkCanBeLegend);
+            }
+        }
     }
 }

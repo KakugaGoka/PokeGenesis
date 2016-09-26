@@ -516,5 +516,75 @@ namespace GenesisDex
                 CheckedState(cbXY);
             }
         }
+
+        private void tbNumber_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbName_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbHP_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbATK_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbDEF_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbSPATK_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbSPDEF_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbSPD_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbType_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbAbi1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbAbi2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbAbi3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbAbi4_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbAbi5_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

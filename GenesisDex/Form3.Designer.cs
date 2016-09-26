@@ -326,6 +326,7 @@
             this.pkHasItem.TabIndex = 6;
             this.pkHasItem.Text = "Generate Items?";
             this.pkHasItem.UseVisualStyleBackColor = false;
+            this.pkHasItem.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pkHasItem_KeyDown);
             // 
             // pkCanBeShiny
             // 
@@ -340,6 +341,7 @@
             this.pkCanBeShiny.TabIndex = 7;
             this.pkCanBeShiny.Text = "Generate Shiny?";
             this.pkCanBeShiny.UseVisualStyleBackColor = false;
+            this.pkCanBeShiny.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pkCanBeShiny_KeyDown);
             // 
             // pkItem
             // 
@@ -413,6 +415,7 @@
             this.pkCanBeLegend.TabIndex = 8;
             this.pkCanBeLegend.Text = "Include Legendaries?";
             this.pkCanBeLegend.UseVisualStyleBackColor = false;
+            this.pkCanBeLegend.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pkCanBeLegend_KeyDown);
             // 
             // pkStageAllowed
             // 

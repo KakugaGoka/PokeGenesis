@@ -72,7 +72,6 @@
             this.tbAbi4 = new System.Windows.Forms.TextBox();
             this.tbAbi3 = new System.Windows.Forms.TextBox();
             this.tbAbi2 = new System.Windows.Forms.TextBox();
-            this.tbAbi1 = new System.Windows.Forms.TextBox();
             this.cbMega = new System.Windows.Forms.CheckBox();
             this.cbXY = new System.Windows.Forms.CheckBox();
             this.tbMegaHP = new System.Windows.Forms.TextBox();
@@ -113,7 +112,6 @@
             this.label54 = new System.Windows.Forms.Label();
             this.gbMega = new System.Windows.Forms.GroupBox();
             this.gbMega2 = new System.Windows.Forms.GroupBox();
-            this.label44 = new System.Windows.Forms.Label();
             this.ttPokemon = new System.Windows.Forms.ToolTip(this.components);
             this.gbRemove = new System.Windows.Forms.GroupBox();
             this.btRemove = new System.Windows.Forms.Button();
@@ -133,6 +131,7 @@
             this.tbNumber = new System.Windows.Forms.TextBox();
             this.listMoves = new System.Windows.Forms.RichTextBox();
             this.label18 = new System.Windows.Forms.Label();
+            this.tbAbi1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             this.gbMega.SuspendLayout();
             this.gbMega2.SuspendLayout();
@@ -347,6 +346,8 @@
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(204, 20);
             this.tbName.TabIndex = 3;
+            this.ttPokemon.SetToolTip(this.tbName, "The name of the Pokemon...");
+            this.tbName.Enter += new System.EventHandler(this.tbName_Enter);
             // 
             // tbType
             // 
@@ -354,6 +355,9 @@
             this.tbType.Name = "tbType";
             this.tbType.Size = new System.Drawing.Size(205, 20);
             this.tbType.TabIndex = 10;
+            this.ttPokemon.SetToolTip(this.tbType, "The type of the pokemon. (ex: \"Type\" or \"Type1 / Type2\")\r\n(Please enter like this" +
+        " as types are used in generation)");
+            this.tbType.Enter += new System.EventHandler(this.tbType_Enter);
             // 
             // tbHeight
             // 
@@ -361,6 +365,7 @@
             this.tbHeight.Name = "tbHeight";
             this.tbHeight.Size = new System.Drawing.Size(205, 20);
             this.tbHeight.TabIndex = 22;
+            this.ttPokemon.SetToolTip(this.tbHeight, "Height in Feet and Inches / Height in Meters (Size)");
             // 
             // tbHatch
             // 
@@ -368,6 +373,7 @@
             this.tbHatch.Name = "tbHatch";
             this.tbHatch.Size = new System.Drawing.Size(205, 20);
             this.tbHatch.TabIndex = 26;
+            this.ttPokemon.SetToolTip(this.tbHatch, "Hatch rate in days. (If none, then leave blank)");
             // 
             // tbEgg
             // 
@@ -375,6 +381,7 @@
             this.tbEgg.Name = "tbEgg";
             this.tbEgg.Size = new System.Drawing.Size(205, 20);
             this.tbEgg.TabIndex = 25;
+            this.ttPokemon.SetToolTip(this.tbEgg, "The egggroup of this pokemon");
             // 
             // tbGender
             // 
@@ -382,6 +389,8 @@
             this.tbGender.Name = "tbGender";
             this.tbGender.Size = new System.Drawing.Size(205, 20);
             this.tbGender.TabIndex = 24;
+            this.ttPokemon.SetToolTip(this.tbGender, "##% M / ##% F\r\nor\r\nGenderless, None, No Gender, or Hermaphrodite are excepted.\r\n(" +
+        "Please enter like this as gender is used in generation)");
             // 
             // tbDiet
             // 
@@ -389,6 +398,7 @@
             this.tbDiet.Name = "tbDiet";
             this.tbDiet.Size = new System.Drawing.Size(205, 20);
             this.tbDiet.TabIndex = 27;
+            this.ttPokemon.SetToolTip(this.tbDiet, "Ex: Stuffavore");
             // 
             // tbHabitat
             // 
@@ -396,6 +406,8 @@
             this.tbHabitat.Name = "tbHabitat";
             this.tbHabitat.Size = new System.Drawing.Size(205, 20);
             this.tbHabitat.TabIndex = 28;
+            this.ttPokemon.SetToolTip(this.tbHabitat, "The habitats this pokemon lives in. (Is used in generation so please eneter it co" +
+        "rrectly)");
             // 
             // tbWeight
             // 
@@ -403,6 +415,7 @@
             this.tbWeight.Name = "tbWeight";
             this.tbWeight.Size = new System.Drawing.Size(205, 20);
             this.tbWeight.TabIndex = 23;
+            this.ttPokemon.SetToolTip(this.tbWeight, "Weight in pounds / weight in kilograms (WeightClass)");
             // 
             // tbSPD
             // 
@@ -410,6 +423,8 @@
             this.tbSPD.Name = "tbSPD";
             this.tbSPD.Size = new System.Drawing.Size(75, 20);
             this.tbSPD.TabIndex = 9;
+            this.ttPokemon.SetToolTip(this.tbSPD, "The speed stat. (ex: 5)");
+            this.tbSPD.Enter += new System.EventHandler(this.tbSPD_Enter);
             // 
             // tbSPDEF
             // 
@@ -417,6 +432,8 @@
             this.tbSPDEF.Name = "tbSPDEF";
             this.tbSPDEF.Size = new System.Drawing.Size(75, 20);
             this.tbSPDEF.TabIndex = 8;
+            this.ttPokemon.SetToolTip(this.tbSPDEF, "The special defense stat. (ex: 5)");
+            this.tbSPDEF.Enter += new System.EventHandler(this.tbSPDEF_Enter);
             // 
             // tbSPATK
             // 
@@ -424,6 +441,8 @@
             this.tbSPATK.Name = "tbSPATK";
             this.tbSPATK.Size = new System.Drawing.Size(75, 20);
             this.tbSPATK.TabIndex = 7;
+            this.ttPokemon.SetToolTip(this.tbSPATK, "The special attack stat. (ex: 5)");
+            this.tbSPATK.Enter += new System.EventHandler(this.tbSPATK_Enter);
             // 
             // tbDEF
             // 
@@ -431,6 +450,8 @@
             this.tbDEF.Name = "tbDEF";
             this.tbDEF.Size = new System.Drawing.Size(75, 20);
             this.tbDEF.TabIndex = 6;
+            this.ttPokemon.SetToolTip(this.tbDEF, "The defense stat. (ex: 5)");
+            this.tbDEF.Enter += new System.EventHandler(this.tbDEF_Enter);
             // 
             // tbATK
             // 
@@ -438,6 +459,8 @@
             this.tbATK.Name = "tbATK";
             this.tbATK.Size = new System.Drawing.Size(75, 20);
             this.tbATK.TabIndex = 5;
+            this.ttPokemon.SetToolTip(this.tbATK, "The attack stat. (ex: 5)");
+            this.tbATK.Enter += new System.EventHandler(this.tbATK_Enter);
             // 
             // tbHP
             // 
@@ -445,6 +468,8 @@
             this.tbHP.Name = "tbHP";
             this.tbHP.Size = new System.Drawing.Size(75, 20);
             this.tbHP.TabIndex = 4;
+            this.ttPokemon.SetToolTip(this.tbHP, "The hit point stat. (ex: 5)");
+            this.tbHP.Enter += new System.EventHandler(this.tbHP_Enter);
             // 
             // label33
             // 
@@ -461,6 +486,8 @@
             this.tbAbi5.Name = "tbAbi5";
             this.tbAbi5.Size = new System.Drawing.Size(124, 20);
             this.tbAbi5.TabIndex = 20;
+            this.ttPokemon.SetToolTip(this.tbAbi5, "Ability name");
+            this.tbAbi5.Enter += new System.EventHandler(this.tbAbi5_Enter);
             // 
             // tbAbi4
             // 
@@ -468,6 +495,8 @@
             this.tbAbi4.Name = "tbAbi4";
             this.tbAbi4.Size = new System.Drawing.Size(124, 20);
             this.tbAbi4.TabIndex = 18;
+            this.ttPokemon.SetToolTip(this.tbAbi4, "Ability name");
+            this.tbAbi4.Enter += new System.EventHandler(this.tbAbi4_Enter);
             // 
             // tbAbi3
             // 
@@ -475,6 +504,8 @@
             this.tbAbi3.Name = "tbAbi3";
             this.tbAbi3.Size = new System.Drawing.Size(124, 20);
             this.tbAbi3.TabIndex = 16;
+            this.ttPokemon.SetToolTip(this.tbAbi3, "Ability name");
+            this.tbAbi3.Enter += new System.EventHandler(this.tbAbi3_Enter);
             // 
             // tbAbi2
             // 
@@ -482,13 +513,8 @@
             this.tbAbi2.Name = "tbAbi2";
             this.tbAbi2.Size = new System.Drawing.Size(124, 20);
             this.tbAbi2.TabIndex = 14;
-            // 
-            // tbAbi1
-            // 
-            this.tbAbi1.Location = new System.Drawing.Point(149, 249);
-            this.tbAbi1.Name = "tbAbi1";
-            this.tbAbi1.Size = new System.Drawing.Size(124, 20);
-            this.tbAbi1.TabIndex = 12;
+            this.ttPokemon.SetToolTip(this.tbAbi2, "Ability name");
+            this.tbAbi2.Enter += new System.EventHandler(this.tbAbi2_Enter);
             // 
             // cbMega
             // 
@@ -520,6 +546,7 @@
             this.tbMegaHP.Name = "tbMegaHP";
             this.tbMegaHP.Size = new System.Drawing.Size(75, 20);
             this.tbMegaHP.TabIndex = 36;
+            this.ttPokemon.SetToolTip(this.tbMegaHP, "Mega Stat addition (ex: +5)");
             // 
             // tbMegaATK
             // 
@@ -527,6 +554,7 @@
             this.tbMegaATK.Name = "tbMegaATK";
             this.tbMegaATK.Size = new System.Drawing.Size(75, 20);
             this.tbMegaATK.TabIndex = 37;
+            this.ttPokemon.SetToolTip(this.tbMegaATK, "Mega Stat addition (ex: +5)");
             // 
             // tbMegaDEF
             // 
@@ -534,6 +562,7 @@
             this.tbMegaDEF.Name = "tbMegaDEF";
             this.tbMegaDEF.Size = new System.Drawing.Size(75, 20);
             this.tbMegaDEF.TabIndex = 38;
+            this.ttPokemon.SetToolTip(this.tbMegaDEF, "Mega Stat addition (ex: +5)");
             // 
             // tbMegaSPATK
             // 
@@ -541,6 +570,7 @@
             this.tbMegaSPATK.Name = "tbMegaSPATK";
             this.tbMegaSPATK.Size = new System.Drawing.Size(75, 20);
             this.tbMegaSPATK.TabIndex = 39;
+            this.ttPokemon.SetToolTip(this.tbMegaSPATK, "Mega Stat addition (ex: +5)");
             // 
             // tbMegaSPDEF
             // 
@@ -548,6 +578,7 @@
             this.tbMegaSPDEF.Name = "tbMegaSPDEF";
             this.tbMegaSPDEF.Size = new System.Drawing.Size(75, 20);
             this.tbMegaSPDEF.TabIndex = 40;
+            this.ttPokemon.SetToolTip(this.tbMegaSPDEF, "Mega Stat addition (ex: +5)");
             // 
             // tbMegaSPD
             // 
@@ -555,6 +586,7 @@
             this.tbMegaSPD.Name = "tbMegaSPD";
             this.tbMegaSPD.Size = new System.Drawing.Size(75, 20);
             this.tbMegaSPD.TabIndex = 41;
+            this.ttPokemon.SetToolTip(this.tbMegaSPD, "Mega Stat addition (ex: +5)");
             // 
             // label35
             // 
@@ -616,6 +648,7 @@
             this.tbMegaType.Name = "tbMegaType";
             this.tbMegaType.Size = new System.Drawing.Size(221, 20);
             this.tbMegaType.TabIndex = 35;
+            this.ttPokemon.SetToolTip(this.tbMegaType, "The type of the pokemon after becoming a Mega");
             // 
             // tbMegaName
             // 
@@ -623,6 +656,7 @@
             this.tbMegaName.Name = "tbMegaName";
             this.tbMegaName.Size = new System.Drawing.Size(221, 20);
             this.tbMegaName.TabIndex = 34;
+            this.ttPokemon.SetToolTip(this.tbMegaName, "Name of the Mega Form (ex: Mega Mew or Mega MewTwo X)");
             // 
             // label41
             // 
@@ -648,6 +682,7 @@
             this.tbMegaAbility.Name = "tbMegaAbility";
             this.tbMegaAbility.Size = new System.Drawing.Size(205, 20);
             this.tbMegaAbility.TabIndex = 42;
+            this.ttPokemon.SetToolTip(this.tbMegaAbility, "The Mega Ability gained on becoming Mega");
             // 
             // label43
             // 
@@ -664,6 +699,7 @@
             this.tbMega2Ability.Name = "tbMega2Ability";
             this.tbMega2Ability.Size = new System.Drawing.Size(205, 20);
             this.tbMega2Ability.TabIndex = 51;
+            this.ttPokemon.SetToolTip(this.tbMega2Ability, "The Mega Ability gained on becoming Mega");
             // 
             // label46
             // 
@@ -680,6 +716,7 @@
             this.tbMega2Type.Name = "tbMega2Type";
             this.tbMega2Type.Size = new System.Drawing.Size(221, 20);
             this.tbMega2Type.TabIndex = 44;
+            this.ttPokemon.SetToolTip(this.tbMega2Type, "Name of the Mega Form (ex: Mega Mew or Mega MewTwo X)");
             // 
             // tbMega2Name
             // 
@@ -687,6 +724,7 @@
             this.tbMega2Name.Name = "tbMega2Name";
             this.tbMega2Name.Size = new System.Drawing.Size(221, 20);
             this.tbMega2Name.TabIndex = 43;
+            this.ttPokemon.SetToolTip(this.tbMega2Name, "Name of the Mega Form (ex: Mega MewTwo Y)");
             // 
             // label47
             // 
@@ -712,6 +750,7 @@
             this.tbMega2HP.Name = "tbMega2HP";
             this.tbMega2HP.Size = new System.Drawing.Size(75, 20);
             this.tbMega2HP.TabIndex = 45;
+            this.ttPokemon.SetToolTip(this.tbMega2HP, "Mega Stat addition (ex: +5)");
             // 
             // tbMega2ATK
             // 
@@ -719,6 +758,7 @@
             this.tbMega2ATK.Name = "tbMega2ATK";
             this.tbMega2ATK.Size = new System.Drawing.Size(75, 20);
             this.tbMega2ATK.TabIndex = 46;
+            this.ttPokemon.SetToolTip(this.tbMega2ATK, "Mega Stat addition (ex: +5)");
             // 
             // tbMega2DEF
             // 
@@ -726,6 +766,7 @@
             this.tbMega2DEF.Name = "tbMega2DEF";
             this.tbMega2DEF.Size = new System.Drawing.Size(75, 20);
             this.tbMega2DEF.TabIndex = 47;
+            this.ttPokemon.SetToolTip(this.tbMega2DEF, "Mega Stat addition (ex: +5)");
             // 
             // tbMega2SPATK
             // 
@@ -733,6 +774,7 @@
             this.tbMega2SPATK.Name = "tbMega2SPATK";
             this.tbMega2SPATK.Size = new System.Drawing.Size(75, 20);
             this.tbMega2SPATK.TabIndex = 48;
+            this.ttPokemon.SetToolTip(this.tbMega2SPATK, "Mega Stat addition (ex: +5)");
             // 
             // tbMega2SPDEF
             // 
@@ -740,6 +782,7 @@
             this.tbMega2SPDEF.Name = "tbMega2SPDEF";
             this.tbMega2SPDEF.Size = new System.Drawing.Size(75, 20);
             this.tbMega2SPDEF.TabIndex = 49;
+            this.ttPokemon.SetToolTip(this.tbMega2SPDEF, "Mega Stat addition (ex: +5)");
             // 
             // tbMega2SPD
             // 
@@ -747,6 +790,7 @@
             this.tbMega2SPD.Name = "tbMega2SPD";
             this.tbMega2SPD.Size = new System.Drawing.Size(75, 20);
             this.tbMega2SPD.TabIndex = 50;
+            this.ttPokemon.SetToolTip(this.tbMega2SPD, "Mega Stat addition (ex: +5)");
             // 
             // label49
             // 
@@ -856,19 +900,6 @@
             this.gbMega2.TabStop = false;
             this.gbMega2.Text = "Mega Y Info";
             // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label44.Location = new System.Drawing.Point(184, 61);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(15, 15);
-            this.label44.TabIndex = 131;
-            this.label44.Text = "?";
-            this.ttPokemon.SetToolTip(this.label44, "This number should be the name of your sprite image. \r\nIf it is not a valid image" +
-        " found in the \'Data/Images/Pokemon\' \r\nor \'Data/Images/Shiny\' folders, then it wi" +
-        "ll become a MissingNo!");
-            // 
             // gbRemove
             // 
             this.gbRemove.Controls.Add(this.btRemove);
@@ -898,6 +929,7 @@
             this.tbRemove.Size = new System.Drawing.Size(221, 20);
             this.tbRemove.TabIndex = 150;
             this.tbRemove.TabStop = false;
+            this.ttPokemon.SetToolTip(this.tbRemove, "Name of the Pokemon you wish to remove.");
             this.tbRemove.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbRemove_KeyDown);
             // 
             // label45
@@ -924,7 +956,7 @@
             // cbLegend
             // 
             this.cbLegend.AutoSize = true;
-            this.cbLegend.Location = new System.Drawing.Point(211, 61);
+            this.cbLegend.Location = new System.Drawing.Point(183, 60);
             this.cbLegend.Name = "cbLegend";
             this.cbLegend.Size = new System.Drawing.Size(82, 17);
             this.cbLegend.TabIndex = 2;
@@ -979,6 +1011,8 @@
             this.listCap.Size = new System.Drawing.Size(205, 194);
             this.listCap.TabIndex = 29;
             this.listCap.Text = "";
+            this.ttPokemon.SetToolTip(this.listCap, "Cap1, Cap2, Cap3, Cap4\r\n(Please enter like this as capabilities are used in gener" +
+        "ation)");
             // 
             // listEvo
             // 
@@ -987,6 +1021,8 @@
             this.listEvo.Size = new System.Drawing.Size(205, 210);
             this.listEvo.TabIndex = 21;
             this.listEvo.Text = "";
+            this.ttPokemon.SetToolTip(this.listEvo, "1 - Basic\r\n2 - Stage 1\r\n3 - Stage 2\r\n(Please enter like this as evolutions are us" +
+        "ed in generation)");
             // 
             // listSkills
             // 
@@ -995,6 +1031,8 @@
             this.listSkills.Size = new System.Drawing.Size(205, 136);
             this.listSkills.TabIndex = 30;
             this.listSkills.Text = "";
+            this.ttPokemon.SetToolTip(this.listSkills, "Skill 1d6, Skill 2d6, Skill 3d6, Skill 4d6, Skill 5d6, Skill 6d6\r\n(Please enter l" +
+        "ike this as skills are used in generation)");
             // 
             // label1
             // 
@@ -1007,10 +1045,13 @@
             // 
             // tbNumber
             // 
-            this.tbNumber.Location = new System.Drawing.Point(68, 58);
+            this.tbNumber.Location = new System.Drawing.Point(68, 57);
             this.tbNumber.Name = "tbNumber";
             this.tbNumber.Size = new System.Drawing.Size(109, 20);
             this.tbNumber.TabIndex = 1;
+            this.ttPokemon.SetToolTip(this.tbNumber, "The 3 digit Pokedex number. (This should also be the name of the image file relat" +
+        "ed to the pokemon you want to show.)");
+            this.tbNumber.Enter += new System.EventHandler(this.tbNumber_Enter);
             // 
             // listMoves
             // 
@@ -1019,6 +1060,8 @@
             this.listMoves.Size = new System.Drawing.Size(205, 448);
             this.listMoves.TabIndex = 31;
             this.listMoves.Text = "";
+            this.ttPokemon.SetToolTip(this.listMoves, "1 - Move\r\n4 - Move\r\n7 - Move\r\n(Please enter like this as the level is used in gen" +
+        "eration)");
             // 
             // label18
             // 
@@ -1029,6 +1072,15 @@
             this.label18.Size = new System.Drawing.Size(223, 20);
             this.label18.TabIndex = 137;
             this.label18.Text = "Add Pokemon to the Pokedex!";
+            // 
+            // tbAbi1
+            // 
+            this.tbAbi1.Location = new System.Drawing.Point(149, 249);
+            this.tbAbi1.Name = "tbAbi1";
+            this.tbAbi1.Size = new System.Drawing.Size(124, 20);
+            this.tbAbi1.TabIndex = 12;
+            this.ttPokemon.SetToolTip(this.tbAbi1, "Ability name");
+            this.tbAbi1.Enter += new System.EventHandler(this.tbAbi1_Enter);
             // 
             // FormAdd
             // 
@@ -1050,7 +1102,6 @@
             this.Controls.Add(this.cbLegend);
             this.Controls.Add(this.cbRemove);
             this.Controls.Add(this.gbRemove);
-            this.Controls.Add(this.label44);
             this.Controls.Add(this.gbMega2);
             this.Controls.Add(this.gbMega);
             this.Controls.Add(this.cbXY);
@@ -1162,7 +1213,6 @@
         private System.Windows.Forms.TextBox tbAbi4;
         private System.Windows.Forms.TextBox tbAbi3;
         private System.Windows.Forms.TextBox tbAbi2;
-        private System.Windows.Forms.TextBox tbAbi1;
         private System.Windows.Forms.CheckBox cbMega;
         private System.Windows.Forms.CheckBox cbXY;
         private System.Windows.Forms.TextBox tbMegaHP;
@@ -1203,7 +1253,6 @@
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.GroupBox gbMega;
         private System.Windows.Forms.GroupBox gbMega2;
-        private System.Windows.Forms.Label label44;
         private System.Windows.Forms.ToolTip ttPokemon;
         private System.Windows.Forms.GroupBox gbRemove;
         private System.Windows.Forms.Button btRemove;
@@ -1223,5 +1272,6 @@
         private System.Windows.Forms.TextBox tbNumber;
         private System.Windows.Forms.RichTextBox listMoves;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox tbAbi1;
     }
 }
