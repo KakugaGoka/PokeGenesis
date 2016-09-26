@@ -14,9 +14,8 @@ namespace GenesisDex
 {
     public partial class FormScan : Form
     {
-        private bool dragging = false;
-        private Point dragCursorPoint;
-        private Point dragFormPoint;
+        Point dragCursorPoint;
+        Point dragFormPoint;
         PokemonList pokeXML = new PokemonList();
         MoveList moveXML = new MoveList();
         BasicAbiList basicXML = new BasicAbiList();
@@ -35,17 +34,12 @@ namespace GenesisDex
         List<Capability> capList = new List<Capability>();
         List<Evolution> evoList = new List<Evolution>();
         Random rng = new Random();
-        int pbPokeLocX { get; set; }
-        int pbPokeLocY { get; set; }
         List<Items> habitatList = new List<Items>();
         List<Items> typeList = new List<Items>();
         List<Nature> natureList = new List<Nature>();
         List<string> habitats = new List<string>();
         List<string> types = new List<string>();
-        int nature { get; set; }
         Pokemon IChooseYou = new Pokemon();
-        int TrueLevel = new int();
-        int Page = 1;
         List<Items> itemList = new List<Items>();
         ItemList itemXML = new ItemList();
         List<TM> TMList = new List<TM>();
@@ -68,6 +62,7 @@ namespace GenesisDex
         List<string> AllDesc2 = new List<string>();
         List<string> AllDesc3 = new List<string>();
         List<string[]> Info = new List<string[]>();
+        List<string> preInfo = new List<string>();
         List<string> Gender = new List<string>();
         List<string> Stat = new List<string>();
         List<List<string>> AllStat = new List<List<string>>();
@@ -76,15 +71,34 @@ namespace GenesisDex
         List<decimal> MaxHealth = new List<decimal>();
         List<decimal> CurrentHealth = new List<decimal>();
         List<string> Type = new List<string>();
+        int TrueLevel = new int();
+        int Page = 1;
         int Current = 0;
         int Amount = 0;
+        int nature { get; set; }
         int cash = 0;
+        int pbPokeLocX { get; set; }
+        int pbPokeLocY { get; set; }
+        int PokeLevelMax { get; set; }
+        int PokeLevelMin { get; set; }
+        int Progress { get; set; }
+        bool canLegendary { get; set;}
+        bool canItems { get; set; }
+        bool canShiny { get; set; }
         bool onItem2 = false;
         bool onItem3 = false;
         bool isShiny = false;
+        bool dragging = false;
         bool hasScanned = false;
+        bool isScanning = false;
         string typeShiny { get; set; }
         string newShiny { get; set; }
+        string PokeName { get; set; }
+        string PokeType { get; set; }
+        string PokeHabitat { get; set; }
+        string PokeStage { get; set; }
+        string [] info { get; set; }
+        
 
         public FormScan()
         {
@@ -150,6 +164,7 @@ namespace GenesisDex
 
         private void pbScan_Click_1(object sender, EventArgs e)
         {
+            if (isScanning) return;
             FormMain fm = new FormMain();
             this.Hide();
             fm.Show();
@@ -185,30 +200,36 @@ namespace GenesisDex
             pbScanPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanPokemon.png");
         }
 
-        private void CreateScanList()
-        {
-            pokeList = new List<Pokemon>();
-            pokeList = pokeXML.createList("Pokemon");
-            if (pkPokemon.Text == "Any")
-            {
-                CheckHabitat();
-                CheckType();
-                CheckEvo();
-                if (!pkCanBeLegend.Checked)
-                {
-                    GetLegend();
-                }
-            }
-
-        }
-
         private void pbScanPokemon_Click(object sender, EventArgs e)
         {
+            if (isScanning) return;
+            isScanning = true;
+            infoBack.Visible = true;
+            infoForward.Visible = true;
+            pkLevelMin_ValueChanged(this, new EventArgs());
+            pkLevelMax_ValueChanged(this, new EventArgs());
+            PokeName = pkPokemon.Text;
+            PokeHabitat = pkHabitat.Text;
+            PokeType = pkType.Text;
+            PokeStage = pkStageAllowed.Text;
+            PokeLevelMax = Convert.ToInt32(pkLevelMax.Value);
+            PokeLevelMin = Convert.ToInt32(pkLevelMin.Value);
+            Amount = Convert.ToInt32(pkAmount.Value);
+            GenerationProgress.Maximum = Amount;
+            canItems = pkHasItem.Checked;
+            canLegendary = pkCanBeLegend.Checked;
+            canShiny = pkCanBeShiny.Checked;
+            lblProgress.Text = "Queuing Scan";
+            PokeGenerator.RunWorkerAsync();
+        }
+
+        private void PokeGenerator_DoWork(object sender, DoWorkEventArgs e)
+        {
             hasScanned = true;
-            if (pkPokemon.Items.Contains(pkPokemon.Text) == false) { MessageBox.Show("That is not a Pokemon."); return; }
-            if (pkType.Items.Contains(pkType.Text) == false) { MessageBox.Show("That is not a Type."); return; }
-            if (pkHabitat.Items.Contains(pkHabitat.Text) == false) { MessageBox.Show("That is not a Habitat."); return; }
-            if (pkStageAllowed.Items.Contains(pkStageAllowed.Text) == false) { MessageBox.Show("That is not a Evolutionary Stage."); return; }
+            if (pokeDex.Contains(PokeName) == false) { MessageBox.Show("That is not a Pokemon."); return; }
+            if (types.Contains(PokeType) == false) { MessageBox.Show("That is not a Type."); return; }
+            if (habitats.Contains(PokeHabitat) == false) { MessageBox.Show("That is not a Habitat."); return; }
+            if (stages.Contains(PokeStage) == false) { MessageBox.Show("That is not a Evolutionary Stage."); return; }
             AllSkills.Clear();
             AllAbilities.Clear();
             AllMoves.Clear();
@@ -228,27 +249,23 @@ namespace GenesisDex
             MaxHealth.Clear();
             CurrentHealth.Clear();
             Current = 0;
+            Progress = 0;
             CreateScanList();
-            Amount = Convert.ToInt32(pkAmount.Value);
             for (var z = 0; z < Amount; z++)
             {
                 IChooseYou = new Pokemon();
                 Pokemon Final = new Pokemon();
-                pkGasp.Clear();
-                infoForward.Visible = true;
-                infoBack.Visible = true;
+                preInfo.Clear();
                 isShiny = false;
-                pkLevelMin_ValueChanged(this, new EventArgs());
-                pkLevelMax_ValueChanged(this, new EventArgs());
                 Final = GetPokemon();
                 int Level = GetLevel();
-                pkGasp.Text += "It is a " + Final.id;
+                preInfo.Add("It is a " + Final.id);
                 if (pkCanBeShiny.Checked == true)
                 {
                     int i = rng.Next(1, 101);
                     if (i == 1 || i == 100)
                     {
-                        pkGasp.Text += Environment.NewLine + "It's a Shiny!";
+                        preInfo.Add("It's a Shiny!");
                         isShiny = true;
                         GetShiny(Final);
                         Type.Add(newShiny);
@@ -263,8 +280,8 @@ namespace GenesisDex
                 }
                 else
                 {
-                        AllImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + Final.number + ".gif"));
-                        Type.Add(Final.type);
+                    AllImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + Final.number + ".gif"));
+                    Type.Add(Final.type);
                 }
                 if (pkHasItem.Checked == true)
                 {
@@ -288,15 +305,21 @@ namespace GenesisDex
                 AllAbilities.Add(ability);
                 GetSkills();
                 AllSkills.Add(skill);
-                GetStats(AllPokemon[Current], TrueLevel+10);
+                GetStats(AllPokemon[Current], TrueLevel + 10);
                 AllStat.Add(Stat);
                 GetHealth();
                 GetCap(AllPokemon[Current]);
                 AllCap.Add(Cap);
-                string[] info = pkGasp.Lines;
+                info = preInfo.ToArray();
                 Info.Add(info);
                 Current++;
+                Progress++;
+                PokeGenerator.ReportProgress(Progress);
             }
+        }
+
+        private void PokeGenerator_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
             Current = 0;
             tbPokeCount.Text = (Current + 1).ToString() + "/" + Amount.ToString();
             pbPokemon.Image = AllImages[Current];
@@ -318,8 +341,30 @@ namespace GenesisDex
             }
             UpdatePage();
             SetGasp();
+            isScanning = false;
+        }
 
-                
+        private void PokeGenerator_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            GenerationProgress.Value = e.ProgressPercentage;
+            lblProgress.Text = e.ProgressPercentage.ToString() + "/" + Amount.ToString() + " Complete";
+        }
+
+        private void CreateScanList()
+        {
+            pokeList = new List<Pokemon>();
+            pokeList = pokeXML.createList("Pokemon");
+            if (PokeName == "Any")
+            {
+                CheckHabitat();
+                CheckType();
+                CheckEvo();
+                if (!canLegendary)
+                {
+                    GetLegend();
+                }
+            }
+
         }
 
         private Image getImage(string x)
@@ -341,37 +386,37 @@ namespace GenesisDex
 
         private void CheckEvo()
         {
-            if (pkStageAllowed.Text != "Any")
+            if (PokeStage != "Any")
             {
                 List < string > stageAllow = new List<string>();
-                if (pkStageAllowed.Text == "Only 1s")
+                if (PokeStage == "Only 1s")
                 {
                     stageAllow.Add("1 -");
                     goto OnlyOne;
                 }
-                if (pkStageAllowed.Text == "Only 2s")
+                if (PokeStage == "Only 2s")
                 {
                     stageAllow.Add("2 -");
                     goto OnlyOne;
                 }
-                if (pkStageAllowed.Text == "Only 3s")
+                if (PokeStage == "Only 3s")
                 {
                     stageAllow.Add("3 -");
                     goto OnlyOne;
                 }
-                if (pkStageAllowed.Text == "1s & 2s")
+                if (PokeStage == "1s & 2s")
                 {
                     stageAllow.Add("1 -");
                     stageAllow.Add("2 -");
                     goto TwoStages;
                 }
-                if (pkStageAllowed.Text == "1s & 3s")
+                if (PokeStage == "1s & 3s")
                 {
                     stageAllow.Add("1 -");
                     stageAllow.Add("3 -");
                     goto TwoStages;
                 }
-                if (pkStageAllowed.Text == "2s & 3s")
+                if (PokeStage == "2s & 3s")
                 {
                     stageAllow.Add("2 -");
                     stageAllow.Add("3 -");
@@ -424,8 +469,7 @@ namespace GenesisDex
 
         private void CheckHabitat()
         {
-            string Habitat = pkHabitat.Text;
-            if (Habitat != "Any")
+            if (PokeHabitat != "Any")
             {
                 for (var e = 0; e < pokeList.Count; e++)
                 {
@@ -435,7 +479,7 @@ namespace GenesisDex
                         pokeList.RemoveAt(e);
                         e -= 1;
                     }
-                    else if (pokeList[e].habitat.Contains(Habitat) == false)
+                    else if (pokeList[e].habitat.Contains(PokeHabitat) == false)
                     {
                         pokeList.RemoveAt(e);
                         e -= 1;
@@ -446,8 +490,7 @@ namespace GenesisDex
 
         private void CheckType()
         {
-            string Type = pkType.Text;
-            if ( Type == "Any") { return; }
+            if ( PokeType == "Any") { return; }
             for (var e = 0; e < pokeList.Count; e++)
             {
                 if (pokeList[e].type.Trim() == "" || pokeList[e].type == null)
@@ -456,7 +499,7 @@ namespace GenesisDex
                     pokeList.RemoveAt(e);
                     e -= 1;
                 }
-                else if (pokeList[e].type.Contains(Type) == false)
+                else if (pokeList[e].type.Contains(PokeType) == false)
                 {
                     pokeList.RemoveAt(e);
                     e -= 1;
@@ -468,7 +511,7 @@ namespace GenesisDex
         private Pokemon GetPokemon()
         {
             int i;
-            if (pkPokemon.Text != "Any")
+            if (PokeName != "Any")
             {
                 Pokemon find = pokeList.Find(x => x.id == pkPokemon.Text);
                 return find;
@@ -754,6 +797,7 @@ namespace GenesisDex
 
         private void infoBack_Click(object sender, EventArgs e)
         {
+            if (isScanning) return;
             Page--;
             if (Page == 0) { Page = 4; }
             UpdatePage();
@@ -761,6 +805,7 @@ namespace GenesisDex
 
         private void infoForward_Click(object sender, EventArgs e)
         {
+            if (isScanning) return;
             Page++;
             if (Page == 5) { Page = 1; }
             UpdatePage();
@@ -1008,13 +1053,13 @@ namespace GenesisDex
             i = rng.Next(1, 11);
             if (i == 10)
             {
-                pkGasp.Text += Environment.NewLine +  "It has a few things!";
+                preInfo.Add("It has a few things!");
                 onItem2 = true;
                 GetItem2();
             }
             else
             {
-                pkGasp.Text += Environment.NewLine + "It has something!";
+                preInfo.Add("It has something!");
                 AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Blank.png"));
                 AllDesc2.Add("There are no items.");
             }
@@ -1082,6 +1127,7 @@ namespace GenesisDex
 
         private void pbPokeLeft_Click(object sender, EventArgs e)
         {
+            if (isScanning) return;
             infoForward.Visible = true;
             infoBack.Visible = true;
             if (Current <= 0)
@@ -1101,6 +1147,7 @@ namespace GenesisDex
 
         private void pbPokeRight_Click(object sender, EventArgs e)
         {
+            if (isScanning) return;
             infoForward.Visible = true;
             infoBack.Visible = true;
             if (Current >= Amount - 1)
@@ -1147,6 +1194,7 @@ namespace GenesisDex
 
         private void pbGotoPage_Click(object sender, EventArgs e)
         {
+            if (isScanning) return;
             Current = Convert.ToInt32(pkGoto.Value) - 1;
             if (Current > Amount - 1)
             {
@@ -1188,6 +1236,7 @@ namespace GenesisDex
 
         private void pbPokeRefresh_Click(object sender, EventArgs e)
         {
+            if (isScanning) return;
             if (hasScanned)
             {
                 infoForward.Visible = true;
@@ -1198,6 +1247,7 @@ namespace GenesisDex
 
         private void pbLootRefresh_Click(object sender, EventArgs e)
         {
+            if (isScanning) return;
             if (hasScanned)
             {
                 infoForward.Visible = false;
@@ -1246,12 +1296,13 @@ namespace GenesisDex
 
         private void pbDealDamage_Click(object sender, EventArgs e)
         {
+            if (isScanning) return;
             if (hasScanned)
             {
                 if ((CurrentHealth[Current] - pkDamage.Value) > MaxHealth[Current])
                     CurrentHealth[Current] = MaxHealth[Current];
                 else
-                    CurrentHealth[Current] -= pkDamage.Value;
+                   CurrentHealth[Current] -= pkDamage.Value;
                 UpdatePage();
             }
         }

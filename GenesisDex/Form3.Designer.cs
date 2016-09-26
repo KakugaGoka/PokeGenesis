@@ -73,6 +73,9 @@
             this.pbOverlay = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.pbDealDamage = new System.Windows.Forms.PictureBox();
+            this.PokeGenerator = new System.ComponentModel.BackgroundWorker();
+            this.GenerationProgress = new System.Windows.Forms.ProgressBar();
+            this.lblProgress = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.infoBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoForward)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
@@ -706,6 +709,34 @@
             this.pbDealDamage.MouseLeave += new System.EventHandler(this.pbDealDamage_MouseLeave);
             this.pbDealDamage.MouseHover += new System.EventHandler(this.pbDealDamage_MouseHover);
             // 
+            // PokeGenerator
+            // 
+            this.PokeGenerator.WorkerReportsProgress = true;
+            this.PokeGenerator.DoWork += new System.ComponentModel.DoWorkEventHandler(this.PokeGenerator_DoWork);
+            this.PokeGenerator.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.PokeGenerator_ProgressChanged);
+            this.PokeGenerator.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.PokeGenerator_RunWorkerCompleted);
+            // 
+            // GenerationProgress
+            // 
+            this.GenerationProgress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.GenerationProgress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.GenerationProgress.Location = new System.Drawing.Point(187, 145);
+            this.GenerationProgress.Name = "GenerationProgress";
+            this.GenerationProgress.Size = new System.Drawing.Size(181, 12);
+            this.GenerationProgress.TabIndex = 86;
+            this.GenerationProgress.Value = 100;
+            // 
+            // lblProgress
+            // 
+            this.lblProgress.AutoSize = true;
+            this.lblProgress.BackColor = System.Drawing.Color.Silver;
+            this.lblProgress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblProgress.Location = new System.Drawing.Point(40, 144);
+            this.lblProgress.Name = "lblProgress";
+            this.lblProgress.Size = new System.Drawing.Size(80, 15);
+            this.lblProgress.TabIndex = 87;
+            this.lblProgress.Text = "Ready to Scan";
+            // 
             // FormScan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -713,6 +744,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = global::GenesisDex.Properties.Resources.MainMenu;
             this.ClientSize = new System.Drawing.Size(822, 616);
+            this.Controls.Add(this.lblProgress);
+            this.Controls.Add(this.GenerationProgress);
             this.Controls.Add(this.pbDealDamage);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.pkDamage);
@@ -838,5 +871,8 @@
         private System.Windows.Forms.PictureBox pbOverlay;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pbDealDamage;
+        private System.ComponentModel.BackgroundWorker PokeGenerator;
+        private System.Windows.Forms.ProgressBar GenerationProgress;
+        private System.Windows.Forms.Label lblProgress;
     }
 }
