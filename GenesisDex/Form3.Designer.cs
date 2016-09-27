@@ -167,7 +167,7 @@
             this.pbScan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbScan.TabIndex = 44;
             this.pbScan.TabStop = false;
-            this.pbScan.Click += new System.EventHandler(this.pbScan_Click_1);
+            this.pbScan.Click += new System.EventHandler(this.pbScan_Click);
             // 
             // pbScanPokemon
             // 

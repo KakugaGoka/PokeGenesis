@@ -14,69 +14,69 @@ namespace GenesisDex
 {
     public partial class FormScan : Form
     {
-        Point dragCursorPoint;
-        Point dragFormPoint;
-        PokemonList pokeXML = new PokemonList();
-        MoveList moveXML = new MoveList();
-        BasicAbiList basicXML = new BasicAbiList();
-        AdvAbiList advXML = new AdvAbiList();
-        HighAbiList highXML = new HighAbiList();
-        SkillList skillXML = new SkillList();
-        CapabilityList capXML = new CapabilityList();
-        NameList typeXML = new NameList();
-        NatureList natureXML = new NatureList();
-        NameList habitatXML = new NameList();
-        EvolutionList evoXML = new EvolutionList();
-        List<Pokemon> pokeList = new List<Pokemon>();
-        List<Move> moveList = new List<Move>();
-        List<Ability> abiList = new List<Ability>();
-        List<Skill> skillList = new List<Skill>();
-        List<Capability> capList = new List<Capability>();
-        List<Evolution> evoList = new List<Evolution>();
-        Random rng = new Random();
-        List<Items> habitatList = new List<Items>();
-        List<Items> typeList = new List<Items>();
-        List<Nature> natureList = new List<Nature>();
-        List<string> habitats = new List<string>();
-        List<string> types = new List<string>();
-        Pokemon IChooseYou = new Pokemon();
-        List<Items> itemList = new List<Items>();
-        ItemList itemXML = new ItemList();
-        List<TM> TMList = new List<TM>();
-        TMList TMXML = new TMList();
-        List<string> pokeDex = new List<string>();
-        List<string> moves = new List<string>();
-        List<string> ability = new List<string>();
-        List<string> skill = new List<string>();
-        List<string> stages = new List<string>();
+        Point dragCursorPoint { get; set; }
+        Point dragFormPoint { get; set; }
+        Random rng { get; set; }
+        Pokemon IChooseYou { get; set; }
+        PokemonList pokeXML { get; set; }
+        MoveList moveXML { get; set; }
+        BasicAbiList basicXML { get; set; }
+        AdvAbiList advXML { get; set; }
+        HighAbiList highXML { get; set; }
+        SkillList skillXML { get; set; }
+        CapabilityList capXML { get; set; }
+        NameList typeXML { get; set; }
+        NatureList natureXML { get; set; }
+        NameList habitatXML { get; set; }
+        EvolutionList evoXML { get; set; }
+        TMList TMXML { get; set; }
+        ItemList itemXML { get; set; }
+        List<Pokemon> pokeList { get; set; }
+        List<Move> moveList { get; set; }
+        List<Ability> abiList { get; set; }
+        List<Skill> skillList { get; set; }
+        List<Capability> capList { get; set; }
+        List<Evolution> evoList { get; set; }
+        List<Nature> natureList { get; set; }
+        List<TM> TMList { get; set; }
+        List<Pokemon> AllPokemon { get; set; }
+        List<Image> AllItems1 { get; set; }
+        List<Image> AllItems2 { get; set; }
+        List<Image> AllImages { get; set; }
+        List<Items> itemList { get; set; }
+        List<Items> habitatList { get; set; }
+        List<Items> typeList { get; set; }
+        List<int> AllLevels { get; set; }
+        List<decimal> MaxHealth { get; set; }
+        List<decimal> CurrentHealth { get; set; }
+        List<string> habitats { get; set; }
+        List<string> types { get; set; }
+        List<string> pokeDex { get; set; }
+        List<string> moves { get; set; }
+        List<string> ability { get; set; }
+        List<string> skill { get; set; }
+        List<string> stages { get; set; }
+        List<string> AllNatures { get; set; }
+        List<string> AllDesc1 { get; set; }
+        List<string> AllDesc2 { get; set; }
+        List<string> AllDesc3 { get; set; }
+        List<string> preInfo { get; set; }
+        List<string> Gender { get; set; }
+        List<string> Stat { get; set; }
+        List<string> Cap { get; set; }
+        List<string> Type { get; set; }
+        List<string[]> Info { get; set; }
         List<List<string>> AllMoves = new List<List<string>>();
         List<List<string>> AllAbilities = new List<List<string>>();
         List<List<string>> AllSkills = new List<List<string>>();
-        List<string> AllNatures = new List<string>();
-        List<Image> AllImages = new List<Image>();
-        List<Pokemon> AllPokemon = new List<Pokemon>();
-        List<int> AllLevels = new List<int>();
-        List<Image> AllItems1 = new List<Image>();
-        List<Image> AllItems2 = new List<Image>();
-        List<string> AllDesc1 = new List<string>();
-        List<string> AllDesc2 = new List<string>();
-        List<string> AllDesc3 = new List<string>();
-        List<string[]> Info = new List<string[]>();
-        List<string> preInfo = new List<string>();
-        List<string> Gender = new List<string>();
-        List<string> Stat = new List<string>();
         List<List<string>> AllStat = new List<List<string>>();
-        List<string> Cap = new List<string>();
         List<List<string>> AllCap = new List<List<string>>();
-        List<decimal> MaxHealth = new List<decimal>();
-        List<decimal> CurrentHealth = new List<decimal>();
-        List<string> Type = new List<string>();
-        int TrueLevel = new int();
-        int Page = 1;
-        int Current = 0;
-        int Amount = 0;
-        int nature { get; set; }
-        int cash = 0;
+        int TrueLevel { get; set; }
+        int Page { get; set; }
+        int Current { get; set; }
+        int Amount { get; set; }
+        int Cash { get; set; }
+        int Nature { get; set; }
         int pbPokeLocX { get; set; }
         int pbPokeLocY { get; set; }
         int PokeLevelMax { get; set; }
@@ -85,12 +85,12 @@ namespace GenesisDex
         bool canLegendary { get; set;}
         bool canItems { get; set; }
         bool canShiny { get; set; }
-        bool onItem2 = false;
-        bool onItem3 = false;
-        bool isShiny = false;
-        bool dragging = false;
-        bool hasScanned = false;
-        bool isScanning = false;
+        bool onItem2 { get; set; }
+        bool onItem3 { get; set; }
+        bool isShiny { get; set; }
+        bool dragging { get; set; }
+        bool hasScanned { get; set; }
+        bool isScanning { get; set; }
         string typeShiny { get; set; }
         string newShiny { get; set; }
         string PokeName { get; set; }
@@ -98,8 +98,11 @@ namespace GenesisDex
         string PokeHabitat { get; set; }
         string PokeStage { get; set; }
         string [] info { get; set; }
-        
 
+
+        //===========================================================================================================
+        //=== FormScan is the Generation Form. It contains functions that allow it to be repositioned on the screen==
+        //===========================================================================================================
         public FormScan()
         {
             InitializeComponent();
@@ -110,6 +113,16 @@ namespace GenesisDex
             pbPokeRight.Visible = false;
             pbGotoPage.Visible = false;
             pkGoto.Enabled = false;
+            onItem2 = false;
+            onItem3 = false;
+            isShiny = false;
+            dragging = false;
+            hasScanned = false;
+            isScanning = false;
+            Page = 1;
+            Current = 0;
+            Amount = 0;
+            Cash = 0;
             pbPokeLocX = pbPokemon.Location.X;
             pbPokeLocY = pbPokemon.Location.Y;
             pokeList = pokeXML.createList("Pokemon");
@@ -147,28 +160,6 @@ namespace GenesisDex
             pkStageAllowed.DataSource = stages;
         }
 
-        private void pbExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void pbScan_MouseHover(object sender, EventArgs e)
-        {
-            pbScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokedexHover.png");
-        }
-
-        private void pbScan_MouseLeave(object sender, EventArgs e)
-        {
-            pbScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokedexHover.png");
-        }
-
-        private void pbScan_Click_1(object sender, EventArgs e)
-        {
-            if (isScanning) return;
-            FormMain fm = new FormMain();
-            this.Hide();
-            fm.Show();
-        }
         private void FormScan_MouseDown(object sender, MouseEventArgs e)
         {
             dragging = true;
@@ -189,7 +180,44 @@ namespace GenesisDex
         {
             dragging = false;
         }
+        //===========================================================================================================
 
+
+        //===========================================================================================================
+        //=== pbExit if the exit button at the top of this form. ====================================================
+        //===========================================================================================================
+        private void pbExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        //===========================================================================================================
+
+        //===========================================================================================================
+        //=== pbScan is the button in the form that takes you back to the main Pokedex. =============================
+        //===========================================================================================================
+        private void pbScan_MouseHover(object sender, EventArgs e)
+        {
+            pbScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokedexHover.png");
+        }
+
+        private void pbScan_MouseLeave(object sender, EventArgs e)
+        {
+            pbScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokedexHover.png");
+        }
+
+        private void pbScan_Click(object sender, EventArgs e)
+        {
+            if (isScanning) return;
+            FormMain fm = new FormMain();
+            this.Hide();
+            fm.Show();
+        }
+        //===========================================================================================================
+
+        //===========================================================================================================
+        //=== pbScanPokemon is the Scan Pokemon button in the form. this is used to initiate the background worker ==
+        //===== to create the new list of pokemon and clear out the old data. =======================================
+        //===========================================================================================================
         private void pbScanPokemon_MouseHover(object sender, EventArgs e)
         {
             pbScanPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanPokemonHover.png");
@@ -222,7 +250,12 @@ namespace GenesisDex
             lblProgress.Text = "Queuing Scan";
             PokeGenerator.RunWorkerAsync();
         }
+        //===========================================================================================================
 
+        //===========================================================================================================
+        //=== PokeGenerator it the backgroundworker used to generate the list of pokemon you will view. Its progress=
+        //===== changed function is used to update the progress bar and progress label in the form. =================
+        //===========================================================================================================
         private void PokeGenerator_DoWork(object sender, DoWorkEventArgs e)
         {
             hasScanned = true;
@@ -349,41 +382,30 @@ namespace GenesisDex
             GenerationProgress.Value = e.ProgressPercentage;
             lblProgress.Text = e.ProgressPercentage.ToString() + "/" + Amount.ToString() + " Complete";
         }
-
+        //===========================================================================================================
+        
+        //===========================================================================================================
+        //=== CreateScanList is used to create and filter the list that is requested in the comboboxes and ==========
+        //===== check boxes of FormScan. ============================================================================
+        //===========================================================================================================
         private void CreateScanList()
         {
             pokeList = new List<Pokemon>();
             pokeList = pokeXML.createList("Pokemon");
             if (PokeName == "Any")
             {
+                CheckEvo();
                 CheckHabitat();
                 CheckType();
-                CheckEvo();
-                if (!canLegendary)
-                {
-                    GetLegend();
-                }
-            }
-
-        }
-
-        private Image getImage(string x)
-        {
-            string path = (x);
-            if (File.Exists(x) == true)
-            {
-                return Image.FromFile(path);
-            }
-            else if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\MissingNo.gif"))
-            {
-                return Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\MissingNo.gif");
-            }
-            else
-            {
-                return Image.FromFile(null);
+                CheckLegend();
             }
         }
+        //===========================================================================================================
 
+        //===========================================================================================================
+        //=== CheckEvo is used to sort out the Evolution Stages that the user has stated they would like to generate=
+        //===== from the ones they would like removed. ==============================================================
+        //===========================================================================================================
         private void CheckEvo()
         {
             if (PokeStage != "Any")
@@ -466,7 +488,12 @@ namespace GenesisDex
                 return;
             }
         }
+        //===========================================================================================================
 
+        //===========================================================================================================
+        //=== CheckHabitat is used to remove all pokemon from the generation criteria that do not live in the =======
+        //===== user specified habitat. =============================================================================
+        //===========================================================================================================
         private void CheckHabitat()
         {
             if (PokeHabitat != "Any")
@@ -487,7 +514,11 @@ namespace GenesisDex
                 }
             }
         }
+        //===========================================================================================================
 
+        //===========================================================================================================
+        //=== CheckType is used to remove all types excpet the type specified by the user. ==========================
+        //===========================================================================================================
         private void CheckType()
         {
             if ( PokeType == "Any") { return; }
@@ -507,6 +538,27 @@ namespace GenesisDex
                       
             }
         }
+        //===========================================================================================================
+
+        //===========================================================================================================
+        //=== CheckLegend is used to remove legendaries from the generation list, unless the legendary check box is==
+        //===== checked in the form.=================================================================================
+        //===========================================================================================================
+        private void CheckLegend()
+        {
+            if (!pkCanBeLegend.Checked)
+            {
+                for (var l = 0; l < pokeList.Count; l++)
+                {
+                    if (pokeList[l].legendary == "true")
+                    {
+                        pokeList.RemoveAt(l);
+                        l -= 1;
+                    }
+                }
+            }
+        }
+        //===========================================================================================================
 
         private Pokemon GetPokemon()
         {
@@ -703,18 +755,6 @@ namespace GenesisDex
             }
         }
 
-        private void GetLegend()
-        {
-            for (var l = 0; l < pokeList.Count; l++)
-            {
-                if (pokeList[l].legendary == "true")
-                {
-                    pokeList.RemoveAt(l);
-                    l -= 1;
-                }
-            }
-        }
-
         private void WriteInfo()
         {
             pkItem.Visible = false;
@@ -792,7 +832,7 @@ namespace GenesisDex
 
                 rtbInfo1.Text += AllDesc3[x] + Environment.NewLine + Environment.NewLine;
             }
-            rtbInfo1.Text += "$" + cash.ToString();
+            rtbInfo1.Text += "$" + Cash.ToString();
         }
 
         private void infoBack_Click(object sender, EventArgs e)
@@ -1220,7 +1260,7 @@ namespace GenesisDex
             AllDesc3.Clear();
             rtbInfo1.Clear();
             int val = Convert.ToInt32(nudPlayerLevel.Value);
-            cash = 0;
+            Cash = 0;
             onItem3 = true;
             for (int x = 0; x < val; x++)
             {
@@ -1228,7 +1268,7 @@ namespace GenesisDex
                 if (i == 1)
                     GetItem2();
                 else
-                    cash += rng.Next(1, 6) * 100;
+                    Cash += rng.Next(1, 6) * 100;
             }
             onItem3 = false;
             WriteLoot();
@@ -1346,6 +1386,23 @@ namespace GenesisDex
             if (e.KeyCode == Keys.Enter)
             {
                 CheckedState(pkCanBeLegend);
+            }
+        }
+
+        private Image getImage(string x)
+        {
+            string path = (x);
+            if (File.Exists(x) == true)
+            {
+                return Image.FromFile(path);
+            }
+            else if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\MissingNo.gif"))
+            {
+                return Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\MissingNo.gif");
+            }
+            else
+            {
+                return Image.FromFile(null);
             }
         }
     }
