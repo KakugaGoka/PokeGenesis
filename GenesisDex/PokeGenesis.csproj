@@ -2730,13 +2730,13 @@
     <Content Include="Data\Images\Pokemon\412.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Pokemon\413-1.gif">
+    <Content Include="Data\Images\Pokemon\413-sandy.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Pokemon\413-2.gif">
+    <Content Include="Data\Images\Pokemon\413-trash.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Pokemon\413.gif">
+    <Content Include="Data\Images\Pokemon\413-plant.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Images\Pokemon\414.gif">
@@ -2760,10 +2760,10 @@
     <Content Include="Data\Images\Pokemon\420.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Pokemon\421-1.gif">
+    <Content Include="Data\Images\Pokemon\421.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Pokemon\421.gif">
+    <Content Include="Data\Images\Pokemon\421-1.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Images\Pokemon\422-1.gif">
@@ -5316,13 +5316,13 @@
     <Content Include="Data\Images\Shiny\412.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Shiny\413-1.gif">
+    <Content Include="Data\Images\Shiny\413-sandy.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Shiny\413-2.gif">
+    <Content Include="Data\Images\Shiny\413-trash.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Shiny\413.gif">
+    <Content Include="Data\Images\Shiny\413-plant.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Images\Shiny\414.gif">
@@ -5346,10 +5346,10 @@
     <Content Include="Data\Images\Shiny\420.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Shiny\421-1.gif">
+    <Content Include="Data\Images\Shiny\421.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Shiny\421.gif">
+    <Content Include="Data\Images\Shiny\421-1.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Images\Shiny\422-1.gif">

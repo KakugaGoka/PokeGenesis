@@ -113,9 +113,15 @@
             this.gbMega = new System.Windows.Forms.GroupBox();
             this.gbMega2 = new System.Windows.Forms.GroupBox();
             this.ttPokemon = new System.Windows.Forms.ToolTip(this.components);
+            this.tbRemove = new System.Windows.Forms.TextBox();
+            this.listCap = new System.Windows.Forms.RichTextBox();
+            this.listEvo = new System.Windows.Forms.RichTextBox();
+            this.listSkills = new System.Windows.Forms.RichTextBox();
+            this.tbNumber = new System.Windows.Forms.TextBox();
+            this.listMoves = new System.Windows.Forms.RichTextBox();
+            this.tbAbi1 = new System.Windows.Forms.TextBox();
             this.gbRemove = new System.Windows.Forms.GroupBox();
             this.btRemove = new System.Windows.Forms.Button();
-            this.tbRemove = new System.Windows.Forms.TextBox();
             this.label45 = new System.Windows.Forms.Label();
             this.cbRemove = new System.Windows.Forms.CheckBox();
             this.cbLegend = new System.Windows.Forms.CheckBox();
@@ -124,14 +130,8 @@
             this.cbAbi3 = new System.Windows.Forms.ComboBox();
             this.cbAbi4 = new System.Windows.Forms.ComboBox();
             this.cbAbi5 = new System.Windows.Forms.ComboBox();
-            this.listCap = new System.Windows.Forms.RichTextBox();
-            this.listEvo = new System.Windows.Forms.RichTextBox();
-            this.listSkills = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.tbNumber = new System.Windows.Forms.TextBox();
-            this.listMoves = new System.Windows.Forms.RichTextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.tbAbi1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             this.gbMega.SuspendLayout();
             this.gbMega2.SuspendLayout();
@@ -406,8 +406,8 @@
             this.tbHabitat.Name = "tbHabitat";
             this.tbHabitat.Size = new System.Drawing.Size(205, 20);
             this.tbHabitat.TabIndex = 28;
-            this.ttPokemon.SetToolTip(this.tbHabitat, "The habitats this pokemon lives in. (Is used in generation so please eneter it co" +
-        "rrectly)");
+            this.ttPokemon.SetToolTip(this.tbHabitat, "The habitats this pokemon lives in. (Is used in generation so please enter it cor" +
+        "rectly)");
             // 
             // tbWeight
             // 
@@ -900,6 +900,75 @@
             this.gbMega2.TabStop = false;
             this.gbMega2.Text = "Mega Y Info";
             // 
+            // tbRemove
+            // 
+            this.tbRemove.Location = new System.Drawing.Point(47, 18);
+            this.tbRemove.Name = "tbRemove";
+            this.tbRemove.Size = new System.Drawing.Size(221, 20);
+            this.tbRemove.TabIndex = 150;
+            this.tbRemove.TabStop = false;
+            this.ttPokemon.SetToolTip(this.tbRemove, "Name of the Pokemon you wish to remove.");
+            this.tbRemove.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbRemove_KeyDown);
+            // 
+            // listCap
+            // 
+            this.listCap.Location = new System.Drawing.Point(364, 257);
+            this.listCap.Name = "listCap";
+            this.listCap.Size = new System.Drawing.Size(205, 194);
+            this.listCap.TabIndex = 29;
+            this.listCap.Text = "";
+            this.ttPokemon.SetToolTip(this.listCap, "Cap1, Cap2, Cap3, Cap4\r\n(Please enter like this as capabilities are used in gener" +
+        "ation)");
+            // 
+            // listEvo
+            // 
+            this.listEvo.Location = new System.Drawing.Point(68, 400);
+            this.listEvo.Name = "listEvo";
+            this.listEvo.Size = new System.Drawing.Size(205, 210);
+            this.listEvo.TabIndex = 21;
+            this.listEvo.Text = "";
+            this.ttPokemon.SetToolTip(this.listEvo, "1 - Basic\r\n2 - Stage 1\r\n3 - Stage 2\r\n(Please enter like this as evolutions are us" +
+        "ed in generation)");
+            // 
+            // listSkills
+            // 
+            this.listSkills.Location = new System.Drawing.Point(364, 474);
+            this.listSkills.Name = "listSkills";
+            this.listSkills.Size = new System.Drawing.Size(205, 136);
+            this.listSkills.TabIndex = 30;
+            this.listSkills.Text = "";
+            this.ttPokemon.SetToolTip(this.listSkills, "Skill 1d6, Skill 2d6, Skill 3d6, Skill 4d6, Skill 5d6, Skill 6d6\r\n(Please enter l" +
+        "ike this as skills are used in generation)");
+            // 
+            // tbNumber
+            // 
+            this.tbNumber.Location = new System.Drawing.Point(68, 57);
+            this.tbNumber.Name = "tbNumber";
+            this.tbNumber.Size = new System.Drawing.Size(109, 20);
+            this.tbNumber.TabIndex = 1;
+            this.ttPokemon.SetToolTip(this.tbNumber, "The 3 digit Pokedex number. (This should also be the name of the image file relat" +
+        "ed to the pokemon you want to show.)");
+            this.tbNumber.Enter += new System.EventHandler(this.tbNumber_Enter);
+            // 
+            // listMoves
+            // 
+            this.listMoves.Location = new System.Drawing.Point(622, 87);
+            this.listMoves.Name = "listMoves";
+            this.listMoves.Size = new System.Drawing.Size(205, 448);
+            this.listMoves.TabIndex = 31;
+            this.listMoves.Text = "";
+            this.ttPokemon.SetToolTip(this.listMoves, "1 - Move\r\n4 - Move\r\n7 - Move\r\n(Please enter like this as the level is used in gen" +
+        "eration)");
+            // 
+            // tbAbi1
+            // 
+            this.tbAbi1.Location = new System.Drawing.Point(149, 249);
+            this.tbAbi1.Name = "tbAbi1";
+            this.tbAbi1.Size = new System.Drawing.Size(124, 20);
+            this.tbAbi1.TabIndex = 12;
+            this.ttPokemon.SetToolTip(this.tbAbi1, "Ability name");
+            this.tbAbi1.Enter += new System.EventHandler(this.tbAbi1_Enter);
+            // 
             // gbRemove
             // 
             this.gbRemove.Controls.Add(this.btRemove);
@@ -921,16 +990,6 @@
             this.btRemove.Text = "Remove";
             this.btRemove.UseVisualStyleBackColor = true;
             this.btRemove.Click += new System.EventHandler(this.btRemove_Click);
-            // 
-            // tbRemove
-            // 
-            this.tbRemove.Location = new System.Drawing.Point(47, 18);
-            this.tbRemove.Name = "tbRemove";
-            this.tbRemove.Size = new System.Drawing.Size(221, 20);
-            this.tbRemove.TabIndex = 150;
-            this.tbRemove.TabStop = false;
-            this.ttPokemon.SetToolTip(this.tbRemove, "Name of the Pokemon you wish to remove.");
-            this.tbRemove.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbRemove_KeyDown);
             // 
             // label45
             // 
@@ -1004,36 +1063,6 @@
             this.cbAbi5.Size = new System.Drawing.Size(75, 21);
             this.cbAbi5.TabIndex = 19;
             // 
-            // listCap
-            // 
-            this.listCap.Location = new System.Drawing.Point(364, 257);
-            this.listCap.Name = "listCap";
-            this.listCap.Size = new System.Drawing.Size(205, 194);
-            this.listCap.TabIndex = 29;
-            this.listCap.Text = "";
-            this.ttPokemon.SetToolTip(this.listCap, "Cap1, Cap2, Cap3, Cap4\r\n(Please enter like this as capabilities are used in gener" +
-        "ation)");
-            // 
-            // listEvo
-            // 
-            this.listEvo.Location = new System.Drawing.Point(68, 400);
-            this.listEvo.Name = "listEvo";
-            this.listEvo.Size = new System.Drawing.Size(205, 210);
-            this.listEvo.TabIndex = 21;
-            this.listEvo.Text = "";
-            this.ttPokemon.SetToolTip(this.listEvo, "1 - Basic\r\n2 - Stage 1\r\n3 - Stage 2\r\n(Please enter like this as evolutions are us" +
-        "ed in generation)");
-            // 
-            // listSkills
-            // 
-            this.listSkills.Location = new System.Drawing.Point(364, 474);
-            this.listSkills.Name = "listSkills";
-            this.listSkills.Size = new System.Drawing.Size(205, 136);
-            this.listSkills.TabIndex = 30;
-            this.listSkills.Text = "";
-            this.ttPokemon.SetToolTip(this.listSkills, "Skill 1d6, Skill 2d6, Skill 3d6, Skill 4d6, Skill 5d6, Skill 6d6\r\n(Please enter l" +
-        "ike this as skills are used in generation)");
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -1042,26 +1071,6 @@
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 17;
             this.label1.Text = "Number";
-            // 
-            // tbNumber
-            // 
-            this.tbNumber.Location = new System.Drawing.Point(68, 57);
-            this.tbNumber.Name = "tbNumber";
-            this.tbNumber.Size = new System.Drawing.Size(109, 20);
-            this.tbNumber.TabIndex = 1;
-            this.ttPokemon.SetToolTip(this.tbNumber, "The 3 digit Pokedex number. (This should also be the name of the image file relat" +
-        "ed to the pokemon you want to show.)");
-            this.tbNumber.Enter += new System.EventHandler(this.tbNumber_Enter);
-            // 
-            // listMoves
-            // 
-            this.listMoves.Location = new System.Drawing.Point(622, 87);
-            this.listMoves.Name = "listMoves";
-            this.listMoves.Size = new System.Drawing.Size(205, 448);
-            this.listMoves.TabIndex = 31;
-            this.listMoves.Text = "";
-            this.ttPokemon.SetToolTip(this.listMoves, "1 - Move\r\n4 - Move\r\n7 - Move\r\n(Please enter like this as the level is used in gen" +
-        "eration)");
             // 
             // label18
             // 
@@ -1072,15 +1081,6 @@
             this.label18.Size = new System.Drawing.Size(223, 20);
             this.label18.TabIndex = 137;
             this.label18.Text = "Add Pokemon to the Pokedex!";
-            // 
-            // tbAbi1
-            // 
-            this.tbAbi1.Location = new System.Drawing.Point(149, 249);
-            this.tbAbi1.Name = "tbAbi1";
-            this.tbAbi1.Size = new System.Drawing.Size(124, 20);
-            this.tbAbi1.TabIndex = 12;
-            this.ttPokemon.SetToolTip(this.tbAbi1, "Ability name");
-            this.tbAbi1.Enter += new System.EventHandler(this.tbAbi1_Enter);
             // 
             // FormAdd
             // 
