@@ -23,7 +23,7 @@ namespace GenesisDex
         List<Evolution> evoList = new List<Evolution>();
         List<Skill> skillList = new List<Skill>();
         List<Capability> capList = new List<Capability>();
-        List<Move> moveList = new List<Move>();
+        List<Moves> moveList = new List<Moves>();
         List<Ability> abiList = new List<Ability>();
         List<Image> pokeImages = new List<Image>();
         List<Image> megaImages = new List<Image>();
@@ -549,7 +549,7 @@ namespace GenesisDex
         private void writeMoves()
         {
             int i = carryi;
-            MoveList moveXML = new MoveList();
+            MovesList moveXML = new MovesList();
             moveList.Clear();
             moveList = moveXML.createList(pokeList[i].number);
             rtbInfo1.Text = ("Moves:" + Environment.NewLine);

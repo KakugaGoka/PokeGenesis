@@ -478,9 +478,9 @@
             // pbPokeRight
             // 
             this.pbPokeRight.BackColor = System.Drawing.Color.Transparent;
-            this.pbPokeRight.Location = new System.Drawing.Point(296, 254);
+            this.pbPokeRight.Location = new System.Drawing.Point(330, 273);
             this.pbPokeRight.Name = "pbPokeRight";
-            this.pbPokeRight.Size = new System.Drawing.Size(54, 50);
+            this.pbPokeRight.Size = new System.Drawing.Size(37, 22);
             this.pbPokeRight.TabIndex = 71;
             this.pbPokeRight.TabStop = false;
             this.pbPokeRight.Click += new System.EventHandler(this.pbPokeRight_Click);
@@ -488,9 +488,9 @@
             // pbPokeLeft
             // 
             this.pbPokeLeft.BackColor = System.Drawing.Color.Transparent;
-            this.pbPokeLeft.Location = new System.Drawing.Point(55, 254);
+            this.pbPokeLeft.Location = new System.Drawing.Point(45, 273);
             this.pbPokeLeft.Name = "pbPokeLeft";
-            this.pbPokeLeft.Size = new System.Drawing.Size(54, 50);
+            this.pbPokeLeft.Size = new System.Drawing.Size(37, 22);
             this.pbPokeLeft.TabIndex = 70;
             this.pbPokeLeft.TabStop = false;
             this.pbPokeLeft.Click += new System.EventHandler(this.pbPokeLeft_Click);

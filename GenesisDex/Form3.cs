@@ -14,58 +14,58 @@ namespace GenesisDex
 {
     public partial class FormScan : Form
     {
-        Point dragCursorPoint { get; set; }
-        Point dragFormPoint { get; set; }
-        Random rng { get; set; }
-        Pokemon IChooseYou { get; set; }
-        PokemonList pokeXML { get; set; }
-        MoveList moveXML { get; set; }
-        BasicAbiList basicXML { get; set; }
-        AdvAbiList advXML { get; set; }
-        HighAbiList highXML { get; set; }
-        SkillList skillXML { get; set; }
-        CapabilityList capXML { get; set; }
-        NameList typeXML { get; set; }
-        NatureList natureXML { get; set; }
-        NameList habitatXML { get; set; }
-        EvolutionList evoXML { get; set; }
-        TMList TMXML { get; set; }
-        ItemList itemXML { get; set; }
-        List<Pokemon> pokeList { get; set; }
-        List<Move> moveList { get; set; }
-        List<Ability> abiList { get; set; }
-        List<Skill> skillList { get; set; }
-        List<Capability> capList { get; set; }
-        List<Evolution> evoList { get; set; }
-        List<Nature> natureList { get; set; }
-        List<TM> TMList { get; set; }
-        List<Pokemon> AllPokemon { get; set; }
-        List<Image> AllItems1 { get; set; }
-        List<Image> AllItems2 { get; set; }
-        List<Image> AllImages { get; set; }
-        List<Items> itemList { get; set; }
-        List<Items> habitatList { get; set; }
-        List<Items> typeList { get; set; }
-        List<int> AllLevels { get; set; }
-        List<decimal> MaxHealth { get; set; }
-        List<decimal> CurrentHealth { get; set; }
-        List<string> habitats { get; set; }
-        List<string> types { get; set; }
-        List<string> pokeDex { get; set; }
-        List<string> moves { get; set; }
-        List<string> ability { get; set; }
-        List<string> skill { get; set; }
-        List<string> stages { get; set; }
-        List<string> AllNatures { get; set; }
-        List<string> AllDesc1 { get; set; }
-        List<string> AllDesc2 { get; set; }
-        List<string> AllDesc3 { get; set; }
-        List<string> preInfo { get; set; }
-        List<string> Gender { get; set; }
-        List<string> Stat { get; set; }
-        List<string> Cap { get; set; }
-        List<string> Type { get; set; }
-        List<string[]> Info { get; set; }
+        Point dragCursorPoint = new Point();
+        Point dragFormPoint = new Point();
+        Random rng = new Random();
+        Pokemon IChooseYou = new Pokemon();
+        PokemonList pokeXML = new PokemonList();
+        MovesList moveXML = new MovesList();
+        BasicAbiList basicXML = new BasicAbiList();
+        AdvAbiList advXML = new AdvAbiList();
+        HighAbiList highXML = new HighAbiList();
+        SkillList skillXML = new SkillList();
+        CapabilityList capXML = new CapabilityList();
+        NameList typeXML = new NameList();
+        NatureList natureXML = new NatureList();
+        NameList habitatXML = new NameList();
+        EvolutionList evoXML = new EvolutionList();
+        TMList TMXML = new TMList();
+        ItemList itemXML = new ItemList();
+        List<Pokemon> pokeList = new List<Pokemon>();
+        List<Moves> moveList = new List<Moves>();
+        List<Ability> abiList = new List<Ability>();
+        List<Skill> skillList = new List<Skill>();
+        List<Capability> capList = new List<Capability>();
+        List<Evolution> evoList = new List<Evolution>();
+        List<Nature> natureList = new List<Nature>();
+        List<TM> TMList = new List<TM>();
+        List<Pokemon> AllPokemon = new List<Pokemon>();
+        List<Image> AllItems1 = new List<Image>();
+        List<Image> AllItems2 = new List<Image>();
+        List<Image> AllImages = new List<Image>();
+        List<Items> itemList = new List<Items>();
+        List<Items> habitatList = new List<Items>();
+        List<Items> typeList = new List<Items>();
+        List<int> AllLevels = new List<int>();
+        List<decimal> MaxHealth = new List<decimal>();
+        List<decimal> CurrentHealth = new List<decimal>();
+        List<string> habitats = new List<string>();
+        List<string> types = new List<string>();
+        List<string> pokeDex = new List<string>();
+        List<string> moves = new List<string>();
+        List<string> ability = new List<string>();
+        List<string> skill = new List<string>();
+        List<string> stages = new List<string>();
+        List<string> AllNatures = new List<string>();
+        List<string> AllDesc1 = new List<string>();
+        List<string> AllDesc2 = new List<string>();
+        List<string> AllDesc3 = new List<string>();
+        List<string> preInfo = new List<string>();
+        List<string> Gender = new List<string>();
+        List<string> Stat = new List<string>();
+        List<string> Cap = new List<string>();
+        List<string> Type = new List<string>();
+        List<string[]> Info = new List<string[]>();
         List<List<string>> AllMoves = new List<List<string>>();
         List<List<string>> AllAbilities = new List<List<string>>();
         List<List<string>> AllSkills = new List<List<string>>();
@@ -82,6 +82,7 @@ namespace GenesisDex
         int PokeLevelMax { get; set; }
         int PokeLevelMin { get; set; }
         int Progress { get; set; }
+        int Dots { get; set; }
         bool canLegendary { get; set;}
         bool canItems { get; set; }
         bool canShiny { get; set; }
@@ -91,6 +92,7 @@ namespace GenesisDex
         bool dragging { get; set; }
         bool hasScanned { get; set; }
         bool isScanning { get; set; }
+        bool queueFinished { get; set; }
         string typeShiny { get; set; }
         string newShiny { get; set; }
         string PokeName { get; set; }
@@ -119,10 +121,12 @@ namespace GenesisDex
             dragging = false;
             hasScanned = false;
             isScanning = false;
+            queueFinished = false;
             Page = 1;
             Current = 0;
             Amount = 0;
             Cash = 0;
+            Dots = 0;
             pbPokeLocX = pbPokemon.Location.X;
             pbPokeLocY = pbPokemon.Location.Y;
             pokeList = pokeXML.createList("Pokemon");
@@ -231,6 +235,7 @@ namespace GenesisDex
         private void pbScanPokemon_Click(object sender, EventArgs e)
         {
             if (isScanning) return;
+            queueFinished = false;
             isScanning = true;
             infoBack.Visible = true;
             infoForward.Visible = true;
@@ -284,6 +289,7 @@ namespace GenesisDex
             Current = 0;
             Progress = 0;
             CreateScanList();
+            queueFinished = true;
             for (var z = 0; z < Amount; z++)
             {
                 IChooseYou = new Pokemon();
@@ -379,8 +385,19 @@ namespace GenesisDex
 
         private void PokeGenerator_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
-            GenerationProgress.Value = e.ProgressPercentage;
-            lblProgress.Text = e.ProgressPercentage.ToString() + "/" + Amount.ToString() + " Complete";
+            if (!queueFinished)
+            {
+                Dots += e.ProgressPercentage;
+                if (Dots >= 30) { Dots = 0; }
+                if (Dots <= 9) { lblProgress.Text = "Queuing Scan.  "; } 
+                else if (Dots <= 19) { lblProgress.Text = "Queuing Scan.. "; }
+                else if (Dots <= 29) { lblProgress.Text = "Queuing Scan..."; }
+            }
+            else
+            {
+                GenerationProgress.Value = e.ProgressPercentage;
+                lblProgress.Text = e.ProgressPercentage.ToString() + "/" + Amount.ToString() + " Complete";
+            }
         }
         //===========================================================================================================
         
@@ -447,6 +464,7 @@ namespace GenesisDex
                 OnlyOne:
                 for (var e = 0; e < pokeList.Count; e++)
                 {
+                    PokeGenerator.ReportProgress(1);
                     string[] name = pokeList[e].id.Split().ToArray();
                     evoList = evoXML.createList(pokeList[e].number);
                     for (var x = 0; x < evoList.Count; x++)
@@ -466,6 +484,7 @@ namespace GenesisDex
                 TwoStages:
                 for (var e = 0; e < pokeList.Count; e++)
                 {
+                    PokeGenerator.ReportProgress(1);
                     string[] name = pokeList[e].id.Split().ToArray();
                     evoList = evoXML.createList(pokeList[e].number);
                     for (var x = 0; x < evoList.Count; x++)
@@ -500,6 +519,7 @@ namespace GenesisDex
             {
                 for (var e = 0; e < pokeList.Count; e++)
                 {
+                    PokeGenerator.ReportProgress(1);
                     if (pokeList[e].habitat.Trim() == ""||pokeList[e].habitat == null)
                     {
                         MessageBox.Show(pokeList[e].id + "'s does not have a habitat...");
@@ -524,6 +544,7 @@ namespace GenesisDex
             if ( PokeType == "Any") { return; }
             for (var e = 0; e < pokeList.Count; e++)
             {
+                PokeGenerator.ReportProgress(1);
                 if (pokeList[e].type.Trim() == "" || pokeList[e].type == null)
                 {
                     MessageBox.Show(pokeList[e].id + "'s does not have a type...");
@@ -546,14 +567,18 @@ namespace GenesisDex
         //===========================================================================================================
         private void CheckLegend()
         {
-            if (!pkCanBeLegend.Checked)
+            if (PokeName == "Any")
             {
-                for (var l = 0; l < pokeList.Count; l++)
+                if (!pkCanBeLegend.Checked)
                 {
-                    if (pokeList[l].legendary == "true")
+                    for (var l = 0; l < pokeList.Count; l++)
                     {
-                        pokeList.RemoveAt(l);
-                        l -= 1;
+                        PokeGenerator.ReportProgress(1);
+                        if (pokeList[l].legendary == "true")
+                        {
+                            pokeList.RemoveAt(l);
+                            l -= 1;
+                        }
                     }
                 }
             }
@@ -565,7 +590,7 @@ namespace GenesisDex
             int i;
             if (PokeName != "Any")
             {
-                Pokemon find = pokeList.Find(x => x.id == pkPokemon.Text);
+                Pokemon find = pokeList.Find(x => x.id == PokeName);
                 return find;
             }
             else
@@ -992,7 +1017,7 @@ namespace GenesisDex
         private void GetMoves()
         {
             int i = TrueLevel;
-            moveXML = new MoveList();
+            moveXML = new MovesList();
             moves = new List<string>();
             moveList.Clear();
             moveList = moveXML.createList(IChooseYou.number);

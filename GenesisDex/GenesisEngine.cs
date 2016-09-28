@@ -72,7 +72,7 @@ namespace GenesisDexEngine
         public string skill { get; set; }
     }
 
-    class Move
+    class Moves
     {
         public string move { get; set; }
     }
@@ -273,15 +273,15 @@ class PokemonList
         }
     }
 
-    class MoveList
+    class MovesList
     {
-        public List<Move> createList(string decend)
+        public List<Moves> createList(string decend)
         {
             string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\Pokemon.xml");
-            List<Move> idList = new List<Move>();
+            List<Moves> idList = new List<Moves>();
             XDocument doc = XDocument.Load(fileName);
             var query = from node in doc.Descendants("List" + decend).Descendants("Moves").Descendants("move")
-                        select new Move
+                        select new Moves
                         {
                                  move = (string)node.Value
                         };
