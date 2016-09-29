@@ -163,6 +163,7 @@ namespace GenesisDex
             stages.Add("2s & 3s");
             pkStageAllowed.DataSource = stages;
         }
+        //===========================================================================================================
 
         private void FormScan_MouseDown(object sender, MouseEventArgs e)
         {
@@ -170,6 +171,7 @@ namespace GenesisDex
             dragCursorPoint = Cursor.Position;
             dragFormPoint = this.Location;
         }
+        //===========================================================================================================
 
         private void FormScan_MouseMove(object sender, MouseEventArgs e)
         {
@@ -179,11 +181,13 @@ namespace GenesisDex
                 this.Location = Point.Add(dragFormPoint, new Size(dif));
             }
         }
+        //===========================================================================================================
 
         private void FormScan_MouseUp(object sender, MouseEventArgs e)
         {
             dragging = false;
         }
+        //===========================================================================================================
         //===========================================================================================================
 
 
@@ -203,11 +207,13 @@ namespace GenesisDex
         {
             pbScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokedexHover.png");
         }
+        //===========================================================================================================
 
         private void pbScan_MouseLeave(object sender, EventArgs e)
         {
             pbScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokedexHover.png");
         }
+        //===========================================================================================================
 
         private void pbScan_Click(object sender, EventArgs e)
         {
@@ -216,6 +222,7 @@ namespace GenesisDex
             this.Hide();
             fm.Show();
         }
+        //===========================================================================================================
         //===========================================================================================================
 
         //===========================================================================================================
@@ -226,11 +233,13 @@ namespace GenesisDex
         {
             pbScanPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanPokemonHover.png");
         }
+        //===========================================================================================================
 
         private void pbScanPokemon_MouseLeave(object sender, EventArgs e)
         {
             pbScanPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanPokemon.png");
         }
+        //===========================================================================================================
 
         private void pbScanPokemon_Click(object sender, EventArgs e)
         {
@@ -356,6 +365,7 @@ namespace GenesisDex
                 PokeGenerator.ReportProgress(Progress);
             }
         }
+        //===========================================================================================================
 
         private void PokeGenerator_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
@@ -382,6 +392,7 @@ namespace GenesisDex
             SetGasp();
             isScanning = false;
         }
+        //===========================================================================================================
 
         private void PokeGenerator_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
@@ -400,7 +411,8 @@ namespace GenesisDex
             }
         }
         //===========================================================================================================
-        
+        //===========================================================================================================
+
         //===========================================================================================================
         //=== CreateScanList is used to create and filter the list that is requested in the comboboxes and ==========
         //===== check boxes of FormScan. ============================================================================
@@ -417,6 +429,7 @@ namespace GenesisDex
                 CheckLegend();
             }
         }
+        //===========================================================================================================
         //===========================================================================================================
 
         //===========================================================================================================
@@ -508,6 +521,7 @@ namespace GenesisDex
             }
         }
         //===========================================================================================================
+        //===========================================================================================================
 
         //===========================================================================================================
         //=== CheckHabitat is used to remove all pokemon from the generation criteria that do not live in the =======
@@ -535,6 +549,7 @@ namespace GenesisDex
             }
         }
         //===========================================================================================================
+        //===========================================================================================================
 
         //===========================================================================================================
         //=== CheckType is used to remove all types excpet the type specified by the user. ==========================
@@ -560,6 +575,7 @@ namespace GenesisDex
             }
         }
         //===========================================================================================================
+        //===========================================================================================================
 
         //===========================================================================================================
         //=== CheckLegend is used to remove legendaries from the generation list, unless the legendary check box is==
@@ -584,7 +600,10 @@ namespace GenesisDex
             }
         }
         //===========================================================================================================
+        //===========================================================================================================
 
+        //===========================================================================================================
+        //===========================================================================================================
         private Pokemon GetPokemon()
         {
             int i;
@@ -599,7 +618,11 @@ namespace GenesisDex
                 try { return pokeList[i]; } catch { MessageBox.Show("There are no registered Pokemon that fit this criteria..."); return null; }
             }
         }
+        //===========================================================================================================
+        //===========================================================================================================
 
+        //===========================================================================================================
+        //===========================================================================================================
         private int GetLevel()
         {
             int min = Convert.ToInt32(pkLevelMin.Value);
@@ -617,19 +640,11 @@ namespace GenesisDex
                 Cap.Add(cap.cap);
             }
         }
+        //===========================================================================================================
+        //===========================================================================================================
 
-        private void SetImage()
-        {
-            pbPokemon.Size = pbPokemon.Image.Size;
-            pbPokemon.Location = new Point(203 - (pbPokemon.Width / 2), 305 - (pbPokemon.Height));
-        }
-
-        private void SetItem()
-        {
-            pkItem.Size = pkItem.Image.Size;
-            pkItem.Location = new Point(623 - (pkItem.Width / 2), 512 - (pkItem.Height));
-        }
-
+        //===========================================================================================================
+        //===========================================================================================================
         private void GetStats(Pokemon poke, int level)
         {
             List<Stat> stats = new List<Stat>();
@@ -641,12 +656,24 @@ namespace GenesisDex
             int spatk;
             int spdef;
             int spd;
-            try { hp = Convert.ToInt32(poke.hp); } catch { MessageBox.Show(poke.id + "'s hp is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); hp = 1; return; }
-            try { atk = Convert.ToInt32(poke.atk); } catch { MessageBox.Show(poke.id + "'s atk is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); atk = 1; return; }
-            try { def = Convert.ToInt32(poke.def); } catch { MessageBox.Show(poke.id + "'s def is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); def = 1; return; }
-            try { spatk = Convert.ToInt32(poke.spatk); } catch { MessageBox.Show(poke.id + "'s spatk is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); spatk = 1; return; }
-            try { spdef = Convert.ToInt32(poke.spdef); } catch { MessageBox.Show(poke.id + "'s spdef is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); spdef = 1; return; }
-            try { spd = Convert.ToInt32(poke.spd); } catch { MessageBox.Show(poke.id + "'s spd is not a proper integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); spd = 1; return; }
+            try { hp = Convert.ToInt32(poke.hp); } catch { MessageBox.Show(poke.id + "'s hp is not a proper " +
+                "integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer " +
+                "inspet the issue."); hp = 1; return; }
+            try { atk = Convert.ToInt32(poke.atk); } catch { MessageBox.Show(poke.id + "'s atk is not a proper " +
+                "integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer " + 
+                "inspet the issue."); atk = 1; return; }
+            try { def = Convert.ToInt32(poke.def); } catch { MessageBox.Show(poke.id + "'s def is not a proper " +
+                "integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer " +
+                "inspet the issue."); def = 1; return; }
+            try { spatk = Convert.ToInt32(poke.spatk); } catch { MessageBox.Show(poke.id + "'s spatk is not a proper " +
+                "integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the " +
+                "issue."); spatk = 1; return; }
+            try { spdef = Convert.ToInt32(poke.spdef); } catch { MessageBox.Show(poke.id + "'s spdef is not a proper " +
+                "integer. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the " +
+                "issue."); spdef = 1; return; }
+            try { spd = Convert.ToInt32(poke.spd); } catch { MessageBox.Show(poke.id + "'s spd is not a proper integer. " +
+                "Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the " +
+                "issue."); spd = 1; return; }
             stats = getstats.createList(hp, atk, def, spatk, spdef, spd);
             stats = GetNature(stats);
             SortStats(stats);
@@ -752,8 +779,9 @@ namespace GenesisDex
             else
             {
                 string[] gender;
-                try { gender = poke.gender.Split(' '); } catch { MessageBox.Show(poke.id + "'s Gender Ratio is not entered correctly. Please take a " +
-                    "look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); Gender.Add("!ERROR!"); return poke; }
+                try { gender = poke.gender.Split(' '); } catch { MessageBox.Show(poke.id + "'s Gender Ratio is not entered correctly. " +
+                "Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue.");
+                    Gender.Add("!ERROR!"); return poke; }
                 string m = gender[0];
                 m = m.Replace("%", " ");
                 m = m.Trim();
@@ -764,8 +792,9 @@ namespace GenesisDex
                     m = m.Trim();
                 }
                 int male;
-                try { male = Convert.ToInt32(m); } catch { MessageBox.Show(poke.id + "'s Gender Ratio is not entered correctly. Please take a " + 
-                    "look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); Gender.Add("!ERROR!"); return poke; }
+                try { male = Convert.ToInt32(m); } catch { MessageBox.Show(poke.id + "'s Gender Ratio is not entered correctly. " +
+                "Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue.");
+                    Gender.Add("!ERROR!"); return poke; }
                 int i = rng.Next(0, 101);
                 if (i <= male)
                 {
@@ -778,111 +807,6 @@ namespace GenesisDex
                     return poke;
                 }
             }
-        }
-
-        private void WriteInfo()
-        {
-            pkItem.Visible = false;
-            rtbInfo1.Text ="Name: " + AllPokemon[Current].id + Environment.NewLine +
-                "Type: " + Type[Current] + Environment.NewLine +
-                "Level: " + AllLevels[Current] + Environment.NewLine +
-                Environment.NewLine +
-                "Stats:" + Environment.NewLine +
-                "Current Health: " + CurrentHealth[Current] + Environment.NewLine +
-                "Max Health:\t   " + MaxHealth[Current] + Environment.NewLine +
-                "HP:\t\t   " + AllStat[Current][0] + Environment.NewLine +
-                "ATK:\t\t   " + AllStat[Current][1] + Environment.NewLine +
-                "DEF:\t\t   " + AllStat[Current][2] + Environment.NewLine + 
-                "SPATK:\t   " + AllStat[Current][3] + Environment.NewLine +
-                "SPDEF:\t   " + AllStat[Current][4] + Environment.NewLine + 
-                "SPD:\t\t   " + AllStat[Current][5] + Environment.NewLine +
-                Environment.NewLine +
-                "Capabilities:" + Environment.NewLine;
-            foreach (string cap in AllCap[Current])
-            {
-                rtbInfo1.Text += cap + Environment.NewLine;
-            }
-
-        }
-
-        private void WriteMoves()
-        {
-            pkItem.Visible = false;
-            rtbInfo1.Text = "Gender: " + Gender[Current] + Environment.NewLine +
-                "Nature: " + AllNatures[Current] + Environment.NewLine +
-                "Size: " + AllPokemon[Current].size + Environment.NewLine +
-                "Weight: " + AllPokemon[Current].weight + Environment.NewLine;
-            rtbInfo1.Text += (Environment.NewLine + "Moves:" + Environment.NewLine);
-            for (var w = 0; w < AllMoves[Current].Count; w++)
-            {
-                rtbInfo1.Text += "-" + AllMoves[Current][w] + Environment.NewLine;
-            }
-            rtbInfo1.Text += Environment.NewLine + "Abilities:" + Environment.NewLine;
-            for (var a = 0; a < AllAbilities[Current].Count; a++)
-            {
-                rtbInfo1.Text += "-" + AllAbilities[Current][a] + Environment.NewLine;
-            }
-            rtbInfo1.Text += Environment.NewLine + "Skills:";
-            for (var s = 0; s < AllSkills[Current].Count; s += 2)
-            {
-                rtbInfo1.Text += Environment.NewLine + "-" + AllSkills[Current][s] + "\t-" + AllSkills[Current][s + 1];
-            }
-        }
-
-        private void WriteItem1()
-        {
-            pkItem.Visible = true;
-            pkItem.Image = AllItems1[Current];
-            SetItem();
-            rtbInfo1.Text = "Item 1-" + Environment.NewLine +
-                AllDesc1[Current];
-        }
-        private void WriteItem2()
-        {
-            pkItem.Visible = true;
-            pkItem.Image = AllItems2[Current];
-            SetItem();
-            rtbInfo1.Text = "Item 2-" + Environment.NewLine +
-                AllDesc2[Current];
-
-        }
-
-        private void WriteLoot()
-        {
-            tbPageCount.Text = "----";
-            pkItem.Visible = false;
-            rtbInfo1.Clear();
-            for (int x = 0; x < AllDesc3.Count; x++)
-            {
-
-                rtbInfo1.Text += AllDesc3[x] + Environment.NewLine + Environment.NewLine;
-            }
-            rtbInfo1.Text += "$" + Cash.ToString();
-        }
-
-        private void infoBack_Click(object sender, EventArgs e)
-        {
-            if (isScanning) return;
-            Page--;
-            if (Page == 0) { Page = 4; }
-            UpdatePage();
-        }
-
-        private void infoForward_Click(object sender, EventArgs e)
-        {
-            if (isScanning) return;
-            Page++;
-            if (Page == 5) { Page = 1; }
-            UpdatePage();
-        }
-
-        private void UpdatePage()
-        {
-            tbPageCount.Text = Page + "/4";
-            if (Page == 1) { WriteInfo(); }
-            if (Page == 2) { WriteMoves(); }
-            if (Page == 3) { WriteItem1(); }
-            if (Page == 4) { WriteItem2(); }
         }
 
         private void GetAbilities()
@@ -922,7 +846,8 @@ namespace GenesisDex
             string[] up1 = skil.Split('d');
             string[] up2 = up1[0].Split(' ');
             int temp;
-            try { temp = Convert.ToInt32(up2[1]); } catch { MessageBox.Show(IChooseYou.id + "'s Skill is not entered correctly. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return "ERROR"; }
+            try { temp = Convert.ToInt32(up2[1]); } catch { MessageBox.Show(IChooseYou.id + "'s Skill is not entered correctly. " +
+                "Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return "ERROR"; }
             int fin = temp + 1;
             build.Append(up2[0] + " " + fin + "d" + up1[1]);
             return build.ToString();
@@ -935,7 +860,8 @@ namespace GenesisDex
             string[] up1 = skil.Split('d');
             string[] up2 = up1[0].Split(' ');
             int temp;
-            try { temp = Convert.ToInt32(up2[1]); } catch { MessageBox.Show(IChooseYou.id + "'s Skill is not entered correctly. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return "ERROR"; }
+            try { temp = Convert.ToInt32(up2[1]); } catch { MessageBox.Show(IChooseYou.id + "'s Skill is not entered correctly. " +
+                "Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return "ERROR"; }
             int fin = temp - 1;
             build.Append(up2[0] + " " + fin + "d" + up1[1]);
             return build.ToString();
@@ -1026,7 +952,9 @@ namespace GenesisDex
             {
                 string[] moveLevel = moveList[e].move.Split(' ');
                 int lvl;
-                try { lvl = Convert.ToInt32(moveLevel[0]); } catch { MessageBox.Show(IChooseYou.id + "'s Move is not entered correctly. Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue.   '" + moveList[e].move + "'"); moves.Add("!ERROR!"); return; }
+                try { lvl = Convert.ToInt32(moveLevel[0]); } catch { MessageBox.Show(IChooseYou.id + "'s Move is not entered correctly. " +
+                "Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue.   '" + moveList[e].move + 
+                "'"); moves.Add("!ERROR!"); return; }
                 if (lvl <= i)
                 {
                     build.Clear();
@@ -1162,6 +1090,157 @@ namespace GenesisDex
             }
         }
 
+        private void SetGasp()
+        {
+            pkGasp.Text = "";
+            foreach (string s in Info[Current])
+            {
+                pkGasp.Text += s + Environment.NewLine;
+            }
+        }
+
+        //===========================================================================================================
+        //===========================================================================================================
+        private Image getImage(string x)
+        {
+            string path = (x);
+            if (File.Exists(x) == true)
+            {
+                return Image.FromFile(path);
+            }
+            else if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\MissingNo.gif"))
+            {
+                return Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\MissingNo.gif");
+            }
+            else
+            {
+                return Image.FromFile(null);
+            }
+        }
+        //===========================================================================================================
+        //===========================================================================================================
+
+        //===========================================================================================================
+        //===========================================================================================================
+        private void SetImage()
+        {
+            pbPokemon.Size = pbPokemon.Image.Size;
+            pbPokemon.Location = new Point(203 - (pbPokemon.Width / 2), 305 - (pbPokemon.Height));
+        }
+
+        private void SetItem()
+        {
+            pkItem.Size = pkItem.Image.Size;
+            pkItem.Location = new Point(623 - (pkItem.Width / 2), 512 - (pkItem.Height));
+        }
+        //===========================================================================================================
+        //===========================================================================================================
+
+        private void WriteInfo()
+        {
+            pkItem.Visible = false;
+            rtbInfo1.Text = "Name: " + AllPokemon[Current].id + Environment.NewLine +
+                "Type: " + Type[Current] + Environment.NewLine +
+                "Level: " + AllLevels[Current] + Environment.NewLine +
+                Environment.NewLine +
+                "Stats:" + Environment.NewLine +
+                "Current Health: " + CurrentHealth[Current] + Environment.NewLine +
+                "Max Health:\t   " + MaxHealth[Current] + Environment.NewLine +
+                "HP:\t\t   " + AllStat[Current][0] + Environment.NewLine +
+                "ATK:\t\t   " + AllStat[Current][1] + Environment.NewLine +
+                "DEF:\t\t   " + AllStat[Current][2] + Environment.NewLine +
+                "SPATK:\t   " + AllStat[Current][3] + Environment.NewLine +
+                "SPDEF:\t   " + AllStat[Current][4] + Environment.NewLine +
+                "SPD:\t\t   " + AllStat[Current][5] + Environment.NewLine +
+                Environment.NewLine +
+                "Capabilities:" + Environment.NewLine;
+            foreach (string cap in AllCap[Current])
+            {
+                rtbInfo1.Text += cap + Environment.NewLine;
+            }
+
+        }
+
+        private void WriteMoves()
+        {
+            pkItem.Visible = false;
+            rtbInfo1.Text = "Gender: " + Gender[Current] + Environment.NewLine +
+                "Nature: " + AllNatures[Current] + Environment.NewLine +
+                "Size: " + AllPokemon[Current].size + Environment.NewLine +
+                "Weight: " + AllPokemon[Current].weight + Environment.NewLine;
+            rtbInfo1.Text += (Environment.NewLine + "Moves:" + Environment.NewLine);
+            for (var w = 0; w < AllMoves[Current].Count; w++)
+            {
+                rtbInfo1.Text += "-" + AllMoves[Current][w] + Environment.NewLine;
+            }
+            rtbInfo1.Text += Environment.NewLine + "Abilities:" + Environment.NewLine;
+            for (var a = 0; a < AllAbilities[Current].Count; a++)
+            {
+                rtbInfo1.Text += "-" + AllAbilities[Current][a] + Environment.NewLine;
+            }
+            rtbInfo1.Text += Environment.NewLine + "Skills:";
+            for (var s = 0; s < AllSkills[Current].Count; s += 2)
+            {
+                rtbInfo1.Text += Environment.NewLine + "-" + AllSkills[Current][s] + "\t-" + AllSkills[Current][s + 1];
+            }
+        }
+
+        private void WriteItem1()
+        {
+            pkItem.Visible = true;
+            pkItem.Image = AllItems1[Current];
+            SetItem();
+            rtbInfo1.Text = "Item 1-" + Environment.NewLine +
+                AllDesc1[Current];
+        }
+        private void WriteItem2()
+        {
+            pkItem.Visible = true;
+            pkItem.Image = AllItems2[Current];
+            SetItem();
+            rtbInfo1.Text = "Item 2-" + Environment.NewLine +
+                AllDesc2[Current];
+
+        }
+
+        private void WriteLoot()
+        {
+            tbPageCount.Text = "----";
+            pkItem.Visible = false;
+            rtbInfo1.Clear();
+            for (int x = 0; x < AllDesc3.Count; x++)
+            {
+
+                rtbInfo1.Text += AllDesc3[x] + Environment.NewLine + Environment.NewLine;
+            }
+            rtbInfo1.Text += "$" + Cash.ToString();
+        }
+
+        private void infoBack_Click(object sender, EventArgs e)
+        {
+            if (isScanning) return;
+            Page--;
+            if (Page == 0) { Page = 4; }
+            UpdatePage();
+        }
+
+        private void infoForward_Click(object sender, EventArgs e)
+        {
+            if (isScanning) return;
+            Page++;
+            if (Page == 5) { Page = 1; }
+            UpdatePage();
+        }
+
+        private void UpdatePage()
+        {
+            tbPageCount.Text = Page + "/4";
+            if (Page == 1) { WriteInfo(); }
+            if (Page == 2) { WriteMoves(); }
+            if (Page == 3) { WriteItem1(); }
+            if (Page == 4) { WriteItem2(); }
+        }
+
         private void pkLevelMin_ValueChanged(object sender, EventArgs e)
         {
             if (pkLevelMin.Value > pkLevelMax.Value) { pkLevelMax.Value = pkLevelMin.Value; }
@@ -1228,25 +1307,6 @@ namespace GenesisDex
             SetImage();
             SetGasp();
             UpdatePage();
-        }
-
-        private void SetGasp()
-        {
-            pkGasp.Text = "";
-            foreach (string s in Info[Current])
-            {
-                pkGasp.Text += s + Environment.NewLine;
-            }
-        }
-
-        private void pictureBox1_MouseHover(object sender, EventArgs e)
-        {
-            pbGotoPage.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\GotoPageHover.png");
-        }
-
-        private void pictureBox1_MouseLeave(object sender, EventArgs e)
-        {
-            pbGotoPage.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\GotoPage.png");
         }
 
         private void pkGoto_KeyDown(object sender, KeyEventArgs e)
@@ -1414,21 +1474,14 @@ namespace GenesisDex
             }
         }
 
-        private Image getImage(string x)
+        private void pictureBox1_MouseHover(object sender, EventArgs e)
         {
-            string path = (x);
-            if (File.Exists(x) == true)
-            {
-                return Image.FromFile(path);
-            }
-            else if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\MissingNo.gif"))
-            {
-                return Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\MissingNo.gif");
-            }
-            else
-            {
-                return Image.FromFile(null);
-            }
+            pbGotoPage.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\GotoPageHover.png");
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            pbGotoPage.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\GotoPage.png");
         }
     }
 }
