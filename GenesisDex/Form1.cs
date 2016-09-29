@@ -423,6 +423,7 @@ namespace GenesisDex
                     {
                         megaList.Clear();
                         megaList = megaXML.createList("MegaX" + pokeList[i].number);
+                        if (megaList[0].type == "Unchanged") { megaList[0].type = pokeList[i].type; }
                         rtbInfo1.Text = string.Format(
                             "Number: {0}" + Environment.NewLine +
                             "Name: {1}" + Environment.NewLine +
@@ -449,6 +450,7 @@ namespace GenesisDex
                     {
                         megaList.Clear();
                         megaList = megaXML.createList("MegaY" + pokeList[i].number);
+                        if (megaList[0].type == "Unchanged") { megaList[0].type = pokeList[i].type; }
                         rtbInfo1.Text = string.Format(
                             "Number: {0}" + Environment.NewLine +
                             "Name: {1}" + Environment.NewLine +
@@ -476,6 +478,7 @@ namespace GenesisDex
                 {
                     megaList.Clear();
                     megaList = megaXML.createList("Mega" + pokeList[i].number);
+                    if (megaList[0].type == "Unchanged") { megaList[0].type = pokeList[i].type; }
                     rtbInfo1.Text = string.Format(
                         "Number: {0}" + Environment.NewLine +
                         "Name: {1}" + Environment.NewLine +
