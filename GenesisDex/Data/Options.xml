@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Options>
+  <MaxItemTier>4</MaxItemTier>
+  <MaxPlayerLevel>50</MaxPlayerLevel>
+  <MaxPokemonLevel>100</MaxPokemonLevel>
+  <MaxScanAmount>100</MaxScanAmount>
+  <OneItemGasp>It has something!</OneItemGasp>
+  <TwoItemGasp>It has a few things!</TwoItemGasp>
+  <PokemonGasp>It's a</PokemonGasp>
+  <BanList>
+    <PokeBan>Placeholder</PokeBan>
+  </BanList>
+</Options>

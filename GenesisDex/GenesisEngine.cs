@@ -9,6 +9,22 @@ using System.IO;
 
 namespace GenesisDexEngine
 {
+    class Options
+    {
+        public string OneItemGasp { get; set; }
+        public string TwoItemGasp { get; set; }
+        public string PokemonGasp { get; set; }
+        public int MaxPlayerLevel { get; set; }
+        public int MaxPokemonLevel { get; set; }
+        public int MaxScanAmount { get; set; }
+        public int MaxItemTier { get; set; }
+    }
+
+    class BannedPokemon
+    {
+        public string PokeBan { get; set; }
+    }
+
     class Pokemon
     {
         public string id { get; set; }
@@ -91,7 +107,49 @@ namespace GenesisDexEngine
         public string type { get; set; }
     }
 
-class PokemonList
+    class OptionsList
+    {
+        public List<Options> createList()
+        {
+            XDocument doc = null;
+            string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\Options.xml");
+            List<Options> idList = new List<Options>();
+            doc = XDocument.Load(fileName);
+            var query = from node in doc.Descendants("Options")
+                        select new Options
+                        {
+                            MaxPokemonLevel = (int)node.Element("MaxPokemonLevel"),
+                            MaxPlayerLevel = (int)node.Element("MaxPlayerLevel"),
+                            MaxScanAmount = (int)node.Element("MaxScanAmount"),
+                            MaxItemTier = (int)node.Element("MaxItemTier"),
+                            OneItemGasp = (string)node.Element("OneItemGasp"),
+                            TwoItemGasp = (string)node.Element("TwoItemGasp"),
+                            PokemonGasp = (string)node.Element("PokemonGasp"),
+                        };
+            idList = query.ToList();
+            return idList;
+        }
+    }
+
+    class BanList
+    {
+        public List<BannedPokemon> createList()
+        {
+            XDocument doc = null;
+            string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\Options.xml");
+            List<BannedPokemon> idList = new List<BannedPokemon>();
+            doc = XDocument.Load(fileName);
+            var query = from node in doc.Descendants("Options").Descendants("BanList").Descendants("PokeBan")
+                        select new BannedPokemon
+                        {
+                            PokeBan = (string)node.Value,
+                        };
+            idList = query.ToList();
+            return idList;
+        }
+    }
+
+    class PokemonList
     {
         public List<Pokemon> createList(string decend)
         {

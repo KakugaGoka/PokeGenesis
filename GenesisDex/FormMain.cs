@@ -855,5 +855,23 @@ namespace GenesisDex
             pbPokemon.Size = pbPokemon.Image.Size;
             pbPokemon.Location = new Point(203 - (pbPokemon.Width / 2), 305 - (pbPokemon.Height));
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            FormOptions fc = new FormOptions();
+            fc.FormClosing += FormOptionsIsClosing;
+            fc.Show();
+        }
+
+        private void FormOptionsIsClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.Cancel)
+            {
+                return;
+            }
+            this.Show();
+            RefreshPokedex();
+            this.Update();
+        }
     }
 }
