@@ -30,6 +30,7 @@ namespace GenesisDex
             optionsList = optionsXML.createList();
             banList = banXML.createList();
             pokeList = pokeXML.createList("Pokemon");
+            SortPokeList();
             nudPlayerLevel.Value = optionsList[0].MaxPlayerLevel;
             nudPokeLevel.Value = optionsList[0].MaxPokemonLevel;
             nudScanLimit.Value = optionsList[0].MaxScanAmount;
@@ -47,6 +48,14 @@ namespace GenesisDex
                 if (!listBanned.Items.Contains(s.id))
                     listAllowed.Items.Add(s.id);
             }
+        }
+
+        private void SortPokeList()
+        {
+            pokeList.Sort(delegate (Pokemon x, Pokemon y)
+            {
+                try { return x.number.CompareTo(y.number); } catch { return 0; }
+            });
         }
 
         private void btnBan_Click(object sender, EventArgs e)
