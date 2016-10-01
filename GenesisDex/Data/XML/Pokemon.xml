@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Namespace>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>001</number>
     <id>Bulbasaur</id>
     <type>Grass / Poison</type>
@@ -65,7 +65,7 @@
       </Moves>
     </List001>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>002</number>
     <id>Ivysaur</id>
     <type>Grass / Poison</type>
@@ -129,7 +129,7 @@
       </Moves>
     </List002>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>003</number>
     <id>Venusaur</id>
     <type>Grass / Poison</type>
@@ -204,7 +204,7 @@
     <spdef>+2</spdef>
     <ability>Thick Fat</ability>
   </Mega003>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>004</number>
     <id>Charmander</id>
     <type>Fire</type>
@@ -269,7 +269,7 @@
       </Moves>
     </List004>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>005</number>
     <id>Charmeleon</id>
     <type>Fire</type>
@@ -331,7 +331,7 @@
       </Moves>
     </List005>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>006</number>
     <id>Charizard</id>
     <type>Fire / Flying</type>
@@ -414,7 +414,7 @@
     <spatk>+5</spatk>
     <ability>Drought</ability>
   </MegaY006>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>007</number>
     <id>Squirtle</id>
     <type>Water</type>
@@ -479,7 +479,7 @@
       </Moves>
     </List007>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>008</number>
     <id>Wartortle</id>
     <type>Water</type>
@@ -543,7 +543,7 @@
       </Moves>
     </List008>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>009</number>
     <id>Blastoise</id>
     <type>Water</type>
@@ -616,7 +616,7 @@
     <spdef>+1</spdef>
     <ability>Mega Launcher</ability>
   </Mega009>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>010</number>
     <id>Caterpie</id>
     <type>Bug </type>
@@ -672,7 +672,7 @@
       </Moves>
     </List010>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>011</number>
     <id>Metapod</id>
     <type>Bug</type>
@@ -724,7 +724,7 @@
       </Moves>
     </List011>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>012</number>
     <id>Butterfree</id>
     <type>Bug / Flying</type>
@@ -792,7 +792,7 @@
       </Moves>
     </List012>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>013</number>
     <id>Weedle</id>
     <type>Bug / Poison</type>
@@ -848,7 +848,7 @@
       </Moves>
     </List013>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>014</number>
     <id>Kakuna</id>
     <type>Bug / Poison</type>
@@ -900,7 +900,7 @@
       </Moves>
     </List014>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>015</number>
     <id>Beedrill</id>
     <type>Bug / Poison</type>
@@ -970,7 +970,7 @@
     <spd>+7</spd>
     <ability>Adaptability</ability>
   </Mega015>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>016</number>
     <id>Pidgey</id>
     <type>Normal / Flying</type>
@@ -1035,7 +1035,7 @@
       </Moves>
     </List016>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>017</number>
     <id>Pidgeotto</id>
     <type>Normal / Flying</type>
@@ -1098,7 +1098,7 @@
       </Moves>
     </List017>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>018</number>
     <id>Pidgeot</id>
     <type>Normal / Flying</type>
@@ -1170,7 +1170,7 @@
     <spd>+2</spd>
     <ability>No Guard</ability>
   </Mega018>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>019</number>
     <id>Rattata</id>
     <type>Normal</type>
@@ -1234,7 +1234,7 @@
       </Moves>
     </List019>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>020</number>
     <id>Raticate</id>
     <type>Normal</type>
@@ -1297,7 +1297,7 @@
       </Moves>
     </List020>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>021</number>
     <id>Spearow</id>
     <type>Normal / Flying</type>
@@ -1358,7 +1358,7 @@
       </Moves>
     </List021>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>022</number>
     <id>Fearow</id>
     <type>Normal / Flying</type>
@@ -1418,7 +1418,7 @@
       </Moves>
     </List022>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>023</number>
     <id>Ekans</id>
     <type>Poison</type>
@@ -1486,7 +1486,7 @@
       </Moves>
     </List023>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>024</number>
     <id>Arbok</id>
     <type>Poison</type>
@@ -1552,7 +1552,7 @@
       </Moves>
     </List024>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>025</number>
     <id>Pikachu</id>
     <type>Electric</type>
@@ -1618,7 +1618,7 @@
       </Moves>
     </List025>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>026</number>
     <id>Raichu</id>
     <type>Electric</type>
@@ -1684,7 +1684,7 @@
       </Moves>
     </List026>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>027</number>
     <id>Sandshrew</id>
     <type>Ground</type>
@@ -1752,7 +1752,7 @@
       </Moves>
     </List027>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>028</number>
     <id>Sandslash</id>
     <type>Ground</type>
@@ -1819,7 +1819,7 @@
       </Moves>
     </List028>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>029</number>
     <id>Nidoran♀</id>
     <type>Poison</type>
@@ -1884,7 +1884,7 @@
       </Moves>
     </List029>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>030</number>
     <id>Nidorina</id>
     <type>Poison</type>
@@ -1946,7 +1946,7 @@
       </Moves>
     </List030>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>031</number>
     <id>Nidoqueen</id>
     <type>Poison / Ground</type>
@@ -2014,7 +2014,7 @@
       </Moves>
     </List031>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>032</number>
     <id>Nidoran♂</id>
     <type>Poison</type>
@@ -2079,7 +2079,7 @@
       </Moves>
     </List032>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>033</number>
     <id>Nidorino</id>
     <type>Poison</type>
@@ -2141,7 +2141,7 @@
       </Moves>
     </List033>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>034</number>
     <id>Nidoking</id>
     <type>Poison / Ground</type>
@@ -2209,7 +2209,7 @@
       </Moves>
     </List034>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>035</number>
     <id>Clefairy</id>
     <type>Fairy</type>
@@ -2278,7 +2278,7 @@
       </Moves>
     </List035>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>036</number>
     <id>Clefable</id>
     <type>Fairy</type>
@@ -2346,7 +2346,7 @@
       </Moves>
     </List036>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>037</number>
     <id>Vulpix</id>
     <type>Fire</type>
@@ -2417,7 +2417,7 @@
       </Moves>
     </List037>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>038</number>
     <id>Ninetales</id>
     <type>Fire</type>
@@ -2486,7 +2486,7 @@
       </Moves>
     </List038>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>039</number>
     <id>Jigglypuff</id>
     <type>Normal / Fairy</type>
@@ -2552,7 +2552,7 @@
       </Moves>
     </List039>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>040</number>
     <id>Wigglytuff</id>
     <type>Normal / Fairy</type>
@@ -2618,7 +2618,7 @@
       </Moves>
     </List040>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>041</number>
     <id>Zubat</id>
     <type>Poison / Flying</type>
@@ -2686,7 +2686,7 @@
       </Moves>
     </List041>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>718</number>
     <id>Zygarde</id>
     <type>Dragon / Ground</type>
@@ -2755,7 +2755,7 @@
       </Moves>
     </List718>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>717</number>
     <id>Yveltal</id>
     <type>Dark / Flying</type>
@@ -2825,7 +2825,7 @@
       </Moves>
     </List717>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>716</number>
     <id>Xerneas</id>
     <type>Fairy</type>
@@ -2894,7 +2894,7 @@
       </Moves>
     </List716>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>715</number>
     <id>Noivern</id>
     <type>Flying / Dragon</type>
@@ -2963,7 +2963,7 @@
       </Moves>
     </List715>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>714</number>
     <id>Noibat</id>
     <type>Flying / Dragon</type>
@@ -3030,7 +3030,7 @@
       </Moves>
     </List714>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>712</number>
     <id>Bergmite</id>
     <type>Ice</type>
@@ -3096,7 +3096,7 @@
       </Moves>
     </List712>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>713</number>
     <id>Avalugg</id>
     <type>Ice</type>
@@ -3164,7 +3164,7 @@
       </Moves>
     </List713>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>709</number>
     <id>Trevenant</id>
     <type>Ghost / Grass</type>
@@ -3229,7 +3229,7 @@
       </Moves>
     </List709>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>708</number>
     <id>Phantump</id>
     <type>Ghost / Grass</type>
@@ -3297,7 +3297,7 @@
       </Moves>
     </List708>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>707</number>
     <id>Klefki</id>
     <type>Steel / Fairy</type>
@@ -3362,7 +3362,7 @@
       </Moves>
     </List707>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>706</number>
     <id>Goodra</id>
     <type>Dragon</type>
@@ -3425,7 +3425,7 @@
       </Moves>
     </List706>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>705</number>
     <id>Sligoo</id>
     <type>Dragon</type>
@@ -3487,7 +3487,7 @@
       </Moves>
     </List705>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>704</number>
     <id>Goomy</id>
     <type>Dragon</type>
@@ -3549,7 +3549,7 @@
       </Moves>
     </List704>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>710</number>
     <id>Pumpkaboo (average)</id>
     <type>Ghost / Grass</type>
@@ -3618,7 +3618,7 @@
       </Moves>
     </List710>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>710-small</number>
     <id>Pumpkaboo (small)</id>
     <type>Ghost / Grass</type>
@@ -3687,7 +3687,7 @@
       </Moves>
     </List710-small>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>710-large</number>
     <id>Pumpkaboo (large)</id>
     <type>Ghost / Grass</type>
@@ -3756,7 +3756,7 @@
       </Moves>
     </List710-large>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>710-super</number>
     <id>Pumpkaboo (super)</id>
     <type>Ghost / Grass</type>
@@ -3825,7 +3825,7 @@
       </Moves>
     </List710-super>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>711</number>
     <id>Gourgeist (average)</id>
     <type>Ghost / Grass</type>
@@ -3896,7 +3896,7 @@
       </Moves>
     </List711>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>711-small</number>
     <id>Gourgeist (small)</id>
     <type>Ghost / Grass</type>
@@ -3967,7 +3967,7 @@
       </Moves>
     </List711-small>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>711-large</number>
     <id>Gourgeist (large)</id>
     <type>Ghost / Grass</type>
@@ -4038,7 +4038,7 @@
       </Moves>
     </List711-large>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>711-super</number>
     <id>Gourgeist (super)</id>
     <type>Ghost / Grass</type>
@@ -4109,7 +4109,7 @@
       </Moves>
     </List711-super>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>701</number>
     <id>Hawlucha</id>
     <type>Fighting / Flying</type>
@@ -4170,7 +4170,7 @@
       </Moves>
     </List701>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>702</number>
     <id>Dedenne</id>
     <type>Electric /Fairy</type>
@@ -4235,7 +4235,7 @@
       </Moves>
     </List702>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>703</number>
     <id>Carbink</id>
     <type>Rock / Fairy</type>
@@ -4300,7 +4300,7 @@
       </Moves>
     </List703>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>700</number>
     <id>Sylveon</id>
     <type>Fairy</type>
@@ -4369,7 +4369,7 @@
       </Moves>
     </List700>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>699</number>
     <id>Aurorus</id>
     <type>Rock / Ice</type>
@@ -4438,7 +4438,7 @@
       </Moves>
     </List699>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>698</number>
     <id>Amaura</id>
     <type>Rock / Ice</type>
@@ -4508,7 +4508,7 @@
       </Moves>
     </List698>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>042</number>
     <id>Golbat</id>
     <type>Poison / Flying</type>
@@ -4573,7 +4573,7 @@
       </Moves>
     </List042>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>043</number>
     <id>Oddish</id>
     <type>Grass / Poison</type>
@@ -4641,7 +4641,7 @@
       </Moves>
     </List043>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>044</number>
     <id>Gloom</id>
     <type>Grass / Poison</type>
@@ -4706,7 +4706,7 @@
       </Moves>
     </List044>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>045</number>
     <id>Vileplume</id>
     <type>Grass / Poison</type>
@@ -4770,7 +4770,7 @@
       </Moves>
     </List045>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>697</number>
     <id>Tyrantrum</id>
     <type>Rock / Dragon</type>
@@ -4837,7 +4837,7 @@
       </Moves>
     </List697>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>696</number>
     <id>Tyrunt</id>
     <type>Rock / Dragon</type>
@@ -4902,7 +4902,7 @@
       </Moves>
     </List696>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>695</number>
     <id>Heliolisk</id>
     <type>Electric / Normal</type>
@@ -4964,7 +4964,7 @@
       </Moves>
     </List695>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>694</number>
     <id>Helioptile</id>
     <type>Electric / Normal</type>
@@ -5028,7 +5028,7 @@
       </Moves>
     </List694>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>693</number>
     <id>Clawitzer</id>
     <type>Water</type>
@@ -5094,7 +5094,7 @@
       </Moves>
     </List693>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>692</number>
     <id>Clauncher</id>
     <type>Water</type>
@@ -5159,7 +5159,7 @@
       </Moves>
     </List692>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>691</number>
     <id>Dragalge</id>
     <type>Poison / Dragon</type>
@@ -5229,7 +5229,7 @@
       </Moves>
     </List691>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>690</number>
     <id>Skrelp</id>
     <type>Poison / Water</type>
@@ -5298,7 +5298,7 @@
       </Moves>
     </List690>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>689</number>
     <id>Barbaracle</id>
     <type>Rock / Water</type>
@@ -5365,7 +5365,7 @@
       </Moves>
     </List689>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>688</number>
     <id>Binacle</id>
     <type>Rock / Water</type>
@@ -5432,7 +5432,7 @@
       </Moves>
     </List688>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>687</number>
     <id>Malamar</id>
     <type>Dark / Psychic</type>
@@ -5503,7 +5503,7 @@
       </Moves>
     </List687>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>686</number>
     <id>Inkay</id>
     <type>Dark / Psychic</type>
@@ -5576,7 +5576,7 @@
       </Moves>
     </List686>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>685</number>
     <id>Slurpuff</id>
     <type>Fairy</type>
@@ -5640,7 +5640,7 @@
       </Moves>
     </List685>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>684</number>
     <id>Swirlix</id>
     <type>Fairy</type>
@@ -5706,7 +5706,7 @@
       </Moves>
     </List684>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>683</number>
     <id>Aromatisse</id>
     <type>Fairy</type>
@@ -5773,7 +5773,7 @@
       </Moves>
     </List683>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>682</number>
     <id>Spritzee</id>
     <type>Fairy</type>
@@ -5840,7 +5840,7 @@
       </Moves>
     </List682>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>681</number>
     <id>Aegislash</id>
     <type>Steel / Ghost</type>
@@ -5908,7 +5908,7 @@
       </Moves>
     </List681>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>680</number>
     <id>Doublade</id>
     <type>Steel / Ghost</type>
@@ -5976,7 +5976,7 @@
       </Moves>
     </List680>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>679</number>
     <id>Honedge</id>
     <type>Steel / Ghost</type>
@@ -6046,7 +6046,7 @@
       </Moves>
     </List679>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>677</number>
     <id>Espurr</id>
     <type>Psychic</type>
@@ -6107,7 +6107,7 @@
       </Moves>
     </List677>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>676</number>
     <id>Furfrou</id>
     <type>Normal</type>
@@ -6167,7 +6167,7 @@
       </Moves>
     </List676>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>675</number>
     <id>Pangoro</id>
     <type>Fighting / Dark</type>
@@ -6232,7 +6232,7 @@
       </Moves>
     </List675>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>674</number>
     <id>Pancham</id>
     <type>Fighting</type>
@@ -6296,7 +6296,7 @@
       </Moves>
     </List674>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>673</number>
     <id>Gogoat</id>
     <type>Grass</type>
@@ -6363,7 +6363,7 @@
       </Moves>
     </List673>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>672</number>
     <id>Skiddo</id>
     <type>Grass</type>
@@ -6428,7 +6428,7 @@
       </Moves>
     </List672>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>678-f</number>
     <id>Meowstic (female)</id>
     <type>Psychic</type>
@@ -6495,7 +6495,7 @@
       </Moves>
     </List678-f>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>678-m</number>
     <id>Meowstic (male)</id>
     <type>Psychic</type>
@@ -6562,7 +6562,7 @@
       </Moves>
     </List678-m>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>671</number>
     <id>Florges</id>
     <type>Fairy</type>
@@ -6627,7 +6627,7 @@
       </Moves>
     </List671>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>670</number>
     <id>Floette</id>
     <type>Fairy</type>
@@ -6693,7 +6693,7 @@
       </Moves>
     </List670>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>669</number>
     <id>Flabébé</id>
     <type>Fairy</type>
@@ -6760,7 +6760,7 @@
       </Moves>
     </List669>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>668</number>
     <id>Pyroar</id>
     <type>Fire / Normal</type>
@@ -6827,7 +6827,7 @@
       </Moves>
     </List668>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>667</number>
     <id>Litleo</id>
     <type>Fire / Normal</type>
@@ -6894,7 +6894,7 @@
       </Moves>
     </List667>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>666</number>
     <id>Vivillon</id>
     <type>Bug / Flying</type>
@@ -6957,7 +6957,7 @@
       </Moves>
     </List666>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>665</number>
     <id>Spewpa</id>
     <type>Bug</type>
@@ -7010,7 +7010,7 @@
       </Moves>
     </List665>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>664</number>
     <id>Scatterbug</id>
     <type>Bug</type>
@@ -7066,7 +7066,7 @@
       </Moves>
     </List664>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>663</number>
     <id>Talonflame</id>
     <type>Fire / Flying</type>
@@ -7133,7 +7133,7 @@
       </Moves>
     </List663>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>662</number>
     <id>Fletchinder</id>
     <type>Fire / Flying</type>
@@ -7199,7 +7199,7 @@
       </Moves>
     </List662>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>661</number>
     <id>Fletchling</id>
     <type>Normal / Flying</type>
@@ -7264,7 +7264,7 @@
       </Moves>
     </List661>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>660</number>
     <id>Diggersby</id>
     <type>Normal / Ground</type>
@@ -7332,7 +7332,7 @@
       </Moves>
     </List660>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>659</number>
     <id>Bunnelby</id>
     <type>Normal</type>
@@ -7397,7 +7397,7 @@
       </Moves>
     </List659>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>658</number>
     <id>Greninja</id>
     <type>Water / Dark</type>
@@ -7467,7 +7467,7 @@
       </Moves>
     </List658>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>657</number>
     <id>Frogadier</id>
     <type>Water</type>
@@ -7535,7 +7535,7 @@
       </Moves>
     </List657>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>656</number>
     <id>Froakie</id>
     <type>Water</type>
@@ -7603,7 +7603,7 @@
       </Moves>
     </List656>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>655</number>
     <id>Delphox</id>
     <type>Fire / Psychic</type>
@@ -7674,7 +7674,7 @@
       </Moves>
     </List655>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>654</number>
     <id>Braixen</id>
     <type>Fire</type>
@@ -7742,7 +7742,7 @@
       </Moves>
     </List654>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>653</number>
     <id>Fennekin</id>
     <type>Fire</type>
@@ -7809,7 +7809,7 @@
       </Moves>
     </List653>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>652</number>
     <id>Chesnaught</id>
     <type>Grass / Fighting</type>
@@ -7875,7 +7875,7 @@
       </Moves>
     </List652>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>651</number>
     <id>Quilladin</id>
     <type>Grass</type>
@@ -7939,7 +7939,7 @@
       </Moves>
     </List651>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>650</number>
     <id>Chespin</id>
     <type>Grass</type>
@@ -8004,7 +8004,7 @@
       </Moves>
     </List650>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>649</number>
     <id>Genesect</id>
     <type>Bug / Steel</type>
@@ -8070,7 +8070,7 @@
       </Moves>
     </List649>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>648-pirouette</number>
     <id>Meloetta (Step Form)</id>
     <type>Normal / Psychic</type>
@@ -8192,7 +8192,7 @@
       </Moves>
     </List648>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>647</number>
     <id>Keldeo</id>
     <type>Water / Fighting</type>
@@ -8256,7 +8256,7 @@
       </Moves>
     </List647>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>646</number>
     <id>Kyurem</id>
     <type>Dragon / Ice</type>
@@ -8323,7 +8323,7 @@
       </Moves>
     </List646>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>646-black</number>
     <id>Kyurem (Zekrom Fusion Form)</id>
     <type>Dragon / Ice</type>
@@ -8389,7 +8389,7 @@
       </Moves>
     </List646-black>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>646-white</number>
     <id>Kyurem (Reshiram Fusion Form)</id>
     <type>Dragon / Ice</type>
@@ -8521,7 +8521,7 @@
       </Moves>
     </List645-therian>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>645</number>
     <id>Landorus (Incarnate Forme)</id>
     <type>Ground / Flying</type>
@@ -8587,7 +8587,7 @@
       </Moves>
     </List645>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>644</number>
     <id>Zekrom</id>
     <type>Dragon / Electric</type>
@@ -8654,7 +8654,7 @@
       </Moves>
     </List644>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>643</number>
     <id>Reshiram</id>
     <type>Dragon / Fire</type>
@@ -8722,7 +8722,7 @@
       </Moves>
     </List643>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>642</number>
     <id>Thundurus (Incarnate Forme)</id>
     <type>Electric / Flying</type>
@@ -8788,7 +8788,7 @@
       </Moves>
     </List642>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>642-therian</number>
     <id>Thundurus (Therian Forme)</id>
     <type>Electric / Flying</type>
@@ -8856,7 +8856,7 @@
       </Moves>
     </List642-therian>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>641</number>
     <id>Tornadus (Incarnate Forme)</id>
     <type>Flying</type>
@@ -8922,7 +8922,7 @@
       </Moves>
     </List641>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>641-therian</number>
     <id>Tornadus (Therian Forme)</id>
     <type>Flying</type>
@@ -8990,7 +8990,7 @@
       </Moves>
     </List641-therian>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>640</number>
     <id>Virizion</id>
     <type>Grass / Fighting</type>
@@ -9053,7 +9053,7 @@
       </Moves>
     </List640>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>046</number>
     <id>Paras</id>
     <type>Bug / Grass</type>
@@ -9119,7 +9119,7 @@
       </Moves>
     </List046>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>047</number>
     <id>Parasect</id>
     <type>Bug / Grass</type>
@@ -9183,7 +9183,7 @@
       </Moves>
     </List047>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>048</number>
     <id>Venonat</id>
     <type>Bug / Poison</type>
@@ -9246,7 +9246,7 @@
       </Moves>
     </List048>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>049</number>
     <id>Venomoth</id>
     <type>Bug / Poison</type>
@@ -9308,7 +9308,7 @@
       </Moves>
     </List049>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>050</number>
     <id>Diglett</id>
     <type>Ground</type>
@@ -9372,7 +9372,7 @@
       </Moves>
     </List050>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>051</number>
     <id>Dugtrio</id>
     <type>Ground</type>
@@ -9435,7 +9435,7 @@
       </Moves>
     </List051>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>052</number>
     <id>Meowth</id>
     <type>Normal</type>
@@ -9568,7 +9568,7 @@
       </Moves>
     </List053>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>054</number>
     <id>Psyduck</id>
     <type>Water</type>
@@ -9634,7 +9634,7 @@
       </Moves>
     </List054>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>055</number>
     <id>Golduck</id>
     <type>Water</type>
@@ -9698,7 +9698,7 @@
       </Moves>
     </List055>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>056</number>
     <id>Mankey</id>
     <type>Fighting</type>
@@ -9763,7 +9763,7 @@
       </Moves>
     </List056>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>057</number>
     <id>Primeape</id>
     <type>Fighting</type>
@@ -9823,7 +9823,7 @@
       </Moves>
     </List057>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>058</number>
     <id>Growlithe</id>
     <type>Fire</type>
@@ -9892,7 +9892,7 @@
       </Moves>
     </List058>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>059</number>
     <id>Arcanine</id>
     <type>Fire</type>
@@ -9962,7 +9962,7 @@
       </Moves>
     </List059>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>060</number>
     <id>Poliwag</id>
     <type>Water</type>
@@ -10029,7 +10029,7 @@
       </Moves>
     </List060>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>061</number>
     <id>Poliwhirl</id>
     <type>Water</type>
@@ -10094,7 +10094,7 @@
       </Moves>
     </List061>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>062</number>
     <id>Poliwrath</id>
     <type>Water / Fighting</type>
@@ -10160,7 +10160,7 @@
       </Moves>
     </List062>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>063</number>
     <id>Abra</id>
     <type>Psychic</type>
@@ -10215,7 +10215,7 @@
       </Moves>
     </List063>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>064</number>
     <id>Kadabra</id>
     <type>Psychic</type>
@@ -10281,7 +10281,7 @@
       </Moves>
     </List064>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>065</number>
     <id>Alakazam</id>
     <type>Psychic</type>
@@ -10354,7 +10354,7 @@
     <spd>+3</spd>
     <ability>Trace</ability>
   </Mega065>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>066</number>
     <id>Machop</id>
     <type>Fighting</type>
@@ -10422,7 +10422,7 @@
       </Moves>
     </List066>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>067</number>
     <id>Machoke</id>
     <type>Fighting</type>
@@ -10487,7 +10487,7 @@
       </Moves>
     </List067>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>068</number>
     <id>Machamp</id>
     <type>Fighting</type>
@@ -10551,7 +10551,7 @@
       </Moves>
     </List068>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>069</number>
     <id>Bellsprout</id>
     <type>Grass / Poison</type>
@@ -10616,7 +10616,7 @@
       </Moves>
     </List069>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>070</number>
     <id>Weepinbell</id>
     <type>Grass / Poison</type>
@@ -10678,7 +10678,7 @@
       </Moves>
     </List070>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>071</number>
     <id>Victreebel</id>
     <type>Grass / Poison</type>
@@ -10742,7 +10742,7 @@
       </Moves>
     </List071>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>072</number>
     <id>Tentacool</id>
     <type>Water / Poison</type>
@@ -10877,7 +10877,7 @@
       </Moves>
     </List073>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>074</number>
     <id>Geodude</id>
     <type>Rock / Ground</type>
@@ -10946,7 +10946,7 @@
       </Moves>
     </List074>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>075</number>
     <id>Graveler</id>
     <type>Rock / Ground</type>
@@ -11013,7 +11013,7 @@
       </Moves>
     </List075>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>639</number>
     <id>Terrakion</id>
     <type>Rock / Fighting</type>
@@ -11078,7 +11078,7 @@
       </Moves>
     </List639>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>637</number>
     <id>Volcarona</id>
     <type>Bug / Fire</type>
@@ -11140,7 +11140,7 @@
       </Moves>
     </List637>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>636</number>
     <id>Larvesta</id>
     <type>Bug / Fire</type>
@@ -11205,7 +11205,7 @@
       </Moves>
     </List636>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>635</number>
     <id>Hydreigon</id>
     <type>Dark / Dragon</type>
@@ -11337,7 +11337,7 @@
       </Moves>
     </List634>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>633</number>
     <id>Deino</id>
     <type>Dark / Dragon</type>
@@ -11404,7 +11404,7 @@
       </Moves>
     </List633>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>632</number>
     <id>Durant</id>
     <type>Bug / Steel</type>
@@ -11467,7 +11467,7 @@
       </Moves>
     </List632>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>631</number>
     <id>Heatmor</id>
     <type>Fire</type>
@@ -11535,7 +11535,7 @@
       </Moves>
     </List631>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>630</number>
     <id>Mandibuzz</id>
     <type>Dark / Flying</type>
@@ -11600,7 +11600,7 @@
       </Moves>
     </List630>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>629</number>
     <id>Vullaby</id>
     <type>Dark / Flying</type>
@@ -11668,7 +11668,7 @@
       </Moves>
     </List629>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>638</number>
     <id>Cobalion</id>
     <type>Steel / Fighting</type>
@@ -11731,7 +11731,7 @@
       </Moves>
     </List638>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>628</number>
     <id>Braviary</id>
     <type>Normal / Flying</type>
@@ -11794,7 +11794,7 @@
       </Moves>
     </List628>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>627</number>
     <id>Rufflet</id>
     <type>Normal / Flying</type>
@@ -11860,7 +11860,7 @@
       </Moves>
     </List627>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>626</number>
     <id>Bouffalant</id>
     <type>Normal</type>
@@ -11923,7 +11923,7 @@
       </Moves>
     </List626>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>625</number>
     <id>Bisharp</id>
     <type>Dark / Steel</type>
@@ -11989,7 +11989,7 @@
       </Moves>
     </List625>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>624</number>
     <id>Pawniard</id>
     <type>Dark / Steel</type>
@@ -12058,7 +12058,7 @@
       </Moves>
     </List624>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>623</number>
     <id>Golurk</id>
     <type>Ground / Ghost</type>
@@ -12122,7 +12122,7 @@
       </Moves>
     </List623>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>622</number>
     <id>Golett</id>
     <type>Ground / Ghost</type>
@@ -12186,7 +12186,7 @@
       </Moves>
     </List622>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>621</number>
     <id>Druddigon</id>
     <type>Dragon</type>
@@ -12252,7 +12252,7 @@
       </Moves>
     </List621>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>620</number>
     <id>Mienshao</id>
     <type>Fighting</type>
@@ -12315,7 +12315,7 @@
       </Moves>
     </List620>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>619</number>
     <id>Mienfoo</id>
     <type>Fighting</type>
@@ -12381,7 +12381,7 @@
       </Moves>
     </List619>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>618</number>
     <id>Stunfisk</id>
     <type>Ground / Electric</type>
@@ -12448,7 +12448,7 @@
       </Moves>
     </List618>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>617</number>
     <id>Accelgor</id>
     <type>Bug</type>
@@ -12510,7 +12510,7 @@
       </Moves>
     </List617>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>616</number>
     <id>Shelmet</id>
     <type>Bug</type>
@@ -12575,7 +12575,7 @@
       </Moves>
     </List616>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>615</number>
     <id>Cryogonal</id>
     <type>Ice</type>
@@ -12645,7 +12645,7 @@
       </Moves>
     </List615>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>614</number>
     <id>Beartic</id>
     <type>Ice</type>
@@ -12778,7 +12778,7 @@
       </Moves>
     </List613>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>612</number>
     <id>Haxorus</id>
     <type>Dragon</type>
@@ -12842,7 +12842,7 @@
       </Moves>
     </List612>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>611</number>
     <id>Fraxure</id>
     <type>Dragon</type>
@@ -12907,7 +12907,7 @@
       </Moves>
     </List611>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>610</number>
     <id>Axew</id>
     <type>Dragon</type>
@@ -12974,7 +12974,7 @@
       </Moves>
     </List610>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>609</number>
     <id>Chandelure</id>
     <type>Ghost / Fire</type>
@@ -13119,7 +13119,7 @@
       </Moves>
     </List608>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>607</number>
     <id>Litwick</id>
     <type>Ghost / Fire</type>
@@ -13195,7 +13195,7 @@
       </Moves>
     </List607>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>606</number>
     <id>Beheeyem</id>
     <type>Psychic</type>
@@ -13262,7 +13262,7 @@
       </Moves>
     </List606>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>605</number>
     <id>Elgyem</id>
     <type>Psychic</type>
@@ -13331,7 +13331,7 @@
       </Moves>
     </List605>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>604</number>
     <id>Eelektross</id>
     <type>Electric</type>
@@ -13394,7 +13394,7 @@
       </Moves>
     </List604>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>603</number>
     <id>Eelektrik</id>
     <type>Electric</type>
@@ -13458,7 +13458,7 @@
       </Moves>
     </List603>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>602</number>
     <id>Tynamo</id>
     <type>Electric</type>
@@ -13516,7 +13516,7 @@
       </Moves>
     </List602>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>601</number>
     <id>Klinklang</id>
     <type>Steel</type>
@@ -13580,7 +13580,7 @@
       </Moves>
     </List601>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>600</number>
     <id>Klang</id>
     <type>Steel</type>
@@ -13645,7 +13645,7 @@
       </Moves>
     </List600>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>599</number>
     <id>Klink</id>
     <type>Steel</type>
@@ -13712,7 +13712,7 @@
       </Moves>
     </List599>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>598</number>
     <id>Ferrothorn</id>
     <type>Grass / Steel</type>
@@ -13774,7 +13774,7 @@
       </Moves>
     </List598>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>597</number>
     <id>Ferroseed</id>
     <type>Grass / Steel</type>
@@ -13839,7 +13839,7 @@
       </Moves>
     </List597>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>596</number>
     <id>Galvantula</id>
     <type>Bug / Electric</type>
@@ -13904,7 +13904,7 @@
       </Moves>
     </List596>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>595</number>
     <id>Joltik</id>
     <type>Bug / Electric</type>
@@ -13973,7 +13973,7 @@
       </Moves>
     </List595>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>594</number>
     <id>Alomomola</id>
     <type>Water</type>
@@ -14039,7 +14039,7 @@
       </Moves>
     </List594>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>593</number>
     <id>Jellicent</id>
     <type>Water / Ghost</type>
@@ -14103,7 +14103,7 @@
       </Moves>
     </List593>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>592</number>
     <id>Frillish</id>
     <type>Water / Ghost</type>
@@ -14171,7 +14171,7 @@
       </Moves>
     </List592>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>591</number>
     <id>Amoonguss</id>
     <type>Grass / Poison</type>
@@ -14236,7 +14236,7 @@
       </Moves>
     </List591>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>590</number>
     <id>Foongus</id>
     <type>Grass / Poison</type>
@@ -14303,7 +14303,7 @@
       </Moves>
     </List590>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>589</number>
     <id>Escavalier</id>
     <type>Bug / Steel</type>
@@ -14368,7 +14368,7 @@
       </Moves>
     </List589>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>588</number>
     <id>Karrablast</id>
     <type>Bug / Steel</type>
@@ -14433,7 +14433,7 @@
       </Moves>
     </List588>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>587</number>
     <id>Emolga</id>
     <type>Electric / Flying</type>
@@ -14499,7 +14499,7 @@
       </Moves>
     </List587>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>586</number>
     <id>Sawsbuck</id>
     <type>Normal / Grass</type>
@@ -14562,7 +14562,7 @@
       </Moves>
     </List586>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>585</number>
     <id>Deerling</id>
     <type>Normal / Grass</type>
@@ -14627,7 +14627,7 @@
       </Moves>
     </List585>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>076</number>
     <id>Golem</id>
     <type>Rock / Ground</type>
@@ -14693,7 +14693,7 @@
       </Moves>
     </List076>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>077</number>
     <id>Ponyta</id>
     <type>Fire</type>
@@ -14758,7 +14758,7 @@
       </Moves>
     </List077>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>078</number>
     <id>Rapidash</id>
     <type>Fire</type>
@@ -14821,7 +14821,7 @@
       </Moves>
     </List078>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>079</number>
     <id>Slowpoke</id>
     <type>Water / Psychic</type>
@@ -14887,7 +14887,7 @@
       </Moves>
     </List079>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>080</number>
     <id>Slowbro</id>
     <type>Water / Psychic</type>
@@ -14956,7 +14956,7 @@
     <spd>+3</spd>
     <ability>Shell Armor</ability>
   </Mega080>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>081</number>
     <id>Magnemite</id>
     <type>Electric / Steel</type>
@@ -15027,7 +15027,7 @@
       </Moves>
     </List081>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>082</number>
     <id>Magneton</id>
     <type>Electric / Steel</type>
@@ -15162,7 +15162,7 @@
       </Moves>
     </List083>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>084</number>
     <id>Doduo</id>
     <type>Normal / Flying</type>
@@ -15225,7 +15225,7 @@
       </Moves>
     </List084>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>085</number>
     <id>Dodrio</id>
     <type>Normal / Flying</type>
@@ -15286,7 +15286,7 @@
       </Moves>
     </List085>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>086</number>
     <id>Seel</id>
     <type>Water</type>
@@ -15353,7 +15353,7 @@
       </Moves>
     </List086>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>087</number>
     <id>Dewgong</id>
     <type>Water / Ice</type>
@@ -15419,7 +15419,7 @@
       </Moves>
     </List087>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>088</number>
     <id>Grimer</id>
     <type>Poison</type>
@@ -15487,7 +15487,7 @@
       </Moves>
     </List088>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>089</number>
     <id>Muk</id>
     <type>Poison</type>
@@ -15552,7 +15552,7 @@
       </Moves>
     </List089>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>090</number>
     <id>Shellder</id>
     <type>Water</type>
@@ -15618,7 +15618,7 @@
       </Moves>
     </List090>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>091</number>
     <id>Cloyster</id>
     <type>Water / Ice</type>
@@ -15670,7 +15670,7 @@
       </Moves>
     </List091>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>092</number>
     <id>Gastly</id>
     <type>Ghost / Poison</type>
@@ -15740,7 +15740,7 @@
       </Moves>
     </List092>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>093</number>
     <id>Haunter</id>
     <type>Ghost / Poison</type>
@@ -15808,7 +15808,7 @@
       </Moves>
     </List093>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>094</number>
     <id>Gengar</id>
     <type>Ghost / Poison</type>
@@ -15885,7 +15885,7 @@
     <spd>+2</spd>
     <ability>Shadow Tag</ability>
   </Mega094>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>095</number>
     <id>Onix</id>
     <type>Rock / Ground</type>
@@ -15960,7 +15960,7 @@
       </Moves>
     </List095>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>096</number>
     <id>Drowzee</id>
     <type>Psychic</type>
@@ -16027,7 +16027,7 @@
       </Moves>
     </List096>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>097</number>
     <id>Hypno</id>
     <type>Psychic</type>
@@ -16091,7 +16091,7 @@
       </Moves>
     </List097>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>098</number>
     <id>Krabby</id>
     <type>Water</type>
@@ -16157,7 +16157,7 @@
       </Moves>
     </List098>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>099</number>
     <id>Kingler</id>
     <type>Water</type>
@@ -16219,7 +16219,7 @@
       </Moves>
     </List099>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>100</number>
     <id>Voltorb</id>
     <type>Electric</type>
@@ -16288,7 +16288,7 @@
       </Moves>
     </List100>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>101</number>
     <id>Electrode</id>
     <type>Electric</type>
@@ -16353,7 +16353,7 @@
       </Moves>
     </List101>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>102</number>
     <id>Exeggcute</id>
     <type>Grass / Psychic</type>
@@ -16417,7 +16417,7 @@
       </Moves>
     </List102>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>103</number>
     <id>Exeggutor</id>
     <type>Grass / Psychic</type>
@@ -16483,7 +16483,7 @@
       </Moves>
     </List103>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>104</number>
     <id>Cubone</id>
     <type>Ground</type>
@@ -16550,7 +16550,7 @@
       </Moves>
     </List104>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>105</number>
     <id>Marowak</id>
     <type>Ground</type>
@@ -16615,7 +16615,7 @@
       </Moves>
     </List105>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>106</number>
     <id>Hitmonlee</id>
     <type>Fighting</type>
@@ -16678,7 +16678,7 @@
       </Moves>
     </List106>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>107</number>
     <id>Hitmonchan</id>
     <type>Fighting</type>
@@ -16740,7 +16740,7 @@
       </Moves>
     </List107>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>108</number>
     <id>Lickitung</id>
     <type>Normal</type>
@@ -16806,7 +16806,7 @@
       </Moves>
     </List108>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>109</number>
     <id>Koffing</id>
     <type>Poison</type>
@@ -16872,7 +16872,7 @@
       </Moves>
     </List109>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>110</number>
     <id>Weezing</id>
     <type>Poison</type>
@@ -16934,7 +16934,7 @@
       </Moves>
     </List110>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>111</number>
     <id>Rhyhorn</id>
     <type>Ground / Rock</type>
@@ -17002,7 +17002,7 @@
       </Moves>
     </List111>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>112</number>
     <id>Rhydon</id>
     <type>Ground / Rock</type>
@@ -17067,7 +17067,7 @@
       </Moves>
     </List112>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>113</number>
     <id>Chansey</id>
     <type>Normal</type>
@@ -17130,7 +17130,7 @@
       </Moves>
     </List113>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>114</number>
     <id>Tangela</id>
     <type>Grass</type>
@@ -17200,7 +17200,7 @@
       </Moves>
     </List114>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>115</number>
     <id>Kangaskhan</id>
     <type>Normal</type>
@@ -17273,7 +17273,7 @@
     <spd>+1</spd>
     <ability>Parental Bond</ability>
   </Mega115>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>116</number>
     <id>Horsea</id>
     <type>Water</type>
@@ -17338,7 +17338,7 @@
       </Moves>
     </List116>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>117</number>
     <id>Seadra</id>
     <type>Water</type>
@@ -17400,7 +17400,7 @@
       </Moves>
     </List117>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>118</number>
     <id>Goldeen</id>
     <type>Water</type>
@@ -17466,7 +17466,7 @@
       </Moves>
     </List118>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>119</number>
     <id>Seaking</id>
     <type>Water</type>
@@ -17527,7 +17527,7 @@
       </Moves>
     </List119>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>120</number>
     <id>Staryu</id>
     <type>Water</type>
@@ -17598,7 +17598,7 @@
       </Moves>
     </List120>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>121</number>
     <id>Starmie</id>
     <type>Water</type>
@@ -17665,7 +17665,7 @@
       </Moves>
     </List121>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>122</number>
     <id>Mr. Mime</id>
     <type>Psychic / Fairy</type>
@@ -17730,7 +17730,7 @@
       </Moves>
     </List122>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>123</number>
     <id>Scyther</id>
     <type>Bug / Flying</type>
@@ -17797,7 +17797,7 @@
       </Moves>
     </List123>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>124</number>
     <id>Jynx</id>
     <type>Ice / Psychic</type>
@@ -17862,7 +17862,7 @@
       </Moves>
     </List124>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>125</number>
     <id>Electabuzz</id>
     <type>Electric</type>
@@ -17924,7 +17924,7 @@
       </Moves>
     </List125>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>126</number>
     <id>Magmar</id>
     <type>Fire</type>
@@ -17989,7 +17989,7 @@
       </Moves>
     </List126>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>127</number>
     <id>Pinsir</id>
     <type>Bug</type>
@@ -18063,7 +18063,7 @@
     <spd>+2</spd>
     <ability>Aerilate</ability>
   </Mega127>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>128</number>
     <id>Tauros</id>
     <type>Normal</type>
@@ -18126,7 +18126,7 @@
       </Moves>
     </List128>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>129</number>
     <id>Magikarp</id>
     <type>Water</type>
@@ -18180,7 +18180,7 @@
       </Moves>
     </List129>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>130</number>
     <id>Gyarados</id>
     <type>Water / Flying</type>
@@ -18252,7 +18252,7 @@
     <spdef>+3</spdef>
     <ability>Mold Breaker</ability>
   </Mega130>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>131</number>
     <id>Lapras</id>
     <type>Water / Ice</type>
@@ -18318,7 +18318,7 @@
       </Moves>
     </List131>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>132</number>
     <id>Ditto</id>
     <type>Normal</type>
@@ -18370,7 +18370,7 @@
       </Moves>
     </List132>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>133</number>
     <id>Eevee</id>
     <type>Normal</type>
@@ -18440,7 +18440,7 @@
       </Moves>
     </List133>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>134</number>
     <id>Vaporeon</id>
     <type>Water</type>
@@ -18502,7 +18502,7 @@
       </Moves>
     </List134>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>135</number>
     <id>Jolteon</id>
     <type>Electric</type>
@@ -18562,7 +18562,7 @@
       </Moves>
     </List135>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>136</number>
     <id>Flareon</id>
     <type>Fire</type>
@@ -18623,7 +18623,7 @@
       </Moves>
     </List136>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>137</number>
     <id>Porygon</id>
     <type>Normal</type>
@@ -18690,7 +18690,7 @@
       </Moves>
     </List137>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>138</number>
     <id>Omanyte</id>
     <type>Rock / Water</type>
@@ -18755,7 +18755,7 @@
       </Moves>
     </List138>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>139</number>
     <id>Omastar</id>
     <type>Rock / Water</type>
@@ -18817,7 +18817,7 @@
       </Moves>
     </List139>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>140</number>
     <id>Kabuto</id>
     <type>Rock / Water</type>
@@ -18881,7 +18881,7 @@
       </Moves>
     </List140>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>141</number>
     <id>Kabutops</id>
     <type>Rock / Water</type>
@@ -18941,7 +18941,7 @@
       </Moves>
     </List141>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>142</number>
     <id>Aerodactyl</id>
     <type>Rock / Flying</type>
@@ -19013,7 +19013,7 @@
     <spd>+2</spd>
     <ability>Tough Claws</ability>
   </Mega142>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>143</number>
     <id>Snorlax</id>
     <type>Normal</type>
@@ -19077,7 +19077,7 @@
       </Moves>
     </List143>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>144</number>
     <id>Articuno</id>
     <type>Ice / Flying</type>
@@ -19144,7 +19144,7 @@
       </Moves>
     </List144>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>145</number>
     <id>Zapdos</id>
     <type>Electric / Flying</type>
@@ -19211,7 +19211,7 @@
       </Moves>
     </List145>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>146</number>
     <id>Moltres</id>
     <type>Fire / Flying</type>
@@ -19275,7 +19275,7 @@
       </Moves>
     </List146>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>147</number>
     <id>Dratini</id>
     <type>Dragon</type>
@@ -19339,7 +19339,7 @@
       </Moves>
     </List147>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>148</number>
     <id>Dragonair</id>
     <type>Dragon</type>
@@ -19401,7 +19401,7 @@
       </Moves>
     </List148>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>149</number>
     <id>Dragonite</id>
     <type>Dragon / Flying</type>
@@ -19466,7 +19466,7 @@
       </Moves>
     </List149>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>150</number>
     <id>Mewtwo</id>
     <type>Psychic</type>
@@ -19554,7 +19554,7 @@
     <spd>+1</spd>
     <ability>Insomnia</ability>
   </MegaY150>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>151</number>
     <id>Mew</id>
     <type>Psychic</type>
@@ -19621,7 +19621,7 @@
       </Moves>
     </List151>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>152</number>
     <id>Chikorita</id>
     <type>Grass</type>
@@ -19686,7 +19686,7 @@
       </Moves>
     </List152>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>153</number>
     <id>Bayleef</id>
     <type>Grass</type>
@@ -19749,7 +19749,7 @@
       </Moves>
     </List153>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>154</number>
     <id>Meganium</id>
     <type>Grass</type>
@@ -19813,7 +19813,7 @@
       </Moves>
     </List154>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>155</number>
     <id>Cyndaquil</id>
     <type>Fire</type>
@@ -19883,7 +19883,7 @@
       </Moves>
     </List155>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>156</number>
     <id>Quilava</id>
     <type>Fire</type>
@@ -19950,7 +19950,7 @@
       </Moves>
     </List156>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>157</number>
     <id>Typhlosion</id>
     <type>Fire</type>
@@ -20015,7 +20015,7 @@
       </Moves>
     </List157>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>158</number>
     <id>Totodile</id>
     <type>Water</type>
@@ -20083,7 +20083,7 @@
       </Moves>
     </List158>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>159</number>
     <id>Croconaw</id>
     <type>Water</type>
@@ -20148,7 +20148,7 @@
       </Moves>
     </List159>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>160</number>
     <id>Feraligatr</id>
     <type>Water</type>
@@ -20213,7 +20213,7 @@
       </Moves>
     </List160>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>161</number>
     <id>Sentret</id>
     <type>Normal</type>
@@ -20277,7 +20277,7 @@
       </Moves>
     </List161>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>162</number>
     <id>Furret</id>
     <type>Normal</type>
@@ -20339,7 +20339,7 @@
       </Moves>
     </List162>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>163</number>
     <id>Hoothoot</id>
     <type>Normal / Flying</type>
@@ -20407,7 +20407,7 @@
       </Moves>
     </List163>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>164</number>
     <id>Noctowl</id>
     <type>Normal / Flying</type>
@@ -20471,7 +20471,7 @@
       </Moves>
     </List164>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>165</number>
     <id>Ledyba</id>
     <type>Bug / Flying</type>
@@ -20536,7 +20536,7 @@
       </Moves>
     </List165>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>166</number>
     <id>Ledian</id>
     <type>Bug / Flying</type>
@@ -20599,7 +20599,7 @@
       </Moves>
     </List166>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>167</number>
     <id>Spinarak</id>
     <type>Bug / Poison</type>
@@ -20667,7 +20667,7 @@
       </Moves>
     </List167>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>168</number>
     <id>Ariados</id>
     <type>Bug / Poison</type>
@@ -20732,7 +20732,7 @@
       </Moves>
     </List168>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>169</number>
     <id>Crobat</id>
     <type>Poison / Flying</type>
@@ -20798,7 +20798,7 @@
       </Moves>
     </List169>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>170</number>
     <id>Chinchou</id>
     <type>Water / Electric</type>
@@ -20868,7 +20868,7 @@
       </Moves>
     </List170>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>171</number>
     <id>Lanturn</id>
     <type>Water / Electric</type>
@@ -20937,7 +20937,7 @@
       </Moves>
     </List171>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>172</number>
     <id>Pichu</id>
     <type>Electric</type>
@@ -20995,7 +20995,7 @@
       </Moves>
     </List172>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>173</number>
     <id>Cleffa</id>
     <type>Fairy</type>
@@ -21053,7 +21053,7 @@
       </Moves>
     </List173>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>175</number>
     <id>Togepi</id>
     <type>Fairy</type>
@@ -21118,7 +21118,7 @@
       </Moves>
     </List175>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>176</number>
     <id>Togetic</id>
     <type>Fairy / Flying</type>
@@ -21181,7 +21181,7 @@
       </Moves>
     </List176>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>174</number>
     <id>Igglybuff</id>
     <type>Normal / Fairy</type>
@@ -21239,7 +21239,7 @@
       </Moves>
     </List174>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>177</number>
     <id>Natu</id>
     <type>Psychic / Flying</type>
@@ -21305,7 +21305,7 @@
       </Moves>
     </List177>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>178</number>
     <id>Xatu</id>
     <type>Psychic / Flying</type>
@@ -21370,7 +21370,7 @@
       </Moves>
     </List178>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>179</number>
     <id>Mareep</id>
     <type>Electric</type>
@@ -21438,7 +21438,7 @@
       </Moves>
     </List179>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>180</number>
     <id>Flaaffy</id>
     <type>Electric</type>
@@ -21502,7 +21502,7 @@
       </Moves>
     </List180>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>181</number>
     <id>Ampharos</id>
     <type>Electric</type>
@@ -21577,7 +21577,7 @@
     <spd>-1</spd>
     <ability>Mold Breaker</ability>
   </Mega181>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>182</number>
     <id>Bellossom</id>
     <type>Grass</type>
@@ -21641,7 +21641,7 @@
       </Moves>
     </List182>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>183</number>
     <id>Marill</id>
     <type>Water / Fairy</type>
@@ -21706,7 +21706,7 @@
       </Moves>
     </List183>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>184</number>
     <id>Azumarill</id>
     <type>Water / Fairy</type>
@@ -21771,7 +21771,7 @@
       </Moves>
     </List184>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>185</number>
     <id>Sudowoodo</id>
     <type>Rock</type>
@@ -21835,7 +21835,7 @@
       </Moves>
     </List185>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>186</number>
     <id>Politoed</id>
     <type>Water</type>
@@ -21902,7 +21902,7 @@
       </Moves>
     </List186>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>187</number>
     <id>Hoppip</id>
     <type>Grass / Flying</type>
@@ -21973,7 +21973,7 @@
       </Moves>
     </List187>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>188</number>
     <id>Skiploom</id>
     <type>Grass / Flying</type>
@@ -22042,7 +22042,7 @@
       </Moves>
     </List188>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>189</number>
     <id>Jumpluff</id>
     <type>Grass / Flying</type>
@@ -22110,7 +22110,7 @@
       </Moves>
     </List189>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>190</number>
     <id>Aipom</id>
     <type>Normal</type>
@@ -22174,7 +22174,7 @@
       </Moves>
     </List190>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>191</number>
     <id>Sunkern</id>
     <type>Grass</type>
@@ -22241,7 +22241,7 @@
       </Moves>
     </List191>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>584</number>
     <id>Vanilluxe</id>
     <type>Ice</type>
@@ -22307,7 +22307,7 @@
       </Moves>
     </List584>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>583</number>
     <id>Vanillish</id>
     <type>Ice</type>
@@ -22374,7 +22374,7 @@
       </Moves>
     </List583>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>582</number>
     <id>Vanillite</id>
     <type>Ice</type>
@@ -22443,7 +22443,7 @@
       </Moves>
     </List582>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>581</number>
     <id>Swanna</id>
     <type>Water / Flying</type>
@@ -22507,7 +22507,7 @@
       </Moves>
     </List581>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>580</number>
     <id>Ducklett</id>
     <type>Water / Flying</type>
@@ -22573,7 +22573,7 @@
       </Moves>
     </List580>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>579</number>
     <id>Reuniclus</id>
     <type>Psychic</type>
@@ -22640,7 +22640,7 @@
       </Moves>
     </List579>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>578</number>
     <id>Duosion</id>
     <type>Psychic</type>
@@ -22707,7 +22707,7 @@
       </Moves>
     </List578>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>577</number>
     <id>Solosis</id>
     <type>Psychic</type>
@@ -22775,7 +22775,7 @@
       </Moves>
     </List577>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>576</number>
     <id>Gothitelle</id>
     <type>Psychic</type>
@@ -22841,7 +22841,7 @@
       </Moves>
     </List576>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>575</number>
     <id>Gothorita</id>
     <type>Psychic</type>
@@ -22908,7 +22908,7 @@
       </Moves>
     </List575>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>574</number>
     <id>Gothita</id>
     <type>574</type>
@@ -22978,7 +22978,7 @@
       </Moves>
     </List574>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>573</number>
     <id>Cinccino</id>
     <type>Normal</type>
@@ -23044,7 +23044,7 @@
       </Moves>
     </List573>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>572</number>
     <id>Minccino</id>
     <type>Normal</type>
@@ -23112,7 +23112,7 @@
       </Moves>
     </List572>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>571</number>
     <id>Zoroark</id>
     <type>Dark</type>
@@ -23180,7 +23180,7 @@
       </Moves>
     </List571>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>570</number>
     <id>Zorua</id>
     <type>Dark</type>
@@ -23251,7 +23251,7 @@
       </Moves>
     </List570>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>569</number>
     <id>Garbodor</id>
     <type>Poison</type>
@@ -23316,7 +23316,7 @@
       </Moves>
     </List569>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>568</number>
     <id>Trubbish</id>
     <type>Poison</type>
@@ -23384,7 +23384,7 @@
       </Moves>
     </List568>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>567</number>
     <id>Archeops</id>
     <type>Rock / Flying</type>
@@ -23449,7 +23449,7 @@
       </Moves>
     </List567>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>566</number>
     <id>Archen</id>
     <type>Rock / Flying</type>
@@ -23518,7 +23518,7 @@
       </Moves>
     </List566>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>565</number>
     <id>Carracosta</id>
     <type>Water / Rock</type>
@@ -23583,7 +23583,7 @@
       </Moves>
     </List565>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>564</number>
     <id>Tirtouga</id>
     <type>Water, Rock</type>
@@ -23651,7 +23651,7 @@
       </Moves>
     </List564>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>563</number>
     <id>Cofagrigus</id>
     <type>Ghost</type>
@@ -23717,7 +23717,7 @@
       </Moves>
     </List563>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>562</number>
     <id>Yamask</id>
     <type>Ghost</type>
@@ -23784,7 +23784,7 @@
       </Moves>
     </List562>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>561</number>
     <id>Sigilyph</id>
     <type>Psychic / Flying</type>
@@ -23852,7 +23852,7 @@
       </Moves>
     </List561>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>560</number>
     <id>Scrafty</id>
     <type>Dark / Fighting</type>
@@ -23917,7 +23917,7 @@
       </Moves>
     </List560>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>559</number>
     <id>Scraggy</id>
     <type>Dark / Fighting</type>
@@ -23986,7 +23986,7 @@
       </Moves>
     </List559>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>558</number>
     <id>Crustle</id>
     <type>Bug / Rock</type>
@@ -24050,7 +24050,7 @@
       </Moves>
     </List558>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>557</number>
     <id>Dwebble</id>
     <type>Bug / Rock</type>
@@ -24116,7 +24116,7 @@
       </Moves>
     </List557>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>556</number>
     <id>Maractus</id>
     <type>Grass</type>
@@ -24182,7 +24182,7 @@
       </Moves>
     </List556>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>555</number>
     <id>Darmanitan</id>
     <type>Fire</type>
@@ -24249,7 +24249,7 @@
       </Moves>
     </List555>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>554</number>
     <id>Darumaka</id>
     <type>Fire</type>
@@ -24317,7 +24317,7 @@
       </Moves>
     </List554>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>553</number>
     <id>Krookodile</id>
     <type>Ground / Dark</type>
@@ -24385,7 +24385,7 @@
       </Moves>
     </List553>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>552</number>
     <id>Krokorok</id>
     <type>Ground / Dark</type>
@@ -24453,7 +24453,7 @@
       </Moves>
     </List552>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>551</number>
     <id>Sandile</id>
     <type>Ground / Dark</type>
@@ -24524,7 +24524,7 @@
       </Moves>
     </List551>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>549</number>
     <id>Lilligant</id>
     <type>Grass</type>
@@ -24585,7 +24585,7 @@
       </Moves>
     </List549>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>548</number>
     <id>Petilil</id>
     <type>Grass</type>
@@ -24652,7 +24652,7 @@
       </Moves>
     </List548>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>547</number>
     <id>Whimsicott</id>
     <type>Grass / Fairy</type>
@@ -24723,7 +24723,7 @@
       </Moves>
     </List547>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>546</number>
     <id>Cottonee</id>
     <type>Grass / Fairy</type>
@@ -24791,7 +24791,7 @@
       </Moves>
     </List546>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>545</number>
     <id>Scolipede</id>
     <type>Bug / Poison</type>
@@ -24856,7 +24856,7 @@
       </Moves>
     </List545>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>544</number>
     <id>Whirlipede</id>
     <type>Bug / Poison</type>
@@ -24919,7 +24919,7 @@
       </Moves>
     </List544>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>543</number>
     <id>Venipede</id>
     <type>Bug / Poison</type>
@@ -24984,7 +24984,7 @@
       </Moves>
     </List543>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>542</number>
     <id>Leavanny</id>
     <type>Bug / Grass</type>
@@ -25047,7 +25047,7 @@
       </Moves>
     </List542>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>541</number>
     <id>Swadloon</id>
     <type>Bug / Grass</type>
@@ -25101,7 +25101,7 @@
       </Moves>
     </List541>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>540</number>
     <id>Sewaddle</id>
     <type>Bug / Grass</type>
@@ -25162,7 +25162,7 @@
       </Moves>
     </List540>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>550-blue</number>
     <id>Basculin (Blue)</id>
     <type>Water</type>
@@ -25228,7 +25228,7 @@
       </Moves>
     </List550-blue>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>550-red</number>
     <id>Basculin (Red)</id>
     <type>Water</type>
@@ -25294,7 +25294,7 @@
       </Moves>
     </List550-red>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>539</number>
     <id>Sawk</id>
     <type>Fighting</type>
@@ -25356,7 +25356,7 @@
       </Moves>
     </List539>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>538</number>
     <id>Throh</id>
     <type>Fighting</type>
@@ -25418,7 +25418,7 @@
       </Moves>
     </List538>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>537</number>
     <id>Seismitoad</id>
     <type>Water / Ground</type>
@@ -25483,7 +25483,7 @@
       </Moves>
     </List537>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>536</number>
     <id>Palpitoad</id>
     <type>Water / Ground</type>
@@ -25546,7 +25546,7 @@
       </Moves>
     </List536>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>535</number>
     <id>Tympole</id>
     <type>Water</type>
@@ -25613,7 +25613,7 @@
       </Moves>
     </List535>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>534</number>
     <id>Conkeldurr</id>
     <type>Fighting</type>
@@ -25677,7 +25677,7 @@
       </Moves>
     </List534>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>533</number>
     <id>Gurdurr</id>
     <type>Fighting</type>
@@ -25742,7 +25742,7 @@
       </Moves>
     </List533>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>532</number>
     <id>Timburr</id>
     <type>Fighting</type>
@@ -25810,7 +25810,7 @@
       </Moves>
     </List532>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>531</number>
     <id>Audino</id>
     <type>Normal</type>
@@ -25883,7 +25883,7 @@
     <spdef>+4</spdef>
     <ability>Healer</ability>
   </Mega531>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>530</number>
     <id>Excadrill</id>
     <type>Ground / Steel</type>
@@ -25948,7 +25948,7 @@
       </Moves>
     </List530>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>529</number>
     <id>Drilbur</id>
     <type>Ground</type>
@@ -26016,7 +26016,7 @@
       </Moves>
     </List529>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>528</number>
     <id>Swoobat</id>
     <type>Psychic / Flying</type>
@@ -26081,7 +26081,7 @@
       </Moves>
     </List528>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>527</number>
     <id>Woobat</id>
     <type>Psychic / Flying</type>
@@ -26147,7 +26147,7 @@
       </Moves>
     </List527>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>526</number>
     <id>Gigalith</id>
     <type>Rock</type>
@@ -26209,7 +26209,7 @@
       </Moves>
     </List526>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>525</number>
     <id>Boldore</id>
     <type>Rock</type>
@@ -26272,7 +26272,7 @@
       </Moves>
     </List525>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>524</number>
     <id>Roggenrola</id>
     <type>Rock</type>
@@ -26336,7 +26336,7 @@
       </Moves>
     </List524>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>523</number>
     <id>Zebstrika</id>
     <type>Electric</type>
@@ -26400,7 +26400,7 @@
       </Moves>
     </List523>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>522</number>
     <id>Blitzle</id>
     <type>Electric</type>
@@ -26465,7 +26465,7 @@
       </Moves>
     </List522>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>518</number>
     <id>Musharna</id>
     <type>Psychic</type>
@@ -26533,7 +26533,7 @@
       </Moves>
     </List518>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>517</number>
     <id>Munna</id>
     <type>Psychic</type>
@@ -26603,7 +26603,7 @@
       </Moves>
     </List517>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>516</number>
     <id>Simipour</id>
     <type>Water</type>
@@ -26666,7 +26666,7 @@
       </Moves>
     </List516>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>515</number>
     <id>Panpour</id>
     <type>Water</type>
@@ -26732,7 +26732,7 @@
       </Moves>
     </List515>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>514</number>
     <id>Simisear</id>
     <type>Fire</type>
@@ -26795,7 +26795,7 @@
       </Moves>
     </List514>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>513</number>
     <id>Pansear</id>
     <type>Fire</type>
@@ -26861,7 +26861,7 @@
       </Moves>
     </List513>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>512</number>
     <id>Simisage</id>
     <type>Grass</type>
@@ -26923,7 +26923,7 @@
       </Moves>
     </List512>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>511</number>
     <id>Pansage</id>
     <type>Grass</type>
@@ -26989,7 +26989,7 @@
       </Moves>
     </List511>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>510</number>
     <id>Liepard</id>
     <type>Dark</type>
@@ -27056,7 +27056,7 @@
       </Moves>
     </List510>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>509</number>
     <id>Purrloin</id>
     <type>Dark</type>
@@ -27125,7 +27125,7 @@
       </Moves>
     </List509>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>508</number>
     <id>Stoutland</id>
     <type>Normal</type>
@@ -27187,7 +27187,7 @@
       </Moves>
     </List508>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>507</number>
     <id>Herdier</id>
     <type>Normal</type>
@@ -27250,7 +27250,7 @@
       </Moves>
     </List507>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>506</number>
     <id>Lillipup</id>
     <type>Normal</type>
@@ -27317,7 +27317,7 @@
       </Moves>
     </List506>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>504</number>
     <id>Patrat</id>
     <type>Normal</type>
@@ -27383,7 +27383,7 @@
       </Moves>
     </List504>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>505</number>
     <id>Watchog</id>
     <type>Normal</type>
@@ -27448,7 +27448,7 @@
       </Moves>
     </List505>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>503</number>
     <id>Samurott</id>
     <type>Water</type>
@@ -27514,7 +27514,7 @@
       </Moves>
     </List503>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>502</number>
     <id>Dewott</id>
     <type>Water</type>
@@ -27580,7 +27580,7 @@
       </Moves>
     </List502>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>501</number>
     <id>Oshawott</id>
     <type>Water</type>
@@ -27648,7 +27648,7 @@
       </Moves>
     </List501>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>500</number>
     <id>Emboar</id>
     <type>Fire / Fighting</type>
@@ -27715,7 +27715,7 @@
       </Moves>
     </List500>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>499</number>
     <id>Pignite</id>
     <type>Fire / Fighting</type>
@@ -27783,7 +27783,7 @@
       </Moves>
     </List499>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>498</number>
     <id>Tepig</id>
     <type>Fire</type>
@@ -27852,7 +27852,7 @@
       </Moves>
     </List498>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>497</number>
     <id>Serperior</id>
     <type>Grass</type>
@@ -27916,7 +27916,7 @@
       </Moves>
     </List497>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>496</number>
     <id>Servine</id>
     <type>Grass</type>
@@ -27981,7 +27981,7 @@
       </Moves>
     </List496>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>495</number>
     <id>Snivy</id>
     <type>Grass</type>
@@ -28048,7 +28048,7 @@
       </Moves>
     </List495>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>519</number>
     <id>Pidove</id>
     <type>Normal / Flying</type>
@@ -28115,7 +28115,7 @@
       </Moves>
     </List519>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>520</number>
     <id>Tranquill</id>
     <type>Normal / Flying</type>
@@ -28180,7 +28180,7 @@
       </Moves>
     </List520>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>521-m</number>
     <id>Unfezant (Male)</id>
     <type>Normal / Flying</type>
@@ -28244,7 +28244,7 @@
       </Moves>
     </List521-m>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>521-f</number>
     <id>Unfezant (Female)</id>
     <type>Normal / Flying</type>
@@ -28308,7 +28308,7 @@
       </Moves>
     </List521-f>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>494</number>
     <id>Victini</id>
     <type>Psychic / Fire</type>
@@ -28376,7 +28376,7 @@
       </Moves>
     </List494>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>493</number>
     <id>Arceus</id>
     <type>Normal</type>
@@ -28444,7 +28444,7 @@
       </Moves>
     </List493>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>492-land</number>
     <id>Shaymin (Land Forme)</id>
     <type>Grass</type>
@@ -28510,7 +28510,7 @@
       </Moves>
     </List492-land>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>492-sky</number>
     <id>Shaymin (Sky Forme)</id>
     <type>Grass / Flying</type>
@@ -28572,7 +28572,7 @@
       </Moves>
     </List492-sky>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>491</number>
     <id>Darkrai</id>
     <type>Dark</type>
@@ -28641,7 +28641,7 @@
       </Moves>
     </List491>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>490</number>
     <id>Manaphy</id>
     <type>Water</type>
@@ -28706,7 +28706,7 @@
       </Moves>
     </List490>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>489</number>
     <id>Phione</id>
     <type>Water</type>
@@ -28768,7 +28768,7 @@
       </Moves>
     </List489>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>488</number>
     <id>Cresselia</id>
     <type>Psychic</type>
@@ -28833,7 +28833,7 @@
       </Moves>
     </List488>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>487-origin</number>
     <id>Giratina (Origin Forme)</id>
     <type>Ghost / Dragon</type>
@@ -28901,7 +28901,7 @@
       </Moves>
     </List487-origin>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>487</number>
     <id>Giratina (Altered Forme)</id>
     <type>Ghost / Dragon</type>
@@ -28968,7 +28968,7 @@
       </Moves>
     </List487>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>486</number>
     <id>Regigigas</id>
     <type>Normal</type>
@@ -29028,7 +29028,7 @@
       </Moves>
     </List486>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>485</number>
     <id>Heatran</id>
     <type>Fire / Steel</type>
@@ -29094,7 +29094,7 @@
       </Moves>
     </List485>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>484</number>
     <id>Palkia</id>
     <type>Water / Dragon</type>
@@ -29159,7 +29159,7 @@
       </Moves>
     </List484>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>481</number>
     <id>Mesprit</id>
     <type>Psychic</type>
@@ -29221,7 +29221,7 @@
       </Moves>
     </List481>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>483</number>
     <id>Dialga</id>
     <type>Steel / Dragon</type>
@@ -29286,7 +29286,7 @@
       </Moves>
     </List483>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>482</number>
     <id>Azelf</id>
     <type>Psychic</type>
@@ -29348,7 +29348,7 @@
       </Moves>
     </List482>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>480</number>
     <id>Uxie</id>
     <type>Psychic</type>
@@ -29410,7 +29410,7 @@
       </Moves>
     </List480>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>479</number>
     <id>Rotom (Normal Form)</id>
     <type>Electric / Ghost</type>
@@ -29480,7 +29480,7 @@
       </Moves>
     </List479>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>479-heat</number>
     <id>Rotom (Heat)</id>
     <type>Electric / Fire</type>
@@ -29547,7 +29547,7 @@
       </Moves>
     </List479-heat>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>479-wash</number>
     <id>Rotom (Wash)</id>
     <type>Electric / Water</type>
@@ -29615,7 +29615,7 @@
       </Moves>
     </List479-wash>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>479-frost</number>
     <id>Rotom (Frost)</id>
     <type>Electric / Ice</type>
@@ -29683,7 +29683,7 @@
       </Moves>
     </List479-frost>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>479-fan</number>
     <id>Rotom (Fan)</id>
     <type>Electric / Flying</type>
@@ -29751,7 +29751,7 @@
       </Moves>
     </List479-fan>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>479-mow</number>
     <id>Rotom (Mow)</id>
     <type>Electric / Grass</type>
@@ -29818,7 +29818,7 @@
       </Moves>
     </List479-mow>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>478</number>
     <id>Froslass</id>
     <type>Ice / Ghost</type>
@@ -29884,7 +29884,7 @@
       </Moves>
     </List478>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>477</number>
     <id>Dusknoir</id>
     <type>Ghost</type>
@@ -29951,7 +29951,7 @@
       </Moves>
     </List477>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>356</number>
     <id>Dusclops</id>
     <type>Ghost</type>
@@ -30018,7 +30018,7 @@
       </Moves>
     </List356>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>355</number>
     <id>Duskull</id>
     <type>Ghost</type>
@@ -30087,7 +30087,7 @@
       </Moves>
     </List355>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>476</number>
     <id>Probopass</id>
     <type>Rock / Steel</type>
@@ -30152,7 +30152,7 @@
       </Moves>
     </List476>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>475</number>
     <id>Gallade</id>
     <type>Psychic / Fighting</type>
@@ -30226,7 +30226,7 @@
     <def>+3</def>
     <spd>+3</spd>
   </Mega475>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>474</number>
     <id>Porygon-Z</id>
     <type>Normal</type>
@@ -30289,7 +30289,7 @@
       </Moves>
     </List474>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>473</number>
     <id>Mamoswine</id>
     <type>Ice / Ground</type>
@@ -30355,7 +30355,7 @@
       </Moves>
     </List473>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>472</number>
     <id>Gliscor</id>
     <type>Ground / Flying</type>
@@ -30419,7 +30419,7 @@
       </Moves>
     </List472>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>471</number>
     <id>Glaceon</id>
     <type>Ice</type>
@@ -30480,7 +30480,7 @@
       </Moves>
     </List471>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>470</number>
     <id>Leafeon</id>
     <type>Grass</type>
@@ -30540,7 +30540,7 @@
       </Moves>
     </List470>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>469</number>
     <id>Yanmega</id>
     <type>Bug / Flying</type>
@@ -30603,7 +30603,7 @@
       </Moves>
     </List469>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>468</number>
     <id>Togekiss</id>
     <type>Fairy / Flying</type>
@@ -30666,7 +30666,7 @@
       </Moves>
     </List468>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>467</number>
     <id>Magmortar</id>
     <type>Fire</type>
@@ -30732,7 +30732,7 @@
       </Moves>
     </List467>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>466</number>
     <id>Electivire</id>
     <type>Electric</type>
@@ -30796,7 +30796,7 @@
       </Moves>
     </List466>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>465</number>
     <id>Tangrowth</id>
     <type>Grass</type>
@@ -30863,7 +30863,7 @@
       </Moves>
     </List465>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>464</number>
     <id>Rhyperior</id>
     <type>Ground / Rock</type>
@@ -30930,7 +30930,7 @@
       </Moves>
     </List464>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>463</number>
     <id>Lickilicky</id>
     <type>Normal</type>
@@ -30994,7 +30994,7 @@
       </Moves>
     </List463>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>462</number>
     <id>Magnezone</id>
     <type>Electric / Steel</type>
@@ -31062,7 +31062,7 @@
       </Moves>
     </List462>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>461</number>
     <id>Weavile</id>
     <type>Dark / Ice</type>
@@ -31125,7 +31125,7 @@
       </Moves>
     </List461>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>460</number>
     <id>Abomasnow</id>
     <type>Grass / Ice</type>
@@ -31195,7 +31195,7 @@
     <spd>-3</spd>
     <ability>Snow Warning</ability>
   </Mega460>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>459</number>
     <id>Snover</id>
     <type>Grass / Ice</type>
@@ -31258,7 +31258,7 @@
       </Moves>
     </List459>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>458</number>
     <id>Mantyke</id>
     <type>Water / Flying</type>
@@ -31325,7 +31325,7 @@
       </Moves>
     </List458>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>457</number>
     <id>Lumineon</id>
     <type>Water</type>
@@ -31388,7 +31388,7 @@
       </Moves>
     </List457>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>456</number>
     <id>Finneon</id>
     <type>Water</type>
@@ -31454,7 +31454,7 @@
       </Moves>
     </List456>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>455</number>
     <id>Carnivine</id>
     <type>Grass</type>
@@ -31518,7 +31518,7 @@
       </Moves>
     </List455>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>454</number>
     <id>Toxicroak</id>
     <type>Poison / Fighting</type>
@@ -31580,7 +31580,7 @@
       </Moves>
     </List454>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>453</number>
     <id>Croagunk</id>
     <type>Poison / Fighting</type>
@@ -31645,7 +31645,7 @@
       </Moves>
     </List453>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>452</number>
     <id>Drapion</id>
     <type>Poison / Dark</type>
@@ -31708,7 +31708,7 @@
       </Moves>
     </List452>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>451</number>
     <id>Skorupi</id>
     <type>Poison / Bug</type>
@@ -31775,7 +31775,7 @@
       </Moves>
     </List451>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>450</number>
     <id>Hippowdon</id>
     <type>Ground</type>
@@ -31835,7 +31835,7 @@
       </Moves>
     </List450>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>449</number>
     <id>Hippopotas</id>
     <type>Ground</type>
@@ -31897,7 +31897,7 @@
       </Moves>
     </List449>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>448</number>
     <id>Lucario</id>
     <type>Fighting / Steel</type>
@@ -31969,7 +31969,7 @@
     <spd>+2</spd>
     <ability>Adaptability</ability>
   </Mega448>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>447</number>
     <id>Riolu</id>
     <type>Fighting</type>
@@ -32028,7 +32028,7 @@
       </Moves>
     </List447>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>446</number>
     <id>Munchlax</id>
     <type>Normal</type>
@@ -32095,7 +32095,7 @@
       </Moves>
     </List446>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>445</number>
     <id>Garchomp</id>
     <type>Dragon / Ground</type>
@@ -32168,7 +32168,7 @@
     <spd>-1</spd>
     <ability>Sand Force</ability>
   </Mega445>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>444</number>
     <id>Gabite</id>
     <type>Dragon / Ground</type>
@@ -32229,7 +32229,7 @@
       </Moves>
     </List444>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>443</number>
     <id>Gible</id>
     <type>Dragon / Ground</type>
@@ -32291,7 +32291,7 @@
       </Moves>
     </List443>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>442</number>
     <id>Spiritomb</id>
     <type>Ghost / Dark</type>
@@ -32356,7 +32356,7 @@
       </Moves>
     </List442>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>441</number>
     <id>Chatot</id>
     <type>Normal / Flying</type>
@@ -32421,7 +32421,7 @@
       </Moves>
     </List441>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>440</number>
     <id>Happiny</id>
     <type>Normal</type>
@@ -32478,7 +32478,7 @@
       </Moves>
     </List440>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>439</number>
     <id>Mime Jr.</id>
     <type>Psychic / Fairy</type>
@@ -32545,7 +32545,7 @@
       </Moves>
     </List439>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>438</number>
     <id>Bonsly</id>
     <type>Rock</type>
@@ -32608,7 +32608,7 @@
       </Moves>
     </List438>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>437</number>
     <id>Bronzong</id>
     <type>Steel / Psychic</type>
@@ -32672,7 +32672,7 @@
       </Moves>
     </List437>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>436</number>
     <id>Bronzor</id>
     <type>Steel / Psychic</type>
@@ -32739,7 +32739,7 @@
       </Moves>
     </List436>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>435</number>
     <id>Skuntank</id>
     <type>Poison / Dark</type>
@@ -32801,7 +32801,7 @@
       </Moves>
     </List435>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>434</number>
     <id>Stunky</id>
     <type>Poison / Dark</type>
@@ -32866,7 +32866,7 @@
       </Moves>
     </List434>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>433</number>
     <id>Chingling</id>
     <type>Psychic</type>
@@ -32925,7 +32925,7 @@
       </Moves>
     </List433>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>192</number>
     <id>Sunflora</id>
     <type>Grass</type>
@@ -32989,7 +32989,7 @@
       </Moves>
     </List192>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>193</number>
     <id>Yanma</id>
     <type>Bug / Flying</type>
@@ -33055,7 +33055,7 @@
       </Moves>
     </List193>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>194</number>
     <id>Wooper</id>
     <type>Water / Ground</type>
@@ -33120,7 +33120,7 @@
       </Moves>
     </List194>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>195</number>
     <id>Quagsire</id>
     <type>Water / Ground</type>
@@ -33183,7 +33183,7 @@
       </Moves>
     </List195>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>196</number>
     <id>Espeon</id>
     <type>Psychic</type>
@@ -33307,7 +33307,7 @@
       </Moves>
     </List197>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>198</number>
     <id>Murkrow</id>
     <type>Dark / Flying</type>
@@ -33375,7 +33375,7 @@
       </Moves>
     </List198>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>199</number>
     <id>Slowking</id>
     <type>Water / Psychic</type>
@@ -33439,7 +33439,7 @@
       </Moves>
     </List199>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>200</number>
     <id>Misdreavus</id>
     <type>Ghost</type>
@@ -33507,7 +33507,7 @@
       </Moves>
     </List200>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>201</number>
     <id>Unown</id>
     <type>Psychic</type>
@@ -33559,7 +33559,7 @@
       </Moves>
     </List201>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>202</number>
     <id>Wobbuffet</id>
     <type>Psychic</type>
@@ -33610,7 +33610,7 @@
       </Moves>
     </List202>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>203</number>
     <id>Girafarig</id>
     <type>Normal / Psycic</type>
@@ -33672,7 +33672,7 @@
       </Moves>
     </List203>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>204</number>
     <id>Pineco</id>
     <type>Bug</type>
@@ -33738,7 +33738,7 @@
       </Moves>
     </List204>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>205</number>
     <id>Forretress</id>
     <type>Bug / Steel</type>
@@ -33805,7 +33805,7 @@
       </Moves>
     </List205>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>206</number>
     <id>Dunsparce</id>
     <type>Normal</type>
@@ -33873,7 +33873,7 @@
       </Moves>
     </List206>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>207</number>
     <id>Gligar</id>
     <type>Ground / Flying</type>
@@ -33939,7 +33939,7 @@
       </Moves>
     </List207>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>208</number>
     <id>Steelix</id>
     <type>Steel / Ground</type>
@@ -34016,7 +34016,7 @@
     <spatk>+3</spatk>
     <ability>Sand Force</ability>
   </Mega208>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>209</number>
     <id>Snubbull</id>
     <type>Fairy</type>
@@ -34077,7 +34077,7 @@
       </Moves>
     </List209>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>210</number>
     <id>Granbull</id>
     <type>Fairy</type>
@@ -34134,7 +34134,7 @@
       </Moves>
     </List210>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>211</number>
     <id>Qwilfish</id>
     <type>Water / Poison</type>
@@ -34202,7 +34202,7 @@
       </Moves>
     </List211>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>212</number>
     <id>Scizor</id>
     <type>Bug / Steel</type>
@@ -34276,7 +34276,7 @@
     <spd>+1</spd>
     <ability>Technician</ability>
   </Mega212>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>213</number>
     <id>Shuckle</id>
     <type>Bug / Rock</type>
@@ -34343,7 +34343,7 @@
       </Moves>
     </List213>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>432</number>
     <id>Purugly</id>
     <type>Normal</type>
@@ -34406,7 +34406,7 @@
       </Moves>
     </List432>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>431</number>
     <id>Glameow</id>
     <type>Normal</type>
@@ -34471,7 +34471,7 @@
       </Moves>
     </List431>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>430</number>
     <id>Honchkrow</id>
     <type>Dark / Flying</type>
@@ -34541,7 +34541,7 @@
       </Moves>
     </List430>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>429</number>
     <id>Mismagius</id>
     <type>Ghost</type>
@@ -34607,7 +34607,7 @@
       </Moves>
     </List429>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>428</number>
     <id>Lopunny</id>
     <type>Normal</type>
@@ -34676,7 +34676,7 @@
     <spd>+3</spd>
     <ability>Scrappy</ability>
   </Mega428>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>427</number>
     <id>Buneary</id>
     <type>Normal</type>
@@ -34743,7 +34743,7 @@
       </Moves>
     </List427>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>426</number>
     <id>Drifblim</id>
     <type>Ghost / Flying</type>
@@ -34809,7 +34809,7 @@
       </Moves>
     </List426>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>425</number>
     <id>Drifloon</id>
     <type>Ghost / Flying</type>
@@ -34878,7 +34878,7 @@
       </Moves>
     </List425>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>424</number>
     <id>Ambipom</id>
     <type>Normal</type>
@@ -34938,7 +34938,7 @@
       </Moves>
     </List424>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>423</number>
     <id>Gastrodon</id>
     <type>Water / Ground</type>
@@ -34998,7 +34998,7 @@
       </Moves>
     </List423>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>422</number>
     <id>Shellos</id>
     <type>Water</type>
@@ -35061,7 +35061,7 @@
       </Moves>
     </List422>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>421</number>
     <id>Cherrim</id>
     <type>Grass</type>
@@ -35121,7 +35121,7 @@
       </Moves>
     </List421>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>420</number>
     <id>Cherubi</id>
     <type>Grass</type>
@@ -35183,7 +35183,7 @@
       </Moves>
     </List420>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>419</number>
     <id>Floatzel</id>
     <type>Water</type>
@@ -35245,7 +35245,7 @@
       </Moves>
     </List419>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>418</number>
     <id>Buizel</id>
     <type>Water</type>
@@ -35310,7 +35310,7 @@
       </Moves>
     </List418>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>417</number>
     <id>Pachirisu</id>
     <type>Electric</type>
@@ -35375,7 +35375,7 @@
       </Moves>
     </List417>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>416</number>
     <id>Vespiquen</id>
     <type>Bug / Flying</type>
@@ -35439,7 +35439,7 @@
       </Moves>
     </List416>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>415</number>
     <id>Combee</id>
     <type>Bug / Flying</type>
@@ -35494,7 +35494,7 @@
       </Moves>
     </List415>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>414</number>
     <id>Mothim</id>
     <type>Bug / Flying</type>
@@ -35556,7 +35556,7 @@
       </Moves>
     </List414>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>413-plant</number>
     <id>Wormadam (Plant Cloak Form)</id>
     <type>Bug / Grass</type>
@@ -35618,7 +35618,7 @@
       </Moves>
     </List413-plant>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>412</number>
     <id>Burmy</id>
     <type>Bug</type>
@@ -35674,7 +35674,7 @@
       </Moves>
     </List412>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>411</number>
     <id>Bastiodon</id>
     <type>Rock / Steel</type>
@@ -35734,7 +35734,7 @@
       </Moves>
     </List411>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>410</number>
     <id>Shieldon</id>
     <type>Rock / Steel</type>
@@ -35796,7 +35796,7 @@
       </Moves>
     </List410>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>409</number>
     <id>Rampardos</id>
     <type>Rock</type>
@@ -35855,7 +35855,7 @@
       </Moves>
     </List409>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>408</number>
     <id>Cranidos</id>
     <type>Rock</type>
@@ -35916,7 +35916,7 @@
       </Moves>
     </List408>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>407</number>
     <id>Roserade</id>
     <type>Grass / Poison</type>
@@ -35981,7 +35981,7 @@
       </Moves>
     </List407>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>406</number>
     <id>Budew</id>
     <type>Grass / Poison</type>
@@ -36038,7 +36038,7 @@
       </Moves>
     </List406>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>405</number>
     <id>Luxray</id>
     <type>Electric</type>
@@ -36104,7 +36104,7 @@
       </Moves>
     </List405>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>404</number>
     <id>Luxio</id>
     <type>Electric</type>
@@ -36167,7 +36167,7 @@
       </Moves>
     </List404>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>403</number>
     <id>Shinx</id>
     <type>Electric</type>
@@ -36233,7 +36233,7 @@
       </Moves>
     </List403>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>402</number>
     <id>Kricketune</id>
     <type>Bug</type>
@@ -36295,7 +36295,7 @@
       </Moves>
     </List402>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>401</number>
     <id>Kricketot</id>
     <type>Bug</type>
@@ -36349,7 +36349,7 @@
       </Moves>
     </List401>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>400</number>
     <id>Bibarel</id>
     <type>Normal / Water</type>
@@ -36411,7 +36411,7 @@
       </Moves>
     </List400>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>399</number>
     <id>Bidoof</id>
     <type>Normal</type>
@@ -36473,7 +36473,7 @@
       </Moves>
     </List399>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>398</number>
     <id>Staraptor</id>
     <type>Normal / Flying</type>
@@ -36535,7 +36535,7 @@
       </Moves>
     </List398>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>397</number>
     <id>Staravia</id>
     <type>Normal / Flying</type>
@@ -36595,7 +36595,7 @@
       </Moves>
     </List397>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>396</number>
     <id>Starly</id>
     <type>Normal / Flying</type>
@@ -36658,7 +36658,7 @@
       </Moves>
     </List396>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>395</number>
     <id>Empoleon</id>
     <type>Water / Steel</type>
@@ -36722,7 +36722,7 @@
       </Moves>
     </List395>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>394</number>
     <id>Prinplup</id>
     <type>Water</type>
@@ -36786,7 +36786,7 @@
       </Moves>
     </List394>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>393</number>
     <id>Piplup</id>
     <type>Water</type>
@@ -36851,7 +36851,7 @@
       </Moves>
     </List393>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>392</number>
     <id>Infernape</id>
     <type>Fire / Fighting</type>
@@ -36915,7 +36915,7 @@
       </Moves>
     </List392>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>391</number>
     <id>Monferno</id>
     <type>Fire / Fighting</type>
@@ -36980,7 +36980,7 @@
       </Moves>
     </List391>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>390</number>
     <id>Chimchar</id>
     <type>Fire</type>
@@ -37046,7 +37046,7 @@
       </Moves>
     </List390>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>389</number>
     <id>Torterra</id>
     <type>Grass / Ground</type>
@@ -37110,7 +37110,7 @@
       </Moves>
     </List389>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>388</number>
     <id>Grotle</id>
     <type>Grass</type>
@@ -37171,7 +37171,7 @@
       </Moves>
     </List388>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>387</number>
     <id>Turtwig</id>
     <type>Grass</type>
@@ -37235,7 +37235,7 @@
       </Moves>
     </List387>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>386</number>
     <id>Deoxys (Normal Forme)</id>
     <type>Psychic</type>
@@ -37299,7 +37299,7 @@
       </Moves>
     </List386>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>386-attack</number>
     <id>Deoxys (Attack Forme)</id>
     <type>Psychic</type>
@@ -37363,7 +37363,7 @@
       </Moves>
     </List386-attack>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>386-defense</number>
     <id>Deoxys (Defense Forme)</id>
     <type>Psychic</type>
@@ -37429,7 +37429,7 @@
       </Moves>
     </List386-defense>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>386-speed</number>
     <id>Deoxys (Speed Forme)</id>
     <type>Psychic</type>
@@ -37493,7 +37493,7 @@
       </Moves>
     </List386-speed>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>413-sandy</number>
     <id>Wormadam (Sandy Cloak Form)</id>
     <type>Bug / Ground</type>
@@ -37555,7 +37555,7 @@
       </Moves>
     </List413-sandy>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>413-trash</number>
     <id>Wormadam (Trash Cloak Form)</id>
     <type>Bug / Steel</type>
@@ -37616,7 +37616,7 @@
       </Moves>
     </List413-trash>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>384</number>
     <id>Rayquaza</id>
     <type>Dragon / Flying</type>
@@ -37693,7 +37693,7 @@
     <spd>+2</spd>
     <ability>Gale Wings</ability>
   </Mega384>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>383</number>
     <id>Groudon</id>
     <type>Ground</type>
@@ -37770,7 +37770,7 @@
     <spatk>+5</spatk>
     <ability>Heat Mirage</ability>
   </Mega383>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>382</number>
     <id>Kyogre</id>
     <type>Water</type>
@@ -37843,7 +37843,7 @@
     <spdef>+2</spdef>
     <ability>Wash Away</ability>
   </Mega382>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>381</number>
     <id>Latios</id>
     <type>Dragon / Psychic</type>
@@ -37923,7 +37923,7 @@
     <spdef>+1</spdef>
     <ability>Levitate</ability>
   </Mega381>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>380</number>
     <id>Latias</id>
     <type>Dragon / Psychic</type>
@@ -38003,7 +38003,7 @@
     <spdef>+2</spdef>
     <ability>Levitate</ability>
   </Mega380>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>379</number>
     <id>Registeel</id>
     <type>Steel</type>
@@ -38067,7 +38067,7 @@
       </Moves>
     </List379>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>378</number>
     <id>Regice</id>
     <type>Ice</type>
@@ -38129,7 +38129,7 @@
       </Moves>
     </List378>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>377</number>
     <id>Regirock</id>
     <type>Rock</type>
@@ -38192,7 +38192,7 @@
       </Moves>
     </List377>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>376</number>
     <id>Metagross</id>
     <type>Steel / Psychic</type>
@@ -38265,7 +38265,7 @@
     <spd>+4</spd>
     <ability>Tough Claws</ability>
   </Mega376>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>375</number>
     <id>Metang</id>
     <type>Steel / Psychic</type>
@@ -38329,7 +38329,7 @@
       </Moves>
     </List375>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>374</number>
     <id>Beldum</id>
     <type>Steel / Psychic</type>
@@ -38382,7 +38382,7 @@
       </Moves>
     </List374>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>373</number>
     <id>Salamence</id>
     <type>Dragon / Flying</type>
@@ -38456,7 +38456,7 @@
     <spd>+2</spd>
     <ability>Aerilate</ability>
   </Mega373>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>372</number>
     <id>Shelgon</id>
     <type>Dragon</type>
@@ -38518,7 +38518,7 @@
       </Moves>
     </List372>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>371</number>
     <id>Bagon</id>
     <type>Dragon</type>
@@ -38581,7 +38581,7 @@
       </Moves>
     </List371>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>370</number>
     <id>Luvdisc</id>
     <type>Water</type>
@@ -38647,7 +38647,7 @@
       </Moves>
     </List370>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>369</number>
     <id>Relicanth</id>
     <type>Water / Rock</type>
@@ -38710,7 +38710,7 @@
       </Moves>
     </List369>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>368</number>
     <id>Gorebyss</id>
     <type>Water</type>
@@ -38775,7 +38775,7 @@
       </Moves>
     </List368>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>367</number>
     <id>Huntail</id>
     <type>Water</type>
@@ -38840,7 +38840,7 @@
       </Moves>
     </List367>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>366</number>
     <id>Clamperl</id>
     <type>Water</type>
@@ -38898,7 +38898,7 @@
       </Moves>
     </List366>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>365</number>
     <id>Walrein</id>
     <type>Ice / Water</type>
@@ -38963,7 +38963,7 @@
       </Moves>
     </List365>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>364</number>
     <id>Sealeo</id>
     <type>Ice / Water</type>
@@ -39025,7 +39025,7 @@
       </Moves>
     </List364>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>363</number>
     <id>Spheal</id>
     <type>Ice / Water</type>
@@ -39091,7 +39091,7 @@
       </Moves>
     </List363>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>362</number>
     <id>Glalie</id>
     <type>Ice</type>
@@ -39163,7 +39163,7 @@
     <spd>+2</spd>
     <ability>Refrigerate</ability>
   </Mega362>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>361</number>
     <id>Snorunt</id>
     <type>Ice</type>
@@ -39229,7 +39229,7 @@
       </Moves>
     </List361>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>360</number>
     <id>Wynaut</id>
     <type>Psychic</type>
@@ -39285,7 +39285,7 @@
       </Moves>
     </List360>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>359</number>
     <id>Absol</id>
     <type>Dark</type>
@@ -39363,7 +39363,7 @@
     <spd>+4</spd>
     <ability>Magic Bounce</ability>
   </Mega359>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>358</number>
     <id>Chimecho</id>
     <type>Psychic</type>
@@ -39427,7 +39427,7 @@
       </Moves>
     </List358>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>357</number>
     <id>Tropius</id>
     <type>Grass / Flying</type>
@@ -39495,7 +39495,7 @@
       </Moves>
     </List357>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>354</number>
     <id>Banette</id>
     <type>Ghost</type>
@@ -39573,7 +39573,7 @@
     <spd>+1</spd>
     <ability>Prankster</ability>
   </Mega354>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>353</number>
     <id>Shuppet</id>
     <type>Ghost</type>
@@ -39643,7 +39643,7 @@
       </Moves>
     </List353>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>352</number>
     <id>Kecleon</id>
     <type>Normal</type>
@@ -39710,7 +39710,7 @@
       </Moves>
     </List352>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>351</number>
     <id>Castform</id>
     <type>Normal</type>
@@ -39773,7 +39773,7 @@
       </Moves>
     </List351>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>350</number>
     <id>Milotic</id>
     <type>Water</type>
@@ -39839,7 +39839,7 @@
       </Moves>
     </List350>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>349</number>
     <id>Feebas</id>
     <type>Water</type>
@@ -39895,7 +39895,7 @@
       </Moves>
     </List349>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>348</number>
     <id>Armaldo</id>
     <type>Rock / Bug</type>
@@ -39957,7 +39957,7 @@
       </Moves>
     </List348>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>347</number>
     <id>Anorith</id>
     <type>Rock / Bug</type>
@@ -40024,7 +40024,7 @@
       </Moves>
     </List347>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>346</number>
     <id>Cradily</id>
     <type>Rock / Grass</type>
@@ -40085,7 +40085,7 @@
       </Moves>
     </List346>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>345</number>
     <id>Lileep</id>
     <type>Rock / Grass</type>
@@ -40150,7 +40150,7 @@
       </Moves>
     </List345>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>344</number>
     <id>Claydol</id>
     <type>Ground / Psychic</type>
@@ -40217,7 +40217,7 @@
       </Moves>
     </List344>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>343</number>
     <id>Baltoy</id>
     <type>Ground / Psychic</type>
@@ -40286,7 +40286,7 @@
       </Moves>
     </List343>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>342</number>
     <id>Crawdaunt</id>
     <type>Water / Dark</type>
@@ -40351,7 +40351,7 @@
       </Moves>
     </List342>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>341</number>
     <id>Corphish</id>
     <type>Water</type>
@@ -40417,7 +40417,7 @@
       </Moves>
     </List341>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>340</number>
     <id>Whiscash</id>
     <type>Water / Ground</type>
@@ -40484,7 +40484,7 @@
       </Moves>
     </List340>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>339</number>
     <id>Barboach</id>
     <type>Water / Ground</type>
@@ -40552,7 +40552,7 @@
       </Moves>
     </List339>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>338</number>
     <id>Solrock</id>
     <type>Rock / Psychic</type>
@@ -40618,7 +40618,7 @@
       </Moves>
     </List338>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>337</number>
     <id>Lunatone</id>
     <type>Rock / Psychic</type>
@@ -40684,7 +40684,7 @@
       </Moves>
     </List337>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>336</number>
     <id>Seviper</id>
     <type>Poison</type>
@@ -40751,7 +40751,7 @@
       </Moves>
     </List336>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>335</number>
     <id>Zangoose</id>
     <type>Normal</type>
@@ -40815,7 +40815,7 @@
       </Moves>
     </List335>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>334</number>
     <id>Altaria</id>
     <type>Dragon / Flying</type>
@@ -40889,7 +40889,7 @@
     <spatk>+4</spatk>
     <ability>Pixilate</ability>
   </Mega334>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>333</number>
     <id>Swablu</id>
     <type>Normal / Flying</type>
@@ -40957,7 +40957,7 @@
       </Moves>
     </List333>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>332</number>
     <id>Cacturne</id>
     <type>Grass / Dark</type>
@@ -41023,7 +41023,7 @@
       </Moves>
     </List332>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>331</number>
     <id>Cacnea</id>
     <type>Grass</type>
@@ -41090,7 +41090,7 @@
       </Moves>
     </List331>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>330</number>
     <id>Flygon</id>
     <type>Ground / Dragon</type>
@@ -41160,7 +41160,7 @@
       </Moves>
     </List330>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>329</number>
     <id>Vibrava</id>
     <type>Ground / Dragon</type>
@@ -41230,7 +41230,7 @@
       </Moves>
     </List329>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>328</number>
     <id>Trapinch</id>
     <type>Ground</type>
@@ -41299,7 +41299,7 @@
       </Moves>
     </List328>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>327</number>
     <id>Spinda</id>
     <type>Normal</type>
@@ -41360,7 +41360,7 @@
       </Moves>
     </List327>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>326</number>
     <id>Grumpig</id>
     <type>Psychic</type>
@@ -41423,7 +41423,7 @@
       </Moves>
     </List326>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>325</number>
     <id>Spoink</id>
     <type>Psychic</type>
@@ -41488,7 +41488,7 @@
       </Moves>
     </List325>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>324</number>
     <id>Torkoal</id>
     <type>Fire</type>
@@ -41554,7 +41554,7 @@
       </Moves>
     </List324>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>323</number>
     <id>Camerupt</id>
     <type>Fire / Ground</type>
@@ -41630,7 +41630,7 @@
     <spd>-2</spd>
     <ability>Sheer Force</ability>
   </Mega323>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>322</number>
     <id>Numel</id>
     <type>Fire / Ground</type>
@@ -41696,7 +41696,7 @@
       </Moves>
     </List322>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>321</number>
     <id>Wailord</id>
     <type>Water</type>
@@ -41761,7 +41761,7 @@
       </Moves>
     </List321>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>320</number>
     <id>Wailmer</id>
     <type>Water</type>
@@ -41829,7 +41829,7 @@
       </Moves>
     </List320>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>319</number>
     <id>Sharpedo</id>
     <type>Water / Dark</type>
@@ -41905,7 +41905,7 @@
     <spd>+1</spd>
     <ability>Strong Jaw</ability>
   </Mega319>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>318</number>
     <id>Carvanha</id>
     <type>Water / Dark</type>
@@ -41972,7 +41972,7 @@
       </Moves>
     </List318>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>317</number>
     <id>Swalot</id>
     <type>Poison</type>
@@ -42039,7 +42039,7 @@
       </Moves>
     </List317>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>316</number>
     <id>Gulpin</id>
     <type>Poison</type>
@@ -42107,7 +42107,7 @@
       </Moves>
     </List316>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>315</number>
     <id>Roselia</id>
     <type>Grass / Poison</type>
@@ -42173,7 +42173,7 @@
       </Moves>
     </List315>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>314</number>
     <id>Illumise</id>
     <type>Bug</type>
@@ -42239,7 +42239,7 @@
       </Moves>
     </List314>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>313</number>
     <id>Volbeat</id>
     <type>Bug</type>
@@ -42305,7 +42305,7 @@
       </Moves>
     </List313>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>312</number>
     <id>Minun</id>
     <type>Electric</type>
@@ -42375,7 +42375,7 @@
       </Moves>
     </List312>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>311</number>
     <id>Plusle</id>
     <type>Electric</type>
@@ -42445,7 +42445,7 @@
       </Moves>
     </List311>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>310</number>
     <id>Manectric</id>
     <type>Electric</type>
@@ -42517,7 +42517,7 @@
     <spd>+3</spd>
     <ability>Intimidate</ability>
   </Mega310>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>309</number>
     <id>Electrike</id>
     <type>Electric</type>
@@ -42583,7 +42583,7 @@
       </Moves>
     </List309>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>308</number>
     <id>Medicham</id>
     <type>Fighting / Psychic</type>
@@ -42658,7 +42658,7 @@
     <spd>+2</spd>
     <ability>Pure Power</ability>
   </Mega308>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>307</number>
     <id>Meditite</id>
     <type>Fighting / Psychic</type>
@@ -42724,7 +42724,7 @@
       </Moves>
     </List307>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>306</number>
     <id>Aggron</id>
     <type>Steel / Rock</type>
@@ -42797,7 +42797,7 @@
     <spdef>+2</spdef>
     <ability>Filter</ability>
   </Mega306>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>305</number>
     <id>Lairon</id>
     <type>Steel / Rock</type>
@@ -42863,7 +42863,7 @@
       </Moves>
     </List305>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>304</number>
     <id>Aron</id>
     <type>Steel / Rock</type>
@@ -42932,7 +42932,7 @@
       </Moves>
     </List304>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>303</number>
     <id>Mawile</id>
     <type>Steel / Fairy</type>
@@ -43004,7 +43004,7 @@
     <spdef>+4</spdef>
     <ability>Huge Power</ability>
   </Mega303>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>302</number>
     <id>Sableye</id>
     <type>Dark / Ghost</type>
@@ -43087,7 +43087,7 @@
     <spd>-3</spd>
     <ability>Magic Bounce</ability>
   </Mega302>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>301</number>
     <id>Delcatty</id>
     <type>Normal</type>
@@ -43156,7 +43156,7 @@
       </Moves>
     </List301>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>300</number>
     <id>Skitty</id>
     <type>Normal</type>
@@ -43226,7 +43226,7 @@
       </Moves>
     </List300>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>299</number>
     <id>Nosepass</id>
     <type>Rock</type>
@@ -43292,7 +43292,7 @@
       </Moves>
     </List299>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>298</number>
     <id>Azurill</id>
     <type>Normal / Fairy</type>
@@ -43354,7 +43354,7 @@
       </Moves>
     </List298>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>297</number>
     <id>Hariyama</id>
     <type>Fighting</type>
@@ -43415,7 +43415,7 @@
       </Moves>
     </List297>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>296</number>
     <id>Makuhita</id>
     <type>Fighting</type>
@@ -43481,7 +43481,7 @@
       </Moves>
     </List296>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>295</number>
     <id>Exploud</id>
     <type>Normal</type>
@@ -43546,7 +43546,7 @@
       </Moves>
     </List295>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>294</number>
     <id>Loudred</id>
     <type>Normal</type>
@@ -43609,7 +43609,7 @@
       </Moves>
     </List294>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>293</number>
     <id>Whismur</id>
     <type>Normal</type>
@@ -43673,7 +43673,7 @@
       </Moves>
     </List293>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>292</number>
     <id>Shedinja</id>
     <type>Bug / Ghost</type>
@@ -43737,7 +43737,7 @@
       </Moves>
     </List292>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>291</number>
     <id>Ninjask</id>
     <type>Bug / Flying</type>
@@ -43799,7 +43799,7 @@
       </Moves>
     </List291>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>290</number>
     <id>Nincada</id>
     <type>Bug / Ground</type>
@@ -43863,7 +43863,7 @@
       </Moves>
     </List290>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="3">
     <number>289</number>
     <id>Slaking</id>
     <type>Normal</type>
@@ -43925,7 +43925,7 @@
       </Moves>
     </List289>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>214</number>
     <id>Heracross</id>
     <type>Bug / Fighting</type>
@@ -43996,7 +43996,7 @@
     <spd>-1</spd>
     <ability>Skill Link</ability>
   </Mega214>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>215</number>
     <id>Sneasel</id>
     <type>Dark / Ice</type>
@@ -44064,7 +44064,7 @@
       </Moves>
     </List215>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>216</number>
     <id>Teddiursa</id>
     <type>Normal</type>
@@ -44129,7 +44129,7 @@
       </Moves>
     </List216>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>217</number>
     <id>Ursaring</id>
     <type>Normal</type>
@@ -44187,7 +44187,7 @@
       </Moves>
     </List217>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>218</number>
     <id>Slugma</id>
     <type>Fire</type>
@@ -44255,7 +44255,7 @@
       </Moves>
     </List218>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>219</number>
     <id>Magcargo</id>
     <type>Fire / Rock</type>
@@ -44321,7 +44321,7 @@
       </Moves>
     </List219>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="1">
     <number>220</number>
     <id>Swinub</id>
     <type>Ice / Ground</type>
@@ -44387,7 +44387,7 @@
       </Moves>
     </List220>
   </Pokemon>
-  <Pokemon>
+  <Pokemon Stage="2">
     <number>221</number>
     <id>Piloswine</id>
     <type>Ice / Ground</type>

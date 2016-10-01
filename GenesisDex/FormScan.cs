@@ -410,54 +410,45 @@ namespace GenesisDex
                 List < string > stageAllow = new List<string>();
                 if (PokeStage == "Only 1s")
                 {
-                    stageAllow.Add("1 -");
+                    stageAllow.Add("1");
                     goto OnlyOne;
                 }
                 if (PokeStage == "Only 2s")
                 {
-                    stageAllow.Add("2 -");
+                    stageAllow.Add("2");
                     goto OnlyOne;
                 }
                 if (PokeStage == "Only 3s")
                 {
-                    stageAllow.Add("3 -");
+                    stageAllow.Add("3");
                     goto OnlyOne;
                 }
                 if (PokeStage == "1s & 2s")
                 {
-                    stageAllow.Add("1 -");
-                    stageAllow.Add("2 -");
+                    stageAllow.Add("1");
+                    stageAllow.Add("2");
                     goto TwoStages;
                 }
                 if (PokeStage == "1s & 3s")
                 {
-                    stageAllow.Add("1 -");
-                    stageAllow.Add("3 -");
+                    stageAllow.Add("1");
+                    stageAllow.Add("3");
                     goto TwoStages;
                 }
                 if (PokeStage == "2s & 3s")
                 {
-                    stageAllow.Add("2 -");
-                    stageAllow.Add("3 -");
+                    stageAllow.Add("2");
+                    stageAllow.Add("3");
                     goto TwoStages;
                 }
                 OnlyOne:
                 for (var e = 0; e < pokeList.Count; e++)
                 {
                     PokeGenerator.ReportProgress(1);
-                    string[] name = pokeList[e].id.Split().ToArray();
-                    evoList = evoXML.createList(pokeList[e].number);
-                    for (var x = 0; x < evoList.Count; x++)
+                    if (pokeList[e].stage != stageAllow[0])
                     {
-                        if (evoList[x].evo.Contains(name[0]))
-                        {
-                            if (!evoList[x].evo.Contains(stageAllow[0]))
-                            {
-                                pokeList.RemoveAt(e);
-                                e -= 1;
-                                break;
-                            }
-                        }
+                        pokeList.RemoveAt(e);
+                        e -= 1;
                     }
                 }
                 return;
@@ -465,19 +456,10 @@ namespace GenesisDex
                 for (var e = 0; e < pokeList.Count; e++)
                 {
                     PokeGenerator.ReportProgress(1);
-                    string[] name = pokeList[e].id.Split().ToArray();
-                    evoList = evoXML.createList(pokeList[e].number);
-                    for (var x = 0; x < evoList.Count; x++)
+                    if (pokeList[e].stage != stageAllow[0] || pokeList[e].stage != stageAllow[1])
                     {
-                        if (evoList[x].evo.Contains(name[0]))
-                        {
-                            if (!evoList[x].evo.Contains(stageAllow[0]) && !evoList[x].evo.Contains(stageAllow[1]))
-                            {
-                                pokeList.RemoveAt(e);
-                                e -= 1;
-                                break;
-                            }
-                        }
+                        pokeList.RemoveAt(e);
+                        e -= 1;
                     }
                 }
                 return;

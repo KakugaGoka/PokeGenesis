@@ -25,6 +25,7 @@ namespace GenesisDexEngine
     class Pokemon
     {
         public string id { get; set; }
+        public string stage { get; set; }
         public string number { get; set; }
         public string type { get; set; }
         public string hp { get; set; }
@@ -156,6 +157,7 @@ namespace GenesisDexEngine
             var query = from node in doc.Descendants(decend)
                         select new Pokemon
                         {
+                            stage = (string)node.Attribute("Stage"),
                             number = (string)node.Element("number"),
                             id = (string)node.Element("id"),
                             type = (string)node.Element("type"),
