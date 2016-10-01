@@ -14,15 +14,12 @@ namespace GenesisDexEngine
         public string OneItemGasp { get; set; }
         public string TwoItemGasp { get; set; }
         public string PokemonGasp { get; set; }
+        public string ShinyGasp { get; set; }
         public int MaxPlayerLevel { get; set; }
         public int MaxPokemonLevel { get; set; }
         public int MaxScanAmount { get; set; }
         public int MaxItemTier { get; set; }
-    }
-
-    class BannedPokemon
-    {
-        public string PokeBan { get; set; }
+        public int CashPerLevel { get; set; }
     }
 
     class Pokemon
@@ -122,9 +119,11 @@ namespace GenesisDexEngine
                             MaxPlayerLevel = (int)node.Element("MaxPlayerLevel"),
                             MaxScanAmount = (int)node.Element("MaxScanAmount"),
                             MaxItemTier = (int)node.Element("MaxItemTier"),
+                            CashPerLevel = (int)node.Element("CashPerLevel"),
                             OneItemGasp = (string)node.Element("OneItemGasp"),
                             TwoItemGasp = (string)node.Element("TwoItemGasp"),
                             PokemonGasp = (string)node.Element("PokemonGasp"),
+                            ShinyGasp = (string)node.Element("ShinyGasp")
                         };
             idList = query.ToList();
             return idList;
@@ -133,17 +132,14 @@ namespace GenesisDexEngine
 
     class BanList
     {
-        public List<BannedPokemon> createList()
+        public List<string> createList()
         {
             XDocument doc = null;
             string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\Options.xml");
-            List<BannedPokemon> idList = new List<BannedPokemon>();
+            List<string> idList = new List<string>();
             doc = XDocument.Load(fileName);
             var query = from node in doc.Descendants("Options").Descendants("BanList").Descendants("PokeBan")
-                        select new BannedPokemon
-                        {
-                            PokeBan = (string)node.Value,
-                        };
+                        select (string)node.Value;
             idList = query.ToList();
             return idList;
         }

@@ -20,6 +20,8 @@ namespace GenesisDex
         List<Pokemon> pokeList = new List<Pokemon>();
         List<Mega> megaList = new List<Mega>();
         MegaList testMega = new MegaList();
+        BanList banXML = new BanList();
+        List<string> banList = new List<string>();
         List<Evolution> evoList = new List<Evolution>();
         List<Skill> skillList = new List<Skill>();
         List<Capability> capList = new List<Capability>();
@@ -61,6 +63,15 @@ namespace GenesisDex
             pbPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRight.gif");
             pbPokeAdd.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\AddPokemon.png");
             pokeList = pokeXML.createList("Pokemon");
+            banList = banXML.createList();
+            for (int p = 0; p < pokeList.Count; p++)
+            {
+                if (banList.Contains(pokeList[p].id))
+                {
+                    pokeList.RemoveAt(p);
+                    p--;
+                }
+            }
             SortPokeList();
             for (var i = 0; i < pokeList.Count; i++)
             {
@@ -728,7 +739,6 @@ namespace GenesisDex
 
         private void pbPokeAdd_Click(object sender, EventArgs e)
         {
-            //this.Hide();
             FormAdd fc = new FormAdd();
             fc.FormClosing += FormAddIsClosing;
             fc.Show();
@@ -748,9 +758,20 @@ namespace GenesisDex
         private void RefreshPokedex()
         {
             PokemonList pokeXML = new PokemonList();
+            banXML = new BanList();
             pokeDex.Clear();
             pokeList.Clear();
+            banList.Clear();
             pokeList = pokeXML.createList("Pokemon");
+            banList = banXML.createList();
+            for (int p = 0; p < pokeList.Count; p++ )
+            {
+                if (banList.Contains(pokeList[p].id))
+                {
+                    pokeList.RemoveAt(p);
+                    p--;
+                }
+            }
             SortPokeList();
             for (var i = 0; i < pokeList.Count; i++)
             {
@@ -858,6 +879,7 @@ namespace GenesisDex
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            this.Hide();
             FormOptions fc = new FormOptions();
             fc.FormClosing += FormOptionsIsClosing;
             fc.Show();

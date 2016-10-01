@@ -15,18 +15,26 @@ namespace GenesisDex
 {
     public partial class FormOptions : Form
     {
+        Point dragCursorPoint = new Point();
+        Point dragFormPoint = new Point();
+
         OptionsList optionsXML = new OptionsList();
         List<Options> optionsList = new List<Options>();
 
         BanList banXML = new BanList();
-        List<BannedPokemon> banList = new List<BannedPokemon>();
+        List<string> banList = new List<string>();
 
         PokemonList pokeXML = new PokemonList();
         List<Pokemon> pokeList = new List<Pokemon>();
 
+        bool dragging { get; set; }
+        bool restoreDefaults { get; set; }
+
         public FormOptions()
         {
             InitializeComponent();
+            dragging = false;
+            restoreDefaults = false;
             optionsList = optionsXML.createList();
             banList = banXML.createList();
             pokeList = pokeXML.createList("Pokemon");
@@ -34,14 +42,16 @@ namespace GenesisDex
             nudPlayerLevel.Value = optionsList[0].MaxPlayerLevel;
             nudPokeLevel.Value = optionsList[0].MaxPokemonLevel;
             nudScanLimit.Value = optionsList[0].MaxScanAmount;
-            nudTier.Value = optionsList[0].MaxItemTier;
+            nudItemTier.Value = optionsList[0].MaxItemTier;
+            nudCashPerLevel.Value = optionsList[0].CashPerLevel;
             txtItemGasp1.Text = optionsList[0].OneItemGasp;
             txtItemGasp2.Text = optionsList[0].TwoItemGasp;
             txtPokeGasp.Text = optionsList[0].PokemonGasp;
+            txtShinyGasp.Text = optionsList[0].ShinyGasp;
             for(var i = 0; i < banList.Count; i++)
             {
-                if(banList[i].PokeBan != "Placeholder")
-                    listBanned.Items.Add(banList[i].PokeBan);
+                if(banList[i] != "Placeholder")
+                    listBanned.Items.Add(banList[i]);
             }
             foreach(Pokemon s in pokeList)
             {
@@ -95,17 +105,21 @@ namespace GenesisDex
             var maxPlayer = docX.Element("Options").Element("MaxPlayerLevel");
             var maxPokemon = docX.Element("Options").Element("MaxPokemonLevel");
             var maxScan = docX.Element("Options").Element("MaxScanAmount");
-            var maxTier = docX.Element("Options").Element("MaxItemTier");
+            var maxItemTier = docX.Element("Options").Element("MaxItemTier");
+            var cashPerLevel = docX.Element("Options").Element("CashPerLevel");
             var gasp1 = docX.Element("Options").Element("OneItemGasp");
             var gasp2 = docX.Element("Options").Element("TwoItemGasp");
             var gaspPoke = docX.Element("Options").Element("PokemonGasp");
+            var gaspShiny = docX.Element("Options").Element("ShinyGasp");
             maxPlayer.Value = nudPlayerLevel.Value.ToString();
             maxPokemon.Value = nudPokeLevel.Value.ToString();
             maxScan.Value = nudScanLimit.Value.ToString();
-            maxTier.Value = nudTier.Value.ToString();
+            maxItemTier.Value = nudItemTier.Value.ToString();
+            cashPerLevel.Value = nudCashPerLevel.Value.ToString();
             gasp1.Value = txtItemGasp1.Text;
             gasp2.Value = txtItemGasp2.Text;
             gaspPoke.Value = txtPokeGasp.Text;
+            gaspShiny.Value = txtShinyGasp.Text;
             XElement ban;
             if (banned == null)
             {
@@ -122,30 +136,98 @@ namespace GenesisDex
             docX.Save(AppDomain.CurrentDomain.BaseDirectory + "Data\\Options.xml");
             optionsList = new List<Options>();
             optionsList = optionsXML.createList();
-            banList = new List<BannedPokemon>();
+            banList = new List<string>();
             banList = banXML.createList();
             pokeList = new List<Pokemon>();
             pokeList = pokeXML.createList("Pokemon");
             nudPlayerLevel.Value = optionsList[0].MaxPlayerLevel;
             nudPokeLevel.Value = optionsList[0].MaxPokemonLevel;
             nudScanLimit.Value = optionsList[0].MaxScanAmount;
-            nudTier.Value = optionsList[0].MaxItemTier;
+            nudItemTier.Value = optionsList[0].MaxItemTier;
+            nudCashPerLevel.Value = optionsList[0].CashPerLevel;
             txtItemGasp1.Text = optionsList[0].OneItemGasp;
             txtItemGasp2.Text = optionsList[0].TwoItemGasp;
             txtPokeGasp.Text = optionsList[0].PokemonGasp;
+            txtShinyGasp.Text = optionsList[0].ShinyGasp;
             listBanned.Items.Clear();
             listAllowed.Items.Clear();
             for (var i = 0; i < banList.Count; i++)
             {
-                if (banList[i].PokeBan != "Placeholder")
-                    listBanned.Items.Add(banList[i].PokeBan);
+                if (banList[i] != "Placeholder")
+                    listBanned.Items.Add(banList[i]);
             }
             foreach (Pokemon s in pokeList)
             {
                 if (!listBanned.Items.Contains(s.id))
                     listAllowed.Items.Add(s.id);
             }
-            MessageBox.Show("Save Complete.");
+            if (restoreDefaults)
+                MessageBox.Show("Defaults Restored.");
+            else
+                MessageBox.Show("Save Complete.");
+            restoreDefaults = false;
         }
+
+        private void btnDefault_Click(object sender, EventArgs e)
+        {
+            DialogResult confirmDefault = MessageBox.Show("Are you sure you wish to restore the default options?", "Confirm Restore Default", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            if (confirmDefault == DialogResult.Yes)
+            {
+                pokeList = new List<Pokemon>();
+                pokeList = pokeXML.createList("Pokemon");
+                nudPlayerLevel.Value = 50;
+                nudPokeLevel.Value = 100;
+                nudScanLimit.Value = 100;
+                nudItemTier.Value = 4;
+                nudCashPerLevel.Value = 100;
+                txtItemGasp1.Text = "It has something!";
+                txtItemGasp2.Text = "It has a few things!";
+                txtPokeGasp.Text = "It's a ~p";
+                txtShinyGasp.Text = "It's a Shiny ~p";
+                listBanned.Items.Clear();
+                listAllowed.Items.Clear();
+                foreach (Pokemon s in pokeList)
+                {
+                    if (!listBanned.Items.Contains(s.id))
+                        listAllowed.Items.Add(s.id);
+                }
+                restoreDefaults = true;
+                btnSave_Click(this, new EventArgs());
+            }
+        }
+
+        //===========================================================================================================
+        //===========================================================================================================
+        private void FormOptions_MouseDown(object sender, MouseEventArgs e)
+        {
+            dragging = true;
+            dragCursorPoint = Cursor.Position;
+            dragFormPoint = this.Location;
+        }
+        //===========================================================================================================
+        //===========================================================================================================
+
+        //===========================================================================================================
+        //===========================================================================================================
+        private void FormOptions_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (dragging)
+            {
+                Point dif = Point.Subtract(Cursor.Position, new Size(dragCursorPoint));
+                this.Location = Point.Add(dragFormPoint, new Size(dif));
+            }
+        }
+        //===========================================================================================================
+        //===========================================================================================================
+
+        //===========================================================================================================
+        //===========================================================================================================
+        private void FormOptions_MouseUp(object sender, MouseEventArgs e)
+        {
+            dragging = false;
+        }
+        //===========================================================================================================
+        //===========================================================================================================
     }
 }
+

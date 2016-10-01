@@ -29,112 +29,112 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormScan));
-            this.infoBack = new System.Windows.Forms.PictureBox();
-            this.infoForward = new System.Windows.Forms.PictureBox();
-            this.rtbInfo1 = new System.Windows.Forms.RichTextBox();
+            this.btnInfoBack = new System.Windows.Forms.PictureBox();
+            this.btnInfoForward = new System.Windows.Forms.PictureBox();
+            this.rtbInfo = new System.Windows.Forms.RichTextBox();
             this.pbExit = new System.Windows.Forms.PictureBox();
             this.pbPokemon = new System.Windows.Forms.PictureBox();
-            this.pbScan = new System.Windows.Forms.PictureBox();
-            this.pbScanPokemon = new System.Windows.Forms.PictureBox();
-            this.pkLevelMin = new System.Windows.Forms.NumericUpDown();
-            this.pkHabitat = new System.Windows.Forms.ComboBox();
+            this.btnScan = new System.Windows.Forms.PictureBox();
+            this.btnScanPokemon = new System.Windows.Forms.PictureBox();
+            this.nudLevelMin = new System.Windows.Forms.NumericUpDown();
+            this.cbHabitat = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pkType = new System.Windows.Forms.ComboBox();
+            this.cbType = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.pkLevelMax = new System.Windows.Forms.NumericUpDown();
+            this.nudLevelMax = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.pkHasItem = new System.Windows.Forms.CheckBox();
-            this.pkCanBeShiny = new System.Windows.Forms.CheckBox();
+            this.chkHasItem = new System.Windows.Forms.CheckBox();
+            this.chkCanBeShiny = new System.Windows.Forms.CheckBox();
             this.pkItem = new System.Windows.Forms.PictureBox();
             this.pkHeld = new System.Windows.Forms.Label();
-            this.pkGasp = new System.Windows.Forms.RichTextBox();
+            this.rtbGasp = new System.Windows.Forms.RichTextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.pkPokemon = new System.Windows.Forms.ComboBox();
-            this.pkCanBeLegend = new System.Windows.Forms.CheckBox();
-            this.pkStageAllowed = new System.Windows.Forms.ComboBox();
+            this.cbPokemon = new System.Windows.Forms.ComboBox();
+            this.chkCanBeLegend = new System.Windows.Forms.CheckBox();
+            this.cbStageAllowed = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.pkAmount = new System.Windows.Forms.NumericUpDown();
+            this.nudAmount = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
-            this.pbPokeRight = new System.Windows.Forms.PictureBox();
-            this.pbPokeLeft = new System.Windows.Forms.PictureBox();
+            this.btnPokeRight = new System.Windows.Forms.PictureBox();
+            this.btnPokeLeft = new System.Windows.Forms.PictureBox();
             this.tbPokeCount = new System.Windows.Forms.RichTextBox();
             this.tbPageCount = new System.Windows.Forms.RichTextBox();
-            this.pbGotoPage = new System.Windows.Forms.PictureBox();
-            this.pkGoto = new System.Windows.Forms.NumericUpDown();
-            this.pbLoot = new System.Windows.Forms.PictureBox();
+            this.btnGotoPage = new System.Windows.Forms.PictureBox();
+            this.nudGoto = new System.Windows.Forms.NumericUpDown();
+            this.btnLoot = new System.Windows.Forms.PictureBox();
             this.nudPlayerLevel = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
-            this.pbPokeRefresh = new System.Windows.Forms.PictureBox();
-            this.pbLootRefresh = new System.Windows.Forms.PictureBox();
+            this.btnPokeRefresh = new System.Windows.Forms.PictureBox();
+            this.btnLootRefresh = new System.Windows.Forms.PictureBox();
             this.pkDamage = new System.Windows.Forms.NumericUpDown();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pbOverlay = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.pbDealDamage = new System.Windows.Forms.PictureBox();
             this.PokeGenerator = new System.ComponentModel.BackgroundWorker();
-            this.GenerationProgress = new System.Windows.Forms.ProgressBar();
+            this.prbGenerationProgress = new System.Windows.Forms.ProgressBar();
             this.lblProgress = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.infoBack)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.infoForward)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnInfoBack)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnInfoForward)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokemon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbScan)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbScanPokemon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pkLevelMin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pkLevelMax)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnScan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnScanPokemon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudLevelMin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudLevelMax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkItem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pkAmount)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPokeRight)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPokeLeft)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbGotoPage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pkGoto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLoot)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPokeRight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPokeLeft)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGotoPage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudGoto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLoot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPlayerLevel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPokeRefresh)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLootRefresh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPokeRefresh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLootRefresh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkDamage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOverlay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDealDamage)).BeginInit();
             this.SuspendLayout();
             // 
-            // infoBack
+            // btnInfoBack
             // 
-            this.infoBack.BackColor = System.Drawing.Color.Transparent;
-            this.infoBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("infoBack.BackgroundImage")));
-            this.infoBack.Location = new System.Drawing.Point(563, 551);
-            this.infoBack.Name = "infoBack";
-            this.infoBack.Size = new System.Drawing.Size(38, 35);
-            this.infoBack.TabIndex = 37;
-            this.infoBack.TabStop = false;
-            this.infoBack.Click += new System.EventHandler(this.infoBack_Click);
+            this.btnInfoBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnInfoBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInfoBack.BackgroundImage")));
+            this.btnInfoBack.Location = new System.Drawing.Point(563, 551);
+            this.btnInfoBack.Name = "btnInfoBack";
+            this.btnInfoBack.Size = new System.Drawing.Size(38, 35);
+            this.btnInfoBack.TabIndex = 37;
+            this.btnInfoBack.TabStop = false;
+            this.btnInfoBack.Click += new System.EventHandler(this.infoBack_Click);
             // 
-            // infoForward
+            // btnInfoForward
             // 
-            this.infoForward.BackColor = System.Drawing.Color.Transparent;
-            this.infoForward.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("infoForward.BackgroundImage")));
-            this.infoForward.Location = new System.Drawing.Point(643, 551);
-            this.infoForward.Name = "infoForward";
-            this.infoForward.Size = new System.Drawing.Size(33, 35);
-            this.infoForward.TabIndex = 36;
-            this.infoForward.TabStop = false;
-            this.infoForward.Click += new System.EventHandler(this.infoForward_Click);
+            this.btnInfoForward.BackColor = System.Drawing.Color.Transparent;
+            this.btnInfoForward.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInfoForward.BackgroundImage")));
+            this.btnInfoForward.Location = new System.Drawing.Point(643, 551);
+            this.btnInfoForward.Name = "btnInfoForward";
+            this.btnInfoForward.Size = new System.Drawing.Size(33, 35);
+            this.btnInfoForward.TabIndex = 36;
+            this.btnInfoForward.TabStop = false;
+            this.btnInfoForward.Click += new System.EventHandler(this.infoForward_Click);
             // 
-            // rtbInfo1
+            // rtbInfo
             // 
-            this.rtbInfo1.AcceptsTab = true;
-            this.rtbInfo1.BackColor = System.Drawing.Color.Black;
-            this.rtbInfo1.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbInfo1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.rtbInfo1.Location = new System.Drawing.Point(461, 158);
-            this.rtbInfo1.Name = "rtbInfo1";
-            this.rtbInfo1.ReadOnly = true;
-            this.rtbInfo1.Size = new System.Drawing.Size(322, 387);
-            this.rtbInfo1.TabIndex = 35;
-            this.rtbInfo1.TabStop = false;
-            this.rtbInfo1.Text = "";
+            this.rtbInfo.AcceptsTab = true;
+            this.rtbInfo.BackColor = System.Drawing.Color.Black;
+            this.rtbInfo.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.rtbInfo.Location = new System.Drawing.Point(461, 158);
+            this.rtbInfo.Name = "rtbInfo";
+            this.rtbInfo.ReadOnly = true;
+            this.rtbInfo.Size = new System.Drawing.Size(322, 387);
+            this.rtbInfo.TabIndex = 35;
+            this.rtbInfo.TabStop = false;
+            this.rtbInfo.Text = "";
             // 
             // pbExit
             // 
@@ -157,70 +157,70 @@
             this.pbPokemon.TabIndex = 31;
             this.pbPokemon.TabStop = false;
             // 
-            // pbScan
+            // btnScan
             // 
-            this.pbScan.BackColor = System.Drawing.Color.Transparent;
-            this.pbScan.Image = global::GenesisDex.Properties.Resources.Pokedex;
-            this.pbScan.Location = new System.Drawing.Point(22, 23);
-            this.pbScan.Name = "pbScan";
-            this.pbScan.Size = new System.Drawing.Size(86, 86);
-            this.pbScan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbScan.TabIndex = 44;
-            this.pbScan.TabStop = false;
-            this.pbScan.Click += new System.EventHandler(this.pbScan_Click);
+            this.btnScan.BackColor = System.Drawing.Color.Transparent;
+            this.btnScan.Image = global::GenesisDex.Properties.Resources.Pokedex;
+            this.btnScan.Location = new System.Drawing.Point(22, 23);
+            this.btnScan.Name = "btnScan";
+            this.btnScan.Size = new System.Drawing.Size(86, 86);
+            this.btnScan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnScan.TabIndex = 44;
+            this.btnScan.TabStop = false;
+            this.btnScan.Click += new System.EventHandler(this.pbScan_Click);
             // 
-            // pbScanPokemon
+            // btnScanPokemon
             // 
-            this.pbScanPokemon.BackColor = System.Drawing.Color.Transparent;
-            this.pbScanPokemon.Image = global::GenesisDex.Properties.Resources.ScanPokemon;
-            this.pbScanPokemon.Location = new System.Drawing.Point(216, 547);
-            this.pbScanPokemon.Name = "pbScanPokemon";
-            this.pbScanPokemon.Size = new System.Drawing.Size(157, 33);
-            this.pbScanPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbScanPokemon.TabIndex = 45;
-            this.pbScanPokemon.TabStop = false;
-            this.pbScanPokemon.Click += new System.EventHandler(this.pbScanPokemon_Click);
-            this.pbScanPokemon.MouseLeave += new System.EventHandler(this.pbScanPokemon_MouseLeave);
-            this.pbScanPokemon.MouseHover += new System.EventHandler(this.pbScanPokemon_MouseHover);
+            this.btnScanPokemon.BackColor = System.Drawing.Color.Transparent;
+            this.btnScanPokemon.Image = global::GenesisDex.Properties.Resources.ScanPokemon;
+            this.btnScanPokemon.Location = new System.Drawing.Point(216, 547);
+            this.btnScanPokemon.Name = "btnScanPokemon";
+            this.btnScanPokemon.Size = new System.Drawing.Size(157, 33);
+            this.btnScanPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnScanPokemon.TabIndex = 45;
+            this.btnScanPokemon.TabStop = false;
+            this.btnScanPokemon.Click += new System.EventHandler(this.pbScanPokemon_Click);
+            this.btnScanPokemon.MouseLeave += new System.EventHandler(this.pbScanPokemon_MouseLeave);
+            this.btnScanPokemon.MouseHover += new System.EventHandler(this.pbScanPokemon_MouseHover);
             // 
-            // pkLevelMin
+            // nudLevelMin
             // 
-            this.pkLevelMin.BackColor = System.Drawing.Color.Black;
-            this.pkLevelMin.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pkLevelMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.pkLevelMin.Location = new System.Drawing.Point(271, 482);
-            this.pkLevelMin.Maximum = new decimal(new int[] {
+            this.nudLevelMin.BackColor = System.Drawing.Color.Black;
+            this.nudLevelMin.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudLevelMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.nudLevelMin.Location = new System.Drawing.Point(271, 482);
+            this.nudLevelMin.Maximum = new decimal(new int[] {
             99,
             0,
             0,
             0});
-            this.pkLevelMin.Minimum = new decimal(new int[] {
+            this.nudLevelMin.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.pkLevelMin.Name = "pkLevelMin";
-            this.pkLevelMin.Size = new System.Drawing.Size(44, 24);
-            this.pkLevelMin.TabIndex = 9;
-            this.pkLevelMin.Value = new decimal(new int[] {
+            this.nudLevelMin.Name = "nudLevelMin";
+            this.nudLevelMin.Size = new System.Drawing.Size(44, 24);
+            this.nudLevelMin.TabIndex = 9;
+            this.nudLevelMin.Value = new decimal(new int[] {
             15,
             0,
             0,
             0});
-            this.pkLevelMin.ValueChanged += new System.EventHandler(this.pkLevelMin_ValueChanged);
+            this.nudLevelMin.ValueChanged += new System.EventHandler(this.pkLevelMin_ValueChanged);
             // 
-            // pkHabitat
+            // cbHabitat
             // 
-            this.pkHabitat.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.pkHabitat.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.pkHabitat.BackColor = System.Drawing.Color.Black;
-            this.pkHabitat.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pkHabitat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.pkHabitat.FormattingEnabled = true;
-            this.pkHabitat.Location = new System.Drawing.Point(79, 442);
-            this.pkHabitat.Name = "pkHabitat";
-            this.pkHabitat.Size = new System.Drawing.Size(143, 27);
-            this.pkHabitat.TabIndex = 4;
+            this.cbHabitat.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbHabitat.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbHabitat.BackColor = System.Drawing.Color.Black;
+            this.cbHabitat.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbHabitat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.cbHabitat.FormattingEnabled = true;
+            this.cbHabitat.Location = new System.Drawing.Point(79, 442);
+            this.cbHabitat.Name = "cbHabitat";
+            this.cbHabitat.Size = new System.Drawing.Size(143, 27);
+            this.cbHabitat.TabIndex = 4;
             // 
             // label1
             // 
@@ -244,18 +244,18 @@
             this.label2.TabIndex = 49;
             this.label2.Text = "Habitat";
             // 
-            // pkType
+            // cbType
             // 
-            this.pkType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.pkType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.pkType.BackColor = System.Drawing.Color.Black;
-            this.pkType.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pkType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.pkType.FormattingEnabled = true;
-            this.pkType.Location = new System.Drawing.Point(80, 475);
-            this.pkType.Name = "pkType";
-            this.pkType.Size = new System.Drawing.Size(143, 27);
-            this.pkType.TabIndex = 5;
+            this.cbType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbType.BackColor = System.Drawing.Color.Black;
+            this.cbType.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.cbType.FormattingEnabled = true;
+            this.cbType.Location = new System.Drawing.Point(80, 475);
+            this.cbType.Name = "cbType";
+            this.cbType.Size = new System.Drawing.Size(143, 27);
+            this.cbType.TabIndex = 5;
             // 
             // label3
             // 
@@ -268,31 +268,31 @@
             this.label3.TabIndex = 51;
             this.label3.Text = "Type";
             // 
-            // pkLevelMax
+            // nudLevelMax
             // 
-            this.pkLevelMax.BackColor = System.Drawing.Color.Black;
-            this.pkLevelMax.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pkLevelMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.pkLevelMax.Location = new System.Drawing.Point(329, 482);
-            this.pkLevelMax.Maximum = new decimal(new int[] {
+            this.nudLevelMax.BackColor = System.Drawing.Color.Black;
+            this.nudLevelMax.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudLevelMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.nudLevelMax.Location = new System.Drawing.Point(329, 482);
+            this.nudLevelMax.Maximum = new decimal(new int[] {
             99,
             0,
             0,
             0});
-            this.pkLevelMax.Minimum = new decimal(new int[] {
+            this.nudLevelMax.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.pkLevelMax.Name = "pkLevelMax";
-            this.pkLevelMax.Size = new System.Drawing.Size(44, 24);
-            this.pkLevelMax.TabIndex = 10;
-            this.pkLevelMax.Value = new decimal(new int[] {
+            this.nudLevelMax.Name = "nudLevelMax";
+            this.nudLevelMax.Size = new System.Drawing.Size(44, 24);
+            this.nudLevelMax.TabIndex = 10;
+            this.nudLevelMax.Value = new decimal(new int[] {
             15,
             0,
             0,
             0});
-            this.pkLevelMax.ValueChanged += new System.EventHandler(this.pkLevelMax_ValueChanged);
+            this.nudLevelMax.ValueChanged += new System.EventHandler(this.pkLevelMax_ValueChanged);
             // 
             // label4
             // 
@@ -316,35 +316,35 @@
             this.label5.TabIndex = 54;
             this.label5.Text = "Min";
             // 
-            // pkHasItem
+            // chkHasItem
             // 
-            this.pkHasItem.AutoSize = true;
-            this.pkHasItem.BackColor = System.Drawing.Color.Silver;
-            this.pkHasItem.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.pkHasItem.FlatAppearance.BorderSize = 5;
-            this.pkHasItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pkHasItem.Location = new System.Drawing.Point(41, 508);
-            this.pkHasItem.Name = "pkHasItem";
-            this.pkHasItem.Size = new System.Drawing.Size(125, 20);
-            this.pkHasItem.TabIndex = 6;
-            this.pkHasItem.Text = "Generate Items?";
-            this.pkHasItem.UseVisualStyleBackColor = false;
-            this.pkHasItem.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pkHasItem_KeyDown);
+            this.chkHasItem.AutoSize = true;
+            this.chkHasItem.BackColor = System.Drawing.Color.Silver;
+            this.chkHasItem.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.chkHasItem.FlatAppearance.BorderSize = 5;
+            this.chkHasItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkHasItem.Location = new System.Drawing.Point(41, 508);
+            this.chkHasItem.Name = "chkHasItem";
+            this.chkHasItem.Size = new System.Drawing.Size(125, 20);
+            this.chkHasItem.TabIndex = 6;
+            this.chkHasItem.Text = "Generate Items?";
+            this.chkHasItem.UseVisualStyleBackColor = false;
+            this.chkHasItem.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pkHasItem_KeyDown);
             // 
-            // pkCanBeShiny
+            // chkCanBeShiny
             // 
-            this.pkCanBeShiny.AutoSize = true;
-            this.pkCanBeShiny.BackColor = System.Drawing.Color.Silver;
-            this.pkCanBeShiny.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.pkCanBeShiny.FlatAppearance.BorderSize = 5;
-            this.pkCanBeShiny.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pkCanBeShiny.Location = new System.Drawing.Point(41, 533);
-            this.pkCanBeShiny.Name = "pkCanBeShiny";
-            this.pkCanBeShiny.Size = new System.Drawing.Size(126, 20);
-            this.pkCanBeShiny.TabIndex = 7;
-            this.pkCanBeShiny.Text = "Generate Shiny?";
-            this.pkCanBeShiny.UseVisualStyleBackColor = false;
-            this.pkCanBeShiny.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pkCanBeShiny_KeyDown);
+            this.chkCanBeShiny.AutoSize = true;
+            this.chkCanBeShiny.BackColor = System.Drawing.Color.Silver;
+            this.chkCanBeShiny.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.chkCanBeShiny.FlatAppearance.BorderSize = 5;
+            this.chkCanBeShiny.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkCanBeShiny.Location = new System.Drawing.Point(41, 533);
+            this.chkCanBeShiny.Name = "chkCanBeShiny";
+            this.chkCanBeShiny.Size = new System.Drawing.Size(126, 20);
+            this.chkCanBeShiny.TabIndex = 7;
+            this.chkCanBeShiny.Text = "Generate Shiny?";
+            this.chkCanBeShiny.UseVisualStyleBackColor = false;
+            this.chkCanBeShiny.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pkCanBeShiny_KeyDown);
             // 
             // pkItem
             // 
@@ -366,19 +366,19 @@
             this.pkHeld.Size = new System.Drawing.Size(0, 13);
             this.pkHeld.TabIndex = 58;
             // 
-            // pkGasp
+            // rtbGasp
             // 
-            this.pkGasp.AcceptsTab = true;
-            this.pkGasp.BackColor = System.Drawing.Color.Black;
-            this.pkGasp.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pkGasp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.pkGasp.Location = new System.Drawing.Point(245, 376);
-            this.pkGasp.Name = "pkGasp";
-            this.pkGasp.ReadOnly = true;
-            this.pkGasp.Size = new System.Drawing.Size(143, 88);
-            this.pkGasp.TabIndex = 61;
-            this.pkGasp.TabStop = false;
-            this.pkGasp.Text = "";
+            this.rtbGasp.AcceptsTab = true;
+            this.rtbGasp.BackColor = System.Drawing.Color.Black;
+            this.rtbGasp.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbGasp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.rtbGasp.Location = new System.Drawing.Point(232, 376);
+            this.rtbGasp.Name = "rtbGasp";
+            this.rtbGasp.ReadOnly = true;
+            this.rtbGasp.Size = new System.Drawing.Size(156, 88);
+            this.rtbGasp.TabIndex = 61;
+            this.rtbGasp.TabStop = false;
+            this.rtbGasp.Text = "";
             // 
             // label6
             // 
@@ -391,47 +391,47 @@
             this.label6.TabIndex = 63;
             this.label6.Text = "Pokemon";
             // 
-            // pkPokemon
+            // cbPokemon
             // 
-            this.pkPokemon.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.pkPokemon.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.pkPokemon.BackColor = System.Drawing.Color.Black;
-            this.pkPokemon.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pkPokemon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.pkPokemon.FormattingEnabled = true;
-            this.pkPokemon.Location = new System.Drawing.Point(79, 376);
-            this.pkPokemon.Name = "pkPokemon";
-            this.pkPokemon.Size = new System.Drawing.Size(143, 27);
-            this.pkPokemon.TabIndex = 2;
-            this.pkPokemon.TextChanged += new System.EventHandler(this.pkPokemon_TextChanged);
+            this.cbPokemon.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbPokemon.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbPokemon.BackColor = System.Drawing.Color.Black;
+            this.cbPokemon.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbPokemon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.cbPokemon.FormattingEnabled = true;
+            this.cbPokemon.Location = new System.Drawing.Point(79, 376);
+            this.cbPokemon.Name = "cbPokemon";
+            this.cbPokemon.Size = new System.Drawing.Size(143, 27);
+            this.cbPokemon.TabIndex = 2;
+            this.cbPokemon.TextChanged += new System.EventHandler(this.pkPokemon_TextChanged);
             // 
-            // pkCanBeLegend
+            // chkCanBeLegend
             // 
-            this.pkCanBeLegend.AutoSize = true;
-            this.pkCanBeLegend.BackColor = System.Drawing.Color.Silver;
-            this.pkCanBeLegend.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.pkCanBeLegend.FlatAppearance.BorderSize = 5;
-            this.pkCanBeLegend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pkCanBeLegend.Location = new System.Drawing.Point(41, 558);
-            this.pkCanBeLegend.Name = "pkCanBeLegend";
-            this.pkCanBeLegend.Size = new System.Drawing.Size(156, 20);
-            this.pkCanBeLegend.TabIndex = 8;
-            this.pkCanBeLegend.Text = "Include Legendaries?";
-            this.pkCanBeLegend.UseVisualStyleBackColor = false;
-            this.pkCanBeLegend.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pkCanBeLegend_KeyDown);
+            this.chkCanBeLegend.AutoSize = true;
+            this.chkCanBeLegend.BackColor = System.Drawing.Color.Silver;
+            this.chkCanBeLegend.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.chkCanBeLegend.FlatAppearance.BorderSize = 5;
+            this.chkCanBeLegend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkCanBeLegend.Location = new System.Drawing.Point(41, 558);
+            this.chkCanBeLegend.Name = "chkCanBeLegend";
+            this.chkCanBeLegend.Size = new System.Drawing.Size(156, 20);
+            this.chkCanBeLegend.TabIndex = 8;
+            this.chkCanBeLegend.Text = "Include Legendaries?";
+            this.chkCanBeLegend.UseVisualStyleBackColor = false;
+            this.chkCanBeLegend.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pkCanBeLegend_KeyDown);
             // 
-            // pkStageAllowed
+            // cbStageAllowed
             // 
-            this.pkStageAllowed.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.pkStageAllowed.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.pkStageAllowed.BackColor = System.Drawing.Color.Black;
-            this.pkStageAllowed.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pkStageAllowed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.pkStageAllowed.FormattingEnabled = true;
-            this.pkStageAllowed.Location = new System.Drawing.Point(80, 409);
-            this.pkStageAllowed.Name = "pkStageAllowed";
-            this.pkStageAllowed.Size = new System.Drawing.Size(143, 27);
-            this.pkStageAllowed.TabIndex = 3;
+            this.cbStageAllowed.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbStageAllowed.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbStageAllowed.BackColor = System.Drawing.Color.Black;
+            this.cbStageAllowed.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbStageAllowed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.cbStageAllowed.FormattingEnabled = true;
+            this.cbStageAllowed.Location = new System.Drawing.Point(80, 409);
+            this.cbStageAllowed.Name = "cbStageAllowed";
+            this.cbStageAllowed.Size = new System.Drawing.Size(143, 27);
+            this.cbStageAllowed.TabIndex = 3;
             // 
             // label7
             // 
@@ -444,21 +444,21 @@
             this.label7.TabIndex = 67;
             this.label7.Text = "Stage";
             // 
-            // pkAmount
+            // nudAmount
             // 
-            this.pkAmount.BackColor = System.Drawing.Color.Black;
-            this.pkAmount.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pkAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.pkAmount.Location = new System.Drawing.Point(271, 517);
-            this.pkAmount.Minimum = new decimal(new int[] {
+            this.nudAmount.BackColor = System.Drawing.Color.Black;
+            this.nudAmount.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.nudAmount.Location = new System.Drawing.Point(271, 517);
+            this.nudAmount.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.pkAmount.Name = "pkAmount";
-            this.pkAmount.Size = new System.Drawing.Size(51, 24);
-            this.pkAmount.TabIndex = 11;
-            this.pkAmount.Value = new decimal(new int[] {
+            this.nudAmount.Name = "nudAmount";
+            this.nudAmount.Size = new System.Drawing.Size(51, 24);
+            this.nudAmount.TabIndex = 11;
+            this.nudAmount.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -475,25 +475,25 @@
             this.label8.TabIndex = 69;
             this.label8.Text = "Amount";
             // 
-            // pbPokeRight
+            // btnPokeRight
             // 
-            this.pbPokeRight.BackColor = System.Drawing.Color.Transparent;
-            this.pbPokeRight.Location = new System.Drawing.Point(330, 273);
-            this.pbPokeRight.Name = "pbPokeRight";
-            this.pbPokeRight.Size = new System.Drawing.Size(37, 22);
-            this.pbPokeRight.TabIndex = 71;
-            this.pbPokeRight.TabStop = false;
-            this.pbPokeRight.Click += new System.EventHandler(this.pbPokeRight_Click);
+            this.btnPokeRight.BackColor = System.Drawing.Color.Transparent;
+            this.btnPokeRight.Location = new System.Drawing.Point(330, 273);
+            this.btnPokeRight.Name = "btnPokeRight";
+            this.btnPokeRight.Size = new System.Drawing.Size(37, 22);
+            this.btnPokeRight.TabIndex = 71;
+            this.btnPokeRight.TabStop = false;
+            this.btnPokeRight.Click += new System.EventHandler(this.pbPokeRight_Click);
             // 
-            // pbPokeLeft
+            // btnPokeLeft
             // 
-            this.pbPokeLeft.BackColor = System.Drawing.Color.Transparent;
-            this.pbPokeLeft.Location = new System.Drawing.Point(45, 273);
-            this.pbPokeLeft.Name = "pbPokeLeft";
-            this.pbPokeLeft.Size = new System.Drawing.Size(37, 22);
-            this.pbPokeLeft.TabIndex = 70;
-            this.pbPokeLeft.TabStop = false;
-            this.pbPokeLeft.Click += new System.EventHandler(this.pbPokeLeft_Click);
+            this.btnPokeLeft.BackColor = System.Drawing.Color.Transparent;
+            this.btnPokeLeft.Location = new System.Drawing.Point(45, 273);
+            this.btnPokeLeft.Name = "btnPokeLeft";
+            this.btnPokeLeft.Size = new System.Drawing.Size(37, 22);
+            this.btnPokeLeft.TabIndex = 70;
+            this.btnPokeLeft.TabStop = false;
+            this.btnPokeLeft.Click += new System.EventHandler(this.pbPokeLeft_Click);
             // 
             // tbPokeCount
             // 
@@ -523,54 +523,54 @@
             this.tbPageCount.TabStop = false;
             this.tbPageCount.Text = "";
             // 
-            // pbGotoPage
+            // btnGotoPage
             // 
-            this.pbGotoPage.BackColor = System.Drawing.Color.Transparent;
-            this.pbGotoPage.Image = global::GenesisDex.Properties.Resources.GotoPage;
-            this.pbGotoPage.Location = new System.Drawing.Point(207, 106);
-            this.pbGotoPage.Name = "pbGotoPage";
-            this.pbGotoPage.Size = new System.Drawing.Size(126, 26);
-            this.pbGotoPage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbGotoPage.TabIndex = 75;
-            this.pbGotoPage.TabStop = false;
-            this.pbGotoPage.Click += new System.EventHandler(this.pbGotoPage_Click);
-            this.pbGotoPage.MouseLeave += new System.EventHandler(this.pictureBox1_MouseLeave);
-            this.pbGotoPage.MouseHover += new System.EventHandler(this.pictureBox1_MouseHover);
+            this.btnGotoPage.BackColor = System.Drawing.Color.Transparent;
+            this.btnGotoPage.Image = global::GenesisDex.Properties.Resources.GotoPage;
+            this.btnGotoPage.Location = new System.Drawing.Point(207, 106);
+            this.btnGotoPage.Name = "btnGotoPage";
+            this.btnGotoPage.Size = new System.Drawing.Size(126, 26);
+            this.btnGotoPage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnGotoPage.TabIndex = 75;
+            this.btnGotoPage.TabStop = false;
+            this.btnGotoPage.Click += new System.EventHandler(this.pbGotoPage_Click);
+            this.btnGotoPage.MouseLeave += new System.EventHandler(this.pictureBox1_MouseLeave);
+            this.btnGotoPage.MouseHover += new System.EventHandler(this.pictureBox1_MouseHover);
             // 
-            // pkGoto
+            // nudGoto
             // 
-            this.pkGoto.BackColor = System.Drawing.Color.Black;
-            this.pkGoto.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pkGoto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.pkGoto.Location = new System.Drawing.Point(339, 108);
-            this.pkGoto.Minimum = new decimal(new int[] {
+            this.nudGoto.BackColor = System.Drawing.Color.Black;
+            this.nudGoto.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudGoto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.nudGoto.Location = new System.Drawing.Point(339, 108);
+            this.nudGoto.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.pkGoto.Name = "pkGoto";
-            this.pkGoto.Size = new System.Drawing.Size(49, 24);
-            this.pkGoto.TabIndex = 1;
-            this.pkGoto.Value = new decimal(new int[] {
+            this.nudGoto.Name = "nudGoto";
+            this.nudGoto.Size = new System.Drawing.Size(49, 24);
+            this.nudGoto.TabIndex = 1;
+            this.nudGoto.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.pkGoto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pkGoto_KeyDown);
+            this.nudGoto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pkGoto_KeyDown);
             // 
-            // pbLoot
+            // btnLoot
             // 
-            this.pbLoot.BackColor = System.Drawing.Color.Transparent;
-            this.pbLoot.Image = global::GenesisDex.Properties.Resources.ScanLoot;
-            this.pbLoot.Location = new System.Drawing.Point(461, 126);
-            this.pbLoot.Name = "pbLoot";
-            this.pbLoot.Size = new System.Drawing.Size(126, 26);
-            this.pbLoot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbLoot.TabIndex = 78;
-            this.pbLoot.TabStop = false;
-            this.pbLoot.Click += new System.EventHandler(this.pbLoot_Click);
-            this.pbLoot.MouseLeave += new System.EventHandler(this.pbLoot_MouseLeave);
-            this.pbLoot.MouseHover += new System.EventHandler(this.pbLoot_MouseHover);
+            this.btnLoot.BackColor = System.Drawing.Color.Transparent;
+            this.btnLoot.Image = global::GenesisDex.Properties.Resources.ScanLoot;
+            this.btnLoot.Location = new System.Drawing.Point(461, 126);
+            this.btnLoot.Name = "btnLoot";
+            this.btnLoot.Size = new System.Drawing.Size(126, 26);
+            this.btnLoot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnLoot.TabIndex = 78;
+            this.btnLoot.TabStop = false;
+            this.btnLoot.Click += new System.EventHandler(this.pbLoot_Click);
+            this.btnLoot.MouseLeave += new System.EventHandler(this.pbLoot_MouseLeave);
+            this.btnLoot.MouseHover += new System.EventHandler(this.pbLoot_MouseHover);
             // 
             // nudPlayerLevel
             // 
@@ -608,33 +608,33 @@
             this.label9.TabIndex = 80;
             this.label9.Text = "Player\r\nLevel";
             // 
-            // pbPokeRefresh
+            // btnPokeRefresh
             // 
-            this.pbPokeRefresh.BackColor = System.Drawing.Color.Transparent;
-            this.pbPokeRefresh.Image = global::GenesisDex.Properties.Resources.PokeView;
-            this.pbPokeRefresh.Location = new System.Drawing.Point(461, 554);
-            this.pbPokeRefresh.Name = "pbPokeRefresh";
-            this.pbPokeRefresh.Size = new System.Drawing.Size(98, 26);
-            this.pbPokeRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbPokeRefresh.TabIndex = 81;
-            this.pbPokeRefresh.TabStop = false;
-            this.pbPokeRefresh.Click += new System.EventHandler(this.pbPokeRefresh_Click);
-            this.pbPokeRefresh.MouseLeave += new System.EventHandler(this.pbPokeRefresh_MouseLeave);
-            this.pbPokeRefresh.MouseHover += new System.EventHandler(this.pbPokeRefresh_MouseHover);
+            this.btnPokeRefresh.BackColor = System.Drawing.Color.Transparent;
+            this.btnPokeRefresh.Image = global::GenesisDex.Properties.Resources.PokeView;
+            this.btnPokeRefresh.Location = new System.Drawing.Point(461, 554);
+            this.btnPokeRefresh.Name = "btnPokeRefresh";
+            this.btnPokeRefresh.Size = new System.Drawing.Size(98, 26);
+            this.btnPokeRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnPokeRefresh.TabIndex = 81;
+            this.btnPokeRefresh.TabStop = false;
+            this.btnPokeRefresh.Click += new System.EventHandler(this.pbPokeRefresh_Click);
+            this.btnPokeRefresh.MouseLeave += new System.EventHandler(this.pbPokeRefresh_MouseLeave);
+            this.btnPokeRefresh.MouseHover += new System.EventHandler(this.pbPokeRefresh_MouseHover);
             // 
-            // pbLootRefresh
+            // btnLootRefresh
             // 
-            this.pbLootRefresh.BackColor = System.Drawing.Color.Transparent;
-            this.pbLootRefresh.Image = global::GenesisDex.Properties.Resources.LootView;
-            this.pbLootRefresh.Location = new System.Drawing.Point(685, 554);
-            this.pbLootRefresh.Name = "pbLootRefresh";
-            this.pbLootRefresh.Size = new System.Drawing.Size(98, 26);
-            this.pbLootRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbLootRefresh.TabIndex = 82;
-            this.pbLootRefresh.TabStop = false;
-            this.pbLootRefresh.Click += new System.EventHandler(this.pbLootRefresh_Click);
-            this.pbLootRefresh.MouseLeave += new System.EventHandler(this.pbLootRefresh_MouseLeave);
-            this.pbLootRefresh.MouseHover += new System.EventHandler(this.pbLootRefresh_MouseHover);
+            this.btnLootRefresh.BackColor = System.Drawing.Color.Transparent;
+            this.btnLootRefresh.Image = global::GenesisDex.Properties.Resources.LootView;
+            this.btnLootRefresh.Location = new System.Drawing.Point(685, 554);
+            this.btnLootRefresh.Name = "btnLootRefresh";
+            this.btnLootRefresh.Size = new System.Drawing.Size(98, 26);
+            this.btnLootRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnLootRefresh.TabIndex = 82;
+            this.btnLootRefresh.TabStop = false;
+            this.btnLootRefresh.Click += new System.EventHandler(this.pbLootRefresh_Click);
+            this.btnLootRefresh.MouseLeave += new System.EventHandler(this.pbLootRefresh_MouseLeave);
+            this.btnLootRefresh.MouseHover += new System.EventHandler(this.pbLootRefresh_MouseHover);
             // 
             // pkDamage
             // 
@@ -716,15 +716,15 @@
             this.PokeGenerator.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.PokeGenerator_ProgressChanged);
             this.PokeGenerator.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.PokeGenerator_RunWorkerCompleted);
             // 
-            // GenerationProgress
+            // prbGenerationProgress
             // 
-            this.GenerationProgress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.GenerationProgress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.GenerationProgress.Location = new System.Drawing.Point(187, 145);
-            this.GenerationProgress.Name = "GenerationProgress";
-            this.GenerationProgress.Size = new System.Drawing.Size(181, 12);
-            this.GenerationProgress.TabIndex = 86;
-            this.GenerationProgress.Value = 100;
+            this.prbGenerationProgress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.prbGenerationProgress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.prbGenerationProgress.Location = new System.Drawing.Point(187, 145);
+            this.prbGenerationProgress.Name = "prbGenerationProgress";
+            this.prbGenerationProgress.Size = new System.Drawing.Size(181, 12);
+            this.prbGenerationProgress.TabIndex = 86;
+            this.prbGenerationProgress.Value = 100;
             // 
             // lblProgress
             // 
@@ -745,50 +745,50 @@
             this.BackgroundImage = global::GenesisDex.Properties.Resources.MainMenu;
             this.ClientSize = new System.Drawing.Size(822, 616);
             this.Controls.Add(this.lblProgress);
-            this.Controls.Add(this.GenerationProgress);
+            this.Controls.Add(this.prbGenerationProgress);
             this.Controls.Add(this.pbDealDamage);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.pkDamage);
-            this.Controls.Add(this.pbLootRefresh);
-            this.Controls.Add(this.pbPokeRefresh);
+            this.Controls.Add(this.btnLootRefresh);
+            this.Controls.Add(this.btnPokeRefresh);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.nudPlayerLevel);
-            this.Controls.Add(this.pbLoot);
+            this.Controls.Add(this.btnLoot);
             this.Controls.Add(this.tbPokeCount);
-            this.Controls.Add(this.pkGoto);
-            this.Controls.Add(this.pbGotoPage);
+            this.Controls.Add(this.nudGoto);
+            this.Controls.Add(this.btnGotoPage);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tbPageCount);
-            this.Controls.Add(this.pbPokeRight);
-            this.Controls.Add(this.pbPokeLeft);
+            this.Controls.Add(this.btnPokeRight);
+            this.Controls.Add(this.btnPokeLeft);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.pkAmount);
+            this.Controls.Add(this.nudAmount);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.pkStageAllowed);
+            this.Controls.Add(this.cbStageAllowed);
             this.Controls.Add(this.pbOverlay);
-            this.Controls.Add(this.pkCanBeLegend);
+            this.Controls.Add(this.chkCanBeLegend);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.pkPokemon);
-            this.Controls.Add(this.pkGasp);
+            this.Controls.Add(this.cbPokemon);
+            this.Controls.Add(this.rtbGasp);
             this.Controls.Add(this.pbPokemon);
             this.Controls.Add(this.pkItem);
             this.Controls.Add(this.pkHeld);
-            this.Controls.Add(this.pkCanBeShiny);
-            this.Controls.Add(this.pkHasItem);
+            this.Controls.Add(this.chkCanBeShiny);
+            this.Controls.Add(this.chkHasItem);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.pkLevelMax);
+            this.Controls.Add(this.nudLevelMax);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.pkType);
+            this.Controls.Add(this.cbType);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pkHabitat);
-            this.Controls.Add(this.pkLevelMin);
-            this.Controls.Add(this.pbScanPokemon);
-            this.Controls.Add(this.pbScan);
-            this.Controls.Add(this.infoBack);
-            this.Controls.Add(this.infoForward);
-            this.Controls.Add(this.rtbInfo1);
+            this.Controls.Add(this.cbHabitat);
+            this.Controls.Add(this.nudLevelMin);
+            this.Controls.Add(this.btnScanPokemon);
+            this.Controls.Add(this.btnScan);
+            this.Controls.Add(this.btnInfoBack);
+            this.Controls.Add(this.btnInfoForward);
+            this.Controls.Add(this.rtbInfo);
             this.Controls.Add(this.pbExit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -799,24 +799,24 @@
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormScan_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FormScan_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FormScan_MouseUp);
-            ((System.ComponentModel.ISupportInitialize)(this.infoBack)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.infoForward)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnInfoBack)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnInfoForward)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokemon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbScan)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbScanPokemon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pkLevelMin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pkLevelMax)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnScan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnScanPokemon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudLevelMin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudLevelMax)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkItem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pkAmount)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPokeRight)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPokeLeft)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbGotoPage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pkGoto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLoot)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPokeRight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPokeLeft)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGotoPage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudGoto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLoot)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPlayerLevel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPokeRefresh)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLootRefresh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPokeRefresh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLootRefresh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkDamage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOverlay)).EndInit();
@@ -827,52 +827,52 @@
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox infoBack;
-        private System.Windows.Forms.PictureBox infoForward;
-        private System.Windows.Forms.RichTextBox rtbInfo1;
+        private System.Windows.Forms.PictureBox btnInfoBack;
+        private System.Windows.Forms.PictureBox btnInfoForward;
+        private System.Windows.Forms.RichTextBox rtbInfo;
         private System.Windows.Forms.PictureBox pbExit;
         private System.Windows.Forms.PictureBox pbPokemon;
-        private System.Windows.Forms.PictureBox pbScan;
-        private System.Windows.Forms.PictureBox pbScanPokemon;
-        private System.Windows.Forms.NumericUpDown pkLevelMin;
-        private System.Windows.Forms.ComboBox pkHabitat;
+        private System.Windows.Forms.PictureBox btnScan;
+        private System.Windows.Forms.PictureBox btnScanPokemon;
+        private System.Windows.Forms.NumericUpDown nudLevelMin;
+        private System.Windows.Forms.ComboBox cbHabitat;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox pkType;
+        private System.Windows.Forms.ComboBox cbType;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown pkLevelMax;
+        private System.Windows.Forms.NumericUpDown nudLevelMax;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.CheckBox pkHasItem;
-        private System.Windows.Forms.CheckBox pkCanBeShiny;
+        private System.Windows.Forms.CheckBox chkHasItem;
+        private System.Windows.Forms.CheckBox chkCanBeShiny;
         private System.Windows.Forms.PictureBox pkItem;
         private System.Windows.Forms.Label pkHeld;
-        private System.Windows.Forms.RichTextBox pkGasp;
+        private System.Windows.Forms.RichTextBox rtbGasp;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox pkPokemon;
-        private System.Windows.Forms.CheckBox pkCanBeLegend;
-        private System.Windows.Forms.ComboBox pkStageAllowed;
+        private System.Windows.Forms.ComboBox cbPokemon;
+        private System.Windows.Forms.CheckBox chkCanBeLegend;
+        private System.Windows.Forms.ComboBox cbStageAllowed;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.NumericUpDown pkAmount;
+        private System.Windows.Forms.NumericUpDown nudAmount;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pbPokeRight;
-        private System.Windows.Forms.PictureBox pbPokeLeft;
+        private System.Windows.Forms.PictureBox btnPokeRight;
+        private System.Windows.Forms.PictureBox btnPokeLeft;
         private System.Windows.Forms.RichTextBox tbPokeCount;
         private System.Windows.Forms.RichTextBox tbPageCount;
-        private System.Windows.Forms.PictureBox pbGotoPage;
-        private System.Windows.Forms.NumericUpDown pkGoto;
-        private System.Windows.Forms.PictureBox pbLoot;
+        private System.Windows.Forms.PictureBox btnGotoPage;
+        private System.Windows.Forms.NumericUpDown nudGoto;
+        private System.Windows.Forms.PictureBox btnLoot;
         private System.Windows.Forms.NumericUpDown nudPlayerLevel;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.PictureBox pbPokeRefresh;
-        private System.Windows.Forms.PictureBox pbLootRefresh;
+        private System.Windows.Forms.PictureBox btnPokeRefresh;
+        private System.Windows.Forms.PictureBox btnLootRefresh;
         private System.Windows.Forms.NumericUpDown pkDamage;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pbOverlay;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pbDealDamage;
         private System.ComponentModel.BackgroundWorker PokeGenerator;
-        private System.Windows.Forms.ProgressBar GenerationProgress;
+        private System.Windows.Forms.ProgressBar prbGenerationProgress;
         private System.Windows.Forms.Label lblProgress;
     }
 }

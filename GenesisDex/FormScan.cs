@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -62,11 +63,19 @@ namespace GenesisDex
         NameList typeXML = new NameList();
         List<Items> typeList = new List<Items>();
         //===========================================================================================================
+        OptionsList optionsXML = new OptionsList();
+        List<Options> optionsList = new List<Options>();
+        //===========================================================================================================
+        BanList banXML = new BanList();
+        List<string> banList = new List<string>();
+        //===========================================================================================================
         List<Image> AllItems1 = new List<Image>();
         List<Image> AllItems2 = new List<Image>();
         List<Image> AllImages = new List<Image>();
         //===========================================================================================================
         List<int> AllLevels = new List<int>();
+        List<int> ItemTiers = new List<int>();
+        List<int> PokeTiers = new List<int>();
         //===========================================================================================================
         List<decimal> MaxHealth = new List<decimal>();
         List<decimal> CurrentHealth = new List<decimal>();
@@ -113,7 +122,7 @@ namespace GenesisDex
         bool canItems { get; set; }
         bool canShiny { get; set; }
         bool onItem2 { get; set; }
-        bool onItem3 { get; set; }
+        bool onLoot { get; set; }
         bool isShiny { get; set; }
         bool dragging { get; set; }
         bool hasScanned { get; set; }
@@ -137,15 +146,15 @@ namespace GenesisDex
         public FormScan()
         {
             InitializeComponent();
-            pkGasp.Text = "";
-            pbPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonLeft.gif");
-            pbPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRight.gif");
-            pbPokeLeft.Visible = false;
-            pbPokeRight.Visible = false;
-            pbGotoPage.Visible = false;
-            pkGoto.Enabled = false;
+            rtbGasp.Text = "";
+            btnPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonLeft.gif");
+            btnPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRight.gif");
+            btnPokeLeft.Visible = false;
+            btnPokeRight.Visible = false;
+            btnGotoPage.Visible = false;
+            nudGoto.Enabled = false;
             onItem2 = false;
-            onItem3 = false;
+            onLoot = false;
             isShiny = false;
             dragging = false;
             hasScanned = false;
@@ -159,12 +168,22 @@ namespace GenesisDex
             pbPokeLocX = pbPokemon.Location.X;
             pbPokeLocY = pbPokemon.Location.Y;
             pokeList = pokeXML.createList("Pokemon");
+            banList = banXML.createList();
+            for (int p = 0; p < pokeList.Count; p++)
+            {
+                if (banList.Contains(pokeList[p].id))
+                {
+                    pokeList.RemoveAt(p);
+                    p--;
+                }
+            }
             SortPokemon(pokeList);
+            optionsList = optionsXML.createList();
             typeList = typeXML.createList("Types", "Type");
             habitatList = habitatXML.createList("Habitats", "Habitat");
             natureList = natureXML.createList("Natures", "Nature");
-            infoBack.Visible = false;
-            infoForward.Visible = false;
+            btnInfoBack.Visible = false;
+            btnInfoForward.Visible = false;
             habitats.Clear();
             types.Clear();
             for (var h = 0; h < habitatList.Count; h++)
@@ -180,9 +199,9 @@ namespace GenesisDex
             {
                 pokeDex.Add(pokeList[p].id);
             }
-            pkHabitat.DataSource = habitats;
-            pkType.DataSource = types;
-            pkPokemon.DataSource = pokeDex;
+            cbHabitat.DataSource = habitats;
+            cbType.DataSource = types;
+            cbPokemon.DataSource = pokeDex;
             stages.Add("Any");
             stages.Add("Only 1s");
             stages.Add("Only 2s");
@@ -190,7 +209,18 @@ namespace GenesisDex
             stages.Add("1s & 2s");
             stages.Add("1s & 3s");
             stages.Add("2s & 3s");
-            pkStageAllowed.DataSource = stages;
+            cbStageAllowed.DataSource = stages;
+            for (int i = 1; i <= optionsList[0].MaxItemTier; i++ )
+            {
+                for (int p = optionsList[0].MaxItemTier - (i - 1); p > 0; p--)
+                {
+                    ItemTiers.Add(i);
+                }
+            }
+            nudAmount.Maximum = optionsList[0].MaxScanAmount;
+            nudLevelMax.Maximum = optionsList[0].MaxPokemonLevel;
+            nudLevelMin.Maximum = optionsList[0].MaxPokemonLevel;
+            nudPlayerLevel.Maximum = optionsList[0].MaxPlayerLevel;
         }
         //===========================================================================================================
         //===========================================================================================================
@@ -236,31 +266,24 @@ namespace GenesisDex
                 isShiny = false;
                 Final = GetPokemon();
                 int Level = GetLevel();
-                preInfo.Add("It is a " + Final.id);
-                if (pkCanBeShiny.Checked == true)
+                int i = rng.Next(1, 101);
+                if (!chkCanBeShiny.Checked)
+                    i = 50;
+                if (i == 1 || i == 100)
                 {
-                    int i = rng.Next(1, 101);
-                    if (i == 1 || i == 100)
-                    {
-                        preInfo.Add("It's a Shiny!");
-                        isShiny = true;
-                        GetShiny(Final);
-                        Type.Add(newShiny);
-                        AllImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + Final.number + ".gif"));
-                    }
-                    else
-                    {
-                        AllImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + Final.number + ".gif"));
-                        Type.Add(Final.type);
-                    }
-
+                    preInfo.Add(optionsList[0].ShinyGasp);
+                    isShiny = true;
+                    GetShiny(Final);
+                    Type.Add(newShiny);
+                    AllImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + Final.number + ".gif"));
                 }
                 else
                 {
+                    preInfo.Add(optionsList[0].PokemonGasp);
                     AllImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + Final.number + ".gif"));
                     Type.Add(Final.type);
                 }
-                if (pkHasItem.Checked == true)
+                if (chkHasItem.Checked == true)
                 {
                     GetItem();
                 }
@@ -268,8 +291,8 @@ namespace GenesisDex
                 {
                     AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Blank.png"));
                     AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Blank.png"));
-                    AllDesc1.Add("There are no items.");
-                    AllDesc2.Add("There are no items.");
+                    AllDesc1.Add("Nothing is here.");
+                    AllDesc2.Add("Nothing is here.");
                 }
                 IChooseYou = Final;
                 AllPokemon.Add(IChooseYou);
@@ -307,18 +330,18 @@ namespace GenesisDex
             SetImage();
             if (AllPokemon.Count > 1)
             {
-                pbPokeRight.Visible = true;
-                pbPokeLeft.Visible = true;
-                pbGotoPage.Visible = true;
-                pkGoto.Enabled = true;
-                pkGoto.Maximum = Amount;
+                btnPokeRight.Visible = true;
+                btnPokeLeft.Visible = true;
+                btnGotoPage.Visible = true;
+                nudGoto.Enabled = true;
+                nudGoto.Maximum = Amount;
             }
             else
             {
-                pbPokeRight.Visible = false;
-                pbPokeLeft.Visible = false;
-                pbGotoPage.Visible = false;
-                pkGoto.Enabled = false;
+                btnPokeRight.Visible = false;
+                btnPokeLeft.Visible = false;
+                btnGotoPage.Visible = false;
+                nudGoto.Enabled = false;
             }
             UpdatePage();
             SetGasp();
@@ -341,7 +364,7 @@ namespace GenesisDex
             }
             else
             {
-                GenerationProgress.Value = e.ProgressPercentage;
+                prbGenerationProgress.Value = e.ProgressPercentage;
                 lblProgress.Text = e.ProgressPercentage.ToString() + "/" + Amount.ToString() + " Complete";
             }
         }
@@ -356,6 +379,15 @@ namespace GenesisDex
         {
             pokeList = new List<Pokemon>();
             pokeList = pokeXML.createList("Pokemon");
+            banList = banXML.createList();
+            for (int p = 0; p < pokeList.Count; p++)
+            {
+                if (banList.Contains(pokeList[p].id))
+                {
+                    pokeList.RemoveAt(p);
+                    p--;
+                }
+            }
             if (PokeName == "Any")
             {
                 CheckEvo();
@@ -520,7 +552,7 @@ namespace GenesisDex
         {
             if (PokeName == "Any")
             {
-                if (!pkCanBeLegend.Checked)
+                if (!chkCanBeLegend.Checked)
                 {
                     for (var l = 0; l < pokeList.Count; l++)
                     {
@@ -564,8 +596,8 @@ namespace GenesisDex
         //===========================================================================================================
         private int GetLevel()
         {
-            int min = Convert.ToInt32(pkLevelMin.Value);
-            int max = Convert.ToInt32(pkLevelMax.Value + 1);
+            int min = Convert.ToInt32(nudLevelMin.Value);
+            int max = Convert.ToInt32(nudLevelMax.Value + 1);
             int i = rng.Next(min, max);
             return i;
         }
@@ -999,7 +1031,7 @@ namespace GenesisDex
         {
             onItem2 = false;
             int i = rng.Next(1, 101);
-            if (i < 26)
+            if (i < 25)
             {
                 GetItem1(); 
             }
@@ -1007,8 +1039,8 @@ namespace GenesisDex
             {
                 AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Blank.png"));
                 AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Blank.png"));
-                AllDesc1.Add("There are no items.");
-                AllDesc2.Add("There are no items.");
+                AllDesc1.Add("Nothing is here.");
+                AllDesc2.Add("Nothing is here.");
                 return;
             }
         }
@@ -1021,23 +1053,20 @@ namespace GenesisDex
         //===========================================================================================================
         private void GetItem1()
         {
-            int i = rng.Next(1, 101);
-            if (i < 79) { ItemGenByTier(1); }
-            else if (i < 94) { ItemGenByTier(2); }
-            else if (i < 100) { ItemGenByTier(3); }
-            else if (i < 101) { ItemGenByTier(4); }
+            int i = rng.Next(ItemTiers.Count);
+            ItemGenByTier(ItemTiers[i]);
             i = rng.Next(1, 11);
             if (i == 10)
             {
-                preInfo.Add("It has a few things!");
+                preInfo.Add(optionsList[0].TwoItemGasp);
                 onItem2 = true;
                 GetItem2();
             }
             else
             {
-                preInfo.Add("It has something!");
+                preInfo.Add(optionsList[0].OneItemGasp);
                 AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Blank.png"));
-                AllDesc2.Add("There are no items.");
+                AllDesc2.Add("Nothing is here.");
             }
         }
         //===========================================================================================================
@@ -1048,11 +1077,8 @@ namespace GenesisDex
         //===========================================================================================================
         private void GetItem2()
         {
-            int i = rng.Next(1, 101);
-            if (i < 79) { ItemGenByTier(1); }
-            else if (i < 94) { ItemGenByTier(2); }
-            else if (i < 100) { ItemGenByTier(3); }
-            else if (i < 101) { ItemGenByTier(4); }
+            int i = rng.Next(ItemTiers.Count);
+            ItemGenByTier(ItemTiers[i]);
         }
         //===========================================================================================================
         //===========================================================================================================
@@ -1065,7 +1091,14 @@ namespace GenesisDex
         {
             itemList = itemXML.createList(tier.ToString());
             int i = rng.Next(0, itemList.Count);
-            if (!onItem3)
+            if (itemList.Count == 0)
+            {
+                if (tier == 1)
+                    ItemGenByTier(optionsList[0].MaxItemTier);
+                else
+                    ItemGenByTier(tier - 1);
+            }
+            if (!onLoot)
             {
                 if (onItem2)
                 {
@@ -1092,11 +1125,14 @@ namespace GenesisDex
         //===========================================================================================================
         private void SetGasp()
         {
-            pkGasp.Text = "";
+            rtbGasp.Text = "";
             foreach (string s in Info[Current])
             {
-                pkGasp.Text += s + Environment.NewLine;
+                rtbGasp.Text += s + Environment.NewLine;
             }
+            Regex name = new Regex("~p");
+            string result = name.Replace(rtbGasp.Text, AllPokemon[Current].id);
+            rtbGasp.Text = result;
         }
         //===========================================================================================================
         //===========================================================================================================
@@ -1182,7 +1218,7 @@ namespace GenesisDex
         private void WriteInfo()
         {
             pkItem.Visible = false;
-            rtbInfo1.Text = "Name: " + AllPokemon[Current].id + Environment.NewLine +
+            rtbInfo.Text = "Name: " + AllPokemon[Current].id + Environment.NewLine +
                 "Type: " + Type[Current] + Environment.NewLine +
                 "Level: " + AllLevels[Current] + Environment.NewLine +
                 Environment.NewLine +
@@ -1199,7 +1235,7 @@ namespace GenesisDex
                 "Capabilities:" + Environment.NewLine;
             foreach (string cap in AllCap[Current])
             {
-                rtbInfo1.Text += cap + Environment.NewLine;
+                rtbInfo.Text += cap + Environment.NewLine;
             }
 
         }
@@ -1213,24 +1249,24 @@ namespace GenesisDex
         private void WriteMoves()
         {
             pkItem.Visible = false;
-            rtbInfo1.Text = "Gender: " + Gender[Current] + Environment.NewLine +
+            rtbInfo.Text = "Gender: " + Gender[Current] + Environment.NewLine +
                 "Nature: " + AllNatures[Current] + Environment.NewLine +
                 "Size: " + AllPokemon[Current].size + Environment.NewLine +
                 "Weight: " + AllPokemon[Current].weight + Environment.NewLine;
-            rtbInfo1.Text += (Environment.NewLine + "Moves:" + Environment.NewLine);
+            rtbInfo.Text += (Environment.NewLine + "Moves:" + Environment.NewLine);
             for (var w = 0; w < AllMoves[Current].Count; w++)
             {
-                rtbInfo1.Text += "-" + AllMoves[Current][w] + Environment.NewLine;
+                rtbInfo.Text += "-" + AllMoves[Current][w] + Environment.NewLine;
             }
-            rtbInfo1.Text += Environment.NewLine + "Abilities:" + Environment.NewLine;
+            rtbInfo.Text += Environment.NewLine + "Abilities:" + Environment.NewLine;
             for (var a = 0; a < AllAbilities[Current].Count; a++)
             {
-                rtbInfo1.Text += "-" + AllAbilities[Current][a] + Environment.NewLine;
+                rtbInfo.Text += "-" + AllAbilities[Current][a] + Environment.NewLine;
             }
-            rtbInfo1.Text += Environment.NewLine + "Skills:";
-            for (var s = 0; s < AllSkills[Current].Count; s += 2)
+            rtbInfo.Text += Environment.NewLine + "Skills:";
+            for (var s = 0; s < AllSkills[Current].Count; s++)
             {
-                rtbInfo1.Text += Environment.NewLine + "-" + AllSkills[Current][s] + "\t-" + AllSkills[Current][s + 1];
+                rtbInfo.Text += Environment.NewLine + "-" + AllSkills[Current][s];
             }
         }
         //===========================================================================================================
@@ -1245,7 +1281,7 @@ namespace GenesisDex
             pkItem.Visible = true;
             pkItem.Image = AllItems1[Current];
             SetItem();
-            rtbInfo1.Text = "Item 1-" + Environment.NewLine +
+            rtbInfo.Text = "Item 1-" + Environment.NewLine +
                 AllDesc1[Current];
         }
         //===========================================================================================================
@@ -1260,7 +1296,7 @@ namespace GenesisDex
             pkItem.Visible = true;
             pkItem.Image = AllItems2[Current];
             SetItem();
-            rtbInfo1.Text = "Item 2-" + Environment.NewLine +
+            rtbInfo.Text = "Item 2-" + Environment.NewLine +
                 AllDesc2[Current];
 
         }
@@ -1275,13 +1311,13 @@ namespace GenesisDex
         {
             tbPageCount.Text = "----";
             pkItem.Visible = false;
-            rtbInfo1.Clear();
+            rtbInfo.Clear();
             for (int x = 0; x < AllDesc3.Count; x++)
             {
 
-                rtbInfo1.Text += AllDesc3[x] + Environment.NewLine + Environment.NewLine;
+                rtbInfo.Text += AllDesc3[x] + Environment.NewLine + Environment.NewLine;
             }
-            rtbInfo1.Text += "$" + Cash.ToString();
+            rtbInfo.Text += "$" + Cash.ToString();
         }
         //===========================================================================================================
         //===========================================================================================================
@@ -1308,23 +1344,23 @@ namespace GenesisDex
         //===========================================================================================================
         private void GetLoot()
         {
-            infoBack.Visible = false;
-            infoForward.Visible = false;
+            btnInfoBack.Visible = false;
+            btnInfoForward.Visible = false;
             pkItem.Visible = false;
             AllDesc3.Clear();
-            rtbInfo1.Clear();
+            rtbInfo.Clear();
             int val = Convert.ToInt32(nudPlayerLevel.Value);
             Cash = 0;
-            onItem3 = true;
+            onLoot = true;
             for (int x = 0; x < val; x++)
             {
                 int i = rng.Next(1, 4);
                 if (i == 1)
                     GetItem2();
                 else
-                    Cash += rng.Next(1, 6) * 100;
+                    Cash += rng.Next(1, 6) * optionsList[0].CashPerLevel;
             }
-            onItem3 = false;
+            onLoot = false;
             WriteLoot();
         }
         //===========================================================================================================
@@ -1379,7 +1415,7 @@ namespace GenesisDex
         //===========================================================================================================
         private void pbScan_MouseHover(object sender, EventArgs e)
         {
-            pbScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokedexHover.png");
+            btnScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokedexHover.png");
         }
         //===========================================================================================================
         //===========================================================================================================
@@ -1388,7 +1424,7 @@ namespace GenesisDex
         //===========================================================================================================
         private void pbScan_MouseLeave(object sender, EventArgs e)
         {
-            pbScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokedexHover.png");
+            btnScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokedexHover.png");
         }
         //===========================================================================================================
         //===========================================================================================================
@@ -1411,7 +1447,7 @@ namespace GenesisDex
         //===========================================================================================================
         private void pbScanPokemon_MouseHover(object sender, EventArgs e)
         {
-            pbScanPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanPokemonHover.png");
+            btnScanPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanPokemonHover.png");
         }
         //===========================================================================================================
         //===========================================================================================================
@@ -1420,7 +1456,7 @@ namespace GenesisDex
         //===========================================================================================================
         private void pbScanPokemon_MouseLeave(object sender, EventArgs e)
         {
-            pbScanPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanPokemon.png");
+            btnScanPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanPokemon.png");
         }
         //===========================================================================================================
         //===========================================================================================================
@@ -1432,21 +1468,21 @@ namespace GenesisDex
             if (isScanning) return;
             queueFinished = false;
             isScanning = true;
-            infoBack.Visible = true;
-            infoForward.Visible = true;
+            btnInfoBack.Visible = true;
+            btnInfoForward.Visible = true;
             pkLevelMin_ValueChanged(this, new EventArgs());
             pkLevelMax_ValueChanged(this, new EventArgs());
-            PokeName = pkPokemon.Text;
-            PokeHabitat = pkHabitat.Text;
-            PokeType = pkType.Text;
-            PokeStage = pkStageAllowed.Text;
-            PokeLevelMax = Convert.ToInt32(pkLevelMax.Value);
-            PokeLevelMin = Convert.ToInt32(pkLevelMin.Value);
-            Amount = Convert.ToInt32(pkAmount.Value);
-            GenerationProgress.Maximum = Amount;
-            canItems = pkHasItem.Checked;
-            canLegendary = pkCanBeLegend.Checked;
-            canShiny = pkCanBeShiny.Checked;
+            PokeName = cbPokemon.Text;
+            PokeHabitat = cbHabitat.Text;
+            PokeType = cbType.Text;
+            PokeStage = cbStageAllowed.Text;
+            PokeLevelMax = Convert.ToInt32(nudLevelMax.Value);
+            PokeLevelMin = Convert.ToInt32(nudLevelMin.Value);
+            Amount = Convert.ToInt32(nudAmount.Value);
+            prbGenerationProgress.Maximum = Amount;
+            canItems = chkHasItem.Checked;
+            canLegendary = chkCanBeLegend.Checked;
+            canShiny = chkCanBeShiny.Checked;
             lblProgress.Text = "Queuing Scan";
             PokeGenerator.RunWorkerAsync();
         }
@@ -1481,7 +1517,7 @@ namespace GenesisDex
         //===========================================================================================================
         private void pkLevelMin_ValueChanged(object sender, EventArgs e)
         {
-            if (pkLevelMin.Value > pkLevelMax.Value) { pkLevelMax.Value = pkLevelMin.Value; }
+            if (nudLevelMin.Value > nudLevelMax.Value) { nudLevelMax.Value = nudLevelMin.Value; }
         }
         //===========================================================================================================
         //===========================================================================================================
@@ -1490,7 +1526,7 @@ namespace GenesisDex
         //===========================================================================================================
         private void pkLevelMax_ValueChanged(object sender, EventArgs e)
         {
-            if (pkLevelMax.Value < pkLevelMin.Value) { pkLevelMin.Value = pkLevelMax.Value; }
+            if (nudLevelMax.Value < nudLevelMin.Value) { nudLevelMin.Value = nudLevelMax.Value; }
         }
         //===========================================================================================================
         //===========================================================================================================
@@ -1499,19 +1535,19 @@ namespace GenesisDex
         //===========================================================================================================
         private void pkPokemon_TextChanged(object sender, EventArgs e)
         {
-            if (pkPokemon.Text != "Any")
+            if (cbPokemon.Text != "Any")
             {
-                pkHabitat.Enabled = false;
-                pkType.Enabled = false;
-                pkCanBeLegend.Enabled = false;
-                pkStageAllowed.Enabled = false;
+                cbHabitat.Enabled = false;
+                cbType.Enabled = false;
+                chkCanBeLegend.Enabled = false;
+                cbStageAllowed.Enabled = false;
             }
             else
             {
-                pkHabitat.Enabled = true;
-                pkType.Enabled = true;
-                pkCanBeLegend.Enabled = true;
-                pkStageAllowed.Enabled = true;
+                cbHabitat.Enabled = true;
+                cbType.Enabled = true;
+                chkCanBeLegend.Enabled = true;
+                cbStageAllowed.Enabled = true;
             }
         }
         //===========================================================================================================
@@ -1522,8 +1558,8 @@ namespace GenesisDex
         private void pbPokeLeft_Click(object sender, EventArgs e)
         {
             if (isScanning) return;
-            infoForward.Visible = true;
-            infoBack.Visible = true;
+            btnInfoForward.Visible = true;
+            btnInfoBack.Visible = true;
             if (Current <= 0)
             {
                 Current = Amount - 1;
@@ -1546,8 +1582,8 @@ namespace GenesisDex
         private void pbPokeRight_Click(object sender, EventArgs e)
         {
             if (isScanning) return;
-            infoForward.Visible = true;
-            infoBack.Visible = true;
+            btnInfoForward.Visible = true;
+            btnInfoBack.Visible = true;
             if (Current >= Amount - 1)
             {
                 Current = 0;
@@ -1582,7 +1618,7 @@ namespace GenesisDex
         private void pbGotoPage_Click(object sender, EventArgs e)
         {
             if (isScanning) return;
-            Current = Convert.ToInt32(pkGoto.Value) - 1;
+            Current = Convert.ToInt32(nudGoto.Value) - 1;
             if (Current > Amount - 1)
             {
                 Current = 0;
@@ -1612,8 +1648,8 @@ namespace GenesisDex
             if (isScanning) return;
             if (hasScanned)
             {
-                infoForward.Visible = true;
-                infoBack.Visible = true;
+                btnInfoForward.Visible = true;
+                btnInfoBack.Visible = true;
                 UpdatePage();
             }
         }
@@ -1627,8 +1663,8 @@ namespace GenesisDex
             if (isScanning) return;
             if (hasScanned)
             {
-                infoForward.Visible = false;
-                infoBack.Visible = false;
+                btnInfoForward.Visible = false;
+                btnInfoBack.Visible = false;
                 WriteLoot();
             }
         }
@@ -1639,7 +1675,7 @@ namespace GenesisDex
         //===========================================================================================================
         private void pbLoot_MouseHover(object sender, EventArgs e)
         {
-            pbLoot.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanLootHover.png");
+            btnLoot.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanLootHover.png");
         }
         //===========================================================================================================
         //===========================================================================================================
@@ -1648,7 +1684,7 @@ namespace GenesisDex
         //===========================================================================================================
         private void pbLoot_MouseLeave(object sender, EventArgs e)
         {
-            pbLoot.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanLoot.png");
+            btnLoot.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanLoot.png");
         }
         //===========================================================================================================
         //===========================================================================================================
@@ -1657,7 +1693,7 @@ namespace GenesisDex
         //===========================================================================================================
         private void pbPokeRefresh_MouseHover(object sender, EventArgs e)
         {
-            pbPokeRefresh.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokeViewHover.png");
+            btnPokeRefresh.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokeViewHover.png");
         }
         //===========================================================================================================
         //===========================================================================================================
@@ -1666,7 +1702,7 @@ namespace GenesisDex
         //===========================================================================================================
         private void pbPokeRefresh_MouseLeave(object sender, EventArgs e)
         {
-            pbPokeRefresh.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokeView.png");
+            btnPokeRefresh.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokeView.png");
         }
         //===========================================================================================================
         //===========================================================================================================
@@ -1675,7 +1711,7 @@ namespace GenesisDex
         //===========================================================================================================
         private void pbLootRefresh_MouseHover(object sender, EventArgs e)
         {
-            pbLootRefresh.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\LootViewHover.png");
+            btnLootRefresh.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\LootViewHover.png");
         }
         //===========================================================================================================
         //===========================================================================================================
@@ -1684,7 +1720,7 @@ namespace GenesisDex
         //===========================================================================================================
         private void pbLootRefresh_MouseLeave(object sender, EventArgs e)
         {
-            pbLootRefresh.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\LootView.png");
+            btnLootRefresh.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\LootView.png");
         }
         //===========================================================================================================
         //===========================================================================================================
@@ -1754,7 +1790,7 @@ namespace GenesisDex
         {
             if (e.KeyCode == Keys.Enter)
             {
-                CheckedState(pkHasItem);
+                CheckedState(chkHasItem);
             }
         }
         //===========================================================================================================
@@ -1766,7 +1802,7 @@ namespace GenesisDex
         {
             if (e.KeyCode == Keys.Enter)
             {
-                CheckedState(pkCanBeShiny);
+                CheckedState(chkCanBeShiny);
             }
         }
         //===========================================================================================================
@@ -1778,7 +1814,7 @@ namespace GenesisDex
         {
             if (e.KeyCode == Keys.Enter)
             {
-                CheckedState(pkCanBeLegend);
+                CheckedState(chkCanBeLegend);
             }
         }
         //===========================================================================================================
@@ -1788,7 +1824,7 @@ namespace GenesisDex
         //===========================================================================================================
         private void pictureBox1_MouseHover(object sender, EventArgs e)
         {
-            pbGotoPage.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\GotoPageHover.png");
+            btnGotoPage.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\GotoPageHover.png");
         }
         //===========================================================================================================
         //===========================================================================================================
@@ -1797,7 +1833,7 @@ namespace GenesisDex
         //===========================================================================================================
         private void pictureBox1_MouseLeave(object sender, EventArgs e)
         {
-            pbGotoPage.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\GotoPage.png");
+            btnGotoPage.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\GotoPage.png");
         }
         //===========================================================================================================
         //===========================================================================================================

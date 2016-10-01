@@ -4,9 +4,11 @@
   <MaxPlayerLevel>50</MaxPlayerLevel>
   <MaxPokemonLevel>100</MaxPokemonLevel>
   <MaxScanAmount>100</MaxScanAmount>
+  <PokemonGasp>It's a ~p</PokemonGasp>
+  <ShinyGasp>It's a Shiny ~p</ShinyGasp>
   <OneItemGasp>It has something!</OneItemGasp>
   <TwoItemGasp>It has a few things!</TwoItemGasp>
-  <PokemonGasp>It's a</PokemonGasp>
+  <CashPerLevel>100</CashPerLevel>
   <BanList>
     <PokeBan>Placeholder</PokeBan>
   </BanList>

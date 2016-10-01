@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormOptions));
-            this.nudTier = new System.Windows.Forms.NumericUpDown();
+            this.nudItemTier = new System.Windows.Forms.NumericUpDown();
             this.nudScanLimit = new System.Windows.Forms.NumericUpDown();
             this.nudPokeLevel = new System.Windows.Forms.NumericUpDown();
             this.nudPlayerLevel = new System.Windows.Forms.NumericUpDown();
@@ -51,37 +51,63 @@
             this.btnBan = new System.Windows.Forms.Button();
             this.btnAllow = new System.Windows.Forms.Button();
             this.pbExit = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.nudTier)).BeginInit();
+            this.txtShinyGasp = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.nudCashPerLevel = new System.Windows.Forms.NumericUpDown();
+            this.btnDefault = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.nudItemTier)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudScanLimit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPokeLevel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPlayerLevel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCashPerLevel)).BeginInit();
             this.SuspendLayout();
             // 
-            // nudTier
+            // nudItemTier
             // 
-            this.nudTier.Location = new System.Drawing.Point(127, 114);
-            this.nudTier.Name = "nudTier";
-            this.nudTier.Size = new System.Drawing.Size(58, 20);
-            this.nudTier.TabIndex = 0;
+            this.nudItemTier.Location = new System.Drawing.Point(127, 140);
+            this.nudItemTier.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.nudItemTier.Name = "nudItemTier";
+            this.nudItemTier.Size = new System.Drawing.Size(58, 20);
+            this.nudItemTier.TabIndex = 0;
             // 
             // nudScanLimit
             // 
-            this.nudScanLimit.Location = new System.Drawing.Point(127, 192);
+            this.nudScanLimit.Location = new System.Drawing.Point(127, 218);
+            this.nudScanLimit.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
             this.nudScanLimit.Name = "nudScanLimit";
             this.nudScanLimit.Size = new System.Drawing.Size(58, 20);
             this.nudScanLimit.TabIndex = 1;
             // 
             // nudPokeLevel
             // 
-            this.nudPokeLevel.Location = new System.Drawing.Point(127, 166);
+            this.nudPokeLevel.Location = new System.Drawing.Point(127, 192);
+            this.nudPokeLevel.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
             this.nudPokeLevel.Name = "nudPokeLevel";
             this.nudPokeLevel.Size = new System.Drawing.Size(58, 20);
             this.nudPokeLevel.TabIndex = 2;
             // 
             // nudPlayerLevel
             // 
-            this.nudPlayerLevel.Location = new System.Drawing.Point(127, 140);
+            this.nudPlayerLevel.Location = new System.Drawing.Point(127, 166);
+            this.nudPlayerLevel.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
             this.nudPlayerLevel.Name = "nudPlayerLevel";
             this.nudPlayerLevel.Size = new System.Drawing.Size(58, 20);
             this.nudPlayerLevel.TabIndex = 3;
@@ -89,16 +115,16 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(50, 116);
+            this.label1.Location = new System.Drawing.Point(50, 142);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 13);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Item Tier Max";
+            this.label1.Text = "Max Item Tier";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 142);
+            this.label2.Location = new System.Drawing.Point(33, 168);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 13);
             this.label2.TabIndex = 5;
@@ -107,7 +133,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 168);
+            this.label3.Location = new System.Drawing.Point(17, 194);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(104, 13);
             this.label3.TabIndex = 6;
@@ -116,7 +142,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 194);
+            this.label4.Location = new System.Drawing.Point(17, 220);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 13);
             this.label4.TabIndex = 7;
@@ -206,11 +232,11 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(12, 327);
+            this.btnSave.Location = new System.Drawing.Point(27, 327);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.Size = new System.Drawing.Size(94, 23);
             this.btnSave.TabIndex = 18;
-            this.btnSave.Text = "Save";
+            this.btnSave.Text = "Save Changes";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -245,11 +271,63 @@
             this.pbExit.TabStop = false;
             this.pbExit.Click += new System.EventHandler(this.pbExit_Click);
             // 
+            // txtShinyGasp
+            // 
+            this.txtShinyGasp.Location = new System.Drawing.Point(127, 114);
+            this.txtShinyGasp.Name = "txtShinyGasp";
+            this.txtShinyGasp.Size = new System.Drawing.Size(148, 20);
+            this.txtShinyGasp.TabIndex = 25;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(60, 117);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(61, 13);
+            this.label11.TabIndex = 24;
+            this.label11.Text = "Shiny Gasp";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(42, 246);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(79, 13);
+            this.label12.TabIndex = 27;
+            this.label12.Text = "Cash Per Level";
+            // 
+            // nudCashPerLevel
+            // 
+            this.nudCashPerLevel.Location = new System.Drawing.Point(127, 244);
+            this.nudCashPerLevel.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.nudCashPerLevel.Name = "nudCashPerLevel";
+            this.nudCashPerLevel.Size = new System.Drawing.Size(58, 20);
+            this.nudCashPerLevel.TabIndex = 26;
+            // 
+            // btnDefault
+            // 
+            this.btnDefault.Location = new System.Drawing.Point(181, 327);
+            this.btnDefault.Name = "btnDefault";
+            this.btnDefault.Size = new System.Drawing.Size(94, 23);
+            this.btnDefault.TabIndex = 28;
+            this.btnDefault.Text = "Restore Defaults";
+            this.btnDefault.UseVisualStyleBackColor = true;
+            this.btnDefault.Click += new System.EventHandler(this.btnDefault_Click);
+            // 
             // FormOptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(770, 362);
+            this.Controls.Add(this.btnDefault);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.nudCashPerLevel);
+            this.Controls.Add(this.txtShinyGasp);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.pbExit);
             this.Controls.Add(this.btnAllow);
             this.Controls.Add(this.btnBan);
@@ -271,16 +349,21 @@
             this.Controls.Add(this.nudPlayerLevel);
             this.Controls.Add(this.nudPokeLevel);
             this.Controls.Add(this.nudScanLimit);
-            this.Controls.Add(this.nudTier);
+            this.Controls.Add(this.nudItemTier);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormOptions";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormOptions";
-            ((System.ComponentModel.ISupportInitialize)(this.nudTier)).EndInit();
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormOptions_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FormOptions_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FormOptions_MouseUp);
+            ((System.ComponentModel.ISupportInitialize)(this.nudItemTier)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudScanLimit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPokeLevel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPlayerLevel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCashPerLevel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -288,7 +371,7 @@
 
         #endregion
 
-        private System.Windows.Forms.NumericUpDown nudTier;
+        private System.Windows.Forms.NumericUpDown nudItemTier;
         private System.Windows.Forms.NumericUpDown nudScanLimit;
         private System.Windows.Forms.NumericUpDown nudPokeLevel;
         private System.Windows.Forms.NumericUpDown nudPlayerLevel;
@@ -310,5 +393,10 @@
         private System.Windows.Forms.Button btnBan;
         private System.Windows.Forms.Button btnAllow;
         private System.Windows.Forms.PictureBox pbExit;
+        private System.Windows.Forms.TextBox txtShinyGasp;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.NumericUpDown nudCashPerLevel;
+        private System.Windows.Forms.Button btnDefault;
     }
 }
