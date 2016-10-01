@@ -221,8 +221,20 @@ namespace GenesisDex
             {
                 legend = "false";
             }
+            string stage = "0";
+            string[] evoSplit;
+            string[] name = tbName.Text.Split(' ');
+            foreach (string s in Evo)
+            {
+                if (s.Contains(name[0]))
+                {
+                    evoSplit = s.Split(' ');
+                    stage = evoSplit[0];
+                    break;
+                }
+            }
             XDocument doc = XDocument.Load(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Pokemon.xml");
-            XElement pokemon = new XElement("Pokemon",
+            XElement pokemon = new XElement("Pokemon", new XAttribute("Stage", stage),
                 new XElement("number", tbNumber.Text),
                 new XElement("id", tbName.Text),
                 new XElement("type", tbType.Text),
