@@ -56,6 +56,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.nudCashPerLevel = new System.Windows.Forms.NumericUpDown();
             this.btnDefault = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudItemTier)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudScanLimit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPokeLevel)).BeginInit();
@@ -232,7 +233,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(27, 327);
+            this.btnSave.Location = new System.Drawing.Point(12, 327);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(94, 23);
             this.btnSave.TabIndex = 18;
@@ -263,13 +264,14 @@
             // pbExit
             // 
             this.pbExit.BackColor = System.Drawing.Color.Transparent;
-            this.pbExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbExit.BackgroundImage")));
             this.pbExit.Location = new System.Drawing.Point(734, 12);
             this.pbExit.Name = "pbExit";
             this.pbExit.Size = new System.Drawing.Size(24, 23);
             this.pbExit.TabIndex = 21;
             this.pbExit.TabStop = false;
             this.pbExit.Click += new System.EventHandler(this.pbExit_Click);
+            this.pbExit.MouseLeave += new System.EventHandler(this.pbExit_MouseLeave);
+            this.pbExit.MouseHover += new System.EventHandler(this.pbExit_MouseHover);
             // 
             // txtShinyGasp
             // 
@@ -310,7 +312,7 @@
             // 
             // btnDefault
             // 
-            this.btnDefault.Location = new System.Drawing.Point(181, 327);
+            this.btnDefault.Location = new System.Drawing.Point(112, 327);
             this.btnDefault.Name = "btnDefault";
             this.btnDefault.Size = new System.Drawing.Size(94, 23);
             this.btnDefault.TabIndex = 28;
@@ -318,11 +320,22 @@
             this.btnDefault.UseVisualStyleBackColor = true;
             this.btnDefault.Click += new System.EventHandler(this.btnDefault_Click);
             // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(212, 327);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(94, 23);
+            this.btnAdd.TabIndex = 29;
+            this.btnAdd.Text = "Add Pokemon";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
             // FormOptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(770, 362);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnDefault);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.nudCashPerLevel);
@@ -398,5 +411,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.NumericUpDown nudCashPerLevel;
         private System.Windows.Forms.Button btnDefault;
+        private System.Windows.Forms.Button btnAdd;
     }
 }

@@ -6,6 +6,8 @@ using System.Xml.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Windows.Forms;
+using System.Drawing;
 
 namespace GenesisDexEngine
 {
@@ -25,6 +27,7 @@ namespace GenesisDexEngine
     class Pokemon
     {
         public string id { get; set; }
+        public string entry { get; set; } 
         public string stage { get; set; }
         public string number { get; set; }
         public string type { get; set; }
@@ -160,6 +163,7 @@ namespace GenesisDexEngine
                             stage = (string)node.Attribute("Stage"),
                             number = (string)node.Element("number"),
                             id = (string)node.Element("id"),
+                            entry = (string)node.Element("entry"),
                             type = (string)node.Element("type"),
                             hp = (string)node.Element("hp"),
                             atk = (string)node.Element("atk"),

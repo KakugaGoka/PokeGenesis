@@ -95,6 +95,7 @@ namespace GenesisDex
             cbAbi3.ContextMenu = new ContextMenu();
             cbAbi4.ContextMenu = new ContextMenu();
             cbAbi5.ContextMenu = new ContextMenu();
+            pbExit.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButton.png");
         }
 
         private void btAddPKMN_Click(object sender, EventArgs e)
@@ -208,6 +209,7 @@ namespace GenesisDex
             tbGender.Text = tbGender.Text.Trim(' ');
             tbEgg.Text = tbEgg.Text.Trim(' ');
             tbHatch.Text = tbHatch.Text.Trim(' ');
+            rtbEntry.Text = rtbEntry.Text.Trim(' ');
             int c = 0;
             int e = 0;
             int m = 0;
@@ -252,6 +254,7 @@ namespace GenesisDex
                 new XElement("diet", tbDiet.Text),
                 new XElement("habitat", tbHabitat.Text),
                 new XElement("legendary", legend),
+                new XElement("entry", rtbEntry.Text),
                 new XElement("List" + tbNumber.Text,
                     new XElement("Ability",
                         new XElement(cbAbi1.Text + "Ability", tbAbi1.Text),
@@ -597,6 +600,16 @@ namespace GenesisDex
         private void tbAbi5_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void pbExit_MouseHover(object sender, EventArgs e)
+        {
+            pbExit.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButtonHover.png");
+        }
+
+        private void pbExit_MouseLeave(object sender, EventArgs e)
+        {
+            pbExit.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButton.png");
         }
     }
 }

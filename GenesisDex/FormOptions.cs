@@ -35,29 +35,8 @@ namespace GenesisDex
             InitializeComponent();
             dragging = false;
             restoreDefaults = false;
-            optionsList = optionsXML.createList();
-            banList = banXML.createList();
-            pokeList = pokeXML.createList("Pokemon");
-            SortPokeList();
-            nudPlayerLevel.Value = optionsList[0].MaxPlayerLevel;
-            nudPokeLevel.Value = optionsList[0].MaxPokemonLevel;
-            nudScanLimit.Value = optionsList[0].MaxScanAmount;
-            nudItemTier.Value = optionsList[0].MaxItemTier;
-            nudCashPerLevel.Value = optionsList[0].CashPerLevel;
-            txtItemGasp1.Text = optionsList[0].OneItemGasp;
-            txtItemGasp2.Text = optionsList[0].TwoItemGasp;
-            txtPokeGasp.Text = optionsList[0].PokemonGasp;
-            txtShinyGasp.Text = optionsList[0].ShinyGasp;
-            for(var i = 0; i < banList.Count; i++)
-            {
-                if(banList[i] != "Placeholder")
-                    listBanned.Items.Add(banList[i]);
-            }
-            foreach(Pokemon s in pokeList)
-            {
-                if (!listBanned.Items.Contains(s.id))
-                    listAllowed.Items.Add(s.id);
-            }
+            RefreshOptions();
+            pbExit.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButton.png");
         }
 
         private void SortPokeList()
@@ -134,33 +113,7 @@ namespace GenesisDex
             }
             docX.Root.Add(ban);
             docX.Save(AppDomain.CurrentDomain.BaseDirectory + "Data\\Options.xml");
-            optionsList = new List<Options>();
-            optionsList = optionsXML.createList();
-            banList = new List<string>();
-            banList = banXML.createList();
-            pokeList = new List<Pokemon>();
-            pokeList = pokeXML.createList("Pokemon");
-            nudPlayerLevel.Value = optionsList[0].MaxPlayerLevel;
-            nudPokeLevel.Value = optionsList[0].MaxPokemonLevel;
-            nudScanLimit.Value = optionsList[0].MaxScanAmount;
-            nudItemTier.Value = optionsList[0].MaxItemTier;
-            nudCashPerLevel.Value = optionsList[0].CashPerLevel;
-            txtItemGasp1.Text = optionsList[0].OneItemGasp;
-            txtItemGasp2.Text = optionsList[0].TwoItemGasp;
-            txtPokeGasp.Text = optionsList[0].PokemonGasp;
-            txtShinyGasp.Text = optionsList[0].ShinyGasp;
-            listBanned.Items.Clear();
-            listAllowed.Items.Clear();
-            for (var i = 0; i < banList.Count; i++)
-            {
-                if (banList[i] != "Placeholder")
-                    listBanned.Items.Add(banList[i]);
-            }
-            foreach (Pokemon s in pokeList)
-            {
-                if (!listBanned.Items.Contains(s.id))
-                    listAllowed.Items.Add(s.id);
-            }
+            RefreshOptions();
             if (restoreDefaults)
                 MessageBox.Show("Defaults Restored.");
             else
@@ -228,6 +181,73 @@ namespace GenesisDex
         }
         //===========================================================================================================
         //===========================================================================================================
+
+        //===========================================================================================================
+        //===========================================================================================================
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            FormAdd fc = new FormAdd();
+            fc.FormClosing += FormAddIsClosing;
+            fc.Show();
+        }
+        //===========================================================================================================
+        //===========================================================================================================
+
+        //===========================================================================================================
+        //===========================================================================================================
+        private void FormAddIsClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.Cancel)
+            {
+                return;
+            }
+            this.Show();
+            RefreshOptions();
+            this.Update();
+        }
+        //===========================================================================================================
+        //===========================================================================================================
+
+        private void RefreshOptions()
+        {
+            optionsList = new List<Options>();
+            optionsList = optionsXML.createList();
+            banList = new List<string>();
+            banList = banXML.createList();
+            pokeList = new List<Pokemon>();
+            pokeList = pokeXML.createList("Pokemon");
+            nudPlayerLevel.Value = optionsList[0].MaxPlayerLevel;
+            nudPokeLevel.Value = optionsList[0].MaxPokemonLevel;
+            nudScanLimit.Value = optionsList[0].MaxScanAmount;
+            nudItemTier.Value = optionsList[0].MaxItemTier;
+            nudCashPerLevel.Value = optionsList[0].CashPerLevel;
+            txtItemGasp1.Text = optionsList[0].OneItemGasp;
+            txtItemGasp2.Text = optionsList[0].TwoItemGasp;
+            txtPokeGasp.Text = optionsList[0].PokemonGasp;
+            txtShinyGasp.Text = optionsList[0].ShinyGasp;
+            listBanned.Items.Clear();
+            listAllowed.Items.Clear();
+            for (var i = 0; i < banList.Count; i++)
+            {
+                if (banList[i] != "Placeholder")
+                    listBanned.Items.Add(banList[i]);
+            }
+            foreach (Pokemon s in pokeList)
+            {
+                if (!listBanned.Items.Contains(s.id))
+                    listAllowed.Items.Add(s.id);
+            }
+        }
+
+        private void pbExit_MouseHover(object sender, EventArgs e)
+        {
+            pbExit.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButtonHover.png");
+        }
+
+        private void pbExit_MouseLeave(object sender, EventArgs e)
+        {
+            pbExit.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButton.png");
+        }
     }
 }
 

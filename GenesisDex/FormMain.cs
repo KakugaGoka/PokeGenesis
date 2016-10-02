@@ -61,7 +61,10 @@ namespace GenesisDex
             this.BackgroundImage = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MainMenu.PNG");
             pbPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonLeft.gif");
             pbPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRight.gif");
-            pbPokeAdd.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\AddPokemon.png");
+            pbScan.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ChangeMode.png");
+            infoBack.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoLeft.png");
+            infoForward.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoRight.png");
+            btnOptions.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Options.png");
             pokeList = pokeXML.createList("Pokemon");
             banList = banXML.createList();
             for (int p = 0; p < pokeList.Count; p++)
@@ -331,7 +334,7 @@ namespace GenesisDex
             }
         }
 
-        private void pbMega_MouseClick(object sender, MouseEventArgs e)
+        private void pbMega_Click(object sender, EventArgs e)
         {
             int i = carryi;
             if (mega == true)
@@ -435,7 +438,7 @@ namespace GenesisDex
                         megaList.Clear();
                         megaList = megaXML.createList("MegaX" + pokeList[i].number);
                         if (megaList[0].type == "Unchanged") { megaList[0].type = pokeList[i].type; }
-                        rtbInfo1.Text = string.Format(
+                        rtbInfo.Text = string.Format(
                             "Number: {0}" + Environment.NewLine +
                             "Name: {1}" + Environment.NewLine +
                             "Type: {2}" + Environment.NewLine + Environment.NewLine +
@@ -462,7 +465,7 @@ namespace GenesisDex
                         megaList.Clear();
                         megaList = megaXML.createList("MegaY" + pokeList[i].number);
                         if (megaList[0].type == "Unchanged") { megaList[0].type = pokeList[i].type; }
-                        rtbInfo1.Text = string.Format(
+                        rtbInfo.Text = string.Format(
                             "Number: {0}" + Environment.NewLine +
                             "Name: {1}" + Environment.NewLine +
                             "Type: {2}" + Environment.NewLine + Environment.NewLine +
@@ -490,7 +493,7 @@ namespace GenesisDex
                     megaList.Clear();
                     megaList = megaXML.createList("Mega" + pokeList[i].number);
                     if (megaList[0].type == "Unchanged") { megaList[0].type = pokeList[i].type; }
-                    rtbInfo1.Text = string.Format(
+                    rtbInfo.Text = string.Format(
                         "Number: {0}" + Environment.NewLine +
                         "Name: {1}" + Environment.NewLine +
                         "Type: {2}" + Environment.NewLine + Environment.NewLine +
@@ -515,7 +518,7 @@ namespace GenesisDex
             }
             else
             {
-                rtbInfo1.Text = string.Format(
+                rtbInfo.Text = string.Format(
                     "Number: {0}" + Environment.NewLine +
                     "Name: {1}" + Environment.NewLine +
                     "Type: {2}" + Environment.NewLine + Environment.NewLine +
@@ -547,15 +550,15 @@ namespace GenesisDex
             skillList.Clear();
             capList = capXML.createList(pokeList[i].number);
             skillList = skillXML.createList(pokeList[i].number);
-            rtbInfo1.Text = ("Capabilities:" + Environment.NewLine);
+            rtbInfo.Text = ("Capabilities:" + Environment.NewLine);
             for (var e = 0; e < capList.Count; e++)
             {
-                rtbInfo1.Text += "-" + capList[e].cap + Environment.NewLine;
+                rtbInfo.Text += "-" + capList[e].cap + Environment.NewLine;
             }
-            rtbInfo1.Text += Environment.NewLine + "Skills:" + Environment.NewLine;
+            rtbInfo.Text += Environment.NewLine + "Skills:" + Environment.NewLine;
             for (var e = 0; e < skillList.Count; e++)
             {
-                rtbInfo1.Text += "-" + skillList[e].skill + Environment.NewLine;
+                rtbInfo.Text += "-" + skillList[e].skill + Environment.NewLine;
             }
 
         }
@@ -566,10 +569,10 @@ namespace GenesisDex
             MovesList moveXML = new MovesList();
             moveList.Clear();
             moveList = moveXML.createList(pokeList[i].number);
-            rtbInfo1.Text = ("Moves:" + Environment.NewLine);
+            rtbInfo.Text = ("Moves:" + Environment.NewLine);
             for (var e = 0; e < moveList.Count; e++)
             {
-                rtbInfo1.Text += "-" + moveList[e].move + Environment.NewLine;
+                rtbInfo.Text += "-" + moveList[e].move + Environment.NewLine;
             }
         }
 
@@ -579,30 +582,30 @@ namespace GenesisDex
             EvolutionList evoXML = new EvolutionList();
             evoList.Clear();
             evoList = evoXML.createList(pokeList[i].number);
-            rtbInfo1.Text = ("Evolutions:" + Environment.NewLine);
+            rtbInfo.Text = ("Evolutions:" + Environment.NewLine);
             for (var e = 0; e < evoList.Count; e++)
             {
-                rtbInfo1.Text += "-" + evoList[e].evo + Environment.NewLine;
+                rtbInfo.Text += "-" + evoList[e].evo + Environment.NewLine;
             }
             BasicAbiList basicXML = new BasicAbiList();
             AdvAbiList advXML = new AdvAbiList();
             HighAbiList highXML = new HighAbiList();
             abiList.Clear();
             abiList = basicXML.createList(pokeList[i].number);
-            rtbInfo1.Text += Environment.NewLine + "Abilities:";
+            rtbInfo.Text += Environment.NewLine + "Abilities:";
             for (var s = 0; s < abiList.Count; s++)
             {
-                rtbInfo1.Text += Environment.NewLine + "Basic Ability - " + abiList[s].basicability;
+                rtbInfo.Text += Environment.NewLine + "Basic Ability - " + abiList[s].basicability;
             }
             abiList = advXML.createList(pokeList[i].number);
             for (var s = 0; s < abiList.Count; s++)
             {
-                rtbInfo1.Text += Environment.NewLine + "Advanced Ability - " + abiList[s].advability;
+                rtbInfo.Text += Environment.NewLine + "Advanced Ability - " + abiList[s].advability;
             }
             abiList = highXML.createList(pokeList[i].number);
             for (var s = 0; s < abiList.Count; s++)
             {
-                rtbInfo1.Text += Environment.NewLine + "High Ability - " + abiList[s].highability;
+                rtbInfo.Text += Environment.NewLine + "High Ability - " + abiList[s].highability;
             }
             MegaList megaAbility = new MegaList();
             if (viewMega == true)
@@ -610,19 +613,19 @@ namespace GenesisDex
                 if (mega == true)
                 {
                     megaList = megaAbility.createList("Mega" + pokeList[i].number);
-                    rtbInfo1.Text += string.Format(Environment.NewLine + "Mega Ability - " + megaList[0].ability);
+                    rtbInfo.Text += string.Format(Environment.NewLine + "Mega Ability - " + megaList[0].ability);
                 }
                 else if (megax == true)
                 {
                     if (onMegaX == true)
                     {
                         megaList = megaAbility.createList("MegaX" + pokeList[i].number);
-                        rtbInfo1.Text += string.Format(Environment.NewLine + "Mega Ability X - " + megaList[0].ability);
+                        rtbInfo.Text += string.Format(Environment.NewLine + "Mega Ability X - " + megaList[0].ability);
                     }
                     else
                     {
                         megaList = megaAbility.createList("MegaY" + pokeList[i].number);
-                        rtbInfo1.Text += string.Format(Environment.NewLine + "Mega Ability Y - " + megaList[0].ability);
+                        rtbInfo.Text += string.Format(Environment.NewLine + "Mega Ability Y - " + megaList[0].ability);
                     }
                 }
             }
@@ -650,6 +653,7 @@ namespace GenesisDex
             if (page == 2) { writeStats(); }
             if (page == 3) { writeMoves(); }
             if (page == 4) { writeEvo(); }
+            rtbEntry.Text = pokeList[carryi].entry;
         }
 
         private void pbPokeRight_Click(object sender, EventArgs e)
@@ -737,24 +741,6 @@ namespace GenesisDex
             }
         }
 
-        private void pbPokeAdd_Click(object sender, EventArgs e)
-        {
-            FormAdd fc = new FormAdd();
-            fc.FormClosing += FormAddIsClosing;
-            fc.Show();
-        }
-
-        private void FormAddIsClosing(object sender, FormClosingEventArgs e)
-        {
-            if (e.Cancel)
-            {
-                return;
-            }
-            this.Show();
-            RefreshPokedex();
-            this.Update();
-        }
-
         private void RefreshPokedex()
         {
             PokemonList pokeXML = new PokemonList();
@@ -800,28 +786,12 @@ namespace GenesisDex
             }
         }
 
-        private void pbPokeAdd_MouseHover(object sender, EventArgs e)
-        {
-            pbPokeAdd.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\AddPokemonHover.png");
-        }
-
-        private void pbPokeAdd_MouseLeave(object sender, EventArgs e)
-        {
-            pbPokeAdd.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\AddPokemon.png");
-        }
-
         private void SortPokeList()
         {
             pokeList.Sort(delegate (Pokemon x, Pokemon y)
             {
                 try { return x.number.CompareTo(y.number); } catch { return 0; }
             });
-        }
-
-        private void pbScan_MouseHover(object sender, EventArgs e)
-        {
-            pbScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanHover.png");
-
         }
 
         private void pbScan_Click(object sender, EventArgs e)
@@ -831,14 +801,14 @@ namespace GenesisDex
             fs.Show();
         }
 
-        private void pbScan_MouseHover_1(object sender, EventArgs e)
+        private void pbScan_MouseHover(object sender, EventArgs e)
         {
-            pbScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanHover.png");
+            pbScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ChangeModeHover.png");
         }
 
         private void pbScan_MouseLeave(object sender, EventArgs e)
         {
-            pbScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Scan.png");
+            pbScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ChangeMode.png");
         }
 
         private void tbSearch_TextChanged(object sender, EventArgs e)
@@ -874,12 +844,12 @@ namespace GenesisDex
         private void SetImage()
         {
             pbPokemon.Size = pbPokemon.Image.Size;
-            pbPokemon.Location = new Point(203 - (pbPokemon.Width / 2), 305 - (pbPokemon.Height));
+            pbPokemon.Location = new Point(233 - (pbPokemon.Width / 2), 250 - (pbPokemon.Height));
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void btnOptions_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Enabled = false;
             FormOptions fc = new FormOptions();
             fc.FormClosing += FormOptionsIsClosing;
             fc.Show();
@@ -891,9 +861,21 @@ namespace GenesisDex
             {
                 return;
             }
+            this.Enabled = true;
             this.Show();
             RefreshPokedex();
             this.Update();
+        }
+
+        private void btnOptions_MouseHover(object sender, EventArgs e)
+        {
+            btnOptions.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\OptionsHover.png");
+        }
+
+        private void btnOptions_MouseLeave(object sender, EventArgs e)
+        {
+            btnOptions.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Options.png");
+
         }
     }
 }

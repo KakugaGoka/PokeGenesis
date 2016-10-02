@@ -128,6 +128,7 @@ namespace GenesisDex
         bool hasScanned { get; set; }
         bool isScanning { get; set; }
         bool queueFinished { get; set; }
+        bool viewingLoot { get; set; }
         //===========================================================================================================
         string typeShiny { get; set; }
         string newShiny { get; set; }
@@ -149,10 +150,6 @@ namespace GenesisDex
             rtbGasp.Text = "";
             btnPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonLeft.gif");
             btnPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRight.gif");
-            btnPokeLeft.Visible = false;
-            btnPokeRight.Visible = false;
-            btnGotoPage.Visible = false;
-            nudGoto.Enabled = false;
             onItem2 = false;
             onLoot = false;
             isShiny = false;
@@ -160,6 +157,7 @@ namespace GenesisDex
             hasScanned = false;
             isScanning = false;
             queueFinished = false;
+            viewingLoot = false;
             Page = 1;
             Current = 0;
             Amount = 0;
@@ -167,23 +165,10 @@ namespace GenesisDex
             Dots = 0;
             pbPokeLocX = pbPokemon.Location.X;
             pbPokeLocY = pbPokemon.Location.Y;
-            pokeList = pokeXML.createList("Pokemon");
-            banList = banXML.createList();
-            for (int p = 0; p < pokeList.Count; p++)
-            {
-                if (banList.Contains(pokeList[p].id))
-                {
-                    pokeList.RemoveAt(p);
-                    p--;
-                }
-            }
-            SortPokemon(pokeList);
-            optionsList = optionsXML.createList();
+            ScanUpdate();
             typeList = typeXML.createList("Types", "Type");
             habitatList = habitatXML.createList("Habitats", "Habitat");
             natureList = natureXML.createList("Natures", "Nature");
-            btnInfoBack.Visible = false;
-            btnInfoForward.Visible = false;
             habitats.Clear();
             types.Clear();
             for (var h = 0; h < habitatList.Count; h++)
@@ -201,7 +186,7 @@ namespace GenesisDex
             }
             cbHabitat.DataSource = habitats;
             cbType.DataSource = types;
-            cbPokemon.DataSource = pokeDex;
+            lbPokemon.DataSource = pokeDex;
             stages.Add("Any");
             stages.Add("Only 1s");
             stages.Add("Only 2s");
@@ -217,6 +202,49 @@ namespace GenesisDex
                     ItemTiers.Add(i);
                 }
             }
+            btnExit.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Exit.png");
+            btnInfoBack.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoLeft.png");
+            btnInfoForward.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoRight.png");
+            btnScan.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ChangeMode.png");
+            btnScanPokemon.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanPokemon.png");
+            btnLoot.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanLoot.png");
+            btnLootRefresh.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\LootView.png");
+            btnPokeRefresh.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokeView.png");
+            btnPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonLeft.gif");
+            btnPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRight.gif");
+            btnDealDamage.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\DealDamage.png");
+            btnOptions.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Options.png");
+        }
+        //===========================================================================================================
+        //===========================================================================================================
+
+        //===========================================================================================================
+        //===========================================================================================================
+        private void ScanUpdate()
+        {
+            pokeList = new List<Pokemon>();
+            optionsList = new List<Options>();
+            banList = new List<string>();
+            pokeDex = new List<string>();
+            lbPokemon.DataSource = banList;
+            pokeList = pokeXML.createList("Pokemon");
+            optionsList = optionsXML.createList();
+            banList = banXML.createList();
+            for (int p = 0; p < pokeList.Count; p++)
+            {
+                if (banList.Contains(pokeList[p].id))
+                {
+                    pokeList.RemoveAt(p);
+                    p--;
+                }
+            }
+            SortPokemon(pokeList);
+            pokeDex.Add("Any");
+            for (var p = 0; p < pokeList.Count; p++)
+            {
+                pokeDex.Add(pokeList[p].id);
+            }
+            lbPokemon.DataSource = pokeDex;
             nudAmount.Maximum = optionsList[0].MaxScanAmount;
             nudLevelMax.Maximum = optionsList[0].MaxPokemonLevel;
             nudLevelMin.Maximum = optionsList[0].MaxPokemonLevel;
@@ -325,25 +353,10 @@ namespace GenesisDex
         private void PokeGenerator_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             Current = 0;
-            tbPokeCount.Text = (Current + 1).ToString() + "/" + Amount.ToString();
             pbPokemon.Image = AllImages[Current];
-            SetImage();
-            if (AllPokemon.Count > 1)
-            {
-                btnPokeRight.Visible = true;
-                btnPokeLeft.Visible = true;
-                btnGotoPage.Visible = true;
-                nudGoto.Enabled = true;
-                nudGoto.Maximum = Amount;
-            }
-            else
-            {
-                btnPokeRight.Visible = false;
-                btnPokeLeft.Visible = false;
-                btnGotoPage.Visible = false;
-                nudGoto.Enabled = false;
-            }
+            SetPoke();
             UpdatePage();
+            tbPokeCount.Text = (Current + 1).ToString() + "/" + Amount.ToString();
             SetGasp();
             isScanning = false;
         }
@@ -1174,10 +1187,10 @@ namespace GenesisDex
         //=== SetImage is used to set the Pokemon Image in the correct place to keep it centered based on the =======
         //===== varying size of the image. ==========================================================================
         //===========================================================================================================
-        private void SetImage()
+        private void SetPoke()
         {
             pbPokemon.Size = pbPokemon.Image.Size;
-            pbPokemon.Location = new Point(203 - (pbPokemon.Width / 2), 305 - (pbPokemon.Height));
+            pbPokemon.Location = new Point(233 - (pbPokemon.Width / 2), 250 - (pbPokemon.Height));
         }
         //===========================================================================================================
         //===========================================================================================================
@@ -1189,7 +1202,7 @@ namespace GenesisDex
         private void SetItem()
         {
             pkItem.Size = pkItem.Image.Size;
-            pkItem.Location = new Point(623 - (pkItem.Width / 2), 512 - (pkItem.Height));
+            pkItem.Location = new Point(939 - (pkItem.Width / 2), 578 - (pkItem.Height));
         }
         //===========================================================================================================
         //===========================================================================================================
@@ -1199,6 +1212,7 @@ namespace GenesisDex
         //===========================================================================================================
         private void WriteInfo()
         {
+            viewingLoot = false;
             pkItem.Visible = false;
             rtbInfo.Text = "Name: " + AllPokemon[Current].id + Environment.NewLine +
                 "Type: " + Type[Current] + Environment.NewLine +
@@ -1230,6 +1244,7 @@ namespace GenesisDex
         //===========================================================================================================
         private void WriteMoves()
         {
+            viewingLoot = false;
             pkItem.Visible = false;
             rtbInfo.Text = "Gender: " + Gender[Current] + Environment.NewLine +
                 "Nature: " + AllNatures[Current] + Environment.NewLine +
@@ -1260,6 +1275,7 @@ namespace GenesisDex
         //===========================================================================================================
         private void WriteItem1()
         {
+            viewingLoot = false;
             pkItem.Visible = true;
             pkItem.Image = AllItems1[Current];
             SetItem();
@@ -1275,6 +1291,7 @@ namespace GenesisDex
         //===========================================================================================================
         private void WriteItem2()
         {
+            viewingLoot = false;
             pkItem.Visible = true;
             pkItem.Image = AllItems2[Current];
             SetItem();
@@ -1292,6 +1309,7 @@ namespace GenesisDex
         private void WriteLoot()
         {
             tbPageCount.Text = "----";
+            viewingLoot = true;
             pkItem.Visible = false;
             rtbInfo.Clear();
             for (int x = 0; x < AllDesc3.Count; x++)
@@ -1326,8 +1344,6 @@ namespace GenesisDex
         //===========================================================================================================
         private void GetLoot()
         {
-            btnInfoBack.Visible = false;
-            btnInfoForward.Visible = false;
             pkItem.Visible = false;
             AllDesc3.Clear();
             rtbInfo.Clear();
@@ -1383,9 +1399,9 @@ namespace GenesisDex
 
 
         //===========================================================================================================
-        //=== pbExit if the exit button at the top of this form. ====================================================
+        //=== btnExit if the exit button at the top of this form. ====================================================
         //===========================================================================================================
-        private void pbExit_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
@@ -1395,25 +1411,25 @@ namespace GenesisDex
         //===========================================================================================================
         //=== pbScan is the button in the form that takes you back to the main Pokedex. =============================
         //===========================================================================================================
-        private void pbScan_MouseHover(object sender, EventArgs e)
+        private void btnScan_MouseHover(object sender, EventArgs e)
         {
-            btnScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokedexHover.png");
+            btnScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ChangeModeHover.png");
         }
         //===========================================================================================================
         //===========================================================================================================
 
         //===========================================================================================================
         //===========================================================================================================
-        private void pbScan_MouseLeave(object sender, EventArgs e)
+        private void btnScan_MouseLeave(object sender, EventArgs e)
         {
-            btnScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokedexHover.png");
+            btnScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ChangeMode.png");
         }
         //===========================================================================================================
         //===========================================================================================================
 
         //===========================================================================================================
         //===========================================================================================================
-        private void pbScan_Click(object sender, EventArgs e)
+        private void btnScan_Click(object sender, EventArgs e)
         {
             if (isScanning) return;
             FormMain fm = new FormMain();
@@ -1427,7 +1443,7 @@ namespace GenesisDex
         //=== pbScanPokemon is the Scan Pokemon button in the form. this is used to initiate the background worker ==
         //===== to create the new list of pokemon and clear out the old data. =======================================
         //===========================================================================================================
-        private void pbScanPokemon_MouseHover(object sender, EventArgs e)
+        private void btnScanPokemon_MouseHover(object sender, EventArgs e)
         {
             btnScanPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanPokemonHover.png");
         }
@@ -1436,7 +1452,7 @@ namespace GenesisDex
 
         //===========================================================================================================
         //===========================================================================================================
-        private void pbScanPokemon_MouseLeave(object sender, EventArgs e)
+        private void btnScanPokemon_MouseLeave(object sender, EventArgs e)
         {
             btnScanPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanPokemon.png");
         }
@@ -1445,16 +1461,14 @@ namespace GenesisDex
 
         //===========================================================================================================
         //===========================================================================================================
-        private void pbScanPokemon_Click(object sender, EventArgs e)
+        private void btnScanPokemon_Click(object sender, EventArgs e)
         {
             if (isScanning) return;
             queueFinished = false;
             isScanning = true;
-            btnInfoBack.Visible = true;
-            btnInfoForward.Visible = true;
             pkLevelMin_ValueChanged(this, new EventArgs());
             pkLevelMax_ValueChanged(this, new EventArgs());
-            PokeName = cbPokemon.Text;
+            PokeName = lbPokemon.SelectedItem.ToString();
             PokeHabitat = cbHabitat.Text;
             PokeType = cbType.Text;
             PokeStage = cbStageAllowed.Text;
@@ -1473,9 +1487,11 @@ namespace GenesisDex
 
         //===========================================================================================================
         //===========================================================================================================
-        private void infoBack_Click(object sender, EventArgs e)
+        private void btnInfoBack_Click(object sender, EventArgs e)
         {
             if (isScanning) return;
+            if (viewingLoot) return;
+            if (!hasScanned) return;
             Page--;
             if (Page == 0) { Page = 4; }
             UpdatePage();
@@ -1485,9 +1501,11 @@ namespace GenesisDex
 
         //===========================================================================================================
         //===========================================================================================================
-        private void infoForward_Click(object sender, EventArgs e)
+        private void btnInfoForward_Click(object sender, EventArgs e)
         {
             if (isScanning) return;
+            if (viewingLoot) return;
+            if (!hasScanned) return;
             Page++;
             if (Page == 5) { Page = 1; }
             UpdatePage();
@@ -1515,9 +1533,9 @@ namespace GenesisDex
 
         //===========================================================================================================
         //===========================================================================================================
-        private void pkPokemon_TextChanged(object sender, EventArgs e)
+        private void lbPokemon_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbPokemon.Text != "Any")
+            if (lbPokemon.SelectedItem.ToString() != "Any")
             {
                 cbHabitat.Enabled = false;
                 cbType.Enabled = false;
@@ -1540,8 +1558,7 @@ namespace GenesisDex
         private void pbPokeLeft_Click(object sender, EventArgs e)
         {
             if (isScanning) return;
-            btnInfoForward.Visible = true;
-            btnInfoBack.Visible = true;
+            if (AllPokemon.Count < 2) return;
             if (Current <= 0)
             {
                 Current = Amount - 1;
@@ -1552,7 +1569,7 @@ namespace GenesisDex
             }
             tbPokeCount.Text = (Current + 1).ToString() + "/" + Amount.ToString();
             pbPokemon.Image = AllImages[Current];
-            SetImage();
+            SetPoke();
             SetGasp();
             UpdatePage();
         }
@@ -1564,8 +1581,7 @@ namespace GenesisDex
         private void pbPokeRight_Click(object sender, EventArgs e)
         {
             if (isScanning) return;
-            btnInfoForward.Visible = true;
-            btnInfoBack.Visible = true;
+            if (AllPokemon.Count < 2) return;
             if (Current >= Amount - 1)
             {
                 Current = 0;
@@ -1576,38 +1592,7 @@ namespace GenesisDex
             }
             tbPokeCount.Text = (Current + 1).ToString() + "/" + Amount.ToString();
             pbPokemon.Image = AllImages[Current];
-            SetImage();
-            SetGasp();
-            UpdatePage();
-        }
-        //===========================================================================================================
-        //===========================================================================================================
-
-        //===========================================================================================================
-        //===========================================================================================================
-        private void pkGoto_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                pbGotoPage_Click(this, new EventArgs());
-            }
-        }
-        //===========================================================================================================
-        //===========================================================================================================
-
-        //===========================================================================================================
-        //===========================================================================================================
-        private void pbGotoPage_Click(object sender, EventArgs e)
-        {
-            if (isScanning) return;
-            Current = Convert.ToInt32(nudGoto.Value) - 1;
-            if (Current > Amount - 1)
-            {
-                Current = 0;
-            }
-            tbPokeCount.Text = (Current + 1).ToString() + "/" + Amount.ToString();
-            pbPokemon.Image = AllImages[Current];
-            SetImage();
+            SetPoke();
             SetGasp();
             UpdatePage();
         }
@@ -1645,8 +1630,6 @@ namespace GenesisDex
             if (isScanning) return;
             if (hasScanned)
             {
-                btnInfoForward.Visible = false;
-                btnInfoBack.Visible = false;
                 WriteLoot();
             }
         }
@@ -1740,7 +1723,7 @@ namespace GenesisDex
         //===========================================================================================================
         private void pbDealDamage_MouseHover(object sender, EventArgs e)
         {
-            pbDealDamage.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\DealDamageHover.png");
+            btnDealDamage.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\DealDamageHover.png");
         }
         //===========================================================================================================
         //===========================================================================================================
@@ -1749,7 +1732,7 @@ namespace GenesisDex
         //===========================================================================================================
         private void pbDealDamage_MouseLeave(object sender, EventArgs e)
         {
-            pbDealDamage.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\DealDamage.png");
+            btnDealDamage.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\DealDamage.png");
         }
         //===========================================================================================================
         //===========================================================================================================
@@ -1804,18 +1787,64 @@ namespace GenesisDex
 
         //===========================================================================================================
         //===========================================================================================================
-        private void pictureBox1_MouseHover(object sender, EventArgs e)
+        private void btnExit_MouseHover(object sender, EventArgs e)
         {
-            btnGotoPage.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\GotoPageHover.png");
+            btnScanPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButtonHover.png");
         }
         //===========================================================================================================
         //===========================================================================================================
 
         //===========================================================================================================
         //===========================================================================================================
-        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        private void btnExit_MouseLeave(object sender, EventArgs e)
         {
-            btnGotoPage.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\GotoPage.png");
+            btnScanPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButton.png");
+        }
+        //===========================================================================================================
+        //===========================================================================================================
+
+        //===========================================================================================================
+        //===========================================================================================================
+        private void btnOptions_Click(object sender, EventArgs e)
+        {
+            this.Enabled = false;
+            FormOptions fc = new FormOptions();
+            fc.FormClosing += FormOptionsIsClosing;
+            fc.Show();
+        }
+        //===========================================================================================================
+        //===========================================================================================================
+
+        //===========================================================================================================
+        //===========================================================================================================
+        private void FormOptionsIsClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.Cancel)
+            {
+                return;
+            }
+            this.Enabled = true;
+            this.Show();
+            ScanUpdate();
+            this.Update();
+        }
+        //===========================================================================================================
+        //===========================================================================================================
+
+        //===========================================================================================================
+        //===========================================================================================================
+        private void btnOptions_MouseHover(object sender, EventArgs e)
+        {
+            btnOptions.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\OptionsHover.png");
+        }
+        //===========================================================================================================
+        //===========================================================================================================
+
+        //===========================================================================================================
+        //===========================================================================================================
+        private void btnOptions_MouseLeave(object sender, EventArgs e)
+        {
+            btnOptions.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Options.png");
         }
         //===========================================================================================================
         //===========================================================================================================
