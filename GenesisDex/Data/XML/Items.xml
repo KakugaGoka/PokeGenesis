@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Namespace>
+  <!-- 
+  Example:
+  <Item Tier="#">
+    <id>Item Name<id>
+    <desc>What the item does for you in game terms, maybe a price on the end.</desc>
+  </Item>
+  -->
   <Item Tier="1">
     <id>Big Root</id>
     <desc>HP stealing moves restore double HP. Cannot be used by Trainers.</desc>

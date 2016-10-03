@@ -1,60 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Namespace>
   <Type>
-    <id>Any</id>
-  </Type>
-  <Type>
-    <id>Bug</id>
-  </Type>
-  <Type>
-    <id>Dark</id>
-  </Type>
-  <Type>
-    <id>Dragon</id>
-  </Type>
-  <Type>
-    <id>Electric</id>
-  </Type>
-  <Type>
-    <id>Fairy</id>
-  </Type>
-  <Type>
-    <id>Fighting</id>
-  </Type>
-  <Type>
-    <id>Fire</id>
-  </Type>
-  <Type>
-    <id>Flying</id>
-  </Type>
-  <Type>
-    <id>Ghost</id>
-  </Type>
-  <Type>
-    <id>Grass</id>
-  </Type>
-  <Type>
-    <id>Ground</id>
-  </Type>
-    <Type>
-    <id>Ice</id>
-  </Type>
-  <Type>
-    <id>Normal</id>
-  </Type>
-  <Type>
-    <id>Poison</id>
-  </Type>
-  <Type>
-    <id>Psychic</id>
-  </Type>
-  <Type>
-    <id>Rock</id>
-  </Type>
-  <Type>
-    <id>Steel</id>
-  </Type>
-  <Type>
-    <id>Water</id>
+    <id num ="0">Any</id> <!-- Leave this alone, it is mandatory for non-specific generation. -->
+    <id num="1">Bug</id>
+    <id num="2">Dark</id>
+    <id num="3">Dragon</id>
+    <id num="4">Electric</id>
+    <id num="5">Fairy</id>
+    <id num="6">Fighting</id>
+    <id num="7">Fire</id>
+    <id num="8">Flying</id>
+    <id num="9">Ghost</id>
+    <id num="10">Grass</id>
+    <id num="11">Ground</id>
+    <id num="12">Ice</id>
+    <id num="13">Normal</id>
+    <id num="14">Poison</id>
+    <id num="15">Psychic</id>
+    <id num="16">Rock</id>
+    <id num="17">Steel</id>
+    <id num="18">Water</id>
   </Type>
 </Namespace>

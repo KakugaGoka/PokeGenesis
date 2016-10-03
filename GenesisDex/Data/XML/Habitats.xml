@@ -1,48 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <NameSpace>
   <Habitat>
-    <id>Any</id>
-  </Habitat>
-  <Habitat>
-    <id>Arctic</id>
-  </Habitat>
-  <Habitat>
-    <id>Beach</id>
-  </Habitat>
-  <Habitat>
-    <id>Cave</id>
-  </Habitat>
-  <Habitat>
-    <id>Desert</id>
-  </Habitat>
-  <Habitat>
-    <id>Forest</id>
-  </Habitat>
-  <Habitat>
-    <id>Freshwater</id>
-  </Habitat>
-    <Habitat>
-    <id>Grassland</id>
-  </Habitat>
-  <Habitat>
-    <id>Marsh</id>
-  </Habitat>
-  <Habitat>
-    <id>Mountain</id>
-  </Habitat>
-  <Habitat>
-    <id>Ocean</id>
-  </Habitat>
-  <Habitat>
-    <id>Rainforest</id>
-  </Habitat>
-  <Habitat>
-    <id>Taiga</id>
-  </Habitat>
-  <Habitat>
-    <id>Tundra</id>
-  </Habitat>
-  <Habitat>
-    <id>Urban</id>
+    <id num ="0">Any</id> <!-- Leave this alone, it is mandatory for non-specific generation. -->
+    <id num ="1">Arctic</id>
+    <id num ="2">Beach</id>
+    <id num ="3">Cave</id>
+    <id num ="4">Desert</id>
+    <id num ="5">Forest</id>
+    <id num ="6">Freshwater</id>
+    <id num ="7">Grassland</id>
+    <id num ="8">Marsh</id>
+    <id num ="9">Mountain</id>
+    <id num ="10">Ocean</id>
+    <id num ="11">Rainforest</id>
+    <id num ="12">Taiga</id>
+    <id num ="13">Tundra</id>
+    <id num ="14">Urban</id>
   </Habitat>
 </NameSpace>

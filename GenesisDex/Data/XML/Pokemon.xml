@@ -1,5 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Namespace>
+  <!-- 
+  Example:
+   <Pokemon Stage="Stage in the Evolution tree. 1, 2, or 3 (Nuumber only please)">
+    <number>###</number>
+    <id>Name</id>
+    <type>Type1 / Type2</type>
+    <hp>##</hp>
+    <atk>##</atk>
+    <def>##</def>
+    <spatk>##</spatk>
+    <spdef>##</spdef>
+    <spd>##</spd>
+    <size>Height in Imperial / Height in Metric (Size)</size>
+    <weight>Weight in Imperial / Weight in Metric (Weight Class)</weight>
+    <gender>##% M / ##% F</gender>
+    <egg>Egg Group</egg>
+    <hatch>Hatch Time (Leave empty if N/A)</hatch>
+    <diet>Diet types, comma delimited</diet>
+    <habitat>Habitats, comma delimited</habitat>
+    <legendary>true or false</legendary>
+	  <entry>Whatever you want to appear as their pokedex entry.</entry>
+    <List001>
+      <Evolution>
+        <evo id="0">1 - Evolution one</evo>
+        <evo id="1">2 - Evolution two Minimum Level</evo>
+        <evo id="2">3 - Evolution three Evo Stone Minimum Level</evo>
+      </Evolution>
+      <Ability>
+        <BasicAbility>Basic Ability Name</BasicAbility>
+        <AdvancedAbility>Advanced Ability Name</AdvancedAbility>
+        <HighAbility>High Ability Name</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl #d6+#</skill>
+        <skill id="1">Acro #d6+#</skill>
+        <skill id="2">Combat #d6+#</skill>
+        <skill id="3">Stealth #d6+#</skill>
+        <skill id="4">Percep #d6+#</skill>
+        <skill id="5">Focus #d6+#</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland #</cap>
+        <cap id="1">Swim #</cap>
+        <cap id="2">Jump #/#</cap>
+        <cap id="3">Power #</cap>
+        <cap id="4">Naturewalk (Habitat)</cap>
+        <cap id="5">Other Capabilities...</cap>
+      </Capability>
+      <Moves>
+        <move id="0">Level Move - Type</move>
+        <move id="1">Level Move - Type</move>
+      </Moves>
+    </List001>
+  </Pokemon>
+  -->
   <Pokemon Stage="1">
     <number>001</number>
     <id>Bulbasaur</id>

@@ -1,5 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Namespace>
+  <!-- 
+  Example:
+  <Nature>
+    <id>Nature Name</id>
+    <up>The stat that it raises in lower case letters. Use the shortened stat name<up>
+    <down>The stat that it lowers in lower case letters. Use the shortened stat name<down>
+  <Nature>
+  -->
   <Nature>
     <id>Cuddly</id>
     <up>hp</up>

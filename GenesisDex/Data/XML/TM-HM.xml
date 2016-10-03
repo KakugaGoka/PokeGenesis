@@ -1,5 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Namespace>
+  <!--
+  Example:
+  <TM> #Can be TM or HM
+    <number>#</number>
+    <id>Name of TM/HM</id>
+    <type>Attack Type</type>
+  </TM> #Can be TM or HM
+  -->
   <TM>
     <number>1</number>
     <id>Hone Claws</id>
