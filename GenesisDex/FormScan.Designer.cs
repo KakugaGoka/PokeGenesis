@@ -72,6 +72,8 @@
             this.tbPokeCount = new System.Windows.Forms.RichTextBox();
             this.btnExit = new System.Windows.Forms.PictureBox();
             this.btnOptions = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnScanPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLevelMin)).BeginInit();
@@ -158,22 +160,22 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Silver;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Location = new System.Drawing.Point(425, 522);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 15);
+            this.label1.Size = new System.Drawing.Size(33, 13);
             this.label1.TabIndex = 48;
             this.label1.Text = "Level";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Silver;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Location = new System.Drawing.Point(413, 360);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 15);
+            this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 49;
             this.label2.Text = "Habitat";
             // 
@@ -193,11 +195,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Silver;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Location = new System.Drawing.Point(423, 393);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 15);
+            this.label3.Size = new System.Drawing.Size(31, 13);
             this.label3.TabIndex = 51;
             this.label3.Text = "Type";
             // 
@@ -230,35 +232,36 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Silver;
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Location = new System.Drawing.Point(524, 499);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 15);
+            this.label4.Size = new System.Drawing.Size(27, 13);
             this.label4.TabIndex = 53;
             this.label4.Text = "Max";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Silver;
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Location = new System.Drawing.Point(466, 499);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(26, 15);
+            this.label5.Size = new System.Drawing.Size(24, 13);
             this.label5.TabIndex = 54;
             this.label5.Text = "Min";
             // 
             // chkHasItem
             // 
             this.chkHasItem.AutoSize = true;
-            this.chkHasItem.BackColor = System.Drawing.Color.Silver;
+            this.chkHasItem.BackColor = System.Drawing.Color.Transparent;
             this.chkHasItem.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.chkHasItem.FlatAppearance.BorderSize = 5;
+            this.chkHasItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chkHasItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkHasItem.Location = new System.Drawing.Point(423, 426);
             this.chkHasItem.Name = "chkHasItem";
-            this.chkHasItem.Size = new System.Drawing.Size(125, 20);
+            this.chkHasItem.Size = new System.Drawing.Size(122, 20);
             this.chkHasItem.TabIndex = 6;
             this.chkHasItem.Text = "Generate Items?";
             this.chkHasItem.UseVisualStyleBackColor = false;
@@ -267,13 +270,14 @@
             // chkCanBeShiny
             // 
             this.chkCanBeShiny.AutoSize = true;
-            this.chkCanBeShiny.BackColor = System.Drawing.Color.Silver;
+            this.chkCanBeShiny.BackColor = System.Drawing.Color.Transparent;
             this.chkCanBeShiny.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.chkCanBeShiny.FlatAppearance.BorderSize = 5;
+            this.chkCanBeShiny.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chkCanBeShiny.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkCanBeShiny.Location = new System.Drawing.Point(423, 451);
             this.chkCanBeShiny.Name = "chkCanBeShiny";
-            this.chkCanBeShiny.Size = new System.Drawing.Size(126, 20);
+            this.chkCanBeShiny.Size = new System.Drawing.Size(123, 20);
             this.chkCanBeShiny.TabIndex = 7;
             this.chkCanBeShiny.Text = "Generate Shiny?";
             this.chkCanBeShiny.UseVisualStyleBackColor = false;
@@ -302,13 +306,14 @@
             // chkCanBeLegend
             // 
             this.chkCanBeLegend.AutoSize = true;
-            this.chkCanBeLegend.BackColor = System.Drawing.Color.Silver;
+            this.chkCanBeLegend.BackColor = System.Drawing.Color.Transparent;
             this.chkCanBeLegend.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.chkCanBeLegend.FlatAppearance.BorderSize = 5;
+            this.chkCanBeLegend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chkCanBeLegend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkCanBeLegend.Location = new System.Drawing.Point(423, 476);
             this.chkCanBeLegend.Name = "chkCanBeLegend";
-            this.chkCanBeLegend.Size = new System.Drawing.Size(156, 20);
+            this.chkCanBeLegend.Size = new System.Drawing.Size(153, 20);
             this.chkCanBeLegend.TabIndex = 8;
             this.chkCanBeLegend.Text = "Include Legendaries?";
             this.chkCanBeLegend.UseVisualStyleBackColor = false;
@@ -330,11 +335,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Silver;
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.Location = new System.Drawing.Point(419, 327);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(37, 15);
+            this.label7.Size = new System.Drawing.Size(35, 13);
             this.label7.TabIndex = 67;
             this.label7.Text = "Stage";
             // 
@@ -361,11 +366,11 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Silver;
-            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label8.Location = new System.Drawing.Point(441, 552);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(45, 15);
+            this.label8.Size = new System.Drawing.Size(43, 13);
             this.label8.TabIndex = 69;
             this.label8.Text = "Amount";
             // 
@@ -392,7 +397,7 @@
             // btnLoot
             // 
             this.btnLoot.BackColor = System.Drawing.Color.Transparent;
-            this.btnLoot.Location = new System.Drawing.Point(960, 72);
+            this.btnLoot.Location = new System.Drawing.Point(895, 73);
             this.btnLoot.Name = "btnLoot";
             this.btnLoot.Size = new System.Drawing.Size(126, 26);
             this.btnLoot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -407,7 +412,7 @@
             this.nudPlayerLevel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.nudPlayerLevel.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudPlayerLevel.ForeColor = System.Drawing.Color.Black;
-            this.nudPlayerLevel.Location = new System.Drawing.Point(1002, 105);
+            this.nudPlayerLevel.Location = new System.Drawing.Point(972, 105);
             this.nudPlayerLevel.Maximum = new decimal(new int[] {
             50,
             0,
@@ -441,7 +446,7 @@
             // btnPokeRefresh
             // 
             this.btnPokeRefresh.BackColor = System.Drawing.Color.Transparent;
-            this.btnPokeRefresh.Location = new System.Drawing.Point(1090, 103);
+            this.btnPokeRefresh.Location = new System.Drawing.Point(1082, 103);
             this.btnPokeRefresh.Name = "btnPokeRefresh";
             this.btnPokeRefresh.Size = new System.Drawing.Size(98, 26);
             this.btnPokeRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -454,7 +459,7 @@
             // btnLootRefresh
             // 
             this.btnLootRefresh.BackColor = System.Drawing.Color.Transparent;
-            this.btnLootRefresh.Location = new System.Drawing.Point(1090, 72);
+            this.btnLootRefresh.Location = new System.Drawing.Point(1082, 72);
             this.btnLootRefresh.Name = "btnLootRefresh";
             this.btnLootRefresh.Size = new System.Drawing.Size(98, 26);
             this.btnLootRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -469,7 +474,7 @@
             this.pkDamage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.pkDamage.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pkDamage.ForeColor = System.Drawing.Color.Black;
-            this.pkDamage.Location = new System.Drawing.Point(827, 605);
+            this.pkDamage.Location = new System.Drawing.Point(789, 103);
             this.pkDamage.Maximum = new decimal(new int[] {
             999,
             0,
@@ -493,7 +498,7 @@
             // btnDealDamage
             // 
             this.btnDealDamage.BackColor = System.Drawing.Color.Transparent;
-            this.btnDealDamage.Location = new System.Drawing.Point(695, 605);
+            this.btnDealDamage.Location = new System.Drawing.Point(708, 73);
             this.btnDealDamage.Name = "btnDealDamage";
             this.btnDealDamage.Size = new System.Drawing.Size(126, 26);
             this.btnDealDamage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -524,10 +529,10 @@
             // 
             this.lblProgress.AutoSize = true;
             this.lblProgress.BackColor = System.Drawing.Color.Transparent;
-            this.lblProgress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblProgress.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblProgress.Location = new System.Drawing.Point(466, 637);
             this.lblProgress.Name = "lblProgress";
-            this.lblProgress.Size = new System.Drawing.Size(80, 15);
+            this.lblProgress.Size = new System.Drawing.Size(78, 13);
             this.lblProgress.TabIndex = 87;
             this.lblProgress.Text = "Ready to Scan";
             // 
@@ -665,7 +670,7 @@
             // btnOptions
             // 
             this.btnOptions.BackColor = System.Drawing.Color.Transparent;
-            this.btnOptions.Location = new System.Drawing.Point(695, 72);
+            this.btnOptions.Location = new System.Drawing.Point(1106, 610);
             this.btnOptions.Name = "btnOptions";
             this.btnOptions.Size = new System.Drawing.Size(82, 25);
             this.btnOptions.TabIndex = 99;
@@ -674,6 +679,28 @@
             this.btnOptions.MouseLeave += new System.EventHandler(this.btnOptions_MouseLeave);
             this.btnOptions.MouseHover += new System.EventHandler(this.btnOptions_MouseHover);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label6.Location = new System.Drawing.Point(901, 111);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(65, 13);
+            this.label6.TabIndex = 100;
+            this.label6.Text = "Player Level";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label10.Location = new System.Drawing.Point(699, 111);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(84, 13);
+            this.label10.TabIndex = 101;
+            this.label10.Text = "Damage to Deal";
+            // 
             // FormScan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -681,6 +708,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnOptions);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.tbPokeCount);
@@ -800,5 +829,7 @@
         private System.Windows.Forms.RichTextBox tbPokeCount;
         private System.Windows.Forms.PictureBox btnExit;
         private System.Windows.Forms.PictureBox btnOptions;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label10;
     }
 }
