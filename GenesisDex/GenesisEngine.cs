@@ -114,6 +114,8 @@ namespace GenesisDexEngine
         public string id { get; set; }
     }
 
+
+    // Used to create a list to populate FormOptions and to apply those Options into the other Forms.
     class OptionsList
     {
         public List<Options> createList()
@@ -140,6 +142,7 @@ namespace GenesisDexEngine
         }
     }
 
+    // Used to read the list of banned pokemon in the Options.XML and apply it to the forms.
     class BanList
     {
         public List<string> createList()
@@ -155,6 +158,7 @@ namespace GenesisDexEngine
         }
     }
 
+    // Used to create a list of Pokemon from the Pokemon.XML and populate the forms with them.
     class PokemonList
     {
         public List<Pokemon> createList(string decend)
@@ -191,6 +195,7 @@ namespace GenesisDexEngine
         }
     }
 
+    // Used for when a pokemon has a mega form. This ist is called to populate in that data where it is needed.
     class MegaList
     {
         public List<Mega> createList(string decend)
@@ -216,6 +221,7 @@ namespace GenesisDexEngine
         }
     }
 
+    // Used to grab lists like Habitat and Type since they have nothing but a single string in each item in the XML.
     class NameList
     {
         public List<Items> createList(string xml, string decend)
@@ -233,6 +239,7 @@ namespace GenesisDexEngine
         }
     }
 
+    //Used to grab the Items and their descriptions from the Items.XML from loot generation and Pokemon gereation if Items are allowed.
     class ItemList
     {
         public List<Items> createList(string tier)
@@ -251,6 +258,7 @@ namespace GenesisDexEngine
         }
     }
 
+    // Used to generate TMs and HMs for when the pokemon is able to learn such things during generation. (Such as when they are shiny)
     class TMList
     {
         public List<TM> createList(string xml, string decend)
@@ -270,6 +278,7 @@ namespace GenesisDexEngine
         }
     }
 
+    // Used to pull in the Natures for Pokemon Generation form the Natures.XML
     class NatureList
     {
         public List<Nature> createList(string xml, string decend)
@@ -289,6 +298,7 @@ namespace GenesisDexEngine
         }
     }
 
+    // Used to create a list of the evolutions of a pokemon in order to populate info List in FormMain and FormScan. These are grabbed forom the Pokemon.XML
     class EvolutionList
     {
         public List<Evolution> createList(string decend)
@@ -306,6 +316,8 @@ namespace GenesisDexEngine
             return idList;
         }
     }
+
+    // Used to create a list of Capabilities for the specified pokemon from the Pokemon.XML
     class CapabilityList
     {
         public List<Capability> createList(string decend)
@@ -322,6 +334,8 @@ namespace GenesisDexEngine
             return idList;
         }
     }
+
+    // Used to create a list of Skills for the specified pokemon from the Pokemon.XML
     class SkillList
     {
         public List<Skill> createList(string decend)
@@ -339,6 +353,7 @@ namespace GenesisDexEngine
         }
     }
 
+    // Used to create a list of Moves for the specified pokemon from the Pokemon.XML
     class MovesList
     {
         public List<Moves> createList(string decend)
@@ -356,6 +371,7 @@ namespace GenesisDexEngine
         }
     }
 
+    // Used to create a list of teh Basic Abilities for the specified pokemon from the Pokemon.XML
     class BasicAbiList
     {
         public List<Ability> createList(string decend)
@@ -373,6 +389,7 @@ namespace GenesisDexEngine
         }
     }
 
+    // Used to create a list of Adv Abilities for the specified pokemon from the Pokemon.XML
     class AdvAbiList
     {
         public List<Ability> createList(string decend)
@@ -390,6 +407,7 @@ namespace GenesisDexEngine
         }
     }
 
+    // Used to create a list of Hiigh Abilites for the specified pokemon from the Pokemon.XML
     class HighAbiList
     {
         public List<Ability> createList(string decend)
@@ -407,6 +425,7 @@ namespace GenesisDexEngine
         }
     }
 
+    // Used to create a list of the Stats for the specified pokemon from the Pokemon.XML
     class StatList
     {
         public List<Stat> createList(int hp, int atk, int def, int spatk, int spdef, int spd)
