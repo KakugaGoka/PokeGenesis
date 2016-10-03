@@ -79,7 +79,7 @@
             this.rtbInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtbInfo.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbInfo.ForeColor = System.Drawing.Color.Black;
-            this.rtbInfo.Location = new System.Drawing.Point(695, 133);
+            this.rtbInfo.Location = new System.Drawing.Point(695, 139);
             this.rtbInfo.Name = "rtbInfo";
             this.rtbInfo.ReadOnly = true;
             this.rtbInfo.Size = new System.Drawing.Size(493, 454);

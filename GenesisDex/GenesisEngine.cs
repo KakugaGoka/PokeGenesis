@@ -108,6 +108,12 @@ namespace GenesisDexEngine
         public string type { get; set; }
     }
 
+    class Stat
+    {
+        public int stat { get; set; }
+        public string id { get; set; }
+    }
+
     class OptionsList
     {
         public List<Options> createList()
@@ -217,10 +223,10 @@ namespace GenesisDexEngine
             string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\" + xml + ".xml");
             List<Items> idList = new List<Items>();
             XDocument doc = XDocument.Load(fileName);
-            var query = from node in doc.Descendants(decend)
+            var query = from node in doc.Descendants(decend).Descendants("id")
                         select new Items
                         {
-                            id = (string)node.Element("id")
+                            id = (string)node.Value
                         };
             idList = query.ToList();
             return idList;
@@ -399,12 +405,6 @@ namespace GenesisDexEngine
             idList = query.ToList();
             return idList;
         }
-    }
-
-    class Stat
-    {
-        public int stat { get; set; }
-        public string id { get; set; }
     }
 
     class StatList
