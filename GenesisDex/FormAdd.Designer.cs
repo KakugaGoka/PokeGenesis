@@ -350,7 +350,6 @@
             this.tbName.Size = new System.Drawing.Size(204, 20);
             this.tbName.TabIndex = 3;
             this.ttPokemon.SetToolTip(this.tbName, "The name of the Pokemon...");
-            this.tbName.Enter += new System.EventHandler(this.tbName_Enter);
             // 
             // tbType
             // 
@@ -360,7 +359,6 @@
             this.tbType.TabIndex = 10;
             this.ttPokemon.SetToolTip(this.tbType, "The type of the pokemon. (ex: \"Type\" or \"Type1 / Type2\")\r\n(Please enter like this" +
         " as types are used in generation)");
-            this.tbType.Enter += new System.EventHandler(this.tbType_Enter);
             // 
             // tbHeight
             // 
@@ -427,7 +425,6 @@
             this.tbSPD.Size = new System.Drawing.Size(75, 20);
             this.tbSPD.TabIndex = 9;
             this.ttPokemon.SetToolTip(this.tbSPD, "The speed stat. (ex: 5)");
-            this.tbSPD.Enter += new System.EventHandler(this.tbSPD_Enter);
             // 
             // tbSPDEF
             // 
@@ -436,7 +433,6 @@
             this.tbSPDEF.Size = new System.Drawing.Size(75, 20);
             this.tbSPDEF.TabIndex = 8;
             this.ttPokemon.SetToolTip(this.tbSPDEF, "The special defense stat. (ex: 5)");
-            this.tbSPDEF.Enter += new System.EventHandler(this.tbSPDEF_Enter);
             // 
             // tbSPATK
             // 
@@ -445,7 +441,6 @@
             this.tbSPATK.Size = new System.Drawing.Size(75, 20);
             this.tbSPATK.TabIndex = 7;
             this.ttPokemon.SetToolTip(this.tbSPATK, "The special attack stat. (ex: 5)");
-            this.tbSPATK.Enter += new System.EventHandler(this.tbSPATK_Enter);
             // 
             // tbDEF
             // 
@@ -454,7 +449,6 @@
             this.tbDEF.Size = new System.Drawing.Size(75, 20);
             this.tbDEF.TabIndex = 6;
             this.ttPokemon.SetToolTip(this.tbDEF, "The defense stat. (ex: 5)");
-            this.tbDEF.Enter += new System.EventHandler(this.tbDEF_Enter);
             // 
             // tbATK
             // 
@@ -463,7 +457,6 @@
             this.tbATK.Size = new System.Drawing.Size(75, 20);
             this.tbATK.TabIndex = 5;
             this.ttPokemon.SetToolTip(this.tbATK, "The attack stat. (ex: 5)");
-            this.tbATK.Enter += new System.EventHandler(this.tbATK_Enter);
             // 
             // tbHP
             // 
@@ -472,7 +465,6 @@
             this.tbHP.Size = new System.Drawing.Size(75, 20);
             this.tbHP.TabIndex = 4;
             this.ttPokemon.SetToolTip(this.tbHP, "The hit point stat. (ex: 5)");
-            this.tbHP.Enter += new System.EventHandler(this.tbHP_Enter);
             // 
             // label33
             // 
@@ -490,7 +482,6 @@
             this.tbAbi5.Size = new System.Drawing.Size(124, 20);
             this.tbAbi5.TabIndex = 20;
             this.ttPokemon.SetToolTip(this.tbAbi5, "Ability name");
-            this.tbAbi5.Enter += new System.EventHandler(this.tbAbi5_Enter);
             // 
             // tbAbi4
             // 
@@ -499,7 +490,6 @@
             this.tbAbi4.Size = new System.Drawing.Size(124, 20);
             this.tbAbi4.TabIndex = 18;
             this.ttPokemon.SetToolTip(this.tbAbi4, "Ability name");
-            this.tbAbi4.Enter += new System.EventHandler(this.tbAbi4_Enter);
             // 
             // tbAbi3
             // 
@@ -508,7 +498,6 @@
             this.tbAbi3.Size = new System.Drawing.Size(124, 20);
             this.tbAbi3.TabIndex = 16;
             this.ttPokemon.SetToolTip(this.tbAbi3, "Ability name");
-            this.tbAbi3.Enter += new System.EventHandler(this.tbAbi3_Enter);
             // 
             // tbAbi2
             // 
@@ -517,7 +506,6 @@
             this.tbAbi2.Size = new System.Drawing.Size(124, 20);
             this.tbAbi2.TabIndex = 14;
             this.ttPokemon.SetToolTip(this.tbAbi2, "Ability name");
-            this.tbAbi2.Enter += new System.EventHandler(this.tbAbi2_Enter);
             // 
             // cbMega
             // 
@@ -951,7 +939,6 @@
             this.tbNumber.TabIndex = 1;
             this.ttPokemon.SetToolTip(this.tbNumber, "The 3 digit Pokedex number. (This should also be the name of the image file relat" +
         "ed to the pokemon you want to show.)");
-            this.tbNumber.Enter += new System.EventHandler(this.tbNumber_Enter);
             // 
             // listMoves
             // 
@@ -970,7 +957,6 @@
             this.tbAbi1.Size = new System.Drawing.Size(124, 20);
             this.tbAbi1.TabIndex = 12;
             this.ttPokemon.SetToolTip(this.tbAbi1, "Ability name");
-            this.tbAbi1.Enter += new System.EventHandler(this.tbAbi1_Enter);
             // 
             // rtbEntry
             // 

@@ -797,8 +797,8 @@ namespace GenesisDex
         private void pbScan_Click(object sender, EventArgs e)
         {
             FormScan fs = new FormScan();
-            this.Hide();
             fs.Show();
+            this.Hide();
         }
 
         private void pbScan_MouseHover(object sender, EventArgs e)
