@@ -146,8 +146,8 @@ namespace GenesisDex
         {
             InitializeComponent();
             rtbGasp.Text = "";
-            btnPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonLeft.gif");
-            btnPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRight.gif");
+            btnPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonLeft.png");
+            btnPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRight.png");
             onItem2 = false;
             onLoot = false;
             isShiny = false;
@@ -208,8 +208,8 @@ namespace GenesisDex
             btnLoot.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanLoot.png");
             btnLootRefresh.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\LootView.png");
             btnPokeRefresh.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokeView.png");
-            btnPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonLeft.gif");
-            btnPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRight.gif");
+            btnPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonLeft.png");
+            btnPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRight.png");
             btnDealDamage.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\DealDamage.png");
             btnOptions.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Options.png");
         }

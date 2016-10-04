@@ -377,9 +377,10 @@
             // btnPokeRight
             // 
             this.btnPokeRight.BackColor = System.Drawing.Color.Transparent;
-            this.btnPokeRight.Location = new System.Drawing.Point(309, 279);
+            this.btnPokeRight.Image = ((System.Drawing.Image)(resources.GetObject("btnPokeRight.Image")));
+            this.btnPokeRight.Location = new System.Drawing.Point(304, 275);
             this.btnPokeRight.Name = "btnPokeRight";
-            this.btnPokeRight.Size = new System.Drawing.Size(37, 22);
+            this.btnPokeRight.Size = new System.Drawing.Size(68, 33);
             this.btnPokeRight.TabIndex = 71;
             this.btnPokeRight.TabStop = false;
             this.btnPokeRight.Click += new System.EventHandler(this.pbPokeRight_Click);
@@ -387,9 +388,10 @@
             // btnPokeLeft
             // 
             this.btnPokeLeft.BackColor = System.Drawing.Color.Transparent;
-            this.btnPokeLeft.Location = new System.Drawing.Point(122, 279);
+            this.btnPokeLeft.Image = ((System.Drawing.Image)(resources.GetObject("btnPokeLeft.Image")));
+            this.btnPokeLeft.Location = new System.Drawing.Point(95, 275);
             this.btnPokeLeft.Name = "btnPokeLeft";
-            this.btnPokeLeft.Size = new System.Drawing.Size(37, 22);
+            this.btnPokeLeft.Size = new System.Drawing.Size(68, 33);
             this.btnPokeLeft.TabIndex = 70;
             this.btnPokeLeft.TabStop = false;
             this.btnPokeLeft.Click += new System.EventHandler(this.pbPokeLeft_Click);

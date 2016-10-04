@@ -218,6 +218,12 @@
     <Content Include="Data\GUI\OptionsHover.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Data\GUI\PokemonLeft.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\GUI\PokemonRight.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Data\GUI\PokeViewHover.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -1316,12 +1322,6 @@
     <Content Include="PokeGenesis.ico" />
     <Content Include="Data\Images\Blank.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\GUI\PokemonLeft.gif">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\GUI\PokemonRight.gif">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\GUI\ScanPokemon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
