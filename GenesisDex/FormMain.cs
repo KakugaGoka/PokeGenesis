@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Timers;
+using System.Media;
+using NAudio.Vorbis;
+using NAudio.Wave;
 using GenesisDexEngine;
 
 
@@ -658,9 +661,9 @@ namespace GenesisDex
 
         private void pbPokeRight_Click(object sender, EventArgs e)
         {
-            if (viewMega == true)
+            if (viewMega)
             {
-                if (megax == false)
+                if (!megax)
                 {
                     imageDisplayed += 1;
                     if (imageDisplayed >= pokeImages.Count) { imageDisplayed = 0; }
@@ -668,7 +671,7 @@ namespace GenesisDex
                 }
                 else
                 {
-                    if (onMegaX == true)
+                    if (onMegaX)
                     {
                         imageDisplayed += 1;
                         if (imageDisplayed >= pokeImages.Count) { imageDisplayed = 0; }
@@ -692,9 +695,9 @@ namespace GenesisDex
         }
         private void pbPokeLeft_Click(object sender, EventArgs e)
         {
-            if (viewMega == true)
+            if (viewMega)
             {
-                if (megax == false)
+                if (!megax)
                 {
                     if (imageDisplayed == 0) { imageDisplayed = pokeImages.Count - 1; }
                     else { imageDisplayed -= 1; }
@@ -702,7 +705,7 @@ namespace GenesisDex
                 }
                 else
                 {
-                    if (onMegaX == true)
+                    if (onMegaX)
                     {
                         if (imageDisplayed == 0) { imageDisplayed = pokeImages.Count - 1; }
                         else { imageDisplayed -= 1; }
@@ -876,6 +879,79 @@ namespace GenesisDex
         {
             btnOptions.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Options.png");
 
+        }
+
+        private void btnCry_Click(object sender, EventArgs e)
+        {
+            if (viewMega)
+            {
+                if (!megax)
+                {
+                    var CryOGG = new VorbisWaveReader(AppDomain.CurrentDomain.BaseDirectory + "Data\\Audio\\Empty.ogg");
+                    try { CryOGG = new VorbisWaveReader(AppDomain.CurrentDomain.BaseDirectory + "Data\\Audio\\Cries\\" + pokeList[carryi].number + "-mega.ogg"); } catch { MessageBox.Show(pokeList[carryi].number + "-mega.ogg does not exist."); }
+                    var CryPlay = new WaveOut();
+                    CryPlay.Init(CryOGG);
+                    CryPlay.Volume = 0.3f;
+                    CryPlay.Play();
+                }
+                else
+                {
+                    if (onMegaX)
+                    {
+                        var CryOGG = new VorbisWaveReader(AppDomain.CurrentDomain.BaseDirectory + "Data\\Audio\\Empty.ogg");
+                        try { CryOGG = new VorbisWaveReader(AppDomain.CurrentDomain.BaseDirectory + "Data\\Audio\\Cries\\" + pokeList[carryi].number + "-mega-x.ogg"); } catch { MessageBox.Show(pokeList[carryi].number + "-mega-x.ogg does not exist."); }
+                        var CryPlay = new WaveOut();
+                        CryPlay.Init(CryOGG);
+                        CryPlay.Volume = 0.3f;
+                        CryPlay.Play();
+                    }
+                    else
+                    {
+                        var CryOGG = new VorbisWaveReader(AppDomain.CurrentDomain.BaseDirectory + "Data\\Audio\\Empty.ogg");
+                        try { CryOGG = new VorbisWaveReader(AppDomain.CurrentDomain.BaseDirectory + "Data\\Audio\\Cries\\" + pokeList[carryi].number + "-mega-y.ogg"); } catch { MessageBox.Show(pokeList[carryi].number + "-mega-y.ogg does not exist."); }
+                        var CryPlay = new WaveOut();
+                        CryPlay.Init(CryOGG);
+                        CryPlay.Volume = 0.3f;
+                        CryPlay.Play();
+                    }
+                }
+            }
+            else
+            {
+                var CryOGG = new VorbisWaveReader(AppDomain.CurrentDomain.BaseDirectory + "Data\\Audio\\Empty.ogg");
+                try {CryOGG = new VorbisWaveReader(AppDomain.CurrentDomain.BaseDirectory + "Data\\Audio\\Cries\\" + pokeList[carryi].number + ".ogg"); } catch { MessageBox.Show(pokeList[carryi].number + ".ogg does not exist."); }
+                var CryPlay = new WaveOut();
+                CryPlay.Init(CryOGG);
+                CryPlay.Volume = 0.3f;
+                CryPlay.Play();
+            }
+        }
+
+        private void btnCry_MouseHover(object sender, EventArgs e)
+        {
+            btnCry.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CryHover.png");
+        }
+        private void btnCry_MouseLeave(object sender, EventArgs e)
+        {
+            btnCry.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Cry.png");
+        }
+
+        private void pbPokeRight_MouseHover(object sender, EventArgs e)
+        {
+            pbPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRightHover.png");
+        }
+        private void pbPokeRight_MouseLeave(object sender, EventArgs e)
+        {
+            pbPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRight.png");
+        }
+
+        private void pbPokeLeft_MouseHover(object sender, EventArgs e)
+        {
+            pbPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonLeftHover.png");
+        }
+        private void pbPokeLeft_MouseLeave(object sender, EventArgs e)
+        {
+            pbPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonLeft.png");
         }
     }
 }
