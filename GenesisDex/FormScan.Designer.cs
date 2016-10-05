@@ -74,6 +74,7 @@
             this.btnOptions = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.btnCry = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnScanPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLevelMin)).BeginInit();
@@ -93,6 +94,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnInfoForward)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnOptions)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCry)).BeginInit();
             this.SuspendLayout();
             // 
             // pbPokemon
@@ -384,6 +386,8 @@
             this.btnPokeRight.TabIndex = 71;
             this.btnPokeRight.TabStop = false;
             this.btnPokeRight.Click += new System.EventHandler(this.pbPokeRight_Click);
+            this.btnPokeRight.MouseLeave += new System.EventHandler(this.btnPokeRight_MouseLeave);
+            this.btnPokeRight.MouseHover += new System.EventHandler(this.btnPokeRight_MouseHover);
             // 
             // btnPokeLeft
             // 
@@ -395,6 +399,8 @@
             this.btnPokeLeft.TabIndex = 70;
             this.btnPokeLeft.TabStop = false;
             this.btnPokeLeft.Click += new System.EventHandler(this.pbPokeLeft_Click);
+            this.btnPokeLeft.MouseLeave += new System.EventHandler(this.btnPokeLeft_MouseLeave);
+            this.btnPokeLeft.MouseHover += new System.EventHandler(this.btnPokeLeft_MouseHover);
             // 
             // btnLoot
             // 
@@ -703,6 +709,19 @@
             this.label10.TabIndex = 101;
             this.label10.Text = "Damage to Deal";
             // 
+            // btnCry
+            // 
+            this.btnCry.BackColor = System.Drawing.Color.Transparent;
+            this.btnCry.Image = ((System.Drawing.Image)(resources.GetObject("btnCry.Image")));
+            this.btnCry.Location = new System.Drawing.Point(378, 276);
+            this.btnCry.Name = "btnCry";
+            this.btnCry.Size = new System.Drawing.Size(33, 33);
+            this.btnCry.TabIndex = 102;
+            this.btnCry.TabStop = false;
+            this.btnCry.Click += new System.EventHandler(this.btnCry_Click);
+            this.btnCry.MouseLeave += new System.EventHandler(this.btnCry_MouseLeave);
+            this.btnCry.MouseHover += new System.EventHandler(this.btnCry_MouseHover);
+            // 
             // FormScan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -710,6 +729,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.btnCry);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnOptions);
@@ -782,6 +802,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnInfoForward)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnOptions)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCry)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -833,5 +854,6 @@
         private System.Windows.Forms.PictureBox btnOptions;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.PictureBox btnCry;
     }
 }
