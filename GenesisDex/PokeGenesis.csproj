@@ -2529,7 +2529,7 @@
     <None Include="Data\Audio\Cries\413-sandy.ogg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Data\Audio\Cries\479-freeze.ogg">
+    <None Include="Data\Audio\Cries\479-frost.ogg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Data\Audio\Cries\479-fan.ogg">
