@@ -49562,4 +49562,72 @@
       </Moves>
     </List222>
   </Pokemon>
+  <Pokemon Stage="1">
+    <number>385</number>
+    <id>Jirachi</id>
+    <type>Steel / Psychic</type>
+    <hp>10</hp>
+    <atk>10</atk>
+    <def>10</def>
+    <spatk>10</spatk>
+    <spdef>10</spdef>
+    <spd>10</spd>
+    <size>1’ 0” / 0.3m (Small)</size>
+    <weight>2.4 lbs. / 1.1kg (1)</weight>
+    <gender>No Gender</gender>
+    <egg>None</egg>
+    <hatch>75 Days</hatch>
+    <diet>Nullivore</diet>
+    <habitat>Cave, Forest, Mountain, Rainforest</habitat>
+    <legendary>true</legendary>
+    <entry>A legend states that Jirachi will make true any wish that is written on notes attached to its head when it awakens. If this Pokémon senses danger, it will fight without awakening.</entry>
+    <List385>
+      <Ability>
+        <BasicAbility>Serene Grace</BasicAbility>
+        <AdvancedAbility>Wishmaster</AdvancedAbility>
+        <AdvancedAbility>Deep Sleep</AdvancedAbility>
+        <HighAbility>Wonder Skin</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 2d6</skill>
+        <skill id="1">Acro 4d6+2</skill>
+        <skill id="2">Combat 4d6</skill>
+        <skill id="3">Stealth 4d6</skill>
+        <skill id="4">Percep 5d6</skill>
+        <skill id="5">Focus 4d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 6</cap>
+        <cap id="1">Swim 4</cap>
+        <cap id="2">Sky 7</cap>
+        <cap id="3">Jump 2/2</cap>
+        <cap id="4">Power 2</cap>
+        <cap id="5">Aura Reader</cap>
+        <cap id="6">Glow</cap>
+        <cap id="7">Telekinetic</cap>
+        <cap id="8">Telepath</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Jirachi</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Confusion - Psychic</move>
+        <move id="1">1 Wish - Normal</move>
+        <move id="2">5 Rest - Psychic</move>
+        <move id="3">10 Swift - Normal</move>
+        <move id="4">15 Helping Hand - Normal</move>
+        <move id="5">20 Psychic - Psychic</move>
+        <move id="6">25 Refresh - Normal</move>
+        <move id="7">30 Rest - Psychic</move>
+        <move id="8">35 Zen Headbutt - Psychic</move>
+        <move id="9">40 Double-Edge - Normal</move>
+        <move id="10">45 Gravity - Psychic</move>
+        <move id="11">50 Healing Wish - Psychic</move>
+        <move id="12">55 Future Sight - Psychic</move>
+        <move id="13">60 Cosmic Power - Psychic</move>
+        <move id="14">65 Last Resort - Normal</move>
+        <move id="15">70 Doom Desire - Steel</move>
+      </Moves>
+    </List385>
+  </Pokemon>
 </Namespace>

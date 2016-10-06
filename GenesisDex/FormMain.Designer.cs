@@ -62,7 +62,7 @@
             // 
             // lbPokemon
             // 
-            this.lbPokemon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.lbPokemon.BackColor = System.Drawing.Color.Beige;
             this.lbPokemon.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lbPokemon.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPokemon.ForeColor = System.Drawing.Color.Black;
@@ -77,7 +77,7 @@
             // rtbInfo
             // 
             this.rtbInfo.AcceptsTab = true;
-            this.rtbInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.rtbInfo.BackColor = System.Drawing.Color.Beige;
             this.rtbInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtbInfo.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbInfo.ForeColor = System.Drawing.Color.Black;
@@ -92,7 +92,7 @@
             // tbSearch
             // 
             this.tbSearch.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.tbSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.tbSearch.BackColor = System.Drawing.Color.Beige;
             this.tbSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbSearch.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbSearch.ForeColor = System.Drawing.Color.Black;
@@ -108,7 +108,7 @@
             // tbPageCount
             // 
             this.tbPageCount.AcceptsTab = true;
-            this.tbPageCount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.tbPageCount.BackColor = System.Drawing.Color.Beige;
             this.tbPageCount.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPageCount.ForeColor = System.Drawing.Color.Black;
             this.tbPageCount.Location = new System.Drawing.Point(921, 604);
@@ -249,7 +249,7 @@
             // rtbEntry
             // 
             this.rtbEntry.AcceptsTab = true;
-            this.rtbEntry.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.rtbEntry.BackColor = System.Drawing.Color.Beige;
             this.rtbEntry.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtbEntry.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbEntry.ForeColor = System.Drawing.Color.Black;

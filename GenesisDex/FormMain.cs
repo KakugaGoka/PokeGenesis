@@ -47,9 +47,10 @@ namespace GenesisDex
         bool pokeChange { get; set; }
         bool done = false;
         List<string> pokeDex = new List<string>();
-        private bool dragging = false;
-        private Point dragCursorPoint;
-        private Point dragFormPoint;
+        bool dragging = false;
+        Point dragCursorPoint;
+        Point dragFormPoint;
+        FormScan fs;
 
         public FormMain()
         {
@@ -799,9 +800,19 @@ namespace GenesisDex
 
         private void pbScan_Click(object sender, EventArgs e)
         {
-            FormScan fs = new FormScan();
-            fs.Show();
-            this.Hide();
+            if (fs == null)
+            {
+                fs = new FormScan();
+                fs.FormClosed += fs_FormClosed;
+            }
+            fs.Show(this);
+            Hide();
+        }
+
+        private void fs_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            fs = null;
+            Show();
         }
 
         private void pbScan_MouseHover(object sender, EventArgs e)

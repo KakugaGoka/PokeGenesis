@@ -122,7 +122,7 @@
             // 
             // nudLevelMin
             // 
-            this.nudLevelMin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.nudLevelMin.BackColor = System.Drawing.Color.Beige;
             this.nudLevelMin.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudLevelMin.ForeColor = System.Drawing.Color.Black;
             this.nudLevelMin.Location = new System.Drawing.Point(466, 516);
@@ -150,7 +150,7 @@
             // 
             this.cbHabitat.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cbHabitat.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbHabitat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cbHabitat.BackColor = System.Drawing.Color.Beige;
             this.cbHabitat.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbHabitat.ForeColor = System.Drawing.Color.Black;
             this.cbHabitat.FormattingEnabled = true;
@@ -185,7 +185,7 @@
             // 
             this.cbType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cbType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cbType.BackColor = System.Drawing.Color.Beige;
             this.cbType.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbType.ForeColor = System.Drawing.Color.Black;
             this.cbType.FormattingEnabled = true;
@@ -207,7 +207,7 @@
             // 
             // nudLevelMax
             // 
-            this.nudLevelMax.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.nudLevelMax.BackColor = System.Drawing.Color.Beige;
             this.nudLevelMax.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudLevelMax.ForeColor = System.Drawing.Color.Black;
             this.nudLevelMax.Location = new System.Drawing.Point(524, 516);
@@ -325,7 +325,7 @@
             // 
             this.cbStageAllowed.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cbStageAllowed.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbStageAllowed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cbStageAllowed.BackColor = System.Drawing.Color.Beige;
             this.cbStageAllowed.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbStageAllowed.ForeColor = System.Drawing.Color.Black;
             this.cbStageAllowed.FormattingEnabled = true;
@@ -347,7 +347,7 @@
             // 
             // nudAmount
             // 
-            this.nudAmount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.nudAmount.BackColor = System.Drawing.Color.Beige;
             this.nudAmount.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudAmount.ForeColor = System.Drawing.Color.Black;
             this.nudAmount.Location = new System.Drawing.Point(493, 546);
@@ -417,7 +417,7 @@
             // 
             // nudPlayerLevel
             // 
-            this.nudPlayerLevel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.nudPlayerLevel.BackColor = System.Drawing.Color.Beige;
             this.nudPlayerLevel.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudPlayerLevel.ForeColor = System.Drawing.Color.Black;
             this.nudPlayerLevel.Location = new System.Drawing.Point(972, 105);
@@ -479,7 +479,7 @@
             // 
             // pkDamage
             // 
-            this.pkDamage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pkDamage.BackColor = System.Drawing.Color.Beige;
             this.pkDamage.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pkDamage.ForeColor = System.Drawing.Color.Black;
             this.pkDamage.Location = new System.Drawing.Point(789, 103);
@@ -547,7 +547,7 @@
             // rtbGasp
             // 
             this.rtbGasp.AcceptsTab = true;
-            this.rtbGasp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.rtbGasp.BackColor = System.Drawing.Color.Beige;
             this.rtbGasp.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtbGasp.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbGasp.ForeColor = System.Drawing.Color.Black;
@@ -562,7 +562,7 @@
             // tbPageCount
             // 
             this.tbPageCount.AcceptsTab = true;
-            this.tbPageCount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.tbPageCount.BackColor = System.Drawing.Color.Beige;
             this.tbPageCount.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPageCount.ForeColor = System.Drawing.Color.Black;
             this.tbPageCount.Location = new System.Drawing.Point(921, 604);
@@ -576,7 +576,7 @@
             // tbSearch
             // 
             this.tbSearch.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.tbSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.tbSearch.BackColor = System.Drawing.Color.Beige;
             this.tbSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbSearch.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbSearch.ForeColor = System.Drawing.Color.Black;
@@ -602,7 +602,7 @@
             // rtbInfo
             // 
             this.rtbInfo.AcceptsTab = true;
-            this.rtbInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.rtbInfo.BackColor = System.Drawing.Color.Beige;
             this.rtbInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtbInfo.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbInfo.ForeColor = System.Drawing.Color.Black;
@@ -636,7 +636,7 @@
             // 
             // lbPokemon
             // 
-            this.lbPokemon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.lbPokemon.BackColor = System.Drawing.Color.Beige;
             this.lbPokemon.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lbPokemon.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPokemon.ForeColor = System.Drawing.Color.Black;
@@ -651,7 +651,7 @@
             // tbPokeCount
             // 
             this.tbPokeCount.AcceptsTab = true;
-            this.tbPokeCount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.tbPokeCount.BackColor = System.Drawing.Color.Beige;
             this.tbPokeCount.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPokeCount.ForeColor = System.Drawing.Color.Black;
             this.tbPokeCount.Location = new System.Drawing.Point(199, 276);
