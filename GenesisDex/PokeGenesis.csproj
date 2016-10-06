@@ -1741,10 +1741,10 @@
     <None Include="Data\Audio\Cries\491.ogg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Data\Audio\Cries\492-mega.ogg">
+    <None Include="Data\Audio\Cries\492-sky.ogg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Data\Audio\Cries\492.ogg">
+    <None Include="Data\Audio\Cries\492-land.ogg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Data\Audio\Cries\493.ogg">
@@ -2194,13 +2194,13 @@
     <None Include="Data\Audio\Cries\640.ogg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Data\Audio\Cries\641-mega.ogg">
+    <None Include="Data\Audio\Cries\641-therian.ogg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Data\Audio\Cries\641.ogg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Data\Audio\Cries\642-mega.ogg">
+    <None Include="Data\Audio\Cries\642-therian.ogg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Data\Audio\Cries\642.ogg">
@@ -2212,7 +2212,7 @@
     <None Include="Data\Audio\Cries\644.ogg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Data\Audio\Cries\645-mega.ogg">
+    <None Include="Data\Audio\Cries\645-therian.ogg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Data\Audio\Cries\645.ogg">
@@ -2410,7 +2410,7 @@
     <None Include="Data\Audio\Cries\709.ogg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Data\Audio\Cries\710-average.ogg">
+    <None Include="Data\Audio\Cries\710.ogg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Data\Audio\Cries\710-large.ogg">
@@ -2422,7 +2422,7 @@
     <None Include="Data\Audio\Cries\710-super.ogg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Data\Audio\Cries\711-average.ogg">
+    <None Include="Data\Audio\Cries\711.ogg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Data\Audio\Cries\711-large.ogg">
@@ -2502,6 +2502,72 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Data\Audio\Cries\680.ogg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Audio\Cries\681.ogg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Audio\Cries\376.ogg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Audio\Cries\386-speed.ogg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Audio\Cries\386-attack.ogg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Audio\Cries\386-defense.ogg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Audio\Cries\413-trash.ogg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Audio\Cries\413-plant.ogg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Audio\Cries\413-sandy.ogg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Audio\Cries\479-freeze.ogg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Audio\Cries\479-fan.ogg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Audio\Cries\479-mow.ogg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Audio\Cries\479-wash.ogg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Audio\Cries\479-heat.ogg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Audio\Cries\487-origin.ogg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Audio\Cries\521-m.ogg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Audio\Cries\521-f.ogg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Audio\Cries\550-red.ogg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Audio\Cries\550-blue.ogg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Audio\Cries\648-pirouette.ogg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Audio\Cries\678-f.ogg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Audio\Cries\678-m.ogg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <Content Include="Data\GUI\ChangeMode.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
