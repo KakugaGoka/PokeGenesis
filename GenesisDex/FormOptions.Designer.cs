@@ -57,12 +57,15 @@
             this.nudCashPerLevel = new System.Windows.Forms.NumericUpDown();
             this.btnDefault = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.nudCryVolume = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.nudItemTier)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudScanLimit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPokeLevel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPlayerLevel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCashPerLevel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCryVolume)).BeginInit();
             this.SuspendLayout();
             // 
             // nudItemTier
@@ -330,11 +333,44 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(61, 272);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(60, 13);
+            this.label10.TabIndex = 31;
+            this.label10.Text = "Cry Volume";
+            // 
+            // nudCryVolume
+            // 
+            this.nudCryVolume.Location = new System.Drawing.Point(127, 270);
+            this.nudCryVolume.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.nudCryVolume.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudCryVolume.Name = "nudCryVolume";
+            this.nudCryVolume.Size = new System.Drawing.Size(58, 20);
+            this.nudCryVolume.TabIndex = 30;
+            this.nudCryVolume.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // FormOptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(770, 362);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.nudCryVolume);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnDefault);
             this.Controls.Add(this.label12);
@@ -377,6 +413,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudPlayerLevel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCashPerLevel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCryVolume)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -412,5 +449,7 @@
         private System.Windows.Forms.NumericUpDown nudCashPerLevel;
         private System.Windows.Forms.Button btnDefault;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.NumericUpDown nudCryVolume;
     }
 }

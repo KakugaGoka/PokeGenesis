@@ -30,6 +30,8 @@ namespace GenesisDex
         List<Capability> capList = new List<Capability>();
         List<Moves> moveList = new List<Moves>();
         List<Ability> abiList = new List<Ability>();
+        OptionsList optionsXML = new OptionsList();
+        List<Options> optionsList = new List<Options>();
         List<Image> pokeImages = new List<Image>();
         List<Image> megaImages = new List<Image>();
         List<Image> megaxImages = new List<Image>();
@@ -69,6 +71,7 @@ namespace GenesisDex
             infoBack.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoLeft.png");
             infoForward.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoRight.png");
             btnOptions.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Options.png");
+            optionsList = optionsXML.createList();
             pokeList = pokeXML.createList("Pokemon");
             banList = banXML.createList();
             for (int p = 0; p < pokeList.Count; p++)
@@ -894,6 +897,17 @@ namespace GenesisDex
 
         private void btnCry_Click(object sender, EventArgs e)
         {
+            string s;
+            if (optionsList[0].CryVolume != 10)
+            {
+                s = "0." + optionsList[0].CryVolume.ToString();
+            }
+            else
+            {
+                s = "1.0";
+            }
+            float f;
+            Single.TryParse(s, out f);
             if (viewMega)
             {
                 if (!megax)
@@ -902,7 +916,7 @@ namespace GenesisDex
                     try { CryOGG = new VorbisWaveReader(AppDomain.CurrentDomain.BaseDirectory + "Data\\Audio\\Cries\\" + pokeList[carryi].number + "-mega.ogg"); } catch { MessageBox.Show(pokeList[carryi].number + "-mega.ogg does not exist."); }
                     var CryPlay = new WaveOut();
                     CryPlay.Init(CryOGG);
-                    CryPlay.Volume = 0.3f;
+                    CryPlay.Volume = f;
                     CryPlay.Play();
                 }
                 else
@@ -913,7 +927,7 @@ namespace GenesisDex
                         try { CryOGG = new VorbisWaveReader(AppDomain.CurrentDomain.BaseDirectory + "Data\\Audio\\Cries\\" + pokeList[carryi].number + "-mega-x.ogg"); } catch { MessageBox.Show(pokeList[carryi].number + "-mega-x.ogg does not exist."); }
                         var CryPlay = new WaveOut();
                         CryPlay.Init(CryOGG);
-                        CryPlay.Volume = 0.3f;
+                        CryPlay.Volume = f;
                         CryPlay.Play();
                     }
                     else
@@ -922,7 +936,7 @@ namespace GenesisDex
                         try { CryOGG = new VorbisWaveReader(AppDomain.CurrentDomain.BaseDirectory + "Data\\Audio\\Cries\\" + pokeList[carryi].number + "-mega-y.ogg"); } catch { MessageBox.Show(pokeList[carryi].number + "-mega-y.ogg does not exist."); }
                         var CryPlay = new WaveOut();
                         CryPlay.Init(CryOGG);
-                        CryPlay.Volume = 0.3f;
+                        CryPlay.Volume = f;
                         CryPlay.Play();
                     }
                 }
@@ -933,7 +947,7 @@ namespace GenesisDex
                 try {CryOGG = new VorbisWaveReader(AppDomain.CurrentDomain.BaseDirectory + "Data\\Audio\\Cries\\" + pokeList[carryi].number + ".ogg"); } catch { MessageBox.Show(pokeList[carryi].number + ".ogg does not exist."); }
                 var CryPlay = new WaveOut();
                 CryPlay.Init(CryOGG);
-                CryPlay.Volume = 0.3f;
+                CryPlay.Volume = f;
                 CryPlay.Play();
             }
         }

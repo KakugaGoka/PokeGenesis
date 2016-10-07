@@ -17,6 +17,7 @@ namespace GenesisDexEngine
         public string TwoItemGasp { get; set; }
         public string PokemonGasp { get; set; }
         public string ShinyGasp { get; set; }
+        public int CryVolume { get; set; }
         public int MaxPlayerLevel { get; set; }
         public int MaxPokemonLevel { get; set; }
         public int MaxScanAmount { get; set; }
@@ -132,6 +133,7 @@ namespace GenesisDexEngine
                             MaxScanAmount = (int)node.Element("MaxScanAmount"),
                             MaxItemTier = (int)node.Element("MaxItemTier"),
                             CashPerLevel = (int)node.Element("CashPerLevel"),
+                            CryVolume = (int)node.Element("CryVolume"),
                             OneItemGasp = (string)node.Element("OneItemGasp"),
                             TwoItemGasp = (string)node.Element("TwoItemGasp"),
                             PokemonGasp = (string)node.Element("PokemonGasp"),

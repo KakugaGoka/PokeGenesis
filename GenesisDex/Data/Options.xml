@@ -9,6 +9,7 @@
   <OneItemGasp>It has something!</OneItemGasp>
   <TwoItemGasp>It has a few things!</TwoItemGasp>
   <CashPerLevel>100</CashPerLevel>
+  <CryVolume>3</CryVolume>
   <BanList>
     <PokeBan>Placeholder</PokeBan>
   </BanList>

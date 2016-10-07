@@ -86,6 +86,7 @@ namespace GenesisDex
             var maxScan = docX.Element("Options").Element("MaxScanAmount");
             var maxItemTier = docX.Element("Options").Element("MaxItemTier");
             var cashPerLevel = docX.Element("Options").Element("CashPerLevel");
+            var cryVolume = docX.Element("Options").Element("CryVolume");
             var gasp1 = docX.Element("Options").Element("OneItemGasp");
             var gasp2 = docX.Element("Options").Element("TwoItemGasp");
             var gaspPoke = docX.Element("Options").Element("PokemonGasp");
@@ -95,6 +96,7 @@ namespace GenesisDex
             maxScan.Value = nudScanLimit.Value.ToString();
             maxItemTier.Value = nudItemTier.Value.ToString();
             cashPerLevel.Value = nudCashPerLevel.Value.ToString();
+            cryVolume.Value = nudCryVolume.Value.ToString();
             gasp1.Value = txtItemGasp1.Text;
             gasp2.Value = txtItemGasp2.Text;
             gaspPoke.Value = txtPokeGasp.Text;
@@ -133,6 +135,7 @@ namespace GenesisDex
                 nudScanLimit.Value = 100;
                 nudItemTier.Value = 4;
                 nudCashPerLevel.Value = 100;
+                nudCryVolume.Value = 3;
                 txtItemGasp1.Text = "It has something!";
                 txtItemGasp2.Text = "It has a few things!";
                 txtPokeGasp.Text = "It's a ~p";
@@ -221,6 +224,7 @@ namespace GenesisDex
             nudScanLimit.Value = optionsList[0].MaxScanAmount;
             nudItemTier.Value = optionsList[0].MaxItemTier;
             nudCashPerLevel.Value = optionsList[0].CashPerLevel;
+            nudCryVolume.Value = optionsList[0].CryVolume;
             txtItemGasp1.Text = optionsList[0].OneItemGasp;
             txtItemGasp2.Text = optionsList[0].TwoItemGasp;
             txtPokeGasp.Text = optionsList[0].PokemonGasp;

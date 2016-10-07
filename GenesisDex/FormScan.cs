@@ -20,8 +20,6 @@ namespace GenesisDex
         //===========================================================================================================
         //=== Variables =============================================================================================
         //===========================================================================================================
-        FormMain fm;
-        //===========================================================================================================
         Point dragCursorPoint = new Point();
         Point dragFormPoint = new Point();
         //===========================================================================================================
@@ -1716,11 +1714,22 @@ namespace GenesisDex
         {
             if (!hasScanned) return;
             if (isScanning) return;
+            string s;
+            if (optionsList[0].CryVolume != 10)
+            {
+                s = "0." + optionsList[0].CryVolume.ToString();
+            }
+            else
+            {
+                s = "1.0";
+            }
+            float f;
+            Single.TryParse(s, out f);
             var CryOGG = new VorbisWaveReader(AppDomain.CurrentDomain.BaseDirectory + "Data\\Audio\\Empty.ogg");
             try { CryOGG = new VorbisWaveReader(AppDomain.CurrentDomain.BaseDirectory + "Data\\Audio\\Cries\\" + AllPokemon[Current].number + ".ogg"); } catch { MessageBox.Show(AllPokemon[Current].number + ".ogg does not exist."); }
             var CryPlay = new WaveOut();
             CryPlay.Init(CryOGG);
-            CryPlay.Volume = 0.3f;
+            CryPlay.Volume = f;
             CryPlay.Play();
         }
 
