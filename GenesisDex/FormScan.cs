@@ -97,6 +97,7 @@ namespace GenesisDex
         List<string> Stat = new List<string>();
         List<string> Cap = new List<string>();
         List<string> Type = new List<string>();
+        List<string> updateList = new List<string>();
         //===========================================================================================================
         List<string[]> Info = new List<string[]>();
         //===========================================================================================================
@@ -169,6 +170,7 @@ namespace GenesisDex
             typeList = typeXML.createList("Types", "Type");
             habitatList = habitatXML.createList("Habitats", "Habitat");
             natureList = natureXML.createList("Natures", "Nature");
+            updateList.Add("updating...");
             habitats.Clear();
             types.Clear();
             for (var h = 0; h < habitatList.Count; h++)
@@ -1740,6 +1742,39 @@ namespace GenesisDex
         private void btnCry_MouseLeave(object sender, EventArgs e)
         {
             btnCry.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Cry.png");
+        }
+
+        //
+        //
+        //
+        private void tbSearch_TextChanged(object sender, EventArgs e)
+        {
+            if (tbSearch.Text != "")
+            {
+                List<string> searchDex = new List<string>();
+                searchDex.Clear();
+                foreach (string s in pokeDex)
+                {
+                    if (s.StartsWith(tbSearch.Text, StringComparison.OrdinalIgnoreCase) == true)
+                    {
+                        searchDex.Add(s);
+                    }
+                }
+                lbPokemon.DataSource = searchDex;
+            }
+            else
+            {
+                lbPokemon.DataSource = updateList;
+                lbPokemon.DataSource = pokeDex;
+            }
+        }
+
+        private void tbSearch_Click(object sender, EventArgs e)
+        {
+            if (tbSearch.Text != "")
+            {
+                tbSearch.Text = "";
+            }
         }
     }
 }

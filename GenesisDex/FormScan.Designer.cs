@@ -586,6 +586,8 @@
             this.tbSearch.TabIndex = 89;
             this.tbSearch.Tag = "";
             this.tbSearch.Text = "Search";
+            this.tbSearch.Click += new System.EventHandler(this.tbSearch_Click);
+            this.tbSearch.TextChanged += new System.EventHandler(this.tbSearch_TextChanged);
             // 
             // btnScan
             // 
