@@ -2622,10 +2622,10 @@
     <Content Include="Data\GUI\MegaYesOnHover.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <EmbeddedResource Include="Resources\lib\NAudio.Vorbis.dll" />
-    <EmbeddedResource Include="Resources\lib\net35\NAudio.dll" />
-    <EmbeddedResource Include="Resources\lib\NVorbis.dll" />
-    <EmbeddedResource Include="Resources\lib\windows8\NAudio.Win8.dll" />
+    <Resource Include="Resources\lib\NAudio.Vorbis.dll" />
+    <Resource Include="Resources\lib\net35\NAudio.dll" />
+    <Resource Include="Resources\lib\NVorbis.dll" />
+    <Resource Include="Resources\lib\windows8\NAudio.Win8.dll" />
     <None Include="Data\GUI\LootView.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
