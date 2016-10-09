@@ -2622,10 +2622,10 @@
     <Content Include="Data\GUI\MegaYesOnHover.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Compile Include="Resources\lib\NAudio.Vorbis.dll" />
-    <Compile Include="Resources\lib\net35\NAudio.dll" />
-    <Compile Include="Resources\lib\NVorbis.dll" />
-    <Compile Include="Resources\lib\windows8\NAudio.Win8.dll" />
+    <Content Include="Data\DLLs\NAudio.Vorbis.dll" />
+    <Content Include="Data\DLLs\net35\NAudio.dll" />
+    <Content Include="Data\DLLs\NVorbis.dll" />
+    <Content Include="Data\DLLs\windows8\NAudio.Win8.dll" />
     <None Include="Data\GUI\LootView.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -8860,7 +8860,9 @@
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
