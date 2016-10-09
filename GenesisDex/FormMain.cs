@@ -20,6 +20,7 @@ namespace GenesisDex
 {
     public partial class FormMain : Form
     {
+        PokemonList pokeXML = new PokemonList();
         List<Pokemon> pokeList = new List<Pokemon>();
         List<Mega> megaList = new List<Mega>();
         MegaList testMega = new MegaList();
@@ -63,32 +64,15 @@ namespace GenesisDex
             updateList.Add("updating...");
             pbY.Visible = false;
             pbX.Visible = false;
-            PokemonList pokeXML = new PokemonList();
-            this.BackgroundImage = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MainMenu.PNG");
             pbPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonLeft.png");
             pbPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRight.png");
             pbScan.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ChangeMode.png");
             infoBack.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoLeft.png");
             infoForward.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoRight.png");
             btnOptions.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Options.png");
-            optionsList = optionsXML.createList();
-            pokeList = pokeXML.createList("Pokemon");
-            banList = banXML.createList();
-            for (int p = 0; p < pokeList.Count; p++)
-            {
-                if (banList.Contains(pokeList[p].id))
-                {
-                    pokeList.RemoveAt(p);
-                    p--;
-                }
-            }
-            SortPokeList();
-            for (var i = 0; i < pokeList.Count; i++)
-            {
-                pokeDex.Add(pokeList[i].id);
-            }
-            lbPokemon.DataSource = pokeDex;
-            lbPokemon.SelectedIndex = 0;
+            btnCry.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Cry.png");
+            pbExit.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButton.png");
+            RefreshPokedex();
         }
 
         private void lbPokemon_SelectedIndexChanged(object sender, EventArgs e)
@@ -317,7 +301,7 @@ namespace GenesisDex
             {
                 if (viewMega == true)
                 {
-                    pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOnHover.PNG");
+                    pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOnHover.gif");
                 }
                 else
                 {
@@ -332,7 +316,7 @@ namespace GenesisDex
             {
                 if (viewMega == true)
                 {
-                    pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOn.PNG");
+                    pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOn.gif");
                 }
                 else
                 {
@@ -356,7 +340,7 @@ namespace GenesisDex
                 }
                 else
                 {
-                    pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOnHover.PNG");
+                    pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOnHover.gif");
                     viewMega = true;
                     pbPokemon.Image = megaImages[0];
                     SetImage();
@@ -377,7 +361,7 @@ namespace GenesisDex
                 }
                 else
                 {
-                    pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOnHover.PNG");
+                    pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOnHover.gif");
                     changeMega();
                     viewMega = true;
                     pbY.Visible = true;
@@ -750,8 +734,11 @@ namespace GenesisDex
 
         private void RefreshPokedex()
         {
-            PokemonList pokeXML = new PokemonList();
-            banXML = new BanList();
+            pokeList = new List<Pokemon>();
+            banList = new List<string>();
+            optionsList = new List<Options>();
+            optionsList = optionsXML.createList();
+            this.BackgroundImage = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MainMenu" + optionsList[0].PokedexSkin + ".PNG");
             pokeDex.Clear();
             pokeList.Clear();
             banList.Clear();
@@ -809,7 +796,13 @@ namespace GenesisDex
                 fs.FormClosed += fs_FormClosed;
             }
             fs.Show(this);
+            this.Activated += fm_FormActive;
             Hide();
+        }
+
+        private void fm_FormActive(object sender, EventArgs e)
+        {
+            RefreshPokedex();
         }
 
         private void fs_FormClosed(object sender, FormClosedEventArgs e)

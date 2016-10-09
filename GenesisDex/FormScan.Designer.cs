@@ -124,7 +124,7 @@
             // 
             this.nudLevelMin.BackColor = System.Drawing.Color.Beige;
             this.nudLevelMin.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudLevelMin.ForeColor = System.Drawing.Color.Black;
+            this.nudLevelMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.nudLevelMin.Location = new System.Drawing.Point(466, 516);
             this.nudLevelMin.Maximum = new decimal(new int[] {
             99,
@@ -152,7 +152,7 @@
             this.cbHabitat.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbHabitat.BackColor = System.Drawing.Color.Beige;
             this.cbHabitat.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbHabitat.ForeColor = System.Drawing.Color.Black;
+            this.cbHabitat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.cbHabitat.FormattingEnabled = true;
             this.cbHabitat.Location = new System.Drawing.Point(462, 360);
             this.cbHabitat.Name = "cbHabitat";
@@ -164,6 +164,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(425, 522);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 13);
@@ -175,7 +176,8 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Location = new System.Drawing.Point(413, 360);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(415, 367);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 49;
@@ -187,7 +189,7 @@
             this.cbType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbType.BackColor = System.Drawing.Color.Beige;
             this.cbType.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbType.ForeColor = System.Drawing.Color.Black;
+            this.cbType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.cbType.FormattingEnabled = true;
             this.cbType.Location = new System.Drawing.Point(462, 393);
             this.cbType.Name = "cbType";
@@ -199,7 +201,8 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Location = new System.Drawing.Point(423, 393);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(425, 400);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 13);
             this.label3.TabIndex = 51;
@@ -209,7 +212,7 @@
             // 
             this.nudLevelMax.BackColor = System.Drawing.Color.Beige;
             this.nudLevelMax.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudLevelMax.ForeColor = System.Drawing.Color.Black;
+            this.nudLevelMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.nudLevelMax.Location = new System.Drawing.Point(524, 516);
             this.nudLevelMax.Maximum = new decimal(new int[] {
             99,
@@ -236,6 +239,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(524, 499);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(27, 13);
@@ -247,6 +251,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(466, 499);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(24, 13);
@@ -261,6 +266,7 @@
             this.chkHasItem.FlatAppearance.BorderSize = 5;
             this.chkHasItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chkHasItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkHasItem.ForeColor = System.Drawing.Color.White;
             this.chkHasItem.Location = new System.Drawing.Point(423, 426);
             this.chkHasItem.Name = "chkHasItem";
             this.chkHasItem.Size = new System.Drawing.Size(122, 20);
@@ -277,6 +283,7 @@
             this.chkCanBeShiny.FlatAppearance.BorderSize = 5;
             this.chkCanBeShiny.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chkCanBeShiny.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkCanBeShiny.ForeColor = System.Drawing.Color.White;
             this.chkCanBeShiny.Location = new System.Drawing.Point(423, 451);
             this.chkCanBeShiny.Name = "chkCanBeShiny";
             this.chkCanBeShiny.Size = new System.Drawing.Size(123, 20);
@@ -313,6 +320,7 @@
             this.chkCanBeLegend.FlatAppearance.BorderSize = 5;
             this.chkCanBeLegend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chkCanBeLegend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkCanBeLegend.ForeColor = System.Drawing.Color.White;
             this.chkCanBeLegend.Location = new System.Drawing.Point(423, 476);
             this.chkCanBeLegend.Name = "chkCanBeLegend";
             this.chkCanBeLegend.Size = new System.Drawing.Size(153, 20);
@@ -327,7 +335,7 @@
             this.cbStageAllowed.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbStageAllowed.BackColor = System.Drawing.Color.Beige;
             this.cbStageAllowed.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbStageAllowed.ForeColor = System.Drawing.Color.Black;
+            this.cbStageAllowed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.cbStageAllowed.FormattingEnabled = true;
             this.cbStageAllowed.Location = new System.Drawing.Point(462, 327);
             this.cbStageAllowed.Name = "cbStageAllowed";
@@ -339,7 +347,8 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label7.Location = new System.Drawing.Point(419, 327);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(421, 334);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(35, 13);
             this.label7.TabIndex = 67;
@@ -349,7 +358,7 @@
             // 
             this.nudAmount.BackColor = System.Drawing.Color.Beige;
             this.nudAmount.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudAmount.ForeColor = System.Drawing.Color.Black;
+            this.nudAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.nudAmount.Location = new System.Drawing.Point(493, 546);
             this.nudAmount.Minimum = new decimal(new int[] {
             1,
@@ -370,6 +379,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(441, 552);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(43, 13);
@@ -419,7 +429,7 @@
             // 
             this.nudPlayerLevel.BackColor = System.Drawing.Color.Beige;
             this.nudPlayerLevel.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudPlayerLevel.ForeColor = System.Drawing.Color.Black;
+            this.nudPlayerLevel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.nudPlayerLevel.Location = new System.Drawing.Point(972, 105);
             this.nudPlayerLevel.Maximum = new decimal(new int[] {
             50,
@@ -481,7 +491,7 @@
             // 
             this.pkDamage.BackColor = System.Drawing.Color.Beige;
             this.pkDamage.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pkDamage.ForeColor = System.Drawing.Color.Black;
+            this.pkDamage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pkDamage.Location = new System.Drawing.Point(789, 103);
             this.pkDamage.Maximum = new decimal(new int[] {
             999,
@@ -538,6 +548,7 @@
             this.lblProgress.AutoSize = true;
             this.lblProgress.BackColor = System.Drawing.Color.Transparent;
             this.lblProgress.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblProgress.ForeColor = System.Drawing.Color.White;
             this.lblProgress.Location = new System.Drawing.Point(466, 637);
             this.lblProgress.Name = "lblProgress";
             this.lblProgress.Size = new System.Drawing.Size(78, 13);
@@ -550,7 +561,7 @@
             this.rtbGasp.BackColor = System.Drawing.Color.Beige;
             this.rtbGasp.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtbGasp.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbGasp.ForeColor = System.Drawing.Color.Black;
+            this.rtbGasp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.rtbGasp.Location = new System.Drawing.Point(420, 63);
             this.rtbGasp.Name = "rtbGasp";
             this.rtbGasp.ReadOnly = true;
@@ -564,7 +575,7 @@
             this.tbPageCount.AcceptsTab = true;
             this.tbPageCount.BackColor = System.Drawing.Color.Beige;
             this.tbPageCount.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPageCount.ForeColor = System.Drawing.Color.Black;
+            this.tbPageCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.tbPageCount.Location = new System.Drawing.Point(921, 604);
             this.tbPageCount.Name = "tbPageCount";
             this.tbPageCount.ReadOnly = true;
@@ -579,7 +590,7 @@
             this.tbSearch.BackColor = System.Drawing.Color.Beige;
             this.tbSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbSearch.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSearch.ForeColor = System.Drawing.Color.Black;
+            this.tbSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.tbSearch.Location = new System.Drawing.Point(67, 643);
             this.tbSearch.Name = "tbSearch";
             this.tbSearch.Size = new System.Drawing.Size(324, 17);
@@ -607,7 +618,7 @@
             this.rtbInfo.BackColor = System.Drawing.Color.Beige;
             this.rtbInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtbInfo.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbInfo.ForeColor = System.Drawing.Color.Black;
+            this.rtbInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.rtbInfo.Location = new System.Drawing.Point(695, 139);
             this.rtbInfo.Name = "rtbInfo";
             this.rtbInfo.ReadOnly = true;
@@ -619,7 +630,7 @@
             // btnInfoBack
             // 
             this.btnInfoBack.BackColor = System.Drawing.Color.Transparent;
-            this.btnInfoBack.Location = new System.Drawing.Point(883, 601);
+            this.btnInfoBack.Location = new System.Drawing.Point(881, 604);
             this.btnInfoBack.Name = "btnInfoBack";
             this.btnInfoBack.Size = new System.Drawing.Size(34, 34);
             this.btnInfoBack.TabIndex = 95;
@@ -629,7 +640,7 @@
             // btnInfoForward
             // 
             this.btnInfoForward.BackColor = System.Drawing.Color.Transparent;
-            this.btnInfoForward.Location = new System.Drawing.Point(960, 601);
+            this.btnInfoForward.Location = new System.Drawing.Point(960, 604);
             this.btnInfoForward.Name = "btnInfoForward";
             this.btnInfoForward.Size = new System.Drawing.Size(34, 34);
             this.btnInfoForward.TabIndex = 94;
@@ -641,7 +652,7 @@
             this.lbPokemon.BackColor = System.Drawing.Color.Beige;
             this.lbPokemon.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lbPokemon.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPokemon.ForeColor = System.Drawing.Color.Black;
+            this.lbPokemon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lbPokemon.FormattingEnabled = true;
             this.lbPokemon.ItemHeight = 19;
             this.lbPokemon.Location = new System.Drawing.Point(67, 330);
@@ -655,7 +666,7 @@
             this.tbPokeCount.AcceptsTab = true;
             this.tbPokeCount.BackColor = System.Drawing.Color.Beige;
             this.tbPokeCount.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPokeCount.ForeColor = System.Drawing.Color.Black;
+            this.tbPokeCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.tbPokeCount.Location = new System.Drawing.Point(199, 276);
             this.tbPokeCount.Name = "tbPokeCount";
             this.tbPokeCount.ReadOnly = true;
@@ -680,7 +691,7 @@
             // btnOptions
             // 
             this.btnOptions.BackColor = System.Drawing.Color.Transparent;
-            this.btnOptions.Location = new System.Drawing.Point(1106, 610);
+            this.btnOptions.Location = new System.Drawing.Point(1106, 613);
             this.btnOptions.Name = "btnOptions";
             this.btnOptions.Size = new System.Drawing.Size(82, 25);
             this.btnOptions.TabIndex = 99;
@@ -694,6 +705,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(901, 111);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 13);
@@ -705,6 +717,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(699, 111);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(84, 13);

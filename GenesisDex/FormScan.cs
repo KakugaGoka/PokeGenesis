@@ -204,7 +204,7 @@ namespace GenesisDex
                     ItemTiers.Add(i);
                 }
             }
-            btnExit.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Exit.png");
+            btnExit.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButton.png");
             btnInfoBack.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoLeft.png");
             btnInfoForward.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoRight.png");
             btnScan.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ChangeMode.png");
@@ -216,6 +216,7 @@ namespace GenesisDex
             btnPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRight.png");
             btnDealDamage.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\DealDamage.png");
             btnOptions.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Options.png");
+            btnCry.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Cry.png");
         }
 
         //===========================================================================================================
@@ -232,6 +233,7 @@ namespace GenesisDex
             pokeList = pokeXML.createList("Pokemon");
             optionsList = optionsXML.createList();
             banList = banXML.createList();
+            this.BackgroundImage = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MainMenu" + optionsList[0].PokedexSkin + ".PNG");
             for (int p = 0; p < pokeList.Count; p++)
             {
                 if (banList.Contains(pokeList[p].id))
@@ -1361,7 +1363,16 @@ namespace GenesisDex
         {
             if (isScanning) return;
             Owner.Show();
+            this.Activated += fs_FormActive;
             Hide();
+        }
+
+        //
+        //
+        //
+        private void fs_FormActive(object sender, EventArgs e)
+        {
+            ScanUpdate();
         }
 
         //===========================================================================================================
@@ -1668,11 +1679,11 @@ namespace GenesisDex
         //===========================================================================================================
         private void btnExit_MouseHover(object sender, EventArgs e)
         {
-            btnScanPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButtonHover.png");
+            btnExit.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButtonHover.png");
         }
         private void btnExit_MouseLeave(object sender, EventArgs e)
         {
-            btnScanPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButton.png");
+            btnExit.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButton.png");
         }
 
         //===========================================================================================================

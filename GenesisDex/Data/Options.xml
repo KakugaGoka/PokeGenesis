@@ -10,6 +10,7 @@
   <TwoItemGasp>It has a few things!</TwoItemGasp>
   <CashPerLevel>100</CashPerLevel>
   <CryVolume>3</CryVolume>
+  <PokedexSkin>1</PokedexSkin>
   <BanList>
     <PokeBan>Placeholder</PokeBan>
   </BanList>

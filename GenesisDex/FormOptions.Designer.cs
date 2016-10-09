@@ -59,6 +59,8 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.nudCryVolume = new System.Windows.Forms.NumericUpDown();
+            this.label13 = new System.Windows.Forms.Label();
+            this.nudDexSkin = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.nudItemTier)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudScanLimit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPokeLevel)).BeginInit();
@@ -66,6 +68,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCashPerLevel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCryVolume)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDexSkin)).BeginInit();
             this.SuspendLayout();
             // 
             // nudItemTier
@@ -364,11 +367,44 @@
             0,
             0});
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(48, 298);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(73, 13);
+            this.label13.TabIndex = 33;
+            this.label13.Text = "Pokedex Skin";
+            // 
+            // nudDexSkin
+            // 
+            this.nudDexSkin.Location = new System.Drawing.Point(127, 296);
+            this.nudDexSkin.Maximum = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            this.nudDexSkin.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudDexSkin.Name = "nudDexSkin";
+            this.nudDexSkin.Size = new System.Drawing.Size(58, 20);
+            this.nudDexSkin.TabIndex = 32;
+            this.nudDexSkin.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // FormOptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(770, 362);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.nudDexSkin);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.nudCryVolume);
             this.Controls.Add(this.btnAdd);
@@ -414,6 +450,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCashPerLevel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCryVolume)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDexSkin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -451,5 +488,7 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.NumericUpDown nudCryVolume;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.NumericUpDown nudDexSkin;
     }
 }
