@@ -49630,4 +49630,223 @@
       </Moves>
     </List385>
   </Pokemon>
+  <Pokemon Stage="1">
+    <number>719</number>
+    <id>Diancie</id>
+    <type>Rock / Fairy</type>
+    <hp>5</hp>
+    <atk>10</atk>
+    <def>15</def>
+    <spatk>10</spatk>
+    <spdef>15</spdef>
+    <spd>5</spd>
+    <size>2’ 04” / .7m (Small)</size>
+    <weight>19.3 lbs. / 8.8 kg (1)</weight>
+    <gender>No Gender</gender>
+    <egg>None</egg>
+    <hatch>75 Days</hatch>
+    <diet>Omnivore</diet>
+    <habitat>Cave</habitat>
+    <legendary>true</legendary>
+    <entry>A sudden transformation of Carbink, its pink, glimmering body is said to be the loveliest sight in the whole world.</entry>
+    <List719>
+      <Ability>
+        <BasicAbility>Clear Body</BasicAbility>
+        <AdvancedAbility>Solid Rock</AdvancedAbility>
+        <AdvancedAbility>Magic Guard</AdvancedAbility>
+        <AdvancedAbility>Illuminate</AdvancedAbility>
+        <HighAbility>Diamond Defense</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 4d6</skill>
+        <skill id="1">Acro 4d6</skill>
+        <skill id="2">Combat 3d6</skill>
+        <skill id="3">Stealth 1d6</skill>
+        <skill id="4">Percep 5d6</skill>
+        <skill id="5">Focus 5d6+2</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 4</cap>
+        <cap id="1">Swim 4</cap>
+        <cap id="2">Levitate 8</cap>
+        <cap id="3">Jump 2/2</cap>
+        <cap id="4">Power 2</cap>
+        <cap id="5">Glow</cap>
+        <cap id="6">Materializer</cap>
+        <cap id="7">Naturewalk (Cave)</cap>
+        <cap id="8">Telepath</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Diancie </evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Tackle - Normal </move>
+        <move id="1">1 Harden - Normal </move>
+        <move id="2">5 Rock Throw - Rock </move>
+        <move id="3">8 Sharpen - Normal </move>
+        <move id="4">12 Smack Down - Rock </move>
+        <move id="5">18 Reflect - Psychic </move>
+        <move id="6">21 Stealth Rock - Rock </move>
+        <move id="7">27 Guard Split - Psychic </move>
+        <move id="8">31 Ancient Power - Rock </move>
+        <move id="9">35 Flail - Normal </move>
+        <move id="10">40 Skill Swap - Psychic </move>
+        <move id="11">46 Trick Room - Psychic </move>
+        <move id="12">49 Stone Edge - Rock </move>
+        <move id="13">50 Moonblast - Fairy </move>
+        <move id="14">50 Diamond Storm - Rock </move>
+        <move id="15">60 Light Screen - Psychic </move>
+        <move id="16">70 Safeguard - Normal</move>
+      </Moves>
+    </List719>
+  </Pokemon>
+  <Mega719>
+    <id>Mega Diancie</id>
+    <type>Unchanged</type>
+    <atk>+6</atk>
+    <def>-4</def>
+    <spatk>+6</spatk>
+    <spdef>-4</spdef>
+    <spd>+6</spd>
+    <ability>Magic Bounce</ability>
+  </Mega719>
+  <Pokemon Stage="1">
+    <number>720-confined</number>
+    <id>Hoopa Confined</id>
+    <type>Psychic / Ghost</type>
+    <hp>8</hp>
+    <atk>11</atk>
+    <def>6</def>
+    <spatk>15</spatk>
+    <spdef>13</spdef>
+    <spd>7</spd>
+    <size>1’8” / .051m (Small)</size>
+    <weight>19.8 lbs. / 9 kg (1)</weight>
+    <gender>Genderless</gender>
+    <egg>None</egg>
+    <hatch>75 Days</hatch>
+    <diet>Nullivore</diet>
+    <habitat>???</habitat>
+    <legendary>true</legendary>
+    <entry>In its true form, it possesses a huge amount of power. Legends of its avarice tell how it once carried off an entire castle to gain the treasure hidden within.</entry>
+    <List720-confined>
+      <Ability>
+        <BasicAbility>Magician</BasicAbility>
+        <AdvancedAbility>Prankster</AdvancedAbility>
+        <AdvancedAbility>Run Away</AdvancedAbility>
+        <AdvancedAbility>Bully</AdvancedAbility>
+        <HighAbility>Handyman</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 3d6 Acro 4d6</skill>
+        <skill id="1">Combat 2d6</skill>
+        <skill id="2">Stealth 4d6+2</skill>
+        <skill id="3">Percep 6d6+2</skill>
+        <skill id="4">Focus 3d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 3</cap>
+        <cap id="1">Levitate 5</cap>
+        <cap id="2">Teleporter 10</cap>
+        <cap id="3">Jump 2/2</cap>
+        <cap id="4">Power 2</cap>
+        <cap id="5">Darkvision</cap>
+        <cap id="6">Confined</cap>
+        <cap id="7">Forme Change</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Hoopa</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Ally Switch - Psychic </move>
+        <move id="1">1 Destiny Bond - Ghost </move>
+        <move id="2">1 Trick - Psychic </move>
+        <move id="3">1 Confusion - Psychic </move>
+        <move id="4">6 Astonish - Ghost </move>
+        <move id="5">10 Magic Coat - Psychic </move>
+        <move id="6">15 Light Screen - Psychic </move>
+        <move id="7">19 Psybeam - Psychic </move>
+        <move id="8">25 Skill Swap - Psychic </move>
+        <move id="9">29 Guard Split - Psychic </move>
+        <move id="10">29 Power Split - Psychic </move>
+        <move id="11">35 Phantom Force - Ghost </move>
+        <move id="12">46 Zen Headbutt - Psychic </move>
+        <move id="13">50 Trick Room - Psychic </move>
+        <move id="14">50 Wonder Room - Psychic </move>
+        <move id="15">55 Shadow Ball - Ghost</move>
+        <move id="16">68 Nasty Plot - Dark</move>
+        <move id="17">75 Psychic - Psychic</move>
+        <move id="18">85 Hyperspace Hole - Psychic</move>
+      </Moves>
+    </List720-confined>
+  </Pokemon>
+  <Pokemon Stage="1">
+    <number>720-unbound</number>
+    <id>Hoopa Unbound</id>
+    <type>Psychic / Dark</type>
+    <hp>8</hp>
+    <atk>16</atk>
+    <def>6</def>
+    <spatk>17</spatk>
+    <spdef>13</spdef>
+    <spd>8</spd>
+    <size>21’ 05” / 5m (Gigantic)</size>
+    <weight>1080.3 lbs. / 490 kg (6)</weight>
+    <gender>Genderless</gender>
+    <egg>None</egg>
+    <hatch>75 Days</hatch>
+    <diet>Nullivore</diet>
+    <habitat>???</habitat>
+    <legendary>true</legendary>
+    <entry>In its true form, it possesses a huge amount of power. Legends of its avarice tell how it once carried off an entire castle to gain the treasure hidden within.</entry>
+    <List720-unbound>
+      <Ability>
+        <BasicAbility>Magician</BasicAbility>
+        <AdvancedAbility>Enduring Rage</AdvancedAbility>
+        <AdvancedAbility>Cruelty</AdvancedAbility>
+        <AdvancedAbility>Bully</AdvancedAbility>
+        <HighAbility>Weird Power</HighAbility>
+      </Ability>
+      <Skills>
+        <skill id="0">Athl 5d6+2</skill>
+        <skill id="1">Acro 4d6</skill>
+        <skill id="2">Combat 5d6+2</skill>
+        <skill id="3">Stealth 1d6</skill>
+        <skill id="4">Percep 2d6</skill>
+        <skill id="5">Focus 2d6</skill>
+      </Skills>
+      <Capability>
+        <cap id="0">Overland 10</cap>
+        <cap id="1">Swim 5</cap>
+        <cap id="2">Teleporter 8</cap>
+        <cap id="3">Jump 4/4</cap>
+        <cap id="4">Power 9</cap>
+        <cap id="5">Darkvision</cap>
+      </Capability>
+      <Evolution>
+        <evo id="0">1 - Hoopa</evo>
+      </Evolution>
+      <Moves>
+        <move id="0">1 Ally Switch - Psychic </move>
+        <move id="1">1 Destiny Bond - Ghost </move>
+        <move id="2">1 Trick - Psychic </move>
+        <move id="3">1 Confusion - Psychic </move>
+        <move id="4">6 Astonish - Ghost </move>
+        <move id="5">10 Magic Coat - Psychic </move>
+        <move id="6">15 Light Screen - Psychic </move>
+        <move id="7">19 Psybeam - Psychic </move>
+        <move id="8">25 Skill Swap - Psychic </move>
+        <move id="9">29 Guard Split - Psychic </move>
+        <move id="10">29 Power Split - Psychic </move>
+        <move id="11">35 Knock Off - Dark </move>
+        <move id="12">46 Zen Headbutt - Psychic </move>
+        <move id="13">50 Trick Room - Psychic </move>
+        <move id="14">50 Wonder Room - Psychic </move>
+        <move id="15">55 Dark Pulse - Dark</move>
+        <move id="16">68 Nasty Plot - Dark</move>
+        <move id="17">75 Psychic - Psychic</move>
+        <move id="18">85 Hyperspace Fury - Dark</move>
+      </Moves>
+    </List720-unbound>
+  </Pokemon>
 </Namespace>

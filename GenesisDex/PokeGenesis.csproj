@@ -6369,10 +6369,10 @@
     <Content Include="Data\Images\Pokemon\719.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Pokemon\720-mega.gif">
+    <Content Include="Data\Images\Pokemon\720-unbound.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Pokemon\720.gif">
+    <Content Include="Data\Images\Pokemon\720-confined.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Images\Pokemon\721.gif">
@@ -8853,10 +8853,10 @@
     <Content Include="Data\Images\Shiny\719.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Shiny\720-mega.gif">
+    <Content Include="Data\Images\Shiny\720-unbound.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Shiny\720.gif">
+    <Content Include="Data\Images\Shiny\720-confined.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Images\Shiny\721.gif">
