@@ -2581,6 +2581,9 @@
     <Content Include="Data\GUI\ChangeModeHover.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Data\GUI\Checked.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Data\GUI\Cry.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -2688,6 +2691,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\GUI\ScanLootHover.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\GUI\Unchecked.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Images\Items\Aguav Berry.png">

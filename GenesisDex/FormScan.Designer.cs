@@ -261,36 +261,54 @@
             // 
             // chkHasItem
             // 
+            this.chkHasItem.Appearance = System.Windows.Forms.Appearance.Button;
             this.chkHasItem.AutoSize = true;
             this.chkHasItem.BackColor = System.Drawing.Color.Transparent;
-            this.chkHasItem.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.chkHasItem.FlatAppearance.BorderSize = 5;
+            this.chkHasItem.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.chkHasItem.FlatAppearance.BorderSize = 0;
+            this.chkHasItem.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.chkHasItem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.chkHasItem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.chkHasItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chkHasItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkHasItem.ForeColor = System.Drawing.Color.White;
-            this.chkHasItem.Location = new System.Drawing.Point(423, 426);
+            this.chkHasItem.Image = ((System.Drawing.Image)(resources.GetObject("chkHasItem.Image")));
+            this.chkHasItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.chkHasItem.Location = new System.Drawing.Point(432, 422);
             this.chkHasItem.Name = "chkHasItem";
-            this.chkHasItem.Size = new System.Drawing.Size(122, 20);
+            this.chkHasItem.Size = new System.Drawing.Size(131, 26);
             this.chkHasItem.TabIndex = 6;
             this.chkHasItem.Text = "Generate Items?";
+            this.chkHasItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.chkHasItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.chkHasItem.UseVisualStyleBackColor = false;
+            this.chkHasItem.CheckedChanged += new System.EventHandler(this.chkHasItem_CheckedChanged);
             this.chkHasItem.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pkHasItem_KeyDown);
             // 
             // chkCanBeShiny
             // 
+            this.chkCanBeShiny.Appearance = System.Windows.Forms.Appearance.Button;
             this.chkCanBeShiny.AutoSize = true;
             this.chkCanBeShiny.BackColor = System.Drawing.Color.Transparent;
             this.chkCanBeShiny.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.chkCanBeShiny.FlatAppearance.BorderSize = 5;
+            this.chkCanBeShiny.FlatAppearance.BorderSize = 0;
+            this.chkCanBeShiny.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.chkCanBeShiny.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.chkCanBeShiny.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.chkCanBeShiny.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chkCanBeShiny.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkCanBeShiny.ForeColor = System.Drawing.Color.White;
-            this.chkCanBeShiny.Location = new System.Drawing.Point(423, 451);
+            this.chkCanBeShiny.Image = ((System.Drawing.Image)(resources.GetObject("chkCanBeShiny.Image")));
+            this.chkCanBeShiny.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.chkCanBeShiny.Location = new System.Drawing.Point(432, 447);
             this.chkCanBeShiny.Name = "chkCanBeShiny";
-            this.chkCanBeShiny.Size = new System.Drawing.Size(123, 20);
+            this.chkCanBeShiny.Size = new System.Drawing.Size(132, 26);
             this.chkCanBeShiny.TabIndex = 7;
             this.chkCanBeShiny.Text = "Generate Shiny?";
+            this.chkCanBeShiny.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.chkCanBeShiny.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.chkCanBeShiny.UseVisualStyleBackColor = false;
+            this.chkCanBeShiny.CheckedChanged += new System.EventHandler(this.chkCanBeShiny_CheckedChanged);
             this.chkCanBeShiny.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pkCanBeShiny_KeyDown);
             // 
             // pkItem
@@ -315,19 +333,28 @@
             // 
             // chkCanBeLegend
             // 
+            this.chkCanBeLegend.Appearance = System.Windows.Forms.Appearance.Button;
             this.chkCanBeLegend.AutoSize = true;
             this.chkCanBeLegend.BackColor = System.Drawing.Color.Transparent;
             this.chkCanBeLegend.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.chkCanBeLegend.FlatAppearance.BorderSize = 5;
+            this.chkCanBeLegend.FlatAppearance.BorderSize = 0;
+            this.chkCanBeLegend.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.chkCanBeLegend.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.chkCanBeLegend.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.chkCanBeLegend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chkCanBeLegend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkCanBeLegend.ForeColor = System.Drawing.Color.White;
-            this.chkCanBeLegend.Location = new System.Drawing.Point(423, 476);
+            this.chkCanBeLegend.Image = ((System.Drawing.Image)(resources.GetObject("chkCanBeLegend.Image")));
+            this.chkCanBeLegend.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.chkCanBeLegend.Location = new System.Drawing.Point(432, 472);
             this.chkCanBeLegend.Name = "chkCanBeLegend";
-            this.chkCanBeLegend.Size = new System.Drawing.Size(153, 20);
+            this.chkCanBeLegend.Size = new System.Drawing.Size(162, 26);
             this.chkCanBeLegend.TabIndex = 8;
             this.chkCanBeLegend.Text = "Include Legendaries?";
+            this.chkCanBeLegend.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.chkCanBeLegend.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.chkCanBeLegend.UseVisualStyleBackColor = false;
+            this.chkCanBeLegend.CheckedChanged += new System.EventHandler(this.chkCanBeLegend_CheckedChanged);
             this.chkCanBeLegend.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pkCanBeLegend_KeyDown);
             // 
             // cbStageAllowed
@@ -550,7 +577,7 @@
             this.lblProgress.BackColor = System.Drawing.Color.Transparent;
             this.lblProgress.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblProgress.ForeColor = System.Drawing.Color.White;
-            this.lblProgress.Location = new System.Drawing.Point(466, 637);
+            this.lblProgress.Location = new System.Drawing.Point(466, 642);
             this.lblProgress.Name = "lblProgress";
             this.lblProgress.Size = new System.Drawing.Size(78, 13);
             this.lblProgress.TabIndex = 87;
@@ -740,19 +767,28 @@
             // 
             // chkAppend
             // 
+            this.chkAppend.Appearance = System.Windows.Forms.Appearance.Button;
             this.chkAppend.AutoSize = true;
             this.chkAppend.BackColor = System.Drawing.Color.Transparent;
-            this.chkAppend.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.chkAppend.FlatAppearance.BorderSize = 5;
+            this.chkAppend.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.chkAppend.FlatAppearance.BorderSize = 0;
+            this.chkAppend.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.chkAppend.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.chkAppend.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.chkAppend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chkAppend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkAppend.ForeColor = System.Drawing.Color.White;
-            this.chkAppend.Location = new System.Drawing.Point(423, 615);
+            this.chkAppend.Image = ((System.Drawing.Image)(resources.GetObject("chkAppend.Image")));
+            this.chkAppend.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.chkAppend.Location = new System.Drawing.Point(432, 611);
             this.chkAppend.Name = "chkAppend";
-            this.chkAppend.Size = new System.Drawing.Size(109, 20);
+            this.chkAppend.Size = new System.Drawing.Size(118, 26);
             this.chkAppend.TabIndex = 103;
             this.chkAppend.Text = "Append to List";
+            this.chkAppend.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.chkAppend.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.chkAppend.UseVisualStyleBackColor = false;
+            this.chkAppend.CheckedChanged += new System.EventHandler(this.chkAppend_CheckedChanged);
             // 
             // FormScan
             // 

@@ -118,6 +118,27 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="chkHasItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfgCg0GOiR/bTdEAAAAM0lEQVQ4T2PQ0zf+Ty4G
+        a05IiiUZo2iGmUYMxqqZgYGBIB7VPMI1E4sxNJOK4ZrJw8b/AT5LS/8o3kVeAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="chkCanBeShiny.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfgCg0GOiR/bTdEAAAAM0lEQVQ4T2PQ0zf+Ty4G
+        a05IiiUZo2iGmUYMxqqZgYGBIB7VPMI1E4sxNJOK4ZrJw8b/AT5LS/8o3kVeAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="chkCanBeLegend.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfgCg0GOiR/bTdEAAAAM0lEQVQ4T2PQ0zf+Ty4G
+        a05IiiUZo2iGmUYMxqqZgYGBIB7VPMI1E4sxNJOK4ZrJw8b/AT5LS/8o3kVeAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="btnPokeRight.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEQAAAAhCAYAAABgKg1bAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -157,6 +178,13 @@
         Blkoob2sVno5+sxwdiVWa/YUL3clvOFKbUHG3N5tnkp4S7M179pbkoiyDM7i3Cahcxmcx7lNwqsjOItz
         SaJa8669VGKmtiBjbu82dyUYrtTsKd5MV4IDlVoZyUEowcFKrSD3dtjDmUoA7xFbj4Adbw+9IQmgeTbf
         A3vKsAQYmalSlgC7RaYkdvNKkGdK3MWzJO7laB9cHCwJb4RDdgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="chkAppend.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAAd0SU1FB+AKDQY6JH9tN0QAAAAzSURBVDhPY9DTN/5PLgZrTkiKJRmjaIaZRgzG
+        qpmBgYEgHtU8wjUTizE0k4rhmsnDxv8BPktL/yjeRV4AAAAASUVORK5CYII=
 </value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

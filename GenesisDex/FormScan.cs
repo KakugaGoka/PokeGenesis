@@ -218,6 +218,10 @@ namespace GenesisDex
             btnDealDamage.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\DealDamage.png");
             btnOptions.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Options.png");
             btnCry.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Cry.png");
+            chkAppend.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png"));
+            chkHasItem.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png"));
+            chkCanBeShiny.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png"));
+            chkCanBeLegend.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png"));
         }
 
         //===========================================================================================================
@@ -1794,6 +1798,66 @@ namespace GenesisDex
             if (tbSearch.Text != "")
             {
                 tbSearch.Text = "";
+            }
+        }
+
+        //
+        //
+        //
+        private void chkAppend_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkAppend.Checked)
+            {
+                chkAppend.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png"); 
+            }
+            else
+            {
+                chkAppend.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
+            }
+        }
+
+        //
+        //
+        //
+        private void chkHasItem_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkHasItem.Checked)
+            {
+                chkHasItem.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
+            }
+            else
+            {
+                chkHasItem.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
+            }
+        }
+
+        //
+        //
+        //
+        private void chkCanBeShiny_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkCanBeShiny.Checked)
+            {
+                chkCanBeShiny.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
+            }
+            else
+            {
+                chkCanBeShiny.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
+            }
+        }
+
+        //
+        //
+        //
+        private void chkCanBeLegend_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkCanBeLegend.Checked)
+            {
+                chkCanBeLegend.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
+            }
+            else
+            {
+                chkCanBeLegend.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
             }
         }
     }
