@@ -131,6 +131,7 @@ namespace GenesisDex
         bool isScanning { get; set; }
         bool queueFinished { get; set; }
         bool viewingLoot { get; set; }
+        bool appendList { get; set; }
         //===========================================================================================================
         string typeShiny { get; set; }
         string newShiny { get; set; }
@@ -266,25 +267,32 @@ namespace GenesisDex
             if (types.Contains(PokeType) == false) { MessageBox.Show("That is not a Type."); return; }
             if (habitats.Contains(PokeHabitat) == false) { MessageBox.Show("That is not a Habitat."); return; }
             if (stages.Contains(PokeStage) == false) { MessageBox.Show("That is not a Evolutionary Stage."); return; }
-            AllSkills.Clear();
-            AllAbilities.Clear();
-            AllMoves.Clear();
-            AllImages.Clear();
-            AllPokemon.Clear();
-            AllNatures.Clear();
-            AllItems1.Clear();
-            AllItems2.Clear();
-            AllDesc1.Clear();
-            AllDesc2.Clear();
-            AllStat.Clear();
-            AllLevels.Clear();
-            AllCap.Clear();
-            Info.Clear();
-            Gender.Clear();
-            Type.Clear();
-            MaxHealth.Clear();
-            CurrentHealth.Clear();
-            Current = 0;
+            if (appendList)
+            {
+                Current = AllPokemon.Count;
+            }
+            else
+            {
+                AllSkills.Clear();
+                AllAbilities.Clear();
+                AllMoves.Clear();
+                AllImages.Clear();
+                AllPokemon.Clear();
+                AllNatures.Clear();
+                AllItems1.Clear();
+                AllItems2.Clear();
+                AllDesc1.Clear();
+                AllDesc2.Clear();
+                AllStat.Clear();
+                AllLevels.Clear();
+                AllCap.Clear();
+                Info.Clear();
+                Gender.Clear();
+                Type.Clear();
+                MaxHealth.Clear();
+                CurrentHealth.Clear();
+                Current = 0;
+            }
             Progress = 0;
             CreateScanList();
             queueFinished = true;
@@ -357,7 +365,7 @@ namespace GenesisDex
             pbPokemon.Image = AllImages[Current];
             SetPoke();
             UpdatePage();
-            tbPokeCount.Text = (Current + 1).ToString() + "/" + Amount.ToString();
+            tbPokeCount.Text = (Current + 1).ToString() + "/" + AllPokemon.Count.ToString();
             SetGasp();
             isScanning = false;
         }
@@ -1405,6 +1413,7 @@ namespace GenesisDex
             canItems = chkHasItem.Checked;
             canLegendary = chkCanBeLegend.Checked;
             canShiny = chkCanBeShiny.Checked;
+            appendList = chkAppend.Checked;
             lblProgress.Text = "Queuing Scan";
             PokeGenerator.RunWorkerAsync();
         }
@@ -1482,13 +1491,13 @@ namespace GenesisDex
             if (AllPokemon.Count < 2) return;
             if (Current <= 0)
             {
-                Current = Amount - 1;
+                Current = AllPokemon.Count - 1;
             }
             else
             {
                 Current--;
             }
-            tbPokeCount.Text = (Current + 1).ToString() + "/" + Amount.ToString();
+            tbPokeCount.Text = (Current + 1).ToString() + "/" + AllPokemon.Count.ToString();
             pbPokemon.Image = AllImages[Current];
             SetPoke();
             SetGasp();
@@ -1498,7 +1507,7 @@ namespace GenesisDex
         {
             if (isScanning) return;
             if (AllPokemon.Count < 2) return;
-            if (Current >= Amount - 1)
+            if (Current >= AllPokemon.Count - 1)
             {
                 Current = 0;
             }
@@ -1506,7 +1515,7 @@ namespace GenesisDex
             {
                 Current++;
             }
-            tbPokeCount.Text = (Current + 1).ToString() + "/" + Amount.ToString();
+            tbPokeCount.Text = (Current + 1).ToString() + "/" + AllPokemon.Count.ToString();
             pbPokemon.Image = AllImages[Current];
             SetPoke();
             SetGasp();

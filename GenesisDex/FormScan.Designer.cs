@@ -75,6 +75,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.btnCry = new System.Windows.Forms.PictureBox();
+            this.chkAppend = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnScanPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLevelMin)).BeginInit();
@@ -737,6 +738,22 @@
             this.btnCry.MouseLeave += new System.EventHandler(this.btnCry_MouseLeave);
             this.btnCry.MouseHover += new System.EventHandler(this.btnCry_MouseHover);
             // 
+            // chkAppend
+            // 
+            this.chkAppend.AutoSize = true;
+            this.chkAppend.BackColor = System.Drawing.Color.Transparent;
+            this.chkAppend.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.chkAppend.FlatAppearance.BorderSize = 5;
+            this.chkAppend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkAppend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkAppend.ForeColor = System.Drawing.Color.White;
+            this.chkAppend.Location = new System.Drawing.Point(423, 615);
+            this.chkAppend.Name = "chkAppend";
+            this.chkAppend.Size = new System.Drawing.Size(109, 20);
+            this.chkAppend.TabIndex = 103;
+            this.chkAppend.Text = "Append to List";
+            this.chkAppend.UseVisualStyleBackColor = false;
+            // 
             // FormScan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -744,6 +761,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.chkAppend);
             this.Controls.Add(this.btnCry);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label6);
@@ -870,5 +888,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox btnCry;
+        private System.Windows.Forms.CheckBox chkAppend;
     }
 }
