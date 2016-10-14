@@ -9857,9 +9857,9 @@
       <Ability>
         <BasicAbility>Cloud Nine</BasicAbility>
         <BasicAbility>Damp</BasicAbility>
-        <BasicAbility>Wave Rider</BasicAbility>
-        <BasicAbility>Swift Swim</BasicAbility>
-        <BasicAbility>Vanguard</BasicAbility>
+        <AdvancedAbility>Wave Rider</AdvancedAbility>
+        <AdvancedAbility>Swift Swim</AdvancedAbility>
+        <HighAbility>Vanguard</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 4d6</skill>
@@ -9988,9 +9988,9 @@
       <Ability>
         <BasicAbility>Vital Spirit</BasicAbility>
         <BasicAbility>Defiant</BasicAbility>
-        <BasicAbility>Anger Point</BasicAbility>
-        <BasicAbility>Prime Fury</BasicAbility>
-        <BasicAbility>Enduring Rage</BasicAbility>
+        <AdvancedAbility>Anger Point</AdvancedAbility>
+        <AdvancedAbility>Prime Fury</AdvancedAbility>
+        <HighAbility>Enduring Rage</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 5d6+2</skill>
@@ -10191,10 +10191,10 @@
       <Ability>
         <BasicAbility>Damp</BasicAbility>
         <BasicAbility>Water Absorb</BasicAbility>
-        <BasicAbility>Swift Swim</BasicAbility>
-        <BasicAbility>Gulp</BasicAbility>
-        <BasicAbility>Hypnotic</BasicAbility>
-      </Ability>
+        <AdvancedAbility>Swift Swim</AdvancedAbility>
+        <AdvancedAbility>Gulp</AdvancedAbility>
+        <HighAbility>Hypnotic</HighAbility>
+    </Ability>
       <Skills>
         <skill id="0">Athl 2d6+1</skill>
         <skill id="1">Acro 2d6</skill>

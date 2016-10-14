@@ -120,23 +120,23 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="chkHasItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfgCg0GOiR/bTdEAAAAM0lEQVQ4T2PQ0zf+Ty4G
-        a05IiiUZo2iGmUYMxqqZgYGBIB7VPMI1E4sxNJOK4ZrJw8b/AT5LS/8o3kVeAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAAd0SU1FB+AKDQY6JH9tN0QAAAAzSURBVDhPY9DTN/5PLgZrTkiKJRmjaIaZRgzG
+        qpmBgYEgHtU8wjUTizE0k4rhmsnDxv8BPktL/yjeRV4AAAAASUVORK5CYII=
 </value>
   </data>
   <data name="chkCanBeShiny.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfgCg0GOiR/bTdEAAAAM0lEQVQ4T2PQ0zf+Ty4G
-        a05IiiUZo2iGmUYMxqqZgYGBIB7VPMI1E4sxNJOK4ZrJw8b/AT5LS/8o3kVeAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAAd0SU1FB+AKDQY6JH9tN0QAAAAzSURBVDhPY9DTN/5PLgZrTkiKJRmjaIaZRgzG
+        qpmBgYEgHtU8wjUTizE0k4rhmsnDxv8BPktL/yjeRV4AAAAASUVORK5CYII=
 </value>
   </data>
   <data name="chkCanBeLegend.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfgCg0GOiR/bTdEAAAAM0lEQVQ4T2PQ0zf+Ty4G
-        a05IiiUZo2iGmUYMxqqZgYGBIB7VPMI1E4sxNJOK4ZrJw8b/AT5LS/8o3kVeAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAAd0SU1FB+AKDQY6JH9tN0QAAAAzSURBVDhPY9DTN/5PLgZrTkiKJRmjaIaZRgzG
+        qpmBgYEgHtU8wjUTizE0k4rhmsnDxv8BPktL/yjeRV4AAAAASUVORK5CYII=
 </value>
   </data>
   <data name="btnPokeRight.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -187,8 +187,14 @@
         qpmBgYEgHtU8wjUTizE0k4rhmsnDxv8BPktL/yjeRV4AAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="PokeSaveScan.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>274, 20</value>
+  </metadata>
+  <metadata name="PokeSaveDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>150, 17</value>
+  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>25</value>
+    <value>70</value>
   </metadata>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

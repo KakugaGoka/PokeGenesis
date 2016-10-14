@@ -76,6 +76,9 @@
             this.label10 = new System.Windows.Forms.Label();
             this.btnCry = new System.Windows.Forms.PictureBox();
             this.chkAppend = new System.Windows.Forms.CheckBox();
+            this.PokeSaveScan = new System.ComponentModel.BackgroundWorker();
+            this.PokeSaveDialog = new System.Windows.Forms.SaveFileDialog();
+            this.btnSave = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnScanPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLevelMin)).BeginInit();
@@ -96,6 +99,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnOptions)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCry)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSave)).BeginInit();
             this.SuspendLayout();
             // 
             // pbPokemon
@@ -688,6 +692,7 @@
             this.lbPokemon.Size = new System.Drawing.Size(324, 304);
             this.lbPokemon.TabIndex = 96;
             this.lbPokemon.SelectedIndexChanged += new System.EventHandler(this.lbPokemon_SelectedIndexChanged);
+            this.lbPokemon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbPokemon_MouseDoubleClick);
             // 
             // tbPokeCount
             // 
@@ -790,6 +795,25 @@
             this.chkAppend.UseVisualStyleBackColor = false;
             this.chkAppend.CheckedChanged += new System.EventHandler(this.chkAppend_CheckedChanged);
             // 
+            // PokeSaveScan
+            // 
+            this.PokeSaveScan.WorkerReportsProgress = true;
+            this.PokeSaveScan.DoWork += new System.ComponentModel.DoWorkEventHandler(this.PokeSaveScan_DoWork);
+            this.PokeSaveScan.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.PokeSaveScan_ProgressChanged);
+            this.PokeSaveScan.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.PokeSaveScan_RunWorkerCompleted);
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.Transparent;
+            this.btnSave.Location = new System.Drawing.Point(695, 613);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(85, 25);
+            this.btnSave.TabIndex = 104;
+            this.btnSave.TabStop = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            this.btnSave.MouseLeave += new System.EventHandler(this.btnSave_MouseLeave);
+            this.btnSave.MouseHover += new System.EventHandler(this.btnSave_MouseHover);
+            // 
             // FormScan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -797,6 +821,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.chkAppend);
             this.Controls.Add(this.btnCry);
             this.Controls.Add(this.label10);
@@ -847,7 +872,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormScan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PokeGenesis";
+            this.Text = " ";
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormScan_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FormScan_MouseMove);
@@ -872,6 +897,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnOptions)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCry)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSave)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -925,5 +951,8 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox btnCry;
         private System.Windows.Forms.CheckBox chkAppend;
+        private System.ComponentModel.BackgroundWorker PokeSaveScan;
+        private System.Windows.Forms.SaveFileDialog PokeSaveDialog;
+        private System.Windows.Forms.PictureBox btnSave;
     }
 }

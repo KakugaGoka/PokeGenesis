@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -107,6 +108,8 @@ namespace GenesisDex
         List<List<string>> AllStat = new List<List<string>>();
         List<List<string>> AllCap = new List<List<string>>();
         //===========================================================================================================
+        List<bool> AllShinyCheck = new List<bool>();
+        //===========================================================================================================
         int TrueLevel { get; set; }
         int Page { get; set; }
         int Current { get; set; }
@@ -132,6 +135,7 @@ namespace GenesisDex
         bool queueFinished { get; set; }
         bool viewingLoot { get; set; }
         bool appendList { get; set; }
+        bool saveResult { get; set; }
         //===========================================================================================================
         string typeShiny { get; set; }
         string newShiny { get; set; }
@@ -139,6 +143,7 @@ namespace GenesisDex
         string PokeType { get; set; }
         string PokeHabitat { get; set; }
         string PokeStage { get; set; }
+        string saveFilePath { get; set; }
         //===========================================================================================================
         string[] info { get; set; }
         //===========================================================================================================
@@ -222,6 +227,8 @@ namespace GenesisDex
             chkHasItem.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png"));
             chkCanBeShiny.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png"));
             chkCanBeLegend.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png"));
+            btnSave.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Save.png"));
+            PokeSaveDialog.Filter = "Text File | *.txt";
         }
 
         //===========================================================================================================
@@ -267,10 +274,10 @@ namespace GenesisDex
         private void PokeGenerator_DoWork(object sender, DoWorkEventArgs e)
         {
             hasScanned = true;
-            if (pokeDex.Contains(PokeName) == false) { MessageBox.Show("That is not a Pokemon."); return; }
-            if (types.Contains(PokeType) == false) { MessageBox.Show("That is not a Type."); return; }
-            if (habitats.Contains(PokeHabitat) == false) { MessageBox.Show("That is not a Habitat."); return; }
-            if (stages.Contains(PokeStage) == false) { MessageBox.Show("That is not a Evolutionary Stage."); return; }
+            if (!pokeDex.Contains(PokeName)) { MessageBox.Show("That is not a Pokemon."); return; }
+            if (!types.Contains(PokeType)) { MessageBox.Show("That is not a Type."); return; }
+            if (!habitats.Contains(PokeHabitat)) { MessageBox.Show("That is not a Habitat."); return; }
+            if (!stages.Contains(PokeStage)) { MessageBox.Show("That is not a Evolutionary Stage."); return; }
             if (appendList)
             {
                 Current = AllPokemon.Count;
@@ -290,6 +297,7 @@ namespace GenesisDex
                 AllStat.Clear();
                 AllLevels.Clear();
                 AllCap.Clear();
+                AllShinyCheck.Clear();
                 Info.Clear();
                 Gender.Clear();
                 Type.Clear();
@@ -325,7 +333,7 @@ namespace GenesisDex
                     AllImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + Final.number + ".gif"));
                     Type.Add(Final.type);
                 }
-                if (chkHasItem.Checked == true)
+                if (chkHasItem.Checked)
                 {
                     GetItem();
                 }
@@ -354,6 +362,7 @@ namespace GenesisDex
                 AllCap.Add(Cap);
                 info = preInfo.ToArray();
                 Info.Add(info);
+                AllShinyCheck.Add(isShiny);
                 Current++;
                 Progress++;
                 PokeGenerator.ReportProgress(Progress);
@@ -1174,8 +1183,15 @@ namespace GenesisDex
         {
             viewingLoot = false;
             pkItem.Visible = false;
-            rtbInfo.Text = "Name: " + AllPokemon[Current].id + Environment.NewLine +
-                "Type: " + Type[Current] + Environment.NewLine +
+            if (AllShinyCheck[Current])
+            {
+                rtbInfo.Text = "Name: Shiny " + AllPokemon[Current].id + Environment.NewLine;
+            }
+            else
+            {
+                rtbInfo.Text = "Name: " + AllPokemon[Current].id + Environment.NewLine;
+            }
+            rtbInfo.Text += "Type: " + Type[Current] + Environment.NewLine +
                 "Level: " + AllLevels[Current] + Environment.NewLine +
                 Environment.NewLine +
                 "Stats:" + Environment.NewLine +
@@ -1266,7 +1282,6 @@ namespace GenesisDex
             rtbInfo.Clear();
             for (int x = 0; x < AllDesc3.Count; x++)
             {
-
                 rtbInfo.Text += AllDesc3[x] + Environment.NewLine + Environment.NewLine;
             }
             rtbInfo.Text += "$" + Cash.ToString();
@@ -1319,6 +1334,110 @@ namespace GenesisDex
                 cb.Checked = false;
             else
                 cb.Checked = true;
+        }
+
+        //===========================================================================================================
+        //=== This is the background worker for the save function, that allows the players to save their scan as a ==
+        //===== text file that they can view later on. ==============================================================
+        //===========================================================================================================
+        private void PokeSaveScan_DoWork(object sender, DoWorkEventArgs e)
+        {
+            if (saveResult == true)
+            {
+                System.IO.Stream fileStream = PokeSaveDialog.OpenFile();
+                System.IO.StreamWriter sw = new System.IO.StreamWriter(fileStream);
+                sw.WriteLine("Pokemon List");
+                sw.WriteLine("ΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦ");
+                for (int i = 0; i < AllPokemon.Count; i++)
+                {
+                    sw.WriteLine("~" + (i + 1).ToString() + "~" + Environment.NewLine);
+                    if (AllShinyCheck[i])
+                    {
+                        sw.WriteLine("Name: Shiny " + AllPokemon[i].id);
+                    }
+                    else
+                    {
+                        sw.WriteLine("Name: " + AllPokemon[i].id);
+                    }
+                    sw.WriteLine("Type: " + Type[i] + Environment.NewLine +
+                        "Gender: " + Gender[i] + Environment.NewLine +
+                        "Nature: " + AllNatures[i] + Environment.NewLine +
+                        "Size: " + AllPokemon[i].size + Environment.NewLine +
+                        "Weight: " + AllPokemon[i].weight + Environment.NewLine +
+                        "Level: " + AllLevels[i] + Environment.NewLine +
+                        Environment.NewLine +
+                        "Stats:" + Environment.NewLine +
+                        "Current Health:\t " + CurrentHealth[i] + Environment.NewLine +
+                        "Max Health:\t " + MaxHealth[i] + Environment.NewLine +
+                        "HP:\t\t " + AllStat[i][0] + Environment.NewLine +
+                        "ATK:\t\t " + AllStat[i][1] + Environment.NewLine +
+                        "DEF:\t\t " + AllStat[i][2] + Environment.NewLine +
+                        "SPATK:\t\t " + AllStat[i][3] + Environment.NewLine +
+                        "SPDEF:\t\t " + AllStat[i][4] + Environment.NewLine +
+                        "SPD:\t\t " + AllStat[i][5] + Environment.NewLine +
+                        Environment.NewLine +
+                        "Capabilities:");
+                    foreach (string cap in AllCap[i])
+                    {
+                        sw.WriteLine(cap);
+                    }
+                    sw.WriteLine(Environment.NewLine + "Moves:");
+                    for (var w = 0; w < AllMoves[i].Count; w++)
+                    {
+                        sw.WriteLine("-" + AllMoves[i][w]);
+                    }
+                    sw.WriteLine(Environment.NewLine + "Abilities:");
+                    for (var a = 0; a < AllAbilities[i].Count; a++)
+                    {
+                        sw.WriteLine("-" + AllAbilities[i][a]);
+                    }
+                    sw.WriteLine(Environment.NewLine + "Skills:");
+                    for (var s = 0; s < AllSkills[i].Count; s++)
+                    {
+                        sw.WriteLine("-" + AllSkills[i][s]);
+                    }
+                    sw.WriteLine(Environment.NewLine + "Item 1-" + Environment.NewLine + AllDesc1[i]);
+                    sw.WriteLine(Environment.NewLine + "Item 2-" + Environment.NewLine + AllDesc2[i]);
+                    sw.WriteLine(Environment.NewLine + "------------------------------------------------------------------------------------------");
+                    PokeSaveScan.ReportProgress(1);
+                }
+                sw.WriteLine(Environment.NewLine + "Loot List");
+                sw.WriteLine("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+                for (int x = 0; x < AllDesc3.Count; x++)
+                {
+                    sw.WriteLine(AllDesc3[x] + Environment.NewLine);
+                }
+                sw.WriteLine("$" + Cash.ToString());
+                sw.Flush();
+                sw.Close();
+            }
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void PokeSaveScan_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            lblProgress.Text = "Save Complete";
+            DialogResult openSave = MessageBox.Show("Save Complete, Would you like to view the document now?", "Open Saved File?", 
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            if (openSave == DialogResult.Yes)
+            {
+                Process.Start("notepad.exe", saveFilePath);
+                //File.Open(saveFilePath, FileMode.Open);
+            }
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void PokeSaveScan_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            Dots += e.ProgressPercentage;
+            if (Dots >= 30) { Dots = 0; }
+            if (Dots <= 9) { lblProgress.Text = "Saving Scan.  "; }
+            else if (Dots <= 19) { lblProgress.Text = "Saving Scan.. "; }
+            else if (Dots <= 29) { lblProgress.Text = "Saving Scan..."; }
         }
 
         //===========================================================================================================
@@ -1379,9 +1498,9 @@ namespace GenesisDex
             Hide();
         }
 
-        //
-        //
-        //
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
         private void fs_FormActive(object sender, EventArgs e)
         {
             ScanUpdate();
@@ -1487,7 +1606,7 @@ namespace GenesisDex
         }
 
         //===========================================================================================================
-        //=== Used to switch between the pokemon in the current generation list.
+        //=== Used to switch between the pokemon in the current generation list. ====================================
         //===========================================================================================================
         private void pbPokeLeft_Click(object sender, EventArgs e)
         {
@@ -1733,9 +1852,9 @@ namespace GenesisDex
             btnOptions.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Options.png");
         }
 
-        //
-        //
-        //
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
         private void btnCry_Click(object sender, EventArgs e)
         {
             if (!hasScanned) return;
@@ -1768,9 +1887,9 @@ namespace GenesisDex
             btnCry.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Cry.png");
         }
 
-        //
-        //
-        //
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
         private void tbSearch_TextChanged(object sender, EventArgs e)
         {
             if (tbSearch.Text != "")
@@ -1801,9 +1920,9 @@ namespace GenesisDex
             }
         }
 
-        //
-        //
-        //
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
         private void chkAppend_CheckedChanged(object sender, EventArgs e)
         {
             if (chkAppend.Checked)
@@ -1816,9 +1935,9 @@ namespace GenesisDex
             }
         }
 
-        //
-        //
-        //
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
         private void chkHasItem_CheckedChanged(object sender, EventArgs e)
         {
             if (chkHasItem.Checked)
@@ -1831,9 +1950,9 @@ namespace GenesisDex
             }
         }
 
-        //
-        //
-        //
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
         private void chkCanBeShiny_CheckedChanged(object sender, EventArgs e)
         {
             if (chkCanBeShiny.Checked)
@@ -1846,9 +1965,9 @@ namespace GenesisDex
             }
         }
 
-        //
-        //
-        //
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
         private void chkCanBeLegend_CheckedChanged(object sender, EventArgs e)
         {
             if (chkCanBeLegend.Checked)
@@ -1859,6 +1978,51 @@ namespace GenesisDex
             {
                 chkCanBeLegend.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
             }
+        }
+
+        //===========================================================================================================
+        //=== Allows the user to double click a selected index in the list and scan pokemon that way ================
+        //===========================================================================================================
+        private void lbPokemon_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if (isScanning) return;
+            queueFinished = false;
+            isScanning = true;
+            pkLevelMin_ValueChanged(this, new EventArgs());
+            pkLevelMax_ValueChanged(this, new EventArgs());
+            PokeName = lbPokemon.SelectedItem.ToString();
+            PokeHabitat = cbHabitat.Text;
+            PokeType = cbType.Text;
+            PokeStage = cbStageAllowed.Text;
+            PokeLevelMax = Convert.ToInt32(nudLevelMax.Value);
+            PokeLevelMin = Convert.ToInt32(nudLevelMin.Value);
+            Amount = Convert.ToInt32(nudAmount.Value);
+            prbGenerationProgress.Maximum = Amount;
+            canItems = chkHasItem.Checked;
+            canLegendary = chkCanBeLegend.Checked;
+            canShiny = chkCanBeShiny.Checked;
+            appendList = chkAppend.Checked;
+            lblProgress.Text = "Queuing Scan";
+            PokeGenerator.RunWorkerAsync();
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            saveResult = PokeSaveDialog.ShowDialog() == DialogResult.OK;
+            if (!saveResult) return;
+            saveFilePath = PokeSaveDialog.FileName;
+            PokeSaveScan.RunWorkerAsync();
+        }
+        private void btnSave_MouseHover(object sender, EventArgs e)
+        {
+            btnSave.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\SaveHover.png");
+        }
+        private void btnSave_MouseLeave(object sender, EventArgs e)
+        {
+            btnSave.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Save.png");
         }
     }
 }
