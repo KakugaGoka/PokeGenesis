@@ -8520,7 +8520,7 @@
     <egg>None</egg>
     <diet>Omnivore</diet>
     <habitat>Non Space</habitat>
-    <legendary>false</legendary>
+    <legendary>true</legendary>
     <entry>This legendary ice Pokémon waits for a hero to fill in the missing parts of its body with truth or ideals.</entry>
     <List646-black>
       <Ability>
@@ -29915,7 +29915,7 @@
   </Pokemon>
   <Pokemon Stage="1">
     <number>479</number>
-    <id>Rotom (Normal Form)</id>
+    <id>Rotom (Normal)</id>
     <type>Electric / Ghost</type>
     <hp>5</hp>
     <atk>5</atk>
