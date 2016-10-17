@@ -9245,7 +9245,7 @@
       </Moves>
     </List640>
   </Pokemon>
-  <Pokemon Stage="2">
+  <Pokemon Stage="1">
     <number>046</number>
     <id>Paras</id>
     <type>Bug / Grass</type>
@@ -44521,7 +44521,7 @@
       </Moves>
     </List291>
   </Pokemon>
-  <Pokemon Stage="2">
+  <Pokemon Stage="1">
     <number>290</number>
     <id>Nincada</id>
     <type>Bug / Ground</type>
