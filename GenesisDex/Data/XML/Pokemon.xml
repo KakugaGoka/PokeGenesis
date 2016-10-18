@@ -2,7 +2,7 @@
 <Namespace>
   <!-- 
   Example:
-   <Pokemon Stage="Stage in the Evolution tree. 1, 2, or 3 (Nuumber only please)">
+  <Pokemon Stage="Stage in the Evolution tree. 1, 2, or 3 (Nuumber only please)">
     <number>###</number>
     <id>Name</id>
     <type>Type1 / Type2</type>

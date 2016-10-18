@@ -1,5 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Namespace>
+  <!--
+  Example:
+  <Region Name="Region/Area Name">
+    <MaxLevel>Max Level</MaxLevel>
+    <MinLevel>Min Level</MinLevel>
+    <Spawns>
+      <id>Pokemon</id>
+      <id>Names</id>
+      <id>Go in</id>
+      <id>Here</id>
+    </Spawns>
+  </Region>
+  -->
   <Region Name="Kanto">
     <MaxLevel>65</MaxLevel>
     <MinLevel>3</MinLevel>
