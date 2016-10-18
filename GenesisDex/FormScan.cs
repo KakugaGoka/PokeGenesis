@@ -126,6 +126,7 @@ namespace GenesisDex
         bool canLegendary { get; set;}
         bool canItems { get; set; }
         bool canShiny { get; set; }
+        bool forceShiny { get; set; }
         bool onItem2 { get; set; }
         bool onLoot { get; set; }
         bool isShiny { get; set; }
@@ -229,6 +230,7 @@ namespace GenesisDex
             chkCanBeLegend.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png"));
             btnSave.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Save.png"));
             PokeSaveDialog.Filter = "Text File | *.txt";
+            chkForceShiny.Enabled = false;
         }
 
         //===========================================================================================================
@@ -317,8 +319,8 @@ namespace GenesisDex
                 Final = GetPokemon();
                 int Level = GetLevel();
                 int i = rng.Next(1, 101);
-                if (!chkCanBeShiny.Checked)
-                    i = 50;
+                if (!canShiny) i = 50;
+                else if (forceShiny) i = 1;
                 if (i == 1 || i == 100)
                 {
                     preInfo.Add(optionsList[0].ShinyGasp);
@@ -1536,6 +1538,7 @@ namespace GenesisDex
             canItems = chkHasItem.Checked;
             canLegendary = chkCanBeLegend.Checked;
             canShiny = chkCanBeShiny.Checked;
+            forceShiny = chkForceShiny.Checked;
             appendList = chkAppend.Checked;
             lblProgress.Text = "Queuing Scan";
             PokeGenerator.RunWorkerAsync();
@@ -1958,10 +1961,12 @@ namespace GenesisDex
             if (chkCanBeShiny.Checked)
             {
                 chkCanBeShiny.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
+                chkForceShiny.Enabled = true;
             }
             else
             {
                 chkCanBeShiny.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
+                chkForceShiny.Enabled = false;
             }
         }
 
@@ -1977,6 +1982,21 @@ namespace GenesisDex
             else
             {
                 chkCanBeLegend.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
+            }
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void chkForceShiny_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkForceShiny.Checked)
+            {
+                chkForceShiny.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
+            }
+            else
+            {
+                chkForceShiny.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
             }
         }
 
