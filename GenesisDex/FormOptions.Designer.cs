@@ -56,11 +56,20 @@
             this.label12 = new System.Windows.Forms.Label();
             this.nudCashPerLevel = new System.Windows.Forms.NumericUpDown();
             this.btnDefault = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnAddPoke = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.nudCryVolume = new System.Windows.Forms.NumericUpDown();
             this.label13 = new System.Windows.Forms.Label();
             this.nudDexSkin = new System.Windows.Forms.NumericUpDown();
+            this.listRegionAllowed = new System.Windows.Forms.ListBox();
+            this.listRegionBanned = new System.Windows.Forms.ListBox();
+            this.btnAddRegion = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.btnRegionRemove = new System.Windows.Forms.Button();
+            this.btnRegionAdd = new System.Windows.Forms.Button();
+            this.listRegions = new System.Windows.Forms.ListBox();
+            this.label16 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudItemTier)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudScanLimit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPokeLevel)).BeginInit();
@@ -239,7 +248,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(12, 327);
+            this.btnSave.Location = new System.Drawing.Point(664, 707);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(94, 23);
             this.btnSave.TabIndex = 18;
@@ -249,7 +258,7 @@
             // 
             // btnBan
             // 
-            this.btnBan.Location = new System.Drawing.Point(502, 145);
+            this.btnBan.Location = new System.Drawing.Point(502, 154);
             this.btnBan.Name = "btnBan";
             this.btnBan.Size = new System.Drawing.Size(39, 23);
             this.btnBan.TabIndex = 19;
@@ -259,7 +268,7 @@
             // 
             // btnAllow
             // 
-            this.btnAllow.Location = new System.Drawing.Point(502, 176);
+            this.btnAllow.Location = new System.Drawing.Point(502, 185);
             this.btnAllow.Name = "btnAllow";
             this.btnAllow.Size = new System.Drawing.Size(39, 23);
             this.btnAllow.TabIndex = 20;
@@ -318,7 +327,7 @@
             // 
             // btnDefault
             // 
-            this.btnDefault.Location = new System.Drawing.Point(112, 327);
+            this.btnDefault.Location = new System.Drawing.Point(564, 707);
             this.btnDefault.Name = "btnDefault";
             this.btnDefault.Size = new System.Drawing.Size(94, 23);
             this.btnDefault.TabIndex = 28;
@@ -326,15 +335,15 @@
             this.btnDefault.UseVisualStyleBackColor = true;
             this.btnDefault.Click += new System.EventHandler(this.btnDefault_Click);
             // 
-            // btnAdd
+            // btnAddPoke
             // 
-            this.btnAdd.Location = new System.Drawing.Point(212, 327);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(94, 23);
-            this.btnAdd.TabIndex = 29;
-            this.btnAdd.Text = "Add Pokemon";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnAddPoke.Location = new System.Drawing.Point(12, 707);
+            this.btnAddPoke.Name = "btnAddPoke";
+            this.btnAddPoke.Size = new System.Drawing.Size(94, 23);
+            this.btnAddPoke.TabIndex = 29;
+            this.btnAddPoke.Text = "Add Pokemon";
+            this.btnAddPoke.UseVisualStyleBackColor = true;
+            this.btnAddPoke.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // label10
             // 
@@ -398,16 +407,103 @@
             0,
             0});
             // 
+            // listRegionAllowed
+            // 
+            this.listRegionAllowed.FormattingEnabled = true;
+            this.listRegionAllowed.Location = new System.Drawing.Point(316, 375);
+            this.listRegionAllowed.Name = "listRegionAllowed";
+            this.listRegionAllowed.Size = new System.Drawing.Size(180, 316);
+            this.listRegionAllowed.TabIndex = 34;
+            // 
+            // listRegionBanned
+            // 
+            this.listRegionBanned.FormattingEnabled = true;
+            this.listRegionBanned.Location = new System.Drawing.Point(547, 375);
+            this.listRegionBanned.Name = "listRegionBanned";
+            this.listRegionBanned.Size = new System.Drawing.Size(180, 316);
+            this.listRegionBanned.TabIndex = 35;
+            // 
+            // btnAddRegion
+            // 
+            this.btnAddRegion.Location = new System.Drawing.Point(112, 707);
+            this.btnAddRegion.Name = "btnAddRegion";
+            this.btnAddRegion.Size = new System.Drawing.Size(94, 23);
+            this.btnAddRegion.TabIndex = 36;
+            this.btnAddRegion.Text = "Add Region";
+            this.btnAddRegion.UseVisualStyleBackColor = true;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(544, 359);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(90, 13);
+            this.label14.TabIndex = 37;
+            this.label14.Text = "Foreign Pokemon";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(313, 359);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(97, 13);
+            this.label15.TabIndex = 38;
+            this.label15.Text = "Regional Pokemon";
+            // 
+            // btnRegionRemove
+            // 
+            this.btnRegionRemove.Location = new System.Drawing.Point(502, 526);
+            this.btnRegionRemove.Name = "btnRegionRemove";
+            this.btnRegionRemove.Size = new System.Drawing.Size(39, 23);
+            this.btnRegionRemove.TabIndex = 40;
+            this.btnRegionRemove.Text = "<----- ";
+            this.btnRegionRemove.UseVisualStyleBackColor = true;
+            // 
+            // btnRegionAdd
+            // 
+            this.btnRegionAdd.Location = new System.Drawing.Point(502, 495);
+            this.btnRegionAdd.Name = "btnRegionAdd";
+            this.btnRegionAdd.Size = new System.Drawing.Size(39, 23);
+            this.btnRegionAdd.TabIndex = 39;
+            this.btnRegionAdd.Text = " ----->";
+            this.btnRegionAdd.UseVisualStyleBackColor = true;
+            // 
+            // listRegions
+            // 
+            this.listRegions.FormattingEnabled = true;
+            this.listRegions.Location = new System.Drawing.Point(95, 375);
+            this.listRegions.Name = "listRegions";
+            this.listRegions.Size = new System.Drawing.Size(180, 316);
+            this.listRegions.TabIndex = 41;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(92, 359);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(65, 13);
+            this.label16.TabIndex = 42;
+            this.label16.Text = "Regions List";
+            // 
             // FormOptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(770, 362);
+            this.ClientSize = new System.Drawing.Size(770, 742);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.listRegions);
+            this.Controls.Add(this.btnRegionRemove);
+            this.Controls.Add(this.btnRegionAdd);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.btnAddRegion);
+            this.Controls.Add(this.listRegionBanned);
+            this.Controls.Add(this.listRegionAllowed);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.nudDexSkin);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.nudCryVolume);
-            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnAddPoke);
             this.Controls.Add(this.btnDefault);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.nudCashPerLevel);
@@ -485,10 +581,19 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.NumericUpDown nudCashPerLevel;
         private System.Windows.Forms.Button btnDefault;
-        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnAddPoke;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.NumericUpDown nudCryVolume;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.NumericUpDown nudDexSkin;
+        private System.Windows.Forms.ListBox listRegionAllowed;
+        private System.Windows.Forms.ListBox listRegionBanned;
+        private System.Windows.Forms.Button btnAddRegion;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button btnRegionRemove;
+        private System.Windows.Forms.Button btnRegionAdd;
+        private System.Windows.Forms.ListBox listRegions;
+        private System.Windows.Forms.Label label16;
     }
 }

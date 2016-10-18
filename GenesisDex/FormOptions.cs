@@ -27,6 +27,9 @@ namespace GenesisDex
         PokemonList pokeXML = new PokemonList();
         List<Pokemon> pokeList = new List<Pokemon>();
 
+        RegionsList regionXML = new RegionsList();
+        List<PokeRegion> regionList = new List<PokeRegion>();
+
         bool dragging { get; set; }
         bool restoreDefaults { get; set; }
 
@@ -222,6 +225,8 @@ namespace GenesisDex
             banList = banXML.createList();
             pokeList = new List<Pokemon>();
             pokeList = pokeXML.createList();
+            regionList = new List<PokeRegion>();
+            regionList = regionXML.createList();
             nudPlayerLevel.Value = optionsList[0].MaxPlayerLevel;
             nudPokeLevel.Value = optionsList[0].MaxPokemonLevel;
             nudScanLimit.Value = optionsList[0].MaxScanAmount;
@@ -235,15 +240,34 @@ namespace GenesisDex
             txtShinyGasp.Text = optionsList[0].ShinyGasp;
             listBanned.Items.Clear();
             listAllowed.Items.Clear();
+            listRegionAllowed.Items.Clear();
+            listRegionBanned.Items.Clear();
+            listRegions.Items.Clear();
             for (var i = 0; i < banList.Count; i++)
             {
                 if (banList[i] != "Placeholder")
                     listBanned.Items.Add(banList[i]);
             }
+            SortPokeList();
             foreach (Pokemon s in pokeList)
             {
                 if (!listBanned.Items.Contains(s.id))
                     listAllowed.Items.Add(s.id);
+            }
+            for (var i = 0; i < regionList.Count; i++)
+            {
+                listRegions.Items.Add(regionList[i].RegionName);
+            }
+            listRegions.SelectedIndex = 0;
+            foreach (string s in regionList[listRegions.SelectedIndex].Spawns)
+            {
+                listRegionAllowed.Items.Add(s);
+            }
+            SortPokeList();
+            foreach (Pokemon s in pokeList)
+            {
+                if (!listRegionAllowed.Items.Contains(s.id))
+                    listRegionBanned.Items.Add(s.id);
             }
         }
 
