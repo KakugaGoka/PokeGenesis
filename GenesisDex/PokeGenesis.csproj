@@ -3791,6 +3791,9 @@
     <Content Include="Data\XML\TM-HM.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Data\XML\Regions.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="PokeGenesis.ico" />
     <Content Include="Data\Images\Blank.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

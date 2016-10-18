@@ -80,6 +80,8 @@
             this.PokeSaveDialog = new System.Windows.Forms.SaveFileDialog();
             this.btnSave = new System.Windows.Forms.PictureBox();
             this.chkForceShiny = new System.Windows.Forms.CheckBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.cbRegion = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnScanPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLevelMin)).BeginInit();
@@ -116,7 +118,7 @@
             // btnScanPokemon
             // 
             this.btnScanPokemon.BackColor = System.Drawing.Color.Transparent;
-            this.btnScanPokemon.Location = new System.Drawing.Point(425, 576);
+            this.btnScanPokemon.Location = new System.Drawing.Point(426, 275);
             this.btnScanPokemon.Name = "btnScanPokemon";
             this.btnScanPokemon.Size = new System.Drawing.Size(157, 33);
             this.btnScanPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -131,7 +133,7 @@
             this.nudLevelMin.BackColor = System.Drawing.Color.Beige;
             this.nudLevelMin.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudLevelMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.nudLevelMin.Location = new System.Drawing.Point(425, 546);
+            this.nudLevelMin.Location = new System.Drawing.Point(428, 481);
             this.nudLevelMin.Maximum = new decimal(new int[] {
             99,
             0,
@@ -160,7 +162,7 @@
             this.cbHabitat.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbHabitat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.cbHabitat.FormattingEnabled = true;
-            this.cbHabitat.Location = new System.Drawing.Point(462, 360);
+            this.cbHabitat.Location = new System.Drawing.Point(462, 396);
             this.cbHabitat.Name = "cbHabitat";
             this.cbHabitat.Size = new System.Drawing.Size(128, 27);
             this.cbHabitat.TabIndex = 4;
@@ -171,7 +173,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(449, 524);
+            this.label1.Location = new System.Drawing.Point(452, 459);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 13);
             this.label1.TabIndex = 48;
@@ -183,7 +185,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(415, 367);
+            this.label2.Location = new System.Drawing.Point(415, 403);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 49;
@@ -197,7 +199,7 @@
             this.cbType.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.cbType.FormattingEnabled = true;
-            this.cbType.Location = new System.Drawing.Point(462, 393);
+            this.cbType.Location = new System.Drawing.Point(462, 429);
             this.cbType.Name = "cbType";
             this.cbType.Size = new System.Drawing.Size(128, 27);
             this.cbType.TabIndex = 5;
@@ -208,7 +210,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(425, 400);
+            this.label3.Location = new System.Drawing.Point(425, 436);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 13);
             this.label3.TabIndex = 51;
@@ -219,7 +221,7 @@
             this.nudLevelMax.BackColor = System.Drawing.Color.Beige;
             this.nudLevelMax.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudLevelMax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.nudLevelMax.Location = new System.Drawing.Point(469, 546);
+            this.nudLevelMax.Location = new System.Drawing.Point(472, 481);
             this.nudLevelMax.Maximum = new decimal(new int[] {
             99,
             0,
@@ -246,7 +248,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(482, 530);
+            this.label4.Location = new System.Drawing.Point(485, 465);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(27, 13);
             this.label4.TabIndex = 53;
@@ -258,7 +260,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(428, 531);
+            this.label5.Location = new System.Drawing.Point(431, 466);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(24, 13);
             this.label5.TabIndex = 54;
@@ -279,7 +281,7 @@
             this.chkHasItem.ForeColor = System.Drawing.Color.White;
             this.chkHasItem.Image = ((System.Drawing.Image)(resources.GetObject("chkHasItem.Image")));
             this.chkHasItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.chkHasItem.Location = new System.Drawing.Point(455, 421);
+            this.chkHasItem.Location = new System.Drawing.Point(462, 511);
             this.chkHasItem.Name = "chkHasItem";
             this.chkHasItem.Size = new System.Drawing.Size(110, 23);
             this.chkHasItem.TabIndex = 6;
@@ -305,7 +307,7 @@
             this.chkCanBeShiny.ForeColor = System.Drawing.Color.White;
             this.chkCanBeShiny.Image = ((System.Drawing.Image)(resources.GetObject("chkCanBeShiny.Image")));
             this.chkCanBeShiny.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.chkCanBeShiny.Location = new System.Drawing.Point(455, 445);
+            this.chkCanBeShiny.Location = new System.Drawing.Point(462, 535);
             this.chkCanBeShiny.Name = "chkCanBeShiny";
             this.chkCanBeShiny.Size = new System.Drawing.Size(111, 23);
             this.chkCanBeShiny.TabIndex = 7;
@@ -331,7 +333,7 @@
             this.pkHeld.AutoSize = true;
             this.pkHeld.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pkHeld.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pkHeld.Location = new System.Drawing.Point(448, 557);
+            this.pkHeld.Location = new System.Drawing.Point(451, 492);
             this.pkHeld.Name = "pkHeld";
             this.pkHeld.Size = new System.Drawing.Size(0, 13);
             this.pkHeld.TabIndex = 58;
@@ -351,7 +353,7 @@
             this.chkCanBeLegend.ForeColor = System.Drawing.Color.White;
             this.chkCanBeLegend.Image = ((System.Drawing.Image)(resources.GetObject("chkCanBeLegend.Image")));
             this.chkCanBeLegend.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.chkCanBeLegend.Location = new System.Drawing.Point(455, 493);
+            this.chkCanBeLegend.Location = new System.Drawing.Point(462, 583);
             this.chkCanBeLegend.Name = "chkCanBeLegend";
             this.chkCanBeLegend.Size = new System.Drawing.Size(134, 23);
             this.chkCanBeLegend.TabIndex = 8;
@@ -370,7 +372,7 @@
             this.cbStageAllowed.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbStageAllowed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.cbStageAllowed.FormattingEnabled = true;
-            this.cbStageAllowed.Location = new System.Drawing.Point(462, 327);
+            this.cbStageAllowed.Location = new System.Drawing.Point(462, 363);
             this.cbStageAllowed.Name = "cbStageAllowed";
             this.cbStageAllowed.Size = new System.Drawing.Size(128, 27);
             this.cbStageAllowed.TabIndex = 3;
@@ -381,7 +383,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(421, 334);
+            this.label7.Location = new System.Drawing.Point(421, 370);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(35, 13);
             this.label7.TabIndex = 67;
@@ -392,7 +394,7 @@
             this.nudAmount.BackColor = System.Drawing.Color.Beige;
             this.nudAmount.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.nudAmount.Location = new System.Drawing.Point(531, 546);
+            this.nudAmount.Location = new System.Drawing.Point(534, 481);
             this.nudAmount.Minimum = new decimal(new int[] {
             1,
             0,
@@ -413,7 +415,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(531, 524);
+            this.label8.Location = new System.Drawing.Point(534, 459);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(43, 13);
             this.label8.TabIndex = 69;
@@ -636,7 +638,7 @@
             // btnScan
             // 
             this.btnScan.BackColor = System.Drawing.Color.Transparent;
-            this.btnScan.Location = new System.Drawing.Point(425, 275);
+            this.btnScan.Location = new System.Drawing.Point(695, 605);
             this.btnScan.Name = "btnScan";
             this.btnScan.Size = new System.Drawing.Size(157, 33);
             this.btnScan.TabIndex = 91;
@@ -786,7 +788,7 @@
             this.chkAppend.ForeColor = System.Drawing.Color.White;
             this.chkAppend.Image = ((System.Drawing.Image)(resources.GetObject("chkAppend.Image")));
             this.chkAppend.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.chkAppend.Location = new System.Drawing.Point(455, 611);
+            this.chkAppend.Location = new System.Drawing.Point(462, 606);
             this.chkAppend.Name = "chkAppend";
             this.chkAppend.Size = new System.Drawing.Size(100, 23);
             this.chkAppend.TabIndex = 103;
@@ -806,7 +808,7 @@
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.Transparent;
-            this.btnSave.Location = new System.Drawing.Point(695, 613);
+            this.btnSave.Location = new System.Drawing.Point(1015, 613);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(85, 25);
             this.btnSave.TabIndex = 104;
@@ -830,7 +832,7 @@
             this.chkForceShiny.ForeColor = System.Drawing.Color.White;
             this.chkForceShiny.Image = ((System.Drawing.Image)(resources.GetObject("chkForceShiny.Image")));
             this.chkForceShiny.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.chkForceShiny.Location = new System.Drawing.Point(470, 469);
+            this.chkForceShiny.Location = new System.Drawing.Point(477, 559);
             this.chkForceShiny.Name = "chkForceShiny";
             this.chkForceShiny.Size = new System.Drawing.Size(100, 23);
             this.chkForceShiny.TabIndex = 105;
@@ -840,6 +842,32 @@
             this.chkForceShiny.UseVisualStyleBackColor = false;
             this.chkForceShiny.CheckedChanged += new System.EventHandler(this.chkForceShiny_CheckedChanged);
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(415, 337);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(41, 13);
+            this.label11.TabIndex = 107;
+            this.label11.Text = "Region";
+            // 
+            // cbRegion
+            // 
+            this.cbRegion.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbRegion.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbRegion.BackColor = System.Drawing.Color.Beige;
+            this.cbRegion.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbRegion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cbRegion.FormattingEnabled = true;
+            this.cbRegion.Location = new System.Drawing.Point(462, 330);
+            this.cbRegion.Name = "cbRegion";
+            this.cbRegion.Size = new System.Drawing.Size(128, 27);
+            this.cbRegion.TabIndex = 106;
+            this.cbRegion.SelectedIndexChanged += new System.EventHandler(this.cbRegion_SelectedIndexChanged);
+            // 
             // FormScan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -847,6 +875,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.cbRegion);
             this.Controls.Add(this.chkForceShiny);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.chkAppend);
@@ -982,5 +1012,7 @@
         private System.Windows.Forms.SaveFileDialog PokeSaveDialog;
         private System.Windows.Forms.PictureBox btnSave;
         private System.Windows.Forms.CheckBox chkForceShiny;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox cbRegion;
     }
 }

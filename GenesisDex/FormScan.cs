@@ -33,6 +33,9 @@ namespace GenesisDex
         //===========================================================================================================
         List<Pokemon> AllPokemon = new List<Pokemon>();
         //===========================================================================================================
+        RegionsList regionXML = new RegionsList();
+        List<PokeRegion> regionList = new List<PokeRegion>();
+        //===========================================================================================================
         MovesList moveXML = new MovesList();
         List<Moves> moveList = new List<Moves>();
         //===========================================================================================================
@@ -85,6 +88,8 @@ namespace GenesisDex
         List<string> habitats = new List<string>();
         List<string> types = new List<string>();
         List<string> pokeDex = new List<string>();
+        List<string> regions = new List<string>();
+        List<string> regionPokemon = new List<string>();
         List<string> moves = new List<string>();
         List<string> ability = new List<string>();
         List<string> skill = new List<string>();
@@ -177,6 +182,7 @@ namespace GenesisDex
             typeList = typeXML.createList("Types", "Type");
             habitatList = habitatXML.createList("Habitats", "Habitat");
             natureList = natureXML.createList("Natures", "Nature");
+            regionList = regionXML.createList();
             updateList.Add("updating...");
             habitats.Clear();
             types.Clear();
@@ -193,9 +199,15 @@ namespace GenesisDex
             {
                 pokeDex.Add(pokeList[p].id);
             }
+            regions.Add("Any");
+            for (var r = 0; r < regionList.Count; r++)
+            {
+                regions.Add(regionList[r].RegionName);
+            }
             cbHabitat.DataSource = habitats;
             cbType.DataSource = types;
             lbPokemon.DataSource = pokeDex;
+            cbRegion.DataSource = regions;
             stages.Add("Any");
             stages.Add("Only 1s");
             stages.Add("Only 2s");
@@ -244,7 +256,7 @@ namespace GenesisDex
             banList = new List<string>();
             pokeDex = new List<string>();
             lbPokemon.DataSource = banList;
-            pokeList = pokeXML.createList("Pokemon");
+            pokeList = pokeXML.createList();
             optionsList = optionsXML.createList();
             banList = banXML.createList();
             this.BackgroundImage = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MainMenu" + optionsList[0].PokedexSkin + ".PNG");
@@ -412,7 +424,7 @@ namespace GenesisDex
         private void CreateScanList()
         {
             pokeList = new List<Pokemon>();
-            pokeList = pokeXML.createList("Pokemon");
+            pokeList = pokeXML.createList();
             banList = banXML.createList();
             for (int p = 0; p < pokeList.Count; p++)
             {
@@ -2043,6 +2055,36 @@ namespace GenesisDex
         private void btnSave_MouseLeave(object sender, EventArgs e)
         {
             btnSave.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Save.png");
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void cbRegion_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbRegion.Text == "Any")
+            {
+                lbPokemon.DataSource = pokeDex;
+            }
+            else
+            {
+                int selectRegion = 0;
+                for (int r = 0; r < regionList.Count; r++)
+                {
+                    if (regionList[r].RegionName == cbRegion.Text)
+                    {
+                        selectRegion = r;
+                        break;
+                    }
+                }
+                regionPokemon = new List<string>();
+                regionPokemon.Add("Any");
+                foreach (string p in regionList[selectRegion].Spawns)
+                {
+                    regionPokemon.Add(p);
+                }
+                lbPokemon.DataSource = regionPokemon;
+            }
         }
     }
 }

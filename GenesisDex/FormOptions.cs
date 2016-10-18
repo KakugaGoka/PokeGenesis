@@ -131,7 +131,7 @@ namespace GenesisDex
             if (confirmDefault == DialogResult.Yes)
             {
                 pokeList = new List<Pokemon>();
-                pokeList = pokeXML.createList("Pokemon");
+                pokeList = pokeXML.createList();
                 nudPlayerLevel.Value = 50;
                 nudPokeLevel.Value = 100;
                 nudScanLimit.Value = 100;
@@ -221,7 +221,7 @@ namespace GenesisDex
             banList = new List<string>();
             banList = banXML.createList();
             pokeList = new List<Pokemon>();
-            pokeList = pokeXML.createList("Pokemon");
+            pokeList = pokeXML.createList();
             nudPlayerLevel.Value = optionsList[0].MaxPlayerLevel;
             nudPokeLevel.Value = optionsList[0].MaxPokemonLevel;
             nudScanLimit.Value = optionsList[0].MaxScanAmount;

@@ -116,6 +116,14 @@ namespace GenesisDexEngine
         public string id { get; set; }
     }
 
+    class PokeRegion
+    {
+        public string RegionName { get; set; }
+        public int MaxLevel { get; set; }
+        public int MinLevel { get; set; }
+        public List<string> Spawns { get; set; }
+    }
+
 
     // Used to create a list to populate FormOptions and to apply those Options into the other Forms.
     class OptionsList
@@ -165,13 +173,13 @@ namespace GenesisDexEngine
     // Used to create a list of Pokemon from the Pokemon.XML and populate the forms with them.
     class PokemonList
     {
-        public List<Pokemon> createList(string decend)
+        public List<Pokemon> createList()
         {
             XDocument doc = null;
             string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\Pokemon.xml");
             List<Pokemon> idList = new List<Pokemon>();
             doc = XDocument.Load(fileName);
-            var query = from node in doc.Descendants(decend)
+            var query = from node in doc.Descendants("Pokemon")
                         select new Pokemon
                         {
                             stage = (string)node.Attribute("Stage"),
@@ -448,6 +456,32 @@ namespace GenesisDexEngine
             statList.Add(SPDEF);
             statList.Add(SPD);
             return statList;
+        }
+    }
+
+    // Used to create a list of Hiigh Abilites for the specified pokemon from the Pokemon.XML
+    class RegionsList
+    {
+        public List<PokeRegion> createList()
+        {
+            string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\Regions.xml");
+            List<PokeRegion> idList = new List<PokeRegion>();
+            XDocument doc = XDocument.Load(fileName);
+            List<string> child = new List<string>();
+            foreach (XElement n in doc.Descendants("Region").Descendants("Spawns").Elements("id"))
+            {
+                child.Add((string)n.Value);
+            }
+            var query = from node in doc.Descendants("Region")
+                        select new PokeRegion
+                        {
+                            Spawns = child,
+                            RegionName = (string)node.Attribute("Name"),
+                            MaxLevel = (int)node.Element("MaxLevel"),
+                            MinLevel = (int)node.Element("MinLevel"),
+                        };
+            idList = query.ToList();
+            return idList;
         }
     }
 }

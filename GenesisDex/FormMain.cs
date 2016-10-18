@@ -334,6 +334,7 @@ namespace GenesisDex
                 {
                     pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOffHover.PNG");
                     viewMega = false;
+                    imageDisplayed = 0;
                     pbPokemon.Image = pokeImages[0];
                     SetImage();
                     updatePage();
@@ -342,6 +343,8 @@ namespace GenesisDex
                 {
                     pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOnHover.gif");
                     viewMega = true;
+                    imageDisplayed = 0;
+
                     pbPokemon.Image = megaImages[0];
                     SetImage();
                     updatePage();
@@ -353,6 +356,7 @@ namespace GenesisDex
                 {
                     pbMega.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYesOffHover.PNG");
                     viewMega = false;
+                    imageDisplayed = 0;
                     pbPokemon.Image = pokeImages[0];
                     SetImage();
                     pbY.Visible = false;
@@ -377,6 +381,7 @@ namespace GenesisDex
             if (onMegaX == false)
             {
                 onMegaX = true;
+                imageDisplayed = 0;
                 pbPokemon.Image = megaxImages[0];
                 SetImage();
                 pbY.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYOff.PNG");
@@ -387,6 +392,7 @@ namespace GenesisDex
             else if (onMegaX == true)
             {
                 onMegaX = false;
+                imageDisplayed = 0;
                 pbPokemon.Image = megayImages[0];
                 SetImage();
                 pbY.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MegaYOn.PNG");
@@ -742,7 +748,7 @@ namespace GenesisDex
             pokeDex.Clear();
             pokeList.Clear();
             banList.Clear();
-            pokeList = pokeXML.createList("Pokemon");
+            pokeList = pokeXML.createList();
             banList = banXML.createList();
             for (int p = 0; p < pokeList.Count; p++ )
             {

@@ -49738,11 +49738,12 @@
         <HighAbility>Handyman</HighAbility>
       </Ability>
       <Skills>
-        <skill id="0">Athl 3d6 Acro 4d6</skill>
-        <skill id="1">Combat 2d6</skill>
-        <skill id="2">Stealth 4d6+2</skill>
-        <skill id="3">Percep 6d6+2</skill>
-        <skill id="4">Focus 3d6</skill>
+        <skill id="0">Athl 3d6</skill> 
+        <skill id="1">Acro 4d6</skill>
+        <skill id="2">Combat 2d6</skill>
+        <skill id="3">Stealth 4d6+2</skill>
+        <skill id="4">Percep 6d6+2</skill>
+        <skill id="5">Focus 3d6</skill>
       </Skills>
       <Capability>
         <cap id="0">Overland 3</cap>
