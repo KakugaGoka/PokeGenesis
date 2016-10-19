@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Namespace>
+<Regions>
   <!--
   Example:
   <Region Name="Region/Area Name">
@@ -170,4 +170,4 @@
       <id>Mew</id>
     </Spawns>
   </Region>
-</Namespace>
+</Regions>

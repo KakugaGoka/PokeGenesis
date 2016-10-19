@@ -52,19 +52,23 @@ namespace GenesisDex
 
         private void btnBan_Click(object sender, EventArgs e)
         {
-            if (listAllowed.SelectedItem != null)
+            if (listAllowed.SelectedItems != null)
             {
-                listBanned.Items.Add(listAllowed.SelectedItem);
-                listAllowed.Items.Remove(listAllowed.SelectedItem);
+                for (int i = 0; i < listAllowed.SelectedItems.Count; i++)
+                {
+                    listBanned.Items.Add(listAllowed.SelectedItems[i]);
+                    listAllowed.Items.Remove(listAllowed.SelectedItems[i]);
+                    i--;
+                }
             }
         }
 
         private void btnAllow_Click(object sender, EventArgs e)
         {
-            if (listBanned.SelectedItem != null)
+            if (listBanned.SelectedItems != null)
             {
-                listAllowed.Items.Add(listBanned.SelectedItem);
-                listBanned.Items.Remove(listBanned.SelectedItem);
+                listAllowed.Items.Add(listBanned.SelectedItems);
+                listBanned.Items.Remove(listBanned.SelectedItems);
             }
         }
 
@@ -279,6 +283,32 @@ namespace GenesisDex
         private void pbExit_MouseLeave(object sender, EventArgs e)
         {
             pbExit.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButton.png");
+        }
+
+        private void btnSaveRegion_Click(object sender, EventArgs e)
+        {
+            List<string> regionAllowed = new List<string>();
+            regionAllowed = listRegionAllowed.Items.Cast<string>().ToList();
+            XDocument docX = XDocument.Load(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Regions.xml");
+            docX.Descendants().Where(d => string.IsNullOrEmpty(d.Value)).Remove();
+            var nameNode = from p in docX.Descendants("Regions")
+                           where p.Elements("Region").Any(x => (string)x.Attribute("Name") == listRegions.SelectedItem.ToString())
+                           select p.Element("Region");
+            var regionNode = nameNode.ElementAt(0);
+            var maxLevel = regionNode.Element("MaxLevel");
+            var minLevel = regionNode.Element("MinLevel");
+            var regionName = regionNode.Attribute("Name");
+            maxLevel.Value = nudRegionMax.Value.ToString();
+            minLevel.Value = nudRegionMin.Value.ToString();
+            regionName.Value = tbRegionName.Text;
+            if (regionAllowed != null)
+            {
+                XElement ban = new XElement("Spawns",
+                    from b in regionAllowed
+                    select new XElement("id", b));
+            docX.Root.Add(ban);
+            }
+            docX.Save(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Regions.xml");
         }
     }
 }
