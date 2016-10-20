@@ -146,7 +146,7 @@
             0});
             this.nudLevelMin.Name = "nudLevelMin";
             this.nudLevelMin.Size = new System.Drawing.Size(44, 24);
-            this.nudLevelMin.TabIndex = 9;
+            this.nudLevelMin.TabIndex = 5;
             this.nudLevelMin.Value = new decimal(new int[] {
             15,
             0,
@@ -165,7 +165,7 @@
             this.cbHabitat.Location = new System.Drawing.Point(462, 396);
             this.cbHabitat.Name = "cbHabitat";
             this.cbHabitat.Size = new System.Drawing.Size(128, 27);
-            this.cbHabitat.TabIndex = 4;
+            this.cbHabitat.TabIndex = 3;
             // 
             // label1
             // 
@@ -202,7 +202,7 @@
             this.cbType.Location = new System.Drawing.Point(462, 429);
             this.cbType.Name = "cbType";
             this.cbType.Size = new System.Drawing.Size(128, 27);
-            this.cbType.TabIndex = 5;
+            this.cbType.TabIndex = 4;
             // 
             // label3
             // 
@@ -234,7 +234,7 @@
             0});
             this.nudLevelMax.Name = "nudLevelMax";
             this.nudLevelMax.Size = new System.Drawing.Size(44, 24);
-            this.nudLevelMax.TabIndex = 10;
+            this.nudLevelMax.TabIndex = 6;
             this.nudLevelMax.Value = new decimal(new int[] {
             15,
             0,
@@ -284,7 +284,7 @@
             this.chkHasItem.Location = new System.Drawing.Point(462, 511);
             this.chkHasItem.Name = "chkHasItem";
             this.chkHasItem.Size = new System.Drawing.Size(110, 23);
-            this.chkHasItem.TabIndex = 6;
+            this.chkHasItem.TabIndex = 8;
             this.chkHasItem.Text = "Generate Items?";
             this.chkHasItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.chkHasItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -310,7 +310,7 @@
             this.chkCanBeShiny.Location = new System.Drawing.Point(462, 535);
             this.chkCanBeShiny.Name = "chkCanBeShiny";
             this.chkCanBeShiny.Size = new System.Drawing.Size(111, 23);
-            this.chkCanBeShiny.TabIndex = 7;
+            this.chkCanBeShiny.TabIndex = 9;
             this.chkCanBeShiny.Text = "Generate Shiny?";
             this.chkCanBeShiny.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.chkCanBeShiny.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -356,7 +356,7 @@
             this.chkCanBeLegend.Location = new System.Drawing.Point(462, 583);
             this.chkCanBeLegend.Name = "chkCanBeLegend";
             this.chkCanBeLegend.Size = new System.Drawing.Size(134, 23);
-            this.chkCanBeLegend.TabIndex = 8;
+            this.chkCanBeLegend.TabIndex = 11;
             this.chkCanBeLegend.Text = "Include Legendaries?";
             this.chkCanBeLegend.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.chkCanBeLegend.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -375,7 +375,7 @@
             this.cbStageAllowed.Location = new System.Drawing.Point(462, 363);
             this.cbStageAllowed.Name = "cbStageAllowed";
             this.cbStageAllowed.Size = new System.Drawing.Size(128, 27);
-            this.cbStageAllowed.TabIndex = 3;
+            this.cbStageAllowed.TabIndex = 2;
             // 
             // label7
             // 
@@ -402,7 +402,7 @@
             0});
             this.nudAmount.Name = "nudAmount";
             this.nudAmount.Size = new System.Drawing.Size(51, 24);
-            this.nudAmount.TabIndex = 11;
+            this.nudAmount.TabIndex = 7;
             this.nudAmount.Value = new decimal(new int[] {
             1,
             0,
@@ -478,7 +478,7 @@
             0});
             this.nudPlayerLevel.Name = "nudPlayerLevel";
             this.nudPlayerLevel.Size = new System.Drawing.Size(49, 24);
-            this.nudPlayerLevel.TabIndex = 12;
+            this.nudPlayerLevel.TabIndex = 14;
             this.nudPlayerLevel.Value = new decimal(new int[] {
             1,
             0,
@@ -540,7 +540,7 @@
             -2147483648});
             this.pkDamage.Name = "pkDamage";
             this.pkDamage.Size = new System.Drawing.Size(53, 24);
-            this.pkDamage.TabIndex = 83;
+            this.pkDamage.TabIndex = 13;
             this.pkDamage.Value = new decimal(new int[] {
             1,
             0,
@@ -629,7 +629,7 @@
             this.tbSearch.Location = new System.Drawing.Point(67, 643);
             this.tbSearch.Name = "tbSearch";
             this.tbSearch.Size = new System.Drawing.Size(324, 17);
-            this.tbSearch.TabIndex = 89;
+            this.tbSearch.TabIndex = 0;
             this.tbSearch.Tag = "";
             this.tbSearch.Text = "Search";
             this.tbSearch.Click += new System.EventHandler(this.tbSearch_Click);
@@ -791,7 +791,7 @@
             this.chkAppend.Location = new System.Drawing.Point(462, 606);
             this.chkAppend.Name = "chkAppend";
             this.chkAppend.Size = new System.Drawing.Size(100, 23);
-            this.chkAppend.TabIndex = 103;
+            this.chkAppend.TabIndex = 12;
             this.chkAppend.Text = "Append to List";
             this.chkAppend.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.chkAppend.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -835,7 +835,7 @@
             this.chkForceShiny.Location = new System.Drawing.Point(477, 559);
             this.chkForceShiny.Name = "chkForceShiny";
             this.chkForceShiny.Size = new System.Drawing.Size(100, 23);
-            this.chkForceShiny.TabIndex = 105;
+            this.chkForceShiny.TabIndex = 10;
             this.chkForceShiny.Text = "Always Shiny?";
             this.chkForceShiny.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.chkForceShiny.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -865,7 +865,7 @@
             this.cbRegion.Location = new System.Drawing.Point(462, 330);
             this.cbRegion.Name = "cbRegion";
             this.cbRegion.Size = new System.Drawing.Size(128, 27);
-            this.cbRegion.TabIndex = 106;
+            this.cbRegion.TabIndex = 1;
             this.cbRegion.SelectedIndexChanged += new System.EventHandler(this.cbRegion_SelectedIndexChanged);
             // 
             // FormScan

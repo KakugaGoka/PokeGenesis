@@ -30,6 +30,9 @@ namespace GenesisDex
         RegionsList regionXML = new RegionsList();
         List<PokeRegion> regionList = new List<PokeRegion>();
 
+        SpawnList spawnXML = new SpawnList();
+        List<PokeRegion> spawnList = new List<PokeRegion>();
+
         bool dragging { get; set; }
         bool restoreDefaults { get; set; }
 
@@ -39,6 +42,7 @@ namespace GenesisDex
             dragging = false;
             restoreDefaults = false;
             RefreshOptions();
+            RefreshRegions();
             pbExit.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButton.png");
         }
 
@@ -67,8 +71,12 @@ namespace GenesisDex
         {
             if (listBanned.SelectedItems != null)
             {
-                listAllowed.Items.Add(listBanned.SelectedItems);
-                listBanned.Items.Remove(listBanned.SelectedItems);
+                for (int i = 0; i < listBanned.SelectedItems.Count; i++)
+                {
+                    listAllowed.Items.Add(listBanned.SelectedItems[i]);
+                    listBanned.Items.Remove(listBanned.SelectedItems[i]);
+                    i--;
+                }
             }
         }
 
@@ -229,8 +237,6 @@ namespace GenesisDex
             banList = banXML.createList();
             pokeList = new List<Pokemon>();
             pokeList = pokeXML.createList();
-            regionList = new List<PokeRegion>();
-            regionList = regionXML.createList();
             nudPlayerLevel.Value = optionsList[0].MaxPlayerLevel;
             nudPokeLevel.Value = optionsList[0].MaxPokemonLevel;
             nudScanLimit.Value = optionsList[0].MaxScanAmount;
@@ -244,9 +250,6 @@ namespace GenesisDex
             txtShinyGasp.Text = optionsList[0].ShinyGasp;
             listBanned.Items.Clear();
             listAllowed.Items.Clear();
-            listRegionAllowed.Items.Clear();
-            listRegionBanned.Items.Clear();
-            listRegions.Items.Clear();
             for (var i = 0; i < banList.Count; i++)
             {
                 if (banList[i] != "Placeholder")
@@ -258,14 +261,26 @@ namespace GenesisDex
                 if (!listBanned.Items.Contains(s.id))
                     listAllowed.Items.Add(s.id);
             }
+        }
+
+        private void RefreshRegions()
+        {
+            regionList = new List<PokeRegion>();
+            regionList = regionXML.createList();
+            spawnList = new List<PokeRegion>();
+            spawnList = spawnXML.createList();
+            listRegionAllowed.Items.Clear();
+            listRegionBanned.Items.Clear();
+            listRegions.Items.Clear();
             for (var i = 0; i < regionList.Count; i++)
             {
                 listRegions.Items.Add(regionList[i].RegionName);
             }
             listRegions.SelectedIndex = 0;
-            foreach (string s in regionList[listRegions.SelectedIndex].Spawns)
+            foreach (string s in spawnList[listRegions.SelectedIndex].Spawns)
             {
-                listRegionAllowed.Items.Add(s);
+                if (s != "Placeholder")
+                    listRegionAllowed.Items.Add(s);
             }
             SortPokeList();
             foreach (Pokemon s in pokeList)
@@ -291,24 +306,98 @@ namespace GenesisDex
             regionAllowed = listRegionAllowed.Items.Cast<string>().ToList();
             XDocument docX = XDocument.Load(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Regions.xml");
             docX.Descendants().Where(d => string.IsNullOrEmpty(d.Value)).Remove();
-            var nameNode = from p in docX.Descendants("Regions")
-                           where p.Elements("Region").Any(x => (string)x.Attribute("Name") == listRegions.SelectedItem.ToString())
-                           select p.Element("Region");
-            var regionNode = nameNode.ElementAt(0);
+            var nameNode = docX.Descendants("Regions").Elements("Region");
+            var regionNode = nameNode.ElementAt(listRegions.SelectedIndex);
             var maxLevel = regionNode.Element("MaxLevel");
             var minLevel = regionNode.Element("MinLevel");
             var regionName = regionNode.Attribute("Name");
             maxLevel.Value = nudRegionMax.Value.ToString();
             minLevel.Value = nudRegionMin.Value.ToString();
             regionName.Value = tbRegionName.Text;
-            if (regionAllowed != null)
+            regionNode.Element("Spawns").Remove();
+            XElement ban;
+            if (regionAllowed == null)
             {
-                XElement ban = new XElement("Spawns",
+                ban = new XElement("Spawns",
+                    new XElement("id", "Placeholder"));
+            }
+            else
+            {
+                ban = new XElement("Spawns",
                     from b in regionAllowed
                     select new XElement("id", b));
-            docX.Root.Add(ban);
             }
+            regionNode.Add(ban);
             docX.Save(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Regions.xml");
+            RefreshRegions();
+        }
+
+        private void btnRegionAdd_Click(object sender, EventArgs e)
+        {
+            if (listRegionAllowed.SelectedItems != null)
+            {
+                for (int i = 0; i < listRegionAllowed.SelectedItems.Count; i++)
+                {
+                    listRegionBanned.Items.Add(listRegionAllowed.SelectedItems[i]);
+                    listRegionAllowed.Items.Remove(listRegionAllowed.SelectedItems[i]);
+                    i--;
+                }
+            }
+        }
+
+        private void btnRegionRemove_Click(object sender, EventArgs e)
+        {
+            if (listRegionBanned.SelectedItems != null)
+            {
+                for (int i = 0; i < listRegionBanned.SelectedItems.Count; i++)
+                {
+                    listRegionAllowed.Items.Add(listRegionBanned.SelectedItems[i]);
+                    listRegionBanned.Items.Remove(listRegionBanned.SelectedItems[i]);
+                    i--;
+                }
+            }
+        }
+
+        private void btnAddRegion_Click(object sender, EventArgs e)
+        {
+            int newRegionNum = 0;
+            doesExist:
+            newRegionNum++;
+            if (listRegions.Items.Contains("NewRegion" + newRegionNum))
+            {
+                goto doesExist;
+            }
+            XDocument docX = XDocument.Load(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Regions.xml");
+            var newRegionXML = new XElement("Region", 
+                new XAttribute("Name", "NewRegion" + newRegionNum), 
+                new XElement("MaxLevel", "100"),
+                new XElement("MinLevel", "1"),
+                new XElement("Spawns",
+                new XElement("id", "Placeholder")));
+            docX.Root.Add(newRegionXML);
+            docX.Save(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Regions.xml");
+            RefreshRegions();
+        }
+
+        private void listRegions_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbRegionName.Text = listRegions.SelectedItem.ToString();
+            nudRegionMax.Value = regionList[listRegions.SelectedIndex].MaxLevel;
+            nudRegionMin.Value = regionList[listRegions.SelectedIndex].MinLevel;
+            listRegionAllowed.Items.Clear();
+            listRegionBanned.Items.Clear();
+            if (spawnList[listRegions.SelectedIndex].Spawns != null)
+                foreach (string s in spawnList[listRegions.SelectedIndex].Spawns)
+                {
+                    if (s != "Placeholder")
+                        listRegionAllowed.Items.Add(s);
+                }
+            SortPokeList();
+            foreach (Pokemon s in pokeList)
+            {
+                if (!listRegionAllowed.Items.Contains(s.id))
+                    listRegionBanned.Items.Add(s.id);
+            }
         }
     }
 }

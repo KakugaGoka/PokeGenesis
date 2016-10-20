@@ -66,8 +66,8 @@
             this.btnAddRegion = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.btnRegionRemove = new System.Windows.Forms.Button();
             this.btnRegionAdd = new System.Windows.Forms.Button();
+            this.btnRegionRemove = new System.Windows.Forms.Button();
             this.listRegions = new System.Windows.Forms.ListBox();
             this.label16 = new System.Windows.Forms.Label();
             this.btnSaveRegion = new System.Windows.Forms.Button();
@@ -444,6 +444,7 @@
             this.btnAddRegion.TabIndex = 36;
             this.btnAddRegion.Text = "Add Region";
             this.btnAddRegion.UseVisualStyleBackColor = true;
+            this.btnAddRegion.Click += new System.EventHandler(this.btnAddRegion_Click);
             // 
             // label14
             // 
@@ -463,23 +464,25 @@
             this.label15.TabIndex = 38;
             this.label15.Text = "Regional Pokemon";
             // 
-            // btnRegionRemove
-            // 
-            this.btnRegionRemove.Location = new System.Drawing.Point(502, 526);
-            this.btnRegionRemove.Name = "btnRegionRemove";
-            this.btnRegionRemove.Size = new System.Drawing.Size(39, 23);
-            this.btnRegionRemove.TabIndex = 40;
-            this.btnRegionRemove.Text = "<----- ";
-            this.btnRegionRemove.UseVisualStyleBackColor = true;
-            // 
             // btnRegionAdd
             // 
-            this.btnRegionAdd.Location = new System.Drawing.Point(502, 495);
+            this.btnRegionAdd.Location = new System.Drawing.Point(502, 526);
             this.btnRegionAdd.Name = "btnRegionAdd";
             this.btnRegionAdd.Size = new System.Drawing.Size(39, 23);
-            this.btnRegionAdd.TabIndex = 39;
-            this.btnRegionAdd.Text = " ----->";
+            this.btnRegionAdd.TabIndex = 40;
+            this.btnRegionAdd.Text = "<----- ";
             this.btnRegionAdd.UseVisualStyleBackColor = true;
+            this.btnRegionAdd.Click += new System.EventHandler(this.btnRegionRemove_Click);
+            // 
+            // btnRegionRemove
+            // 
+            this.btnRegionRemove.Location = new System.Drawing.Point(502, 495);
+            this.btnRegionRemove.Name = "btnRegionRemove";
+            this.btnRegionRemove.Size = new System.Drawing.Size(39, 23);
+            this.btnRegionRemove.TabIndex = 39;
+            this.btnRegionRemove.Text = " ----->";
+            this.btnRegionRemove.UseVisualStyleBackColor = true;
+            this.btnRegionRemove.Click += new System.EventHandler(this.btnRegionAdd_Click);
             // 
             // listRegions
             // 
@@ -488,6 +491,7 @@
             this.listRegions.Name = "listRegions";
             this.listRegions.Size = new System.Drawing.Size(180, 316);
             this.listRegions.TabIndex = 41;
+            this.listRegions.SelectedIndexChanged += new System.EventHandler(this.listRegions_SelectedIndexChanged);
             // 
             // label16
             // 
@@ -590,8 +594,8 @@
             this.Controls.Add(this.btnSaveRegion);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.listRegions);
-            this.Controls.Add(this.btnRegionRemove);
             this.Controls.Add(this.btnRegionAdd);
+            this.Controls.Add(this.btnRegionRemove);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.btnAddRegion);
@@ -691,8 +695,8 @@
         private System.Windows.Forms.Button btnAddRegion;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Button btnRegionRemove;
         private System.Windows.Forms.Button btnRegionAdd;
+        private System.Windows.Forms.Button btnRegionRemove;
         private System.Windows.Forms.ListBox listRegions;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button btnSaveRegion;

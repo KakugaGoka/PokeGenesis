@@ -459,7 +459,7 @@ namespace GenesisDexEngine
         }
     }
 
-    // Used to create a list of Hiigh Abilites for the specified pokemon from the Pokemon.XML
+    //
     class RegionsList
     {
         public List<PokeRegion> createList()
@@ -467,18 +467,31 @@ namespace GenesisDexEngine
             string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\Regions.xml");
             List<PokeRegion> idList = new List<PokeRegion>();
             XDocument doc = XDocument.Load(fileName);
-            List<string> child = new List<string>();
-            foreach (XElement n in doc.Descendants("Region").Descendants("Spawns").Elements("id"))
-            {
-                child.Add((string)n.Value);
-            }
             var query = from node in doc.Descendants("Region")
                         select new PokeRegion
                         {
-                            Spawns = child,
                             RegionName = (string)node.Attribute("Name"),
                             MaxLevel = (int)node.Element("MaxLevel"),
                             MinLevel = (int)node.Element("MinLevel"),
+                        };
+            idList = query.ToList();
+            return idList;
+        }
+    }
+
+    //
+    class SpawnList
+    {
+        public List<PokeRegion> createList()
+        {
+            string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\Regions.xml");
+            List<PokeRegion> idList = new List<PokeRegion>();
+            XDocument doc = XDocument.Load(fileName);
+            var query = from node in doc.Descendants("Region").Descendants("Spawns")
+                        select new PokeRegion
+                        {
+                            Spawns = (from val in node.Elements("id")
+                                      select val.Value).ToList()
                         };
             idList = query.ToList();
             return idList;

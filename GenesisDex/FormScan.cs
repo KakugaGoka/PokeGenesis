@@ -36,6 +36,9 @@ namespace GenesisDex
         RegionsList regionXML = new RegionsList();
         List<PokeRegion> regionList = new List<PokeRegion>();
         //===========================================================================================================
+        SpawnList spawnXML = new SpawnList();
+        List<PokeRegion> spawnList = new List<PokeRegion>();
+        //===========================================================================================================
         MovesList moveXML = new MovesList();
         List<Moves> moveList = new List<Moves>();
         //===========================================================================================================
@@ -182,7 +185,6 @@ namespace GenesisDex
             typeList = typeXML.createList("Types", "Type");
             habitatList = habitatXML.createList("Habitats", "Habitat");
             natureList = natureXML.createList("Natures", "Nature");
-            regionList = regionXML.createList();
             updateList.Add("updating...");
             habitats.Clear();
             types.Clear();
@@ -194,20 +196,9 @@ namespace GenesisDex
             {
                 types.Add(typeList[t].id);
             }
-            pokeDex.Add("Any");
-            for (var p = 0; p < pokeList.Count; p++)
-            {
-                pokeDex.Add(pokeList[p].id);
-            }
-            regions.Add("Any");
-            for (var r = 0; r < regionList.Count; r++)
-            {
-                regions.Add(regionList[r].RegionName);
-            }
             cbHabitat.DataSource = habitats;
             cbType.DataSource = types;
             lbPokemon.DataSource = pokeDex;
-            cbRegion.DataSource = regions;
             stages.Add("Any");
             stages.Add("Only 1s");
             stages.Add("Only 2s");
@@ -243,6 +234,8 @@ namespace GenesisDex
             btnSave.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Save.png"));
             PokeSaveDialog.Filter = "Text File | *.txt";
             chkForceShiny.Enabled = false;
+            nudLevelMin.Value = 2;
+            nudLevelMax.Value = 15;
         }
 
         //===========================================================================================================
@@ -253,9 +246,12 @@ namespace GenesisDex
         {
             pokeList = new List<Pokemon>();
             optionsList = new List<Options>();
+            regionList = new List<PokeRegion>();
+            spawnList = new List<PokeRegion>();
             banList = new List<string>();
             pokeDex = new List<string>();
-            lbPokemon.DataSource = banList;
+            regionList = regionXML.createList();
+            spawnList = spawnXML.createList();
             pokeList = pokeXML.createList();
             optionsList = optionsXML.createList();
             banList = banXML.createList();
@@ -274,7 +270,16 @@ namespace GenesisDex
             {
                 pokeDex.Add(pokeList[p].id);
             }
+
+            regions.Add("Any");
+            for (var r = 0; r < regionList.Count; r++)
+            {
+                regions.Add(regionList[r].RegionName);
+            }
+            lbPokemon.DataSource = banList;
+            cbRegion.DataSource = banList;
             lbPokemon.DataSource = pokeDex;
+            cbRegion.DataSource = regions;
             nudAmount.Maximum = optionsList[0].MaxScanAmount;
             nudLevelMax.Maximum = optionsList[0].MaxPokemonLevel;
             nudLevelMin.Maximum = optionsList[0].MaxPokemonLevel;
@@ -429,6 +434,11 @@ namespace GenesisDex
             for (int p = 0; p < pokeList.Count; p++)
             {
                 if (banList.Contains(pokeList[p].id))
+                {
+                    pokeList.RemoveAt(p);
+                    p--;
+                }
+                if (!lbPokemon.Items.Contains(pokeList[p].id))
                 {
                     pokeList.RemoveAt(p);
                     p--;
@@ -2079,11 +2089,13 @@ namespace GenesisDex
                 }
                 regionPokemon = new List<string>();
                 regionPokemon.Add("Any");
-                foreach (string p in regionList[selectRegion].Spawns)
+                foreach (string p in spawnList[selectRegion].Spawns)
                 {
                     regionPokemon.Add(p);
                 }
                 lbPokemon.DataSource = regionPokemon;
+                nudLevelMax.Value = regionList[selectRegion].MaxLevel;
+                nudLevelMin.Value = regionList[selectRegion].MinLevel;
             }
         }
     }
