@@ -265,12 +265,13 @@ namespace GenesisDex
                 }
             }
             SortPokemon(pokeList);
+            pokeDex.Clear();
             pokeDex.Add("Any");
             for (var p = 0; p < pokeList.Count; p++)
             {
                 pokeDex.Add(pokeList[p].id);
             }
-
+            regions.Clear();
             regions.Add("Any");
             for (var r = 0; r < regionList.Count; r++)
             {
@@ -334,6 +335,7 @@ namespace GenesisDex
                 preInfo.Clear();
                 isShiny = false;
                 Final = GetPokemon();
+                if (Final == null) return;
                 int Level = GetLevel();
                 int i = rng.Next(1, 101);
                 if (!canShiny) i = 50;
@@ -394,7 +396,7 @@ namespace GenesisDex
         private void PokeGenerator_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             Current = 0;
-            pbPokemon.Image = AllImages[Current];
+            try { pbPokemon.Image = AllImages[Current]; } catch { return; }
             SetPoke();
             UpdatePage();
             tbPokeCount.Text = (Current + 1).ToString() + "/" + AllPokemon.Count.ToString();
