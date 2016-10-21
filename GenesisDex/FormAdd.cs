@@ -39,7 +39,6 @@ namespace GenesisDex
             InitializeComponent();
             gbMega.Visible = false;
             gbMega2.Visible = false;
-            gbRemove.Visible = false;
             List<string> abilitymod = new List<string>();
             abilitymod.Add("Basic");
             abilitymod.Add("Advanced");
@@ -99,7 +98,6 @@ namespace GenesisDex
             AddContextMenuTB(tbMega2SPDEF);
             AddContextMenuTB(tbMega2SPD);
             AddContextMenuTB(tbMega2Ability);
-            AddContextMenuTB(tbRemove);
             cbAbi1.ContextMenu = new ContextMenu();
             cbAbi2.ContextMenu = new ContextMenu();
             cbAbi3.ContextMenu = new ContextMenu();
@@ -421,66 +419,6 @@ namespace GenesisDex
             {
                 gbMega2.Visible = false;
                 gbMega.Text = "Mega Info";
-            }
-        }
-        //===========================================================================================================
-        //===========================================================================================================
-
-        //===========================================================================================================
-        //===========================================================================================================
-        private void cbRemove_CheckedChanged(object sender, EventArgs e)
-        {
-            if (cbRemove.Checked == true)
-            {
-                gbRemove.Visible = true;
-            }
-            else
-            {
-                gbRemove.Visible = false;
-            }
-        }
-        //===========================================================================================================
-        //===========================================================================================================
-
-        //===========================================================================================================
-        //===========================================================================================================
-        private void btRemove_Click(object sender, EventArgs e)
-        {
-            XmlDocument doc = new XmlDocument();
-            doc.Load(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Pokemon.xml");
-            string ItemCode = tbRemove.Text;
-            string num = null;
-            XmlNode node = doc.SelectSingleNode("/*/Pokemon[contains(id,'" + ItemCode + "')]");
-            try
-            {
-                num = doc.SelectSingleNode("/*/Pokemon[contains(id,'" + ItemCode + "')]/number").InnerText;
-            }
-            catch { MessageBox.Show("This Pokemon does not exist in the Pokedex... Maybe check your spelling?"); return; }
-            XmlNode node1 = doc.SelectSingleNode("/*/Mega" + num);
-            XmlNode node2 = doc.SelectSingleNode("/*/MegaX" + num);
-            XmlNode node3 = doc.SelectSingleNode("/*/MegaY" + num);
-            try { node.RemoveAll(); } catch { }
-            try { node1.RemoveAll(); } catch { }
-            try { node2.RemoveAll(); } catch { }
-            try { node3.RemoveAll(); } catch { }
-            MessageBox.Show(tbRemove.Text + " has been removed from the Pokedex...");
-            tbRemove.Text = "";
-            doc.Save(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Pokemon.xml");
-            doc = null;
-            XDocument doc1 = XDocument.Load(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Pokemon.xml");
-            doc1.Descendants().Where(d => string.IsNullOrEmpty(d.Value)).Remove();
-            doc1.Save(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Pokemon.xml");
-        }
-        //===========================================================================================================
-        //===========================================================================================================
-
-        //===========================================================================================================
-        //===========================================================================================================
-        private void tbRemove_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                btRemove_Click(this, new EventArgs());
             }
         }
         //===========================================================================================================

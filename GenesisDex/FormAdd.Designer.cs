@@ -113,7 +113,6 @@
             this.gbMega = new System.Windows.Forms.GroupBox();
             this.gbMega2 = new System.Windows.Forms.GroupBox();
             this.ttPokemon = new System.Windows.Forms.ToolTip(this.components);
-            this.tbRemove = new System.Windows.Forms.TextBox();
             this.listCap = new System.Windows.Forms.RichTextBox();
             this.listEvo = new System.Windows.Forms.RichTextBox();
             this.listSkills = new System.Windows.Forms.RichTextBox();
@@ -121,10 +120,6 @@
             this.listMoves = new System.Windows.Forms.RichTextBox();
             this.tbAbi1 = new System.Windows.Forms.TextBox();
             this.rtbEntry = new System.Windows.Forms.RichTextBox();
-            this.gbRemove = new System.Windows.Forms.GroupBox();
-            this.btRemove = new System.Windows.Forms.Button();
-            this.label45 = new System.Windows.Forms.Label();
-            this.cbRemove = new System.Windows.Forms.CheckBox();
             this.cbLegend = new System.Windows.Forms.CheckBox();
             this.cbAbi1 = new System.Windows.Forms.ComboBox();
             this.cbAbi2 = new System.Windows.Forms.ComboBox();
@@ -137,7 +132,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             this.gbMega.SuspendLayout();
             this.gbMega2.SuspendLayout();
-            this.gbRemove.SuspendLayout();
             this.SuspendLayout();
             // 
             // btAddPKMN
@@ -891,16 +885,6 @@
             this.gbMega2.TabStop = false;
             this.gbMega2.Text = "Mega Y Info";
             // 
-            // tbRemove
-            // 
-            this.tbRemove.Location = new System.Drawing.Point(47, 18);
-            this.tbRemove.Name = "tbRemove";
-            this.tbRemove.Size = new System.Drawing.Size(221, 20);
-            this.tbRemove.TabIndex = 150;
-            this.tbRemove.TabStop = false;
-            this.ttPokemon.SetToolTip(this.tbRemove, "Name of the Pokemon you wish to remove.");
-            this.tbRemove.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbRemove_KeyDown);
-            // 
             // listCap
             // 
             this.listCap.Location = new System.Drawing.Point(403, 257);
@@ -967,49 +951,6 @@
             this.rtbEntry.Text = "";
             this.ttPokemon.SetToolTip(this.rtbEntry, "1 - Move\r\n4 - Move\r\n7 - Move\r\n(Please enter like this as the level is used in gen" +
         "eration)");
-            // 
-            // gbRemove
-            // 
-            this.gbRemove.Controls.Add(this.btRemove);
-            this.gbRemove.Controls.Add(this.tbRemove);
-            this.gbRemove.Controls.Add(this.label45);
-            this.gbRemove.Location = new System.Drawing.Point(679, 12);
-            this.gbRemove.Name = "gbRemove";
-            this.gbRemove.Size = new System.Drawing.Size(410, 49);
-            this.gbRemove.TabIndex = 132;
-            this.gbRemove.TabStop = false;
-            // 
-            // btRemove
-            // 
-            this.btRemove.Location = new System.Drawing.Point(294, 12);
-            this.btRemove.Name = "btRemove";
-            this.btRemove.Size = new System.Drawing.Size(88, 32);
-            this.btRemove.TabIndex = 134;
-            this.btRemove.TabStop = false;
-            this.btRemove.Text = "Remove";
-            this.btRemove.UseVisualStyleBackColor = true;
-            this.btRemove.Click += new System.EventHandler(this.btRemove_Click);
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(6, 21);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(35, 13);
-            this.label45.TabIndex = 19;
-            this.label45.Text = "Name";
-            // 
-            // cbRemove
-            // 
-            this.cbRemove.AutoSize = true;
-            this.cbRemove.Location = new System.Drawing.Point(661, 7);
-            this.cbRemove.Name = "cbRemove";
-            this.cbRemove.Size = new System.Drawing.Size(215, 17);
-            this.cbRemove.TabIndex = 133;
-            this.cbRemove.TabStop = false;
-            this.cbRemove.Text = "Remove a Pokemon from the Pokedex?";
-            this.cbRemove.UseVisualStyleBackColor = true;
-            this.cbRemove.CheckedChanged += new System.EventHandler(this.cbRemove_CheckedChanged);
             // 
             // cbLegend
             // 
@@ -1110,8 +1051,6 @@
             this.Controls.Add(this.cbAbi1);
             this.Controls.Add(this.pbExit);
             this.Controls.Add(this.cbLegend);
-            this.Controls.Add(this.cbRemove);
-            this.Controls.Add(this.gbRemove);
             this.Controls.Add(this.gbMega2);
             this.Controls.Add(this.gbMega);
             this.Controls.Add(this.cbXY);
@@ -1172,8 +1111,6 @@
             this.gbMega.PerformLayout();
             this.gbMega2.ResumeLayout(false);
             this.gbMega2.PerformLayout();
-            this.gbRemove.ResumeLayout(false);
-            this.gbRemove.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1264,11 +1201,6 @@
         private System.Windows.Forms.GroupBox gbMega;
         private System.Windows.Forms.GroupBox gbMega2;
         private System.Windows.Forms.ToolTip ttPokemon;
-        private System.Windows.Forms.GroupBox gbRemove;
-        private System.Windows.Forms.Button btRemove;
-        private System.Windows.Forms.TextBox tbRemove;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.CheckBox cbRemove;
         private System.Windows.Forms.CheckBox cbLegend;
         private System.Windows.Forms.ComboBox cbAbi1;
         private System.Windows.Forms.ComboBox cbAbi2;

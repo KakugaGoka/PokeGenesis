@@ -252,12 +252,17 @@ namespace GenesisDex
             txtShinyGasp.Text = optionsList[0].ShinyGasp;
             listBanned.Items.Clear();
             listAllowed.Items.Clear();
+            listPokeDex.Items.Clear();
             for (var i = 0; i < banList.Count; i++)
             {
                 if (banList[i] != "Placeholder")
                     listBanned.Items.Add(banList[i]);
             }
             SortPokeList();
+            foreach (Pokemon s in pokeList)
+            {
+                listPokeDex.Items.Add(s.id);
+            }
             foreach (Pokemon s in pokeList)
             {
                 if (!listBanned.Items.Contains(s.id))
@@ -402,22 +407,7 @@ namespace GenesisDex
             }
         }
 
-        private void btnRegionDelete_Click(object sender, EventArgs e)
-        {
-            DialogResult deleteRegion = MessageBox.Show("Are you sure you wish to delete the " + listRegions.SelectedItem.ToString() + " Region?", "Delete Region", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
-            if (deleteRegion == DialogResult.Yes)
-            {
-                XDocument docX = XDocument.Load(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Regions.xml");
-                docX.Descendants().Where(d => string.IsNullOrEmpty(d.Value)).Remove();
-                var nameNode = docX.Descendants("Regions").Elements("Region");
-                var regionNode = nameNode.ElementAt(listRegions.SelectedIndex);
-                regionNode.Remove();
-                docX.Save(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Regions.xml");
-                RefreshRegions();
-            }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnRestoreRegions_Click(object sender, EventArgs e)
         {
             DialogResult deleteRegion = MessageBox.Show("Are you sure you wish to restore the default regions?", "Restore Region Defaults", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
             if (deleteRegion == DialogResult.Yes)
@@ -433,6 +423,39 @@ namespace GenesisDex
                 File.Delete(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Regions.xml");
                 File.WriteAllText(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Regions.xml", result);
                 RefreshRegions();
+            }
+        }
+
+        private void btnDeleteRegion_Click(object sender, EventArgs e)
+        {
+            DialogResult deleteRegion = MessageBox.Show("Are you sure you wish to delete the " + listRegions.SelectedItem.ToString() + " Region?", "Delete Region", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            if (deleteRegion == DialogResult.Yes)
+            {
+                XDocument docX = XDocument.Load(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Regions.xml");
+                docX.Descendants().Where(d => string.IsNullOrEmpty(d.Value)).Remove();
+                var nameNode = docX.Descendants("Regions").Elements("Region");
+                var regionNode = nameNode.ElementAt(listRegions.SelectedIndex);
+                regionNode.Remove();
+                docX.Save(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Regions.xml");
+                RefreshRegions();
+            }
+        }
+
+        private void btnDeletePoke_Click(object sender, EventArgs e)
+        {
+            DialogResult deleteRegion = MessageBox.Show("Are you sure you wish to delete " + listPokeDex.SelectedItem.ToString() + " from the Pokedex?", "Delete Pokemon", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            if (deleteRegion == DialogResult.Yes)
+            {
+                XDocument docX = XDocument.Load(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Pokemon.xml");
+                docX.Descendants().Where(d => string.IsNullOrEmpty(d.Value)).Remove();
+                string numberNeeded = "000";
+                try { XElement nameNode = docX.Root.Descendants("Pokemon").Where(x => x.Element("id").Value == listPokeDex.SelectedItem.ToString()).SingleOrDefault();
+                    numberNeeded = nameNode.Element("number").Value;
+                    nameNode.Remove(); } catch { }
+                try { XElement megaNode = docX.Root.Descendants("Mega" + numberNeeded).SingleOrDefault();
+                    megaNode.Remove(); } catch { }
+                docX.Save(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Pokemon.xml");
+                RefreshOptions();
             }
         }
     }

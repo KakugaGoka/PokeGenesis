@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Namespace>
+<Pokedex>
   <!-- 
   Example:
   <Pokemon Stage="Stage in the Evolution tree. 1, 2, or 3 (Nuumber only please)">
@@ -49850,4 +49850,4 @@
       </Moves>
     </List720-unbound>
   </Pokemon>
-</Namespace>
+</Pokedex>

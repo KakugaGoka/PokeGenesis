@@ -47,7 +47,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.listAllowed = new System.Windows.Forms.ListBox();
             this.listBanned = new System.Windows.Forms.ListBox();
-            this.btnSave = new System.Windows.Forms.Button();
+            this.btnSaveOptions = new System.Windows.Forms.Button();
             this.btnBan = new System.Windows.Forms.Button();
             this.btnAllow = new System.Windows.Forms.Button();
             this.pbExit = new System.Windows.Forms.PictureBox();
@@ -55,7 +55,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.nudCashPerLevel = new System.Windows.Forms.NumericUpDown();
-            this.btnDefault = new System.Windows.Forms.Button();
+            this.btnRestoreOptions = new System.Windows.Forms.Button();
             this.btnAddPoke = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.nudCryVolume = new System.Windows.Forms.NumericUpDown();
@@ -77,8 +77,13 @@
             this.nudRegionMax = new System.Windows.Forms.NumericUpDown();
             this.tbRegionName = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.btnRegionDelete = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnDeleteRegion = new System.Windows.Forms.Button();
+            this.btnRestoreRegions = new System.Windows.Forms.Button();
+            this.btnDeletePoke = new System.Windows.Forms.Button();
+            this.listPokeDex = new System.Windows.Forms.ListBox();
+            this.gbOptions = new System.Windows.Forms.GroupBox();
+            this.gbPokedex = new System.Windows.Forms.GroupBox();
+            this.gbRegion = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudItemTier)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudScanLimit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPokeLevel)).BeginInit();
@@ -89,11 +94,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudDexSkin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRegionMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRegionMax)).BeginInit();
+            this.gbPokedex.SuspendLayout();
             this.SuspendLayout();
             // 
             // nudItemTier
             // 
-            this.nudItemTier.Location = new System.Drawing.Point(127, 140);
+            this.nudItemTier.Location = new System.Drawing.Point(127, 150);
             this.nudItemTier.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -105,7 +111,7 @@
             // 
             // nudScanLimit
             // 
-            this.nudScanLimit.Location = new System.Drawing.Point(127, 218);
+            this.nudScanLimit.Location = new System.Drawing.Point(127, 228);
             this.nudScanLimit.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -117,7 +123,7 @@
             // 
             // nudPokeLevel
             // 
-            this.nudPokeLevel.Location = new System.Drawing.Point(127, 192);
+            this.nudPokeLevel.Location = new System.Drawing.Point(127, 202);
             this.nudPokeLevel.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -129,7 +135,7 @@
             // 
             // nudPlayerLevel
             // 
-            this.nudPlayerLevel.Location = new System.Drawing.Point(127, 166);
+            this.nudPlayerLevel.Location = new System.Drawing.Point(127, 176);
             this.nudPlayerLevel.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -142,7 +148,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(50, 142);
+            this.label1.Location = new System.Drawing.Point(50, 152);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 13);
             this.label1.TabIndex = 4;
@@ -151,7 +157,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 168);
+            this.label2.Location = new System.Drawing.Point(33, 178);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 13);
             this.label2.TabIndex = 5;
@@ -160,7 +166,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 194);
+            this.label3.Location = new System.Drawing.Point(17, 204);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(104, 13);
             this.label3.TabIndex = 6;
@@ -169,7 +175,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 220);
+            this.label4.Location = new System.Drawing.Point(17, 230);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 13);
             this.label4.TabIndex = 7;
@@ -178,7 +184,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(43, 39);
+            this.label5.Location = new System.Drawing.Point(43, 49);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(78, 13);
             this.label5.TabIndex = 8;
@@ -187,7 +193,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(37, 65);
+            this.label6.Location = new System.Drawing.Point(37, 75);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(84, 13);
             this.label6.TabIndex = 9;
@@ -196,7 +202,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(41, 91);
+            this.label7.Location = new System.Drawing.Point(41, 101);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(80, 13);
             this.label7.TabIndex = 10;
@@ -205,7 +211,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(313, 18);
+            this.label8.Location = new System.Drawing.Point(313, 28);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(92, 13);
             this.label8.TabIndex = 11;
@@ -213,21 +219,21 @@
             // 
             // txtItemGasp1
             // 
-            this.txtItemGasp1.Location = new System.Drawing.Point(127, 36);
+            this.txtItemGasp1.Location = new System.Drawing.Point(127, 46);
             this.txtItemGasp1.Name = "txtItemGasp1";
             this.txtItemGasp1.Size = new System.Drawing.Size(148, 20);
             this.txtItemGasp1.TabIndex = 12;
             // 
             // txtItemGasp2
             // 
-            this.txtItemGasp2.Location = new System.Drawing.Point(127, 62);
+            this.txtItemGasp2.Location = new System.Drawing.Point(127, 72);
             this.txtItemGasp2.Name = "txtItemGasp2";
             this.txtItemGasp2.Size = new System.Drawing.Size(148, 20);
             this.txtItemGasp2.TabIndex = 13;
             // 
             // txtPokeGasp
             // 
-            this.txtPokeGasp.Location = new System.Drawing.Point(127, 88);
+            this.txtPokeGasp.Location = new System.Drawing.Point(127, 98);
             this.txtPokeGasp.Name = "txtPokeGasp";
             this.txtPokeGasp.Size = new System.Drawing.Size(148, 20);
             this.txtPokeGasp.TabIndex = 14;
@@ -235,7 +241,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(544, 18);
+            this.label9.Location = new System.Drawing.Point(544, 28);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(92, 13);
             this.label9.TabIndex = 15;
@@ -244,7 +250,7 @@
             // listAllowed
             // 
             this.listAllowed.FormattingEnabled = true;
-            this.listAllowed.Location = new System.Drawing.Point(316, 34);
+            this.listAllowed.Location = new System.Drawing.Point(316, 44);
             this.listAllowed.Name = "listAllowed";
             this.listAllowed.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.listAllowed.Size = new System.Drawing.Size(180, 316);
@@ -253,25 +259,25 @@
             // listBanned
             // 
             this.listBanned.FormattingEnabled = true;
-            this.listBanned.Location = new System.Drawing.Point(547, 34);
+            this.listBanned.Location = new System.Drawing.Point(547, 44);
             this.listBanned.Name = "listBanned";
             this.listBanned.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.listBanned.Size = new System.Drawing.Size(180, 316);
             this.listBanned.TabIndex = 17;
             // 
-            // btnSave
+            // btnSaveOptions
             // 
-            this.btnSave.Location = new System.Drawing.Point(17, 327);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(94, 23);
-            this.btnSave.TabIndex = 18;
-            this.btnSave.Text = "Save Options";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            this.btnSaveOptions.Location = new System.Drawing.Point(123, 337);
+            this.btnSaveOptions.Name = "btnSaveOptions";
+            this.btnSaveOptions.Size = new System.Drawing.Size(94, 23);
+            this.btnSaveOptions.TabIndex = 18;
+            this.btnSaveOptions.Text = "Save Options";
+            this.btnSaveOptions.UseVisualStyleBackColor = true;
+            this.btnSaveOptions.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnBan
             // 
-            this.btnBan.Location = new System.Drawing.Point(502, 154);
+            this.btnBan.Location = new System.Drawing.Point(502, 164);
             this.btnBan.Name = "btnBan";
             this.btnBan.Size = new System.Drawing.Size(39, 23);
             this.btnBan.TabIndex = 19;
@@ -281,7 +287,7 @@
             // 
             // btnAllow
             // 
-            this.btnAllow.Location = new System.Drawing.Point(502, 185);
+            this.btnAllow.Location = new System.Drawing.Point(502, 195);
             this.btnAllow.Name = "btnAllow";
             this.btnAllow.Size = new System.Drawing.Size(39, 23);
             this.btnAllow.TabIndex = 20;
@@ -292,7 +298,7 @@
             // pbExit
             // 
             this.pbExit.BackColor = System.Drawing.Color.Transparent;
-            this.pbExit.Location = new System.Drawing.Point(717, 5);
+            this.pbExit.Location = new System.Drawing.Point(188, 0);
             this.pbExit.Name = "pbExit";
             this.pbExit.Size = new System.Drawing.Size(24, 23);
             this.pbExit.TabIndex = 21;
@@ -303,7 +309,7 @@
             // 
             // txtShinyGasp
             // 
-            this.txtShinyGasp.Location = new System.Drawing.Point(127, 114);
+            this.txtShinyGasp.Location = new System.Drawing.Point(127, 124);
             this.txtShinyGasp.Name = "txtShinyGasp";
             this.txtShinyGasp.Size = new System.Drawing.Size(148, 20);
             this.txtShinyGasp.TabIndex = 25;
@@ -311,7 +317,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(60, 117);
+            this.label11.Location = new System.Drawing.Point(60, 127);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(61, 13);
             this.label11.TabIndex = 24;
@@ -320,7 +326,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(42, 246);
+            this.label12.Location = new System.Drawing.Point(42, 256);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(79, 13);
             this.label12.TabIndex = 27;
@@ -328,7 +334,7 @@
             // 
             // nudCashPerLevel
             // 
-            this.nudCashPerLevel.Location = new System.Drawing.Point(127, 244);
+            this.nudCashPerLevel.Location = new System.Drawing.Point(127, 254);
             this.nudCashPerLevel.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -338,19 +344,19 @@
             this.nudCashPerLevel.Size = new System.Drawing.Size(58, 20);
             this.nudCashPerLevel.TabIndex = 26;
             // 
-            // btnDefault
+            // btnRestoreOptions
             // 
-            this.btnDefault.Location = new System.Drawing.Point(117, 327);
-            this.btnDefault.Name = "btnDefault";
-            this.btnDefault.Size = new System.Drawing.Size(94, 23);
-            this.btnDefault.TabIndex = 28;
-            this.btnDefault.Text = "Restore Options";
-            this.btnDefault.UseVisualStyleBackColor = true;
-            this.btnDefault.Click += new System.EventHandler(this.btnDefault_Click);
+            this.btnRestoreOptions.Location = new System.Drawing.Point(23, 337);
+            this.btnRestoreOptions.Name = "btnRestoreOptions";
+            this.btnRestoreOptions.Size = new System.Drawing.Size(94, 23);
+            this.btnRestoreOptions.TabIndex = 28;
+            this.btnRestoreOptions.Text = "Restore Options";
+            this.btnRestoreOptions.UseVisualStyleBackColor = true;
+            this.btnRestoreOptions.Click += new System.EventHandler(this.btnDefault_Click);
             // 
             // btnAddPoke
             // 
-            this.btnAddPoke.Location = new System.Drawing.Point(217, 327);
+            this.btnAddPoke.Location = new System.Drawing.Point(11, 693);
             this.btnAddPoke.Name = "btnAddPoke";
             this.btnAddPoke.Size = new System.Drawing.Size(94, 23);
             this.btnAddPoke.TabIndex = 29;
@@ -361,7 +367,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(61, 272);
+            this.label10.Location = new System.Drawing.Point(61, 282);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(60, 13);
             this.label10.TabIndex = 31;
@@ -369,7 +375,7 @@
             // 
             // nudCryVolume
             // 
-            this.nudCryVolume.Location = new System.Drawing.Point(127, 270);
+            this.nudCryVolume.Location = new System.Drawing.Point(127, 280);
             this.nudCryVolume.Maximum = new decimal(new int[] {
             10,
             0,
@@ -392,7 +398,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(48, 298);
+            this.label13.Location = new System.Drawing.Point(48, 308);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(73, 13);
             this.label13.TabIndex = 33;
@@ -400,7 +406,7 @@
             // 
             // nudDexSkin
             // 
-            this.nudDexSkin.Location = new System.Drawing.Point(127, 296);
+            this.nudDexSkin.Location = new System.Drawing.Point(127, 306);
             this.nudDexSkin.Maximum = new decimal(new int[] {
             4,
             0,
@@ -423,7 +429,7 @@
             // listRegionAllowed
             // 
             this.listRegionAllowed.FormattingEnabled = true;
-            this.listRegionAllowed.Location = new System.Drawing.Point(316, 376);
+            this.listRegionAllowed.Location = new System.Drawing.Point(316, 406);
             this.listRegionAllowed.Name = "listRegionAllowed";
             this.listRegionAllowed.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.listRegionAllowed.Size = new System.Drawing.Size(180, 316);
@@ -432,7 +438,7 @@
             // listRegionBanned
             // 
             this.listRegionBanned.FormattingEnabled = true;
-            this.listRegionBanned.Location = new System.Drawing.Point(547, 376);
+            this.listRegionBanned.Location = new System.Drawing.Point(547, 406);
             this.listRegionBanned.Name = "listRegionBanned";
             this.listRegionBanned.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.listRegionBanned.Size = new System.Drawing.Size(180, 316);
@@ -440,7 +446,7 @@
             // 
             // btnAddRegion
             // 
-            this.btnAddRegion.Location = new System.Drawing.Point(217, 640);
+            this.btnAddRegion.Location = new System.Drawing.Point(23, 676);
             this.btnAddRegion.Name = "btnAddRegion";
             this.btnAddRegion.Size = new System.Drawing.Size(94, 23);
             this.btnAddRegion.TabIndex = 36;
@@ -451,7 +457,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(544, 360);
+            this.label14.Location = new System.Drawing.Point(544, 390);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(90, 13);
             this.label14.TabIndex = 37;
@@ -460,7 +466,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(313, 360);
+            this.label15.Location = new System.Drawing.Point(313, 390);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(97, 13);
             this.label15.TabIndex = 38;
@@ -468,7 +474,7 @@
             // 
             // btnRegionAdd
             // 
-            this.btnRegionAdd.Location = new System.Drawing.Point(502, 527);
+            this.btnRegionAdd.Location = new System.Drawing.Point(502, 557);
             this.btnRegionAdd.Name = "btnRegionAdd";
             this.btnRegionAdd.Size = new System.Drawing.Size(39, 23);
             this.btnRegionAdd.TabIndex = 40;
@@ -478,7 +484,7 @@
             // 
             // btnRegionRemove
             // 
-            this.btnRegionRemove.Location = new System.Drawing.Point(502, 496);
+            this.btnRegionRemove.Location = new System.Drawing.Point(502, 526);
             this.btnRegionRemove.Name = "btnRegionRemove";
             this.btnRegionRemove.Size = new System.Drawing.Size(39, 23);
             this.btnRegionRemove.TabIndex = 39;
@@ -489,16 +495,16 @@
             // listRegions
             // 
             this.listRegions.FormattingEnabled = true;
-            this.listRegions.Location = new System.Drawing.Point(30, 376);
+            this.listRegions.Location = new System.Drawing.Point(30, 406);
             this.listRegions.Name = "listRegions";
-            this.listRegions.Size = new System.Drawing.Size(180, 290);
+            this.listRegions.Size = new System.Drawing.Size(180, 264);
             this.listRegions.TabIndex = 41;
             this.listRegions.SelectedIndexChanged += new System.EventHandler(this.listRegions_SelectedIndexChanged);
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(27, 360);
+            this.label16.Location = new System.Drawing.Point(27, 390);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(65, 13);
             this.label16.TabIndex = 42;
@@ -506,7 +512,7 @@
             // 
             // btnSaveRegion
             // 
-            this.btnSaveRegion.Location = new System.Drawing.Point(17, 669);
+            this.btnSaveRegion.Location = new System.Drawing.Point(123, 705);
             this.btnSaveRegion.Name = "btnSaveRegion";
             this.btnSaveRegion.Size = new System.Drawing.Size(94, 23);
             this.btnSaveRegion.TabIndex = 43;
@@ -517,7 +523,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(216, 420);
+            this.label17.Location = new System.Drawing.Point(216, 450);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(53, 13);
             this.label17.TabIndex = 45;
@@ -525,7 +531,7 @@
             // 
             // nudRegionMin
             // 
-            this.nudRegionMin.Location = new System.Drawing.Point(271, 418);
+            this.nudRegionMin.Location = new System.Drawing.Point(271, 448);
             this.nudRegionMin.Minimum = new decimal(new int[] {
             1,
             0,
@@ -543,7 +549,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(214, 446);
+            this.label18.Location = new System.Drawing.Point(214, 476);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(56, 13);
             this.label18.TabIndex = 47;
@@ -551,7 +557,7 @@
             // 
             // nudRegionMax
             // 
-            this.nudRegionMax.Location = new System.Drawing.Point(271, 444);
+            this.nudRegionMax.Location = new System.Drawing.Point(271, 474);
             this.nudRegionMax.Minimum = new decimal(new int[] {
             1,
             0,
@@ -568,7 +574,7 @@
             // 
             // tbRegionName
             // 
-            this.tbRegionName.Location = new System.Drawing.Point(216, 392);
+            this.tbRegionName.Location = new System.Drawing.Point(216, 422);
             this.tbRegionName.Name = "tbRegionName";
             this.tbRegionName.Size = new System.Drawing.Size(94, 20);
             this.tbRegionName.TabIndex = 48;
@@ -576,39 +582,92 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(216, 376);
+            this.label19.Location = new System.Drawing.Point(216, 406);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(72, 13);
             this.label19.TabIndex = 49;
             this.label19.Text = "Region Name";
             // 
-            // btnRegionDelete
+            // btnDeleteRegion
             // 
-            this.btnRegionDelete.Location = new System.Drawing.Point(217, 669);
-            this.btnRegionDelete.Name = "btnRegionDelete";
-            this.btnRegionDelete.Size = new System.Drawing.Size(94, 23);
-            this.btnRegionDelete.TabIndex = 50;
-            this.btnRegionDelete.Text = "Delete Region";
-            this.btnRegionDelete.UseVisualStyleBackColor = true;
-            this.btnRegionDelete.Click += new System.EventHandler(this.btnRegionDelete_Click);
+            this.btnDeleteRegion.Location = new System.Drawing.Point(123, 676);
+            this.btnDeleteRegion.Name = "btnDeleteRegion";
+            this.btnDeleteRegion.Size = new System.Drawing.Size(94, 23);
+            this.btnDeleteRegion.TabIndex = 50;
+            this.btnDeleteRegion.Text = "Delete Region";
+            this.btnDeleteRegion.UseVisualStyleBackColor = true;
+            this.btnDeleteRegion.Click += new System.EventHandler(this.btnDeleteRegion_Click);
             // 
-            // button1
+            // btnRestoreRegions
             // 
-            this.button1.Location = new System.Drawing.Point(117, 669);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 23);
-            this.button1.TabIndex = 51;
-            this.button1.Text = "Restore Regions";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnRestoreRegions.Location = new System.Drawing.Point(23, 705);
+            this.btnRestoreRegions.Name = "btnRestoreRegions";
+            this.btnRestoreRegions.Size = new System.Drawing.Size(94, 23);
+            this.btnRestoreRegions.TabIndex = 51;
+            this.btnRestoreRegions.Text = "Restore Regions";
+            this.btnRestoreRegions.UseVisualStyleBackColor = true;
+            this.btnRestoreRegions.Click += new System.EventHandler(this.btnRestoreRegions_Click);
+            // 
+            // btnDeletePoke
+            // 
+            this.btnDeletePoke.Location = new System.Drawing.Point(111, 693);
+            this.btnDeletePoke.Name = "btnDeletePoke";
+            this.btnDeletePoke.Size = new System.Drawing.Size(94, 23);
+            this.btnDeletePoke.TabIndex = 52;
+            this.btnDeletePoke.Text = "Delete Pokemon";
+            this.btnDeletePoke.UseVisualStyleBackColor = true;
+            this.btnDeletePoke.Click += new System.EventHandler(this.btnDeletePoke_Click);
+            // 
+            // listPokeDex
+            // 
+            this.listPokeDex.FormattingEnabled = true;
+            this.listPokeDex.Location = new System.Drawing.Point(16, 32);
+            this.listPokeDex.Name = "listPokeDex";
+            this.listPokeDex.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.listPokeDex.Size = new System.Drawing.Size(180, 654);
+            this.listPokeDex.TabIndex = 54;
+            // 
+            // gbOptions
+            // 
+            this.gbOptions.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.gbOptions.Location = new System.Drawing.Point(12, 12);
+            this.gbOptions.Name = "gbOptions";
+            this.gbOptions.Size = new System.Drawing.Size(731, 355);
+            this.gbOptions.TabIndex = 55;
+            this.gbOptions.TabStop = false;
+            this.gbOptions.Text = "Options";
+            // 
+            // gbPokedex
+            // 
+            this.gbPokedex.Controls.Add(this.listPokeDex);
+            this.gbPokedex.Controls.Add(this.pbExit);
+            this.gbPokedex.Controls.Add(this.btnDeletePoke);
+            this.gbPokedex.Controls.Add(this.btnAddPoke);
+            this.gbPokedex.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.gbPokedex.Location = new System.Drawing.Point(747, 12);
+            this.gbPokedex.Name = "gbPokedex";
+            this.gbPokedex.Size = new System.Drawing.Size(212, 724);
+            this.gbPokedex.TabIndex = 56;
+            this.gbPokedex.TabStop = false;
+            this.gbPokedex.Text = "Pokedex";
+            // 
+            // gbRegion
+            // 
+            this.gbRegion.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.gbRegion.Location = new System.Drawing.Point(12, 370);
+            this.gbRegion.Name = "gbRegion";
+            this.gbRegion.Size = new System.Drawing.Size(731, 366);
+            this.gbRegion.TabIndex = 57;
+            this.gbRegion.TabStop = false;
+            this.gbRegion.Text = "Regions";
             // 
             // FormOptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(753, 727);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnRegionDelete);
+            this.ClientSize = new System.Drawing.Size(971, 748);
+            this.Controls.Add(this.btnRestoreRegions);
+            this.Controls.Add(this.btnDeleteRegion);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.tbRegionName);
             this.Controls.Add(this.nudRegionMax);
@@ -629,16 +688,14 @@
             this.Controls.Add(this.nudDexSkin);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.nudCryVolume);
-            this.Controls.Add(this.btnAddPoke);
-            this.Controls.Add(this.btnDefault);
+            this.Controls.Add(this.btnRestoreOptions);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.nudCashPerLevel);
             this.Controls.Add(this.txtShinyGasp);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.pbExit);
             this.Controls.Add(this.btnAllow);
             this.Controls.Add(this.btnBan);
-            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnSaveOptions);
             this.Controls.Add(this.listBanned);
             this.Controls.Add(this.listAllowed);
             this.Controls.Add(this.label9);
@@ -657,6 +714,9 @@
             this.Controls.Add(this.nudPokeLevel);
             this.Controls.Add(this.nudScanLimit);
             this.Controls.Add(this.nudItemTier);
+            this.Controls.Add(this.gbOptions);
+            this.Controls.Add(this.gbPokedex);
+            this.Controls.Add(this.gbRegion);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormOptions";
@@ -675,6 +735,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudDexSkin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRegionMin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRegionMax)).EndInit();
+            this.gbPokedex.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -700,7 +761,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ListBox listAllowed;
         private System.Windows.Forms.ListBox listBanned;
-        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnSaveOptions;
         private System.Windows.Forms.Button btnBan;
         private System.Windows.Forms.Button btnAllow;
         private System.Windows.Forms.PictureBox pbExit;
@@ -708,7 +769,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.NumericUpDown nudCashPerLevel;
-        private System.Windows.Forms.Button btnDefault;
+        private System.Windows.Forms.Button btnRestoreOptions;
         private System.Windows.Forms.Button btnAddPoke;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.NumericUpDown nudCryVolume;
@@ -730,7 +791,12 @@
         private System.Windows.Forms.NumericUpDown nudRegionMax;
         private System.Windows.Forms.TextBox tbRegionName;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Button btnRegionDelete;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnDeleteRegion;
+        private System.Windows.Forms.Button btnRestoreRegions;
+        private System.Windows.Forms.Button btnDeletePoke;
+        private System.Windows.Forms.ListBox listPokeDex;
+        private System.Windows.Forms.GroupBox gbOptions;
+        private System.Windows.Forms.GroupBox gbPokedex;
+        private System.Windows.Forms.GroupBox gbRegion;
     }
 }
