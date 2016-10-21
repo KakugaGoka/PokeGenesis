@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Reflection;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -397,6 +399,40 @@ namespace GenesisDex
             {
                 if (!listRegionAllowed.Items.Contains(s.id))
                     listRegionBanned.Items.Add(s.id);
+            }
+        }
+
+        private void btnRegionDelete_Click(object sender, EventArgs e)
+        {
+            DialogResult deleteRegion = MessageBox.Show("Are you sure you wish to delete the " + listRegions.SelectedItem.ToString() + " Region?", "Delete Region", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            if (deleteRegion == DialogResult.Yes)
+            {
+                XDocument docX = XDocument.Load(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Regions.xml");
+                docX.Descendants().Where(d => string.IsNullOrEmpty(d.Value)).Remove();
+                var nameNode = docX.Descendants("Regions").Elements("Region");
+                var regionNode = nameNode.ElementAt(listRegions.SelectedIndex);
+                regionNode.Remove();
+                docX.Save(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Regions.xml");
+                RefreshRegions();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult deleteRegion = MessageBox.Show("Are you sure you wish to restore the default regions?", "Restore Region Defaults", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            if (deleteRegion == DialogResult.Yes)
+            {
+                var assembly = Assembly.GetExecutingAssembly();
+                var resourceName = "GenesisDex.Data.XML.DefaultRegions.xml";
+                string result;
+                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                using (StreamReader reader = new StreamReader(stream))
+                {
+                    result = reader.ReadToEnd();
+                }
+                File.Delete(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Regions.xml");
+                File.WriteAllText(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Regions.xml", result);
+                RefreshRegions();
             }
         }
     }

@@ -3782,6 +3782,7 @@
     <Content Include="Data\XML\Items.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <EmbeddedResource Include="Data\XML\DefaultRegions.xml" />
     <Content Include="Data\XML\Types.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

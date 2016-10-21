@@ -77,6 +77,8 @@
             this.nudRegionMax = new System.Windows.Forms.NumericUpDown();
             this.tbRegionName = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
+            this.btnRegionDelete = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudItemTier)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudScanLimit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPokeLevel)).BeginInit();
@@ -259,11 +261,11 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(647, 697);
+            this.btnSave.Location = new System.Drawing.Point(17, 327);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(94, 23);
             this.btnSave.TabIndex = 18;
-            this.btnSave.Text = "Save Changes";
+            this.btnSave.Text = "Save Options";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -338,19 +340,19 @@
             // 
             // btnDefault
             // 
-            this.btnDefault.Location = new System.Drawing.Point(547, 697);
+            this.btnDefault.Location = new System.Drawing.Point(117, 327);
             this.btnDefault.Name = "btnDefault";
             this.btnDefault.Size = new System.Drawing.Size(94, 23);
             this.btnDefault.TabIndex = 28;
-            this.btnDefault.Text = "Restore Defaults";
+            this.btnDefault.Text = "Restore Options";
             this.btnDefault.UseVisualStyleBackColor = true;
             this.btnDefault.Click += new System.EventHandler(this.btnDefault_Click);
             // 
             // btnAddPoke
             // 
-            this.btnAddPoke.Location = new System.Drawing.Point(30, 697);
+            this.btnAddPoke.Location = new System.Drawing.Point(217, 327);
             this.btnAddPoke.Name = "btnAddPoke";
-            this.btnAddPoke.Size = new System.Drawing.Size(87, 23);
+            this.btnAddPoke.Size = new System.Drawing.Size(94, 23);
             this.btnAddPoke.TabIndex = 29;
             this.btnAddPoke.Text = "Add Pokemon";
             this.btnAddPoke.UseVisualStyleBackColor = true;
@@ -421,7 +423,7 @@
             // listRegionAllowed
             // 
             this.listRegionAllowed.FormattingEnabled = true;
-            this.listRegionAllowed.Location = new System.Drawing.Point(316, 375);
+            this.listRegionAllowed.Location = new System.Drawing.Point(316, 376);
             this.listRegionAllowed.Name = "listRegionAllowed";
             this.listRegionAllowed.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.listRegionAllowed.Size = new System.Drawing.Size(180, 316);
@@ -430,7 +432,7 @@
             // listRegionBanned
             // 
             this.listRegionBanned.FormattingEnabled = true;
-            this.listRegionBanned.Location = new System.Drawing.Point(547, 375);
+            this.listRegionBanned.Location = new System.Drawing.Point(547, 376);
             this.listRegionBanned.Name = "listRegionBanned";
             this.listRegionBanned.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.listRegionBanned.Size = new System.Drawing.Size(180, 316);
@@ -438,9 +440,9 @@
             // 
             // btnAddRegion
             // 
-            this.btnAddRegion.Location = new System.Drawing.Point(123, 697);
+            this.btnAddRegion.Location = new System.Drawing.Point(217, 640);
             this.btnAddRegion.Name = "btnAddRegion";
-            this.btnAddRegion.Size = new System.Drawing.Size(87, 23);
+            this.btnAddRegion.Size = new System.Drawing.Size(94, 23);
             this.btnAddRegion.TabIndex = 36;
             this.btnAddRegion.Text = "Add Region";
             this.btnAddRegion.UseVisualStyleBackColor = true;
@@ -449,7 +451,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(544, 359);
+            this.label14.Location = new System.Drawing.Point(544, 360);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(90, 13);
             this.label14.TabIndex = 37;
@@ -458,7 +460,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(313, 359);
+            this.label15.Location = new System.Drawing.Point(313, 360);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(97, 13);
             this.label15.TabIndex = 38;
@@ -466,7 +468,7 @@
             // 
             // btnRegionAdd
             // 
-            this.btnRegionAdd.Location = new System.Drawing.Point(502, 526);
+            this.btnRegionAdd.Location = new System.Drawing.Point(502, 527);
             this.btnRegionAdd.Name = "btnRegionAdd";
             this.btnRegionAdd.Size = new System.Drawing.Size(39, 23);
             this.btnRegionAdd.TabIndex = 40;
@@ -476,7 +478,7 @@
             // 
             // btnRegionRemove
             // 
-            this.btnRegionRemove.Location = new System.Drawing.Point(502, 495);
+            this.btnRegionRemove.Location = new System.Drawing.Point(502, 496);
             this.btnRegionRemove.Name = "btnRegionRemove";
             this.btnRegionRemove.Size = new System.Drawing.Size(39, 23);
             this.btnRegionRemove.TabIndex = 39;
@@ -487,16 +489,16 @@
             // listRegions
             // 
             this.listRegions.FormattingEnabled = true;
-            this.listRegions.Location = new System.Drawing.Point(30, 375);
+            this.listRegions.Location = new System.Drawing.Point(30, 376);
             this.listRegions.Name = "listRegions";
-            this.listRegions.Size = new System.Drawing.Size(180, 316);
+            this.listRegions.Size = new System.Drawing.Size(180, 290);
             this.listRegions.TabIndex = 41;
             this.listRegions.SelectedIndexChanged += new System.EventHandler(this.listRegions_SelectedIndexChanged);
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(27, 359);
+            this.label16.Location = new System.Drawing.Point(27, 360);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(65, 13);
             this.label16.TabIndex = 42;
@@ -504,7 +506,7 @@
             // 
             // btnSaveRegion
             // 
-            this.btnSaveRegion.Location = new System.Drawing.Point(216, 469);
+            this.btnSaveRegion.Location = new System.Drawing.Point(17, 669);
             this.btnSaveRegion.Name = "btnSaveRegion";
             this.btnSaveRegion.Size = new System.Drawing.Size(94, 23);
             this.btnSaveRegion.TabIndex = 43;
@@ -515,7 +517,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(216, 419);
+            this.label17.Location = new System.Drawing.Point(216, 420);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(53, 13);
             this.label17.TabIndex = 45;
@@ -523,7 +525,7 @@
             // 
             // nudRegionMin
             // 
-            this.nudRegionMin.Location = new System.Drawing.Point(271, 417);
+            this.nudRegionMin.Location = new System.Drawing.Point(271, 418);
             this.nudRegionMin.Minimum = new decimal(new int[] {
             1,
             0,
@@ -541,7 +543,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(214, 445);
+            this.label18.Location = new System.Drawing.Point(214, 446);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(56, 13);
             this.label18.TabIndex = 47;
@@ -549,7 +551,7 @@
             // 
             // nudRegionMax
             // 
-            this.nudRegionMax.Location = new System.Drawing.Point(271, 443);
+            this.nudRegionMax.Location = new System.Drawing.Point(271, 444);
             this.nudRegionMax.Minimum = new decimal(new int[] {
             1,
             0,
@@ -566,7 +568,7 @@
             // 
             // tbRegionName
             // 
-            this.tbRegionName.Location = new System.Drawing.Point(216, 391);
+            this.tbRegionName.Location = new System.Drawing.Point(216, 392);
             this.tbRegionName.Name = "tbRegionName";
             this.tbRegionName.Size = new System.Drawing.Size(94, 20);
             this.tbRegionName.TabIndex = 48;
@@ -574,17 +576,39 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(216, 375);
+            this.label19.Location = new System.Drawing.Point(216, 376);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(72, 13);
             this.label19.TabIndex = 49;
             this.label19.Text = "Region Name";
+            // 
+            // btnRegionDelete
+            // 
+            this.btnRegionDelete.Location = new System.Drawing.Point(217, 669);
+            this.btnRegionDelete.Name = "btnRegionDelete";
+            this.btnRegionDelete.Size = new System.Drawing.Size(94, 23);
+            this.btnRegionDelete.TabIndex = 50;
+            this.btnRegionDelete.Text = "Delete Region";
+            this.btnRegionDelete.UseVisualStyleBackColor = true;
+            this.btnRegionDelete.Click += new System.EventHandler(this.btnRegionDelete_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(117, 669);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(94, 23);
+            this.button1.TabIndex = 51;
+            this.button1.Text = "Restore Regions";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormOptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(753, 727);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnRegionDelete);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.tbRegionName);
             this.Controls.Add(this.nudRegionMax);
@@ -706,5 +730,7 @@
         private System.Windows.Forms.NumericUpDown nudRegionMax;
         private System.Windows.Forms.TextBox tbRegionName;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Button btnRegionDelete;
+        private System.Windows.Forms.Button button1;
     }
 }
