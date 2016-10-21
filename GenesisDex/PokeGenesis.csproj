@@ -2465,7 +2465,7 @@
     <None Include="Data\Audio\Cries\719.ogg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Data\Audio\Cries\720-mega.ogg">
+    <None Include="Data\Audio\Cries\720-unbound.ogg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Data\Audio\Cries\720.ogg">
@@ -2575,6 +2575,9 @@
     <None Include="Data\Audio\Cries\678-m.ogg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <Content Include="Data\Audio\Cries\719-mega.ogg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Data\GUI\ChangeMode.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -6388,7 +6391,7 @@
     <Content Include="Data\Images\Pokemon\720-unbound.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Pokemon\720-confined.gif">
+    <Content Include="Data\Images\Pokemon\720.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Images\Pokemon\721.gif">
@@ -8872,7 +8875,7 @@
     <Content Include="Data\Images\Shiny\720-unbound.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Images\Shiny\720-confined.gif">
+    <Content Include="Data\Images\Shiny\720.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Images\Shiny\721.gif">
