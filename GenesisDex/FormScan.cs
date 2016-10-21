@@ -2093,7 +2093,8 @@ namespace GenesisDex
                 regionPokemon.Add("Any");
                 foreach (string p in spawnList[selectRegion].Spawns)
                 {
-                    regionPokemon.Add(p);
+                    if(pokeDex.Contains(p))
+                        regionPokemon.Add(p);
                 }
                 lbPokemon.DataSource = regionPokemon;
                 nudLevelMax.Value = regionList[selectRegion].MaxLevel;

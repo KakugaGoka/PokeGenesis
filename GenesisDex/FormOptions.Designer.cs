@@ -356,7 +356,7 @@
             // 
             // btnAddPoke
             // 
-            this.btnAddPoke.Location = new System.Drawing.Point(11, 693);
+            this.btnAddPoke.Location = new System.Drawing.Point(10, 693);
             this.btnAddPoke.Name = "btnAddPoke";
             this.btnAddPoke.Size = new System.Drawing.Size(94, 23);
             this.btnAddPoke.TabIndex = 29;
@@ -610,7 +610,7 @@
             // 
             // btnDeletePoke
             // 
-            this.btnDeletePoke.Location = new System.Drawing.Point(111, 693);
+            this.btnDeletePoke.Location = new System.Drawing.Point(110, 693);
             this.btnDeletePoke.Name = "btnDeletePoke";
             this.btnDeletePoke.Size = new System.Drawing.Size(94, 23);
             this.btnDeletePoke.TabIndex = 52;

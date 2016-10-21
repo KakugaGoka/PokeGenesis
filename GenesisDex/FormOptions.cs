@@ -288,11 +288,13 @@ namespace GenesisDex
             {
                 if (s != "Placeholder")
                     listRegionAllowed.Items.Add(s);
+                if (!listPokeDex.Items.Contains(s))
+                    listRegionAllowed.Items.Remove(s);
             }
             SortPokeList();
             foreach (Pokemon s in pokeList)
             {
-                if (!listRegionAllowed.Items.Contains(s.id))
+                if (!listRegionAllowed.Items.Contains(s.id) && listPokeDex.Items.Contains(s.id))
                     listRegionBanned.Items.Add(s.id);
             }
         }
@@ -456,6 +458,7 @@ namespace GenesisDex
                     megaNode.Remove(); } catch { }
                 docX.Save(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Pokemon.xml");
                 RefreshOptions();
+                RefreshRegions();
             }
         }
     }

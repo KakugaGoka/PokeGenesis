@@ -14997,7 +14997,7 @@
         <BasicAbility>Run Away</BasicAbility>
         <AdvancedAbility>Flame Body</AdvancedAbility>
         <AdvancedAbility>Sprint</AdvancedAbility>
-        <Basic0Ability>Vanguard</Basic0Ability>
+        <HighAbility>Vanguard</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 3d6+2</skill>
@@ -17075,7 +17075,7 @@
         <BasicAbility>Own Tempo</BasicAbility>
         <AdvancedAbility>Oblivious</AdvancedAbility>
         <AdvancedAbility>Tingly Tongue</AdvancedAbility>
-        <TongueAbility>Cloud Nine</TongueAbility>
+        <HighAbility>Cloud Nine</HighAbility>
       </Ability>
       <Skills>
         <skill id="0">Athl 3d6</skill>
@@ -29047,7 +29047,7 @@
         <evo id="0">1 - Shaymin</evo>
       </Evolution>
       <Moves>
-        <move id="0">Growth - Normal</move>
+        <move id="0">1 Growth - Normal</move>
         <move id="1">10 Magical Leaf - Grass</move>
         <move id="2">19 Leech Seed - Grass</move>
         <move id="3">28 Quick Attack - Normal</move>
@@ -29055,10 +29055,10 @@
         <move id="5">46 Natural Gift - Normal</move>
         <move id="6">55 Worry Seed - Grass</move>
         <move id="7">64 Air Slash - Flying</move>
-        <move id="8">§ 73 Energy Ball - Grass</move>
+        <move id="8">73 Energy Ball - Grass</move>
         <move id="9">82 Sweet Kiss - Fairy</move>
         <move id="10">91 Leaf Storm - Grass</move>
-        <move id="11">§ 100 Seed Flare - Grass</move>
+        <move id="11">100 Seed Flare - Grass</move>
       </Moves>
     </List492-sky>
   </Pokemon>
@@ -29714,7 +29714,7 @@
         <move id="5">31 Lucky Chant - Normal</move>
         <move id="6">36 Future Sight - Psychic</move>
         <move id="7">46 Charm - Fairy</move>
-        <move id="8">§ 51 Extrasensory - Psychic</move>
+        <move id="8">51 Extrasensory - Psychic</move>
         <move id="9">61 Copycat - Normal</move>
         <move id="10">66 Natural Gift - Normal</move>
         <move id="11">76 Healing Wish - Psychic</move>
@@ -38536,8 +38536,8 @@
         <move id="7">13 Refresh - Normal</move>
         <move id="8">16 Heal Pulse - Psychic</move>
         <move id="9">20 Dragon Breath - Dragon</move>
-        <move id="10">§ 24 Luster Purge - Psychic</move>
-        <move id="11">§ 28 Psycho Shift - Psychic</move>
+        <move id="10">4 Luster Purge - Psychic</move>
+        <move id="11">28 Psycho Shift - Psychic</move>
         <move id="12">32 Recover - Normal</move>
         <move id="13">36 Telekinesis - Normal</move>
         <move id="14">41 Zen Headbutt - Psychic</move>
