@@ -638,7 +638,7 @@
             // btnScan
             // 
             this.btnScan.BackColor = System.Drawing.Color.Transparent;
-            this.btnScan.Location = new System.Drawing.Point(695, 605);
+            this.btnScan.Location = new System.Drawing.Point(695, 609);
             this.btnScan.Name = "btnScan";
             this.btnScan.Size = new System.Drawing.Size(157, 33);
             this.btnScan.TabIndex = 91;

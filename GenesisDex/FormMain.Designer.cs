@@ -155,7 +155,7 @@
             // pbScan
             // 
             this.pbScan.BackColor = System.Drawing.Color.Transparent;
-            this.pbScan.Location = new System.Drawing.Point(695, 605);
+            this.pbScan.Location = new System.Drawing.Point(695, 609);
             this.pbScan.Name = "pbScan";
             this.pbScan.Size = new System.Drawing.Size(157, 33);
             this.pbScan.TabIndex = 32;

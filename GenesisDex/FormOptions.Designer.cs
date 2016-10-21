@@ -623,7 +623,6 @@
             this.listPokeDex.FormattingEnabled = true;
             this.listPokeDex.Location = new System.Drawing.Point(16, 32);
             this.listPokeDex.Name = "listPokeDex";
-            this.listPokeDex.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.listPokeDex.Size = new System.Drawing.Size(180, 654);
             this.listPokeDex.TabIndex = 54;
             // 

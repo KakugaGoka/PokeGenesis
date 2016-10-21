@@ -136,7 +136,7 @@
             // 
             // btAddPKMN
             // 
-            this.btAddPKMN.Location = new System.Drawing.Point(110, 636);
+            this.btAddPKMN.Location = new System.Drawing.Point(403, 636);
             this.btAddPKMN.Name = "btAddPKMN";
             this.btAddPKMN.Size = new System.Drawing.Size(498, 49);
             this.btAddPKMN.TabIndex = 49;
@@ -322,7 +322,7 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(743, 72);
+            this.label31.Location = new System.Drawing.Point(743, 43);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(39, 13);
             this.label31.TabIndex = 47;
@@ -504,7 +504,7 @@
             // cbMega
             // 
             this.cbMega.AutoSize = true;
-            this.cbMega.Location = new System.Drawing.Point(913, 115);
+            this.cbMega.Location = new System.Drawing.Point(913, 53);
             this.cbMega.Name = "cbMega";
             this.cbMega.Size = new System.Drawing.Size(116, 17);
             this.cbMega.TabIndex = 32;
@@ -516,7 +516,7 @@
             // cbXY
             // 
             this.cbXY.AutoSize = true;
-            this.cbXY.Location = new System.Drawing.Point(1093, 115);
+            this.cbXY.Location = new System.Drawing.Point(1093, 53);
             this.cbXY.Name = "cbXY";
             this.cbXY.Size = new System.Drawing.Size(100, 17);
             this.cbXY.TabIndex = 33;
@@ -851,7 +851,7 @@
             this.gbMega.Controls.Add(this.tbMegaType);
             this.gbMega.Controls.Add(this.label43);
             this.gbMega.Controls.Add(this.tbMegaAbility);
-            this.gbMega.Location = new System.Drawing.Point(908, 139);
+            this.gbMega.Location = new System.Drawing.Point(908, 77);
             this.gbMega.Name = "gbMega";
             this.gbMega.Size = new System.Drawing.Size(285, 178);
             this.gbMega.TabIndex = 100;
@@ -878,7 +878,7 @@
             this.gbMega2.Controls.Add(this.tbMega2SPATK);
             this.gbMega2.Controls.Add(this.tbMega2ATK);
             this.gbMega2.Controls.Add(this.tbMega2DEF);
-            this.gbMega2.Location = new System.Drawing.Point(908, 323);
+            this.gbMega2.Location = new System.Drawing.Point(908, 261);
             this.gbMega2.Name = "gbMega2";
             this.gbMega2.Size = new System.Drawing.Size(285, 178);
             this.gbMega2.TabIndex = 101;
@@ -926,7 +926,7 @@
             // 
             // listMoves
             // 
-            this.listMoves.Location = new System.Drawing.Point(661, 87);
+            this.listMoves.Location = new System.Drawing.Point(661, 58);
             this.listMoves.Name = "listMoves";
             this.listMoves.Size = new System.Drawing.Size(205, 414);
             this.listMoves.TabIndex = 31;
@@ -944,9 +944,9 @@
             // 
             // rtbEntry
             // 
-            this.rtbEntry.Location = new System.Drawing.Point(661, 531);
+            this.rtbEntry.Location = new System.Drawing.Point(661, 497);
             this.rtbEntry.Name = "rtbEntry";
-            this.rtbEntry.Size = new System.Drawing.Size(532, 154);
+            this.rtbEntry.Size = new System.Drawing.Size(532, 113);
             this.rtbEntry.TabIndex = 51;
             this.rtbEntry.Text = "";
             this.ttPokemon.SetToolTip(this.rtbEntry, "1 - Move\r\n4 - Move\r\n7 - Move\r\n(Please enter like this as the level is used in gen" +
@@ -1025,7 +1025,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(723, 515);
+            this.label19.Location = new System.Drawing.Point(723, 481);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(76, 13);
             this.label19.TabIndex = 139;
