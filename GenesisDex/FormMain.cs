@@ -64,14 +64,15 @@ namespace GenesisDex
             updateList.Add("updating...");
             pbY.Visible = false;
             pbX.Visible = false;
-            pbPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonLeft.png");
-            pbPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRight.png");
+            pbPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoLeft.png");
+            pbPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoRight.png");
             pbScan.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ChangeMode.png");
             infoBack.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoLeft.png");
             infoForward.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoRight.png");
             btnOptions.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Options.png");
             btnCry.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Cry.png");
             pbExit.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButton.png");
+            btnMinimize.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MinimizeButton.png");
             RefreshPokedex();
         }
 
@@ -280,12 +281,12 @@ namespace GenesisDex
             dragging = false;
         }
 
-        private void pbExit_Click(object sender, EventArgs e)
+        private void pbExit_MouseUp(object sender, MouseEventArgs e)
         {
             Application.Exit();
         }
 
-        private void pbExit_MouseHover(object sender, EventArgs e)
+        private void pbExit_MouseEnter(object sender, EventArgs e)
         {
             pbExit.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButtonHover.PNG");
         }
@@ -295,7 +296,7 @@ namespace GenesisDex
             pbExit.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButton.PNG");
         }
 
-        private void pbMega_MouseHover(object sender, EventArgs e)
+        private void pbMega_MouseEnter(object sender, EventArgs e)
         {
             if (mega == true)
             {
@@ -325,7 +326,7 @@ namespace GenesisDex
             }
         }
 
-        private void pbMega_Click(object sender, EventArgs e)
+        private void pbMega_MouseUp(object sender, MouseEventArgs e)
         {
             int i = carryi;
             if (mega == true)
@@ -402,12 +403,12 @@ namespace GenesisDex
             }
         }
 
-        private void infoForward_MouseHover(object sender, EventArgs e)
+        private void infoForward_MouseEnter(object sender, EventArgs e)
         {
             infoForward.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoRightHover.PNG");
         }
 
-        private void infoBack_MouseHover(object sender, EventArgs e)
+        private void infoBack_MouseEnter(object sender, EventArgs e)
         {
             infoBack.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoLeftHover.PNG");
         }
@@ -628,14 +629,14 @@ namespace GenesisDex
             }
         }
 
-        private void infoForward_Click(object sender, EventArgs e)
+        private void infoForward_MouseUp(object sender, MouseEventArgs e)
         {
             page += 1;
             updatePage();
 
         }
 
-        private void infoBack_Click(object sender, EventArgs e)
+        private void infoBack_MouseUp(object sender, MouseEventArgs e)
         {
             page -= 1;
             updatePage();
@@ -653,7 +654,7 @@ namespace GenesisDex
             rtbEntry.Text = pokeList[carryi].entry;
         }
 
-        private void pbPokeRight_Click(object sender, EventArgs e)
+        private void pbPokeRight_MouseUp(object sender, MouseEventArgs e)
         {
             if (viewMega)
             {
@@ -687,7 +688,7 @@ namespace GenesisDex
             }
             SetImage();
         }
-        private void pbPokeLeft_Click(object sender, EventArgs e)
+        private void pbPokeLeft_MouseUp(object sender, MouseEventArgs e)
         {
             if (viewMega)
             {
@@ -722,7 +723,7 @@ namespace GenesisDex
             SetImage();
         }
 
-        private void pbX_Click(object sender, EventArgs e)
+        private void pbX_MouseUp(object sender, MouseEventArgs e)
         {
             if (onMegaX == false)
             {
@@ -730,7 +731,7 @@ namespace GenesisDex
             }
         }
 
-        private void pbY_Click(object sender, EventArgs e)
+        private void pbY_MouseUp(object sender, MouseEventArgs e)
         {
             if (onMegaX == true)
             {
@@ -794,7 +795,7 @@ namespace GenesisDex
             });
         }
 
-        private void pbScan_Click(object sender, EventArgs e)
+        private void pbScan_MouseUp(object sender, MouseEventArgs e)
         {
             if (fs == null)
             {
@@ -817,7 +818,7 @@ namespace GenesisDex
             Show();
         }
 
-        private void pbScan_MouseHover(object sender, EventArgs e)
+        private void pbScan_MouseEnter(object sender, EventArgs e)
         {
             pbScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ChangeModeHover.png");
         }
@@ -860,10 +861,10 @@ namespace GenesisDex
         private void SetImage()
         {
             pbPokemon.Size = pbPokemon.Image.Size;
-            pbPokemon.Location = new Point(233 - (pbPokemon.Width / 2), 250 - (pbPokemon.Height));
+            pbPokemon.Location = new Point(189 - (pbPokemon.Width / 2), 250 - (pbPokemon.Height));
         }
 
-        private void btnOptions_Click(object sender, EventArgs e)
+        private void btnOptions_MouseUp(object sender, MouseEventArgs e)
         {
             this.Enabled = false;
             FormOptions fc = new FormOptions();
@@ -883,7 +884,7 @@ namespace GenesisDex
             this.Update();
         }
 
-        private void btnOptions_MouseHover(object sender, EventArgs e)
+        private void btnOptions_MouseEnter(object sender, EventArgs e)
         {
             btnOptions.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\OptionsHover.png");
         }
@@ -894,7 +895,7 @@ namespace GenesisDex
 
         }
 
-        private void btnCry_Click(object sender, EventArgs e)
+        private void btnCry_MouseUp(object sender, MouseEventArgs e)
         {
             string s;
             if (optionsList[0].CryVolume != 10)
@@ -951,7 +952,7 @@ namespace GenesisDex
             }
         }
 
-        private void btnCry_MouseHover(object sender, EventArgs e)
+        private void btnCry_MouseEnter(object sender, EventArgs e)
         {
             btnCry.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CryHover.png");
         }
@@ -960,22 +961,38 @@ namespace GenesisDex
             btnCry.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Cry.png");
         }
 
-        private void pbPokeRight_MouseHover(object sender, EventArgs e)
+        private void pbPokeRight_MouseEnter(object sender, EventArgs e)
         {
-            pbPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRightHover.png");
+            pbPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoRightHover.png");
         }
         private void pbPokeRight_MouseLeave(object sender, EventArgs e)
         {
-            pbPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRight.png");
+            pbPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoRight.png");
         }
 
-        private void pbPokeLeft_MouseHover(object sender, EventArgs e)
+        private void pbPokeLeft_MouseEnter(object sender, EventArgs e)
         {
-            pbPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonLeftHover.png");
+            pbPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoLeftHover.png");
         }
         private void pbPokeLeft_MouseLeave(object sender, EventArgs e)
         {
-            pbPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonLeft.png");
+            pbPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoLeft.png");
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void btnMinimize_MouseUp(object sender, MouseEventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+        private void btnMinimize_MouseEnter(object sender, EventArgs e)
+        {
+            btnMinimize.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MinimizeButtonHover.png");
+        }
+        private void btnMinimize_MouseLeave(object sender, EventArgs e)
+        {
+            btnMinimize.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MinimizeButton.png");
         }
     }
 }

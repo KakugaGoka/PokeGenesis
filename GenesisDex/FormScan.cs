@@ -32,6 +32,7 @@ namespace GenesisDex
         List<Pokemon> pokeList = new List<Pokemon>();
         //===========================================================================================================
         List<Pokemon> AllPokemon = new List<Pokemon>();
+        List<Pokemon> BasePokemon = new List<Pokemon>();
         //===========================================================================================================
         RegionsList regionXML = new RegionsList();
         List<PokeRegion> regionList = new List<PokeRegion>();
@@ -77,8 +78,10 @@ namespace GenesisDex
         BanList banXML = new BanList();
         List<string> banList = new List<string>();
         //===========================================================================================================
+        StatusList statusBool = new StatusList();
+        List<StatusAfflictions> AllStatus = new List<StatusAfflictions>();
+        //===========================================================================================================
         List<Image> AllItems1 = new List<Image>();
-        List<Image> AllItems2 = new List<Image>();
         List<Image> AllImages = new List<Image>();
         //===========================================================================================================
         List<int> AllLevels = new List<int>();
@@ -92,6 +95,7 @@ namespace GenesisDex
         List<string> types = new List<string>();
         List<string> pokeDex = new List<string>();
         List<string> regions = new List<string>();
+        List<string> natures = new List<string>();
         List<string> regionPokemon = new List<string>();
         List<string> moves = new List<string>();
         List<string> ability = new List<string>();
@@ -99,16 +103,11 @@ namespace GenesisDex
         List<string> stages = new List<string>();
         List<string> AllNatures = new List<string>();
         List<string> AllDesc1 = new List<string>();
-        List<string> AllDesc2 = new List<string>();
-        List<string> AllDesc3 = new List<string>();
-        List<string> preInfo = new List<string>();
         List<string> Gender = new List<string>();
         List<string> Stat = new List<string>();
         List<string> Cap = new List<string>();
         List<string> Type = new List<string>();
         List<string> updateList = new List<string>();
-        //===========================================================================================================
-        List<string[]> Info = new List<string[]>();
         //===========================================================================================================
         List<List<string>> AllMoves = new List<List<string>>();
         List<List<string>> AllAbilities = new List<List<string>>();
@@ -145,6 +144,7 @@ namespace GenesisDex
         bool viewingLoot { get; set; }
         bool appendList { get; set; }
         bool saveResult { get; set; }
+        bool isWritingInfo { get; set; }
         //===========================================================================================================
         string typeShiny { get; set; }
         string newShiny { get; set; }
@@ -152,6 +152,7 @@ namespace GenesisDex
         string PokeType { get; set; }
         string PokeHabitat { get; set; }
         string PokeStage { get; set; }
+        string PokeNature { get; set; }
         string saveFilePath { get; set; }
         //===========================================================================================================
         string[] info { get; set; }
@@ -166,14 +167,12 @@ namespace GenesisDex
             rtbGasp.Text = "";
             btnPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonLeft.png");
             btnPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRight.png");
-            onItem2 = false;
-            onLoot = false;
             isShiny = false;
             dragging = false;
             hasScanned = false;
             isScanning = false;
             queueFinished = false;
-            viewingLoot = false;
+            chkForceShiny.Enabled = false;
             Page = 1;
             Current = 0;
             Amount = 0;
@@ -188,16 +187,25 @@ namespace GenesisDex
             updateList.Add("updating...");
             habitats.Clear();
             types.Clear();
+            natures.Clear();
+            habitats.Add("Any");
             for (var h = 0; h < habitatList.Count; h++)
             {
                 habitats.Add(habitatList[h].id);
             }
+            types.Add("Any");
             for (var t = 0; t < typeList.Count; t++)
             {
                 types.Add(typeList[t].id);
             }
+            natures.Add("Any");
+            for (var n = 0; n < natureList.Count; n++)
+            {
+                natures.Add(natureList[n].id);
+            }
             cbHabitat.DataSource = habitats;
             cbType.DataSource = types;
+            cbNature.DataSource = natures;
             lbPokemon.DataSource = pokeDex;
             stages.Add("Any");
             stages.Add("Only 1s");
@@ -215,16 +223,13 @@ namespace GenesisDex
                 }
             }
             btnExit.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButton.png");
-            btnInfoBack.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoLeft.png");
-            btnInfoForward.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoRight.png");
+            btnMinimize.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MinimizeButton.png");
             btnScan.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ChangeMode.png");
             btnScanPokemon.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanPokemon.png");
-            btnLoot.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanLoot.png");
-            btnLootRefresh.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\LootView.png");
-            btnPokeRefresh.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokeView.png");
-            btnPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonLeft.png");
-            btnPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRight.png");
+            btnPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoLeft.png");
+            btnPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoRight.png");
             btnDealDamage.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\DealDamage.png");
+            btnDealOneTick.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\DealTick.png");
             btnOptions.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Options.png");
             btnCry.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Cry.png");
             chkAppend.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png"));
@@ -233,7 +238,6 @@ namespace GenesisDex
             chkCanBeLegend.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png"));
             btnSave.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Save.png"));
             PokeSaveDialog.Filter = "Text File | *.txt";
-            chkForceShiny.Enabled = false;
             nudLevelMin.Value = 2;
             nudLevelMax.Value = 15;
         }
@@ -284,7 +288,6 @@ namespace GenesisDex
             nudAmount.Maximum = optionsList[0].MaxScanAmount;
             nudLevelMax.Maximum = optionsList[0].MaxPokemonLevel;
             nudLevelMin.Maximum = optionsList[0].MaxPokemonLevel;
-            nudPlayerLevel.Maximum = optionsList[0].MaxPlayerLevel;
         }
 
         //===========================================================================================================
@@ -309,16 +312,15 @@ namespace GenesisDex
                 AllMoves.Clear();
                 AllImages.Clear();
                 AllPokemon.Clear();
+                BasePokemon.Clear();
                 AllNatures.Clear();
                 AllItems1.Clear();
-                AllItems2.Clear();
                 AllDesc1.Clear();
-                AllDesc2.Clear();
                 AllStat.Clear();
                 AllLevels.Clear();
                 AllCap.Clear();
                 AllShinyCheck.Clear();
-                Info.Clear();
+                AllStatus.Clear();
                 Gender.Clear();
                 Type.Clear();
                 MaxHealth.Clear();
@@ -332,7 +334,6 @@ namespace GenesisDex
             {
                 IChooseYou = new Pokemon();
                 Pokemon Final = new Pokemon();
-                preInfo.Clear();
                 isShiny = false;
                 Final = GetPokemon();
                 if (Final == null) return;
@@ -342,7 +343,6 @@ namespace GenesisDex
                 else if (forceShiny) i = 1;
                 if (i == 1 || i == 100)
                 {
-                    preInfo.Add(optionsList[0].ShinyGasp);
                     isShiny = true;
                     GetShiny(Final);
                     Type.Add(newShiny);
@@ -350,7 +350,6 @@ namespace GenesisDex
                 }
                 else
                 {
-                    preInfo.Add(optionsList[0].PokemonGasp);
                     AllImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + Final.number + ".gif"));
                     Type.Add(Final.type);
                 }
@@ -361,12 +360,11 @@ namespace GenesisDex
                 else
                 {
                     AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Blank.png"));
-                    AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Blank.png"));
                     AllDesc1.Add("Nothing is here.");
-                    AllDesc2.Add("Nothing is here.");
                 }
                 IChooseYou = Final;
                 AllPokemon.Add(IChooseYou);
+                BasePokemon.Add(IChooseYou);
                 TrueLevel = Level;
                 AllLevels.Add(TrueLevel);
                 GetGender(AllPokemon[Current]);
@@ -381,9 +379,8 @@ namespace GenesisDex
                 GetHealth();
                 GetCap(AllPokemon[Current]);
                 AllCap.Add(Cap);
-                info = preInfo.ToArray();
-                Info.Add(info);
                 AllShinyCheck.Add(isShiny);
+                AllStatus.Add(statusBool.createStatus());
                 Current++;
                 Progress++;
                 PokeGenerator.ReportProgress(Progress);
@@ -398,9 +395,8 @@ namespace GenesisDex
             Current = 0;
             try { pbPokemon.Image = AllImages[Current]; } catch { return; }
             SetPoke();
-            UpdatePage();
             tbPokeCount.Text = (Current + 1).ToString() + "/" + AllPokemon.Count.ToString();
-            SetGasp();
+            WriteInfo();
             isScanning = false;
         }
 
@@ -679,7 +675,6 @@ namespace GenesisDex
             stats = getstats.createList(hp, atk, def, spatk, spdef, spd);
             stats = GetNature(stats);
             SortStats(stats);
-
             for (var l = level; l > 0; l--)
             {
                 int i = rng.Next(1, 7);
@@ -723,8 +718,21 @@ namespace GenesisDex
         //===========================================================================================================
         private List<Stat> GetNature(List<Stat> stats)
         {
+            natureList = new List<Nature>();
             natureList = natureXML.createList("Natures", "Nature");
-            int i = rng.Next(0, natureList.Count - 1);
+            int i = 0;
+            if (PokeNature != "Any")
+                for (int n = 0; n < natureList.Count(); n++)
+                {
+                    if (natureList[n].id == PokeNature)
+                    {
+                        i = n;
+                    }
+                }
+            else
+            {
+                i = rng.Next(0, natureList.Count - 1);
+            }
             int hp;
             int atk;
             int def;
@@ -1046,9 +1054,7 @@ namespace GenesisDex
             else
             {
                 AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Blank.png"));
-                AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Blank.png"));
                 AllDesc1.Add("Nothing is here.");
-                AllDesc2.Add("Nothing is here.");
                 return;
             }
         }
@@ -1061,31 +1067,7 @@ namespace GenesisDex
         {
             int i = rng.Next(ItemTiers.Count);
             ItemGenByTier(ItemTiers[i]);
-            i = rng.Next(1, 11);
-            if (i == 10)
-            {
-                preInfo.Add(optionsList[0].TwoItemGasp);
-                onItem2 = true;
-                GetItem2();
-            }
-            else
-            {
-                preInfo.Add(optionsList[0].OneItemGasp);
-                AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Blank.png"));
-                AllDesc2.Add("Nothing is here.");
-            }
         }
-
-        //===========================================================================================================
-        //=== GetItems2 is used to determine what tier the second item held by the Pokemon is. ======================
-        //===========================================================================================================
-        private void GetItem2()
-        {
-            int i = rng.Next(ItemTiers.Count);
-            ItemGenByTier(ItemTiers[i]);
-        }
-        //===========================================================================================================
-        //===========================================================================================================
 
         //===========================================================================================================
         //=== ItemGenByTier is used to determine what item is going to be placed in Item1 or Item2 using the tier ===
@@ -1102,39 +1084,10 @@ namespace GenesisDex
                 else
                     ItemGenByTier(tier - 1);
             }
-            if (!onLoot)
-            {
-                if (onItem2)
-                {
-                    AllItems2.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Items\\" + itemList[i].id + ".png"));
-                    AllDesc2.Add(itemList[i].id + ": " + itemList[i].desc);
-                }
-                else
-                {
-                    AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Items\\" + itemList[i].id + ".png"));
-                    AllDesc1.Add(itemList[i].id + ": " + itemList[i].desc);
-                }
-            }
-            else
-            {
-                AllDesc3.Add(itemList[i].id + ": " + itemList[i].desc);
-            }
-        }
 
-        //===========================================================================================================
-        //=== SetGasp gathers the lines from the Info list generated along with each Pokemon and writes it out into =
-        //===== the Gasp textbox in the Form. =======================================================================
-        //===========================================================================================================
-        private void SetGasp()
-        {
-            rtbGasp.Text = "";
-            foreach (string s in Info[Current])
-            {
-                rtbGasp.Text += s + Environment.NewLine;
-            }
-            Regex name = new Regex("~p");
-            string result = name.Replace(rtbGasp.Text, AllPokemon[Current].id);
-            rtbGasp.Text = result;
+            AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Items\\" + itemList[i].id + ".png"));
+            AllDesc1.Add(itemList[i].id + ": " + itemList[i].desc);
+
         }
 
         //===========================================================================================================
@@ -1189,7 +1142,7 @@ namespace GenesisDex
         private void SetPoke()
         {
             pbPokemon.Size = pbPokemon.Image.Size;
-            pbPokemon.Location = new Point(233 - (pbPokemon.Width / 2), 250 - (pbPokemon.Height));
+            pbPokemon.Location = new Point(189 - (pbPokemon.Width / 2), 250 - (pbPokemon.Height));
         }
 
         //===========================================================================================================
@@ -1199,7 +1152,7 @@ namespace GenesisDex
         private void SetItem()
         {
             pkItem.Size = pkItem.Image.Size;
-            pkItem.Location = new Point(939 - (pkItem.Width / 2), 578 - (pkItem.Height));
+            pkItem.Location = new Point(538 - (pkItem.Width / 2), 177 - (pkItem.Height));
         }
 
         //===========================================================================================================
@@ -1207,148 +1160,170 @@ namespace GenesisDex
         //===========================================================================================================
         private void WriteInfo()
         {
-            viewingLoot = false;
-            pkItem.Visible = false;
+            isWritingInfo = true;
             if (AllShinyCheck[Current])
             {
-                rtbInfo.Text = "Name: Shiny " + AllPokemon[Current].id + Environment.NewLine;
+                tbName.Text = "Shiny " + AllPokemon[Current].id + Environment.NewLine;
             }
             else
             {
-                rtbInfo.Text = "Name: " + AllPokemon[Current].id + Environment.NewLine;
+                tbName.Text = AllPokemon[Current].id + Environment.NewLine;
             }
-            rtbInfo.Text += "Type: " + Type[Current] + Environment.NewLine +
-                "Level: " + AllLevels[Current] + Environment.NewLine +
-                Environment.NewLine +
-                "Stats:" + Environment.NewLine +
-                "Current Health: " + CurrentHealth[Current] + Environment.NewLine +
-                "Max Health:\t   " + MaxHealth[Current] + Environment.NewLine +
-                "HP:\t\t   " + AllStat[Current][0] + Environment.NewLine +
-                "ATK:\t\t   " + AllStat[Current][1] + Environment.NewLine +
-                "DEF:\t\t   " + AllStat[Current][2] + Environment.NewLine +
-                "SPATK:\t   " + AllStat[Current][3] + Environment.NewLine +
-                "SPDEF:\t   " + AllStat[Current][4] + Environment.NewLine +
-                "SPD:\t\t   " + AllStat[Current][5] + Environment.NewLine +
-                Environment.NewLine +
-                "Capabilities:" + Environment.NewLine;
+            tbType.Text = Type[Current];
+            tbLevel.Text = AllLevels[Current].ToString();
+            tbGender.Text = Gender[Current];
+            tbCurrentHealth.Text = CurrentHealth[Current].ToString();
+            tbMaxHealth.Text = MaxHealth[Current].ToString();
+            tbBaseHP.Text = BasePokemon[Current].hp;
+            tbLevelHP.Text = AllStat[Current][0];
+            if (nudHPCS.Value > 0)
+                tbCurrentHP.Text = (Math.Abs(Math.Round(Convert.ToDecimal(AllStat[Current][0]) / 5) * Math.Abs(nudHPCS.Value) + Convert.ToDecimal(AllStat[Current][0]))).ToString();
+            else if (nudHPCS.Value < 0)
+                tbCurrentHP.Text = (Math.Abs(Math.Round(Convert.ToDecimal(AllStat[Current][0]) / 10) * Math.Abs(nudHPCS.Value) - Convert.ToDecimal(AllStat[Current][0]))).ToString();
+            else
+                tbCurrentHP.Text = tbLevelHP.Text;
+            tbBaseATK.Text = BasePokemon[Current].atk;
+            tbLevelATK.Text = AllStat[Current][1];
+            if (nudATKCS.Value > 0)
+                tbCurrentATK.Text = (Math.Abs(Math.Round(Convert.ToDecimal(AllStat[Current][1]) / 5) * Math.Abs(nudATKCS.Value) + Convert.ToDecimal(AllStat[Current][1]))).ToString();
+            else if (nudATKCS.Value < 0)
+                tbCurrentATK.Text = (Math.Abs(Math.Round(Convert.ToDecimal(AllStat[Current][1]) / 10) * Math.Abs(nudATKCS.Value) - Convert.ToDecimal(AllStat[Current][1]))).ToString();
+            else
+                tbCurrentATK.Text = tbLevelATK.Text;
+            tbBaseDEF.Text = BasePokemon[Current].def;
+            tbLevelDEF.Text = AllStat[Current][2];
+            if (nudDEFCS.Value > 0)
+                tbCurrentDEF.Text = (Math.Abs(Math.Round(Convert.ToDecimal(AllStat[Current][2]) / 5) * Math.Abs(nudDEFCS.Value) + Convert.ToDecimal(AllStat[Current][2]))).ToString();
+            else if (nudDEFCS.Value < 0)
+                tbCurrentDEF.Text = (Math.Abs(Math.Round(Convert.ToDecimal(AllStat[Current][2]) / 10) * Math.Abs(nudDEFCS.Value) - Convert.ToDecimal(AllStat[Current][2]))).ToString();
+            else
+                tbCurrentDEF.Text = tbLevelDEF.Text;
+            tbBaseSPATK.Text = BasePokemon[Current].spatk;
+            tbLevelSPATK.Text = AllStat[Current][3];
+            if (nudSPATKCS.Value > 0)
+                tbCurrentSPATK.Text = (Math.Abs(Math.Round(Convert.ToDecimal(AllStat[Current][3]) / 5) * Math.Abs(nudSPATKCS.Value) + Convert.ToDecimal(AllStat[Current][3]))).ToString();
+            else if (nudSPATKCS.Value < 0)
+                tbCurrentSPATK.Text = (Math.Abs(Math.Round(Convert.ToDecimal(AllStat[Current][3]) / 10) * Math.Abs(nudSPATKCS.Value) - Convert.ToDecimal(AllStat[Current][3]))).ToString();
+            else
+                tbCurrentSPATK.Text = tbLevelSPATK.Text;
+            tbBaseSPDEF.Text = BasePokemon[Current].spdef;
+            tbLevelSPDEF.Text = AllStat[Current][4];
+            if (nudSPDEFCS.Value > 0)
+                tbCurrentSPDEF.Text = (Math.Abs(Math.Round(Convert.ToDecimal(AllStat[Current][4]) / 5) * Math.Abs(nudSPDEFCS.Value) + Convert.ToDecimal(AllStat[Current][4]))).ToString();
+            else if (nudSPDEFCS.Value < 0)
+                tbCurrentSPDEF.Text = (Math.Abs(Math.Round(Convert.ToDecimal(AllStat[Current][4]) / 10) * Math.Abs(nudSPDEFCS.Value) - Convert.ToDecimal(AllStat[Current][4]))).ToString();
+            else
+                tbCurrentSPDEF.Text = tbLevelSPDEF.Text;
+            tbBaseSPD.Text = BasePokemon[Current].spd;
+            tbLevelSPD.Text = AllStat[Current][5];
+            if (nudSPDCS.Value > 0)
+                tbCurrentSPD.Text = (Math.Abs(Math.Round(Convert.ToDecimal(AllStat[Current][5]) / 5) * Math.Abs(nudSPDCS.Value) + Convert.ToDecimal(AllStat[Current][5]))).ToString();
+            else if (nudSPDCS.Value < 0)
+                tbCurrentSPD.Text = (Math.Abs(Math.Round(Convert.ToDecimal(AllStat[Current][5]) / 10) * Math.Abs(nudSPDCS.Value) - Convert.ToDecimal(AllStat[Current][5]))).ToString();
+            else
+                tbCurrentSPD.Text = tbLevelSPD.Text;
+            lbCapabilites.Items.Clear();
             foreach (string cap in AllCap[Current])
             {
-                rtbInfo.Text += cap + Environment.NewLine;
+                lbCapabilites.Items.Add(cap);
             }
-
-        }
-
-        //===========================================================================================================
-        //=== WriteMoves is used to write the Gender, Nature, Size, Weight, Abilites, Skills, and Moves of the ======
-        //===== current Pokemon on Page Two. ========================================================================
-        //===========================================================================================================
-        private void WriteMoves()
-        {
-            viewingLoot = false;
-            pkItem.Visible = false;
-            rtbInfo.Text = "Gender: " + Gender[Current] + Environment.NewLine +
-                "Nature: " + AllNatures[Current] + Environment.NewLine +
-                "Size: " + AllPokemon[Current].size + Environment.NewLine +
-                "Weight: " + AllPokemon[Current].weight + Environment.NewLine;
-            rtbInfo.Text += (Environment.NewLine + "Moves:" + Environment.NewLine);
+            tbNature.Text = AllNatures[Current];
+            lbMoves.Items.Clear();
+            lbAbilities.Items.Clear();
+            lbSkills.Items.Clear();
+            lbMoves.Items.Add("Moves:");
             for (var w = 0; w < AllMoves[Current].Count; w++)
             {
-                rtbInfo.Text += "-" + AllMoves[Current][w] + Environment.NewLine;
+                lbMoves.Items.Add(AllMoves[Current][w]);
             }
-            rtbInfo.Text += Environment.NewLine + "Abilities:" + Environment.NewLine;
+            lbAbilities.Items.Add("Abilities:");
             for (var a = 0; a < AllAbilities[Current].Count; a++)
             {
-                rtbInfo.Text += "-" + AllAbilities[Current][a] + Environment.NewLine;
+                lbAbilities.Items.Add(AllAbilities[Current][a]);
             }
-            rtbInfo.Text += Environment.NewLine + "Skills:";
+            lbSkills.Items.Add("Skills:");
             for (var s = 0; s < AllSkills[Current].Count; s++)
             {
-                rtbInfo.Text += Environment.NewLine + "-" + AllSkills[Current][s];
+                lbSkills.Items.Add(AllSkills[Current][s]);
             }
-        }
-
-        //===========================================================================================================
-        //=== WriteItem1 is used to write out the Name, Description, and place the Image of the Item rolled for =====
-        //===== Slot 1. =============================================================================================
-        //===========================================================================================================
-        private void WriteItem1()
-        {
-            viewingLoot = false;
-            pkItem.Visible = true;
             pkItem.Image = AllItems1[Current];
             SetItem();
-            rtbInfo.Text = "Item 1-" + Environment.NewLine +
-                AllDesc1[Current];
+            rtbGasp.Text = "Held Item- " + Environment.NewLine + AllDesc1[Current];
+            rtbGasp.Refresh();
+            chkBurned.Checked = AllStatus[Current].Burned;
+            chkFrozen.Checked = AllStatus[Current].Frozen;
+            chkParalysis.Checked = AllStatus[Current].Paralysis;
+            chkPoisoned.Checked = AllStatus[Current].Poisoned;
+            chkBadSleep.Checked = AllStatus[Current].BadSleep;
+            chkConfused.Checked = AllStatus[Current].Confused;
+            chkCursed.Checked = AllStatus[Current].Cursed;
+            chkRage.Checked = AllStatus[Current].Rage;
+            chkFlinch.Checked = AllStatus[Current].Flinch;
+            chkInfatuation.Checked = AllStatus[Current].Infatuation;
+            chkTotalBlind.Checked = AllStatus[Current].TotalBlind;
+            chkSuppress.Checked = AllStatus[Current].Suppress;
+            chkBlind.Checked = AllStatus[Current].Blind;
+            chkAsleep.Checked = AllStatus[Current].Asleep;
+            chkSlowed.Checked = AllStatus[Current].Slowed;
+            chkStuck.Checked = AllStatus[Current].Stuck;
+            chkTrapped.Checked = AllStatus[Current].Trapped;
+            chkTripped.Checked = AllStatus[Current].Tripped;
+            chkVulnerable.Checked = AllStatus[Current].Vulnerable;
+            chkFainted.Checked = AllStatus[Current].Fainted;
+            GetCaptureRate();
+            isWritingInfo = false;
         }
 
         //===========================================================================================================
-        //=== WriteItem2 is used to write out the Name, Description, and place the Image of the Item rolled for =====
-        //===== Slot 2. =============================================================================================
+        //=== 
         //===========================================================================================================
-        private void WriteItem2()
+        private void GetCaptureRate()
         {
-            viewingLoot = false;
-            pkItem.Visible = true;
-            pkItem.Image = AllItems2[Current];
-            SetItem();
-            rtbInfo.Text = "Item 2-" + Environment.NewLine +
-                AllDesc2[Current];
-
-        }
-
-        //===========================================================================================================
-        //=== WriteLoot is used in the Loot Scannign process in order to Write the loot over the shown page in the ==
-        //===== FormScan form. ======================================================================================
-        //===========================================================================================================
-        private void WriteLoot()
-        {
-            tbPageCount.Text = "----";
-            viewingLoot = true;
-            pkItem.Visible = false;
-            rtbInfo.Clear();
-            for (int x = 0; x < AllDesc3.Count; x++)
+            int captureRate = 100;
+            if (CurrentHealth[Current] <= 0)
+                tbCaptureRate.Text = "Pokemon is unconcious.";
+            else
             {
-                rtbInfo.Text += AllDesc3[x] + Environment.NewLine + Environment.NewLine;
-            }
-            rtbInfo.Text += "$" + Cash.ToString();
-        }
-
-        //===========================================================================================================
-        //=== UpdatePage is used to ensure that the correct info is written onto the current selected page. =========
-        //===== Whether this is to change the Pokemon or change the page on the current Pokemon, this is the ========
-        //===== fuction that is called. =============================================================================
-        //===========================================================================================================
-        private void UpdatePage()
-        {
-            tbPageCount.Text = Page + "/4";
-            if (Page == 1) { WriteInfo(); }
-            if (Page == 2) { WriteMoves(); }
-            if (Page == 3) { WriteItem1(); }
-            if (Page == 4) { WriteItem2(); }
-        }
-
-        //===========================================================================================================
-        //=== GetLoot is used to generate loot for the players based off the level specified in the form. This uses =
-        //===== the GetItem2 function in order to save lines of code. ===============================================
-        //===========================================================================================================
-        private void GetLoot()
-        {
-            pkItem.Visible = false;
-            AllDesc3.Clear();
-            rtbInfo.Clear();
-            int val = Convert.ToInt32(nudPlayerLevel.Value);
-            Cash = 0;
-            onLoot = true;
-            for (int x = 0; x < val; x++)
-            {
-                int i = rng.Next(1, 4);
-                if (i == 1)
-                    GetItem2();
+                captureRate -= AllLevels[Current] * 2;
+                double health = Convert.ToDouble(CurrentHealth[Current] / MaxHealth[Current]);
+                if (CurrentHealth[Current] == 1)
+                    captureRate += 30;
+                else if (health >= 0.755)
+                    captureRate -= 30;
+                else if (health >= 0.505)
+                    captureRate -= 15;
+                else if (health >= 0.255)
+                    captureRate += 0;
                 else
-                    Cash += rng.Next(1, 6) * optionsList[0].CashPerLevel;
+                    captureRate += 15;
+                evoList = evoXML.createList(AllPokemon[Current].number);
+                int stagesTotal = evoList.Count();
+                int stageCurrent = Convert.ToInt32(AllPokemon[Current].stage);
+                int stagesRemain = stagesTotal - stageCurrent;
+                if (stagesRemain == 0)
+                    captureRate -= 10;
+                else if (stagesRemain == 1)
+                    captureRate += 0;
+                else if (stagesRemain == 2)
+                    captureRate += 10;
+                if (AllShinyCheck[Current])
+                    captureRate -= 10;
+                if (AllStatus[Current].Burned == true) { captureRate += 10; }
+                if (AllStatus[Current].Frozen == true) { captureRate += 10; }
+                if (AllStatus[Current].BadSleep == true) { captureRate += 5; }
+                if (AllStatus[Current].Poisoned == true) { captureRate += 10; }
+                if (AllStatus[Current].Cursed == true) { captureRate += 5; }
+                if (AllStatus[Current].Rage == true) { captureRate += 5; }
+                if (AllStatus[Current].Infatuation == true) { captureRate += 5; }
+                if (AllStatus[Current].Asleep == true) { captureRate += 5; }
+                if (AllStatus[Current].Slowed == true) { captureRate += 5; }
+                if (AllStatus[Current].Suppress == true) { captureRate += 5; }
+                if (AllStatus[Current].Flinch == true) { captureRate += 5; }
+                if (AllStatus[Current].Confused == true) { captureRate += 5; }
+                if (AllStatus[Current].Paralysis == true) { captureRate += 10; }
+                if (AllStatus[Current].Stuck == true) { captureRate += 10; }
+                tbCaptureRate.Text = captureRate.ToString() + " or lower to capture.";
             }
-            onLoot = false;
-            WriteLoot();
         }
 
         //===========================================================================================================
@@ -1422,18 +1397,10 @@ namespace GenesisDex
                     {
                         sw.WriteLine("-" + AllSkills[i][s]);
                     }
-                    sw.WriteLine(Environment.NewLine + "Item 1-" + Environment.NewLine + AllDesc1[i]);
-                    sw.WriteLine(Environment.NewLine + "Item 2-" + Environment.NewLine + AllDesc2[i]);
+                    sw.WriteLine(Environment.NewLine + "Held Item-" + Environment.NewLine + AllDesc1[i]);
                     sw.WriteLine(Environment.NewLine + "------------------------------------------------------------------------------------------");
                     PokeSaveScan.ReportProgress(1);
                 }
-                sw.WriteLine(Environment.NewLine + "Loot List");
-                sw.WriteLine("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
-                for (int x = 0; x < AllDesc3.Count; x++)
-                {
-                    sw.WriteLine(AllDesc3[x] + Environment.NewLine);
-                }
-                sw.WriteLine("$" + Cash.ToString());
                 sw.Flush();
                 sw.Close();
             }
@@ -1500,15 +1467,16 @@ namespace GenesisDex
         //===========================================================================================================
         //=== btnExit if the exit button at the top of this form. ====================================================
         //===========================================================================================================
-        private void btnExit_Click(object sender, EventArgs e)
+        private void btnExit_MouseUp(object sender, MouseEventArgs e)
         {
+            if (e.Button != MouseButtons.Left) return;
             Application.Exit();
         }
 
         //===========================================================================================================
         //=== pbScan is the button in the form that takes you back to the main Pokedex. =============================
         //===========================================================================================================
-        private void btnScan_MouseHover(object sender, EventArgs e)
+        private void btnScan_MouseEnter(object sender, EventArgs e)
         {
             btnScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ChangeModeHover.png");
         }
@@ -1516,8 +1484,9 @@ namespace GenesisDex
         {
             btnScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ChangeMode.png");
         }
-        private void btnScan_Click(object sender, EventArgs e)
+        private void btnScan_MouseUp(object sender, MouseEventArgs e)
         {
+            if (e.Button != MouseButtons.Left) return;
             if (isScanning) return;
             Owner.Show();
             this.Activated += fs_FormActive;
@@ -1536,7 +1505,7 @@ namespace GenesisDex
         //=== pbScanPokemon is the Scan Pokemon button in the form. this is used to initiate the background worker ==
         //===== to create the new list of pokemon and clear out the old data. =======================================
         //===========================================================================================================
-        private void btnScanPokemon_MouseHover(object sender, EventArgs e)
+        private void btnScanPokemon_MouseEnter(object sender, EventArgs e)
         {
             btnScanPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanPokemonHover.png");
         }
@@ -1544,8 +1513,9 @@ namespace GenesisDex
         {
             btnScanPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanPokemon.png");
         }
-        private void btnScanPokemon_Click(object sender, EventArgs e)
+        private void btnScanPokemon_MouseUp(object sender, MouseEventArgs e)
         {
+            if (e.Button != MouseButtons.Left) return;
             if (isScanning) return;
             queueFinished = false;
             isScanning = true;
@@ -1555,6 +1525,7 @@ namespace GenesisDex
             PokeHabitat = cbHabitat.Text;
             PokeType = cbType.Text;
             PokeStage = cbStageAllowed.Text;
+            PokeNature = cbNature.Text;
             PokeLevelMax = Convert.ToInt32(nudLevelMax.Value);
             PokeLevelMin = Convert.ToInt32(nudLevelMin.Value);
             Amount = Convert.ToInt32(nudAmount.Value);
@@ -1566,32 +1537,6 @@ namespace GenesisDex
             appendList = chkAppend.Checked;
             lblProgress.Text = "Queuing Scan";
             PokeGenerator.RunWorkerAsync();
-        }
-
-        //===========================================================================================================
-        //=== Used to change the Info page to the next lower number, or complete the circle back to the highest. ====
-        //===========================================================================================================
-        private void btnInfoBack_Click(object sender, EventArgs e)
-        {
-            if (isScanning) return;
-            if (viewingLoot) return;
-            if (!hasScanned) return;
-            Page--;
-            if (Page == 0) { Page = 4; }
-            UpdatePage();
-        }
-
-        //===========================================================================================================
-        //=== Used to change the Info page to the next highert number, or complete the circle bakc to the lowest. ===
-        //===========================================================================================================
-        private void btnInfoForward_Click(object sender, EventArgs e)
-        {
-            if (isScanning) return;
-            if (viewingLoot) return;
-            if (!hasScanned) return;
-            Page++;
-            if (Page == 5) { Page = 1; }
-            UpdatePage();
         }
 
         //===========================================================================================================
@@ -1635,8 +1580,9 @@ namespace GenesisDex
         //===========================================================================================================
         //=== Used to switch between the pokemon in the current generation list. ====================================
         //===========================================================================================================
-        private void pbPokeLeft_Click(object sender, EventArgs e)
+        private void pbPokeLeft_MouseUp(object sender, MouseEventArgs e)
         {
+            if (e.Button != MouseButtons.Left) return;
             if (isScanning) return;
             if (AllPokemon.Count < 2) return;
             if (Current <= 0)
@@ -1650,11 +1596,11 @@ namespace GenesisDex
             tbPokeCount.Text = (Current + 1).ToString() + "/" + AllPokemon.Count.ToString();
             pbPokemon.Image = AllImages[Current];
             SetPoke();
-            SetGasp();
-            UpdatePage();
+            WriteInfo();
         }
-        private void pbPokeRight_Click(object sender, EventArgs e)
+        private void pbPokeRight_MouseUp(object sender, MouseEventArgs e)
         {
+            if (e.Button != MouseButtons.Left) return;
             if (isScanning) return;
             if (AllPokemon.Count < 2) return;
             if (Current >= AllPokemon.Count - 1)
@@ -1668,96 +1614,23 @@ namespace GenesisDex
             tbPokeCount.Text = (Current + 1).ToString() + "/" + AllPokemon.Count.ToString();
             pbPokemon.Image = AllImages[Current];
             SetPoke();
-            SetGasp();
-            UpdatePage();
+            WriteInfo();
         }
-        private void btnPokeRight_MouseHover(object sender, EventArgs e)
+        private void btnPokeRight_MouseEnter(object sender, EventArgs e)
         {
-            btnPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRightHover.png");
+            btnPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoRightHover.png");
         }
         private void btnPokeRight_MouseLeave(object sender, EventArgs e)
         {
-            btnPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonRight.png");
+            btnPokeRight.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoRight.png");
         }
-
-        private void btnPokeLeft_MouseHover(object sender, EventArgs e)
+        private void btnPokeLeft_MouseEnter(object sender, EventArgs e)
         {
-            btnPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonLeftHover.png");
+            btnPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoLeftHover.png");
         }
         private void btnPokeLeft_MouseLeave(object sender, EventArgs e)
         {
-            btnPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokemonLeft.png");
-        }
-
-        //===========================================================================================================
-        //=== Calls the GetLoot function from above. This allows the player to have a loot table for their current ==
-        //===== Scene without leaving the generator. ================================================================
-        //===========================================================================================================
-        private void pbLoot_Click(object sender, EventArgs e)
-        {
-            GetLoot();
-        }
-
-        //===========================================================================================================
-        //=== Switches from loot to view the pokemon stats. =========================================================
-        //===========================================================================================================
-        private void pbPokeRefresh_Click(object sender, EventArgs e)
-        {
-            if (isScanning) return;
-            if (hasScanned)
-            {
-                btnInfoForward.Visible = true;
-                btnInfoBack.Visible = true;
-                UpdatePage();
-            }
-        }
-
-        //===========================================================================================================
-        //=== Switches from the Pokemon Stats to view the Loot. =====================================================
-        //===========================================================================================================
-        private void pbLootRefresh_Click(object sender, EventArgs e)
-        {
-            if (isScanning) return;
-            if (hasScanned)
-            {
-                WriteLoot();
-            }
-        }
-
-        //===========================================================================================================
-        //=== Updates the Loot button image in the UI.==============================================================
-        //===========================================================================================================
-        private void pbLoot_MouseHover(object sender, EventArgs e)
-        {
-            btnLoot.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanLootHover.png");
-        }
-        private void pbLoot_MouseLeave(object sender, EventArgs e)
-        {
-            btnLoot.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanLoot.png");
-        }
-
-        //===========================================================================================================
-        //=== Updates the Pokemon View button in the UI.=============================================================
-        //===========================================================================================================
-        private void pbPokeRefresh_MouseHover(object sender, EventArgs e)
-        {
-            btnPokeRefresh.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokeViewHover.png");
-        }
-        private void pbPokeRefresh_MouseLeave(object sender, EventArgs e)
-        {
-            btnPokeRefresh.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\PokeView.png");
-        }
-
-        //===========================================================================================================
-        //=== Updates the Loot View button in the UI. ===============================================================
-        //===========================================================================================================
-        private void pbLootRefresh_MouseHover(object sender, EventArgs e)
-        {
-            btnLootRefresh.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\LootViewHover.png");
-        }
-        private void pbLootRefresh_MouseLeave(object sender, EventArgs e)
-        {
-            btnLootRefresh.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\LootView.png");
+            btnPokeLeft.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\InfoLeft.png");
         }
 
         //===========================================================================================================
@@ -1768,30 +1641,33 @@ namespace GenesisDex
         {
             if (e.KeyCode == Keys.Enter)
             {
-                pbDealDamage_Click(this, new EventArgs());
+                pbDealDamage_MouseUp(this, new MouseEventArgs(MouseButtons.Left, 1, 1, 1, 0));
             }
         }
 
         //===========================================================================================================
         //=== Applies the damage in the Damage Amount NUD box to the current selected pokemon in the list. ==========
         //===========================================================================================================
-        private void pbDealDamage_Click(object sender, EventArgs e)
+        private void pbDealDamage_MouseUp(object sender, MouseEventArgs e)
         {
+            if (e.Button != MouseButtons.Left) return;
             if (isScanning) return;
             if (hasScanned)
             {
                 if ((CurrentHealth[Current] - pkDamage.Value) > MaxHealth[Current])
                     CurrentHealth[Current] = MaxHealth[Current];
+                else if ((CurrentHealth[Current] - pkDamage.Value) < 0 - (MaxHealth[Current] * 2))
+                    CurrentHealth[Current] = 0 - (MaxHealth[Current] * 2);
                 else
                    CurrentHealth[Current] -= pkDamage.Value;
-                UpdatePage();
+                WriteInfo();
             }
         }
 
         //===========================================================================================================
         //=== Updates the Deal Damage button in the UI. =============================================================
         //===========================================================================================================
-        private void pbDealDamage_MouseHover(object sender, EventArgs e)
+        private void pbDealDamage_MouseEnter(object sender, EventArgs e)
         {
             btnDealDamage.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\DealDamageHover.png");
         }
@@ -1836,7 +1712,7 @@ namespace GenesisDex
         //===========================================================================================================
         //=== Updates the Exit button in the UI. ====================================================================
         //===========================================================================================================
-        private void btnExit_MouseHover(object sender, EventArgs e)
+        private void btnExit_MouseEnter(object sender, EventArgs e)
         {
             btnExit.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButtonHover.png");
         }
@@ -1848,8 +1724,9 @@ namespace GenesisDex
         //===========================================================================================================
         //=== Opens FormOptions from FormScan, and creats a closing event to update after Options Edit. =============
         //===========================================================================================================
-        private void btnOptions_Click(object sender, EventArgs e)
+        private void btnOptions_MouseUp(object sender, MouseEventArgs e)
         {
+            if (e.Button != MouseButtons.Left) return;
             this.Enabled = false;
             FormOptions fc = new FormOptions();
             fc.FormClosing += FormOptionsIsClosing;
@@ -1870,7 +1747,7 @@ namespace GenesisDex
         //===========================================================================================================
         //=== Updates the Options Button in the UI. =================================================================
         //===========================================================================================================
-        private void btnOptions_MouseHover(object sender, EventArgs e)
+        private void btnOptions_MouseEnter(object sender, EventArgs e)
         {
             btnOptions.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\OptionsHover.png");
         }
@@ -1882,8 +1759,9 @@ namespace GenesisDex
         //===========================================================================================================
         //=== 
         //===========================================================================================================
-        private void btnCry_Click(object sender, EventArgs e)
+        private void btnCry_MouseUp(object sender, MouseEventArgs e)
         {
+            if (e.Button != MouseButtons.Left) return;
             if (!hasScanned) return;
             if (isScanning) return;
             string s;
@@ -1905,7 +1783,7 @@ namespace GenesisDex
             CryPlay.Play();
         }
 
-        private void btnCry_MouseHover(object sender, EventArgs e)
+        private void btnCry_MouseEnter(object sender, EventArgs e)
         {
             btnCry.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CryHover.png");
         }
@@ -2038,6 +1916,7 @@ namespace GenesisDex
             PokeHabitat = cbHabitat.Text;
             PokeType = cbType.Text;
             PokeStage = cbStageAllowed.Text;
+            PokeNature = cbNature.Text;
             PokeLevelMax = Convert.ToInt32(nudLevelMax.Value);
             PokeLevelMin = Convert.ToInt32(nudLevelMin.Value);
             Amount = Convert.ToInt32(nudAmount.Value);
@@ -2045,6 +1924,7 @@ namespace GenesisDex
             canItems = chkHasItem.Checked;
             canLegendary = chkCanBeLegend.Checked;
             canShiny = chkCanBeShiny.Checked;
+            forceShiny = chkForceShiny.Checked;
             appendList = chkAppend.Checked;
             lblProgress.Text = "Queuing Scan";
             PokeGenerator.RunWorkerAsync();
@@ -2053,14 +1933,15 @@ namespace GenesisDex
         //===========================================================================================================
         //=== 
         //===========================================================================================================
-        private void btnSave_Click(object sender, EventArgs e)
+        private void btnSave_MouseUp(object sender, MouseEventArgs e)
         {
+            if (e.Button != MouseButtons.Left) return;
             saveResult = PokeSaveDialog.ShowDialog() == DialogResult.OK;
             if (!saveResult) return;
             saveFilePath = PokeSaveDialog.FileName;
             PokeSaveScan.RunWorkerAsync();
         }
-        private void btnSave_MouseHover(object sender, EventArgs e)
+        private void btnSave_MouseEnter(object sender, EventArgs e)
         {
             btnSave.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\SaveHover.png");
         }
@@ -2100,6 +1981,747 @@ namespace GenesisDex
                 nudLevelMax.Value = regionList[selectRegion].MaxLevel;
                 nudLevelMin.Value = regionList[selectRegion].MinLevel;
             }
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void nudHPCS_ValueChanged(object sender, EventArgs e)
+        {
+            if (hasScanned)
+                WriteInfo();
+        }
+        private void nudATKCS_ValueChanged(object sender, EventArgs e)
+        {
+            if(hasScanned)
+                WriteInfo();
+        }
+        private void nudDEFCS_ValueChanged(object sender, EventArgs e)
+        {
+            if (hasScanned)
+                WriteInfo();
+        }
+        private void nudSPATKCS_ValueChanged(object sender, EventArgs e)
+        {
+            if (hasScanned)
+                WriteInfo();
+        }
+        private void nudSPDEFCS_ValueChanged(object sender, EventArgs e)
+        {
+            if (hasScanned)
+                WriteInfo();
+        }
+        private void nudSPDCS_ValueChanged(object sender, EventArgs e)
+        {
+            if (hasScanned)
+                WriteInfo();
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void btnDealOneTick_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left) return;
+            if (isScanning) return;
+            if (hasScanned)
+            {
+                if ((CurrentHealth[Current] - Math.Round(MaxHealth[Current] / 10)) > MaxHealth[Current])
+                    CurrentHealth[Current] = MaxHealth[Current];
+                else if ((CurrentHealth[Current] - Math.Round(MaxHealth[Current] / 10)) < (0 - MaxHealth[Current] * 2))
+                    CurrentHealth[Current] = 0 - (MaxHealth[Current] * 2);
+                else
+                    CurrentHealth[Current] -= Math.Round(MaxHealth[Current] / 10);
+                WriteInfo();
+            }
+        }
+        private void btnDealOneTick_MouseEnter(object sender, EventArgs e)
+        {
+            btnDealOneTick.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\DealTickHover.png");
+        }
+        private void btnDealOneTick_MouseLeave(object sender, EventArgs e)
+        {
+            btnDealOneTick.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\DealTick.png");
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void chkBurned_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkBurned.Checked)
+            {
+                chkBurned.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    if (nudDEFCS.Value - 2 < -5)
+                        nudDEFCS.Value = -5;
+                    else
+                        nudDEFCS.Value -= 2;
+                    AllStatus[Current].Burned = true;
+                    WriteInfo();
+                }
+            }
+            else
+            {
+                chkBurned.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    if (nudDEFCS.Value + 2 > 5)
+                        nudDEFCS.Value = 5;
+                    else
+                        nudDEFCS.Value += 2;
+                    AllStatus[Current].Burned = false;
+                    WriteInfo();
+                }
+            }
+        }
+        private void chkBurned_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckedState(chkBurned);
+            }
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void chkFrozen_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkFrozen.Checked)
+            {
+                chkFrozen.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Frozen = true;
+                    WriteInfo();
+                }
+            }
+            else
+            {
+                chkFrozen.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Frozen = false;
+                    WriteInfo();
+                }
+            }
+        }
+        private void chkFrozen_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckedState(chkFrozen);
+            }
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void chkBadSleep_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkBadSleep.Checked)
+            {
+                chkBadSleep.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].BadSleep = true;
+                    WriteInfo();
+                }
+            }
+            else
+            {
+                chkBadSleep.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].BadSleep = false;
+                    WriteInfo();
+                }
+            }
+        }
+        private void chkBadSleep_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckedState(chkBadSleep);
+            }
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void chkPoisoned_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkPoisoned.Checked)
+            {
+                chkPoisoned.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    if (nudSPDEFCS.Value - 2 < -5)
+                        nudSPDEFCS.Value = -5;
+                    else
+                        nudSPDEFCS.Value -= 2;
+                    AllStatus[Current].Poisoned = true;
+                    WriteInfo();
+                }
+            }
+            else
+            {
+                chkPoisoned.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    if (nudSPDEFCS.Value + 2 > 5)
+                        nudSPDEFCS.Value = 5;
+                    else
+                        nudSPDEFCS.Value += 2;
+                    AllStatus[Current].Poisoned = false;
+                    WriteInfo();
+                }
+            }
+        }
+        private void chkPoisoned_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckedState(chkPoisoned);
+            }
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void chkCursed_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkCursed.Checked)
+            {
+                chkCursed.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Cursed = true;
+                    WriteInfo();
+                }
+            }
+            else
+            {
+                chkCursed.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Cursed = false;
+                    WriteInfo();
+                }
+            }
+        }
+        private void chkCursed_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckedState(chkCursed);
+            }
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void chkRage_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkRage.Checked)
+            {
+                chkRage.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Rage = true;
+                    WriteInfo();
+                }
+            }
+            else
+            {
+                chkRage.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Rage = false;
+                    WriteInfo();
+                }
+            }
+        }
+        private void chkRage_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckedState(chkRage);
+            }
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void chkInfatuation_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkInfatuation.Checked)
+            {
+                chkInfatuation.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Infatuation = true;
+                    WriteInfo();
+                }
+            }
+            else
+            {
+                chkInfatuation.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Infatuation = false;
+                    WriteInfo();
+                }
+            }
+        }
+        private void chkInfatuation_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckedState(chkInfatuation);
+            }
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void chkAsleep_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkAsleep.Checked)
+            {
+                chkAsleep.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Asleep = true;
+                    WriteInfo();
+                }
+            }
+            else
+            {
+                chkAsleep.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Asleep = false;
+                    WriteInfo();
+                }
+            }
+        }
+        private void chkAsleep_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckedState(chkAsleep);
+            }
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void chkBlind_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkBlind.Checked)
+            {
+                chkBlind.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Blind = true;
+                    WriteInfo();
+                }
+            }
+            else
+            {
+                chkBlind.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Blind = false;
+                    WriteInfo();
+                }
+            }
+        }
+        private void chkBlind_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckedState(chkBlind);
+            }
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void chkTotalBlind_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkTotalBlind.Checked)
+            {
+                chkTotalBlind.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].TotalBlind = true;
+                    WriteInfo();
+                }
+            }
+            else
+            {
+                chkTotalBlind.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].TotalBlind = false;
+                    WriteInfo();
+                }
+            }
+        }
+        private void chkTotalBlind_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckedState(chkTotalBlind);
+            }
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void chkSlowed_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkSlowed.Checked && hasScanned)
+            {
+                chkSlowed.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
+                if (!isWritingInfo)
+                {
+                    AllStatus[Current].Slowed = true;
+                    WriteInfo();
+                }
+            }
+            else
+            {
+                chkSlowed.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Slowed = false;
+                    WriteInfo();
+                }
+            }
+        }
+        private void chkSlowed_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckedState(chkSlowed);
+            }
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void chkSuppress_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkSuppress.Checked)
+            {
+                chkSuppress.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Suppress = true;
+                    WriteInfo();
+                }
+            }
+            else
+            {
+                chkSuppress.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Suppress = false;
+                    WriteInfo();
+                }
+            }
+        }
+        private void chkSuppress_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckedState(chkSuppress);
+            }
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void chkFlinch_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkFlinch.Checked)
+            {
+                chkFlinch.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Flinch = true;
+                    WriteInfo();
+                }
+            }
+            else
+            {
+                chkFlinch.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Flinch = false;
+                    WriteInfo();
+                }
+            }
+        }
+        private void chkFlinch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckedState(chkFlinch);
+            }
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void chkConfused_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkConfused.Checked)
+            {
+                chkConfused.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Confused = true;
+                    WriteInfo();
+                }
+            }
+            else
+            {
+                chkConfused.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Confused = false;
+                    WriteInfo();
+                }
+            }
+        }
+        private void chkConfused_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckedState(chkConfused);
+            }
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void chkParalysis_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkParalysis.Checked)
+            {
+                chkParalysis.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    if (nudSPDCS.Value - 4 < -5)
+                        nudSPDCS.Value = -5;
+                    else
+                        nudSPDCS.Value -= 4;
+                    AllStatus[Current].Paralysis = true;
+                    WriteInfo();
+                }
+            }
+            else
+            {
+                chkParalysis.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    if (nudSPDCS.Value + 4 > 5)
+                        nudSPDCS.Value = 5;
+                    else
+                        nudSPDCS.Value += 4;
+                    AllStatus[Current].Paralysis = false;
+                    WriteInfo();
+                }
+            }
+        }
+        private void chkParalysis_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckedState(chkParalysis);
+            }
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void chkTrapped_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkTrapped.Checked)
+            {
+                chkTrapped.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Trapped = true;
+                    WriteInfo();
+                }
+            }
+            else
+            {
+                chkTrapped.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Trapped = false;
+                    WriteInfo();
+                }
+            }
+        }
+        private void chkTrapped_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckedState(chkTrapped);
+            }
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void chkStuck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkStuck.Checked)
+            {
+                chkStuck.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Stuck = true;
+                    WriteInfo();
+                }
+            }
+            else
+            {
+                chkStuck.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Stuck = false;
+                    WriteInfo();
+                }
+            }
+        }
+        private void chkStuck_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckedState(chkStuck);
+            }
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void chkVulnerable_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkVulnerable.Checked)
+            {
+                chkVulnerable.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Vulnerable = true;
+                    WriteInfo();
+                }
+            }
+            else
+            {
+                chkVulnerable.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Vulnerable = false;
+                    WriteInfo();
+                }
+            }
+        }
+        private void chkVulnerable_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckedState(chkVulnerable);
+            }
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void chkFainted_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkFainted.Checked)
+            {
+                chkFainted.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Fainted = true;
+                    WriteInfo();
+                }
+            }
+            else
+            {
+                chkFainted.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Fainted = false;
+                    WriteInfo();
+                }
+            }
+        }
+        private void chkFainted_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckedState(chkFainted);
+            }
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void chkTripped_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkTripped.Checked)
+            {
+                chkTripped.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Tripped = true;
+                    WriteInfo();
+                }
+            }
+            else
+            {
+                chkTripped.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
+                if (!isWritingInfo && hasScanned)
+                {
+                    AllStatus[Current].Tripped = false;
+                    WriteInfo();
+                }
+            }
+        }
+        private void chkTripped_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckedState(chkTripped);
+            }
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void btnMinimize_MouseUp(object sender, MouseEventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+        private void btnMinimize_MouseEnter(object sender, EventArgs e)
+        {
+            btnMinimize.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MinimizeButtonHover.png");
+        }
+        private void btnMinimize_MouseLeave(object sender, EventArgs e)
+        {
+            btnMinimize.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MinimizeButton.png");
         }
     }
 }

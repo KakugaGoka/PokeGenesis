@@ -1,24 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Namespace>
   <Type>
-    <id num ="0">Any</id> <!-- Leave this alone, it is mandatory for non-specific generation. -->
-    <id num="1">Bug</id>
-    <id num="2">Dark</id>
-    <id num="3">Dragon</id>
-    <id num="4">Electric</id>
-    <id num="5">Fairy</id>
-    <id num="6">Fighting</id>
-    <id num="7">Fire</id>
-    <id num="8">Flying</id>
-    <id num="9">Ghost</id>
-    <id num="10">Grass</id>
-    <id num="11">Ground</id>
-    <id num="12">Ice</id>
-    <id num="13">Normal</id>
-    <id num="14">Poison</id>
-    <id num="15">Psychic</id>
-    <id num="16">Rock</id>
-    <id num="17">Steel</id>
-    <id num="18">Water</id>
+    <id num="0">Bug</id>
+    <id num="1">Dark</id>
+    <id num="2">Dragon</id>
+    <id num="3">Electric</id>
+    <id num="4">Fairy</id>
+    <id num="5">Fighting</id>
+    <id num="6">Fire</id>
+    <id num="7">Flying</id>
+    <id num="8">Ghost</id>
+    <id num="9">Grass</id>
+    <id num="10">Ground</id>
+    <id num="11">Ice</id>
+    <id num="12">Normal</id>
+    <id num="13">Poison</id>
+    <id num="14">Psychic</id>
+    <id num="15">Rock</id>
+    <id num="16">Steel</id>
+    <id num="17">Water</id>
   </Type>
 </Namespace>

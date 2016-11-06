@@ -683,7 +683,7 @@
   <Pokemon Stage="1">
     <number>010</number>
     <id>Caterpie</id>
-    <type>Bug </type>
+    <type>Bug</type>
     <hp>5</hp>
     <atk>3</atk>
     <def>4</def>
@@ -15011,7 +15011,8 @@
         <cap id="0">Overland 7</cap>
         <cap id="1">Swim 2</cap>
         <cap id="2">Jump 1/2</cap>
-        <cap id="3">Power 3 Egg Warmer</cap>
+        <cap id="3">Power 3</cap>
+        <cap id="4">Egg Warmer</cap>
         <cap id="4">Firestarter</cap>
         <cap id="5">Glow</cap>
         <cap id="6">Heater</cap>

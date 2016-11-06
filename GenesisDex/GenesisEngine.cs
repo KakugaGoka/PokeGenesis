@@ -13,10 +13,6 @@ namespace GenesisDexEngine
 {
     class Options
     {
-        public string OneItemGasp { get; set; }
-        public string TwoItemGasp { get; set; }
-        public string PokemonGasp { get; set; }
-        public string ShinyGasp { get; set; }
         public string PokedexSkin { get; set; }
         public int CryVolume { get; set; }
         public int MaxPlayerLevel { get; set; }
@@ -124,6 +120,58 @@ namespace GenesisDexEngine
         public List<string> Spawns { get; set; }
     }
 
+    class StatusAfflictions
+    {
+        public bool Burned { get; set; }
+        public bool Frozen { get; set; }
+        public bool BadSleep { get; set; }
+        public bool Poisoned { get; set; }
+        public bool Cursed { get; set; }
+        public bool Rage { get; set; }
+        public bool Infatuation { get; set; }
+        public bool Asleep { get; set; }
+        public bool Blind { get; set; }
+        public bool TotalBlind { get; set; }
+        public bool Slowed { get; set; }
+        public bool Suppress { get; set; }
+        public bool Flinch { get; set; }
+        public bool Confused { get; set; }
+        public bool Paralysis { get; set; }
+        public bool Trapped { get; set; }
+        public bool Tripped { get; set; }
+        public bool Stuck { get; set; }
+        public bool Fainted { get; set; }
+        public bool Vulnerable { get; set; }
+    }
+
+    class StatusList
+    {
+        public StatusAfflictions createStatus()
+        {
+            StatusAfflictions idList = new StatusAfflictions();
+            idList.Burned = false;
+            idList.Frozen = false;
+            idList.BadSleep = false;
+            idList.Poisoned = false;
+            idList.Cursed = false;
+            idList.Rage = false;
+            idList.Infatuation = false;
+            idList.Asleep = false;
+            idList.Blind = false;
+            idList.TotalBlind = false;
+            idList.Slowed = false;
+            idList.Suppress = false;
+            idList.Flinch = false;
+            idList.Confused = false;
+            idList.Paralysis = false;
+            idList.Trapped = false;
+            idList.Tripped = false;
+            idList.Stuck = false;
+            idList.Fainted = false;
+            idList.Vulnerable = false;
+            return idList;
+        }
+    }
 
     // Used to create a list to populate FormOptions and to apply those Options into the other Forms.
     class OptionsList
@@ -143,11 +191,7 @@ namespace GenesisDexEngine
                             MaxItemTier = (int)node.Element("MaxItemTier"),
                             CashPerLevel = (int)node.Element("CashPerLevel"),
                             CryVolume = (int)node.Element("CryVolume"),
-                            PokedexSkin = (string)node.Element("PokedexSkin"),
-                            OneItemGasp = (string)node.Element("OneItemGasp"),
-                            TwoItemGasp = (string)node.Element("TwoItemGasp"),
-                            PokemonGasp = (string)node.Element("PokemonGasp"),
-                            ShinyGasp = (string)node.Element("ShinyGasp")
+                            PokedexSkin = (string)node.Element("PokedexSkin")
                         };
             idList = query.ToList();
             return idList;

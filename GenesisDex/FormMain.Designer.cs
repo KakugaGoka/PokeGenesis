@@ -46,6 +46,7 @@
             this.pbExit = new System.Windows.Forms.PictureBox();
             this.rtbEntry = new System.Windows.Forms.RichTextBox();
             this.btnCry = new System.Windows.Forms.PictureBox();
+            this.btnMinimize = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnOptions)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMega)).BeginInit();
@@ -58,6 +59,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.infoForward)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCry)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             this.SuspendLayout();
             // 
             // lbPokemon
@@ -70,7 +72,7 @@
             this.lbPokemon.ItemHeight = 19;
             this.lbPokemon.Location = new System.Drawing.Point(67, 330);
             this.lbPokemon.Name = "lbPokemon";
-            this.lbPokemon.Size = new System.Drawing.Size(324, 304);
+            this.lbPokemon.Size = new System.Drawing.Size(243, 304);
             this.lbPokemon.TabIndex = 1;
             this.lbPokemon.SelectedIndexChanged += new System.EventHandler(this.lbPokemon_SelectedIndexChanged);
             // 
@@ -98,7 +100,7 @@
             this.tbSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.tbSearch.Location = new System.Drawing.Point(67, 644);
             this.tbSearch.Name = "tbSearch";
-            this.tbSearch.Size = new System.Drawing.Size(324, 17);
+            this.tbSearch.Size = new System.Drawing.Size(243, 17);
             this.tbSearch.TabIndex = 2;
             this.tbSearch.Tag = "";
             this.tbSearch.Text = "Search";
@@ -122,93 +124,93 @@
             // pbPokemon
             // 
             this.pbPokemon.BackColor = System.Drawing.Color.Transparent;
-            this.pbPokemon.Location = new System.Drawing.Point(131, 68);
+            this.pbPokemon.Location = new System.Drawing.Point(93, 124);
             this.pbPokemon.Name = "pbPokemon";
-            this.pbPokemon.Size = new System.Drawing.Size(205, 190);
+            this.pbPokemon.Size = new System.Drawing.Size(205, 134);
             this.pbPokemon.TabIndex = 80;
             this.pbPokemon.TabStop = false;
             // 
             // btnOptions
             // 
             this.btnOptions.BackColor = System.Drawing.Color.Transparent;
-            this.btnOptions.Location = new System.Drawing.Point(1106, 613);
+            this.btnOptions.Location = new System.Drawing.Point(508, 280);
             this.btnOptions.Name = "btnOptions";
             this.btnOptions.Size = new System.Drawing.Size(82, 25);
             this.btnOptions.TabIndex = 79;
             this.btnOptions.TabStop = false;
-            this.btnOptions.Click += new System.EventHandler(this.btnOptions_Click);
+            this.btnOptions.MouseEnter += new System.EventHandler(this.btnOptions_MouseEnter);
             this.btnOptions.MouseLeave += new System.EventHandler(this.btnOptions_MouseLeave);
-            this.btnOptions.MouseHover += new System.EventHandler(this.btnOptions_MouseHover);
+            this.btnOptions.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnOptions_MouseUp);
             // 
             // pbMega
             // 
             this.pbMega.BackColor = System.Drawing.Color.Transparent;
-            this.pbMega.Location = new System.Drawing.Point(169, 275);
+            this.pbMega.Location = new System.Drawing.Point(107, 275);
             this.pbMega.Name = "pbMega";
             this.pbMega.Size = new System.Drawing.Size(129, 33);
             this.pbMega.TabIndex = 17;
             this.pbMega.TabStop = false;
-            this.pbMega.Click += new System.EventHandler(this.pbMega_Click);
+            this.pbMega.MouseEnter += new System.EventHandler(this.pbMega_MouseEnter);
             this.pbMega.MouseLeave += new System.EventHandler(this.pbMega_MouseLeave);
-            this.pbMega.MouseHover += new System.EventHandler(this.pbMega_MouseHover);
+            this.pbMega.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pbMega_MouseUp);
             // 
             // pbScan
             // 
             this.pbScan.BackColor = System.Drawing.Color.Transparent;
-            this.pbScan.Location = new System.Drawing.Point(695, 609);
+            this.pbScan.Location = new System.Drawing.Point(329, 275);
             this.pbScan.Name = "pbScan";
-            this.pbScan.Size = new System.Drawing.Size(157, 33);
+            this.pbScan.Size = new System.Drawing.Size(130, 33);
             this.pbScan.TabIndex = 32;
             this.pbScan.TabStop = false;
-            this.pbScan.Click += new System.EventHandler(this.pbScan_Click);
+            this.pbScan.MouseEnter += new System.EventHandler(this.pbScan_MouseEnter);
             this.pbScan.MouseLeave += new System.EventHandler(this.pbScan_MouseLeave);
-            this.pbScan.MouseHover += new System.EventHandler(this.pbScan_MouseHover);
+            this.pbScan.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pbScan_MouseUp);
             // 
             // pbY
             // 
             this.pbY.BackColor = System.Drawing.Color.Transparent;
-            this.pbY.Location = new System.Drawing.Point(342, 68);
+            this.pbY.Location = new System.Drawing.Point(534, 216);
             this.pbY.Name = "pbY";
             this.pbY.Size = new System.Drawing.Size(54, 50);
             this.pbY.TabIndex = 28;
             this.pbY.TabStop = false;
-            this.pbY.Click += new System.EventHandler(this.pbY_Click);
+            this.pbY.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pbY_MouseUp);
             // 
             // pbX
             // 
             this.pbX.BackColor = System.Drawing.Color.Transparent;
-            this.pbX.Location = new System.Drawing.Point(71, 68);
+            this.pbX.Location = new System.Drawing.Point(328, 216);
             this.pbX.Name = "pbX";
             this.pbX.Size = new System.Drawing.Size(54, 50);
             this.pbX.TabIndex = 27;
             this.pbX.TabStop = false;
-            this.pbX.Click += new System.EventHandler(this.pbX_Click);
+            this.pbX.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pbX_MouseUp);
             // 
             // pbPokeRight
             // 
             this.pbPokeRight.BackColor = System.Drawing.Color.Transparent;
             this.pbPokeRight.Image = ((System.Drawing.Image)(resources.GetObject("pbPokeRight.Image")));
-            this.pbPokeRight.Location = new System.Drawing.Point(304, 275);
+            this.pbPokeRight.Location = new System.Drawing.Point(242, 275);
             this.pbPokeRight.Name = "pbPokeRight";
-            this.pbPokeRight.Size = new System.Drawing.Size(68, 33);
+            this.pbPokeRight.Size = new System.Drawing.Size(34, 34);
             this.pbPokeRight.TabIndex = 26;
             this.pbPokeRight.TabStop = false;
-            this.pbPokeRight.Click += new System.EventHandler(this.pbPokeRight_Click);
+            this.pbPokeRight.MouseEnter += new System.EventHandler(this.pbPokeRight_MouseEnter);
             this.pbPokeRight.MouseLeave += new System.EventHandler(this.pbPokeRight_MouseLeave);
-            this.pbPokeRight.MouseHover += new System.EventHandler(this.pbPokeRight_MouseHover);
+            this.pbPokeRight.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pbPokeRight_MouseUp);
             // 
             // pbPokeLeft
             // 
             this.pbPokeLeft.BackColor = System.Drawing.Color.Transparent;
             this.pbPokeLeft.Image = ((System.Drawing.Image)(resources.GetObject("pbPokeLeft.Image")));
-            this.pbPokeLeft.Location = new System.Drawing.Point(95, 275);
+            this.pbPokeLeft.Location = new System.Drawing.Point(67, 275);
             this.pbPokeLeft.Name = "pbPokeLeft";
-            this.pbPokeLeft.Size = new System.Drawing.Size(68, 33);
+            this.pbPokeLeft.Size = new System.Drawing.Size(34, 34);
             this.pbPokeLeft.TabIndex = 25;
             this.pbPokeLeft.TabStop = false;
-            this.pbPokeLeft.Click += new System.EventHandler(this.pbPokeLeft_Click);
+            this.pbPokeLeft.MouseEnter += new System.EventHandler(this.pbPokeLeft_MouseEnter);
             this.pbPokeLeft.MouseLeave += new System.EventHandler(this.pbPokeLeft_MouseLeave);
-            this.pbPokeLeft.MouseHover += new System.EventHandler(this.pbPokeLeft_MouseHover);
+            this.pbPokeLeft.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pbPokeLeft_MouseUp);
             // 
             // infoBack
             // 
@@ -218,9 +220,9 @@
             this.infoBack.Size = new System.Drawing.Size(34, 34);
             this.infoBack.TabIndex = 24;
             this.infoBack.TabStop = false;
-            this.infoBack.Click += new System.EventHandler(this.infoBack_Click);
+            this.infoBack.MouseEnter += new System.EventHandler(this.infoBack_MouseEnter);
             this.infoBack.MouseLeave += new System.EventHandler(this.infoBack_MouseLeave);
-            this.infoBack.MouseHover += new System.EventHandler(this.infoBack_MouseHover);
+            this.infoBack.MouseUp += new System.Windows.Forms.MouseEventHandler(this.infoBack_MouseUp);
             // 
             // infoForward
             // 
@@ -230,22 +232,22 @@
             this.infoForward.Size = new System.Drawing.Size(34, 34);
             this.infoForward.TabIndex = 23;
             this.infoForward.TabStop = false;
-            this.infoForward.Click += new System.EventHandler(this.infoForward_Click);
+            this.infoForward.MouseEnter += new System.EventHandler(this.infoForward_MouseEnter);
             this.infoForward.MouseLeave += new System.EventHandler(this.infoForward_MouseLeave);
-            this.infoForward.MouseHover += new System.EventHandler(this.infoForward_MouseHover);
+            this.infoForward.MouseUp += new System.Windows.Forms.MouseEventHandler(this.infoForward_MouseUp);
             // 
             // pbExit
             // 
             this.pbExit.BackColor = System.Drawing.Color.Transparent;
             this.pbExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbExit.BackgroundImage")));
-            this.pbExit.Location = new System.Drawing.Point(1220, 46);
+            this.pbExit.Location = new System.Drawing.Point(1221, 45);
             this.pbExit.Name = "pbExit";
             this.pbExit.Size = new System.Drawing.Size(15, 15);
             this.pbExit.TabIndex = 15;
             this.pbExit.TabStop = false;
-            this.pbExit.Click += new System.EventHandler(this.pbExit_Click);
+            this.pbExit.MouseEnter += new System.EventHandler(this.pbExit_MouseEnter);
             this.pbExit.MouseLeave += new System.EventHandler(this.pbExit_MouseLeave);
-            this.pbExit.MouseHover += new System.EventHandler(this.pbExit_MouseHover);
+            this.pbExit.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pbExit_MouseUp);
             // 
             // rtbEntry
             // 
@@ -254,10 +256,10 @@
             this.rtbEntry.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtbEntry.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbEntry.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.rtbEntry.Location = new System.Drawing.Point(420, 62);
+            this.rtbEntry.Location = new System.Drawing.Point(328, 62);
             this.rtbEntry.Name = "rtbEntry";
             this.rtbEntry.ReadOnly = true;
-            this.rtbEntry.Size = new System.Drawing.Size(168, 204);
+            this.rtbEntry.Size = new System.Drawing.Size(260, 148);
             this.rtbEntry.TabIndex = 81;
             this.rtbEntry.TabStop = false;
             this.rtbEntry.Text = "";
@@ -266,14 +268,27 @@
             // 
             this.btnCry.BackColor = System.Drawing.Color.Transparent;
             this.btnCry.Image = ((System.Drawing.Image)(resources.GetObject("btnCry.Image")));
-            this.btnCry.Location = new System.Drawing.Point(378, 275);
+            this.btnCry.Location = new System.Drawing.Point(282, 275);
             this.btnCry.Name = "btnCry";
             this.btnCry.Size = new System.Drawing.Size(33, 33);
             this.btnCry.TabIndex = 82;
             this.btnCry.TabStop = false;
-            this.btnCry.Click += new System.EventHandler(this.btnCry_Click);
+            this.btnCry.MouseEnter += new System.EventHandler(this.btnCry_MouseEnter);
             this.btnCry.MouseLeave += new System.EventHandler(this.btnCry_MouseLeave);
-            this.btnCry.MouseHover += new System.EventHandler(this.btnCry_MouseHover);
+            this.btnCry.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnCry_MouseUp);
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.BackColor = System.Drawing.Color.Transparent;
+            this.btnMinimize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMinimize.BackgroundImage")));
+            this.btnMinimize.Location = new System.Drawing.Point(1221, 66);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(15, 15);
+            this.btnMinimize.TabIndex = 193;
+            this.btnMinimize.TabStop = false;
+            this.btnMinimize.MouseEnter += new System.EventHandler(this.btnMinimize_MouseEnter);
+            this.btnMinimize.MouseLeave += new System.EventHandler(this.btnMinimize_MouseLeave);
+            this.btnMinimize.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnMinimize_MouseUp);
             // 
             // FormMain
             // 
@@ -282,6 +297,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.btnMinimize);
             this.Controls.Add(this.btnCry);
             this.Controls.Add(this.pbPokemon);
             this.Controls.Add(this.rtbEntry);
@@ -321,6 +337,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.infoForward)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCry)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -344,6 +361,7 @@
         private System.Windows.Forms.PictureBox pbPokemon;
         private System.Windows.Forms.RichTextBox rtbEntry;
         private System.Windows.Forms.PictureBox btnCry;
+        private System.Windows.Forms.PictureBox btnMinimize;
     }
 }
 
