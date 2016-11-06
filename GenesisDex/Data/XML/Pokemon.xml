@@ -49712,7 +49712,7 @@
     <ability>Magic Bounce</ability>
   </Mega719>
   <Pokemon Stage="1">
-    <number>720-confined</number>
+    <number>720</number>
     <id>Hoopa Confined</id>
     <type>Psychic / Ghost</type>
     <hp>8</hp>
@@ -49730,7 +49730,7 @@
     <habitat>???</habitat>
     <legendary>true</legendary>
     <entry>In its true form, it possesses a huge amount of power. Legends of its avarice tell how it once carried off an entire castle to gain the treasure hidden within.</entry>
-    <List720-confined>
+    <List720>
       <Ability>
         <BasicAbility>Magician</BasicAbility>
         <AdvancedAbility>Prankster</AdvancedAbility>
@@ -49780,7 +49780,7 @@
         <move id="17">75 Psychic - Psychic</move>
         <move id="18">85 Hyperspace Hole - Psychic</move>
       </Moves>
-    </List720-confined>
+    </List720>
   </Pokemon>
   <Pokemon Stage="1">
     <number>720-unbound</number>
