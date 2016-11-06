@@ -69,8 +69,8 @@ namespace GenesisDex
         NameList habitatXML = new NameList();
         List<Items> habitatList = new List<Items>();
         //===========================================================================================================
-        NameList typeXML = new NameList();
-        List<Items> typeList = new List<Items>();
+        TypeList typeXML = new TypeList();
+        List<Types> typeList = new List<Types>();
         //===========================================================================================================
         OptionsList optionsXML = new OptionsList();
         List<Options> optionsList = new List<Options>();
@@ -181,7 +181,7 @@ namespace GenesisDex
             pbPokeLocX = pbPokemon.Location.X;
             pbPokeLocY = pbPokemon.Location.Y;
             ScanUpdate();
-            typeList = typeXML.createList("Types", "Type");
+            typeList = typeXML.createList();
             habitatList = habitatXML.createList("Habitats", "Habitat");
             natureList = natureXML.createList("Natures", "Nature");
             updateList.Add("updating...");
@@ -196,7 +196,7 @@ namespace GenesisDex
             types.Add("Any");
             for (var t = 0; t < typeList.Count; t++)
             {
-                types.Add(typeList[t].id);
+                types.Add(typeList[t].name);
             }
             natures.Add("Any");
             for (var n = 0; n < natureList.Count; n++)
@@ -1015,7 +1015,7 @@ namespace GenesisDex
         {
             string[] type = poke.type.Split(' ');
             int i = rng.Next(1, typeList.Count);
-            string newtype = typeList[i].id;
+            string newtype = typeList[i].name;
             StringBuilder build = new StringBuilder();
             if (type.Count() <= 1)
             {
@@ -1271,6 +1271,72 @@ namespace GenesisDex
             chkVulnerable.Checked = AllStatus[Current].Vulnerable;
             chkFainted.Checked = AllStatus[Current].Fainted;
             GetCaptureRate();
+            Types ttInfoType1 = typeList[0];
+            Types ttInfoType2 = typeList[0];
+            bool typeTwoEdit = false;
+            for (int t1 = 0; t1 < typeList.Count(); t1++)
+            {
+                if (tbType.Text.Contains(typeList[t1].name))
+                {
+                    ttInfoType1 = typeList[t1];
+                    break;
+                }
+            }
+            for (int t2 = 0; t2 < typeList.Count(); t2++)
+            {
+                if (tbType.Text.Contains(typeList[t2].name))
+                    if (ttInfoType1 != (typeList[t2]))
+                    {
+                        ttInfoType2 = typeList[t2];
+                        typeTwoEdit = true;
+                        break;
+                    }
+
+            }
+            if (typeTwoEdit == true)
+            {
+                ttInfo.SetToolTip(this.tbType,
+                    "Normal: x" + (ttInfoType1.normal * ttInfoType2.normal).ToString() + Environment.NewLine +
+                    "Fire: x" + (ttInfoType1.fire * ttInfoType2.fire).ToString() + Environment.NewLine +
+                    "Water: x" + (ttInfoType1.water * ttInfoType2.water).ToString() + Environment.NewLine +
+                    "Electric: x" + (ttInfoType1.electric * ttInfoType2.electric).ToString() + Environment.NewLine +
+                    "Grass: x" + (ttInfoType1.grass * ttInfoType2.grass).ToString() + Environment.NewLine +
+                    "Ice: x" + (ttInfoType1.ice * ttInfoType2.ice).ToString() + Environment.NewLine +
+                    "Fighting: x" + (ttInfoType1.fighting * ttInfoType2.fighting).ToString() + Environment.NewLine +
+                    "Poison: x" + (ttInfoType1.poison * ttInfoType2.poison).ToString() + Environment.NewLine +
+                    "Ground: x" + (ttInfoType1.ground * ttInfoType2.ground).ToString() + Environment.NewLine +
+                    "Flying: x" + (ttInfoType1.flying * ttInfoType2.flying).ToString() + Environment.NewLine +
+                    "Psychic: x" + (ttInfoType1.psychic * ttInfoType2.psychic).ToString() + Environment.NewLine +
+                    "Bug: x" + (ttInfoType1.bug * ttInfoType2.bug).ToString() + Environment.NewLine +
+                    "Rock: x" + (ttInfoType1.rock * ttInfoType2.rock).ToString() + Environment.NewLine +
+                    "Ghost: x" + (ttInfoType1.ghost * ttInfoType2.ghost).ToString() + Environment.NewLine +
+                    "Dragon: x" + (ttInfoType1.dragon * ttInfoType2.dragon).ToString() + Environment.NewLine +
+                    "Dark: x" + (ttInfoType1.dark * ttInfoType2.dark).ToString() + Environment.NewLine +
+                    "Steel: x" + (ttInfoType1.steel * ttInfoType2.steel).ToString() + Environment.NewLine +
+                    "Fairy: x" + (ttInfoType1.fairy * ttInfoType2.fairy).ToString() + Environment.NewLine);
+            }
+            else
+            {
+                ttInfo.SetToolTip(this.tbType,
+                    "Normal: x" + (ttInfoType1.normal).ToString() + Environment.NewLine +
+                    "Fire: x" + (ttInfoType1.fire).ToString() + Environment.NewLine +
+                    "Water: x" + (ttInfoType1.water).ToString() + Environment.NewLine +
+                    "Electric: x" + (ttInfoType1.electric).ToString() + Environment.NewLine +
+                    "Grass: x" + (ttInfoType1.grass).ToString() + Environment.NewLine +
+                    "Ice: x" + (ttInfoType1.ice).ToString() + Environment.NewLine +
+                    "Fighting: x" + (ttInfoType1.fighting).ToString() + Environment.NewLine +
+                    "Poison: x" + (ttInfoType1.poison).ToString() + Environment.NewLine +
+                    "Ground: x" + (ttInfoType1.ground).ToString() + Environment.NewLine +
+                    "Flying: x" + (ttInfoType1.flying).ToString() + Environment.NewLine +
+                    "Psychic: x" + (ttInfoType1.psychic).ToString() + Environment.NewLine +
+                    "Bug: x" + (ttInfoType1.bug).ToString() + Environment.NewLine +
+                    "Rock: x" + (ttInfoType1.rock).ToString() + Environment.NewLine +
+                    "Ghost: x" + (ttInfoType1.ghost).ToString() + Environment.NewLine +
+                    "Dragon: x" + (ttInfoType1.dragon).ToString() + Environment.NewLine +
+                    "Dark: x" + (ttInfoType1.dark).ToString() + Environment.NewLine +
+                    "Steel: x" + (ttInfoType1.steel).ToString() + Environment.NewLine +
+                    "Fairy: x" + (ttInfoType1.fairy).ToString() + Environment.NewLine);
+            }
             isWritingInfo = false;
         }
 

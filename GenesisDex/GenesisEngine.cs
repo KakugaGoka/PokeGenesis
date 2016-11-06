@@ -144,6 +144,29 @@ namespace GenesisDexEngine
         public bool Vulnerable { get; set; }
     }
 
+    class Types
+    {
+        public string name { get; set; }
+        public double normal { get; set; }
+        public double fire { get; set; }
+        public double water { get; set; }
+        public double electric { get; set; }
+        public double grass { get; set; }
+        public double ice { get; set; }
+        public double fighting { get; set; }
+        public double poison { get; set; }
+        public double ground { get; set; }
+        public double flying { get; set; }
+        public double psychic { get; set; }
+        public double bug { get; set; }
+        public double rock { get; set; }
+        public double ghost { get; set; }
+        public double dragon { get; set; }
+        public double dark { get; set; }
+        public double steel { get; set; }
+        public double fairy { get; set; }
+    }
+
     class StatusList
     {
         public StatusAfflictions createStatus()
@@ -173,8 +196,44 @@ namespace GenesisDexEngine
         }
     }
 
+    class TypeList
+    {
+        public List<Types> createList()
+        {
+            XDocument doc = null;
+            string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\Types.xml");
+            List<Types> idList = new List<Types>();
+            doc = XDocument.Load(fileName);
+            var query = from node in doc.Descendants("Types").Descendants("id")
+                        select new Types
+                        {
+                            name = (string)node.Attribute("type"),
+                            normal = (double)node.Element("normal"),
+                            fire = (double)node.Element("fire"),
+                            water = (double)node.Element("water"),
+                            electric = (double)node.Element("electric"),
+                            grass = (double)node.Element("grass"),
+                            ice = (double)node.Element("ice"),
+                            fighting = (double)node.Element("fighting"),
+                            poison = (double)node.Element("poison"),
+                            ground = (double)node.Element("ground"),
+                            flying = (double)node.Element("flying"),
+                            psychic = (double)node.Element("psychic"),
+                            bug = (double)node.Element("bug"),
+                            rock = (double)node.Element("rock"),
+                            ghost = (double)node.Element("ghost"),
+                            dragon = (double)node.Element("dragon"),
+                            dark = (double)node.Element("dark"),
+                            steel = (double)node.Element("steel"),
+                            fairy = (double)node.Element("fairy")
+                        };
+            idList = query.ToList();
+            return idList;
+         }
+    }
+
     // Used to create a list to populate FormOptions and to apply those Options into the other Forms.
-    class OptionsList
+        class OptionsList
     {
         public List<Options> createList()
         {
