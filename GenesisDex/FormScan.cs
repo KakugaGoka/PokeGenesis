@@ -513,7 +513,7 @@ namespace GenesisDex
                 for (var e = 0; e < pokeList.Count; e++)
                 {
                     PokeGenerator.ReportProgress(1);
-                    if (pokeList[e].stage != stageAllow[0] || pokeList[e].stage != stageAllow[1])
+                    if (pokeList[e].stage != stageAllow[0] && pokeList[e].stage != stageAllow[1])
                     {
                         pokeList.RemoveAt(e);
                         e -= 1;

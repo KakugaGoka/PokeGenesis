@@ -39,15 +39,24 @@ namespace GenesisDex
         //===========================================================================================================
         bool dragging { get; set; }
         //===========================================================================================================
-
+        FormLoot fl;
+        //===========================================================================================================
         public FormLoot()
         {
             InitializeComponent();
             btnExit.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButton.png");
             btnMinimize.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MinimizeButton.png");
             btnScanLoot.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanLoot.png");
-            
-            RefreshPage();
+            this.Activated += fl_Activated;
+            UpdateLoot();
+        }
+
+        //===========================================================================================================
+        //===
+        //===========================================================================================================
+        private void fl_Activated(object sender, EventArgs e)
+        {
+            UpdateLoot();
         }
 
         //===========================================================================================================
@@ -80,7 +89,7 @@ namespace GenesisDex
             dragging = false;
         }
 
-        private void RefreshPage()
+        private void UpdateLoot()
         {
             optionsList.Clear();
             optionsList = optionsXML.createList();
