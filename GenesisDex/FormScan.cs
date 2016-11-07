@@ -21,6 +21,8 @@ namespace GenesisDex
         //===========================================================================================================
         //=== Variables =============================================================================================
         //===========================================================================================================
+        ComponentResourceManager resources = new ComponentResourceManager(typeof(FormScan));
+        //===========================================================================================================
         Point dragCursorPoint = new Point();
         Point dragFormPoint = new Point();
         //===========================================================================================================
@@ -157,6 +159,8 @@ namespace GenesisDex
         //===========================================================================================================
         string[] info { get; set; }
         //===========================================================================================================
+        FormLoot fl;
+        //===========================================================================================================
 
         //===========================================================================================================
         //=== FormScan is the Generation Form. It contains functions that allow it to be repositioned on the screen==
@@ -237,6 +241,7 @@ namespace GenesisDex
             chkCanBeShiny.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png"));
             chkCanBeLegend.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png"));
             btnSave.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Save.png"));
+            btnGetLoot.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\LootWindow.png"));
             PokeSaveDialog.Filter = "Text File | *.txt";
             nudLevelMin.Value = 2;
             nudLevelMax.Value = 15;
@@ -1544,11 +1549,11 @@ namespace GenesisDex
         //===========================================================================================================
         private void btnScan_MouseEnter(object sender, EventArgs e)
         {
-            btnScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ChangeModeHover.png");
+            btnScan.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ChangeModeHover.png");
         }
         private void btnScan_MouseLeave(object sender, EventArgs e)
         {
-            btnScan.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ChangeMode.png");
+            btnScan.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ChangeMode.png");
         }
         private void btnScan_MouseUp(object sender, MouseEventArgs e)
         {
@@ -1573,11 +1578,11 @@ namespace GenesisDex
         //===========================================================================================================
         private void btnScanPokemon_MouseEnter(object sender, EventArgs e)
         {
-            btnScanPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanPokemonHover.png");
+            btnScanPokemon.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanPokemonHover.png");
         }
         private void btnScanPokemon_MouseLeave(object sender, EventArgs e)
         {
-            btnScanPokemon.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanPokemon.png");
+            btnScanPokemon.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanPokemon.png");
         }
         private void btnScanPokemon_MouseUp(object sender, MouseEventArgs e)
         {
@@ -1726,6 +1731,10 @@ namespace GenesisDex
                     CurrentHealth[Current] = 0 - (MaxHealth[Current] * 2);
                 else
                    CurrentHealth[Current] -= pkDamage.Value;
+                if (CurrentHealth[Current] <= 0)
+                    AllStatus[Current].Fainted = true;
+                else
+                    AllStatus[Current].Fainted = false;
                 WriteInfo();
             }
         }
@@ -1780,11 +1789,11 @@ namespace GenesisDex
         //===========================================================================================================
         private void btnExit_MouseEnter(object sender, EventArgs e)
         {
-            btnExit.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButtonHover.png");
+            btnExit.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButtonHover.png");
         }
         private void btnExit_MouseLeave(object sender, EventArgs e)
         {
-            btnExit.Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButton.png");
+            btnExit.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButton.png");
         }
 
         //===========================================================================================================
@@ -2098,6 +2107,10 @@ namespace GenesisDex
                     CurrentHealth[Current] = 0 - (MaxHealth[Current] * 2);
                 else
                     CurrentHealth[Current] -= Math.Round(MaxHealth[Current] / 10);
+                if (CurrentHealth[Current] <= 0)
+                    AllStatus[Current].Fainted = true;
+                else
+                    AllStatus[Current].Fainted = false;
                 WriteInfo();
             }
         }
@@ -2149,6 +2162,14 @@ namespace GenesisDex
                 CheckedState(chkBurned);
             }
         }
+        private void chkBurned_MouseEnter(object sender, EventArgs e)
+        {
+                ttInfo.Show(ttInfo.GetToolTip(chkBurned), this.chkBurned, new Point(chkBurned.Width - 5 - 5, this.chkBurned.Height - 5));
+        }
+        private void chkBurned_MouseLeave(object sender, EventArgs e)
+        {
+            ttInfo.Hide(chkBurned);
+        }
 
         //===========================================================================================================
         //=== 
@@ -2181,6 +2202,14 @@ namespace GenesisDex
                 CheckedState(chkFrozen);
             }
         }
+        private void chkFrozen_MouseEnter(object sender, EventArgs e)
+        {
+                ttInfo.Show(ttInfo.GetToolTip(chkFrozen), this.chkFrozen, new Point(chkFrozen.Width - 5, this.chkFrozen.Height - 5));
+        }
+        private void chkFrozen_MouseLeave(object sender, EventArgs e)
+        {
+            ttInfo.Hide(chkFrozen);
+        }
 
         //===========================================================================================================
         //=== 
@@ -2212,6 +2241,14 @@ namespace GenesisDex
             {
                 CheckedState(chkBadSleep);
             }
+        }
+        private void chkBadSleep_MouseEnter(object sender, EventArgs e)
+        {
+                ttInfo.Show(ttInfo.GetToolTip(chkBadSleep), this.chkBadSleep, new Point(chkBadSleep.Width - 5, this.chkBadSleep.Height - 5));
+        }
+        private void chkBadSleep_MouseLeave(object sender, EventArgs e)
+        {
+            ttInfo.Hide(chkBadSleep);
         }
 
         //===========================================================================================================
@@ -2253,6 +2290,14 @@ namespace GenesisDex
                 CheckedState(chkPoisoned);
             }
         }
+        private void chkPoisoned_MouseEnter(object sender, EventArgs e)
+        {
+                ttInfo.Show(ttInfo.GetToolTip(chkPoisoned), this.chkPoisoned, new Point(chkPoisoned.Width - 5, this.chkPoisoned.Height - 5));
+        }
+        private void chkPoisoned_MouseLeave(object sender, EventArgs e)
+        {
+            ttInfo.Hide(chkPoisoned);
+        }
 
         //===========================================================================================================
         //=== 
@@ -2284,6 +2329,14 @@ namespace GenesisDex
             {
                 CheckedState(chkCursed);
             }
+        }
+        private void chkCursed_MouseEnter(object sender, EventArgs e)
+        {
+                ttInfo.Show(ttInfo.GetToolTip(chkCursed), this.chkCursed, new Point(chkCursed.Width - 5, this.chkCursed.Height - 5));
+        }
+        private void chkCursed_MouseLeave(object sender, EventArgs e)
+        {
+            ttInfo.Hide(chkCursed);
         }
 
         //===========================================================================================================
@@ -2317,6 +2370,14 @@ namespace GenesisDex
                 CheckedState(chkRage);
             }
         }
+        private void chkRage_MouseEnter(object sender, EventArgs e)
+        {
+                ttInfo.Show(ttInfo.GetToolTip(chkRage), this.chkRage, new Point(chkRage.Width - 5, this.chkRage.Height - 5));
+        }
+        private void chkRage_MouseLeave(object sender, EventArgs e)
+        {
+            ttInfo.Hide(chkRage);
+        }
 
         //===========================================================================================================
         //=== 
@@ -2348,6 +2409,14 @@ namespace GenesisDex
             {
                 CheckedState(chkInfatuation);
             }
+        }
+        private void chkInfatuation_MouseEnter(object sender, EventArgs e)
+        {
+                ttInfo.Show(ttInfo.GetToolTip(chkInfatuation), this.chkInfatuation, new Point(chkInfatuation.Width - 5, this.chkInfatuation.Height - 5));
+        }
+        private void chkInfatuation_MouseLeave(object sender, EventArgs e)
+        {
+            ttInfo.Hide(chkInfatuation);
         }
 
         //===========================================================================================================
@@ -2381,6 +2450,14 @@ namespace GenesisDex
                 CheckedState(chkAsleep);
             }
         }
+        private void chkAsleep_MouseEnter(object sender, EventArgs e)
+        {
+                ttInfo.Show(ttInfo.GetToolTip(chkAsleep), this.chkAsleep, new Point(chkAsleep.Width - 5, this.chkAsleep.Height - 5));
+        }
+        private void chkAsleep_MouseLeave(object sender, EventArgs e)
+        {
+            ttInfo.Hide(chkAsleep);
+        }
 
         //===========================================================================================================
         //=== 
@@ -2412,6 +2489,14 @@ namespace GenesisDex
             {
                 CheckedState(chkBlind);
             }
+        }
+        private void chkBlind_MouseEnter(object sender, EventArgs e)
+        {
+                ttInfo.Show(ttInfo.GetToolTip(chkBlind), this.chkBlind, new Point(chkBlind.Width - 5, this.chkBlind.Height - 5));
+        }
+        private void chkBlind_MouseLeave(object sender, EventArgs e)
+        {
+            ttInfo.Hide(chkBlind);
         }
 
         //===========================================================================================================
@@ -2445,6 +2530,14 @@ namespace GenesisDex
                 CheckedState(chkTotalBlind);
             }
         }
+        private void chkTotalBlind_MouseEnter(object sender, EventArgs e)
+        {
+                ttInfo.Show(ttInfo.GetToolTip(chkTotalBlind), this.chkTotalBlind, new Point(chkTotalBlind.Width - 5, this.chkTotalBlind.Height - 5));
+        }
+        private void chkTotalBlind_MouseLeave(object sender, EventArgs e)
+        {
+            ttInfo.Hide(chkTotalBlind);
+        }
 
         //===========================================================================================================
         //=== 
@@ -2476,6 +2569,14 @@ namespace GenesisDex
             {
                 CheckedState(chkSlowed);
             }
+        }
+        private void chkSlowed_MouseEnter(object sender, EventArgs e)
+        {
+                ttInfo.Show(ttInfo.GetToolTip(chkSlowed), this.chkSlowed, new Point(chkSlowed.Width - 5, this.chkSlowed.Height - 5));
+        }
+        private void chkSlowed_MouseLeave(object sender, EventArgs e)
+        {
+            ttInfo.Hide(chkSlowed);
         }
 
         //===========================================================================================================
@@ -2509,6 +2610,14 @@ namespace GenesisDex
                 CheckedState(chkSuppress);
             }
         }
+        private void chkSuppress_MouseEnter(object sender, EventArgs e)
+        {
+                ttInfo.Show(ttInfo.GetToolTip(chkSuppress), this.chkSuppress, new Point(chkSuppress.Width - 5, this.chkSuppress.Height - 5));
+        }
+        private void chkSuppress_MouseLeave(object sender, EventArgs e)
+        {
+            ttInfo.Hide(chkSuppress);
+        }
 
         //===========================================================================================================
         //=== 
@@ -2541,6 +2650,14 @@ namespace GenesisDex
                 CheckedState(chkFlinch);
             }
         }
+        private void chkFlinch_MouseEnter(object sender, EventArgs e)
+        {
+                ttInfo.Show(ttInfo.GetToolTip(chkFlinch), this.chkFlinch, new Point(chkFlinch.Width - 5, this.chkFlinch.Height - 5));
+        }
+        private void chkFlinch_MouseLeave(object sender, EventArgs e)
+        {
+            ttInfo.Hide(chkFlinch);
+        }
 
         //===========================================================================================================
         //=== 
@@ -2572,6 +2689,14 @@ namespace GenesisDex
             {
                 CheckedState(chkConfused);
             }
+        }
+        private void chkConfused_MouseEnter(object sender, EventArgs e)
+        {
+                ttInfo.Show(ttInfo.GetToolTip(chkConfused), this.chkConfused, new Point(chkConfused.Width - 5, this.chkConfused.Height - 5));
+        }
+        private void chkConfused_MouseLeave(object sender, EventArgs e)
+        {
+            ttInfo.Hide(chkConfused);
         }
 
         //===========================================================================================================
@@ -2613,6 +2738,14 @@ namespace GenesisDex
                 CheckedState(chkParalysis);
             }
         }
+        private void chkParalysis_MouseEnter(object sender, EventArgs e)
+        {
+                ttInfo.Show(ttInfo.GetToolTip(chkParalysis), this.chkParalysis, new Point(chkParalysis.Width - 5, this.chkParalysis.Height - 5));
+        }
+        private void chkParalysis_MouseLeave(object sender, EventArgs e)
+        {
+            ttInfo.Hide(chkParalysis);
+        }
 
         //===========================================================================================================
         //=== 
@@ -2644,6 +2777,14 @@ namespace GenesisDex
             {
                 CheckedState(chkTrapped);
             }
+        }
+        private void chkTrapped_MouseEnter(object sender, EventArgs e)
+        {
+                ttInfo.Show(ttInfo.GetToolTip(chkTrapped), this.chkTrapped, new Point(chkTrapped.Width - 5, this.chkTrapped.Height - 5));
+        }
+        private void chkTrapped_MouseLeave(object sender, EventArgs e)
+        {
+            ttInfo.Hide(chkTrapped);
         }
 
         //===========================================================================================================
@@ -2677,6 +2818,14 @@ namespace GenesisDex
                 CheckedState(chkStuck);
             }
         }
+        private void chkStuck_MouseEnter(object sender, EventArgs e)
+        {
+                ttInfo.Show(ttInfo.GetToolTip(chkStuck), this.chkStuck, new Point(chkStuck.Width - 5, this.chkStuck.Height - 5));
+        }
+        private void chkStuck_MouseLeave(object sender, EventArgs e)
+        {
+            ttInfo.Hide(chkStuck);
+        }
 
         //===========================================================================================================
         //=== 
@@ -2708,6 +2857,14 @@ namespace GenesisDex
             {
                 CheckedState(chkVulnerable);
             }
+        }
+        private void chkVulnerable_MouseEnter(object sender, EventArgs e)
+        {
+                ttInfo.Show(ttInfo.GetToolTip(chkVulnerable), this.chkVulnerable, new Point(chkVulnerable.Width - 5, this.chkVulnerable.Height - 5));
+        }
+        private void chkVulnerable_MouseLeave(object sender, EventArgs e)
+        {
+            ttInfo.Hide(chkVulnerable);
         }
 
         //===========================================================================================================
@@ -2741,6 +2898,14 @@ namespace GenesisDex
                 CheckedState(chkFainted);
             }
         }
+        private void chkFainted_MouseEnter(object sender, EventArgs e)
+        {
+                ttInfo.Show(ttInfo.GetToolTip(chkFainted), this.chkFainted, new Point(chkFainted.Width - 5, this.chkFainted.Height - 5));
+        }
+        private void chkFainted_MouseLeave(object sender, EventArgs e)
+        {
+            ttInfo.Hide(chkFainted);
+        }
 
         //===========================================================================================================
         //=== 
@@ -2773,6 +2938,14 @@ namespace GenesisDex
                 CheckedState(chkTripped);
             }
         }
+        private void chkTripped_MouseEnter(object sender, EventArgs e)
+        {
+                ttInfo.Show(ttInfo.GetToolTip(chkTripped), this.chkTripped, new Point(chkTripped.Width - 5, this.chkTripped.Height - 5));
+        }
+        private void chkTripped_MouseLeave(object sender, EventArgs e)
+        {
+            ttInfo.Hide(chkTripped);
+        }
 
         //===========================================================================================================
         //=== 
@@ -2788,6 +2961,45 @@ namespace GenesisDex
         private void btnMinimize_MouseLeave(object sender, EventArgs e)
         {
             btnMinimize.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MinimizeButton.png");
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void btnGetLoot_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left) return;
+            if (fl == null)
+            {
+                fl = new FormLoot();
+                fl.FormClosed += fl_FormClosed;
+            }
+            try { fl.Show(this); } catch { }
+        }
+        private void btnGetLoot_MouseEnter(object sender, EventArgs e)
+        {
+            btnGetLoot.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\LootWindowHover.png");
+        }
+        private void btnGetLoot_MouseLeave(object sender, EventArgs e)
+        {
+            btnGetLoot.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\LootWindow.png");
+        }
+        private void fl_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            fl = null;
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void tbType_MouseEnter(object sender, EventArgs e)
+        {
+            if (hasScanned)
+                ttInfo.Show(ttInfo.GetToolTip(tbType), this.tbType, new Point(tbType.Width, this.tbType.Top - 150));
+        }
+        private void tbType_MouseLeave(object sender, EventArgs e)
+        {
+            ttInfo.Hide(tbType);
         }
     }
 }

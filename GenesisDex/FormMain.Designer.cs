@@ -133,7 +133,7 @@
             // btnOptions
             // 
             this.btnOptions.BackColor = System.Drawing.Color.Transparent;
-            this.btnOptions.Location = new System.Drawing.Point(508, 280);
+            this.btnOptions.Location = new System.Drawing.Point(695, 627);
             this.btnOptions.Name = "btnOptions";
             this.btnOptions.Size = new System.Drawing.Size(82, 25);
             this.btnOptions.TabIndex = 79;
@@ -157,7 +157,7 @@
             // pbScan
             // 
             this.pbScan.BackColor = System.Drawing.Color.Transparent;
-            this.pbScan.Location = new System.Drawing.Point(329, 275);
+            this.pbScan.Location = new System.Drawing.Point(325, 275);
             this.pbScan.Name = "pbScan";
             this.pbScan.Size = new System.Drawing.Size(130, 33);
             this.pbScan.TabIndex = 32;

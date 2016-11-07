@@ -151,6 +151,7 @@
             this.lbAbilities = new System.Windows.Forms.ListBox();
             this.pkItem = new System.Windows.Forms.PictureBox();
             this.btnMinimize = new System.Windows.Forms.PictureBox();
+            this.btnGetLoot = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnScanPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLevelMin)).BeginInit();
@@ -174,6 +175,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnDealOneTick)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGetLoot)).BeginInit();
             this.SuspendLayout();
             // 
             // pbPokemon
@@ -605,7 +607,7 @@
             // btnScan
             // 
             this.btnScan.BackColor = System.Drawing.Color.Transparent;
-            this.btnScan.Location = new System.Drawing.Point(329, 275);
+            this.btnScan.Location = new System.Drawing.Point(325, 275);
             this.btnScan.Name = "btnScan";
             this.btnScan.Size = new System.Drawing.Size(130, 33);
             this.btnScan.TabIndex = 91;
@@ -659,7 +661,7 @@
             // btnOptions
             // 
             this.btnOptions.BackColor = System.Drawing.Color.Transparent;
-            this.btnOptions.Location = new System.Drawing.Point(508, 280);
+            this.btnOptions.Location = new System.Drawing.Point(695, 627);
             this.btnOptions.Name = "btnOptions";
             this.btnOptions.Size = new System.Drawing.Size(82, 25);
             this.btnOptions.TabIndex = 99;
@@ -729,7 +731,7 @@
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.Transparent;
-            this.btnSave.Location = new System.Drawing.Point(695, 601);
+            this.btnSave.Location = new System.Drawing.Point(695, 600);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(85, 26);
             this.btnSave.TabIndex = 104;
@@ -813,6 +815,8 @@
             this.tbType.ReadOnly = true;
             this.tbType.Size = new System.Drawing.Size(158, 22);
             this.tbType.TabIndex = 109;
+            this.tbType.MouseEnter += new System.EventHandler(this.tbType_MouseEnter);
+            this.tbType.MouseLeave += new System.EventHandler(this.tbType_MouseLeave);
             // 
             // tbLevel
             // 
@@ -1540,6 +1544,8 @@
             this.chkBurned.UseVisualStyleBackColor = false;
             this.chkBurned.CheckedChanged += new System.EventHandler(this.chkBurned_CheckedChanged);
             this.chkBurned.KeyDown += new System.Windows.Forms.KeyEventHandler(this.chkBurned_KeyDown);
+            this.chkBurned.MouseEnter += new System.EventHandler(this.chkBurned_MouseEnter);
+            this.chkBurned.MouseLeave += new System.EventHandler(this.chkBurned_MouseLeave);
             // 
             // chkFrozen
             // 
@@ -1568,6 +1574,8 @@
             this.chkFrozen.UseVisualStyleBackColor = false;
             this.chkFrozen.CheckedChanged += new System.EventHandler(this.chkFrozen_CheckedChanged);
             this.chkFrozen.KeyDown += new System.Windows.Forms.KeyEventHandler(this.chkFrozen_KeyDown);
+            this.chkFrozen.MouseEnter += new System.EventHandler(this.chkFrozen_MouseEnter);
+            this.chkFrozen.MouseLeave += new System.EventHandler(this.chkFrozen_MouseLeave);
             // 
             // chkBadSleep
             // 
@@ -1596,6 +1604,8 @@
             this.chkBadSleep.UseVisualStyleBackColor = false;
             this.chkBadSleep.CheckedChanged += new System.EventHandler(this.chkBadSleep_CheckedChanged);
             this.chkBadSleep.KeyDown += new System.Windows.Forms.KeyEventHandler(this.chkBadSleep_KeyDown);
+            this.chkBadSleep.MouseEnter += new System.EventHandler(this.chkBadSleep_MouseEnter);
+            this.chkBadSleep.MouseLeave += new System.EventHandler(this.chkBadSleep_MouseLeave);
             // 
             // chkPoisoned
             // 
@@ -1624,6 +1634,8 @@
             this.chkPoisoned.UseVisualStyleBackColor = false;
             this.chkPoisoned.CheckedChanged += new System.EventHandler(this.chkPoisoned_CheckedChanged);
             this.chkPoisoned.KeyDown += new System.Windows.Forms.KeyEventHandler(this.chkPoisoned_KeyDown);
+            this.chkPoisoned.MouseEnter += new System.EventHandler(this.chkPoisoned_MouseEnter);
+            this.chkPoisoned.MouseLeave += new System.EventHandler(this.chkPoisoned_MouseLeave);
             // 
             // chkCursed
             // 
@@ -1653,6 +1665,8 @@
             this.chkCursed.UseVisualStyleBackColor = false;
             this.chkCursed.CheckedChanged += new System.EventHandler(this.chkCursed_CheckedChanged);
             this.chkCursed.KeyDown += new System.Windows.Forms.KeyEventHandler(this.chkCursed_KeyDown);
+            this.chkCursed.MouseEnter += new System.EventHandler(this.chkCursed_MouseEnter);
+            this.chkCursed.MouseLeave += new System.EventHandler(this.chkCursed_MouseLeave);
             // 
             // chkRage
             // 
@@ -1683,6 +1697,8 @@
             this.chkRage.UseVisualStyleBackColor = false;
             this.chkRage.CheckedChanged += new System.EventHandler(this.chkRage_CheckedChanged);
             this.chkRage.KeyDown += new System.Windows.Forms.KeyEventHandler(this.chkRage_KeyDown);
+            this.chkRage.MouseEnter += new System.EventHandler(this.chkRage_MouseEnter);
+            this.chkRage.MouseLeave += new System.EventHandler(this.chkRage_MouseLeave);
             // 
             // chkInfatuation
             // 
@@ -1711,6 +1727,8 @@
             this.chkInfatuation.UseVisualStyleBackColor = false;
             this.chkInfatuation.CheckedChanged += new System.EventHandler(this.chkInfatuation_CheckedChanged);
             this.chkInfatuation.KeyDown += new System.Windows.Forms.KeyEventHandler(this.chkInfatuation_KeyDown);
+            this.chkInfatuation.MouseEnter += new System.EventHandler(this.chkInfatuation_MouseEnter);
+            this.chkInfatuation.MouseLeave += new System.EventHandler(this.chkInfatuation_MouseLeave);
             // 
             // chkAsleep
             // 
@@ -1739,6 +1757,8 @@
             this.chkAsleep.UseVisualStyleBackColor = false;
             this.chkAsleep.CheckedChanged += new System.EventHandler(this.chkAsleep_CheckedChanged);
             this.chkAsleep.KeyDown += new System.Windows.Forms.KeyEventHandler(this.chkAsleep_KeyDown);
+            this.chkAsleep.MouseEnter += new System.EventHandler(this.chkAsleep_MouseEnter);
+            this.chkAsleep.MouseLeave += new System.EventHandler(this.chkAsleep_MouseLeave);
             // 
             // chkBlind
             // 
@@ -1767,6 +1787,8 @@
             this.chkBlind.UseVisualStyleBackColor = false;
             this.chkBlind.CheckedChanged += new System.EventHandler(this.chkBlind_CheckedChanged);
             this.chkBlind.KeyDown += new System.Windows.Forms.KeyEventHandler(this.chkBlind_KeyDown);
+            this.chkBlind.MouseEnter += new System.EventHandler(this.chkBlind_MouseEnter);
+            this.chkBlind.MouseLeave += new System.EventHandler(this.chkBlind_MouseLeave);
             // 
             // chkTotalBlind
             // 
@@ -1795,6 +1817,8 @@
             this.chkTotalBlind.UseVisualStyleBackColor = false;
             this.chkTotalBlind.CheckedChanged += new System.EventHandler(this.chkTotalBlind_CheckedChanged);
             this.chkTotalBlind.KeyDown += new System.Windows.Forms.KeyEventHandler(this.chkTotalBlind_KeyDown);
+            this.chkTotalBlind.MouseEnter += new System.EventHandler(this.chkTotalBlind_MouseEnter);
+            this.chkTotalBlind.MouseLeave += new System.EventHandler(this.chkTotalBlind_MouseLeave);
             // 
             // chkSlowed
             // 
@@ -1825,6 +1849,8 @@
             this.chkSlowed.UseVisualStyleBackColor = false;
             this.chkSlowed.CheckedChanged += new System.EventHandler(this.chkSlowed_CheckedChanged);
             this.chkSlowed.KeyDown += new System.Windows.Forms.KeyEventHandler(this.chkSlowed_KeyDown);
+            this.chkSlowed.MouseEnter += new System.EventHandler(this.chkSlowed_MouseEnter);
+            this.chkSlowed.MouseLeave += new System.EventHandler(this.chkSlowed_MouseLeave);
             // 
             // chkSuppress
             // 
@@ -1855,6 +1881,8 @@
             this.chkSuppress.UseVisualStyleBackColor = false;
             this.chkSuppress.CheckedChanged += new System.EventHandler(this.chkSuppress_CheckedChanged);
             this.chkSuppress.KeyDown += new System.Windows.Forms.KeyEventHandler(this.chkSuppress_KeyDown);
+            this.chkSuppress.MouseEnter += new System.EventHandler(this.chkSuppress_MouseEnter);
+            this.chkSuppress.MouseLeave += new System.EventHandler(this.chkSuppress_MouseLeave);
             // 
             // chkFlinch
             // 
@@ -1884,6 +1912,8 @@
             this.chkFlinch.UseVisualStyleBackColor = false;
             this.chkFlinch.CheckedChanged += new System.EventHandler(this.chkFlinch_CheckedChanged);
             this.chkFlinch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.chkFlinch_KeyDown);
+            this.chkFlinch.MouseEnter += new System.EventHandler(this.chkFlinch_MouseEnter);
+            this.chkFlinch.MouseLeave += new System.EventHandler(this.chkFlinch_MouseLeave);
             // 
             // chkConfused
             // 
@@ -1912,6 +1942,8 @@
             this.chkConfused.UseVisualStyleBackColor = false;
             this.chkConfused.CheckedChanged += new System.EventHandler(this.chkConfused_CheckedChanged);
             this.chkConfused.KeyDown += new System.Windows.Forms.KeyEventHandler(this.chkConfused_KeyDown);
+            this.chkConfused.MouseEnter += new System.EventHandler(this.chkConfused_MouseEnter);
+            this.chkConfused.MouseLeave += new System.EventHandler(this.chkConfused_MouseLeave);
             // 
             // chkParalysis
             // 
@@ -1940,6 +1972,8 @@
             this.chkParalysis.UseVisualStyleBackColor = false;
             this.chkParalysis.CheckedChanged += new System.EventHandler(this.chkParalysis_CheckedChanged);
             this.chkParalysis.KeyDown += new System.Windows.Forms.KeyEventHandler(this.chkParalysis_KeyDown);
+            this.chkParalysis.MouseEnter += new System.EventHandler(this.chkParalysis_MouseEnter);
+            this.chkParalysis.MouseLeave += new System.EventHandler(this.chkParalysis_MouseLeave);
             // 
             // chkTrapped
             // 
@@ -1969,6 +2003,8 @@
             this.chkTrapped.UseVisualStyleBackColor = false;
             this.chkTrapped.CheckedChanged += new System.EventHandler(this.chkTrapped_CheckedChanged);
             this.chkTrapped.KeyDown += new System.Windows.Forms.KeyEventHandler(this.chkTrapped_KeyDown);
+            this.chkTrapped.MouseEnter += new System.EventHandler(this.chkTrapped_MouseEnter);
+            this.chkTrapped.MouseLeave += new System.EventHandler(this.chkTrapped_MouseLeave);
             // 
             // chkStuck
             // 
@@ -1997,6 +2033,8 @@
             this.chkStuck.UseVisualStyleBackColor = false;
             this.chkStuck.CheckedChanged += new System.EventHandler(this.chkStuck_CheckedChanged);
             this.chkStuck.KeyDown += new System.Windows.Forms.KeyEventHandler(this.chkStuck_KeyDown);
+            this.chkStuck.MouseEnter += new System.EventHandler(this.chkStuck_MouseEnter);
+            this.chkStuck.MouseLeave += new System.EventHandler(this.chkStuck_MouseLeave);
             // 
             // chkFainted
             // 
@@ -2025,6 +2063,12 @@
             this.chkFainted.UseVisualStyleBackColor = false;
             this.chkFainted.CheckedChanged += new System.EventHandler(this.chkFainted_CheckedChanged);
             this.chkFainted.KeyDown += new System.Windows.Forms.KeyEventHandler(this.chkFainted_KeyDown);
+            this.chkFainted.MouseEnter += new System.EventHandler(this.chkFainted_MouseEnter);
+            this.chkFainted.MouseLeave += new System.EventHandler(this.chkFainted_MouseLeave);
+            // 
+            // ttInfo
+            // 
+            this.ttInfo.IsBalloon = true;
             // 
             // chkTripped
             // 
@@ -2054,6 +2098,8 @@
             this.chkTripped.UseVisualStyleBackColor = false;
             this.chkTripped.CheckedChanged += new System.EventHandler(this.chkTripped_CheckedChanged);
             this.chkTripped.KeyDown += new System.Windows.Forms.KeyEventHandler(this.chkTripped_KeyDown);
+            this.chkTripped.MouseEnter += new System.EventHandler(this.chkTripped_MouseEnter);
+            this.chkTripped.MouseLeave += new System.EventHandler(this.chkTripped_MouseLeave);
             // 
             // chkVulnerable
             // 
@@ -2083,6 +2129,8 @@
             this.chkVulnerable.UseVisualStyleBackColor = false;
             this.chkVulnerable.CheckedChanged += new System.EventHandler(this.chkVulnerable_CheckedChanged);
             this.chkVulnerable.KeyDown += new System.Windows.Forms.KeyEventHandler(this.chkVulnerable_KeyDown);
+            this.chkVulnerable.MouseEnter += new System.EventHandler(this.chkVulnerable_MouseEnter);
+            this.chkVulnerable.MouseLeave += new System.EventHandler(this.chkVulnerable_MouseLeave);
             // 
             // lbSkills
             // 
@@ -2133,6 +2181,18 @@
             this.btnMinimize.MouseLeave += new System.EventHandler(this.btnMinimize_MouseLeave);
             this.btnMinimize.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnMinimize_MouseUp);
             // 
+            // btnGetLoot
+            // 
+            this.btnGetLoot.BackColor = System.Drawing.Color.Transparent;
+            this.btnGetLoot.Location = new System.Drawing.Point(461, 275);
+            this.btnGetLoot.Name = "btnGetLoot";
+            this.btnGetLoot.Size = new System.Drawing.Size(130, 33);
+            this.btnGetLoot.TabIndex = 195;
+            this.btnGetLoot.TabStop = false;
+            this.btnGetLoot.MouseEnter += new System.EventHandler(this.btnGetLoot_MouseEnter);
+            this.btnGetLoot.MouseLeave += new System.EventHandler(this.btnGetLoot_MouseLeave);
+            this.btnGetLoot.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnGetLoot_MouseUp);
+            // 
             // FormScan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2140,6 +2200,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.btnGetLoot);
             this.Controls.Add(this.btnMinimize);
             this.Controls.Add(this.lbAbilities);
             this.Controls.Add(this.lbSkills);
@@ -2289,6 +2350,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnDealOneTick)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGetLoot)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2416,5 +2478,6 @@
         private System.Windows.Forms.ListBox lbAbilities;
         private System.Windows.Forms.PictureBox pkItem;
         private System.Windows.Forms.PictureBox btnMinimize;
+        private System.Windows.Forms.PictureBox btnGetLoot;
     }
 }
