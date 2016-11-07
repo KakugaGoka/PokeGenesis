@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Controls;
@@ -114,6 +115,21 @@ namespace GenesisDex
             {
                 lootName.Add("Cash");
                 lootList.Add("$" + Cash.ToString());
+            }
+            for (int s = 0; s < lootList.Count(); s++)
+            {
+                if (lootList[s].Length > 80)
+                {
+                    for (int i = 81; i > 0; i--)
+                    {
+                        if (lootList[s][i] == ' ')
+                        {
+                            string t = lootList[s].Substring(0, i) + Environment.NewLine + lootList[s].Substring(i + 1);
+                            lootList[s] = t;
+                            break;
+                        }
+                    }
+                }
             }
             WriteLoot();
         }

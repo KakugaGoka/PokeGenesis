@@ -1274,7 +1274,7 @@
     <desc>These very rare treats, When ingested by a Pokemon, grant the eater enough experience to reach its next Level. Pokemon may benefit from up to five Rare Candies in their lifetime.</desc>
   </Item>
   <Item Tier="4">
-    <id>Peral String</id>
+    <id>Pearl String</id>
     <desc>Can be sold for $25000.</desc>
   </Item>
   <Item Tier="4">
