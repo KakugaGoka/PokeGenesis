@@ -25,10 +25,86 @@
   </Capabilities>
   <!--==================================-->
   <Skills>
-    <Skill name="">
+    <Skill name="Athl">
       <Description>
-        
+        Athletics is a Body Skill that represents 
+        physical training and endurance developed 
+        through sports and exercise. Characters 
+        with a high Athletics Rank tend to be very 
+        active and either spend time training their 
+        physique or have physically strenuous 
+        occupations.
       </Description>
+    </Skill>
+    <Skill name="Acro">
+      <Description>
+        Acrobatics is a Body Skill that represents 
+        how well a character can jump, keep their 
+        balance, and in general conduct themselves 
+        physically with swiftness and grace. 
+        Characters with a high Acrobatics Rank tend 
+        to be highly agile and well-coordinated, and 
+        it reflects in their activities. Gymnasts, 
+        parkour practitioners, circus performers, 
+        and dancers would all have a high Acrobatics
+        Rank.
+      </Description>
+      <Skill name="Combat">
+        <Description>
+          Combat is a Body Skill that represents 
+          training in physical fighting and specialized 
+          battle techniques. Combat can represent formal 
+          schooling in unarmed martial arts, weapons 
+          training, or simply very good street fighting 
+          and brawling.
+        </Description>
+      </Skill>
+      <Skill name="Percep">
+        <Description>
+          Perception is a Mind Skill that represents a 
+          character’s awareness of their environment and 
+          attention to detail. Characters with a high 
+          Perception Rank have not only honed senses but a 
+          trained mind that knows where to look for details 
+          others would normally miss.
+        </Description>
+      </Skill>
+      <Skill name="Stealth">
+        <Description>
+          Stealth is a Body Skill that represents a
+          character’s ability to hide, sneak, and
+          generally move and act undetected. Stealth 
+          is often associated with less than legal 
+          occupations, such as thieves and assassins, 
+          but characters with high Stealth Ranks could 
+          also easily act on the side of law enforcement 
+          or as field researchers studying reclusive or 
+          violent Pokémon.
+        </Description>
+      </Skill>
+      <Skill name="Focus">
+        <Description>
+          Focus is a Spirit Skill that represents a 
+          character’s ability to concentrate on 
+          difficult or complex tasks or to work under 
+          pain and stress. It can be thought of as 
+          analogous to willpower, and characters with a 
+          high Focus Rank are often intensely driven and 
+          ambitious, or at the least unshakable once 
+          they’ve dedicated themselves to a task.
+        </Description>
+      </Skill>
+      <Skill name="Edu:Tech">
+        <Description>
+          Technology Education is a Mind Skill that 
+          governs the creation and use of machines and 
+          technology, ranging from the ubiquitous Poké Ball 
+          to computers and vehicles. Characters with a high 
+          Technology Education Rank tend to have many gadgets
+          and can easily find their way around a factory, 
+          engineering workshop, or chemistry lab.
+        </Description>
+      </Skill>
     </Skill>
   </Skills>
 </Namespace>

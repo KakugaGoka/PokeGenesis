@@ -167,6 +167,12 @@ namespace GenesisDexEngine
         public double fairy { get; set; }
     }
 
+    class PokeInfo
+    {
+        public string name { get; set; }
+        public string description { get; set; }
+    }
+
     class StatusList
     {
         public StatusAfflictions createStatus()
@@ -192,6 +198,24 @@ namespace GenesisDexEngine
             idList.Stuck = false;
             idList.Fainted = false;
             idList.Vulnerable = false;
+            return idList;
+        }
+    }
+
+    class InfoList
+    {
+        public List<PokeInfo> createList()
+        {
+            string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\Info.xml");
+            List<PokeInfo> idList = new List<PokeInfo>();
+            XDocument doc = XDocument.Load(fileName);
+            var query = from node in doc.Descendants("Skills").Descendants("Skill")
+                        select new PokeInfo
+                        {
+                            name = (string)node.Attribute("name").Value,
+                            description = (string)node.Element("Description").Value
+                        };
+            idList = query.ToList();
             return idList;
         }
     }

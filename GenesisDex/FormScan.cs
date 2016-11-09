@@ -86,6 +86,18 @@ namespace GenesisDex
         List<Image> AllItems1 = new List<Image>();
         List<Image> AllImages = new List<Image>();
         //===========================================================================================================
+        PokeInfo moveinfoXML = new PokeInfo();
+        List<PokeInfo> moveinfoList = new List<PokeInfo>();
+        //===========================================================================================================
+        InfoList skillinfoXML = new InfoList();
+        List<PokeInfo> skillinfoList = new List<PokeInfo>();
+        //===========================================================================================================
+        PokeInfo capinfoXML = new PokeInfo();
+        List<PokeInfo> capinfoList = new List<PokeInfo>();
+        //===========================================================================================================
+        PokeInfo abilityinfoXML = new PokeInfo();
+        List<PokeInfo> abilityinfoList = new List<PokeInfo>();
+        //===========================================================================================================
         List<int> AllLevels = new List<int>();
         List<int> ItemTiers = new List<int>();
         List<int> PokeTiers = new List<int>();
@@ -131,6 +143,10 @@ namespace GenesisDex
         int PokeLevelMin { get; set; }
         int Progress { get; set; }
         int Dots { get; set; }
+        int skillIndex { get; set; }
+        int moveIndex { get; set; }
+        int abilityIndex { get; set; }
+        int capIndex { get; set; }
         //===========================================================================================================
         bool canLegendary { get; set;}
         bool canItems { get; set; }
@@ -188,6 +204,7 @@ namespace GenesisDex
             typeList = typeXML.createList();
             habitatList = habitatXML.createList("Habitats", "Habitat");
             natureList = natureXML.createList("Natures", "Nature");
+            skillinfoList = skillinfoXML.createList();
             updateList.Add("updating...");
             habitats.Clear();
             types.Clear();
@@ -3038,8 +3055,36 @@ namespace GenesisDex
         //===========================================================================================================
         private void lbMoves_MouseMove(object sender, MouseEventArgs e)
         {
-            int IndexPoint = lbMoves.IndexFromPoint(e.Location);
 
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void lbSkills_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (!hasScanned) return;
+            int IndexPoint = lbSkills.IndexFromPoint(e.Location);
+            if (skillIndex != IndexPoint)
+            {
+                try { lbSkills.Items[IndexPoint].ToString(); } catch { return; }
+                if (lbSkills.Items[IndexPoint].ToString() == "Skills:") return;
+                string SkillTip = "No info to display...";
+                for (int s = 0; s < skillinfoList.Count; s++)
+                {
+                    if (lbSkills.Items[IndexPoint].ToString().Contains(skillinfoList[s].name))
+                    {
+                        SkillTip = skillinfoList[s].description;
+                    }
+                }
+                skillIndex = IndexPoint;
+                ttInfo.Show(SkillTip, lbSkills, lbSkills.Width / 2, 20 + (18 * IndexPoint));
+            }
+        }
+
+        private void lbSkills_MouseLeave(object sender, EventArgs e)
+        {
+            ttInfo.Hide(lbSkills);
         }
     }
 }

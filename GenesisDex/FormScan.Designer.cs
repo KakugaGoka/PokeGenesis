@@ -2145,6 +2145,8 @@
             this.lbSkills.Name = "lbSkills";
             this.lbSkills.Size = new System.Drawing.Size(238, 146);
             this.lbSkills.TabIndex = 190;
+            this.lbSkills.MouseLeave += new System.EventHandler(this.lbSkills_MouseLeave);
+            this.lbSkills.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbSkills_MouseMove);
             // 
             // lbAbilities
             // 
