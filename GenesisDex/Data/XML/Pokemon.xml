@@ -18996,7 +18996,7 @@
         <skill id="3">Stealth 2d6</skill>
         <skill id="4">Percep 3d6</skill>
         <skill id="5">Focus 3d6</skill>
-        <skill id="6">Edu: Tech 3d6</skill>
+        <skill id="6">Edu:Tech 3d6</skill>
       </Skills>
       <Capability>
         <cap id="0">Overland 2</cap>
@@ -29948,7 +29948,7 @@
         <skill id="3">Stealth 4d6</skill>
         <skill id="4">Percep 2d6+2</skill>
         <skill id="5">Focus 2d6</skill>
-        <skill id="6">Edu: Tech 4d6+4</skill>
+        <skill id="6">Edu:Tech 4d6+4</skill>
       </Skills>
       <Capability>
         <cap id="0">Overland 2</cap>
@@ -30019,7 +30019,7 @@
         <skill id="3">Stealth 2d6</skill>
         <skill id="4">Percep 2d6+2</skill>
         <skill id="5">Focus 2d6</skill>
-        <skill id="6">Edu: Tech 4d6+4</skill>
+        <skill id="6">Edu:Tech 4d6+4</skill>
       </Skills>
       <Capability>
         <cap id="0">Overland 2</cap>
@@ -30087,7 +30087,7 @@
         <skill id="3">Stealth 1d6</skill>
         <skill id="4">Percep 2d6+2</skill>
         <skill id="5">Focus 2d6</skill>
-        <skill id="6">Edu: Tech 4d6+4</skill>
+        <skill id="6">Edu:Tech 4d6+4</skill>
       </Skills>
       <Capability>
         <cap id="0">Overland 1</cap>
@@ -30156,7 +30156,7 @@
         <skill id="3">Stealth 1d6</skill>
         <skill id="4">Percep 2d6+2</skill>
         <skill id="5">Focus 2d6</skill>
-        <skill id="6">Edu: Tech 4d6+4</skill>
+        <skill id="6">Edu:Tech 4d6+4</skill>
       </Skills>
       <Capability>
         <cap id="0">Overland 2</cap>
@@ -30225,7 +30225,7 @@
         <skill id="3">Stealth 3d6-1</skill>
         <skill id="4">Percep 2d6+2</skill>
         <skill id="5">Focus 2d6</skill>
-        <skill id="6">Edu: Tech 4d6+4</skill>
+        <skill id="6">Edu:Tech 4d6+4</skill>
       </Skills>
       <Capability>
         <cap id="0">Overland 2</cap>
@@ -30294,7 +30294,7 @@
         <skill id="3">Stealth 1d6+2</skill>
         <skill id="4">Percep 2d6+2</skill>
         <skill id="5">Focus 2d6</skill>
-        <skill id="6">Edu: Tech 4d6+4</skill>
+        <skill id="6">Edu:Tech 4d6+4</skill>
       </Skills>
       <Capability>
         <cap id="0">Overland 7</cap>
@@ -30775,7 +30775,7 @@
         <skill id="3">Stealth 2d6+2</skill>
         <skill id="4">Percep 4d6</skill>
         <skill id="5">Focus 3d6</skill>
-        <skill id="6">Edu: Tech 5d6+3</skill>
+        <skill id="6">Edu:Tech 5d6+3</skill>
       </Skills>
       <Capability>
         <cap id="0">Overland 2</cap>
@@ -48815,7 +48815,7 @@
         <skill id="3">Stealth 2d6</skill>
         <skill id="4">Percep 4d6+2</skill>
         <skill id="5">Focus 4d6</skill>
-        <skill id="6">Edu: Tech 4d6+1</skill>
+        <skill id="6">Edu:Tech 4d6+1</skill>
       </Skills>
       <Capability>
         <cap id="0">Overland 2</cap>

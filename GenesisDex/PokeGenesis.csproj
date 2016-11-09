@@ -3812,6 +3812,7 @@
     <Content Include="Data\XML\Habitats.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Data\XML\Info.xml" />
     <Content Include="Data\XML\Items.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

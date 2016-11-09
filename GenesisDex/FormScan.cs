@@ -857,13 +857,13 @@ namespace GenesisDex
         {
             StringBuilder build = new StringBuilder();
             string skil = skillList[i].skill.ToString();
-            string[] up1 = skil.Split('d');
-            string[] up2 = up1[0].Split(' ');
+            string[] up1 = skil.Split(' ');
+            string[] up2 = up1[1].Split('d');
             int temp;
-            try { temp = Convert.ToInt32(up2[1]); } catch { MessageBox.Show(IChooseYou.id + "'s Skill is not entered correctly. " +
+            try { temp = Convert.ToInt32(up2[0]); } catch { MessageBox.Show(IChooseYou.id + "'s Skill is not entered correctly. " +
                 "Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return "ERROR"; }
             int fin = temp + 1;
-            build.Append(up2[0] + " " + fin + "d" + up1[1]);
+            build.Append(up1[0] + " " + fin + "d" + up2[1]);
             return build.ToString();
         }
 
@@ -871,13 +871,13 @@ namespace GenesisDex
         {
             StringBuilder build = new StringBuilder();
             string skil = skillList[i].skill.ToString();
-            string[] up1 = skil.Split('d');
-            string[] up2 = up1[0].Split(' ');
+            string[] up1 = skil.Split(' ');
+            string[] up2 = up1[1].Split('d');
             int temp;
-            try { temp = Convert.ToInt32(up2[1]); } catch { MessageBox.Show(IChooseYou.id + "'s Skill is not entered correctly. " +
+            try { temp = Convert.ToInt32(up2[0]); } catch { MessageBox.Show(IChooseYou.id + "'s Skill is not entered correctly. " +
                 "Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return "ERROR"; }
             int fin = temp - 1;
-            build.Append(up2[0] + " " + fin + "d" + up1[1]);
+            build.Append(up1[0] + " " + fin + "d" + up2[1]);
             return build.ToString();
         }
 
@@ -893,25 +893,23 @@ namespace GenesisDex
             skillList.Clear();
             skillList = skillXML.createList(IChooseYou.number);
             skill.Clear();
-            var values = Enumerable.Range(0, 6).OrderBy(x => Guid.NewGuid().GetHashCode()).ToArray();
+            var values = Enumerable.Range(0, skillList.Count).OrderBy(x => Guid.NewGuid().GetHashCode()).ToArray();
             int sk = rng.Next(0, 4);
             if (sk == 0)
             {
-                prep.Add(skillList[values[0]].skill);
-                prep.Add(skillList[values[1]].skill);
-                prep.Add(skillList[values[2]].skill);
-                prep.Add(skillList[values[3]].skill);
-                prep.Add(skillList[values[4]].skill);
-                prep.Add(skillList[values[5]].skill);
+                for (int s = 0; s < skillList.Count(); s++)
+                {
+                    prep.Add(skillList[values[s]].skill);
+                }
             }
             else if (sk == 1)
             {
                 prep.Add(SkillUp(values[0]));
                 prep.Add(SkillDn(values[1]));
-                prep.Add(skillList[values[2]].skill);
-                prep.Add(skillList[values[3]].skill);
-                prep.Add(skillList[values[4]].skill);
-                prep.Add(skillList[values[5]].skill);
+                for (int s = 2; s < skillList.Count(); s++)
+                {
+                    prep.Add(skillList[values[s]].skill);
+                }
             }
             else if (sk == 2)
             {
@@ -919,8 +917,10 @@ namespace GenesisDex
                 prep.Add(SkillDn(values[1]));
                 prep.Add(SkillUp(values[2]));
                 prep.Add(SkillDn(values[3]));
-                prep.Add(skillList[values[4]].skill);
-                prep.Add(skillList[values[5]].skill);
+                for (int s = 4; s < skillList.Count(); s++)
+                {
+                    prep.Add(skillList[values[s]].skill);
+                }
             }
             else if (sk == 3)
             {
@@ -930,30 +930,61 @@ namespace GenesisDex
                 prep.Add(SkillDn(values[3]));
                 prep.Add(SkillUp(values[4]));
                 prep.Add(SkillDn(values[5]));
+                for (int s = 6; s < skillList.Count(); s++)
+                {
+                    prep.Add(skillList[values[s]].skill);
+                }
             }
             foreach (string s in prep)
             {
-                if (s.Contains("Athl") == true) { skill.Add(s); }
+                if (s.Contains("Athl") == true)
+                {
+                    skill.Add(s);
+                }
+
             }
             foreach (string s in prep)
             {
-                if (s.Contains("Acro") == true) { skill.Add(s); }
+                if (s.Contains("Acro") == true)
+                {
+                    skill.Add(s);
+                }
             }
             foreach (string s in prep)
             {
-                if (s.Contains("Combat") == true) { skill.Add(s); }
+                if (s.Contains("Combat") == true)
+                {
+                    skill.Add(s);
+                }
             }
             foreach (string s in prep)
             {
-                if (s.Contains("Stealth") == true) { skill.Add(s); }
+                if (s.Contains("Stealth") == true)
+                {
+                    skill.Add(s);
+                }
             }
             foreach (string s in prep)
             {
-                if (s.Contains("Percep") == true) { skill.Add(s); }
+                if (s.Contains("Percep") == true)
+                {
+                    skill.Add(s);
+                }
             }
             foreach (string s in prep)
             {
-                if (s.Contains("Focus") == true) { skill.Add(s); }
+                if (s.Contains("Focus") == true)
+                {
+                    skill.Add(s);
+                }
+            }
+            if (prep.Count > 0)
+            {
+                foreach (string s in prep)
+                {
+                    if (!s.Contains("Athl") && !s.Contains("Acro") && !s.Contains("Combat") && !s.Contains("Stealth") && !s.Contains("Percep") && !s.Contains("Focus"))
+                    skill.Add(s);
+                }
             }
         }
 
@@ -3000,6 +3031,15 @@ namespace GenesisDex
         private void tbType_MouseLeave(object sender, EventArgs e)
         {
             ttInfo.Hide(tbType);
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void lbMoves_MouseMove(object sender, MouseEventArgs e)
+        {
+            int IndexPoint = lbMoves.IndexFromPoint(e.Location);
+
         }
     }
 }

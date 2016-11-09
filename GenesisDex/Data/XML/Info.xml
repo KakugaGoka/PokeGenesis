@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Namespace>
+  <Moves>
+    <Move name="">
+      <Description>
+        
+      </Description>
+    </Move>
+  </Moves>
+  <!--==================================-->
+  <Abilities>
+    <Ability name="">
+      <Description>
+        
+      </Description>
+    </Ability>
+  </Abilities>
+  <!--==================================-->
+  <Capabilities>
+    <Capability name="">
+      <Description>
+        
+      </Description>
+    </Capability>
+  </Capabilities>
+  <!--==================================-->
+  <Skills>
+    <Skill name="">
+      <Description>
+        
+      </Description>
+    </Skill>
+  </Skills>
+</Namespace>

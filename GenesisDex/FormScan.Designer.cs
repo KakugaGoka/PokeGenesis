@@ -1225,6 +1225,7 @@
             this.lbMoves.Name = "lbMoves";
             this.lbMoves.Size = new System.Drawing.Size(238, 146);
             this.lbMoves.TabIndex = 142;
+            this.lbMoves.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbMoves_MouseMove);
             // 
             // label12
             // 
