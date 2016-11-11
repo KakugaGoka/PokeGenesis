@@ -2070,10 +2070,6 @@
             this.chkFainted.MouseEnter += new System.EventHandler(this.chkFainted_MouseEnter);
             this.chkFainted.MouseLeave += new System.EventHandler(this.chkFainted_MouseLeave);
             // 
-            // ttInfo
-            // 
-            this.ttInfo.IsBalloon = true;
-            // 
             // chkTripped
             // 
             this.chkTripped.Appearance = System.Windows.Forms.Appearance.Button;

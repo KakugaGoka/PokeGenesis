@@ -2,25 +2,19 @@
 <Namespace>
   <Moves>
     <Move name="Tackle">
-      <Description>
-        ENTER DESCRIPTION HERE
-      </Description>
+      <Description>ENTER DESCRIPTION HERE</Description>
     </Move>
   </Moves>
   <!--==================================-->
   <Abilities>
     <Ability name="Photosynthesis">
-      <Description>
-        ENTER DESCRIPTION HERE
-      </Description>
+      <Description>ENTER DESCRIPTION HERE</Description>
     </Ability>
   </Abilities>
   <!--==================================-->
   <Capabilities>
     <Capability name="Power">
-      <Description>
-        ENTER DESCRIPTION HERE
-      </Description>
+      <Description>ENTER DESCRIPTION HERE</Description>
     </Capability>
   </Capabilities>
   <!--==================================-->

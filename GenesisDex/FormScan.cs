@@ -3073,6 +3073,7 @@ namespace GenesisDex
                     }
                 }
                 moveIndex = IndexPoint;
+                ttInfo.Hide(lbMoves);
                 ttInfo.Show(MoveTip, lbMoves, lbMoves.Width / 2, 20 + (18 * IndexPoint));
             }
         }
@@ -3101,6 +3102,7 @@ namespace GenesisDex
                     }
                 }
                 skillIndex = IndexPoint;
+                ttInfo.Hide(lbSkills);
                 ttInfo.Show(SkillTip, lbSkills, lbSkills.Width / 2, 20 + (18 * IndexPoint));
             }
         }
@@ -3129,6 +3131,7 @@ namespace GenesisDex
                     }
                 }
                 capIndex = IndexPoint;
+                ttInfo.Hide(lbCapabilites);
                 ttInfo.Show(capTip, lbCapabilites, lbCapabilites.Width / 2, 20 + (18 * IndexPoint));
             }
         }
@@ -3157,6 +3160,7 @@ namespace GenesisDex
                     }
                 }
                 abilityIndex = IndexPoint;
+                ttInfo.Hide(lbAbilities);
                 ttInfo.Show(abilityTip, lbAbilities, lbAbilities.Width / 2, 20 + (18 * IndexPoint));
             }
         }
