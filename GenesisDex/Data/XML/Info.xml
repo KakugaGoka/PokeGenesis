@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Namespace>
   <Moves>
-    <Move name="">
+    <Move name="Tackle">
       <Description>
-        
+        ENTER DESCRIPTION HERE
       </Description>
     </Move>
   </Moves>
   <!--==================================-->
   <Abilities>
-    <Ability name="">
+    <Ability name="Photosynthesis">
       <Description>
-        
+        ENTER DESCRIPTION HERE
       </Description>
     </Ability>
   </Abilities>
   <!--==================================-->
   <Capabilities>
-    <Capability name="">
+    <Capability name="Power">
       <Description>
-        
+        ENTER DESCRIPTION HERE
       </Description>
     </Capability>
   </Capabilities>

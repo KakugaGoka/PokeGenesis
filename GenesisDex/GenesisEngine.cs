@@ -204,12 +204,12 @@ namespace GenesisDexEngine
 
     class InfoList
     {
-        public List<PokeInfo> createList()
+        public List<PokeInfo> createList(string One, string Two)
         {
             string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\Info.xml");
             List<PokeInfo> idList = new List<PokeInfo>();
             XDocument doc = XDocument.Load(fileName);
-            var query = from node in doc.Descendants("Skills").Descendants("Skill")
+            var query = from node in doc.Descendants(One).Descendants(Two)
                         select new PokeInfo
                         {
                             name = (string)node.Attribute("name").Value,

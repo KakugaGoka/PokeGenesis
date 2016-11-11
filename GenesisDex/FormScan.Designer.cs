@@ -1212,6 +1212,8 @@
             this.lbCapabilites.Name = "lbCapabilites";
             this.lbCapabilites.Size = new System.Drawing.Size(238, 182);
             this.lbCapabilites.TabIndex = 141;
+            this.lbCapabilites.MouseLeave += new System.EventHandler(this.lbCapabilites_MouseLeave);
+            this.lbCapabilites.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbCaps_MouseMove);
             // 
             // lbMoves
             // 
@@ -1225,6 +1227,7 @@
             this.lbMoves.Name = "lbMoves";
             this.lbMoves.Size = new System.Drawing.Size(238, 146);
             this.lbMoves.TabIndex = 142;
+            this.lbMoves.MouseLeave += new System.EventHandler(this.lbMoves_MouseLeave);
             this.lbMoves.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbMoves_MouseMove);
             // 
             // label12
@@ -2160,6 +2163,8 @@
             this.lbAbilities.Name = "lbAbilities";
             this.lbAbilities.Size = new System.Drawing.Size(238, 92);
             this.lbAbilities.TabIndex = 191;
+            this.lbAbilities.MouseLeave += new System.EventHandler(this.lbAbilities_MouseLeave);
+            this.lbAbilities.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbAbilities_MouseMove);
             // 
             // pkItem
             // 

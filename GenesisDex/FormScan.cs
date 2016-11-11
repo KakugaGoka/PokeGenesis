@@ -86,16 +86,16 @@ namespace GenesisDex
         List<Image> AllItems1 = new List<Image>();
         List<Image> AllImages = new List<Image>();
         //===========================================================================================================
-        PokeInfo moveinfoXML = new PokeInfo();
+        InfoList moveinfoXML = new InfoList();
         List<PokeInfo> moveinfoList = new List<PokeInfo>();
         //===========================================================================================================
         InfoList skillinfoXML = new InfoList();
         List<PokeInfo> skillinfoList = new List<PokeInfo>();
         //===========================================================================================================
-        PokeInfo capinfoXML = new PokeInfo();
+        InfoList capinfoXML = new InfoList();
         List<PokeInfo> capinfoList = new List<PokeInfo>();
         //===========================================================================================================
-        PokeInfo abilityinfoXML = new PokeInfo();
+        InfoList abilityinfoXML = new InfoList();
         List<PokeInfo> abilityinfoList = new List<PokeInfo>();
         //===========================================================================================================
         List<int> AllLevels = new List<int>();
@@ -204,7 +204,10 @@ namespace GenesisDex
             typeList = typeXML.createList();
             habitatList = habitatXML.createList("Habitats", "Habitat");
             natureList = natureXML.createList("Natures", "Nature");
-            skillinfoList = skillinfoXML.createList();
+            skillinfoList = skillinfoXML.createList("Skills","Skill");
+            moveinfoList = moveinfoXML.createList("Moves", "Move");
+            capinfoList = capinfoXML.createList("Capabilities", "Capability");
+            abilityinfoList = abilityinfoXML.createList("Abilities", "Ability");
             updateList.Add("updating...");
             habitats.Clear();
             types.Clear();
@@ -3055,7 +3058,27 @@ namespace GenesisDex
         //===========================================================================================================
         private void lbMoves_MouseMove(object sender, MouseEventArgs e)
         {
-
+            if (!hasScanned) return;
+            int IndexPoint = lbMoves.IndexFromPoint(e.Location);
+            if (moveIndex != IndexPoint)
+            {
+                try { lbMoves.Items[IndexPoint].ToString(); } catch { return; }
+                if (lbMoves.Items[IndexPoint].ToString() == "Moves:") return;
+                string MoveTip = "No info to display...";
+                for (int s = 0; s < moveinfoList.Count; s++)
+                {
+                    if (lbMoves.Items[IndexPoint].ToString().Contains(moveinfoList[s].name))
+                    {
+                        MoveTip = moveinfoList[s].description;
+                    }
+                }
+                moveIndex = IndexPoint;
+                ttInfo.Show(MoveTip, lbMoves, lbMoves.Width / 2, 20 + (18 * IndexPoint));
+            }
+        }
+        private void lbMoves_MouseLeave(object sender, EventArgs e)
+        {
+            ttInfo.Hide(lbMoves);
         }
 
         //===========================================================================================================
@@ -3081,10 +3104,65 @@ namespace GenesisDex
                 ttInfo.Show(SkillTip, lbSkills, lbSkills.Width / 2, 20 + (18 * IndexPoint));
             }
         }
-
         private void lbSkills_MouseLeave(object sender, EventArgs e)
         {
             ttInfo.Hide(lbSkills);
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void lbCaps_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (!hasScanned) return;
+            int IndexPoint = lbCapabilites.IndexFromPoint(e.Location);
+            if (capIndex != IndexPoint)
+            {
+                try { lbCapabilites.Items[IndexPoint].ToString(); } catch { return; }
+                if (lbCapabilites.Items[IndexPoint].ToString() == "caps:") return;
+                string capTip = "No info to display...";
+                for (int s = 0; s < capinfoList.Count; s++)
+                {
+                    if (lbCapabilites.Items[IndexPoint].ToString().Contains(capinfoList[s].name))
+                    {
+                        capTip = capinfoList[s].description;
+                    }
+                }
+                capIndex = IndexPoint;
+                ttInfo.Show(capTip, lbCapabilites, lbCapabilites.Width / 2, 20 + (18 * IndexPoint));
+            }
+        }
+        private void lbCapabilites_MouseLeave(object sender, EventArgs e)
+        {
+            ttInfo.Hide(lbCapabilites);
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void lbAbilities_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (!hasScanned) return;
+            int IndexPoint = lbAbilities.IndexFromPoint(e.Location);
+            if (abilityIndex != IndexPoint)
+            {
+                try { lbAbilities.Items[IndexPoint].ToString(); } catch { return; }
+                if (lbAbilities.Items[IndexPoint].ToString() == "Abilities:") return;
+                string abilityTip = "No info to display...";
+                for (int s = 0; s < abilityinfoList.Count; s++)
+                {
+                    if (lbAbilities.Items[IndexPoint].ToString().Contains(abilityinfoList[s].name))
+                    {
+                        abilityTip = abilityinfoList[s].description;
+                    }
+                }
+                abilityIndex = IndexPoint;
+                ttInfo.Show(abilityTip, lbAbilities, lbAbilities.Width / 2, 20 + (18 * IndexPoint));
+            }
+        }
+        private void lbAbilities_MouseLeave(object sender, EventArgs e)
+        {
+            ttInfo.Hide(lbAbilities);
         }
     }
 }
