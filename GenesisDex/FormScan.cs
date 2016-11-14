@@ -700,15 +700,183 @@ namespace GenesisDex
             stats = getstats.createList(hp, atk, def, spatk, spdef, spd);
             stats = GetNature(stats);
             SortStats(stats);
+            List<int> base5 = new List<int>();
+            List<int> base4 = new List<int>();
+            List<int> base3 = new List<int>();
+            List<int> base2 = new List<int>();
+            List<int> base1 = new List<int>();
+            List<int> base0 = new List<int>();
+            base0.Add(stats[0].stat);
+            stats[0].relation = base0;
+            base1.Add(stats[1].stat);
+            stats[1].relation = base1;
+            base2.Add(stats[2].stat);
+            stats[2].relation = base2;
+            base3.Add(stats[3].stat);
+            stats[3].relation = base3;
+            base4.Add(stats[4].stat);
+            stats[4].relation = base4;
+            base5.Add(stats[5].stat);
+            stats[5].relation = base5;
+            for (int s = 1; s < 6; s++)
+            {
+                if (stats[s].stat == stats[0].stat)
+                    stats[s].relation = base0;
+            }
+            if (stats[1].relation[0] != base0[0])
+            {
+                for (int s = 2; s < 6; s++)
+                {
+                    if (stats[s].stat == stats[1].stat)
+                        stats[s].relation = base1;
+                }
+            }
+            if (stats[2].relation[0] != base1[0] && stats[2].relation[0] != base0[0])
+            {
+                for (int s = 3; s < 6; s++)
+                {
+                    if (stats[s].stat == stats[2].stat)
+                        stats[s].relation = base2;
+                }
+            }
+            if (stats[3].relation[0] != base2[0] && stats[2].relation[0] != base1[0] && stats[2].relation[0] != base0[0])
+            {
+                for (int s = 4; s < 6; s++)
+                {
+                    if (stats[s].stat == stats[3].stat)
+                        stats[s].relation = base3;
+                }
+            }
+            if (stats[4].relation[0] != base3[0] && stats[2].relation[0] != base2[0] && stats[2].relation[0] != base1[0] && stats[2].relation[0] != base0[0])
+            {
+                for (int s = 5; s < 6; s++)
+                {
+                    if (stats[s].stat == stats[4].stat)
+                        stats[s].relation = base4;
+                }
+            }
             for (var l = level; l > 0; l--)
             {
                 int i = rng.Next(1, 7);
-                if ( i == 1) { if (stats[5].stat <= stats[4].stat) { stats[5].stat++; } else { l++; } }
-                else if (i == 2) { if (stats[4].stat <= stats[3].stat) { stats[4].stat++; } else { l++; } }
-                else if (i == 3) { if (stats[3].stat <= stats[2].stat) { stats[3].stat++; } else { l++; } }
-                else if (i == 4) { if (stats[2].stat <= stats[1].stat) { stats[2].stat++; } else { l++; } }
-                else if (i == 5) { if (stats[1].stat <= stats[0].stat) { stats[1].stat++; } else { l++; } }
-                else if (i == 6) { stats[0].stat++; }
+                if (i == 1)
+                {
+                    if (stats[5].relation[0] == stats[0].relation[0])
+                        stats[5].stat++;
+                    for (int e = 4; e > -1; e--)
+                    {
+                        if (stats[5].relation[0] != stats[e].relation[0])
+                            if (stats[5].stat < stats[e].relation[0] - 1)
+                            {
+                                stats[5].stat++;
+                                if (stats[5].stat != stats[5].relation[0]
+                                    && stats[4].stat != stats[5].relation[0]
+                                    && stats[3].stat != stats[5].relation[0]
+                                    && stats[2].stat != stats[5].relation[0]
+                                    && stats[1].stat != stats[5].relation[0]
+                                    && stats[0].stat != stats[5].relation[0])
+                                    stats[5].relation[0]++;
+                                break;
+                            }
+                            else { l++; break; }
+                    }
+                }
+                else if (i == 2)
+                {
+                    if (stats[4].relation[0] == stats[0].relation[0])
+                        stats[4].stat++;
+                    for (int e = 3; e > -1; e--)
+                    {
+                        if (stats[4].relation[0] != stats[e].relation[0])
+                            if (stats[4].stat < stats[e].relation[0] - 1)
+                            {
+                                stats[4].stat++;
+                                if (stats[5].stat != stats[4].relation[0]
+                                    && stats[4].stat != stats[4].relation[0]
+                                    && stats[3].stat != stats[4].relation[0]
+                                    && stats[2].stat != stats[4].relation[0]
+                                    && stats[1].stat != stats[4].relation[0]
+                                    && stats[0].stat != stats[4].relation[0])
+                                    stats[4].relation[0]++;
+                                break;
+                            }
+                            else { l++; break; }
+                    }
+                }
+                else if (i == 3)
+                {
+                    if (stats[3].relation[0] == stats[0].relation[0])
+                        stats[3].stat++;
+                    for (int e = 2; e > -1; e--)
+                    {
+                        if (stats[3].relation[0] != stats[e].relation[0])
+                            if (stats[3].stat < stats[e].relation[0] - 1)
+                            {
+                                stats[3].stat++;
+                                if (stats[5].stat != stats[3].relation[0]
+                                    && stats[4].stat != stats[3].relation[0]
+                                    && stats[3].stat != stats[3].relation[0]
+                                    && stats[2].stat != stats[3].relation[0]
+                                    && stats[1].stat != stats[3].relation[0]
+                                    && stats[0].stat != stats[3].relation[0])
+                                    stats[3].relation[0]++;
+                                break;
+                            }
+                            else { l++; break; }
+                    }
+                }
+                else if (i == 4)
+                {
+                    if (stats[2].relation[0] == stats[0].relation[0])
+                        stats[2].stat++;
+                    for (int e = 1; e > -1; e--)
+                    {
+                        if (stats[2].relation[0] != stats[e].relation[0])
+                            if (stats[2].stat < stats[e].relation[0] - 1)
+                            {
+                                stats[2].stat++;
+                                if (stats[5].stat != stats[2].relation[0]
+                                    && stats[4].stat != stats[2].relation[0]
+                                    && stats[3].stat != stats[2].relation[0]
+                                    && stats[2].stat != stats[2].relation[0]
+                                    && stats[1].stat != stats[2].relation[0]
+                                    && stats[0].stat != stats[2].relation[0])
+                                    stats[2].relation[0]++;
+                                break;
+                            }
+                            else { l++; break; }
+                    }
+                }
+                else if (i == 5)
+                {
+                    if (stats[1].relation[0] == stats[0].relation[0])
+                        stats[1].stat++;
+                    if (stats[1].relation[0] != stats[0].relation[0])
+                    {
+                        if (stats[1].stat < stats[0].relation[0] - 1)
+                        {
+                            stats[1].stat++;
+                            if (stats[5].stat != stats[1].relation[0]
+                                && stats[4].stat != stats[1].relation[0]
+                                && stats[3].stat != stats[1].relation[0]
+                                && stats[2].stat != stats[1].relation[0]
+                                && stats[1].stat != stats[1].relation[0]
+                                && stats[0].stat != stats[1].relation[0])
+                                stats[1].relation[0]++;
+                        }
+                        else { l++; }
+                    }
+                }
+                else if (i == 6)
+                {
+                    stats[0].stat++;
+                    if (stats[5].stat != stats[0].relation[0]
+                        && stats[4].stat != stats[0].relation[0]
+                        && stats[3].stat != stats[0].relation[0]
+                        && stats[2].stat != stats[0].relation[0]
+                        && stats[1].stat != stats[0].relation[0]
+                        && stats[0].stat != stats[0].relation[0])
+                        stats[0].relation[0]++;
+                }
             }
             for (var z = 0; z < stats.Count; z++)
             {
@@ -1217,6 +1385,23 @@ namespace GenesisDex
         private void WriteInfo()
         {
             isWritingInfo = true;
+            tbNature.Text = AllNatures[Current];
+            string natureUp = "NA";
+            string natureDown = "NA";
+            for (int i = 0; i < natureList.Count; i++)
+            {
+                if (natureList[i].id == tbNature.Text)
+                {
+                    natureUp = natureList[i].up;
+                    natureDown = natureList[i].down;
+                    break;
+                }
+            }
+            if (natureUp == natureDown)
+            {
+                natureUp = "NA";
+                natureDown = "NA";
+            }
             if (AllShinyCheck[Current])
             {
                 tbName.Text = "Shiny " + AllPokemon[Current].id + Environment.NewLine;
@@ -1230,7 +1415,12 @@ namespace GenesisDex
             tbGender.Text = Gender[Current];
             tbCurrentHealth.Text = CurrentHealth[Current].ToString();
             tbMaxHealth.Text = MaxHealth[Current].ToString();
-            tbBaseHP.Text = BasePokemon[Current].hp;
+            if (natureUp == "hp")
+                tbBaseHP.Text = (Convert.ToInt32(BasePokemon[Current].hp) + 1).ToString();
+            else if (natureDown == "hp")
+                tbBaseHP.Text = (Convert.ToInt32(BasePokemon[Current].hp) - 1).ToString();
+            else
+                tbBaseHP.Text = BasePokemon[Current].hp;
             tbLevelHP.Text = AllStat[Current][0];
             if (nudHPCS.Value > 0)
                 tbCurrentHP.Text = (Math.Abs(Math.Round(Convert.ToDecimal(AllStat[Current][0]) / 5) * Math.Abs(nudHPCS.Value) + Convert.ToDecimal(AllStat[Current][0]))).ToString();
@@ -1238,7 +1428,12 @@ namespace GenesisDex
                 tbCurrentHP.Text = (Math.Abs(Math.Round(Convert.ToDecimal(AllStat[Current][0]) / 10) * Math.Abs(nudHPCS.Value) - Convert.ToDecimal(AllStat[Current][0]))).ToString();
             else
                 tbCurrentHP.Text = tbLevelHP.Text;
-            tbBaseATK.Text = BasePokemon[Current].atk;
+            if (natureUp == "atk")
+                tbBaseATK.Text = (Convert.ToInt32(BasePokemon[Current].atk) + 2).ToString();
+            else if (natureDown == "atk")
+                tbBaseATK.Text = (Convert.ToInt32(BasePokemon[Current].atk) - 2).ToString();
+            else
+                tbBaseATK.Text = BasePokemon[Current].atk;
             tbLevelATK.Text = AllStat[Current][1];
             if (nudATKCS.Value > 0)
                 tbCurrentATK.Text = (Math.Abs(Math.Round(Convert.ToDecimal(AllStat[Current][1]) / 5) * Math.Abs(nudATKCS.Value) + Convert.ToDecimal(AllStat[Current][1]))).ToString();
@@ -1246,7 +1441,12 @@ namespace GenesisDex
                 tbCurrentATK.Text = (Math.Abs(Math.Round(Convert.ToDecimal(AllStat[Current][1]) / 10) * Math.Abs(nudATKCS.Value) - Convert.ToDecimal(AllStat[Current][1]))).ToString();
             else
                 tbCurrentATK.Text = tbLevelATK.Text;
-            tbBaseDEF.Text = BasePokemon[Current].def;
+            if (natureUp == "def")
+                tbBaseDEF.Text = (Convert.ToInt32(BasePokemon[Current].def) + 2).ToString();
+            else if (natureDown == "def")
+                tbBaseDEF.Text = (Convert.ToInt32(BasePokemon[Current].def) - 2).ToString();
+            else
+                tbBaseDEF.Text = BasePokemon[Current].def;
             tbLevelDEF.Text = AllStat[Current][2];
             if (nudDEFCS.Value > 0)
                 tbCurrentDEF.Text = (Math.Abs(Math.Round(Convert.ToDecimal(AllStat[Current][2]) / 5) * Math.Abs(nudDEFCS.Value) + Convert.ToDecimal(AllStat[Current][2]))).ToString();
@@ -1254,7 +1454,12 @@ namespace GenesisDex
                 tbCurrentDEF.Text = (Math.Abs(Math.Round(Convert.ToDecimal(AllStat[Current][2]) / 10) * Math.Abs(nudDEFCS.Value) - Convert.ToDecimal(AllStat[Current][2]))).ToString();
             else
                 tbCurrentDEF.Text = tbLevelDEF.Text;
-            tbBaseSPATK.Text = BasePokemon[Current].spatk;
+            if (natureUp == "spatk")
+                tbBaseSPATK.Text = (Convert.ToInt32(BasePokemon[Current].spatk) + 2).ToString();
+            else if (natureDown == "spatk")
+                tbBaseSPATK.Text = (Convert.ToInt32(BasePokemon[Current].spatk) - 2).ToString();
+            else
+                tbBaseSPATK.Text = BasePokemon[Current].spatk;
             tbLevelSPATK.Text = AllStat[Current][3];
             if (nudSPATKCS.Value > 0)
                 tbCurrentSPATK.Text = (Math.Abs(Math.Round(Convert.ToDecimal(AllStat[Current][3]) / 5) * Math.Abs(nudSPATKCS.Value) + Convert.ToDecimal(AllStat[Current][3]))).ToString();
@@ -1262,7 +1467,12 @@ namespace GenesisDex
                 tbCurrentSPATK.Text = (Math.Abs(Math.Round(Convert.ToDecimal(AllStat[Current][3]) / 10) * Math.Abs(nudSPATKCS.Value) - Convert.ToDecimal(AllStat[Current][3]))).ToString();
             else
                 tbCurrentSPATK.Text = tbLevelSPATK.Text;
-            tbBaseSPDEF.Text = BasePokemon[Current].spdef;
+            if (natureUp == "spdef")
+                tbBaseSPDEF.Text = (Convert.ToInt32(BasePokemon[Current].spdef) + 2).ToString();
+            else if (natureDown == "spdef")
+                tbBaseSPDEF.Text = (Convert.ToInt32(BasePokemon[Current].spdef) - 2).ToString();
+            else
+                tbBaseSPDEF.Text = BasePokemon[Current].spdef;
             tbLevelSPDEF.Text = AllStat[Current][4];
             if (nudSPDEFCS.Value > 0)
                 tbCurrentSPDEF.Text = (Math.Abs(Math.Round(Convert.ToDecimal(AllStat[Current][4]) / 5) * Math.Abs(nudSPDEFCS.Value) + Convert.ToDecimal(AllStat[Current][4]))).ToString();
@@ -1270,7 +1480,12 @@ namespace GenesisDex
                 tbCurrentSPDEF.Text = (Math.Abs(Math.Round(Convert.ToDecimal(AllStat[Current][4]) / 10) * Math.Abs(nudSPDEFCS.Value) - Convert.ToDecimal(AllStat[Current][4]))).ToString();
             else
                 tbCurrentSPDEF.Text = tbLevelSPDEF.Text;
-            tbBaseSPD.Text = BasePokemon[Current].spd;
+            if (natureUp == "spd")
+                tbBaseSPD.Text = (Convert.ToInt32(BasePokemon[Current].spd) + 2).ToString();
+            else if (natureDown == "spd")
+                tbBaseSPD.Text = (Convert.ToInt32(BasePokemon[Current].spd) - 2).ToString();
+            else
+                tbBaseSPD.Text = BasePokemon[Current].spd;
             tbLevelSPD.Text = AllStat[Current][5];
             if (nudSPDCS.Value > 0)
                 tbCurrentSPD.Text = (Math.Abs(Math.Round(Convert.ToDecimal(AllStat[Current][5]) / 5) * Math.Abs(nudSPDCS.Value) + Convert.ToDecimal(AllStat[Current][5]))).ToString();
@@ -1283,7 +1498,6 @@ namespace GenesisDex
             {
                 lbCapabilites.Items.Add(cap);
             }
-            tbNature.Text = AllNatures[Current];
             lbMoves.Items.Clear();
             lbAbilities.Items.Clear();
             lbSkills.Items.Clear();
@@ -3060,10 +3274,10 @@ namespace GenesisDex
         {
             if (!hasScanned) return;
             int IndexPoint = lbMoves.IndexFromPoint(e.Location);
+            if (lbMoves.Items[IndexPoint].ToString() == "Moves:") IndexPoint = 1;
             if (moveIndex != IndexPoint)
             {
                 try { lbMoves.Items[IndexPoint].ToString(); } catch { return; }
-                if (lbMoves.Items[IndexPoint].ToString() == "Moves:") return;
                 string MoveTip = "No info to display...";
                 for (int s = 0; s < moveinfoList.Count; s++)
                 {
@@ -3089,10 +3303,10 @@ namespace GenesisDex
         {
             if (!hasScanned) return;
             int IndexPoint = lbSkills.IndexFromPoint(e.Location);
+            if (lbSkills.Items[IndexPoint].ToString() == "Skills:") IndexPoint = 1;
             if (skillIndex != IndexPoint)
             {
                 try { lbSkills.Items[IndexPoint].ToString(); } catch { return; }
-                if (lbSkills.Items[IndexPoint].ToString() == "Skills:") return;
                 string SkillTip = "No info to display...";
                 for (int s = 0; s < skillinfoList.Count; s++)
                 {
@@ -3118,10 +3332,10 @@ namespace GenesisDex
         {
             if (!hasScanned) return;
             int IndexPoint = lbCapabilites.IndexFromPoint(e.Location);
+            if (lbCapabilites.Items[IndexPoint].ToString() == "caps:") IndexPoint = 1;
             if (capIndex != IndexPoint)
             {
                 try { lbCapabilites.Items[IndexPoint].ToString(); } catch { return; }
-                if (lbCapabilites.Items[IndexPoint].ToString() == "caps:") return;
                 string capTip = "No info to display...";
                 for (int s = 0; s < capinfoList.Count; s++)
                 {
@@ -3147,10 +3361,10 @@ namespace GenesisDex
         {
             if (!hasScanned) return;
             int IndexPoint = lbAbilities.IndexFromPoint(e.Location);
+            if (lbAbilities.Items[IndexPoint].ToString() == "Abilities:") IndexPoint = 1;
             if (abilityIndex != IndexPoint)
             {
                 try { lbAbilities.Items[IndexPoint].ToString(); } catch { return; }
-                if (lbAbilities.Items[IndexPoint].ToString() == "Abilities:") return;
                 string abilityTip = "No info to display...";
                 for (int s = 0; s < abilityinfoList.Count; s++)
                 {
@@ -3167,6 +3381,30 @@ namespace GenesisDex
         private void lbAbilities_MouseLeave(object sender, EventArgs e)
         {
             ttInfo.Hide(lbAbilities);
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void tbNature_MouseEnter(object sender, EventArgs e)
+        {
+            if (hasScanned)
+            {
+                string updown = "ERROR";
+                for (int i = 0; i < natureList.Count; i++)
+                {
+                    if (natureList[i].id == tbNature.Text)
+                    {
+                        updown = "+" + natureList[i].up + " and -" + natureList[i].down;
+                        break;
+                    }
+                }
+                ttInfo.Show(updown, this.tbNature, new Point(tbNature.Width, this.tbNature.Top - 150));
+            }
+        }
+        private void tbNature_MouseLeave(object sender, EventArgs e)
+        {
+            ttInfo.Hide(tbNature);
         }
     }
 }

@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Namespace>
+  <!-- Each of the description lines should be no more than 45 characters long, to keep the tooltips in the proper viewing order -->
   <Moves>
     <Move name="Tackle">
+      <Description>ENTER DESCRIPTION HERE</Description>
+    </Move>
+    <Move name="Harden">
       <Description>ENTER DESCRIPTION HERE</Description>
     </Move>
   </Moves>
@@ -10,10 +14,16 @@
     <Ability name="Photosynthesis">
       <Description>ENTER DESCRIPTION HERE</Description>
     </Ability>
+    <Ability name="Adaptability">
+      <Description>ENTER DESCRIPTION HERE</Description>
+    </Ability>
   </Abilities>
   <!--==================================-->
   <Capabilities>
     <Capability name="Power">
+      <Description>ENTER DESCRIPTION HERE</Description>
+    </Capability>
+    <Capability name="Overland">
       <Description>ENTER DESCRIPTION HERE</Description>
     </Capability>
   </Capabilities>

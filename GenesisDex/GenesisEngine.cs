@@ -110,6 +110,7 @@ namespace GenesisDexEngine
     {
         public int stat { get; set; }
         public string id { get; set; }
+        public List<int> relation { get; set; }
     }
 
     class PokeRegion

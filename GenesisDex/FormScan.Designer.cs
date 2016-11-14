@@ -1433,6 +1433,8 @@
             this.tbNature.ReadOnly = true;
             this.tbNature.Size = new System.Drawing.Size(158, 22);
             this.tbNature.TabIndex = 159;
+            this.tbNature.MouseEnter += new System.EventHandler(this.tbNature_MouseEnter);
+            this.tbNature.MouseLeave += new System.EventHandler(this.tbNature_MouseLeave);
             // 
             // label6
             // 
