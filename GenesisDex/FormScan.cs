@@ -1043,6 +1043,10 @@ namespace GenesisDex
 
         private string SkillUp(int i)
         {
+            if (skillList[i].skill.Contains("1d6"))
+            {
+                return skillList[i].skill;
+            }
             StringBuilder build = new StringBuilder();
             string skil = skillList[i].skill.ToString();
             string[] up1 = skil.Split(' ');
@@ -1057,6 +1061,10 @@ namespace GenesisDex
 
         private string SkillDn(int i)
         {
+            if (skillList[i].skill.Contains("1d6"))
+            {
+                return skillList[i].skill;
+            }
             StringBuilder build = new StringBuilder();
             string skil = skillList[i].skill.ToString();
             string[] up1 = skil.Split(' ');
