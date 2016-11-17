@@ -15077,10 +15077,11 @@
         <cap id="0">Overland 10</cap>
         <cap id="1">Swim 4</cap>
         <cap id="2">Jump 2/3</cap>
-        <cap id="3">Power 6 Egg Warmer</cap>
-        <cap id="4">Firestarter</cap>
-        <cap id="5">Glow</cap>
-        <cap id="6">Heater</cap>
+        <cap id="3">Power 6</cap>
+        <cap id="4">Egg Warmer</cap>
+        <cap id="5">Firestarter</cap>
+        <cap id="6">Glow</cap>
+        <cap id="7">Heater</cap>
       </Capability>
       <Evolution>
         <evo id="0">1 - Ponyta</evo>
