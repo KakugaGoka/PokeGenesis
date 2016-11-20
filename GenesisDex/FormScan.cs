@@ -3408,6 +3408,7 @@ namespace GenesisDex
         private void lbMoves_MouseLeave(object sender, EventArgs e)
         {
             ttInfo.Hide(lbMoves);
+            moveIndex = 0;
         }
 
         //===========================================================================================================
@@ -3437,6 +3438,7 @@ namespace GenesisDex
         private void lbSkills_MouseLeave(object sender, EventArgs e)
         {
             ttInfo.Hide(lbSkills);
+            skillIndex = 0;
         }
 
         //===========================================================================================================
@@ -3466,6 +3468,7 @@ namespace GenesisDex
         private void lbCapabilites_MouseLeave(object sender, EventArgs e)
         {
             ttInfo.Hide(lbCapabilites);
+            capIndex = 0;
         }
 
         //===========================================================================================================
@@ -3495,6 +3498,7 @@ namespace GenesisDex
         private void lbAbilities_MouseLeave(object sender, EventArgs e)
         {
             ttInfo.Hide(lbAbilities);
+            abilityIndex = 0;
         }
 
         //===========================================================================================================

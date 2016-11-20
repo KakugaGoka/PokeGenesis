@@ -13139,6 +13139,116 @@ does not stack with Mixed Power.
   </Abilities>
 <!--===========================================-->
   <Capabilities>
+    <Capability name="Power">
+      <Description>
+Power represents a Pokémon or Trainer’s physical
+strength. The chart below shows how much weight
+a Pokémon or Trainer can bear, depending on their
+power value.
+Power     Heavy      Staggering   Drag
+Value    Lifting        Limit     Limit
+  1       2-5 lb.       10 lb.    20 lb.
+  2       20-30 lb.     60 lb.    120 lb.
+  3       35-50 lb.     100 lb.   200 lb.
+  4       45-70 lb.     140 lb.   280 lb.
+  5       60-90 lb.     180 lb.   360 lb.
+  6       75-115 lb.    230 lb.   460 lb.
+  7       100-140 lb.   300 lb.   600 lb.
+  8       120-190 lb.   380 lb.   760 lb.
+  9       150-240 lb.   480 lb.   960 lb.
+  10      200-300 lb.   600 lb.   1200 lb.
+  11      250-375 lb.   750 lb.   1500 lb.
+  12      350-450 lb.   900 lb.   1800 lb.
+  13      450-525 lb.   1050 lb.  2100 lb.
+  14      500-600 lb.   1200 lb.  2400 lb.
+  15      550-675 lb.   1350 lb.  2700 lb.
+  16      600-750 lb.   1500 lb.  3000 lb.
+      </Description>
+    </Capability>
+<!--===========================================-->
+    <Capability name="Jump">
+      <Description>
+There are two kinds of Jumps – Long Jumps and High 
+Jumps. Long Jumps measure how far a Pokémon or 
+Trainer can Jump, while High Jumps measure how high. 
+Each Pokémon or Trainer has a specific value 
+associated which each of these; this value is 
+represented in meters and measures how far they can 
+jump without making a check.
+      </Description>
+    </Capability>
+    <Capability name="Burrow">
+      <Description>
+The Burrow Capability determines how much
+a Pokémon can shift each turn while underground.
+The holes dug are only as large as the Pokémon who
+burrows. If a Pokémon learns the Move Dig and does
+not have the Burrow Capability, they gain Burrow 3. If
+they already have the Burrow Capability, the Burrow
+value is raised 3. A Pokémon or Trainer ending its turn
+underground must spend a Standard Action to remain
+underground. If a Pokémon or Trainer has already spent
+its Standard Action on a round it ends underground, it
+instead forfeits its next Standard Action.
+      </Description>
+    </Capability>
+    <Capability name="Overland">
+      <Description>
+Overland is a Movement Capability that
+defines how many meters the Pokémon may shift while
+on dry land. Most Pokémon and Trainers will use
+Overland as their primary movement capability.
+      </Description>
+    </Capability>
+    <Capability name="Sky">
+      <Description>
+The Sky Speed determines how many meters a
+Pokémon may shift in the air. If a Pokémon learns the
+Move Fly and does not have the Sky Capability, they
+gain Sky 4. If they already have the Sky Capability, the
+Sky value is raised by 4.
+      </Description>
+    </Capability>
+    <Capability name="Swim">
+      <Description>
+Swim is a Movement Capability that defines
+how quickly the Pokémon can move underwater. If a
+Pokémon learns the Move Dive and does not have the
+Swim Capability, they gain Swim 3. If they already have
+the Underwater Capability, the Swim value is raised 3.
+      </Description>
+    </Capability>
+    <Capability name="Levitate">
+      <Description>
+Levitate is a Movement Capability that defines
+how quickly the Pokémon moves while floating or
+levitating. When using the Levitate Capability, the
+maximum height off the ground the Pokémon can
+achieve is equal to half of their Levitate Capability. If a
+Pokémon gains the Levitate ability and does not have
+the Levitate Capability, they gain Levitate 4. If they
+already have the Levitate Capability, the Levitate value
+is raised 2.
+      </Description>
+    </Capability>
+    <Capability name="Teleporter">
+      <Description>
+Teleporter is a Movement Capability that
+defines how far the Pokémon can travel by teleportation.
+Only one teleport action can be taken during a round
+of combat. The Pokémon must have line of sight to the
+location they wish to teleport to, and they must end each
+teleport action touching a surface (ie it is not possible to
+‘chain’ teleports in order to fly). If a Pokémon also has
+the Sky or Levitate Capability, they may Teleport into
+Sky spaces (only to spaces within their maximum height
+for Levitate). Teleporter cannot be increased by taking
+a Sprint Action. If a Pokémon learns the move Teleport
+and does not have the Teleporter Capability they
+gain Teleporter 4. If they already have the Teleporter
+Capability, the Teleporter value is raised 4.
+      </Description>
+    </Capability>
     <Capability name="Alluring">
       <Description>Pokemon who are Alluring smell
 very pleasant. Once per day, they may act as
