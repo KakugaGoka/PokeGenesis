@@ -13,8 +13,6 @@ using System.Windows.Forms;
 using NAudio.Vorbis;
 using NAudio.Wave;
 using GenesisDexEngine;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 namespace GenesisDex
 {
@@ -1721,72 +1719,72 @@ namespace GenesisDex
         //=== This is the background worker for the save function, that allows the players to save their scan as a ==
         //===== text file that they can view later on. ==============================================================
         //===========================================================================================================
-        private void PokeSaveJSON_DoWork(object sender, DoWorkEventArgs e)
-        {
-            JObject pokemonSaveData = new JObject(
-                new JProperty("CharType", 0),
-                new JProperty("nickname", AllPokemon[Current].id),
-                new JProperty("species", AllPokemon[Current].id),
-                new JProperty("type1", 123),
-                new JProperty("type2", 123),
-                new JProperty("Level", AllLevels[Current]),
-                new JProperty("EXP", 0),
-                new JProperty("EXP_max", 0),
-                new JProperty("HeldItem", 123),
-                new JProperty("Gender", Gender[Current]),
-                new JProperty("Nature", AllNatures[Current]),
-                new JProperty("Height", 123),
-                new JProperty("WeightClass", 123),
-                new JProperty("base_HP", BasePokemon[Current].hp),
-                new JProperty("base_ATK", BasePokemon[Current].atk),
-                new JProperty("base_DEF", BasePokemon[Current].def),
-                new JProperty("base_SPATK", BasePokemon[Current].spatk),
-                new JProperty("base_SPDEF", BasePokemon[Current].spdef),
-                new JProperty("base_SPEED", BasePokemon[Current].spd),
-                new JProperty("HP", AllPokemon[Current].hp),
-                new JProperty("ATK", AllPokemon[Current].atk),
-                new JProperty("DEF", AllPokemon[Current].def),
-                new JProperty("SPATK", AllPokemon[Current].spatk),
-                new JProperty("SPDEF", AllPokemon[Current].spdef),
-                new JProperty("SPEED", AllPokemon[Current].spd),
-                new JProperty("Athletics", AllSkills[Current].Contains("Athl")),
-                new JProperty("Acrobatics", AllSkills[Current].Contains("Acro")),
-                new JProperty("Combat", AllSkills[Current].Contains("Combat")),
-                new JProperty("Stealth", AllSkills[Current].Contains("Stealth")),
-                new JProperty("Perception", AllSkills[Current].Contains("Percep")),
-                new JProperty("Focus", AllSkills[Current].Contains("Focus")),
-                new JProperty("TechnologyEducation:", AllSkills[Current].Contains("Edu:Tech")),
-                new JProperty("TutorPoints", 0)
-                );
-            int placement = 1;
-            foreach (string a in lbAbilities.Items)
-            {
-                if (a != "Abilites:")
-                {
-                    pokemonSaveData.Add(new JProperty("Ability" + placement, a));
-                    placement++;
-                }
-            }
-            placement = 1;
-            foreach (string m in lbMoves.Items)
-            {
-                if (m != "Moves:")
-                {
-                    pokemonSaveData.Add(new JProperty("Move" + placement, m));
-                    placement++;
-                }
-            }
-            placement = 1;
-            foreach (string c in lbCapabilites.Items)
-            {
-                if (c != "Capabilites:")
-                {
-                    pokemonSaveData.Add(new JProperty("Capability" + placement, c));
-                    placement++;
-                }
-            }
-            File.WriteAllText(saveFilePath, pokemonSaveData.ToString());
-        }
+        //private void PokeSaveJSON_DoWork(object sender, DoWorkEventArgs e)
+        //{
+        //    JObject pokemonSaveData = new JObject(
+        //        new JProperty("CharType", 0),
+        //        new JProperty("nickname", AllPokemon[Current].id),
+        //        new JProperty("species", AllPokemon[Current].id),
+        //        new JProperty("type1", 123),
+        //        new JProperty("type2", 123),
+        //        new JProperty("Level", AllLevels[Current]),
+        //        new JProperty("EXP", 0),
+        //        new JProperty("EXP_max", 0),
+        //        new JProperty("HeldItem", 123),
+        //        new JProperty("Gender", Gender[Current]),
+        //        new JProperty("Nature", AllNatures[Current]),
+        //        new JProperty("Height", 123),
+        //        new JProperty("WeightClass", 123),
+        //        new JProperty("base_HP", BasePokemon[Current].hp),
+        //        new JProperty("base_ATK", BasePokemon[Current].atk),
+        //        new JProperty("base_DEF", BasePokemon[Current].def),
+        //        new JProperty("base_SPATK", BasePokemon[Current].spatk),
+        //        new JProperty("base_SPDEF", BasePokemon[Current].spdef),
+        //        new JProperty("base_SPEED", BasePokemon[Current].spd),
+        //        new JProperty("HP", AllPokemon[Current].hp),
+        //        new JProperty("ATK", AllPokemon[Current].atk),
+        //        new JProperty("DEF", AllPokemon[Current].def),
+        //        new JProperty("SPATK", AllPokemon[Current].spatk),
+        //        new JProperty("SPDEF", AllPokemon[Current].spdef),
+        //        new JProperty("SPEED", AllPokemon[Current].spd),
+        //        new JProperty("Athletics", AllSkills[Current].Contains("Athl")),
+        //        new JProperty("Acrobatics", AllSkills[Current].Contains("Acro")),
+        //        new JProperty("Combat", AllSkills[Current].Contains("Combat")),
+        //        new JProperty("Stealth", AllSkills[Current].Contains("Stealth")),
+        //        new JProperty("Perception", AllSkills[Current].Contains("Percep")),
+        //        new JProperty("Focus", AllSkills[Current].Contains("Focus")),
+        //        new JProperty("TechnologyEducation:", AllSkills[Current].Contains("Edu:Tech")),
+        //        new JProperty("TutorPoints", 0)
+        //        );
+        //    int placement = 1;
+        //    foreach (string a in lbAbilities.Items)
+        //    {
+        //        if (a != "Abilites:")
+        //        {
+        //            pokemonSaveData.Add(new JProperty("Ability" + placement, a));
+        //            placement++;
+        //        }
+        //    }
+        //    placement = 1;
+        //    foreach (string m in lbMoves.Items)
+        //    {
+        //        if (m != "Moves:")
+        //        {
+        //            pokemonSaveData.Add(new JProperty("Move" + placement, m));
+        //            placement++;
+        //        }
+        //    }
+        //    placement = 1;
+        //    foreach (string c in lbCapabilites.Items)
+        //    {
+        //        if (c != "Capabilites:")
+        //        {
+        //            pokemonSaveData.Add(new JProperty("Capability" + placement, c));
+        //            placement++;
+        //       }
+        //    }
+        //    File.WriteAllText(saveFilePath, pokemonSaveData.ToString());
+        //}
 
         private void PokeSaveScan_DoWork(object sender, DoWorkEventArgs e)
         {
