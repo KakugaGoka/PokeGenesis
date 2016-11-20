@@ -76,6 +76,9 @@
             this.gbOptions = new System.Windows.Forms.GroupBox();
             this.gbPokedex = new System.Windows.Forms.GroupBox();
             this.gbRegion = new System.Windows.Forms.GroupBox();
+            this.nudSpawn = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudItemTier)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudScanLimit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPokeLevel)).BeginInit();
@@ -89,6 +92,7 @@
             this.gbOptions.SuspendLayout();
             this.gbPokedex.SuspendLayout();
             this.gbRegion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSpawn)).BeginInit();
             this.SuspendLayout();
             // 
             // nudItemTier
@@ -364,6 +368,7 @@
             this.listRegionAllowed.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.listRegionAllowed.Size = new System.Drawing.Size(180, 225);
             this.listRegionAllowed.TabIndex = 34;
+            this.listRegionAllowed.SelectedIndexChanged += new System.EventHandler(this.listRegionAllowed_SelectedIndexChanged);
             // 
             // listRegionBanned
             // 
@@ -599,6 +604,9 @@
             // 
             // gbRegion
             // 
+            this.gbRegion.Controls.Add(this.label6);
+            this.gbRegion.Controls.Add(this.label5);
+            this.gbRegion.Controls.Add(this.nudSpawn);
             this.gbRegion.Controls.Add(this.btnDeleteRegion);
             this.gbRegion.Controls.Add(this.btnAddRegion);
             this.gbRegion.Controls.Add(this.btnSaveRegion);
@@ -609,6 +617,47 @@
             this.gbRegion.TabIndex = 57;
             this.gbRegion.TabStop = false;
             this.gbRegion.Text = "Regions";
+            // 
+            // nudSpawn
+            // 
+            this.nudSpawn.Location = new System.Drawing.Point(416, 267);
+            this.nudSpawn.Maximum = new decimal(new int[] {
+            9,
+            0,
+            0,
+            0});
+            this.nudSpawn.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudSpawn.Name = "nudSpawn";
+            this.nudSpawn.Size = new System.Drawing.Size(60, 20);
+            this.nudSpawn.TabIndex = 58;
+            this.nudSpawn.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudSpawn.ValueChanged += new System.EventHandler(this.nudSpawn_ValueChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(311, 267);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(95, 13);
+            this.label5.TabIndex = 58;
+            this.label5.Text = "Current Selection\'s";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(326, 280);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(63, 13);
+            this.label6.TabIndex = 59;
+            this.label6.Text = "Rarity Level";
             // 
             // FormOptions
             // 
@@ -660,6 +709,8 @@
             this.gbOptions.PerformLayout();
             this.gbPokedex.ResumeLayout(false);
             this.gbRegion.ResumeLayout(false);
+            this.gbRegion.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSpawn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -714,5 +765,8 @@
         private System.Windows.Forms.GroupBox gbOptions;
         private System.Windows.Forms.GroupBox gbPokedex;
         private System.Windows.Forms.GroupBox gbRegion;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.NumericUpDown nudSpawn;
     }
 }

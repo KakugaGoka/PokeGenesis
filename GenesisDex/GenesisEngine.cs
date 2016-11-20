@@ -118,7 +118,13 @@ namespace GenesisDexEngine
         public string RegionName { get; set; }
         public int MaxLevel { get; set; }
         public int MinLevel { get; set; }
-        public List<string> Spawns { get; set; }
+        public List<Spawn> Spawns { get; set; }
+    }
+
+    class Spawn
+    {
+        public string Name { get; set; }
+        public int SpawnRate { get; set; }
     }
 
     class StatusAfflictions
@@ -619,7 +625,7 @@ namespace GenesisDexEngine
                         select new PokeRegion
                         {
                             Spawns = (from val in node.Elements("id")
-                                      select val.Value).ToList()
+                                      select new Spawn { Name = (string)val.Value, SpawnRate = (int)val.Attribute("spawnrate") }).ToList()
                         };
             idList = query.ToList();
             return idList;

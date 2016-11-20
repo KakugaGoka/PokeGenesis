@@ -35,6 +35,8 @@ namespace GenesisDex
         SpawnList spawnXML = new SpawnList();
         List<PokeRegion> spawnList = new List<PokeRegion>();
 
+        List<int> spawnRate = new List<int>();
+
         bool dragging { get; set; }
         bool restoreDefaults { get; set; }
 
@@ -260,20 +262,20 @@ namespace GenesisDex
             regionList = regionXML.createList();
             spawnList = new List<PokeRegion>();
             spawnList = spawnXML.createList();
-            listRegionAllowed.Items.Clear();
-            listRegionBanned.Items.Clear();
             listRegions.Items.Clear();
             for (var i = 0; i < regionList.Count; i++)
             {
                 listRegions.Items.Add(regionList[i].RegionName);
             }
             listRegions.SelectedIndex = 0;
-            foreach (string s in spawnList[listRegions.SelectedIndex].Spawns)
+            listRegionAllowed.Items.Clear();
+            listRegionBanned.Items.Clear();
+            foreach (Spawn s in spawnList[listRegions.SelectedIndex].Spawns)
             {
-                if (s != "Placeholder")
-                    listRegionAllowed.Items.Add(s);
-                if (!listPokeDex.Items.Contains(s))
-                    listRegionAllowed.Items.Remove(s);
+                if (s.Name != "Placeholder")
+                    listRegionAllowed.Items.Add(s.Name);
+                if (!listPokeDex.Items.Contains(s.Name))
+                    listRegionAllowed.Items.Remove(s.Name);
             }
             SortPokeList();
             foreach (Pokemon s in pokeList)
@@ -281,6 +283,7 @@ namespace GenesisDex
                 if (!listRegionAllowed.Items.Contains(s.id) && listPokeDex.Items.Contains(s.id))
                     listRegionBanned.Items.Add(s.id);
             }
+            listRegionAllowed.SelectedIndex = 0;
         }
 
         private void pbExit_MouseHover(object sender, EventArgs e)
@@ -316,9 +319,11 @@ namespace GenesisDex
             }
             else
             {
-                ban = new XElement("Spawns",
-                    from b in regionAllowed
-                    select new XElement("id", b));
+                ban = new XElement("Spawns");
+                for ( int b = 0; b < regionAllowed.Count; b++)
+                {
+                    ban.Add(new XElement("id", new XAttribute("spawnrate", spawnRate[b]), regionAllowed[b]));
+                }
             }
             regionNode.Add(ban);
             docX.Save(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Regions.xml");
@@ -333,6 +338,7 @@ namespace GenesisDex
                 {
                     listRegionBanned.Items.Add(listRegionAllowed.SelectedItems[i]);
                     listRegionAllowed.Items.Remove(listRegionAllowed.SelectedItems[i]);
+                    spawnRate.RemoveAt(listRegionAllowed.SelectedIndices[i]);
                     i--;
                 }
             }
@@ -346,6 +352,7 @@ namespace GenesisDex
                 {
                     listRegionAllowed.Items.Add(listRegionBanned.SelectedItems[i]);
                     listRegionBanned.Items.Remove(listRegionBanned.SelectedItems[i]);
+                    spawnRate.Add(1);
                     i--;
                 }
             }
@@ -363,10 +370,11 @@ namespace GenesisDex
             XDocument docX = XDocument.Load(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Regions.xml");
             var newRegionXML = new XElement("Region", 
                 new XAttribute("Name", "NewRegion" + newRegionNum), 
-                new XElement("MaxLevel", "100"),
-                new XElement("MinLevel", "1"),
+                new XElement("MaxLevel", 100),
+                new XElement("MinLevel", 1),
                 new XElement("Spawns",
-                new XElement("id", "Placeholder")));
+                new XElement("id",
+                new XAttribute("spawnrate", 1), "Placeholder")));
             docX.Root.Add(newRegionXML);
             docX.Save(AppDomain.CurrentDomain.BaseDirectory + "Data\\XML\\Regions.xml");
             RefreshRegions();
@@ -374,16 +382,20 @@ namespace GenesisDex
 
         private void listRegions_SelectedIndexChanged(object sender, EventArgs e)
         {
+            spawnRate = new List<int>();
             tbRegionName.Text = listRegions.SelectedItem.ToString();
             nudRegionMax.Value = regionList[listRegions.SelectedIndex].MaxLevel;
             nudRegionMin.Value = regionList[listRegions.SelectedIndex].MinLevel;
             listRegionAllowed.Items.Clear();
             listRegionBanned.Items.Clear();
             if (spawnList[listRegions.SelectedIndex].Spawns != null)
-                foreach (string s in spawnList[listRegions.SelectedIndex].Spawns)
+                foreach (Spawn s in spawnList[listRegions.SelectedIndex].Spawns)
                 {
-                    if (s != "Placeholder")
-                        listRegionAllowed.Items.Add(s);
+                    if (s.Name != "Placeholder")
+                    {
+                        listRegionAllowed.Items.Add(s.Name);
+                        spawnRate.Add(s.SpawnRate);
+                    }
                 }
             SortPokeList();
             foreach (Pokemon s in pokeList)
@@ -391,6 +403,7 @@ namespace GenesisDex
                 if (!listRegionAllowed.Items.Contains(s.id))
                     listRegionBanned.Items.Add(s.id);
             }
+            listRegionAllowed.SelectedIndex = 0;
         }
 
         private void btnRestoreRegions_Click(object sender, EventArgs e)
@@ -444,6 +457,23 @@ namespace GenesisDex
                 RefreshOptions();
                 RefreshRegions();
             }
+        }
+
+        private void listRegionAllowed_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listRegionAllowed.SelectedItems.Count == 1)
+            {
+                nudSpawn.Enabled = true;
+                nudSpawn.Value = spawnRate[listRegionAllowed.SelectedIndex];
+            }
+            else
+                nudSpawn.Enabled = false;
+        }
+
+        private void nudSpawn_ValueChanged(object sender, EventArgs e)
+        {
+            if (listRegionAllowed.SelectedItems.Count == 1)
+                spawnRate[listRegionAllowed.SelectedIndex] = Convert.ToInt32(nudSpawn.Value);
         }
     }
 }

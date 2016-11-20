@@ -143,6 +143,7 @@ namespace GenesisDex
         int pbPokeLocY { get; set; }
         int PokeLevelMax { get; set; }
         int PokeLevelMin { get; set; }
+        int PokeRegIndex { get; set; }
         int Progress { get; set; }
         int Dots { get; set; }
         int skillIndex { get; set; }
@@ -173,6 +174,7 @@ namespace GenesisDex
         string PokeHabitat { get; set; }
         string PokeStage { get; set; }
         string PokeNature { get; set; }
+        string PokeReg { get; set; }
         string saveFilePath { get; set; }
         //===========================================================================================================
         string[] info { get; set; }
@@ -635,8 +637,41 @@ namespace GenesisDex
             }
             else
             {
-                i = rng.Next(0, pokeList.Count);
-                try { return pokeList[i]; } catch { MessageBox.Show("There are no registered Pokemon that fit this criteria..."); return null; }
+                if (PokeReg == "Any")
+                {
+                    i = rng.Next(0, pokeList.Count);
+                    try { return pokeList[i]; } catch { MessageBox.Show("There are no registered Pokemon that fit this criteria..."); return null; }
+                }
+                else
+                {
+                    int[] ratesbase = new int[] {
+                        1, 1, 1, 1, 1, 1, 1, 1, 1,
+                        2, 2, 2, 2, 2, 2, 2, 2,
+                        3, 3, 3, 3, 3, 3, 3,
+                        4, 4, 4, 4, 4, 4,
+                        5, 5, 5, 5, 5,
+                        6, 6, 6, 6,
+                        7, 7, 7,
+                        8, 8,
+                        9 };
+                    List<int> rates = new List<int>();
+                    rates = ratesbase.ToList();
+                    int x = rng.Next(rates.Count());
+                    Start:
+                    i = rng.Next(0, pokeList.Count);
+                    foreach (Spawn s in spawnList[PokeRegIndex-1].Spawns)
+                    {
+                        if( pokeList[i].id == s.Name)
+                        {
+                            if (s.SpawnRate <= rates[x])
+                                break;
+                            else
+                                goto Start;
+
+                        }
+                    }
+                    try { return pokeList[i]; } catch { MessageBox.Show("There are no registered Pokemon that fit this criteria..."); return null; }
+                }
             }
         }
 
@@ -1938,6 +1973,8 @@ namespace GenesisDex
             PokeType = cbType.Text;
             PokeStage = cbStageAllowed.Text;
             PokeNature = cbNature.Text;
+            PokeReg = cbRegion.Text;
+            PokeRegIndex = cbRegion.SelectedIndex;
             PokeLevelMax = Convert.ToInt32(nudLevelMax.Value);
             PokeLevelMin = Convert.ToInt32(nudLevelMin.Value);
             Amount = Convert.ToInt32(nudAmount.Value);
@@ -2333,6 +2370,8 @@ namespace GenesisDex
             PokeType = cbType.Text;
             PokeStage = cbStageAllowed.Text;
             PokeNature = cbNature.Text;
+            PokeReg = cbRegion.Text;
+            PokeRegIndex = cbRegion.SelectedIndex;
             PokeLevelMax = Convert.ToInt32(nudLevelMax.Value);
             PokeLevelMin = Convert.ToInt32(nudLevelMin.Value);
             Amount = Convert.ToInt32(nudAmount.Value);
@@ -2389,10 +2428,10 @@ namespace GenesisDex
                 }
                 regionPokemon = new List<string>();
                 regionPokemon.Add("Any");
-                foreach (string p in spawnList[selectRegion].Spawns)
+                foreach (Spawn p in spawnList[selectRegion].Spawns)
                 {
-                    if(pokeDex.Contains(p))
-                        regionPokemon.Add(p);
+                    if(pokeDex.Contains(p.Name))
+                        regionPokemon.Add(p.Name);
                 }
                 lbPokemon.DataSource = regionPokemon;
                 nudLevelMax.Value = regionList[selectRegion].MaxLevel;

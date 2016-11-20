@@ -6,10 +6,10 @@
     <MaxLevel>Max Level</MaxLevel>
     <MinLevel>Min Level</MinLevel>
     <Spawns>
-      <id>Pokemon</id>
-      <id>Names</id>
-      <id>Go in</id>
-      <id>Here</id>
+      <id spawnrate="1">Pokemon</id>
+      <id spawnrate="1">Names</id>
+      <id spawnrate="1">Go in</id>
+      <id spawnrate="1">Here</id>
     </Spawns>
   </Region>
   -->
@@ -17,794 +17,794 @@
     <MaxLevel>65</MaxLevel>
     <MinLevel>3</MinLevel>
     <Spawns>
-      <id>Bulbasaur</id>
-      <id>Ivysaur</id>
-      <id>Venusaur</id>
-      <id>Charmander</id>
-      <id>Charmeleon</id>
-      <id>Charizard</id>
-      <id>Squirtle</id>
-      <id>Wartortle</id>
-      <id>Blastoise</id>
-      <id>Caterpie</id>
-      <id>Metapod</id>
-      <id>Butterfree</id>
-      <id>Weedle</id>
-      <id>Kakuna</id>
-      <id>Beedrill</id>
-      <id>Pidgey</id>
-      <id>Pidgeotto</id>
-      <id>Pidgeot</id>
-      <id>Rattata</id>
-      <id>Raticate</id>
-      <id>Spearow</id>
-      <id>Fearow</id>
-      <id>Ekans</id>
-      <id>Arbok</id>
-      <id>Pikachu</id>
-      <id>Raichu</id>
-      <id>Sandshrew</id>
-      <id>Sandslash</id>
-      <id>Nidoran♀</id>
-      <id>Nidorina</id>
-      <id>Nidoqueen</id>
-      <id>Nidoran♂</id>
-      <id>Nidorino</id>
-      <id>Nidoking</id>
-      <id>Clefairy</id>
-      <id>Clefable</id>
-      <id>Vulpix</id>
-      <id>Ninetales</id>
-      <id>Jigglypuff</id>
-      <id>Wigglytuff</id>
-      <id>Zubat</id>
-      <id>Golbat</id>
-      <id>Oddish</id>
-      <id>Gloom</id>
-      <id>Vileplume</id>
-      <id>Paras</id>
-      <id>Parasect</id>
-      <id>Venonat</id>
-      <id>Venomoth</id>
-      <id>Diglett</id>
-      <id>Dugtrio</id>
-      <id>Meowth</id>
-      <id>Persian</id>
-      <id>Psyduck</id>
-      <id>Golduck</id>
-      <id>Mankey</id>
-      <id>Primeape</id>
-      <id>Growlithe</id>
-      <id>Arcanine</id>
-      <id>Poliwag</id>
-      <id>Poliwhirl</id>
-      <id>Poliwrath</id>
-      <id>Abra</id>
-      <id>Kadabra</id>
-      <id>Alakazam</id>
-      <id>Machop</id>
-      <id>Machoke</id>
-      <id>Machamp</id>
-      <id>Bellsprout</id>
-      <id>Weepinbell</id>
-      <id>Victreebel</id>
-      <id>Tentacool</id>
-      <id>Tentacruel</id>
-      <id>Geodude</id>
-      <id>Graveler</id>
-      <id>Golem</id>
-      <id>Ponyta</id>
-      <id>Rapidash</id>
-      <id>Slowpoke</id>
-      <id>Slowbro</id>
-      <id>Magnemite</id>
-      <id>Magneton</id>
-      <id>Farfetch'd</id>
-      <id>Doduo</id>
-      <id>Dodrio</id>
-      <id>Seel</id>
-      <id>Dewgong</id>
-      <id>Grimer</id>
-      <id>Muk</id>
-      <id>Shellder</id>
-      <id>Cloyster</id>
-      <id>Gastly</id>
-      <id>Haunter</id>
-      <id>Gengar</id>
-      <id>Onix</id>
-      <id>Drowzee</id>
-      <id>Hypno</id>
-      <id>Krabby</id>
-      <id>Kingler</id>
-      <id>Voltorb</id>
-      <id>Electrode</id>
-      <id>Exeggcute</id>
-      <id>Exeggutor</id>
-      <id>Cubone</id>
-      <id>Marowak</id>
-      <id>Hitmonlee</id>
-      <id>Hitmonchan</id>
-      <id>Lickitung</id>
-      <id>Koffing</id>
-      <id>Weezing</id>
-      <id>Rhyhorn</id>
-      <id>Rhydon</id>
-      <id>Chansey</id>
-      <id>Tangela</id>
-      <id>Kangaskhan</id>
-      <id>Horsea</id>
-      <id>Seadra</id>
-      <id>Goldeen</id>
-      <id>Seaking</id>
-      <id>Staryu</id>
-      <id>Starmie</id>
-      <id>Mr. Mime</id>
-      <id>Scyther</id>
-      <id>Jynx</id>
-      <id>Electabuzz</id>
-      <id>Magmar</id>
-      <id>Pinsir</id>
-      <id>Tauros</id>
-      <id>Magikarp</id>
-      <id>Gyarados</id>
-      <id>Lapras</id>
-      <id>Ditto</id>
-      <id>Eevee</id>
-      <id>Vaporeon</id>
-      <id>Jolteon</id>
-      <id>Flareon</id>
-      <id>Porygon</id>
-      <id>Omanyte</id>
-      <id>Omastar</id>
-      <id>Kabuto</id>
-      <id>Kabutops</id>
-      <id>Aerodactyl</id>
-      <id>Snorlax</id>
-      <id>Articuno</id>
-      <id>Zapdos</id>
-      <id>Moltres</id>
-      <id>Dratini</id>
-      <id>Dragonair</id>
-      <id>Dragonite</id>
-      <id>Mewtwo</id>
-      <id>Mew</id>
+      <id spawnrate="1">Bulbasaur</id>
+      <id spawnrate="1">Ivysaur</id>
+      <id spawnrate="1">Venusaur</id>
+      <id spawnrate="1">Charmander</id>
+      <id spawnrate="1">Charmeleon</id>
+      <id spawnrate="1">Charizard</id>
+      <id spawnrate="1">Squirtle</id>
+      <id spawnrate="1">Wartortle</id>
+      <id spawnrate="1">Blastoise</id>
+      <id spawnrate="1">Caterpie</id>
+      <id spawnrate="1">Metapod</id>
+      <id spawnrate="1">Butterfree</id>
+      <id spawnrate="1">Weedle</id>
+      <id spawnrate="1">Kakuna</id>
+      <id spawnrate="1">Beedrill</id>
+      <id spawnrate="1">Pidgey</id>
+      <id spawnrate="1">Pidgeotto</id>
+      <id spawnrate="1">Pidgeot</id>
+      <id spawnrate="1">Rattata</id>
+      <id spawnrate="1">Raticate</id>
+      <id spawnrate="1">Spearow</id>
+      <id spawnrate="1">Fearow</id>
+      <id spawnrate="1">Ekans</id>
+      <id spawnrate="1">Arbok</id>
+      <id spawnrate="1">Pikachu</id>
+      <id spawnrate="1">Raichu</id>
+      <id spawnrate="1">Sandshrew</id>
+      <id spawnrate="1">Sandslash</id>
+      <id spawnrate="1">Nidoran♀</id>
+      <id spawnrate="1">Nidorina</id>
+      <id spawnrate="1">Nidoqueen</id>
+      <id spawnrate="1">Nidoran♂</id>
+      <id spawnrate="1">Nidorino</id>
+      <id spawnrate="1">Nidoking</id>
+      <id spawnrate="1">Clefairy</id>
+      <id spawnrate="1">Clefable</id>
+      <id spawnrate="1">Vulpix</id>
+      <id spawnrate="1">Ninetales</id>
+      <id spawnrate="1">Jigglypuff</id>
+      <id spawnrate="1">Wigglytuff</id>
+      <id spawnrate="1">Zubat</id>
+      <id spawnrate="1">Golbat</id>
+      <id spawnrate="1">Oddish</id>
+      <id spawnrate="1">Gloom</id>
+      <id spawnrate="1">Vileplume</id>
+      <id spawnrate="1">Paras</id>
+      <id spawnrate="1">Parasect</id>
+      <id spawnrate="1">Venonat</id>
+      <id spawnrate="1">Venomoth</id>
+      <id spawnrate="1">Diglett</id>
+      <id spawnrate="1">Dugtrio</id>
+      <id spawnrate="1">Meowth</id>
+      <id spawnrate="1">Persian</id>
+      <id spawnrate="1">Psyduck</id>
+      <id spawnrate="1">Golduck</id>
+      <id spawnrate="1">Mankey</id>
+      <id spawnrate="1">Primeape</id>
+      <id spawnrate="1">Growlithe</id>
+      <id spawnrate="1">Arcanine</id>
+      <id spawnrate="1">Poliwag</id>
+      <id spawnrate="1">Poliwhirl</id>
+      <id spawnrate="1">Poliwrath</id>
+      <id spawnrate="1">Abra</id>
+      <id spawnrate="1">Kadabra</id>
+      <id spawnrate="1">Alakazam</id>
+      <id spawnrate="1">Machop</id>
+      <id spawnrate="1">Machoke</id>
+      <id spawnrate="1">Machamp</id>
+      <id spawnrate="1">Bellsprout</id>
+      <id spawnrate="1">Weepinbell</id>
+      <id spawnrate="1">Victreebel</id>
+      <id spawnrate="1">Tentacool</id>
+      <id spawnrate="1">Tentacruel</id>
+      <id spawnrate="1">Geodude</id>
+      <id spawnrate="1">Graveler</id>
+      <id spawnrate="1">Golem</id>
+      <id spawnrate="1">Ponyta</id>
+      <id spawnrate="1">Rapidash</id>
+      <id spawnrate="1">Slowpoke</id>
+      <id spawnrate="1">Slowbro</id>
+      <id spawnrate="1">Magnemite</id>
+      <id spawnrate="1">Magneton</id>
+      <id spawnrate="1">Farfetch'd</id>
+      <id spawnrate="1">Doduo</id>
+      <id spawnrate="1">Dodrio</id>
+      <id spawnrate="1">Seel</id>
+      <id spawnrate="1">Dewgong</id>
+      <id spawnrate="1">Grimer</id>
+      <id spawnrate="1">Muk</id>
+      <id spawnrate="1">Shellder</id>
+      <id spawnrate="1">Cloyster</id>
+      <id spawnrate="1">Gastly</id>
+      <id spawnrate="1">Haunter</id>
+      <id spawnrate="1">Gengar</id>
+      <id spawnrate="1">Onix</id>
+      <id spawnrate="1">Drowzee</id>
+      <id spawnrate="1">Hypno</id>
+      <id spawnrate="1">Krabby</id>
+      <id spawnrate="1">Kingler</id>
+      <id spawnrate="1">Voltorb</id>
+      <id spawnrate="1">Electrode</id>
+      <id spawnrate="1">Exeggcute</id>
+      <id spawnrate="1">Exeggutor</id>
+      <id spawnrate="1">Cubone</id>
+      <id spawnrate="1">Marowak</id>
+      <id spawnrate="1">Hitmonlee</id>
+      <id spawnrate="1">Hitmonchan</id>
+      <id spawnrate="1">Lickitung</id>
+      <id spawnrate="1">Koffing</id>
+      <id spawnrate="1">Weezing</id>
+      <id spawnrate="1">Rhyhorn</id>
+      <id spawnrate="1">Rhydon</id>
+      <id spawnrate="1">Chansey</id>
+      <id spawnrate="1">Tangela</id>
+      <id spawnrate="1">Kangaskhan</id>
+      <id spawnrate="1">Horsea</id>
+      <id spawnrate="1">Seadra</id>
+      <id spawnrate="1">Goldeen</id>
+      <id spawnrate="1">Seaking</id>
+      <id spawnrate="1">Staryu</id>
+      <id spawnrate="1">Starmie</id>
+      <id spawnrate="1">Mr. Mime</id>
+      <id spawnrate="1">Scyther</id>
+      <id spawnrate="1">Jynx</id>
+      <id spawnrate="1">Electabuzz</id>
+      <id spawnrate="1">Magmar</id>
+      <id spawnrate="1">Pinsir</id>
+      <id spawnrate="1">Tauros</id>
+      <id spawnrate="1">Magikarp</id>
+      <id spawnrate="1">Gyarados</id>
+      <id spawnrate="1">Lapras</id>
+      <id spawnrate="1">Ditto</id>
+      <id spawnrate="1">Eevee</id>
+      <id spawnrate="1">Vaporeon</id>
+      <id spawnrate="1">Jolteon</id>
+      <id spawnrate="1">Flareon</id>
+      <id spawnrate="1">Porygon</id>
+      <id spawnrate="1">Omanyte</id>
+      <id spawnrate="1">Omastar</id>
+      <id spawnrate="1">Kabuto</id>
+      <id spawnrate="1">Kabutops</id>
+      <id spawnrate="1">Aerodactyl</id>
+      <id spawnrate="1">Snorlax</id>
+      <id spawnrate="1">Articuno</id>
+      <id spawnrate="1">Zapdos</id>
+      <id spawnrate="1">Moltres</id>
+      <id spawnrate="1">Dratini</id>
+      <id spawnrate="1">Dragonair</id>
+      <id spawnrate="1">Dragonite</id>
+      <id spawnrate="1">Mewtwo</id>
+      <id spawnrate="1">Mew</id>
     </Spawns>
   </Region>
   <Region Name="Johto">
     <MaxLevel>70</MaxLevel>
     <MinLevel>4</MinLevel>
     <Spawns>
-      <id>Chikorita</id>
-      <id>Bayleef</id>
-      <id>Meganium</id>
-      <id>Cyndaquil</id>
-      <id>Quilava</id>
-      <id>Typhlosion</id>
-      <id>Totodile</id>
-      <id>Croconaw</id>
-      <id>Feraligatr</id>
-      <id>Sentret</id>
-      <id>Furret</id>
-      <id>Hoothoot</id>
-      <id>Noctowl</id>
-      <id>Ledyba</id>
-      <id>Ledian</id>
-      <id>Spinarak</id>
-      <id>Ariados</id>
-      <id>Crobat</id>
-      <id>Chinchou</id>
-      <id>Lanturn</id>
-      <id>Pichu</id>
-      <id>Cleffa</id>
-      <id>Igglybuff</id>
-      <id>Togepi</id>
-      <id>Togetic</id>
-      <id>Natu</id>
-      <id>Xatu</id>
-      <id>Mareep</id>
-      <id>Flaaffy</id>
-      <id>Ampharos</id>
-      <id>Bellossom</id>
-      <id>Marill</id>
-      <id>Azumarill</id>
-      <id>Sudowoodo</id>
-      <id>Politoed</id>
-      <id>Hoppip</id>
-      <id>Skiploom</id>
-      <id>Jumpluff</id>
-      <id>Aipom</id>
-      <id>Sunkern</id>
-      <id>Sunflora</id>
-      <id>Yanma</id>
-      <id>Wooper</id>
-      <id>Quagsire</id>
-      <id>Espeon</id>
-      <id>Umbreon</id>
-      <id>Murkrow</id>
-      <id>Slowking</id>
-      <id>Misdreavus</id>
-      <id>Unown</id>
-      <id>Wobbuffet</id>
-      <id>Girafarig</id>
-      <id>Pineco</id>
-      <id>Forretress</id>
-      <id>Dunsparce</id>
-      <id>Gligar</id>
-      <id>Steelix</id>
-      <id>Snubbull</id>
-      <id>Granbull</id>
-      <id>Qwilfish</id>
-      <id>Scizor</id>
-      <id>Shuckle</id>
-      <id>Heracross</id>
-      <id>Sneasel</id>
-      <id>Teddiursa</id>
-      <id>Ursaring</id>
-      <id>Slugma</id>
-      <id>Magcargo</id>
-      <id>Swinub</id>
-      <id>Piloswine</id>
-      <id>Corsola</id>
-      <id>Remoraid</id>
-      <id>Octillery</id>
-      <id>Delibird</id>
-      <id>Mantine</id>
-      <id>Skarmory</id>
-      <id>Houndour</id>
-      <id>Houndoom</id>
-      <id>Kingdra</id>
-      <id>Phanpy</id>
-      <id>Donphan</id>
-      <id>Porygon2</id>
-      <id>Stantler</id>
-      <id>Smeargle</id>
-      <id>Tyrogue</id>
-      <id>Hitmontop</id>
-      <id>Smoochum</id>
-      <id>Elekid</id>
-      <id>Magby</id>
-      <id>Miltank</id>
-      <id>Blissey</id>
-      <id>Raikou</id>
-      <id>Entei</id>
-      <id>Suicune</id>
-      <id>Larvitar</id>
-      <id>Pupitar</id>
-      <id>Tyranitar</id>
-      <id>Lugia</id>
-      <id>Ho-Oh</id>
-      <id>Celebi</id>
+      <id spawnrate="1">Chikorita</id>
+      <id spawnrate="1">Bayleef</id>
+      <id spawnrate="1">Meganium</id>
+      <id spawnrate="1">Cyndaquil</id>
+      <id spawnrate="1">Quilava</id>
+      <id spawnrate="1">Typhlosion</id>
+      <id spawnrate="1">Totodile</id>
+      <id spawnrate="1">Croconaw</id>
+      <id spawnrate="1">Feraligatr</id>
+      <id spawnrate="1">Sentret</id>
+      <id spawnrate="1">Furret</id>
+      <id spawnrate="1">Hoothoot</id>
+      <id spawnrate="1">Noctowl</id>
+      <id spawnrate="1">Ledyba</id>
+      <id spawnrate="1">Ledian</id>
+      <id spawnrate="1">Spinarak</id>
+      <id spawnrate="1">Ariados</id>
+      <id spawnrate="1">Crobat</id>
+      <id spawnrate="1">Chinchou</id>
+      <id spawnrate="1">Lanturn</id>
+      <id spawnrate="1">Pichu</id>
+      <id spawnrate="1">Cleffa</id>
+      <id spawnrate="1">Igglybuff</id>
+      <id spawnrate="1">Togepi</id>
+      <id spawnrate="1">Togetic</id>
+      <id spawnrate="1">Natu</id>
+      <id spawnrate="1">Xatu</id>
+      <id spawnrate="1">Mareep</id>
+      <id spawnrate="1">Flaaffy</id>
+      <id spawnrate="1">Ampharos</id>
+      <id spawnrate="1">Bellossom</id>
+      <id spawnrate="1">Marill</id>
+      <id spawnrate="1">Azumarill</id>
+      <id spawnrate="1">Sudowoodo</id>
+      <id spawnrate="1">Politoed</id>
+      <id spawnrate="1">Hoppip</id>
+      <id spawnrate="1">Skiploom</id>
+      <id spawnrate="1">Jumpluff</id>
+      <id spawnrate="1">Aipom</id>
+      <id spawnrate="1">Sunkern</id>
+      <id spawnrate="1">Sunflora</id>
+      <id spawnrate="1">Yanma</id>
+      <id spawnrate="1">Wooper</id>
+      <id spawnrate="1">Quagsire</id>
+      <id spawnrate="1">Espeon</id>
+      <id spawnrate="1">Umbreon</id>
+      <id spawnrate="1">Murkrow</id>
+      <id spawnrate="1">Slowking</id>
+      <id spawnrate="1">Misdreavus</id>
+      <id spawnrate="1">Unown</id>
+      <id spawnrate="1">Wobbuffet</id>
+      <id spawnrate="1">Girafarig</id>
+      <id spawnrate="1">Pineco</id>
+      <id spawnrate="1">Forretress</id>
+      <id spawnrate="1">Dunsparce</id>
+      <id spawnrate="1">Gligar</id>
+      <id spawnrate="1">Steelix</id>
+      <id spawnrate="1">Snubbull</id>
+      <id spawnrate="1">Granbull</id>
+      <id spawnrate="1">Qwilfish</id>
+      <id spawnrate="1">Scizor</id>
+      <id spawnrate="1">Shuckle</id>
+      <id spawnrate="1">Heracross</id>
+      <id spawnrate="1">Sneasel</id>
+      <id spawnrate="1">Teddiursa</id>
+      <id spawnrate="1">Ursaring</id>
+      <id spawnrate="1">Slugma</id>
+      <id spawnrate="1">Magcargo</id>
+      <id spawnrate="1">Swinub</id>
+      <id spawnrate="1">Piloswine</id>
+      <id spawnrate="1">Corsola</id>
+      <id spawnrate="1">Remoraid</id>
+      <id spawnrate="1">Octillery</id>
+      <id spawnrate="1">Delibird</id>
+      <id spawnrate="1">Mantine</id>
+      <id spawnrate="1">Skarmory</id>
+      <id spawnrate="1">Houndour</id>
+      <id spawnrate="1">Houndoom</id>
+      <id spawnrate="1">Kingdra</id>
+      <id spawnrate="1">Phanpy</id>
+      <id spawnrate="1">Donphan</id>
+      <id spawnrate="1">Porygon2</id>
+      <id spawnrate="1">Stantler</id>
+      <id spawnrate="1">Smeargle</id>
+      <id spawnrate="1">Tyrogue</id>
+      <id spawnrate="1">Hitmontop</id>
+      <id spawnrate="1">Smoochum</id>
+      <id spawnrate="1">Elekid</id>
+      <id spawnrate="1">Magby</id>
+      <id spawnrate="1">Miltank</id>
+      <id spawnrate="1">Blissey</id>
+      <id spawnrate="1">Raikou</id>
+      <id spawnrate="1">Entei</id>
+      <id spawnrate="1">Suicune</id>
+      <id spawnrate="1">Larvitar</id>
+      <id spawnrate="1">Pupitar</id>
+      <id spawnrate="1">Tyranitar</id>
+      <id spawnrate="1">Lugia</id>
+      <id spawnrate="1">Ho-Oh</id>
+      <id spawnrate="1">Celebi</id>
     </Spawns>
   </Region>
   <Region Name="Hoenn">
     <MaxLevel>75</MaxLevel>
     <MinLevel>5</MinLevel>
     <Spawns>
-      <id>Treecko</id>
-      <id>Grovyle</id>
-      <id>Sceptile</id>
-      <id>Torchic</id>
-      <id>Combusken</id>
-      <id>Blaziken</id>
-      <id>Mudkip</id>
-      <id>Marshtomp</id>
-      <id>Swampert</id>
-      <id>Poochyena</id>
-      <id>Mightyena</id>
-      <id>Zigzagoon</id>
-      <id>Linoone</id>
-      <id>Wurmple</id>
-      <id>Silcoon</id>
-      <id>Beautifly</id>
-      <id>Cascoon</id>
-      <id>Dustox</id>
-      <id>Lotad</id>
-      <id>Lombre</id>
-      <id>Ludicolo</id>
-      <id>Seedot</id>
-      <id>Nuzleaf</id>
-      <id>Shiftry</id>
-      <id>Taillow</id>
-      <id>Swellow</id>
-      <id>Wingull</id>
-      <id>Pelipper</id>
-      <id>Ralts</id>
-      <id>Kirlia</id>
-      <id>Gardevoir</id>
-      <id>Surskit</id>
-      <id>Masquerain</id>
-      <id>Shroomish</id>
-      <id>Breloom</id>
-      <id>Slakoth</id>
-      <id>Vigoroth</id>
-      <id>Slaking</id>
-      <id>Nincada</id>
-      <id>Ninjask</id>
-      <id>Shedinja</id>
-      <id>Whismur</id>
-      <id>Loudred</id>
-      <id>Exploud</id>
-      <id>Makuhita</id>
-      <id>Hariyama</id>
-      <id>Azurill</id>
-      <id>Nosepass</id>
-      <id>Skitty</id>
-      <id>Delcatty</id>
-      <id>Sableye</id>
-      <id>Mawile</id>
-      <id>Aron</id>
-      <id>Lairon</id>
-      <id>Aggron</id>
-      <id>Meditite</id>
-      <id>Medicham</id>
-      <id>Electrike</id>
-      <id>Manectric</id>
-      <id>Plusle</id>
-      <id>Minun</id>
-      <id>Volbeat</id>
-      <id>Illumise</id>
-      <id>Roselia</id>
-      <id>Gulpin</id>
-      <id>Swalot</id>
-      <id>Carvanha</id>
-      <id>Sharpedo</id>
-      <id>Wailmer</id>
-      <id>Wailord</id>
-      <id>Numel</id>
-      <id>Camerupt</id>
-      <id>Torkoal</id>
-      <id>Spoink</id>
-      <id>Grumpig</id>
-      <id>Spinda</id>
-      <id>Trapinch</id>
-      <id>Vibrava</id>
-      <id>Flygon</id>
-      <id>Cacnea</id>
-      <id>Cacturne</id>
-      <id>Swablu</id>
-      <id>Altaria</id>
-      <id>Zangoose</id>
-      <id>Seviper</id>
-      <id>Lunatone</id>
-      <id>Solrock</id>
-      <id>Barboach</id>
-      <id>Whiscash</id>
-      <id>Corphish</id>
-      <id>Crawdaunt</id>
-      <id>Baltoy</id>
-      <id>Claydol</id>
-      <id>Lileep</id>
-      <id>Cradily</id>
-      <id>Anorith</id>
-      <id>Armaldo</id>
-      <id>Feebas</id>
-      <id>Milotic</id>
-      <id>Castform</id>
-      <id>Kecleon</id>
-      <id>Shuppet</id>
-      <id>Banette</id>
-      <id>Duskull</id>
-      <id>Dusclops</id>
-      <id>Tropius</id>
-      <id>Chimecho</id>
-      <id>Absol</id>
-      <id>Wynaut</id>
-      <id>Snorunt</id>
-      <id>Glalie</id>
-      <id>Spheal</id>
-      <id>Sealeo</id>
-      <id>Walrein</id>
-      <id>Clamperl</id>
-      <id>Huntail</id>
-      <id>Gorebyss</id>
-      <id>Relicanth</id>
-      <id>Luvdisc</id>
-      <id>Bagon</id>
-      <id>Shelgon</id>
-      <id>Salamence</id>
-      <id>Beldum</id>
-      <id>Metang</id>
-      <id>Metagross</id>
-      <id>Regirock</id>
-      <id>Regice</id>
-      <id>Registeel</id>
-      <id>Latias</id>
-      <id>Latios</id>
-      <id>Kyogre</id>
-      <id>Groudon</id>
-      <id>Rayquaza</id>
-      <id>Jirachi</id>
-      <id>Deoxys (Normal Forme)</id>
-      <id>Deoxys (Attack Forme)</id>
-      <id>Deoxys (Defense Forme)</id>
-      <id>Deoxys (Speed Forme)</id>
+      <id spawnrate="1">Treecko</id>
+      <id spawnrate="1">Grovyle</id>
+      <id spawnrate="1">Sceptile</id>
+      <id spawnrate="1">Torchic</id>
+      <id spawnrate="1">Combusken</id>
+      <id spawnrate="1">Blaziken</id>
+      <id spawnrate="1">Mudkip</id>
+      <id spawnrate="1">Marshtomp</id>
+      <id spawnrate="1">Swampert</id>
+      <id spawnrate="1">Poochyena</id>
+      <id spawnrate="1">Mightyena</id>
+      <id spawnrate="1">Zigzagoon</id>
+      <id spawnrate="1">Linoone</id>
+      <id spawnrate="1">Wurmple</id>
+      <id spawnrate="1">Silcoon</id>
+      <id spawnrate="1">Beautifly</id>
+      <id spawnrate="1">Cascoon</id>
+      <id spawnrate="1">Dustox</id>
+      <id spawnrate="1">Lotad</id>
+      <id spawnrate="1">Lombre</id>
+      <id spawnrate="1">Ludicolo</id>
+      <id spawnrate="1">Seedot</id>
+      <id spawnrate="1">Nuzleaf</id>
+      <id spawnrate="1">Shiftry</id>
+      <id spawnrate="1">Taillow</id>
+      <id spawnrate="1">Swellow</id>
+      <id spawnrate="1">Wingull</id>
+      <id spawnrate="1">Pelipper</id>
+      <id spawnrate="1">Ralts</id>
+      <id spawnrate="1">Kirlia</id>
+      <id spawnrate="1">Gardevoir</id>
+      <id spawnrate="1">Surskit</id>
+      <id spawnrate="1">Masquerain</id>
+      <id spawnrate="1">Shroomish</id>
+      <id spawnrate="1">Breloom</id>
+      <id spawnrate="1">Slakoth</id>
+      <id spawnrate="1">Vigoroth</id>
+      <id spawnrate="1">Slaking</id>
+      <id spawnrate="1">Nincada</id>
+      <id spawnrate="1">Ninjask</id>
+      <id spawnrate="1">Shedinja</id>
+      <id spawnrate="1">Whismur</id>
+      <id spawnrate="1">Loudred</id>
+      <id spawnrate="1">Exploud</id>
+      <id spawnrate="1">Makuhita</id>
+      <id spawnrate="1">Hariyama</id>
+      <id spawnrate="1">Azurill</id>
+      <id spawnrate="1">Nosepass</id>
+      <id spawnrate="1">Skitty</id>
+      <id spawnrate="1">Delcatty</id>
+      <id spawnrate="1">Sableye</id>
+      <id spawnrate="1">Mawile</id>
+      <id spawnrate="1">Aron</id>
+      <id spawnrate="1">Lairon</id>
+      <id spawnrate="1">Aggron</id>
+      <id spawnrate="1">Meditite</id>
+      <id spawnrate="1">Medicham</id>
+      <id spawnrate="1">Electrike</id>
+      <id spawnrate="1">Manectric</id>
+      <id spawnrate="1">Plusle</id>
+      <id spawnrate="1">Minun</id>
+      <id spawnrate="1">Volbeat</id>
+      <id spawnrate="1">Illumise</id>
+      <id spawnrate="1">Roselia</id>
+      <id spawnrate="1">Gulpin</id>
+      <id spawnrate="1">Swalot</id>
+      <id spawnrate="1">Carvanha</id>
+      <id spawnrate="1">Sharpedo</id>
+      <id spawnrate="1">Wailmer</id>
+      <id spawnrate="1">Wailord</id>
+      <id spawnrate="1">Numel</id>
+      <id spawnrate="1">Camerupt</id>
+      <id spawnrate="1">Torkoal</id>
+      <id spawnrate="1">Spoink</id>
+      <id spawnrate="1">Grumpig</id>
+      <id spawnrate="1">Spinda</id>
+      <id spawnrate="1">Trapinch</id>
+      <id spawnrate="1">Vibrava</id>
+      <id spawnrate="1">Flygon</id>
+      <id spawnrate="1">Cacnea</id>
+      <id spawnrate="1">Cacturne</id>
+      <id spawnrate="1">Swablu</id>
+      <id spawnrate="1">Altaria</id>
+      <id spawnrate="1">Zangoose</id>
+      <id spawnrate="1">Seviper</id>
+      <id spawnrate="1">Lunatone</id>
+      <id spawnrate="1">Solrock</id>
+      <id spawnrate="1">Barboach</id>
+      <id spawnrate="1">Whiscash</id>
+      <id spawnrate="1">Corphish</id>
+      <id spawnrate="1">Crawdaunt</id>
+      <id spawnrate="1">Baltoy</id>
+      <id spawnrate="1">Claydol</id>
+      <id spawnrate="1">Lileep</id>
+      <id spawnrate="1">Cradily</id>
+      <id spawnrate="1">Anorith</id>
+      <id spawnrate="1">Armaldo</id>
+      <id spawnrate="1">Feebas</id>
+      <id spawnrate="1">Milotic</id>
+      <id spawnrate="1">Castform</id>
+      <id spawnrate="1">Kecleon</id>
+      <id spawnrate="1">Shuppet</id>
+      <id spawnrate="1">Banette</id>
+      <id spawnrate="1">Duskull</id>
+      <id spawnrate="1">Dusclops</id>
+      <id spawnrate="1">Tropius</id>
+      <id spawnrate="1">Chimecho</id>
+      <id spawnrate="1">Absol</id>
+      <id spawnrate="1">Wynaut</id>
+      <id spawnrate="1">Snorunt</id>
+      <id spawnrate="1">Glalie</id>
+      <id spawnrate="1">Spheal</id>
+      <id spawnrate="1">Sealeo</id>
+      <id spawnrate="1">Walrein</id>
+      <id spawnrate="1">Clamperl</id>
+      <id spawnrate="1">Huntail</id>
+      <id spawnrate="1">Gorebyss</id>
+      <id spawnrate="1">Relicanth</id>
+      <id spawnrate="1">Luvdisc</id>
+      <id spawnrate="1">Bagon</id>
+      <id spawnrate="1">Shelgon</id>
+      <id spawnrate="1">Salamence</id>
+      <id spawnrate="1">Beldum</id>
+      <id spawnrate="1">Metang</id>
+      <id spawnrate="1">Metagross</id>
+      <id spawnrate="1">Regirock</id>
+      <id spawnrate="1">Regice</id>
+      <id spawnrate="1">Registeel</id>
+      <id spawnrate="1">Latias</id>
+      <id spawnrate="1">Latios</id>
+      <id spawnrate="1">Kyogre</id>
+      <id spawnrate="1">Groudon</id>
+      <id spawnrate="1">Rayquaza</id>
+      <id spawnrate="1">Jirachi</id>
+      <id spawnrate="1">Deoxys (Normal Forme)</id>
+      <id spawnrate="1">Deoxys (Attack Forme)</id>
+      <id spawnrate="1">Deoxys (Defense Forme)</id>
+      <id spawnrate="1">Deoxys (Speed Forme)</id>
     </Spawns>
   </Region>
   <Region Name="Sinnoh">
     <MaxLevel>80</MaxLevel>
     <MinLevel>6</MinLevel>
     <Spawns>
-      <id>Turtwig</id>
-      <id>Grotle</id>
-      <id>Torterra</id>
-      <id>Chimchar</id>
-      <id>Monferno</id>
-      <id>Infernape</id>
-      <id>Piplup</id>
-      <id>Prinplup</id>
-      <id>Empoleon</id>
-      <id>Starly</id>
-      <id>Staravia</id>
-      <id>Staraptor</id>
-      <id>Bidoof</id>
-      <id>Bibarel</id>
-      <id>Kricketot</id>
-      <id>Kricketune</id>
-      <id>Shinx</id>
-      <id>Luxio</id>
-      <id>Luxray</id>
-      <id>Budew</id>
-      <id>Roserade</id>
-      <id>Cranidos</id>
-      <id>Rampardos</id>
-      <id>Shieldon</id>
-      <id>Bastiodon</id>
-      <id>Burmy</id>
-      <id>Wormadam (Plant Cloak Form)</id>
-      <id>Wormadam (Sandy Cloak Form)</id>
-      <id>Wormadam (Trash Cloak Form)</id>
-      <id>Mothim</id>
-      <id>Combee</id>
-      <id>Vespiquen</id>
-      <id>Pachirisu</id>
-      <id>Buizel</id>
-      <id>Floatzel</id>
-      <id>Cherubi</id>
-      <id>Cherrim</id>
-      <id>Shellos</id>
-      <id>Gastrodon</id>
-      <id>Ambipom</id>
-      <id>Drifloon</id>
-      <id>Drifblim</id>
-      <id>Buneary</id>
-      <id>Lopunny</id>
-      <id>Mismagius</id>
-      <id>Honchkrow</id>
-      <id>Glameow</id>
-      <id>Purugly</id>
-      <id>Chingling</id>
-      <id>Stunky</id>
-      <id>Skuntank</id>
-      <id>Bronzor</id>
-      <id>Bronzong</id>
-      <id>Bonsly</id>
-      <id>Mime Jr.</id>
-      <id>Happiny</id>
-      <id>Chatot</id>
-      <id>Spiritomb</id>
-      <id>Gible</id>
-      <id>Gabite</id>
-      <id>Garchomp</id>
-      <id>Munchlax</id>
-      <id>Riolu</id>
-      <id>Lucario</id>
-      <id>Hippopotas</id>
-      <id>Hippowdon</id>
-      <id>Skorupi</id>
-      <id>Drapion</id>
-      <id>Croagunk</id>
-      <id>Toxicroak</id>
-      <id>Carnivine</id>
-      <id>Finneon</id>
-      <id>Lumineon</id>
-      <id>Mantyke</id>
-      <id>Snover</id>
-      <id>Abomasnow</id>
-      <id>Weavile</id>
-      <id>Magnezone</id>
-      <id>Lickilicky</id>
-      <id>Rhyperior</id>
-      <id>Tangrowth</id>
-      <id>Electivire</id>
-      <id>Magmortar</id>
-      <id>Togekiss</id>
-      <id>Yanmega</id>
-      <id>Leafeon</id>
-      <id>Glaceon</id>
-      <id>Gliscor</id>
-      <id>Mamoswine</id>
-      <id>Porygon-Z</id>
-      <id>Gallade</id>
-      <id>Probopass</id>
-      <id>Dusknoir</id>
-      <id>Froslass</id>
-      <id>Rotom (Normal)</id>
-      <id>Rotom (Fan)</id>
-      <id>Rotom (Frost)</id>
-      <id>Rotom (Heat)</id>
-      <id>Rotom (Mow)</id>
-      <id>Rotom (Wash)</id>
-      <id>Uxie</id>
-      <id>Mesprit</id>
-      <id>Azelf</id>
-      <id>Dialga</id>
-      <id>Palkia</id>
-      <id>Heatran</id>
-      <id>Regigigas</id>
-      <id>Giratina (Altered Forme)</id>
-      <id>Giratina (Origin Forme)</id>
-      <id>Cresselia</id>
-      <id>Phione</id>
-      <id>Manaphy</id>
-      <id>Darkrai</id>
-      <id>Shaymin (Land Forme)</id>
-      <id>Shaymin (Sky Forme)</id>
-      <id>Arceus</id>
-      <id>Victini</id>
+      <id spawnrate="1">Turtwig</id>
+      <id spawnrate="1">Grotle</id>
+      <id spawnrate="1">Torterra</id>
+      <id spawnrate="1">Chimchar</id>
+      <id spawnrate="1">Monferno</id>
+      <id spawnrate="1">Infernape</id>
+      <id spawnrate="1">Piplup</id>
+      <id spawnrate="1">Prinplup</id>
+      <id spawnrate="1">Empoleon</id>
+      <id spawnrate="1">Starly</id>
+      <id spawnrate="1">Staravia</id>
+      <id spawnrate="1">Staraptor</id>
+      <id spawnrate="1">Bidoof</id>
+      <id spawnrate="1">Bibarel</id>
+      <id spawnrate="1">Kricketot</id>
+      <id spawnrate="1">Kricketune</id>
+      <id spawnrate="1">Shinx</id>
+      <id spawnrate="1">Luxio</id>
+      <id spawnrate="1">Luxray</id>
+      <id spawnrate="1">Budew</id>
+      <id spawnrate="1">Roserade</id>
+      <id spawnrate="1">Cranidos</id>
+      <id spawnrate="1">Rampardos</id>
+      <id spawnrate="1">Shieldon</id>
+      <id spawnrate="1">Bastiodon</id>
+      <id spawnrate="1">Burmy</id>
+      <id spawnrate="1">Wormadam (Plant Cloak Form)</id>
+      <id spawnrate="1">Wormadam (Sandy Cloak Form)</id>
+      <id spawnrate="1">Wormadam (Trash Cloak Form)</id>
+      <id spawnrate="1">Mothim</id>
+      <id spawnrate="1">Combee</id>
+      <id spawnrate="1">Vespiquen</id>
+      <id spawnrate="1">Pachirisu</id>
+      <id spawnrate="1">Buizel</id>
+      <id spawnrate="1">Floatzel</id>
+      <id spawnrate="1">Cherubi</id>
+      <id spawnrate="1">Cherrim</id>
+      <id spawnrate="1">Shellos</id>
+      <id spawnrate="1">Gastrodon</id>
+      <id spawnrate="1">Ambipom</id>
+      <id spawnrate="1">Drifloon</id>
+      <id spawnrate="1">Drifblim</id>
+      <id spawnrate="1">Buneary</id>
+      <id spawnrate="1">Lopunny</id>
+      <id spawnrate="1">Mismagius</id>
+      <id spawnrate="1">Honchkrow</id>
+      <id spawnrate="1">Glameow</id>
+      <id spawnrate="1">Purugly</id>
+      <id spawnrate="1">Chingling</id>
+      <id spawnrate="1">Stunky</id>
+      <id spawnrate="1">Skuntank</id>
+      <id spawnrate="1">Bronzor</id>
+      <id spawnrate="1">Bronzong</id>
+      <id spawnrate="1">Bonsly</id>
+      <id spawnrate="1">Mime Jr.</id>
+      <id spawnrate="1">Happiny</id>
+      <id spawnrate="1">Chatot</id>
+      <id spawnrate="1">Spiritomb</id>
+      <id spawnrate="1">Gible</id>
+      <id spawnrate="1">Gabite</id>
+      <id spawnrate="1">Garchomp</id>
+      <id spawnrate="1">Munchlax</id>
+      <id spawnrate="1">Riolu</id>
+      <id spawnrate="1">Lucario</id>
+      <id spawnrate="1">Hippopotas</id>
+      <id spawnrate="1">Hippowdon</id>
+      <id spawnrate="1">Skorupi</id>
+      <id spawnrate="1">Drapion</id>
+      <id spawnrate="1">Croagunk</id>
+      <id spawnrate="1">Toxicroak</id>
+      <id spawnrate="1">Carnivine</id>
+      <id spawnrate="1">Finneon</id>
+      <id spawnrate="1">Lumineon</id>
+      <id spawnrate="1">Mantyke</id>
+      <id spawnrate="1">Snover</id>
+      <id spawnrate="1">Abomasnow</id>
+      <id spawnrate="1">Weavile</id>
+      <id spawnrate="1">Magnezone</id>
+      <id spawnrate="1">Lickilicky</id>
+      <id spawnrate="1">Rhyperior</id>
+      <id spawnrate="1">Tangrowth</id>
+      <id spawnrate="1">Electivire</id>
+      <id spawnrate="1">Magmortar</id>
+      <id spawnrate="1">Togekiss</id>
+      <id spawnrate="1">Yanmega</id>
+      <id spawnrate="1">Leafeon</id>
+      <id spawnrate="1">Glaceon</id>
+      <id spawnrate="1">Gliscor</id>
+      <id spawnrate="1">Mamoswine</id>
+      <id spawnrate="1">Porygon-Z</id>
+      <id spawnrate="1">Gallade</id>
+      <id spawnrate="1">Probopass</id>
+      <id spawnrate="1">Dusknoir</id>
+      <id spawnrate="1">Froslass</id>
+      <id spawnrate="1">Rotom (Normal)</id>
+      <id spawnrate="1">Rotom (Fan)</id>
+      <id spawnrate="1">Rotom (Frost)</id>
+      <id spawnrate="1">Rotom (Heat)</id>
+      <id spawnrate="1">Rotom (Mow)</id>
+      <id spawnrate="1">Rotom (Wash)</id>
+      <id spawnrate="1">Uxie</id>
+      <id spawnrate="1">Mesprit</id>
+      <id spawnrate="1">Azelf</id>
+      <id spawnrate="1">Dialga</id>
+      <id spawnrate="1">Palkia</id>
+      <id spawnrate="1">Heatran</id>
+      <id spawnrate="1">Regigigas</id>
+      <id spawnrate="1">Giratina (Altered Forme)</id>
+      <id spawnrate="1">Giratina (Origin Forme)</id>
+      <id spawnrate="1">Cresselia</id>
+      <id spawnrate="1">Phione</id>
+      <id spawnrate="1">Manaphy</id>
+      <id spawnrate="1">Darkrai</id>
+      <id spawnrate="1">Shaymin (Land Forme)</id>
+      <id spawnrate="1">Shaymin (Sky Forme)</id>
+      <id spawnrate="1">Arceus</id>
+      <id spawnrate="1">Victini</id>
     </Spawns>
   </Region>
   <Region Name="Unova">
     <MaxLevel>85</MaxLevel>
     <MinLevel>7</MinLevel>
     <Spawns>
-      <id>Snivy</id>
-      <id>Servine</id>
-      <id>Serperior</id>
-      <id>Tepig</id>
-      <id>Pignite</id>
-      <id>Emboar</id>
-      <id>Oshawott</id>
-      <id>Dewott</id>
-      <id>Samurott</id>
-      <id>Patrat</id>
-      <id>Watchog</id>
-      <id>Lillipup</id>
-      <id>Herdier</id>
-      <id>Stoutland</id>
-      <id>Purrloin</id>
-      <id>Liepard</id>
-      <id>Pansage</id>
-      <id>Simisage</id>
-      <id>Pansear</id>
-      <id>Simisear</id>
-      <id>Panpour</id>
-      <id>Simipour</id>
-      <id>Munna</id>
-      <id>Musharna</id>
-      <id>Pidove</id>
-      <id>Tranquill</id>
-      <id>Unfezant (Female)</id>
-      <id>Unfezant (Male)</id>
-      <id>Blitzle</id>
-      <id>Zebstrika</id>
-      <id>Roggenrola</id>
-      <id>Boldore</id>
-      <id>Gigalith</id>
-      <id>Woobat</id>
-      <id>Swoobat</id>
-      <id>Drilbur</id>
-      <id>Excadrill</id>
-      <id>Audino</id>
-      <id>Timburr</id>
-      <id>Gurdurr</id>
-      <id>Conkeldurr</id>
-      <id>Tympole</id>
-      <id>Palpitoad</id>
-      <id>Seismitoad</id>
-      <id>Throh</id>
-      <id>Sawk</id>
-      <id>Sewaddle</id>
-      <id>Swadloon</id>
-      <id>Leavanny</id>
-      <id>Venipede</id>
-      <id>Whirlipede</id>
-      <id>Scolipede</id>
-      <id>Cottonee</id>
-      <id>Whimsicott</id>
-      <id>Petilil</id>
-      <id>Lilligant</id>
-      <id>Basculin (Blue)</id>
-      <id>Basculin (Red)</id>
-      <id>Sandile</id>
-      <id>Krokorok</id>
-      <id>Krookodile</id>
-      <id>Darumaka</id>
-      <id>Darmanitan</id>
-      <id>Maractus</id>
-      <id>Dwebble</id>
-      <id>Crustle</id>
-      <id>Scraggy</id>
-      <id>Scrafty</id>
-      <id>Sigilyph</id>
-      <id>Yamask</id>
-      <id>Cofagrigus</id>
-      <id>Tirtouga</id>
-      <id>Carracosta</id>
-      <id>Archen</id>
-      <id>Archeops</id>
-      <id>Trubbish</id>
-      <id>Garbodor</id>
-      <id>Zorua</id>
-      <id>Zoroark</id>
-      <id>Minccino</id>
-      <id>Cinccino</id>
-      <id>Gothita</id>
-      <id>Gothorita</id>
-      <id>Gothitelle</id>
-      <id>Solosis</id>
-      <id>Duosion</id>
-      <id>Reuniclus</id>
-      <id>Ducklett</id>
-      <id>Swanna</id>
-      <id>Vanillite</id>
-      <id>Vanillish</id>
-      <id>Vanilluxe</id>
-      <id>Deerling</id>
-      <id>Sawsbuck</id>
-      <id>Emolga</id>
-      <id>Karrablast</id>
-      <id>Escavalier</id>
-      <id>Foongus</id>
-      <id>Amoonguss</id>
-      <id>Frillish</id>
-      <id>Jellicent</id>
-      <id>Alomomola</id>
-      <id>Joltik</id>
-      <id>Galvantula</id>
-      <id>Ferroseed</id>
-      <id>Ferrothorn</id>
-      <id>Klink</id>
-      <id>Klang</id>
-      <id>Klinklang</id>
-      <id>Tynamo</id>
-      <id>Eelektrik</id>
-      <id>Eelektross</id>
-      <id>Elgyem</id>
-      <id>Beheeyem</id>
-      <id>Litwick</id>
-      <id>Lampant</id>
-      <id>Chandelure</id>
-      <id>Axew</id>
-      <id>Fraxure</id>
-      <id>Haxorus</id>
-      <id>Chubchoo</id>
-      <id>Beartic</id>
-      <id>Cryogonal</id>
-      <id>Shelmet</id>
-      <id>Accelgor</id>
-      <id>Stunfisk</id>
-      <id>Mienfoo</id>
-      <id>Mienshao</id>
-      <id>Druddigon</id>
-      <id>Golett</id>
-      <id>Golurk</id>
-      <id>Pawniard</id>
-      <id>Bisharp</id>
-      <id>Bouffalant</id>
-      <id>Rufflet</id>
-      <id>Braviary</id>
-      <id>Vullaby</id>
-      <id>Mandibuzz</id>
-      <id>Heatmor</id>
-      <id>Durant</id>
-      <id>Deino</id>
-      <id>Zweuilous</id>
-      <id>Hydreigon</id>
-      <id>Larvesta</id>
-      <id>Volcarona</id>
-      <id>Cobalion</id>
-      <id>Terrakion</id>
-      <id>Virizion</id>
-      <id>Tornadus (Incarnate Forme)</id>
-      <id>Tornadus (Therian Forme)</id>
-      <id>Thundurus (Incarnate Forme)</id>
-      <id>Thundurus (Therian Forme)</id>
-      <id>Reshiram</id>
-      <id>Zekrom</id>
-      <id>Landorus (Incarnate Forme)</id>
-      <id>Landorus (Therian Forme)</id>
-      <id>Kyurem</id>
-      <id>Kyurem (Zekrom Fusion Form)</id>
-      <id>Kyurem (Reshiram Fusion Form)</id>
-      <id>Keldeo</id>
-      <id>Meloetta (Aria Form)</id>
-      <id>Meloetta (Step Form)</id>
-      <id>Genesect</id>
+      <id spawnrate="1">Snivy</id>
+      <id spawnrate="1">Servine</id>
+      <id spawnrate="1">Serperior</id>
+      <id spawnrate="1">Tepig</id>
+      <id spawnrate="1">Pignite</id>
+      <id spawnrate="1">Emboar</id>
+      <id spawnrate="1">Oshawott</id>
+      <id spawnrate="1">Dewott</id>
+      <id spawnrate="1">Samurott</id>
+      <id spawnrate="1">Patrat</id>
+      <id spawnrate="1">Watchog</id>
+      <id spawnrate="1">Lillipup</id>
+      <id spawnrate="1">Herdier</id>
+      <id spawnrate="1">Stoutland</id>
+      <id spawnrate="1">Purrloin</id>
+      <id spawnrate="1">Liepard</id>
+      <id spawnrate="1">Pansage</id>
+      <id spawnrate="1">Simisage</id>
+      <id spawnrate="1">Pansear</id>
+      <id spawnrate="1">Simisear</id>
+      <id spawnrate="1">Panpour</id>
+      <id spawnrate="1">Simipour</id>
+      <id spawnrate="1">Munna</id>
+      <id spawnrate="1">Musharna</id>
+      <id spawnrate="1">Pidove</id>
+      <id spawnrate="1">Tranquill</id>
+      <id spawnrate="1">Unfezant (Female)</id>
+      <id spawnrate="1">Unfezant (Male)</id>
+      <id spawnrate="1">Blitzle</id>
+      <id spawnrate="1">Zebstrika</id>
+      <id spawnrate="1">Roggenrola</id>
+      <id spawnrate="1">Boldore</id>
+      <id spawnrate="1">Gigalith</id>
+      <id spawnrate="1">Woobat</id>
+      <id spawnrate="1">Swoobat</id>
+      <id spawnrate="1">Drilbur</id>
+      <id spawnrate="1">Excadrill</id>
+      <id spawnrate="1">Audino</id>
+      <id spawnrate="1">Timburr</id>
+      <id spawnrate="1">Gurdurr</id>
+      <id spawnrate="1">Conkeldurr</id>
+      <id spawnrate="1">Tympole</id>
+      <id spawnrate="1">Palpitoad</id>
+      <id spawnrate="1">Seismitoad</id>
+      <id spawnrate="1">Throh</id>
+      <id spawnrate="1">Sawk</id>
+      <id spawnrate="1">Sewaddle</id>
+      <id spawnrate="1">Swadloon</id>
+      <id spawnrate="1">Leavanny</id>
+      <id spawnrate="1">Venipede</id>
+      <id spawnrate="1">Whirlipede</id>
+      <id spawnrate="1">Scolipede</id>
+      <id spawnrate="1">Cottonee</id>
+      <id spawnrate="1">Whimsicott</id>
+      <id spawnrate="1">Petilil</id>
+      <id spawnrate="1">Lilligant</id>
+      <id spawnrate="1">Basculin (Blue)</id>
+      <id spawnrate="1">Basculin (Red)</id>
+      <id spawnrate="1">Sandile</id>
+      <id spawnrate="1">Krokorok</id>
+      <id spawnrate="1">Krookodile</id>
+      <id spawnrate="1">Darumaka</id>
+      <id spawnrate="1">Darmanitan</id>
+      <id spawnrate="1">Maractus</id>
+      <id spawnrate="1">Dwebble</id>
+      <id spawnrate="1">Crustle</id>
+      <id spawnrate="1">Scraggy</id>
+      <id spawnrate="1">Scrafty</id>
+      <id spawnrate="1">Sigilyph</id>
+      <id spawnrate="1">Yamask</id>
+      <id spawnrate="1">Cofagrigus</id>
+      <id spawnrate="1">Tirtouga</id>
+      <id spawnrate="1">Carracosta</id>
+      <id spawnrate="1">Archen</id>
+      <id spawnrate="1">Archeops</id>
+      <id spawnrate="1">Trubbish</id>
+      <id spawnrate="1">Garbodor</id>
+      <id spawnrate="1">Zorua</id>
+      <id spawnrate="1">Zoroark</id>
+      <id spawnrate="1">Minccino</id>
+      <id spawnrate="1">Cinccino</id>
+      <id spawnrate="1">Gothita</id>
+      <id spawnrate="1">Gothorita</id>
+      <id spawnrate="1">Gothitelle</id>
+      <id spawnrate="1">Solosis</id>
+      <id spawnrate="1">Duosion</id>
+      <id spawnrate="1">Reuniclus</id>
+      <id spawnrate="1">Ducklett</id>
+      <id spawnrate="1">Swanna</id>
+      <id spawnrate="1">Vanillite</id>
+      <id spawnrate="1">Vanillish</id>
+      <id spawnrate="1">Vanilluxe</id>
+      <id spawnrate="1">Deerling</id>
+      <id spawnrate="1">Sawsbuck</id>
+      <id spawnrate="1">Emolga</id>
+      <id spawnrate="1">Karrablast</id>
+      <id spawnrate="1">Escavalier</id>
+      <id spawnrate="1">Foongus</id>
+      <id spawnrate="1">Amoonguss</id>
+      <id spawnrate="1">Frillish</id>
+      <id spawnrate="1">Jellicent</id>
+      <id spawnrate="1">Alomomola</id>
+      <id spawnrate="1">Joltik</id>
+      <id spawnrate="1">Galvantula</id>
+      <id spawnrate="1">Ferroseed</id>
+      <id spawnrate="1">Ferrothorn</id>
+      <id spawnrate="1">Klink</id>
+      <id spawnrate="1">Klang</id>
+      <id spawnrate="1">Klinklang</id>
+      <id spawnrate="1">Tynamo</id>
+      <id spawnrate="1">Eelektrik</id>
+      <id spawnrate="1">Eelektross</id>
+      <id spawnrate="1">Elgyem</id>
+      <id spawnrate="1">Beheeyem</id>
+      <id spawnrate="1">Litwick</id>
+      <id spawnrate="1">Lampant</id>
+      <id spawnrate="1">Chandelure</id>
+      <id spawnrate="1">Axew</id>
+      <id spawnrate="1">Fraxure</id>
+      <id spawnrate="1">Haxorus</id>
+      <id spawnrate="1">Chubchoo</id>
+      <id spawnrate="1">Beartic</id>
+      <id spawnrate="1">Cryogonal</id>
+      <id spawnrate="1">Shelmet</id>
+      <id spawnrate="1">Accelgor</id>
+      <id spawnrate="1">Stunfisk</id>
+      <id spawnrate="1">Mienfoo</id>
+      <id spawnrate="1">Mienshao</id>
+      <id spawnrate="1">Druddigon</id>
+      <id spawnrate="1">Golett</id>
+      <id spawnrate="1">Golurk</id>
+      <id spawnrate="1">Pawniard</id>
+      <id spawnrate="1">Bisharp</id>
+      <id spawnrate="1">Bouffalant</id>
+      <id spawnrate="1">Rufflet</id>
+      <id spawnrate="1">Braviary</id>
+      <id spawnrate="1">Vullaby</id>
+      <id spawnrate="1">Mandibuzz</id>
+      <id spawnrate="1">Heatmor</id>
+      <id spawnrate="1">Durant</id>
+      <id spawnrate="1">Deino</id>
+      <id spawnrate="1">Zweuilous</id>
+      <id spawnrate="1">Hydreigon</id>
+      <id spawnrate="1">Larvesta</id>
+      <id spawnrate="1">Volcarona</id>
+      <id spawnrate="1">Cobalion</id>
+      <id spawnrate="1">Terrakion</id>
+      <id spawnrate="1">Virizion</id>
+      <id spawnrate="1">Tornadus (Incarnate Forme)</id>
+      <id spawnrate="1">Tornadus (Therian Forme)</id>
+      <id spawnrate="1">Thundurus (Incarnate Forme)</id>
+      <id spawnrate="1">Thundurus (Therian Forme)</id>
+      <id spawnrate="1">Reshiram</id>
+      <id spawnrate="1">Zekrom</id>
+      <id spawnrate="1">Landorus (Incarnate Forme)</id>
+      <id spawnrate="1">Landorus (Therian Forme)</id>
+      <id spawnrate="1">Kyurem</id>
+      <id spawnrate="1">Kyurem (Zekrom Fusion Form)</id>
+      <id spawnrate="1">Kyurem (Reshiram Fusion Form)</id>
+      <id spawnrate="1">Keldeo</id>
+      <id spawnrate="1">Meloetta (Aria Form)</id>
+      <id spawnrate="1">Meloetta (Step Form)</id>
+      <id spawnrate="1">Genesect</id>
     </Spawns>
   </Region>
   <Region Name="Kalos">
     <MaxLevel>90</MaxLevel>
     <MinLevel>8</MinLevel>
     <Spawns>
-      <id>Chespin</id>
-      <id>Quilladin</id>
-      <id>Chesnaught</id>
-      <id>Fennekin</id>
-      <id>Braixen</id>
-      <id>Delphox</id>
-      <id>Froakie</id>
-      <id>Frogadier</id>
-      <id>Greninja</id>
-      <id>Bunnelby</id>
-      <id>Diggersby</id>
-      <id>Fletchling</id>
-      <id>Fletchinder</id>
-      <id>Talonflame</id>
-      <id>Scatterbug</id>
-      <id>Spewpa</id>
-      <id>Vivillon</id>
-      <id>Litleo</id>
-      <id>Pyroar</id>
-      <id>Flabébé</id>
-      <id>Floette</id>
-      <id>Florges</id>
-      <id>Skiddo</id>
-      <id>Gogoat</id>
-      <id>Pancham</id>
-      <id>Pangoro</id>
-      <id>Furfrou</id>
-      <id>Espurr</id>
-      <id>Meowstic (female)</id>
-      <id>Meowstic (male)</id>
-      <id>Honedge</id>
-      <id>Doublade</id>
-      <id>Aegislash</id>
-      <id>Spritzee</id>
-      <id>Aromatisse</id>
-      <id>Swirlix</id>
-      <id>Slurpuff</id>
-      <id>Inkay</id>
-      <id>Malamar</id>
-      <id>Binacle</id>
-      <id>Barbaracle</id>
-      <id>Skrelp</id>
-      <id>Dragalge</id>
-      <id>Clauncher</id>
-      <id>Clawitzer</id>
-      <id>Helioptile</id>
-      <id>Heliolisk</id>
-      <id>Tyrunt</id>
-      <id>Tyrantrum</id>
-      <id>Amaura</id>
-      <id>Aurorus</id>
-      <id>Sylveon</id>
-      <id>Hawlucha</id>
-      <id>Dedenne</id>
-      <id>Carbink</id>
-      <id>Goomy</id>
-      <id>Sligoo</id>
-      <id>Goodra</id>
-      <id>Klefki</id>
-      <id>Phantump</id>
-      <id>Trevenant</id>
-      <id>Pumpkaboo (average)</id>
-      <id>Pumpkaboo (large)</id>
-      <id>Pumpkaboo (small)</id>
-      <id>Pumpkaboo (super)</id>
-      <id>Gourgeist (average)</id>
-      <id>Gourgeist (large)</id>
-      <id>Gourgeist (small)</id>
-      <id>Gourgeist (super)</id>
-      <id>Bergmite</id>
-      <id>Avalugg</id>
-      <id>Noibat</id>
-      <id>Noivern</id>
-      <id>Xerneas</id>
-      <id>Yveltal</id>
-      <id>Zygarde</id>
-      <id>Diancie</id>
-      <id>Hoopa Confined</id>
-      <id>Hoopa Unbound</id>
+      <id spawnrate="1">Chespin</id>
+      <id spawnrate="1">Quilladin</id>
+      <id spawnrate="1">Chesnaught</id>
+      <id spawnrate="1">Fennekin</id>
+      <id spawnrate="1">Braixen</id>
+      <id spawnrate="1">Delphox</id>
+      <id spawnrate="1">Froakie</id>
+      <id spawnrate="1">Frogadier</id>
+      <id spawnrate="1">Greninja</id>
+      <id spawnrate="1">Bunnelby</id>
+      <id spawnrate="1">Diggersby</id>
+      <id spawnrate="1">Fletchling</id>
+      <id spawnrate="1">Fletchinder</id>
+      <id spawnrate="1">Talonflame</id>
+      <id spawnrate="1">Scatterbug</id>
+      <id spawnrate="1">Spewpa</id>
+      <id spawnrate="1">Vivillon</id>
+      <id spawnrate="1">Litleo</id>
+      <id spawnrate="1">Pyroar</id>
+      <id spawnrate="1">Flabébé</id>
+      <id spawnrate="1">Floette</id>
+      <id spawnrate="1">Florges</id>
+      <id spawnrate="1">Skiddo</id>
+      <id spawnrate="1">Gogoat</id>
+      <id spawnrate="1">Pancham</id>
+      <id spawnrate="1">Pangoro</id>
+      <id spawnrate="1">Furfrou</id>
+      <id spawnrate="1">Espurr</id>
+      <id spawnrate="1">Meowstic (female)</id>
+      <id spawnrate="1">Meowstic (male)</id>
+      <id spawnrate="1">Honedge</id>
+      <id spawnrate="1">Doublade</id>
+      <id spawnrate="1">Aegislash</id>
+      <id spawnrate="1">Spritzee</id>
+      <id spawnrate="1">Aromatisse</id>
+      <id spawnrate="1">Swirlix</id>
+      <id spawnrate="1">Slurpuff</id>
+      <id spawnrate="1">Inkay</id>
+      <id spawnrate="1">Malamar</id>
+      <id spawnrate="1">Binacle</id>
+      <id spawnrate="1">Barbaracle</id>
+      <id spawnrate="1">Skrelp</id>
+      <id spawnrate="1">Dragalge</id>
+      <id spawnrate="1">Clauncher</id>
+      <id spawnrate="1">Clawitzer</id>
+      <id spawnrate="1">Helioptile</id>
+      <id spawnrate="1">Heliolisk</id>
+      <id spawnrate="1">Tyrunt</id>
+      <id spawnrate="1">Tyrantrum</id>
+      <id spawnrate="1">Amaura</id>
+      <id spawnrate="1">Aurorus</id>
+      <id spawnrate="1">Sylveon</id>
+      <id spawnrate="1">Hawlucha</id>
+      <id spawnrate="1">Dedenne</id>
+      <id spawnrate="1">Carbink</id>
+      <id spawnrate="1">Goomy</id>
+      <id spawnrate="1">Sligoo</id>
+      <id spawnrate="1">Goodra</id>
+      <id spawnrate="1">Klefki</id>
+      <id spawnrate="1">Phantump</id>
+      <id spawnrate="1">Trevenant</id>
+      <id spawnrate="1">Pumpkaboo (average)</id>
+      <id spawnrate="1">Pumpkaboo (large)</id>
+      <id spawnrate="1">Pumpkaboo (small)</id>
+      <id spawnrate="1">Pumpkaboo (super)</id>
+      <id spawnrate="1">Gourgeist (average)</id>
+      <id spawnrate="1">Gourgeist (large)</id>
+      <id spawnrate="1">Gourgeist (small)</id>
+      <id spawnrate="1">Gourgeist (super)</id>
+      <id spawnrate="1">Bergmite</id>
+      <id spawnrate="1">Avalugg</id>
+      <id spawnrate="1">Noibat</id>
+      <id spawnrate="1">Noivern</id>
+      <id spawnrate="1">Xerneas</id>
+      <id spawnrate="1">Yveltal</id>
+      <id spawnrate="1">Zygarde</id>
+      <id spawnrate="1">Diancie</id>
+      <id spawnrate="1">Hoopa Confined</id>
+      <id spawnrate="1">Hoopa Unbound</id>
     </Spawns>
   </Region>
   <Region Name="Route 101">
     <MaxLevel>5</MaxLevel>
     <MinLevel>2</MinLevel>
     <Spawns>
-      <id>Caterpie</id>
-      <id>Weedle</id>
-      <id>Pidgey</id>
-      <id>Rattata</id>
+      <id spawnrate="1">Caterpie</id>
+      <id spawnrate="1">Weedle</id>
+      <id spawnrate="1">Pidgey</id>
+      <id spawnrate="1">Rattata</id>
     </Spawns>
   </Region>
 </Regions>
