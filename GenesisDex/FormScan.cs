@@ -102,6 +102,8 @@ namespace GenesisDex
         List<int> ItemTiers = new List<int>();
         List<int> PokeTiers = new List<int>();
         //===========================================================================================================
+        List<int[]> CombatStage = new List<int[]>();
+        //===========================================================================================================
         List<decimal> MaxHealth = new List<decimal>();
         List<decimal> CurrentHealth = new List<decimal>();
         //===========================================================================================================
@@ -347,6 +349,7 @@ namespace GenesisDex
                 AllCap.Clear();
                 AllShinyCheck.Clear();
                 AllStatus.Clear();
+                CombatStage.Clear();
                 Gender.Clear();
                 Type.Clear();
                 MaxHealth.Clear();
@@ -407,6 +410,7 @@ namespace GenesisDex
                 AllCap.Add(Cap);
                 AllShinyCheck.Add(isShiny);
                 AllStatus.Add(statusBool.createStatus());
+                CombatStage.Add(new int[] {0, 0, 0, 0, 0, 0});
                 Current++;
                 Progress++;
                 PokeGenerator.ReportProgress(Progress);
@@ -1430,6 +1434,12 @@ namespace GenesisDex
             tbNature.Text = AllNatures[Current];
             string natureUp = "NA";
             string natureDown = "NA";
+            nudHPCS.Value = CombatStage[Current][0];
+            nudATKCS.Value = CombatStage[Current][1];
+            nudDEFCS.Value = CombatStage[Current][2];
+            nudSPATKCS.Value = CombatStage[Current][3];
+            nudSPDEFCS.Value = CombatStage[Current][4];
+            nudSPDCS.Value = CombatStage[Current][5];
             for (int i = 0; i < natureList.Count; i++)
             {
                 if (natureList[i].id == tbNature.Text)
@@ -2443,32 +2453,50 @@ namespace GenesisDex
         private void nudHPCS_ValueChanged(object sender, EventArgs e)
         {
             if (hasScanned)
+            {
+                CombatStage[Current][0] = Convert.ToInt32(nudHPCS.Value);
                 WriteInfo();
+            }
         }
         private void nudATKCS_ValueChanged(object sender, EventArgs e)
         {
-            if(hasScanned)
+            if (hasScanned)
+            {
+                CombatStage[Current][1] = Convert.ToInt32(nudATKCS.Value);
                 WriteInfo();
+            }
         }
         private void nudDEFCS_ValueChanged(object sender, EventArgs e)
         {
             if (hasScanned)
+            {
+                CombatStage[Current][2] = Convert.ToInt32(nudDEFCS.Value);
                 WriteInfo();
+            }
         }
         private void nudSPATKCS_ValueChanged(object sender, EventArgs e)
         {
             if (hasScanned)
+            {
+                CombatStage[Current][3] = Convert.ToInt32(nudSPATKCS.Value);
                 WriteInfo();
+            }
         }
         private void nudSPDEFCS_ValueChanged(object sender, EventArgs e)
         {
             if (hasScanned)
+            {
+                CombatStage[Current][4] = Convert.ToInt32(nudSPDEFCS.Value);
                 WriteInfo();
+            }
         }
         private void nudSPDCS_ValueChanged(object sender, EventArgs e)
         {
             if (hasScanned)
+            {
+                CombatStage[Current][5] = Convert.ToInt32(nudSPDCS.Value);
                 WriteInfo();
+            }
         }
 
         //===========================================================================================================
@@ -3400,6 +3428,33 @@ namespace GenesisDex
                         MoveTip = moveinfoList[s].description;
                     }
                 }
+                if (MoveTip != "No info to display...")
+                {
+                    string[] moveSplit = lbMoves.Items[IndexPoint].ToString().Split(' '); 
+                    if (AllPokemon[Current].type.Contains(moveSplit[2]))
+                    {
+                        string[] MoveListInfo = Regex.Split(MoveTip, "\r\n|\r|\n");
+                        for (int s = 0; s < MoveListInfo.Count(); s++)
+                        {
+                            if (MoveListInfo[s].Contains("DB:"))
+                            {
+                                StringBuilder build = new StringBuilder();
+                                string[] DamBase = MoveListInfo[s].Split(':');
+                                string STAB = (Convert.ToInt32(DamBase[1]) + 2).ToString();
+                                build.Append("DB:");
+                                build.Append(STAB);
+                                MoveListInfo[s] = build.ToString();
+                                build.Clear();
+                                foreach(string b in MoveListInfo)
+                                {
+                                    build.Append(b + Environment.NewLine);
+                                }
+                                MoveTip = build.ToString();
+                            }
+                        }
+                    }
+                }
+                MoveTip = Regex.Replace(MoveTip, @"^\s*$[\r\n]*", "", RegexOptions.Multiline);
                 moveIndex = IndexPoint;
                 ttInfo.Hide(lbMoves);
                 ttInfo.Show(MoveTip, lbMoves, lbMoves.Width / 2, 20 + (18 * IndexPoint));
@@ -3430,6 +3485,7 @@ namespace GenesisDex
                         SkillTip = skillinfoList[s].description;
                     }
                 }
+                SkillTip = Regex.Replace(SkillTip, @"^\s*$[\r\n]*", "", RegexOptions.Multiline);
                 skillIndex = IndexPoint;
                 ttInfo.Hide(lbSkills);
                 ttInfo.Show(SkillTip, lbSkills, lbSkills.Width / 2, 20 + (18 * IndexPoint));
@@ -3460,6 +3516,7 @@ namespace GenesisDex
                         capTip = capinfoList[s].description;
                     }
                 }
+                capTip = Regex.Replace(capTip, @"^\s*$[\r\n]*", "", RegexOptions.Multiline);
                 capIndex = IndexPoint;
                 ttInfo.Hide(lbCapabilites);
                 ttInfo.Show(capTip, lbCapabilites, lbCapabilites.Width / 2, 20 + (18 * IndexPoint));
@@ -3490,6 +3547,7 @@ namespace GenesisDex
                         abilityTip = abilityinfoList[s].description;
                     }
                 }
+                abilityTip = Regex.Replace(abilityTip, @"^\s*$[\r\n]*", "", RegexOptions.Multiline);
                 abilityIndex = IndexPoint;
                 ttInfo.Hide(lbAbilities);
                 ttInfo.Show(abilityTip, lbAbilities, lbAbilities.Width / 2, 20 + (18 * IndexPoint));
