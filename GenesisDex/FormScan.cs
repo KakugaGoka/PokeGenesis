@@ -3418,7 +3418,7 @@ namespace GenesisDex
             int IndexPoint = lbMoves.IndexFromPoint(e.Location);
             try { lbMoves.Items[IndexPoint].ToString(); } catch { return; }
             if (lbMoves.Items[IndexPoint].ToString() == "Moves:") IndexPoint = 1;
-            if (moveIndex != IndexPoint)
+            if (moveIndex != IndexPoint && lbMoves.Items.Count != 1)
             {
                 string MoveTip = "No info to display...";
                 for (int s = 0; s < moveinfoList.Count; s++)
@@ -3475,7 +3475,7 @@ namespace GenesisDex
             int IndexPoint = lbSkills.IndexFromPoint(e.Location);
             try { lbSkills.Items[IndexPoint].ToString(); } catch { return; }
             if (lbSkills.Items[IndexPoint].ToString() == "Skills:") IndexPoint = 1;
-            if (skillIndex != IndexPoint)
+            if (skillIndex != IndexPoint && lbSkills.Items.Count != 1)
             {
                 string SkillTip = "No info to display...";
                 for (int s = 0; s < skillinfoList.Count; s++)
@@ -3505,8 +3505,7 @@ namespace GenesisDex
             if (!hasScanned) return;
             int IndexPoint = lbCapabilites.IndexFromPoint(e.Location);
             try { lbCapabilites.Items[IndexPoint].ToString(); } catch { return; }
-            if (lbCapabilites.Items[IndexPoint].ToString() == "caps:") IndexPoint = 1;
-            if (capIndex != IndexPoint)
+            if (capIndex != IndexPoint && lbCapabilites.Items.Count != 1)
             {
                 string capTip = "No info to display...";
                 for (int s = 0; s < capinfoList.Count; s++)
@@ -3537,7 +3536,7 @@ namespace GenesisDex
             int IndexPoint = lbAbilities.IndexFromPoint(e.Location);
             try { lbAbilities.Items[IndexPoint].ToString(); } catch { return; }
             if (lbAbilities.Items[IndexPoint].ToString() == "Abilities:") IndexPoint = 1;
-            if (abilityIndex != IndexPoint)
+            if (abilityIndex != IndexPoint && lbAbilities.Items.Count != 1)
             {
                 string abilityTip = "No info to display...";
                 for (int s = 0; s < abilityinfoList.Count; s++)

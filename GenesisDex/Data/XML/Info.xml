@@ -9465,7 +9465,7 @@ DB:11
 Class:Physical
 Range:1 Target Melee
 Effect:On Even-Numbered Rolls the target is Slowed
- for one full round.\nLimitation: Melee Weapons
+ for one full round. Limitation: Melee Weapons
  Only
       </Description>
     </Move>
@@ -9729,46 +9729,46 @@ Effect:Connection - Bonemerang. This Ability
       <Description>
 Freq:Static
 Effect:The user's Bone Club Bonemerang and
- Bone Rush Moves ignore immunity against
- Ground-Type Moves.
+Bone Rush Moves ignore immunity against
+Ground-Type Moves.
       </Description>
     </Ability>
     <Ability name="Brimstone">
       <Description>
 Freq:Static
 Effect:Whenever the user inflicts Burn or
- Poison with a damaging Fire-Type or
- Poison-Type Attack the target becomes
- both Burned and Poisoned.
+Poison with a damaging Fire-Type or
+Poison-Type Attack the target becomes
+both Burned and Poisoned.
       </Description>
     </Ability>
     <Ability name="Bulletproof">
       <Description>
 Freq:Static
 Effect:The user resists all X target ranged
-\attacks one step further. This refers to
- attacks and Moves that simply hit one target
- or specify hitting multiple targets such as
- Razor Wind hitting three targets. It has no
- effect on Moves that are capable of hitting
- multiple targets through areas of effect
- such as Bursts or Cones. Defensive.
+attacks one step further. This refers to
+attacks and Moves that simply hit one target
+or specify hitting multiple targets such as
+Razor Wind hitting three targets. It has no
+effect on Moves that are capable of hitting
+multiple targets through areas of effect
+such as Bursts or Cones. Defensive.
       </Description>
     </Ability>
     <Ability name="Bully">
       <Description>
 Freq:Scene - Free Action
 Trigger:The user hits a target for
- Super-Effective Damage with a Melee Move
+Super-Effective Damage with a Melee Move
 Effect:The target of the attack is pushed
- 2 Meters becomes Tripped and gains an Injury.
+2 Meters becomes Tripped and gains an Injury.
       </Description>
     </Ability>
     <Ability name="Cave Crasher">
       <Description>
 Freq:Static
 Effect:The user resists Ground-Type and
- Rock-Type attacks one step further. Defensive.
+Rock-Type attacks one step further. Defensive.
       </Description>
     </Ability>
     <Ability name="Celebrate">
@@ -9776,16 +9776,16 @@ Effect:The user resists Ground-Type and
 Freq:At-Will - Swift Action
 Trigger:The user hits a foe with a damaging attack
 Effect:The user may immediately Disengage as a
- Free Action.Bonus: Whenever the user Disengages
- for any reason they may Shift 2 meters
- instead of 1.
+Free Action.Bonus: Whenever the user Disengages
+for any reason they may Shift 2 meters
+instead of 1.
       </Description>
     </Ability>
     <Ability name="Cherry Power">
       <Description>
 Freq:Daily - Swift Action
 Effect:The user gains 15 Temporary Hit Points
- and is cured of all Persistent Status Afflictions.
+and is cured of all Persistent Status Afflictions.
       </Description>
     </Ability>
     <Ability name="Chlorophyll">
@@ -9800,17 +9800,17 @@ Hit Points the user's Initiative is doubled.
 Freq:At-Will - Swift Action
 Effect:Until the end of the round the user may 
 originate any Ranged Move they use from any
- square within 2 meters of itself.
+square within 2 meters of itself.
       </Description>
     </Ability>
     <Ability name="Clear Body">
       <Description>
 Freq:Static
 Effect:The user's Combat Stages may not be
- lowered by the effect of foes' Feautres 
- Abilities or Moves. Status Affictions 
- may still alter their Combat Stages. 
- Defensive.
+lowered by the effect of foes' Feautres 
+Abilities or Moves. Status Affictions 
+may still alter their Combat Stages. 
+Defensive.
       </Description>
     </Ability>
     <Ability name="Cloud Nine">
@@ -9823,7 +9823,7 @@ Effect:The weather of the field is set to normal.
       <Description>
 Freq:Static
 Effect:The user's Move Pool
- limit is increased by +2.
+limit is increased by +2.
       </Description>
     </Ability>
     <Ability name="Color Change">
@@ -9831,19 +9831,19 @@ Effect:The user's Move Pool
 Freq:At-Will - Free Action
 Trigger:The user is hit by a Move
 Effect:The user's Type changes to
- match the Type of the triggering Move.
+match the Type of the triggering Move.
       </Description>
     </Ability>
     <Ability name="Color Theory">
       <Description>
 Freq:Static
 Effect:pon gaining this ability at Birth the user
- rolls 1d12 to determine the color of their tail
- secretions.
+rolls 1d12 to determine the color of their tail
+secretions.
 1 = Red; 2 = Red-Orange; 3 = Orange;
- 4 = Yellow-Orange; 5 = Yellow; 6 = Yellow-Green;
- 7 = Green; 8 = Blue-Green; 9 = Blue;
- 10 = Blue-Violet; 11 = Violet; 12 = Red-Violet.
+4 = Yellow-Orange; 5 = Yellow; 6 = Yellow-Green;
+7 = Green; 8 = Blue-Green; 9 = Blue;
+10 = Blue-Violet; 11 = Violet; 12 = Red-Violet.
 Red is tied to Attack
 Orange is tied to Defense
 Yellow is tied to Special Attack
@@ -9851,26 +9851,26 @@ Green is tied to Special Defense
 Blue is tied to Speed
 Violet is tied to HP.
 Users with a Pure Color (Red Orange Yellow etc)
- gain a +6 Bonus to the Base Stat tied to
- their color. Users with a Mixed Color 
- (Red-Orange Yellow-Orange etc) gain a +3
- Bonus to each Stat tied to the color.
+gain a +6 Bonus to the Base Stat tied to
+their color. Users with a Mixed Color 
+(Red-Orange Yellow-Orange etc) gain a +3
+Bonus to each Stat tied to the color.
       </Description>
     </Ability>
     <Ability name="Competitive">
       <Description>
 Freq:Static
 Effect:Whenever the user has its Combat Stages
- lowered by something other than its own Moves
- or Abilities the user's Special Attack is
- raised 2 Combat Stages.
+lowered by something other than its own Moves
+or Abilities the user's Special Attack is
+raised 2 Combat Stages.
       </Description>
     </Ability>
     <Ability name="Compound Eyes">
       <Description>
 Freq:Static
 Effect:The user gains a +3 Bonus to all
- Accuracy Rolls.
+Accuracy Rolls.
       </Description>
     </Ability>
     <Ability name="Confidence">
@@ -9884,20 +9884,20 @@ Effect:Choose a Combat Stat. All allies within
       <Description>
 Freq:Static
 Effect:If something would raise the user's Combat
- Stages it instead lowers the user's Combat
- Stages by the same amount. If something would
- lower the user's Combat Stages it instead 
- raises the user's Combat Stages by the
- same amount.
+Stages it instead lowers the user's Combat
+Stages by the same amount. If something would
+lower the user's Combat Stages it instead 
+raises the user's Combat Stages by the
+same amount.
       </Description>
     </Ability>
     <Ability name="Conqueror">
       <Description>
 Freq:Scene - Free Action
 Trigger:The user causes a foe to Faint by using
- a damaging Physical or Special Attack
+a damaging Physical or Special Attack
 Effect:The user's Attack Special Attack and
- Speed gain +1 Combat Stage.
+Speed gain +1 Combat Stage.
       </Description>
     </Ability>
     <Ability name="Copy Master">
@@ -9912,21 +9912,21 @@ in a Stat of its choice after the Move is resolved.
       <Description>
 Freq:Scene - Free Action
 Effect:Connection - Toxic. The user may activate
- this Ability when using Toxic to allow the
- Move to ignore Immunity to the Status
- Affliction Blessings and the effects of
- Abilities that may prevent Hit Point loss
- from being Badly Poisoned (such as
- Magic Guard or Poison Heal).
+this Ability when using Toxic to allow the
+Move to ignore Immunity to the Status
+Affliction Blessings and the effects of
+Abilities that may prevent Hit Point loss
+from being Badly Poisoned (such as
+Magic Guard or Poison Heal).
       </Description>
     </Ability>
     <Ability name="Courage">
       <Description>
 Freq:Static
 Effect:While at or under 1/3rd of its Max Hit
- Point value the user gains a +5 Damage Bonus
- to all Damage Rolls and 5 Damage Reduction.
- Defensive.
+Point value the user gains a +5 Damage Bonus
+to all Damage Rolls and 5 Damage Reduction.
+Defensive.
       </Description>
     </Ability>
     <Ability name="Cruelty">
@@ -9934,18 +9934,18 @@ Effect:While at or under 1/3rd of its Max Hit
 Freq:Scene - Swift Action
 Trigger:The user hits a foe with a damaging attack
 Effect:After Damage is Resolved the foe
- gains an Injury. The user is then informed
- of the total number of Injuries currently
- on the target and may use that number to
- purchase the effects listed below
- 1 Injury: The target loses 2 Hit Points.
- May be purchased multiple times
- 1 Injury: The target is Slowed
- 2 Injuries: Until the end of the encounter
- the target may not gain Hit Points or
- Temporary Hit Points from any source.
- This effect ends if the target is switched
- out or Takes a Breather.
+gains an Injury. The user is then informed
+of the total number of Injuries currently
+on the target and may use that number to
+purchase the effects listed below
+1 Injury: The target loses 2 Hit Points.
+May be purchased multiple times
+1 Injury: The target is Slowed
+2 Injuries: Until the end of the encounter
+the target may not gain Hit Points or
+Temporary Hit Points from any source.
+This effect ends if the target is switched
+out or Takes a Breather.
       </Description>
     </Ability>
     <Ability name="Crush Trap">
@@ -9953,11 +9953,11 @@ Effect:After Damage is Resolved the foe
 Freq:Scene - Free Action
 Trigger:The user successfully Grapples a target
 Effect:Connection - Wrap. When you activate this
- ability the user may immediately deal damage to
- the target as if the user had hit with a
- Struggle Attack. There is no Accuracy Roll
- and thus this damage cannot miss be a
- Critical Hit or trigger any Effect Ranges.
+ability the user may immediately deal damage to
+the target as if the user had hit with a
+Struggle Attack. There is no Accuracy Roll
+and thus this damage cannot miss be a
+Critical Hit or trigger any Effect Ranges.
       </Description>
     </Ability>
     <Ability name="Cursed Body">
@@ -9971,7 +9971,7 @@ Effect:The Move becomes Disabled.
       <Description>
 Freq:Scene - Free Action
 Trigger:A foe of the opposite gender attacks
- the user with a Melee Attack
+the user with a Melee Attack
 Effect:The foe becomes Infatuated.
       </Description>
     </Ability>
@@ -9980,18 +9980,18 @@ Effect:The foe becomes Infatuated.
 Freq:Scene - Free Action
 Trigger:The user is hit by a Damaging Attack
 Effect:The attacking foe loses 2 Combat Stages in
- the Attack Stat used by the triggering Move.
+the Attack Stat used by the triggering Move.
       </Description>
     </Ability>
     <Ability name="Damp">
       <Description>
 Freq:Static
 Effect:Whenever anyone within 10 meters would use
- the Moves Self-Destruct or Explosion or activate
- the Aftermath Ability those effects fail and
- instead do nothing.
+the Moves Self-Destruct or Explosion or activate
+the Aftermath Ability those effects fail and
+instead do nothing.
 Bonus: The user gains a +1d10 Bonus to
- Damage Rolls with Water-Typed Moves.
+Damage Rolls with Water-Typed Moves.
       </Description>
     </Ability>
     <Ability name="Danger Syrup">
@@ -9999,10 +9999,10 @@ Bonus: The user gains a +1d10 Bonus to
 Freq:Scene - Free Action
 Trigger:The user is hit by an attack
 Effect:Connection - Sweet Scent. When this Ability
- is activated the user may use Sweet Scent as a
- Free Action ignoring Frequency. Whenever the
- user hits a foe with Sweet Scent that foe is
- Blinded for 1 full round.
+is activated the user may use Sweet Scent as a
+Free Action ignoring Frequency. Whenever the
+user hits a foe with Sweet Scent that foe is
+Blinded for 1 full round.
       </Description>
     </Ability>
     <Ability name="Dark Art">
@@ -11034,7 +11034,7 @@ Effect:Whenever a foe hits you with a Melee
       <Description>
 Freq:Scene x3 - Swift Action
 Target:A Steel-Type Pokemon within 6 meters
-Effect: Pick Two Effects:n- The target is
+Effect: Pick Two Effects: The target is
  pushed or pulled X meters directly away or
  towards the user. X is up to 6 meters
  minus the target's Weight Class-Until the
@@ -13145,27 +13145,26 @@ Power represents a Pokémon or Trainer’s physical
 strength. The chart below shows how much weight
 a Pokémon or Trainer can bear, depending on their
 power value.
-Power     Heavy      Staggering   Drag
-Value    Lifting        Limit     Limit
-  1       2-5 lb.       10 lb.    20 lb.
-  2       20-30 lb.     60 lb.    120 lb.
-  3       35-50 lb.     100 lb.   200 lb.
-  4       45-70 lb.     140 lb.   280 lb.
-  5       60-90 lb.     180 lb.   360 lb.
-  6       75-115 lb.    230 lb.   460 lb.
-  7       100-140 lb.   300 lb.   600 lb.
-  8       120-190 lb.   380 lb.   760 lb.
-  9       150-240 lb.   480 lb.   960 lb.
-  10      200-300 lb.   600 lb.   1200 lb.
-  11      250-375 lb.   750 lb.   1500 lb.
-  12      350-450 lb.   900 lb.   1800 lb.
-  13      450-525 lb.   1050 lb.  2100 lb.
-  14      500-600 lb.   1200 lb.  2400 lb.
-  15      550-675 lb.   1350 lb.  2700 lb.
-  16      600-750 lb.   1500 lb.  3000 lb.
+Power   Heavy     Staggering   Drag
+Value    Lifting         Limit         Limit
+  1         2-5 lb.           10 lb.        20 lb.
+  2         20-30 lb.       60 lb.        120 lb.
+  3         35-50 lb.       100 lb.      200 lb.
+  4         45-70 lb.       140 lb.      280 lb.
+  5         60-90 lb.       180 lb.      360 lb.
+  6         75-115 lb.      230 lb.     460 lb.
+  7         100-140 lb.    300 lb.     600 lb.
+  8         120-190 lb.    380 lb.     760 lb.
+  9         150-240 lb.    480 lb.     960 lb.
+  10       200-300 lb.    600 lb.     1200 lb.
+  11       250-375 lb.    750 lb.     1500 lb.
+  12       350-450 lb.    900 lb.     1800 lb.
+  13       450-525 lb.   1050 lb.    2100 lb.
+  14       500-600 lb.   1200 lb.    2400 lb.
+  15       550-675 lb.   1350 lb.    2700 lb.
+  16       600-750 lb.   1500 lb.    3000 lb.
       </Description>
     </Capability>
-<!--===========================================-->
     <Capability name="Jump">
       <Description>
 There are two kinds of Jumps – Long Jumps and High 
@@ -13247,6 +13246,15 @@ a Sprint Action. If a Pokémon learns the move Teleport
 and does not have the Teleporter Capability they
 gain Teleporter 4. If they already have the Teleporter
 Capability, the Teleporter value is raised 4.
+      </Description>
+    </Capability>
+    <Capability name="Mountable">
+      <Description>
+This Pokémon may serve as a mount for
+the specified number of average Trainers regardless of 
+Power Capability and ignoring penalties for weight carried. 
+This Capability fails to function if significant weight is 
+added in addition to the Trainer(s).
       </Description>
     </Capability>
     <Capability name="Alluring">
