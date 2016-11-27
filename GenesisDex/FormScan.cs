@@ -1554,6 +1554,7 @@ namespace GenesisDex
             lbAbilities.Items.Clear();
             lbSkills.Items.Clear();
             lbMoves.Items.Add("Moves:");
+            lbMoves.Items.Add("Struggle - Normal");
             for (var w = 0; w < AllMoves[Current].Count; w++)
             {
                 lbMoves.Items.Add(AllMoves[Current][w]);
