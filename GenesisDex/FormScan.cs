@@ -3430,9 +3430,10 @@ namespace GenesisDex
             if (moveIndex != IndexPoint && lbMoves.Items.Count != 1)
             {
                 string MoveTip = "No info to display...";
+                string[] MoveName = lbMoves.Items[IndexPoint].ToString().Split('-');
                 for (int s = 0; s < moveinfoList.Count; s++)
                 {
-                    if (lbMoves.Items[IndexPoint].ToString().Contains(moveinfoList[s].name))
+                    if (moveinfoList[s].name == MoveName[0].Trim())
                     {
                         MoveTip = moveinfoList[s].description;
                     }
