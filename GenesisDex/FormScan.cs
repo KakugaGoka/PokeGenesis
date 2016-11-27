@@ -1617,7 +1617,7 @@ namespace GenesisDex
             }
             if (typeTwoEdit == true)
             {
-                ttInfo.SetToolTip(this.tbType,
+                string TypeString = 
                     "Normal: x" + (ttInfoType1.normal * ttInfoType2.normal).ToString() + Environment.NewLine +
                     "Fire: x" + (ttInfoType1.fire * ttInfoType2.fire).ToString() + Environment.NewLine +
                     "Water: x" + (ttInfoType1.water * ttInfoType2.water).ToString() + Environment.NewLine +
@@ -1635,7 +1635,16 @@ namespace GenesisDex
                     "Dragon: x" + (ttInfoType1.dragon * ttInfoType2.dragon).ToString() + Environment.NewLine +
                     "Dark: x" + (ttInfoType1.dark * ttInfoType2.dark).ToString() + Environment.NewLine +
                     "Steel: x" + (ttInfoType1.steel * ttInfoType2.steel).ToString() + Environment.NewLine +
-                    "Fairy: x" + (ttInfoType1.fairy * ttInfoType2.fairy).ToString() + Environment.NewLine);
+                    "Fairy: x" + (ttInfoType1.fairy * ttInfoType2.fairy).ToString() + Environment.NewLine;
+                if (TypeString.Contains("x2.25"))
+                {
+                    TypeString = TypeString.Replace("x2.25", "x2");
+                }
+                if (TypeString.Contains("x0.75"))
+                {
+                    TypeString = TypeString.Replace("x0.75", "x1");
+                }
+                ttInfo.SetToolTip(this.tbType, TypeString);
             }
             else
             {
