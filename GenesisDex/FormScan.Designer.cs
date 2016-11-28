@@ -152,6 +152,9 @@
             this.pkItem = new System.Windows.Forms.PictureBox();
             this.btnMinimize = new System.Windows.Forms.PictureBox();
             this.btnGetLoot = new System.Windows.Forms.PictureBox();
+            this.btnDeletePoke = new System.Windows.Forms.PictureBox();
+            this.btnGoTo = new System.Windows.Forms.PictureBox();
+            this.nudGoTo = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnScanPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLevelMin)).BeginInit();
@@ -176,6 +179,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pkItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGetLoot)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDeletePoke)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGoTo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudGoTo)).BeginInit();
             this.SuspendLayout();
             // 
             // pbPokemon
@@ -2199,6 +2205,56 @@
             this.btnGetLoot.MouseLeave += new System.EventHandler(this.btnGetLoot_MouseLeave);
             this.btnGetLoot.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnGetLoot_MouseUp);
             // 
+            // btnDeletePoke
+            // 
+            this.btnDeletePoke.BackColor = System.Drawing.Color.Transparent;
+            this.btnDeletePoke.Location = new System.Drawing.Point(333, 567);
+            this.btnDeletePoke.Name = "btnDeletePoke";
+            this.btnDeletePoke.Size = new System.Drawing.Size(157, 33);
+            this.btnDeletePoke.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnDeletePoke.TabIndex = 196;
+            this.btnDeletePoke.TabStop = false;
+            this.btnDeletePoke.MouseEnter += new System.EventHandler(this.btnDeletePoke_MouseEnter);
+            this.btnDeletePoke.MouseLeave += new System.EventHandler(this.btnDeletePoke_MouseLeave);
+            this.btnDeletePoke.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnDeletePoke_MouseUp);
+            // 
+            // btnGoTo
+            // 
+            this.btnGoTo.BackColor = System.Drawing.Color.Transparent;
+            this.btnGoTo.Location = new System.Drawing.Point(335, 607);
+            this.btnGoTo.Name = "btnGoTo";
+            this.btnGoTo.Size = new System.Drawing.Size(82, 25);
+            this.btnGoTo.TabIndex = 197;
+            this.btnGoTo.TabStop = false;
+            this.btnGoTo.MouseEnter += new System.EventHandler(this.btnGoTo_MouseEnter);
+            this.btnGoTo.MouseLeave += new System.EventHandler(this.btnGoTo_MouseLeave);
+            this.btnGoTo.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnGoTo_MouseUp);
+            // 
+            // nudGoTo
+            // 
+            this.nudGoTo.BackColor = System.Drawing.Color.Beige;
+            this.nudGoTo.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudGoTo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.nudGoTo.Location = new System.Drawing.Point(429, 608);
+            this.nudGoTo.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.nudGoTo.Minimum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            -2147483648});
+            this.nudGoTo.Name = "nudGoTo";
+            this.nudGoTo.Size = new System.Drawing.Size(53, 24);
+            this.nudGoTo.TabIndex = 198;
+            this.nudGoTo.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // FormScan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2206,6 +2262,9 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.nudGoTo);
+            this.Controls.Add(this.btnGoTo);
+            this.Controls.Add(this.btnDeletePoke);
             this.Controls.Add(this.btnGetLoot);
             this.Controls.Add(this.btnMinimize);
             this.Controls.Add(this.lbAbilities);
@@ -2357,6 +2416,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pkItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGetLoot)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDeletePoke)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGoTo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudGoTo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2485,5 +2547,8 @@
         private System.Windows.Forms.PictureBox pkItem;
         private System.Windows.Forms.PictureBox btnMinimize;
         private System.Windows.Forms.PictureBox btnGetLoot;
+        private System.Windows.Forms.PictureBox btnDeletePoke;
+        private System.Windows.Forms.PictureBox btnGoTo;
+        private System.Windows.Forms.NumericUpDown nudGoTo;
     }
 }

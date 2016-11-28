@@ -266,6 +266,10 @@ namespace GenesisDex
             chkCanBeLegend.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png"));
             btnSave.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Save.png"));
             btnGetLoot.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\LootWindow.png"));
+            btnDeletePoke.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\DeletePokemon.png"));
+            btnGoTo.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\GoTo.png"));
+            nudGoTo.Maximum = 1;
+            nudGoTo.Minimum = 1;
             nudLevelMin.Value = 2;
             nudLevelMax.Value = 15;
         }
@@ -663,14 +667,18 @@ namespace GenesisDex
                     i = rng.Next(0, pokeList.Count);
                     foreach (Spawn s in spawnList[PokeRegIndex-1].Spawns)
                     {
-                        if( pokeList[i].id == s.Name)
+                        try
                         {
-                            if (s.SpawnRate <= rates[x])
-                                break;
-                            else
-                                goto Start;
+                            if (pokeList[i].id == s.Name)
+                            {
+                                if (s.SpawnRate <= rates[x])
+                                    break;
+                                else
+                                    goto Start;
 
+                            }
                         }
+                        catch { MessageBox.Show("There are no registered Pokemon that fit this criteria..."); return null; }
                     }
                     try { return pokeList[i]; } catch { MessageBox.Show("There are no registered Pokemon that fit this criteria..."); return null; }
                 }
@@ -1671,6 +1679,7 @@ namespace GenesisDex
                     "Steel: x" + (ttInfoType1.steel).ToString() + Environment.NewLine +
                     "Fairy: x" + (ttInfoType1.fairy).ToString() + Environment.NewLine);
             }
+            nudGoTo.Maximum = AllPokemon.Count;
             isWritingInfo = false;
         }
 
@@ -3593,6 +3602,71 @@ namespace GenesisDex
         private void tbNature_MouseLeave(object sender, EventArgs e)
         {
             ttInfo.Hide(tbNature);
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void btnDeletePoke_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (!hasScanned) return;
+            if (AllPokemon.Count < 2) return;
+            DialogResult deletePokemon = MessageBox.Show("Are you sure you wish to delete " + AllPokemon[Current].id + "?", "Delete Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            if (deletePokemon == DialogResult.No) return;
+            AllPokemon.RemoveAt(Current);
+            BasePokemon.RemoveAt(Current);
+            AllLevels.RemoveAt(Current);
+            AllMoves.RemoveAt(Current);
+            AllCap.RemoveAt(Current);
+            AllAbilities.RemoveAt(Current);
+            AllSkills.RemoveAt(Current);
+            AllStat.RemoveAt(Current);
+            AllShinyCheck.RemoveAt(Current);
+            AllStatus.RemoveAt(Current);
+            AllImages.RemoveAt(Current);
+            AllItems1.RemoveAt(Current);
+            AllDesc1.RemoveAt(Current);
+            CombatStage.RemoveAt(Current);
+            Gender.RemoveAt(Current);
+            Type.RemoveAt(Current);
+            MaxHealth.RemoveAt(Current);
+            AllNatures.RemoveAt(Current);
+            CurrentHealth.RemoveAt(Current);
+            if (Current >= AllPokemon.Count)
+                Current = 0;
+            tbPokeCount.Text = (Current + 1).ToString() + "/" + AllPokemon.Count.ToString();
+            pbPokemon.Image = AllImages[Current];
+            SetPoke();
+            WriteInfo();
+        }
+        private void btnDeletePoke_MouseEnter(object sender, EventArgs e)
+        {
+            btnDeletePoke.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\DeletePokemonHover.png"));
+        }
+        private void btnDeletePoke_MouseLeave(object sender, EventArgs e)
+        {
+            btnDeletePoke.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\DeletePokemon.png"));
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void btnGoTo_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (!hasScanned) return;
+            Current = Convert.ToInt32(nudGoTo.Value - 1);
+            tbPokeCount.Text = (Current + 1).ToString() + "/" + AllPokemon.Count.ToString();
+            pbPokemon.Image = AllImages[Current];
+            SetPoke();
+            WriteInfo();
+        }
+        private void btnGoTo_MouseEnter(object sender, EventArgs e)
+        {
+            btnGoTo.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\GoToHover.png"));
+        }
+        private void btnGoTo_MouseLeave(object sender, EventArgs e)
+        {
+            btnGoTo.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\GoTo.png"));
         }
     }
 }
