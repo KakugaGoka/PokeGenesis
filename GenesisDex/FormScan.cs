@@ -1254,6 +1254,8 @@ namespace GenesisDex
                     }
                     string mov = build.ToString();
                     mov = mov.Trim();
+                    mov = mov.Replace("- ", "(");
+                    mov = mov + ")";
                     moves.Add(mov);
                 }
                 if (moves.Count > 6) { moves.RemoveAt(0); }
@@ -1271,7 +1273,7 @@ namespace GenesisDex
                     }
                 } while (done == false);
                 if (moves.Count >= 6) { moves.RemoveAt(0); }
-                string newmove = TMList[i].id + " - " + TMList[i].type;
+                string newmove = TMList[i].id + " (" + TMList[i].type +")";
                 moves.Add(newmove);
             }
         }
@@ -1554,7 +1556,7 @@ namespace GenesisDex
             lbAbilities.Items.Clear();
             lbSkills.Items.Clear();
             lbMoves.Items.Add("Moves:");
-            lbMoves.Items.Add("Struggle - Normal");
+            lbMoves.Items.Add("Struggle (Normal)");
             for (var w = 0; w < AllMoves[Current].Count; w++)
             {
                 lbMoves.Items.Add(AllMoves[Current][w]);
@@ -3431,7 +3433,8 @@ namespace GenesisDex
             if (moveIndex != IndexPoint && lbMoves.Items.Count != 1)
             {
                 string MoveTip = "No info to display...";
-                string[] MoveName = lbMoves.Items[IndexPoint].ToString().Split('-');
+                string[] MoveName = lbMoves.Items[IndexPoint].ToString().Split('(');
+                MoveName[1] = MoveName[1].Remove(MoveName[1].Length-1, 1);
                 for (int s = 0; s < moveinfoList.Count; s++)
                 {
                     if (moveinfoList[s].name == MoveName[0].Trim())
@@ -3441,8 +3444,7 @@ namespace GenesisDex
                 }
                 if (MoveTip != "No info to display...")
                 {
-                    string[] moveSplit = lbMoves.Items[IndexPoint].ToString().Split(' '); 
-                    if (AllPokemon[Current].type.Contains(moveSplit[2]))
+                    if (AllPokemon[Current].type.Contains(MoveName[1]))
                     {
                         string[] MoveListInfo = Regex.Split(MoveTip, "\r\n|\r|\n");
                         for (int s = 0; s < MoveListInfo.Count(); s++)
