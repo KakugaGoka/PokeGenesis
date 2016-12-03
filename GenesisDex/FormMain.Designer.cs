@@ -133,7 +133,7 @@
             // btnOptions
             // 
             this.btnOptions.BackColor = System.Drawing.Color.Transparent;
-            this.btnOptions.Location = new System.Drawing.Point(695, 627);
+            this.btnOptions.Location = new System.Drawing.Point(695, 617);
             this.btnOptions.Name = "btnOptions";
             this.btnOptions.Size = new System.Drawing.Size(82, 25);
             this.btnOptions.TabIndex = 79;

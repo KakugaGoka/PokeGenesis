@@ -2648,6 +2648,12 @@
     <Content Include="Data\GUI\GoToHover.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Data\GUI\Import.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\GUI\ImportHover.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Data\GUI\InfoLeft.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

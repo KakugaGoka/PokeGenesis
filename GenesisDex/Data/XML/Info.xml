@@ -4090,10 +4090,10 @@ DB:6
 Class:Physical
 Range:Melee 1 Target
 Effect:When declaring Avalanche the user does
- nothing and may not Shift. At the end of the
- round the user may Shift and use Avalanche.
- If the target damaged the user this round
- Avalanche has a Damage Base of 12 (4d10+15 / 40).
+nothing and may not Shift. At the end of the
+round the user may Shift and use Avalanche.
+If the target damaged the user this round
+Avalanche has a Damage Base of 12 (4d10+15 / 40).
 Contest Type:Cool
 Contest Effect:Double TIme
       </Description>
@@ -4107,8 +4107,8 @@ DB:11
 Class:Special
 Range:4 Ranged Blast 2 Smite
 Effect:Blizzard Freezes all legal target on 15+.
- If the target is in Hailing Weather Blizzard
- cannot miss.
+If the target is in Hailing Weather Blizzard
+cannot miss.
 Contest Type:Beauty
 Contest Effect:Exhausting Act
       </Description>
@@ -4122,8 +4122,8 @@ DB:7
 Class:Special
 Range:6 1 Target
 Effect:When calculating Weakness and Resistance
- for Freeze-Dry Water-Typed targets calculate
- damage as if Water was weak to Ice.
+for Freeze-Dry Water-Typed targets calculate
+damage as if Water was weak to Ice.
 Contest Type:Tough
 Contest Effect:Saving Grace
       </Description>

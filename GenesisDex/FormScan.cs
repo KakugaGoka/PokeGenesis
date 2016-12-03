@@ -165,6 +165,7 @@ namespace GenesisDex
         bool viewingLoot { get; set; }
         bool appendList { get; set; }
         bool saveResult { get; set; }
+        bool importResult { get; set; }
         bool isWritingInfo { get; set; }
         //===========================================================================================================
         string typeShiny { get; set; }
@@ -265,6 +266,7 @@ namespace GenesisDex
             chkCanBeShiny.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png"));
             chkCanBeLegend.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png"));
             btnSave.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Save.png"));
+            btnImport.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Import.png");
             btnGetLoot.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\LootWindow.png"));
             btnDeletePoke.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\DeletePokemon.png"));
             btnGoTo.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\GoTo.png"));
@@ -1823,60 +1825,48 @@ namespace GenesisDex
             {
                 System.IO.Stream fileStream = PokeSaveDialog.OpenFile();
                 System.IO.StreamWriter sw = new System.IO.StreamWriter(fileStream);
-                sw.WriteLine("Pokemon List");
-                sw.WriteLine("ΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦΦ");
-                for (int i = 0; i < AllPokemon.Count; i++)
+                int i = Current;
+                sw.WriteLine("§PokeGenesis Export§");
+                sw.WriteLine(" Name: " + tbName.Text + Environment.NewLine +
+                    " Number: " + AllPokemon[Current].number + Environment.NewLine +
+                    " Type: " + tbType.Text + Environment.NewLine +
+                    " Gender: " + tbGender.Text + Environment.NewLine +
+                    " Nature: " + tbNature.Text + Environment.NewLine +
+                    " Level: " + tbLevel.Text + Environment.NewLine +
+                    Environment.NewLine +
+                    " Stats:" + Environment.NewLine +
+                    " Current Health: " + tbCurrentHealth.Text + Environment.NewLine +
+                    " Max Health: " + tbMaxHealth.Text + Environment.NewLine +
+                    " HP: " + tbLevelHP.Text + " (" + BasePokemon[Current].hp + ")" + Environment.NewLine +
+                    " ATK: " + tbLevelATK.Text + " (" + BasePokemon[Current].atk + ")" + Environment.NewLine +
+                    " DEF: " + tbLevelDEF.Text + " (" + BasePokemon[Current].def + ")" + Environment.NewLine +
+                    " SPATK: " + tbLevelSPATK.Text + " (" + BasePokemon[Current].spatk + ")" + Environment.NewLine +
+                    " SPDEF: " + tbLevelSPDEF.Text + " (" + BasePokemon[Current].spdef + ")" + Environment.NewLine +
+                    " SPD: " + tbLevelSPD.Text + " (" + BasePokemon[Current].spd + ")" + Environment.NewLine +
+                    Environment.NewLine +
+                    "Capabilities:");
+                foreach (string cap in AllCap[i])
                 {
-                    sw.WriteLine("~" + (i + 1).ToString() + "~" + Environment.NewLine);
-                    if (AllShinyCheck[i])
-                    {
-                        sw.WriteLine("Name: Shiny " + AllPokemon[i].id);
-                    }
-                    else
-                    {
-                        sw.WriteLine("Name: " + AllPokemon[i].id);
-                    }
-                    sw.WriteLine("Type: " + Type[i] + Environment.NewLine +
-                        "Gender: " + Gender[i] + Environment.NewLine +
-                        "Nature: " + AllNatures[i] + Environment.NewLine +
-                        "Size: " + AllPokemon[i].size + Environment.NewLine +
-                        "Weight: " + AllPokemon[i].weight + Environment.NewLine +
-                        "Level: " + AllLevels[i] + Environment.NewLine +
-                        Environment.NewLine +
-                        "Stats:" + Environment.NewLine +
-                        "Current Health:\t " + CurrentHealth[i] + Environment.NewLine +
-                        "Max Health:\t " + MaxHealth[i] + Environment.NewLine +
-                        "HP:\t\t " + AllStat[i][0] + Environment.NewLine +
-                        "ATK:\t\t " + AllStat[i][1] + Environment.NewLine +
-                        "DEF:\t\t " + AllStat[i][2] + Environment.NewLine +
-                        "SPATK:\t\t " + AllStat[i][3] + Environment.NewLine +
-                        "SPDEF:\t\t " + AllStat[i][4] + Environment.NewLine +
-                        "SPD:\t\t " + AllStat[i][5] + Environment.NewLine +
-                        Environment.NewLine +
-                        "Capabilities:");
-                    foreach (string cap in AllCap[i])
-                    {
-                        sw.WriteLine(cap);
-                    }
-                    sw.WriteLine(Environment.NewLine + "Moves:");
-                    for (var w = 0; w < AllMoves[i].Count; w++)
-                    {
-                        sw.WriteLine("-" + AllMoves[i][w]);
-                    }
-                    sw.WriteLine(Environment.NewLine + "Abilities:");
-                    for (var a = 0; a < AllAbilities[i].Count; a++)
-                    {
-                        sw.WriteLine("-" + AllAbilities[i][a]);
-                    }
-                    sw.WriteLine(Environment.NewLine + "Skills:");
-                    for (var s = 0; s < AllSkills[i].Count; s++)
-                    {
-                        sw.WriteLine("-" + AllSkills[i][s]);
-                    }
-                    sw.WriteLine(Environment.NewLine + "Held Item-" + Environment.NewLine + AllDesc1[i]);
-                    sw.WriteLine(Environment.NewLine + "------------------------------------------------------------------------------------------");
-                    PokeSaveScan.ReportProgress(1);
+                    sw.WriteLine("-" + cap);
                 }
+                sw.WriteLine(Environment.NewLine + "Moves:");
+                for (var w = 0; w < AllMoves[i].Count; w++)
+                {
+                    sw.WriteLine("-" + AllMoves[i][w]);
+                }
+                sw.WriteLine(Environment.NewLine + "Abilities:");
+                for (var a = 0; a < AllAbilities[i].Count; a++)
+                {
+                    sw.WriteLine("-" + AllAbilities[i][a]);
+                }
+                sw.WriteLine(Environment.NewLine + "Skills:");
+                for (var s = 0; s < AllSkills[i].Count; s++)
+                {
+                    sw.WriteLine("-" + AllSkills[i][s]);
+                }
+                sw.WriteLine(Environment.NewLine + "Held Item:" + Environment.NewLine + AllDesc1[i]);
+                sw.WriteLine(Environment.NewLine + "------------------------------------------------------------------------------------------");
+                PokeSaveScan.ReportProgress(1);
                 sw.Flush();
                 sw.Close();
             }
@@ -1893,7 +1883,6 @@ namespace GenesisDex
             if (openSave == DialogResult.Yes)
             {
                 Process.Start("notepad.exe", saveFilePath);
-                //File.Open(saveFilePath, FileMode.Open);
             }
         }
 
@@ -1907,6 +1896,237 @@ namespace GenesisDex
             if (Dots <= 9) { lblProgress.Text = "Saving Scan.  "; }
             else if (Dots <= 19) { lblProgress.Text = "Saving Scan.. "; }
             else if (Dots <= 29) { lblProgress.Text = "Saving Scan..."; }
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void PokeImportScan_DoWork(object sender, DoWorkEventArgs e)
+        {
+            string[] paths = PokeImportDialog.FileNames;
+            foreach (string i in paths)
+            {
+                string[] importedPokemon = File.ReadAllLines(i).ToArray();
+                string imName = "ERROR";
+                string imHP = "0";
+                string imATK = "0";
+                string imDEF = "0";
+                string imSPATK = "0";
+                string imSPDEF = "0";
+                string imSPD = "0";
+                string imbHP = "0";
+                string imbATK = "0";
+                string imbDEF = "0";
+                string imbSPATK = "0";
+                string imbSPDEF = "0";
+                string imbSPD = "0";
+                if (importedPokemon[0] != "§PokeGenesis Export§") return;
+                for (int s = 0; s < importedPokemon.Count(); s++)
+                {
+                    if (importedPokemon[s].Contains(" Name:"))
+                    {
+                        string[] temp = importedPokemon[s].Split(' ');
+                        imName = temp[2];
+                    }
+                    if (importedPokemon[s].Contains(" Number:"))
+                    {
+                        string[] temp = importedPokemon[s].Split(' ');
+                        if(imName.Contains("Shiny "))
+                            AllImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Shiny\\" + temp[2] + ".gif"));
+                        else
+                            AllImages.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Pokemon\\" + temp[2] + ".gif"));
+                    }
+                    if (importedPokemon[s].Contains(" Type:"))
+                    {
+                        string[] temp = importedPokemon[s].Split(' ');
+                        Type.Add(temp[2]);
+                    }
+                    if (importedPokemon[s].Contains(" Nature:"))
+                    {
+                        string[] temp = importedPokemon[s].Split(' ');
+                        AllNatures.Add(temp[2]);
+                    }
+                    if (importedPokemon[s].Contains(" Gender:"))
+                    {
+                        string[] temp = importedPokemon[s].Split(' ');
+                        Gender.Add(temp[2]);
+                    }
+                    if (importedPokemon[s].Contains(" Level:"))
+                    {
+                        string[] temp = importedPokemon[s].Split(' ');
+                        AllLevels.Add(Convert.ToInt32(temp[2]));
+                    }
+                    if (importedPokemon[s].Contains(" Current Health:"))
+                    {
+                        string[] temp = importedPokemon[s].Split(' ');
+                        CurrentHealth.Add(Convert.ToInt32(temp[3]));
+                    }
+                    if (importedPokemon[s].Contains(" Max Health:"))
+                    {
+                        string[] temp = importedPokemon[s].Split(' ');
+                        MaxHealth.Add(Convert.ToInt32(temp[3]));
+                    }
+                    if (importedPokemon[s].Contains(" HP:"))
+                    {
+                        string[] temp = importedPokemon[s].Split(' ');
+                        imHP = temp[2];
+                        imbHP = temp[3].Replace("(", string.Empty).Replace(")", string.Empty);
+                    }
+                    if (importedPokemon[s].Contains(" ATK:"))
+                    {
+                        string[] temp = importedPokemon[s].Split(' ');
+                        imATK = temp[2];
+                        imbATK = temp[3].Replace("(", string.Empty).Replace(")", string.Empty);
+                    }
+                    if (importedPokemon[s].Contains(" DEF:"))
+                    {
+                        string[] temp = importedPokemon[s].Split(' ');
+                        imDEF = temp[2];
+                        imbDEF = temp[3].Replace("(", string.Empty).Replace(")", string.Empty);
+                    }
+                    if (importedPokemon[s].Contains(" SPATK:"))
+                    {
+                        string[] temp = importedPokemon[s].Split(' ');
+                        imSPATK = temp[2];
+                        imbSPATK = temp[3].Replace("(", string.Empty).Replace(")", string.Empty);
+                    }
+                    if (importedPokemon[s].Contains(" SPDEF"))
+                    {
+                        string[] temp = importedPokemon[s].Split(' ');
+                        imSPDEF = temp[2];
+                        imbSPDEF = temp[3].Replace("(", string.Empty).Replace(")", string.Empty);
+                    }
+                    if (importedPokemon[s].Contains(" SPD"))
+                    {
+                        string[] temp = importedPokemon[s].Split(' ');
+                        imSPD = temp[2];
+                        imbSPD = temp[3].Replace("(", string.Empty).Replace(")", string.Empty);
+                    }
+                    if (importedPokemon[s].Contains("Capabilities:"))
+                    {
+                        List<string> cap = new List<string>();
+                        for (int c = s + 1; c < importedPokemon.Count(); c++)
+                        {
+                            if(importedPokemon[c].Contains("-"))
+                                cap.Add(importedPokemon[c].Replace("-", string.Empty));
+                            else
+                                break;
+                        }
+                        AllCap.Add(cap);
+                    }
+                    if (importedPokemon[s].Contains("Moves:"))
+                    {
+                        List<string> mov = new List<string>();
+                        for (int c = s + 1; c < importedPokemon.Count(); c++)
+                        {
+                            if (importedPokemon[c].Contains("-"))
+                                mov.Add(importedPokemon[c].Replace("-", string.Empty));
+                            else
+                                break;
+                        }
+                        AllMoves.Add(mov);
+                    }
+                    if (importedPokemon[s].Contains("Abilities:"))
+                    {
+                        List<string> abi = new List<string>();
+                        for (int c = s + 1; c < importedPokemon.Count(); c++)
+                        {
+                            if (importedPokemon[c].Contains("-"))
+                                abi.Add(importedPokemon[c].Replace("-", string.Empty));
+                            else
+                                break;
+                        }
+                        AllAbilities.Add(abi);
+                    }
+                    if (importedPokemon[s].Contains("Skills:"))
+                    {
+                        List<string> ski = new List<string>();
+                        for (int c = s + 1; c < importedPokemon.Count(); c++)
+                        {
+                            if (importedPokemon[c].Contains("-"))
+                                ski.Add(importedPokemon[c].Replace("-", string.Empty));
+                            else
+                                break;
+                        }
+                        AllSkills.Add(skill);
+                    }
+                    if (importedPokemon[s].Contains("Held Item:"))
+                    {
+                        AllDesc1.Add(importedPokemon[s + 1]);
+                        if (importedPokemon[s + 1] == "Nothing is here.")
+                            AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Blank.png"));
+                        else
+                        {
+                            string[] temp = importedPokemon[s + 1].Split(':');
+                            AllItems1.Add(getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Items\\" + temp[0] + ".png"));
+                        }
+                    }
+                }
+                AllPokemon.Add(new Pokemon
+                {
+                    id = imName
+                });
+                BasePokemon.Add(new Pokemon
+                {
+                    hp = imbHP,
+                    atk = imbATK,
+                    def = imbDEF,
+                    spatk = imbSPATK,
+                    spdef = imbSPDEF,
+                    spd = imbSPD
+                });
+                AllStat.Add(new List<string>
+                    {
+                        imHP,
+                        imATK,
+                        imDEF,
+                        imSPATK,
+                        imSPDEF,
+                        imSPD
+                    });
+                AllShinyCheck.Add(false);
+                AllStatus.Add(new StatusAfflictions
+                {
+                    Burned = false,
+                    Frozen = false,
+                    BadSleep = false,
+                    Poisoned = false,
+                    Cursed = false,
+                    Rage = false,
+                    Infatuation = false,
+                    Asleep = false,
+                    Blind = false,
+                    TotalBlind = false,
+                    Slowed = false,
+                    Suppress = false,
+                    Flinch = false,
+                    Confused = false,
+                    Paralysis = false,
+                    Trapped = false,
+                    Tripped = false,
+                    Stuck = false,
+                    Fainted = false,
+                    Vulnerable = false
+                });
+                CombatStage.Add(new int[] { 0, 0, 0, 0, 0, 0 });
+            }
+        }
+        private void PokeImportScan_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            Dots += e.ProgressPercentage;
+            if (Dots >= 30) { Dots = 0; }
+            if (Dots <= 9) { lblProgress.Text = "Importing Scan.  "; }
+            else if (Dots <= 19) { lblProgress.Text = "Importing Scan.. "; }
+            else if (Dots <= 29) { lblProgress.Text = "Importing Scan..."; }
+        }
+        private void PokeImportScan_RunWorkCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            lblProgress.Text = "Import Complete";
+            Current = AllPokemon.Count - 1;
+            tbPokeCount.Text = (Current + 1).ToString() + "/" + AllPokemon.Count.ToString();
+            pbPokemon.Image = AllImages[Current];
+            SetPoke();
+            WriteInfo();
         }
 
         //===========================================================================================================
@@ -2420,7 +2640,8 @@ namespace GenesisDex
         private void btnSave_MouseUp(object sender, MouseEventArgs e)
         {
             if (e.Button != MouseButtons.Left) return;
-            PokeSaveDialog.Filter = "Json File | *.json";
+            if (!hasScanned) return;
+            PokeSaveDialog.Filter = "Text File | *.txt";
             saveResult = PokeSaveDialog.ShowDialog() == DialogResult.OK;
             if (!saveResult) return;
             saveFilePath = PokeSaveDialog.FileName;
@@ -2433,6 +2654,27 @@ namespace GenesisDex
         private void btnSave_MouseLeave(object sender, EventArgs e)
         {
             btnSave.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Save.png");
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void btnImport_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left) return;
+            PokeImportDialog.Filter = "Text File | *.txt";
+            PokeImportDialog.Multiselect = true;
+            importResult = PokeImportDialog.ShowDialog() == DialogResult.OK;
+            if (!importResult) return;
+            PokeImportScan.RunWorkerAsync();
+        }
+        private void btnImport_MouseEnter(object sender, EventArgs e)
+        {
+            btnImport.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ImportHover.png");
+        }
+        private void btnImport_MouseLeave(object sender, EventArgs e)
+        {
+            btnImport.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Import.png");
         }
 
         //===========================================================================================================
@@ -2590,7 +2832,7 @@ namespace GenesisDex
                 CheckedState(chkBurned);
             }
         }
-        private void chkBurned_MouseEnter(object sender, EventArgs e)
+        private void chkBurned_MouseHover(object sender, EventArgs e)
         {
                 ttInfo.Show(ttInfo.GetToolTip(chkBurned), this.chkBurned, new Point(chkBurned.Width - 5 - 5, this.chkBurned.Height - 5));
         }
@@ -2630,7 +2872,7 @@ namespace GenesisDex
                 CheckedState(chkFrozen);
             }
         }
-        private void chkFrozen_MouseEnter(object sender, EventArgs e)
+        private void chkFrozen_MouseHover(object sender, EventArgs e)
         {
                 ttInfo.Show(ttInfo.GetToolTip(chkFrozen), this.chkFrozen, new Point(chkFrozen.Width - 5, this.chkFrozen.Height - 5));
         }
@@ -2670,7 +2912,7 @@ namespace GenesisDex
                 CheckedState(chkBadSleep);
             }
         }
-        private void chkBadSleep_MouseEnter(object sender, EventArgs e)
+        private void chkBadSleep_MouseHover(object sender, EventArgs e)
         {
                 ttInfo.Show(ttInfo.GetToolTip(chkBadSleep), this.chkBadSleep, new Point(chkBadSleep.Width - 5, this.chkBadSleep.Height - 5));
         }
@@ -2718,7 +2960,7 @@ namespace GenesisDex
                 CheckedState(chkPoisoned);
             }
         }
-        private void chkPoisoned_MouseEnter(object sender, EventArgs e)
+        private void chkPoisoned_MouseHover(object sender, EventArgs e)
         {
                 ttInfo.Show(ttInfo.GetToolTip(chkPoisoned), this.chkPoisoned, new Point(chkPoisoned.Width - 5, this.chkPoisoned.Height - 5));
         }
@@ -2758,7 +3000,7 @@ namespace GenesisDex
                 CheckedState(chkCursed);
             }
         }
-        private void chkCursed_MouseEnter(object sender, EventArgs e)
+        private void chkCursed_MouseHover(object sender, EventArgs e)
         {
                 ttInfo.Show(ttInfo.GetToolTip(chkCursed), this.chkCursed, new Point(chkCursed.Width - 5, this.chkCursed.Height - 5));
         }
@@ -2798,7 +3040,7 @@ namespace GenesisDex
                 CheckedState(chkRage);
             }
         }
-        private void chkRage_MouseEnter(object sender, EventArgs e)
+        private void chkRage_MouseHover(object sender, EventArgs e)
         {
                 ttInfo.Show(ttInfo.GetToolTip(chkRage), this.chkRage, new Point(chkRage.Width - 5, this.chkRage.Height - 5));
         }
@@ -2838,7 +3080,7 @@ namespace GenesisDex
                 CheckedState(chkInfatuation);
             }
         }
-        private void chkInfatuation_MouseEnter(object sender, EventArgs e)
+        private void chkInfatuation_MouseHover(object sender, EventArgs e)
         {
                 ttInfo.Show(ttInfo.GetToolTip(chkInfatuation), this.chkInfatuation, new Point(chkInfatuation.Width - 5, this.chkInfatuation.Height - 5));
         }
@@ -2878,7 +3120,7 @@ namespace GenesisDex
                 CheckedState(chkAsleep);
             }
         }
-        private void chkAsleep_MouseEnter(object sender, EventArgs e)
+        private void chkAsleep_MouseHover(object sender, EventArgs e)
         {
                 ttInfo.Show(ttInfo.GetToolTip(chkAsleep), this.chkAsleep, new Point(chkAsleep.Width - 5, this.chkAsleep.Height - 5));
         }
@@ -2918,7 +3160,7 @@ namespace GenesisDex
                 CheckedState(chkBlind);
             }
         }
-        private void chkBlind_MouseEnter(object sender, EventArgs e)
+        private void chkBlind_MouseHover(object sender, EventArgs e)
         {
                 ttInfo.Show(ttInfo.GetToolTip(chkBlind), this.chkBlind, new Point(chkBlind.Width - 5, this.chkBlind.Height - 5));
         }
@@ -2958,7 +3200,7 @@ namespace GenesisDex
                 CheckedState(chkTotalBlind);
             }
         }
-        private void chkTotalBlind_MouseEnter(object sender, EventArgs e)
+        private void chkTotalBlind_MouseHover(object sender, EventArgs e)
         {
                 ttInfo.Show(ttInfo.GetToolTip(chkTotalBlind), this.chkTotalBlind, new Point(chkTotalBlind.Width - 5, this.chkTotalBlind.Height - 5));
         }
@@ -2998,7 +3240,7 @@ namespace GenesisDex
                 CheckedState(chkSlowed);
             }
         }
-        private void chkSlowed_MouseEnter(object sender, EventArgs e)
+        private void chkSlowed_MouseHover(object sender, EventArgs e)
         {
                 ttInfo.Show(ttInfo.GetToolTip(chkSlowed), this.chkSlowed, new Point(chkSlowed.Width - 5, this.chkSlowed.Height - 5));
         }
@@ -3038,7 +3280,7 @@ namespace GenesisDex
                 CheckedState(chkSuppress);
             }
         }
-        private void chkSuppress_MouseEnter(object sender, EventArgs e)
+        private void chkSuppress_MouseHover(object sender, EventArgs e)
         {
                 ttInfo.Show(ttInfo.GetToolTip(chkSuppress), this.chkSuppress, new Point(chkSuppress.Width - 5, this.chkSuppress.Height - 5));
         }
@@ -3078,7 +3320,7 @@ namespace GenesisDex
                 CheckedState(chkFlinch);
             }
         }
-        private void chkFlinch_MouseEnter(object sender, EventArgs e)
+        private void chkFlinch_MouseHover(object sender, EventArgs e)
         {
                 ttInfo.Show(ttInfo.GetToolTip(chkFlinch), this.chkFlinch, new Point(chkFlinch.Width - 5, this.chkFlinch.Height - 5));
         }
@@ -3118,7 +3360,7 @@ namespace GenesisDex
                 CheckedState(chkConfused);
             }
         }
-        private void chkConfused_MouseEnter(object sender, EventArgs e)
+        private void chkConfused_MouseHover(object sender, EventArgs e)
         {
                 ttInfo.Show(ttInfo.GetToolTip(chkConfused), this.chkConfused, new Point(chkConfused.Width - 5, this.chkConfused.Height - 5));
         }
@@ -3166,7 +3408,7 @@ namespace GenesisDex
                 CheckedState(chkParalysis);
             }
         }
-        private void chkParalysis_MouseEnter(object sender, EventArgs e)
+        private void chkParalysis_MouseHover(object sender, EventArgs e)
         {
                 ttInfo.Show(ttInfo.GetToolTip(chkParalysis), this.chkParalysis, new Point(chkParalysis.Width - 5, this.chkParalysis.Height - 5));
         }
@@ -3206,7 +3448,7 @@ namespace GenesisDex
                 CheckedState(chkTrapped);
             }
         }
-        private void chkTrapped_MouseEnter(object sender, EventArgs e)
+        private void chkTrapped_MouseHover(object sender, EventArgs e)
         {
                 ttInfo.Show(ttInfo.GetToolTip(chkTrapped), this.chkTrapped, new Point(chkTrapped.Width - 5, this.chkTrapped.Height - 5));
         }
@@ -3246,7 +3488,7 @@ namespace GenesisDex
                 CheckedState(chkStuck);
             }
         }
-        private void chkStuck_MouseEnter(object sender, EventArgs e)
+        private void chkStuck_MouseHover(object sender, EventArgs e)
         {
                 ttInfo.Show(ttInfo.GetToolTip(chkStuck), this.chkStuck, new Point(chkStuck.Width - 5, this.chkStuck.Height - 5));
         }
@@ -3286,7 +3528,7 @@ namespace GenesisDex
                 CheckedState(chkVulnerable);
             }
         }
-        private void chkVulnerable_MouseEnter(object sender, EventArgs e)
+        private void chkVulnerable_MouseHover(object sender, EventArgs e)
         {
                 ttInfo.Show(ttInfo.GetToolTip(chkVulnerable), this.chkVulnerable, new Point(chkVulnerable.Width - 5, this.chkVulnerable.Height - 5));
         }
@@ -3326,7 +3568,7 @@ namespace GenesisDex
                 CheckedState(chkFainted);
             }
         }
-        private void chkFainted_MouseEnter(object sender, EventArgs e)
+        private void chkFainted_MouseHover(object sender, EventArgs e)
         {
                 ttInfo.Show(ttInfo.GetToolTip(chkFainted), this.chkFainted, new Point(chkFainted.Width - 5, this.chkFainted.Height - 5));
         }
@@ -3366,7 +3608,7 @@ namespace GenesisDex
                 CheckedState(chkTripped);
             }
         }
-        private void chkTripped_MouseEnter(object sender, EventArgs e)
+        private void chkTripped_MouseHover(object sender, EventArgs e)
         {
                 ttInfo.Show(ttInfo.GetToolTip(chkTripped), this.chkTripped, new Point(chkTripped.Width - 5, this.chkTripped.Height - 5));
         }
@@ -3453,28 +3695,32 @@ namespace GenesisDex
                 }
                 if (MoveTip != "No info to display...")
                 {
-                    if (AllPokemon[Current].type.Contains(MoveName[1]))
+                    try
                     {
-                        string[] MoveListInfo = Regex.Split(MoveTip, "\r\n|\r|\n");
-                        for (int s = 0; s < MoveListInfo.Count(); s++)
+                        if (tbType.Text.Contains(MoveName[1]))
                         {
-                            if (MoveListInfo[s].Contains("DB:"))
+                            string[] MoveListInfo = Regex.Split(MoveTip, "\r\n|\r|\n");
+                            for (int s = 0; s < MoveListInfo.Count(); s++)
                             {
-                                StringBuilder build = new StringBuilder();
-                                string[] DamBase = MoveListInfo[s].Split(':');
-                                string STAB = (Convert.ToInt32(DamBase[1]) + 2).ToString();
-                                build.Append("DB:");
-                                build.Append(STAB);
-                                MoveListInfo[s] = build.ToString();
-                                build.Clear();
-                                foreach(string b in MoveListInfo)
+                                if (MoveListInfo[s].Contains("DB:"))
                                 {
-                                    build.Append(b + Environment.NewLine);
+                                    StringBuilder build = new StringBuilder();
+                                    string[] DamBase = MoveListInfo[s].Split(':');
+                                    string STAB = (Convert.ToInt32(DamBase[1]) + 2).ToString();
+                                    build.Append("DB:");
+                                    build.Append(STAB);
+                                    MoveListInfo[s] = build.ToString();
+                                    build.Clear();
+                                    foreach (string b in MoveListInfo)
+                                    {
+                                        build.Append(b + Environment.NewLine);
+                                    }
+                                    MoveTip = build.ToString();
                                 }
-                                MoveTip = build.ToString();
                             }
                         }
                     }
+                    catch { }
                 }
                 MoveTip = Regex.Replace(MoveTip, @"^\s*$[\r\n]*", "", RegexOptions.Multiline);
                 moveIndex = IndexPoint;
