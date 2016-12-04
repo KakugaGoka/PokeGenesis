@@ -2641,7 +2641,7 @@ namespace GenesisDex
         {
             if (e.Button != MouseButtons.Left) return;
             if (!hasScanned) return;
-            PokeSaveDialog.Filter = "Text File | *.txt";
+            PokeSaveDialog.Filter = "PokeGenesis Export File | *.pkgen";
             saveResult = PokeSaveDialog.ShowDialog() == DialogResult.OK;
             if (!saveResult) return;
             saveFilePath = PokeSaveDialog.FileName;
@@ -2662,7 +2662,7 @@ namespace GenesisDex
         private void btnImport_MouseUp(object sender, MouseEventArgs e)
         {
             if (e.Button != MouseButtons.Left) return;
-            PokeImportDialog.Filter = "Text File | *.txt";
+            PokeImportDialog.Filter = "PokeGenesis Export File | *.pkgen";
             PokeImportDialog.Multiselect = true;
             importResult = PokeImportDialog.ShowDialog() == DialogResult.OK;
             if (!importResult) return;
