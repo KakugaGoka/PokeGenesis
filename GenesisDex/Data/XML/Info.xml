@@ -10872,15 +10872,14 @@ Effect:The user is adept at crafting clothes for
  Overcoat Abilities.nVibrant Suit - Effect: 
  Grants the Chlorophyll and
  Photosynthesis Abilities.
-
       </Description>
     </Ability>
     <Ability name="Leaf Guard">
       <Description>
 Freq:Scene - Swift Action
 Effect:The user is cured of one Status Affliction.
- Leaf Guard's Frequency is ignored if used during
- Sunny Weather.
+Leaf Guard's Frequency is ignored if used during
+Sunny Weather.
       </Description>
     </Ability>
     <Ability name="Leek Mastery">
@@ -11297,36 +11296,36 @@ Effect:The user gains Last Chance with Grass.
       <Description>
 Freq:Static
 Effect:The user is immune to Confusion.
- Defensive.
+Defensive.
       </Description>
     </Ability>
     <Ability name="Pack Hunt">
       <Description>
 Freq:At-Will - Free Action
 Trigger:An adjacent foe is damaged
- by an ally's Melee Attack
+by an ally's Melee Attack
 Effect:The user may make a Physical Attack
- with an AC of 5 against the triggering foe.
- If the attack hits the foe loses
- a Tick of Hit Points.
+with an AC of 5 against the triggering foe.
+If the attack hits the foe loses
+a Tick of Hit Points.
       </Description>
     </Ability>
     <Ability name="Parental Bond">
       <Description>
 Freq:Static
 Effect:Only Kangaskhan with the Baby Template can
- be Mega Evolved and gain this Ability. While
- they have this Ability the Baby gains 10 Damage
- Reduction and will leave its mother's pouch and
- may be commanded to take action in battle. Both
- the Baby Kangaskhan with this Ability and its
- Mother may take their turn when the Mother takes
- its turn; the Baby will not willingly walk
- farther than 10 meters from its mother however.
- If the Baby Kangaskhan with this Ability is
- Fainted its mother will become Enraged and
- gain 5 Damage Reduction and +5 to Damage Rolls 
- for the remainder of the Scene.
+be Mega Evolved and gain this Ability. While
+they have this Ability the Baby gains 10 Damage
+Reduction and will leave its mother's pouch and
+may be commanded to take action in battle. Both
+the Baby Kangaskhan with this Ability and its
+Mother may take their turn when the Mother takes
+its turn; the Baby will not willingly walk
+farther than 10 meters from its mother however.
+If the Baby Kangaskhan with this Ability is
+Fainted its mother will become Enraged and
+gain 5 Damage Reduction and +5 to Damage Rolls 
+for the remainder of the Scene.
       </Description>
     </Ability>
     <Ability name="Parry">
@@ -11340,25 +11339,33 @@ Effect:The attack instead misses. Defensive.
       <Description>
 Freq:Static
 Effect:The user gains +1 Evasion. Whenever an Ally
- uses a damaging area-of-effect attack that would
- hit you you may Disengage as a Free Action before
- the attack resolves.
+uses a damaging area-of-effect attack that would
+hit you you may Disengage as a Free Action before 
+the attack resolves.
       </Description>
     </Ability>
     <Ability name="Permafrost">
       <Description>
 Freq:Static
 Effect:The user is immune to damage and Hit Point
- loss from Hazards Weather Status Afflictions
- Vortexes Recoil Hay Fever Iron Barbs Rough Skin
- and Leech Seed. Defensive.
+loss from Hazards Weather Status Afflictions
+Vortexes Recoil Hay Fever Iron Barbs Rough Skin
+and Leech Seed. Defensive.
+      </Description>
+    </Ability>
+    <Ability name="Photosynthesis">
+      <Description>
+Freq: Daily - Extended Action
+Effect: If the user is allowed to bask in normal sunlight
+for at least 10 minutes, they may heal up to 25% of their
+Max Hit Points, and remove one Injury.
       </Description>
     </Ability>
     <Ability name="Pickpocket">
       <Description>
 Freq:Scene - Free Action
 Trigger:The user is hit by an opponent with a
- Melee Move
+Melee Move
 Effect:If the opponent has a Held Item and
  the user does not the user takes the Held Item
  the opponent is holding.
@@ -11408,7 +11415,6 @@ gains a Tick of Hit Points at the
       <Description>
 Freq:Scene - Free Action
 Target:Any roll made by yourself or an ally.
-<!--===========================================-->
 Effect:The user may reroll any roll or have any
  ally reroll any roll that has been made.
  This leaves discoverable Psychic residue.

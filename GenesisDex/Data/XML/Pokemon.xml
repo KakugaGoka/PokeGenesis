@@ -84,7 +84,7 @@
         <BasicAbility>Confidence</BasicAbility>
         <BasicAbility>Photosynthesis</BasicAbility>
         <AdvancedAbility>Chlorophyll</AdvancedAbility>
-        <AdvancedAbility>Leaf Gaurd</AdvancedAbility>
+        <AdvancedAbility>Leaf Guard</AdvancedAbility>
         <HighAbility>Courage</HighAbility>
       </Ability>
       <Skills>
@@ -150,7 +150,7 @@
         <BasicAbility>Confidence</BasicAbility>
         <BasicAbility>Photosynthesis</BasicAbility>
         <AdvancedAbility>Chlorophyll</AdvancedAbility>
-        <AdvancedAbility>Leaf Gaurd</AdvancedAbility>
+        <AdvancedAbility>Leaf Guard</AdvancedAbility>
         <HighAbility>Courage</HighAbility>
       </Ability>
       <Capability>
