@@ -76,9 +76,9 @@
             this.gbOptions = new System.Windows.Forms.GroupBox();
             this.gbPokedex = new System.Windows.Forms.GroupBox();
             this.gbRegion = new System.Windows.Forms.GroupBox();
-            this.nudSpawn = new System.Windows.Forms.NumericUpDown();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.nudSpawn = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.nudItemTier)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudScanLimit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPokeLevel)).BeginInit();
@@ -618,6 +618,24 @@
             this.gbRegion.TabStop = false;
             this.gbRegion.Text = "Regions";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(326, 280);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(63, 13);
+            this.label6.TabIndex = 59;
+            this.label6.Text = "Rarity Level";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(311, 267);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(95, 13);
+            this.label5.TabIndex = 58;
+            this.label5.Text = "Current Selection\'s";
+            // 
             // nudSpawn
             // 
             this.nudSpawn.Location = new System.Drawing.Point(416, 267);
@@ -640,24 +658,6 @@
             0,
             0});
             this.nudSpawn.ValueChanged += new System.EventHandler(this.nudSpawn_ValueChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(311, 267);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 13);
-            this.label5.TabIndex = 58;
-            this.label5.Text = "Current Selection\'s";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(326, 280);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 13);
-            this.label6.TabIndex = 59;
-            this.label6.Text = "Rarity Level";
             // 
             // FormOptions
             // 

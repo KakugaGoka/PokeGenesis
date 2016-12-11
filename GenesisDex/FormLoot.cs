@@ -91,16 +91,10 @@ namespace GenesisDex
         {
             optionsList.Clear();
             optionsList = optionsXML.createList();
-            ItemTiers.Clear();
-            for (int i = 1; i <= optionsList[0].MaxItemTier; i++)
-            {
-                for (int p = optionsList[0].MaxItemTier - (i - 1); p > 0; p--)
-                {
-                    ItemTiers.Add(i);
-                }
-            }
             this.BackgroundImage = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\LootMenu" + optionsList[0].PokedexSkin + ".PNG");
             nudPlayerLevel.Maximum = optionsList[0].MaxPlayerLevel;
+            nudMaxTier.Maximum = optionsList[0].MaxItemTier;
+            nudMaxTier.Value = nudMaxTier.Maximum;
         }
 
         private void GetLoot()
@@ -108,6 +102,14 @@ namespace GenesisDex
             lbItems.Items.Clear();
             lootList.Clear();
             lootName.Clear();
+            ItemTiers.Clear();
+            for (int i = 1; i <= nudMaxTier.Value; i++)
+            {
+                for (int p = Convert.ToInt32(nudMaxTier.Value) - (i - 1); p > 0; p--)
+                {
+                    ItemTiers.Add(i);
+                }
+            }
             int val = Convert.ToInt32(nudPlayerLevel.Value);
             Cash = 0;
             for (int x = 0; x < val; x++)
