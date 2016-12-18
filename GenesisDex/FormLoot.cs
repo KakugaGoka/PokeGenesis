@@ -291,8 +291,9 @@ namespace GenesisDex
         //===========================================================================================================
         private void lbItems_SelectedIndexChanged(object sender, EventArgs e)
         {
-            pkItem.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Items\\" + lootName[lbItems.SelectedIndex] + ".png");
-            ttDescription.SetToolTip(this.pkItem, lootList[lbItems.SelectedIndex]);
+            try { pkItem.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\Images\\Items\\" + lootName[lbItems.SelectedIndex] + ".png");
+                ttDescription.SetToolTip(this.pkItem, lootList[lbItems.SelectedIndex]); }
+            catch { };
         }
 
         //===========================================================================================================
