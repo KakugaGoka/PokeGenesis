@@ -2503,7 +2503,7 @@ namespace GenesisDex
             {
                 List<string> searchDex = new List<string>();
                 searchDex.Clear();
-                foreach (string s in pokeDex)
+                foreach (string s in lbPokemon.Items)
                 {
                     if (s.StartsWith(tbSearch.Text, StringComparison.OrdinalIgnoreCase) == true)
                     {
@@ -2516,6 +2516,7 @@ namespace GenesisDex
             {
                 lbPokemon.DataSource = updateList;
                 lbPokemon.DataSource = pokeDex;
+                cbRegion_SelectedIndexChanged(this, new EventArgs());
             }
         }
 
