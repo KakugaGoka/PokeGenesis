@@ -2594,6 +2594,12 @@
     <Content Include="Data\Audio\Cries\719-mega.ogg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Data\GUI\AddLoot.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\GUI\AddLootHover.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Data\GUI\DealTick.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

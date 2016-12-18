@@ -40,19 +40,23 @@
             this.ttDescription = new System.Windows.Forms.ToolTip(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.nudMaxTier = new System.Windows.Forms.NumericUpDown();
+            this.cbPossible = new System.Windows.Forms.ComboBox();
+            this.btnAddItem = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPlayerLevel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnScanLoot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudMaxTier)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddItem)).BeginInit();
             this.SuspendLayout();
             // 
             // btnMinimize
             // 
             this.btnMinimize.BackColor = System.Drawing.Color.Transparent;
             this.btnMinimize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMinimize.BackgroundImage")));
-            this.btnMinimize.Location = new System.Drawing.Point(836, 67);
+            this.btnMinimize.Location = new System.Drawing.Point(627, 69);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(15, 15);
             this.btnMinimize.TabIndex = 194;
@@ -65,7 +69,7 @@
             // 
             this.btnExit.BackColor = System.Drawing.Color.Transparent;
             this.btnExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExit.BackgroundImage")));
-            this.btnExit.Location = new System.Drawing.Point(836, 46);
+            this.btnExit.Location = new System.Drawing.Point(627, 48);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(15, 15);
             this.btnExit.TabIndex = 193;
@@ -77,9 +81,9 @@
             // pkItem
             // 
             this.pkItem.BackColor = System.Drawing.Color.Transparent;
-            this.pkItem.Location = new System.Drawing.Point(696, 79);
+            this.pkItem.Location = new System.Drawing.Point(487, 78);
             this.pkItem.Name = "pkItem";
-            this.pkItem.Size = new System.Drawing.Size(118, 117);
+            this.pkItem.Size = new System.Drawing.Size(118, 118);
             this.pkItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pkItem.TabIndex = 195;
             this.pkItem.TabStop = false;
@@ -93,7 +97,7 @@
             this.lbItems.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lbItems.FormattingEnabled = true;
             this.lbItems.ItemHeight = 18;
-            this.lbItems.Location = new System.Drawing.Point(436, 54);
+            this.lbItems.Location = new System.Drawing.Point(227, 53);
             this.lbItems.Name = "lbItems";
             this.lbItems.Size = new System.Drawing.Size(170, 166);
             this.lbItems.TabIndex = 196;
@@ -104,10 +108,20 @@
             this.nudPlayerLevel.BackColor = System.Drawing.Color.Beige;
             this.nudPlayerLevel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nudPlayerLevel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.nudPlayerLevel.Location = new System.Drawing.Point(124, 58);
+            this.nudPlayerLevel.Location = new System.Drawing.Point(136, 61);
+            this.nudPlayerLevel.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.nudPlayerLevel.Name = "nudPlayerLevel";
             this.nudPlayerLevel.Size = new System.Drawing.Size(46, 20);
             this.nudPlayerLevel.TabIndex = 197;
+            this.nudPlayerLevel.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label11
             // 
@@ -116,7 +130,7 @@
             this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label11.Font = new System.Drawing.Font("Sitka Small", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(61, 60);
+            this.label11.Location = new System.Drawing.Point(73, 63);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(62, 14);
             this.label11.TabIndex = 198;
@@ -125,7 +139,7 @@
             // btnScanLoot
             // 
             this.btnScanLoot.BackColor = System.Drawing.Color.Transparent;
-            this.btnScanLoot.Location = new System.Drawing.Point(294, 191);
+            this.btnScanLoot.Location = new System.Drawing.Point(76, 114);
             this.btnScanLoot.Name = "btnScanLoot";
             this.btnScanLoot.Size = new System.Drawing.Size(126, 26);
             this.btnScanLoot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -149,7 +163,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Sitka Small", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(76, 86);
+            this.label1.Location = new System.Drawing.Point(88, 89);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 14);
             this.label1.TabIndex = 201;
@@ -160,7 +174,7 @@
             this.nudMaxTier.BackColor = System.Drawing.Color.Beige;
             this.nudMaxTier.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nudMaxTier.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.nudMaxTier.Location = new System.Drawing.Point(124, 84);
+            this.nudMaxTier.Location = new System.Drawing.Point(136, 87);
             this.nudMaxTier.Maximum = new decimal(new int[] {
             4,
             0,
@@ -180,6 +194,42 @@
             0,
             0});
             // 
+            // cbPossible
+            // 
+            this.cbPossible.BackColor = System.Drawing.Color.Beige;
+            this.cbPossible.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cbPossible.FormattingEnabled = true;
+            this.cbPossible.Location = new System.Drawing.Point(66, 161);
+            this.cbPossible.Name = "cbPossible";
+            this.cbPossible.Size = new System.Drawing.Size(145, 21);
+            this.cbPossible.TabIndex = 202;
+            // 
+            // btnAddItem
+            // 
+            this.btnAddItem.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddItem.Location = new System.Drawing.Point(76, 188);
+            this.btnAddItem.Name = "btnAddItem";
+            this.btnAddItem.Size = new System.Drawing.Size(126, 26);
+            this.btnAddItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnAddItem.TabIndex = 203;
+            this.btnAddItem.TabStop = false;
+            this.btnAddItem.MouseEnter += new System.EventHandler(this.btnAddItem_MouseEnter);
+            this.btnAddItem.MouseLeave += new System.EventHandler(this.btnAddItem_MouseLeave);
+            this.btnAddItem.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnAddItem_MouseUp);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.Font = new System.Drawing.Font("Sitka Small", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(63, 143);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 14);
+            this.label2.TabIndex = 204;
+            this.label2.Text = "Items List";
+            // 
             // FormLoot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -187,7 +237,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(875, 271);
+            this.ClientSize = new System.Drawing.Size(683, 271);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnAddItem);
+            this.Controls.Add(this.cbPossible);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.nudMaxTier);
             this.Controls.Add(this.btnScanLoot);
@@ -211,6 +264,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudPlayerLevel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnScanLoot)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudMaxTier)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddItem)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,5 +282,8 @@
         private System.Windows.Forms.ToolTip ttDescription;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown nudMaxTier;
+        private System.Windows.Forms.ComboBox cbPossible;
+        private System.Windows.Forms.PictureBox btnAddItem;
+        private System.Windows.Forms.Label label2;
     }
 }

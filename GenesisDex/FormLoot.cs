@@ -31,9 +31,11 @@ namespace GenesisDex
         //===========================================================================================================
         ItemList itemXML = new ItemList();
         List<Items> itemList = new List<Items>();
+        List<Items> possibleList = new List<Items>();
         //===========================================================================================================
         List<string> lootList = new List<string>();
         List<string> lootName = new List<string>();
+        List<string> possibleName = new List<string>();
         //===========================================================================================================
         int Cash { get; set; }
         //===========================================================================================================
@@ -45,6 +47,7 @@ namespace GenesisDex
             btnExit.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\CloseButton.png");
             btnMinimize.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\MinimizeButton.png");
             btnScanLoot.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\ScanLoot.png");
+            btnAddItem.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\AddLoot.png");
             this.Activated += fl_Activated;
             UpdateLoot();
         }
@@ -87,6 +90,9 @@ namespace GenesisDex
             dragging = false;
         }
 
+        //===========================================================================================================
+        //===
+        //===========================================================================================================
         private void UpdateLoot()
         {
             optionsList.Clear();
@@ -95,8 +101,29 @@ namespace GenesisDex
             nudPlayerLevel.Maximum = optionsList[0].MaxPlayerLevel;
             nudMaxTier.Maximum = optionsList[0].MaxItemTier;
             nudMaxTier.Value = nudMaxTier.Maximum;
+            possibleList = new List<Items>();
+            for (int tier = 1; tier < optionsList[0].MaxItemTier + 1; tier++)
+            {
+                itemList = itemXML.createList(tier.ToString());
+                foreach(Items item in itemList)
+                {
+                    possibleList.Add(item);
+                }
+            }
+            possibleList.Sort(delegate (Items x, Items y)
+            {
+                return x.id.CompareTo(y.id);
+            });
+            foreach (Items item in possibleList)
+            {
+                possibleName.Add(item.id);
+            }
+            cbPossible.DataSource = possibleName;
         }
 
+        //===========================================================================================================
+        //===
+        //===========================================================================================================
         private void GetLoot()
         {
             lbItems.Items.Clear();
@@ -148,6 +175,7 @@ namespace GenesisDex
         //===========================================================================================================
         private void WriteLoot()
         {
+            lbItems.Items.Clear();
             foreach (string s in lootName)
             {
                 lbItems.Items.Add(s);
@@ -161,7 +189,7 @@ namespace GenesisDex
         private void SetItem()
         {
             pkItem.Size = pkItem.Image.Size;
-            pkItem.Location = new Point(538 - (pkItem.Width / 2), 177 - (pkItem.Height));
+            pkItem.Location = new Point(548 - (pkItem.Width / 2), 197 - (pkItem.Height));
         }
 
         //===========================================================================================================
@@ -191,6 +219,16 @@ namespace GenesisDex
             }
             lootName.Add(itemList[i].id);
             lootList.Add(itemList[i].desc);
+        }
+
+        //===========================================================================================================
+        //===
+        //===========================================================================================================
+        private void ItemAddByName()
+        {
+            lootName.Add(possibleList[cbPossible.SelectedIndex].id);
+            lootList.Add(possibleList[cbPossible.SelectedIndex].desc);
+            WriteLoot();
         }
 
         //===========================================================================================================
@@ -285,6 +323,22 @@ namespace GenesisDex
         private void pkItem_MouseLeave(object sender, EventArgs e)
         {
             ttDescription.Hide(pkItem);
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void btnAddItem_MouseUp(object sender, MouseEventArgs e)
+        {
+            ItemAddByName();
+        }
+        private void btnAddItem_MouseEnter(object sender, EventArgs e)
+        {
+            btnAddItem.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\AddLootHover.png");
+        }
+        private void btnAddItem_MouseLeave(object sender, EventArgs e)
+        {
+            btnAddItem.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\AddLoot.png");
         }
     }
 }
