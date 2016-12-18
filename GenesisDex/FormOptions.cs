@@ -403,7 +403,7 @@ namespace GenesisDex
                 if (!listRegionAllowed.Items.Contains(s.id))
                     listRegionBanned.Items.Add(s.id);
             }
-            listRegionAllowed.SelectedIndex = 0;
+            try { listRegionAllowed.SelectedIndex = 0; } catch { };
         }
 
         private void btnRestoreRegions_Click(object sender, EventArgs e)
