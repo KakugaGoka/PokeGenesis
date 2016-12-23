@@ -1988,7 +1988,7 @@ namespace GenesisDex
                 placement = 1;
                 foreach (string a in lbAbilities.Items)
                 {
-                    if (a != "Abilites:")
+                    if (a != "Abilities:")
                     {
                         writer.WritePropertyName("Ability" + placement);
                         writer.WriteStartObject();
