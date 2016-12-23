@@ -84,7 +84,9 @@ namespace GenesisDexEngine
 
     class Skill
     {
-        public string skill { get; set; }
+        public string name { get; set; }
+        public string die { get; set; }
+        public string bonus { get; set; }
     }
 
     class Moves
@@ -492,7 +494,9 @@ namespace GenesisDexEngine
             var query = from node in doc.Descendants("List" + decend).Descendants("Skills").Descendants("skill")
                         select new Skill
                         {
-                            skill = (string)node.Value
+                            name = (string)node.Element("name").Value,
+                            die = (string)node.Element("die").Value,
+                            bonus = (string)node.Element("bonus").Value
                         };
             idList = query.ToList();
             return idList;

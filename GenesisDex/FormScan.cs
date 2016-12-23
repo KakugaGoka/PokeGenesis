@@ -52,6 +52,7 @@ namespace GenesisDex
         //===========================================================================================================
         SkillList skillXML = new SkillList();
         List<Skill> skillList = new List<Skill>();
+        List<Skill> skill = new List<Skill>();
         //===========================================================================================================
         CapabilityList capXML = new CapabilityList();
         List<Capability> capList = new List<Capability>();
@@ -115,7 +116,6 @@ namespace GenesisDex
         List<string> regionPokemon = new List<string>();
         List<string> moves = new List<string>();
         List<string> ability = new List<string>();
-        List<string> skill = new List<string>();
         List<string> stages = new List<string>();
         List<string> AllNatures = new List<string>();
         List<string> AllDesc1 = new List<string>();
@@ -125,9 +125,10 @@ namespace GenesisDex
         List<string> Type = new List<string>();
         List<string> updateList = new List<string>();
         //===========================================================================================================
+        List<List<Skill>> AllSkills = new List<List<Skill>>();
+        //===========================================================================================================
         List<List<string>> AllMoves = new List<List<string>>();
         List<List<string>> AllAbilities = new List<List<string>>();
-        List<List<string>> AllSkills = new List<List<string>>();
         List<List<string>> AllStat = new List<List<string>>();
         List<List<string>> AllCap = new List<List<string>>();
         //===========================================================================================================
@@ -1089,40 +1090,36 @@ namespace GenesisDex
             CurrentHealth.Add(health);
         }
 
-        private string SkillUp(int i)
+        private Skill SkillUp(int i)
         {
-            if (skillList[i].skill.Contains("1d6"))
+            int Up = 0;
+            try { Up = Convert.ToInt32(skillList[i].die); }
+            catch
             {
-                return skillList[i].skill;
+                MessageBox.Show("skill die is not entered correctly. " +
+                "Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue. Erroring skill will be replaced with an 'ERROR' text.");
+                skillList[i].die = "ERROR";
+                return skillList[i];
             }
-            StringBuilder build = new StringBuilder();
-            string skil = skillList[i].skill.ToString();
-            string[] up1 = skil.Split(' ');
-            string[] up2 = up1[1].Split('d');
-            int temp;
-            try { temp = Convert.ToInt32(up2[0]); } catch { MessageBox.Show(IChooseYou.id + "'s Skill is not entered correctly. " +
-                "Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return "ERROR"; }
-            int fin = temp + 1;
-            build.Append(up1[0] + " " + fin + "d" + up2[1]);
-            return build.ToString();
+            Up++;
+            skillList[i].die = Up.ToString();
+            return skillList[i];
         }
 
-        private string SkillDn(int i)
+        private Skill SkillDn(int i)
         {
-            if (skillList[i].skill.Contains("1d6"))
+            int Down = 50;
+            try { Down = Convert.ToInt32(skillList[i].die); }
+            catch
             {
-                return skillList[i].skill;
+                MessageBox.Show("skill die is not entered correctly. " +
+                "Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue. Erroring skill will be replaced with an 'ERROR' text.");
+                skillList[i].die = "ERROR";
+                return skillList[i];
             }
-            StringBuilder build = new StringBuilder();
-            string skil = skillList[i].skill.ToString();
-            string[] up1 = skil.Split(' ');
-            string[] up2 = up1[1].Split('d');
-            int temp;
-            try { temp = Convert.ToInt32(up2[0]); } catch { MessageBox.Show(IChooseYou.id + "'s Skill is not entered correctly. " +
-                "Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue."); return "ERROR"; }
-            int fin = temp - 1;
-            build.Append(up1[0] + " " + fin + "d" + up2[1]);
-            return build.ToString();
+            Down--;
+            skillList[i].die = Down.ToString();
+            return skillList[i];
         }
 
         //===========================================================================================================
@@ -1131,8 +1128,8 @@ namespace GenesisDex
         private void GetSkills()
         {
             skillList = new List<Skill>();
-            skill = new List<string>();
-            List<string> prep = new List<string>();
+            skill = new List<Skill>();
+            List<Skill> prep = new List<Skill>();
             prep.Clear();
             skillList.Clear();
             skillList = skillXML.createList(IChooseYou.number);
@@ -1143,7 +1140,7 @@ namespace GenesisDex
             {
                 for (int s = 0; s < skillList.Count(); s++)
                 {
-                    prep.Add(skillList[values[s]].skill);
+                    prep.Add(skillList[values[s]]);
                 }
             }
             else if (sk == 1)
@@ -1152,7 +1149,7 @@ namespace GenesisDex
                 prep.Add(SkillDn(values[1]));
                 for (int s = 2; s < skillList.Count(); s++)
                 {
-                    prep.Add(skillList[values[s]].skill);
+                    prep.Add(skillList[values[s]]);
                 }
             }
             else if (sk == 2)
@@ -1163,7 +1160,7 @@ namespace GenesisDex
                 prep.Add(SkillDn(values[3]));
                 for (int s = 4; s < skillList.Count(); s++)
                 {
-                    prep.Add(skillList[values[s]].skill);
+                    prep.Add(skillList[values[s]]);
                 }
             }
             else if (sk == 3)
@@ -1176,57 +1173,62 @@ namespace GenesisDex
                 prep.Add(SkillDn(values[5]));
                 for (int s = 6; s < skillList.Count(); s++)
                 {
-                    prep.Add(skillList[values[s]].skill);
+                    prep.Add(skillList[values[s]]);
                 }
             }
-            foreach (string s in prep)
+            foreach (Skill s in prep)
             {
-                if (s.Contains("Athl") == true)
+                if (s.name.Contains("Athl") == true)
                 {
                     skill.Add(s);
                 }
 
             }
-            foreach (string s in prep)
+            foreach (Skill s in prep)
             {
-                if (s.Contains("Acro") == true)
+                if (s.name.Contains("Acro") == true)
                 {
                     skill.Add(s);
                 }
             }
-            foreach (string s in prep)
+            foreach (Skill s in prep)
             {
-                if (s.Contains("Combat") == true)
+                if (s.name.Contains("Combat") == true)
                 {
                     skill.Add(s);
                 }
             }
-            foreach (string s in prep)
+            foreach (Skill s in prep)
             {
-                if (s.Contains("Stealth") == true)
+                if (s.name.Contains("Stealth") == true)
                 {
                     skill.Add(s);
                 }
             }
-            foreach (string s in prep)
+            foreach (Skill s in prep)
             {
-                if (s.Contains("Percep") == true)
+                if (s.name.Contains("Percep") == true)
                 {
                     skill.Add(s);
                 }
             }
-            foreach (string s in prep)
+            foreach (Skill s in prep)
             {
-                if (s.Contains("Focus") == true)
+                if (s.name.Contains("Focus") == true)
                 {
                     skill.Add(s);
                 }
             }
             if (prep.Count > 0)
             {
-                foreach (string s in prep)
+                foreach (Skill s in prep)
                 {
-                    if (!s.Contains("Athl") && !s.Contains("Acro") && !s.Contains("Combat") && !s.Contains("Stealth") && !s.Contains("Percep") && !s.Contains("Focus"))
+                    if (!s.name.Contains("Athl") 
+                        && !s.name.Contains("Acro") 
+                        && !s.name.Contains("Combat") 
+                        && !s.name.Contains("Stealth") 
+                        && !s.name.Contains("Percep") 
+                        && !s.name.Contains("Focus"))
                     skill.Add(s);
                 }
             }
@@ -1579,7 +1581,7 @@ namespace GenesisDex
             lbSkills.Items.Add("Skills:");
             for (var s = 0; s < AllSkills[Current].Count; s++)
             {
-                lbSkills.Items.Add(AllSkills[Current][s]);
+                lbSkills.Items.Add(AllSkills[Current][s].name + " " + AllSkills[Current][s].die + "d6+" + AllSkills[Current][s].bonus);
             }
             pkItem.Image = AllItems1[Current];
             SetItem();

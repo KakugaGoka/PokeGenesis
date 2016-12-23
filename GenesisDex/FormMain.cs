@@ -556,7 +556,7 @@ namespace GenesisDex
             rtbInfo.Text += Environment.NewLine + "Skills:" + Environment.NewLine;
             for (var e = 0; e < skillList.Count; e++)
             {
-                rtbInfo.Text += "-" + skillList[e].skill + Environment.NewLine;
+                rtbInfo.Text += "-" + skillList[e].name+ " " + skillList[e].die + "d6+" + skillList[e].bonus + Environment.NewLine;
             }
 
         }
