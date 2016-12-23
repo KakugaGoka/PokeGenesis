@@ -13,6 +13,8 @@ using System.Windows.Forms;
 using NAudio.Vorbis;
 using NAudio.Wave;
 using GenesisDexEngine;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
 
 namespace GenesisDex
 {
@@ -271,6 +273,7 @@ namespace GenesisDex
             btnGetLoot.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\LootWindow.png"));
             btnDeletePoke.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\DeletePokemon.png"));
             btnGoTo.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\GoTo.png"));
+            btnRoll20Export.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Roll20Export.png");
             nudGoTo.Maximum = 1;
             nudGoTo.Minimum = 1;
             nudLevelMin.Value = 2;
@@ -1754,80 +1757,260 @@ namespace GenesisDex
         //=== This is the background worker for the save function, that allows the players to save their scan as a ==
         //===== text file that they can view later on. ==============================================================
         //===========================================================================================================
-        //private void PokeSaveJSON_DoWork(object sender, DoWorkEventArgs e)
-        //{
-        //    JObject pokemonSaveData = new JObject(
-        //        new JProperty("CharType", 0),
-        //        new JProperty("nickname", AllPokemon[Current].id),
-        //        new JProperty("species", AllPokemon[Current].id),
-        //        new JProperty("type1", 123),
-        //        new JProperty("type2", 123),
-        //        new JProperty("Level", AllLevels[Current]),
-        //        new JProperty("EXP", 0),
-        //        new JProperty("EXP_max", 0),
-        //        new JProperty("HeldItem", 123),
-        //        new JProperty("Gender", Gender[Current]),
-        //        new JProperty("Nature", AllNatures[Current]),
-        //        new JProperty("Height", 123),
-        //        new JProperty("WeightClass", 123),
-        //        new JProperty("base_HP", BasePokemon[Current].hp),
-        //        new JProperty("base_ATK", BasePokemon[Current].atk),
-        //        new JProperty("base_DEF", BasePokemon[Current].def),
-        //        new JProperty("base_SPATK", BasePokemon[Current].spatk),
-        //        new JProperty("base_SPDEF", BasePokemon[Current].spdef),
-        //        new JProperty("base_SPEED", BasePokemon[Current].spd),
-        //        new JProperty("HP", AllPokemon[Current].hp),
-        //        new JProperty("ATK", AllPokemon[Current].atk),
-        //        new JProperty("DEF", AllPokemon[Current].def),
-        //        new JProperty("SPATK", AllPokemon[Current].spatk),
-        //        new JProperty("SPDEF", AllPokemon[Current].spdef),
-        //        new JProperty("SPEED", AllPokemon[Current].spd),
-        //        new JProperty("Athletics", AllSkills[Current].Contains("Athl")),
-        //        new JProperty("Acrobatics", AllSkills[Current].Contains("Acro")),
-        //        new JProperty("Combat", AllSkills[Current].Contains("Combat")),
-        //        new JProperty("Stealth", AllSkills[Current].Contains("Stealth")),
-        //        new JProperty("Perception", AllSkills[Current].Contains("Percep")),
-        //        new JProperty("Focus", AllSkills[Current].Contains("Focus")),
-        //        new JProperty("TechnologyEducation:", AllSkills[Current].Contains("Edu:Tech")),
-        //        new JProperty("TutorPoints", 0)
-        //        );
-        //    int placement = 1;
-        //    foreach (string a in lbAbilities.Items)
-        //    {
-        //        if (a != "Abilites:")
-        //        {
-        //            pokemonSaveData.Add(new JProperty("Ability" + placement, a));
-        //            placement++;
-        //        }
-        //    }
-        //    placement = 1;
-        //    foreach (string m in lbMoves.Items)
-        //    {
-        //        if (m != "Moves:")
-        //        {
-        //            pokemonSaveData.Add(new JProperty("Move" + placement, m));
-        //            placement++;
-        //        }
-        //    }
-        //    placement = 1;
-        //    foreach (string c in lbCapabilites.Items)
-        //    {
-        //        if (c != "Capabilites:")
-        //        {
-        //            pokemonSaveData.Add(new JProperty("Capability" + placement, c));
-        //            placement++;
-        //       }
-        //    }
-        //    File.WriteAllText(saveFilePath, pokemonSaveData.ToString());
-        //}
+        private void PokeSaveJSON_DoWork(object sender, DoWorkEventArgs e)
+        {
+            string typeOne;
+            string typeTwo;
+            if (tbType.Text.Contains("/"))
+            {
+                string[] typesSplit = tbType.Text.Split('/');
+                typeOne = typesSplit[0];
+                typeTwo = typesSplit[1];
+            } 
+            else
+            {
+                typeOne = tbType.Text;
+                typeTwo = "None";
+            }
 
+            string height;
+            string weight;
+            string[] hSplit = AllPokemon[Current].size.Split('(');
+            string[] wSplit = AllPokemon[Current].weight.Split('(');
+            height = hSplit[1].Remove(hSplit[1].Length-1);
+            weight = wSplit[1].Remove(wSplit[1].Length-1);
+
+            int athl = 0;
+            int acro = 0;
+            int com = 0;
+            int steal = 0;
+            int perc = 0;
+            int foc = 0;
+            int tech = 0;
+            int athlB = 0;
+            int acroB = 0;
+            int comB = 0;
+            int stealB = 0;
+            int percB = 0;
+            int focB = 0;
+            int techB = 0;
+            for (int skill = 0; skill < AllSkills[Current].Count; skill++)
+            {
+                if (AllSkills[Current][skill].name == "Athl")
+                {
+                    athl = Convert.ToInt32(AllSkills[Current][skill].die);
+                    athlB = Convert.ToInt32(AllSkills[Current][skill].bonus);
+                }
+                if (AllSkills[Current][skill].name == "Acro")
+                {
+                    acro = Convert.ToInt32(AllSkills[Current][skill].die);
+                    acroB = Convert.ToInt32(AllSkills[Current][skill].bonus);
+                }
+                if (AllSkills[Current][skill].name == "Combat")
+                {
+                    com = Convert.ToInt32(AllSkills[Current][skill].die);
+                    comB = Convert.ToInt32(AllSkills[Current][skill].bonus);
+                }
+                if (AllSkills[Current][skill].name == "Stealth")
+                {
+                    steal = Convert.ToInt32(AllSkills[Current][skill].die);
+                    stealB = Convert.ToInt32(AllSkills[Current][skill].bonus);
+                }
+                if (AllSkills[Current][skill].name == "Percep")
+                {
+                    perc = Convert.ToInt32(AllSkills[Current][skill].die);
+                    percB = Convert.ToInt32(AllSkills[Current][skill].bonus);
+                }
+                if (AllSkills[Current][skill].name == "Focus")
+                {
+                    foc = Convert.ToInt32(AllSkills[Current][skill].die);
+                    focB = Convert.ToInt32(AllSkills[Current][skill].bonus);
+                }
+                if (AllSkills[Current][skill].name == "Edu:Tech")
+                {
+                    tech = Convert.ToInt32(AllSkills[Current][skill].die);
+                    techB = Convert.ToInt32(AllSkills[Current][skill].bonus);
+                }
+            }
+
+            string[] heldItem = AllDesc1[Current].Split(':');
+
+            StringBuilder sb = new StringBuilder();
+            StringWriter sw = new StringWriter(sb);
+            using (JsonWriter writer = new JsonTextWriter(sw))
+            {
+                writer.Formatting = Formatting.Indented;
+                writer.WriteStartObject();
+                writer.WritePropertyName("CharType");
+                writer.WriteValue(0);
+                writer.WritePropertyName("nickname");
+                writer.WriteValue(tbName.Text);
+                writer.WritePropertyName("species");
+                writer.WriteValue(AllPokemon[Current].id);
+                writer.WritePropertyName("type1");
+                writer.WriteValue(typeOne);
+                writer.WritePropertyName("type2");
+                writer.WriteValue(typeTwo);
+                writer.WritePropertyName("Level");
+                writer.WriteValue(AllLevels[Current]);
+                writer.WritePropertyName("HeldItem");
+                writer.WriteValue(heldItem[0]);
+                writer.WritePropertyName("Gender");
+                writer.WriteValue(Gender[Current]);
+                writer.WritePropertyName("Nature");
+                writer.WriteValue(AllNatures[Current]);
+                writer.WritePropertyName("Height");
+                writer.WriteValue(height);
+                writer.WritePropertyName("WeightClass");
+                writer.WriteValue(weight);
+                writer.WritePropertyName("base_HP");
+                writer.WriteValue(Convert.ToInt32(BasePokemon[Current].hp));
+                writer.WritePropertyName("base_ATK");
+                writer.WriteValue(Convert.ToInt32(BasePokemon[Current].atk));
+                writer.WritePropertyName("base_DEF");
+                writer.WriteValue(Convert.ToInt32(BasePokemon[Current].def));
+                writer.WritePropertyName("base_SPATK");
+                writer.WriteValue(Convert.ToInt32(BasePokemon[Current].spatk));
+                writer.WritePropertyName("base_SPDEF");
+                writer.WriteValue(Convert.ToInt32(BasePokemon[Current].spdef));
+                writer.WritePropertyName("base_SPEED");
+                writer.WriteValue(Convert.ToInt32(BasePokemon[Current].spd));
+                writer.WritePropertyName("HP");
+                writer.WriteValue(Convert.ToInt32(AllPokemon[Current].hp) - Convert.ToInt32(BasePokemon[Current].hp));
+                writer.WritePropertyName("ATK");
+                writer.WriteValue(Convert.ToInt32(AllPokemon[Current].atk) - Convert.ToInt32(BasePokemon[Current].atk));
+                writer.WritePropertyName("DEF");
+                writer.WriteValue(Convert.ToInt32(AllPokemon[Current].def) - Convert.ToInt32(BasePokemon[Current].def));
+                writer.WritePropertyName("SPATK");
+                writer.WriteValue(Convert.ToInt32(AllPokemon[Current].spatk) - Convert.ToInt32(BasePokemon[Current].spatk));
+                writer.WritePropertyName("SPDEF");
+                writer.WriteValue(Convert.ToInt32(AllPokemon[Current].spdef) - Convert.ToInt32(BasePokemon[Current].spdef));
+                writer.WritePropertyName("SPEED");
+                writer.WriteValue(Convert.ToInt32(AllPokemon[Current].spd) - Convert.ToInt32(BasePokemon[Current].spd));
+                writer.WritePropertyName("Capabilites");
+                writer.WriteStartObject();
+                string startNaturewalk = "Error";
+                for (int s = 0; s < lbCapabilites.Items.Count; s++)
+                {
+                    if (lbCapabilites.Items[s].ToString().Contains("Naturewalk"))
+                    {
+                        StringBuilder build = new StringBuilder();
+                        List<string> capWalks = new List<string>();
+                        string[] start1 = lbCapabilites.Items[s].ToString().Split(')');
+                        string[] start2 = start1[0].Split('(');
+                        string[] start3 = start2[1].Split(',');
+                        foreach (string w in start3)
+                        {
+                            build.Clear();
+                            build.Append("Naturewalk (");
+                            build.Append(w.Trim());
+                            build.Append(")");
+                            capWalks.Add(build.ToString());
+                        }
+                        startNaturewalk = lbCapabilites.Items[s].ToString();
+                        foreach (string v in capWalks)
+                        {
+                            writer.WritePropertyName(v);
+                            writer.WriteValue(true);
+                        }
+                    }
+                }
+                foreach (string c in lbCapabilites.Items)
+                {
+                    if (c != "Capabilites:" && !c.Contains(startNaturewalk))
+                    {
+                        if (c.Contains("Overland") || c.Contains("Swim") || c.Contains("Power"))
+                        {
+                            string[] capSplit = c.Split(' ');
+                            writer.WritePropertyName(capSplit[0]);
+                            writer.WriteValue(Convert.ToInt32(capSplit[1]));
+                        }
+                        else if (c.Contains("Jump"))
+                        {
+                            string[] capSplit = c.Split(' ');
+                            string[] highLow = capSplit[1].Split('/');
+                            writer.WritePropertyName("HJ");
+                            writer.WriteValue(highLow[0]);
+                            writer.WritePropertyName("LJ");
+                            writer.WriteValue(highLow[1]);
+                        }
+                        else
+                        {
+                            writer.WritePropertyName(c);
+                            writer.WriteValue(true);
+                        }
+                    }
+                }
+                writer.WriteEndObject();
+                writer.WritePropertyName("Athletics");
+                writer.WriteValue(athl);
+                writer.WritePropertyName("Acrobatics");
+                writer.WriteValue(acro);
+                writer.WritePropertyName("Combat");
+                writer.WriteValue(com);
+                writer.WritePropertyName("Stealth");
+                writer.WriteValue(steal);
+                writer.WritePropertyName("Perception");
+                writer.WriteValue(perc);
+                writer.WritePropertyName("Focus");
+                writer.WriteValue(foc);
+                writer.WritePropertyName("TechnologyEducation");
+                writer.WriteValue(tech);
+                writer.WritePropertyName("Athletics_bonus");
+                writer.WriteValue(athlB);
+                writer.WritePropertyName("Acrobatics_bonus");
+                writer.WriteValue(acroB);
+                writer.WritePropertyName("Combat_bonus");
+                writer.WriteValue(comB);
+                writer.WritePropertyName("Stealth_bonus");
+                writer.WriteValue(stealB);
+                writer.WritePropertyName("Perception_bonus");
+                writer.WriteValue(percB);
+                writer.WritePropertyName("Focus_bonus");
+                writer.WriteValue(focB);
+                writer.WritePropertyName("TechnologyEducation_bonus");
+                writer.WriteValue(techB);
+                writer.WritePropertyName("TutorPoints");
+                writer.WriteValue(0);
+                int placement = 1;
+                foreach (string m in lbMoves.Items)
+                {
+                    if (m != "Moves:")
+                    {
+                        writer.WritePropertyName("Move" + placement);
+                        writer.WriteStartObject();
+                        writer.WritePropertyName("Name");
+                        writer.WriteValue(m);
+                        writer.WriteEndObject();
+                        placement++;
+                    }
+                }
+                placement = 1;
+                foreach (string a in lbAbilities.Items)
+                {
+                    if (a != "Abilites:")
+                    {
+                        writer.WritePropertyName("Ability" + placement);
+                        writer.WriteStartObject();
+                        writer.WritePropertyName("Name");
+                        writer.WriteValue(a);
+                        writer.WriteEndObject();
+                        placement++;
+                    }
+                }
+            }
+            File.WriteAllText(saveFilePath, sb.ToString());
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
         private void PokeSaveScan_DoWork(object sender, DoWorkEventArgs e)
         {
             if (saveResult == true)
             {
                 System.IO.Stream fileStream = PokeSaveDialog.OpenFile();
                 System.IO.StreamWriter sw = new System.IO.StreamWriter(fileStream);
-                int i = Current;
                 sw.WriteLine("§PokeGenesis Export§");
                 sw.WriteLine(" Name: " + tbName.Text + Environment.NewLine +
                     " Number: " + AllPokemon[Current].number + Environment.NewLine +
@@ -1847,26 +2030,26 @@ namespace GenesisDex
                     " SPD: " + tbLevelSPD.Text + " (" + BasePokemon[Current].spd + ")" + Environment.NewLine +
                     Environment.NewLine +
                     "Capabilities:");
-                foreach (string cap in AllCap[i])
+                foreach (string cap in AllCap[Current])
                 {
                     sw.WriteLine("-" + cap);
                 }
                 sw.WriteLine(Environment.NewLine + "Moves:");
-                for (var w = 0; w < AllMoves[i].Count; w++)
+                for (var w = 0; w < AllMoves[Current].Count; w++)
                 {
-                    sw.WriteLine("-" + AllMoves[i][w]);
+                    sw.WriteLine("-" + AllMoves[Current][w]);
                 }
                 sw.WriteLine(Environment.NewLine + "Abilities:");
-                for (var a = 0; a < AllAbilities[i].Count; a++)
+                for (var a = 0; a < AllAbilities[Current].Count; a++)
                 {
-                    sw.WriteLine("-" + AllAbilities[i][a]);
+                    sw.WriteLine("-" + AllAbilities[Current][a]);
                 }
                 sw.WriteLine(Environment.NewLine + "Skills:");
-                for (var s = 0; s < AllSkills[i].Count; s++)
+                for (var s = 0; s < AllSkills[Current].Count; s++)
                 {
-                    sw.WriteLine("-" + AllSkills[i][s]);
+                    sw.WriteLine("-" + AllSkills[Current][s]);
                 }
-                sw.WriteLine(Environment.NewLine + "Held Item:" + Environment.NewLine + AllDesc1[i]);
+                sw.WriteLine(Environment.NewLine + "Held Item:" + Environment.NewLine + AllDesc1[Current]);
                 sw.WriteLine(Environment.NewLine + "------------------------------------------------------------------------------------------");
                 PokeSaveScan.ReportProgress(1);
                 sw.Flush();
@@ -2640,10 +2823,34 @@ namespace GenesisDex
         //===========================================================================================================
         //=== 
         //===========================================================================================================
+        private void btnRoll20Export_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left) return;
+            if (!hasScanned) return;
+            PokeSaveDialog.FileName = tbName.Text.Trim();
+            PokeSaveDialog.Filter = "JSON File | *.json";
+            saveResult = PokeSaveDialog.ShowDialog() == DialogResult.OK;
+            if (!saveResult) return;
+            saveFilePath = PokeSaveDialog.FileName;
+            PokeSaveJSON.RunWorkerAsync();
+        }
+        private void btnRoll20Export_MouseEnter(object sender, EventArgs e)
+        {
+            btnRoll20Export.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Roll20ExportHover.png");
+        }
+        private void btnRoll20Export_MouseLeave(object sender, EventArgs e)
+        {
+            btnRoll20Export.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Roll20Export.png");
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
         private void btnSave_MouseUp(object sender, MouseEventArgs e)
         {
             if (e.Button != MouseButtons.Left) return;
             if (!hasScanned) return;
+            PokeSaveDialog.FileName = tbName.Text.Trim();
             PokeSaveDialog.Filter = "PokeGenesis Export File | *.pkgen";
             saveResult = PokeSaveDialog.ShowDialog() == DialogResult.OK;
             if (!saveResult) return;

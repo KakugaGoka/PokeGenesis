@@ -158,6 +158,8 @@
             this.PokeImportDialog = new System.Windows.Forms.OpenFileDialog();
             this.PokeImportScan = new System.ComponentModel.BackgroundWorker();
             this.btnImport = new System.Windows.Forms.PictureBox();
+            this.PokeSaveJSON = new System.ComponentModel.BackgroundWorker();
+            this.btnRoll20Export = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnScanPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLevelMin)).BeginInit();
@@ -186,6 +188,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnGoTo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudGoTo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnImport)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRoll20Export)).BeginInit();
             this.SuspendLayout();
             // 
             // pbPokemon
@@ -741,7 +744,7 @@
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.Transparent;
-            this.btnSave.Location = new System.Drawing.Point(508, 598);
+            this.btnSave.Location = new System.Drawing.Point(508, 603);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(85, 25);
             this.btnSave.TabIndex = 104;
@@ -2212,9 +2215,9 @@
             // btnDeletePoke
             // 
             this.btnDeletePoke.BackColor = System.Drawing.Color.Transparent;
-            this.btnDeletePoke.Location = new System.Drawing.Point(333, 567);
+            this.btnDeletePoke.Location = new System.Drawing.Point(335, 567);
             this.btnDeletePoke.Name = "btnDeletePoke";
-            this.btnDeletePoke.Size = new System.Drawing.Size(157, 33);
+            this.btnDeletePoke.Size = new System.Drawing.Size(156, 25);
             this.btnDeletePoke.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnDeletePoke.TabIndex = 196;
             this.btnDeletePoke.TabStop = false;
@@ -2225,7 +2228,7 @@
             // btnGoTo
             // 
             this.btnGoTo.BackColor = System.Drawing.Color.Transparent;
-            this.btnGoTo.Location = new System.Drawing.Point(335, 607);
+            this.btnGoTo.Location = new System.Drawing.Point(335, 603);
             this.btnGoTo.Name = "btnGoTo";
             this.btnGoTo.Size = new System.Drawing.Size(82, 25);
             this.btnGoTo.TabIndex = 197;
@@ -2239,7 +2242,7 @@
             this.nudGoTo.BackColor = System.Drawing.Color.Beige;
             this.nudGoTo.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudGoTo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.nudGoTo.Location = new System.Drawing.Point(429, 608);
+            this.nudGoTo.Location = new System.Drawing.Point(423, 603);
             this.nudGoTo.Maximum = new decimal(new int[] {
             999,
             0,
@@ -2282,6 +2285,22 @@
             this.btnImport.MouseLeave += new System.EventHandler(this.btnImport_MouseLeave);
             this.btnImport.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnImport_MouseUp);
             // 
+            // PokeSaveJSON
+            // 
+            this.PokeSaveJSON.DoWork += new System.ComponentModel.DoWorkEventHandler(this.PokeSaveJSON_DoWork);
+            // 
+            // btnRoll20Export
+            // 
+            this.btnRoll20Export.BackColor = System.Drawing.Color.Transparent;
+            this.btnRoll20Export.Location = new System.Drawing.Point(473, 639);
+            this.btnRoll20Export.Name = "btnRoll20Export";
+            this.btnRoll20Export.Size = new System.Drawing.Size(120, 25);
+            this.btnRoll20Export.TabIndex = 200;
+            this.btnRoll20Export.TabStop = false;
+            this.btnRoll20Export.MouseEnter += new System.EventHandler(this.btnRoll20Export_MouseEnter);
+            this.btnRoll20Export.MouseLeave += new System.EventHandler(this.btnRoll20Export_MouseLeave);
+            this.btnRoll20Export.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnRoll20Export_MouseUp);
+            // 
             // FormScan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2289,6 +2308,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.btnRoll20Export);
             this.Controls.Add(this.btnImport);
             this.Controls.Add(this.nudGoTo);
             this.Controls.Add(this.btnGoTo);
@@ -2448,6 +2468,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnGoTo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudGoTo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnImport)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRoll20Export)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2582,5 +2603,7 @@
         private System.Windows.Forms.OpenFileDialog PokeImportDialog;
         private System.ComponentModel.BackgroundWorker PokeImportScan;
         private System.Windows.Forms.PictureBox btnImport;
+        private System.ComponentModel.BackgroundWorker PokeSaveJSON;
+        private System.Windows.Forms.PictureBox btnRoll20Export;
     }
 }
