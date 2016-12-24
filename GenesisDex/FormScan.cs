@@ -1844,7 +1844,7 @@ namespace GenesisDex
                 writer.WritePropertyName("CharType");
                 writer.WriteValue(0);
                 writer.WritePropertyName("nickname");
-                writer.WriteValue(tbName.Text);
+                writer.WriteValue(tbName.Text.Trim());
                 writer.WritePropertyName("species");
                 writer.WriteValue(AllPokemon[Current].id);
                 writer.WritePropertyName("type1");
@@ -1854,7 +1854,10 @@ namespace GenesisDex
                 writer.WritePropertyName("Level");
                 writer.WriteValue(AllLevels[Current]);
                 writer.WritePropertyName("HeldItem");
-                writer.WriteValue(heldItem[0]);
+                if (heldItem[0] == "Nothing is here.")
+                    writer.WriteValue("");
+                else
+                    writer.WriteValue(heldItem[0]);
                 writer.WritePropertyName("Gender");
                 writer.WriteValue(Gender[Current]);
                 writer.WritePropertyName("Nature");
