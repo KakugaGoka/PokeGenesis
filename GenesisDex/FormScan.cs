@@ -1890,7 +1890,7 @@ namespace GenesisDex
                 writer.WriteValue(Convert.ToInt32(AllPokemon[Current].spdef) - Convert.ToInt32(BasePokemon[Current].spdef));
                 writer.WritePropertyName("SPEED");
                 writer.WriteValue(Convert.ToInt32(AllPokemon[Current].spd) - Convert.ToInt32(BasePokemon[Current].spd));
-                writer.WritePropertyName("Capabilites");
+                writer.WritePropertyName("Capabilities");
                 writer.WriteStartObject();
                 string startNaturewalk = "Error";
                 for (int s = 0; s < lbCapabilites.Items.Count; s++)
