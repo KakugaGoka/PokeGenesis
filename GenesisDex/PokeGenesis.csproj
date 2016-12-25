@@ -2502,6 +2502,12 @@
     <None Include="Data\Audio\Empty.ogg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Data\JSON\abilities.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\JSON\moves.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -2603,6 +2609,7 @@
     <Content Include="Data\Audio\Cries\719-mega.ogg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Data\DLLs\Newtonsoft.Json.dll" />
     <Content Include="Data\GUI\AddLoot.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
