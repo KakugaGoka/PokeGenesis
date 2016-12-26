@@ -182,6 +182,48 @@ namespace GenesisDexEngine
         public string description { get; set; }
     }
 
+    class MoveJSON
+    {
+        public string moveType { get; set; }
+        public string moveFreq { get; set; }
+        public string moveAC { get; set; }
+        public string moveDB { get; set; }
+        public string moveClass { get; set; }
+        public string moveRange { get; set; }
+        public string moveEffect { get; set; }
+        public string moveConType { get; set; }
+        public string moveConEffect { get; set; }
+
+        public MoveJSON(string movetype, string movefreq, string moveac, string movedb, string moveclass, string moverange, string moveeffect, string contype, string coneffect)
+        {
+            moveType = movetype;
+            moveFreq = movefreq;
+            moveAC = moveac;
+            moveDB = movedb;
+            moveClass = moveclass;
+            moveRange = moverange;
+            moveEffect = moveeffect;
+            moveConType = contype;
+            moveConEffect = coneffect;
+        }
+    }
+
+    class AbilityJSON
+    {
+        public string abiFreq { get; set; }
+        public string abiTarget { get; set; }
+        public string abiTrigger { get; set; }
+        public string abiEffect { get; set; }
+
+        public AbilityJSON(string abifrq, string abitarget, string abitrigger, string abieffect)
+        {
+            abiFreq = abifrq;
+            abiTarget = abitarget;
+            abiTrigger = abitrigger;
+            abiEffect = abieffect;
+        }
+    }
+
     class StatusList
     {
         public StatusAfflictions createStatus()

@@ -1980,10 +1980,69 @@ namespace GenesisDex
                 {
                     if (m != "Moves:")
                     {
+                        string json = File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + @"Data\JSON\moves.json");
+                        JObject mJSON = JObject.Parse(json);
+                        string[] mSplit = m.Split('(');
+                        JToken moveName = mJSON[mSplit[0].Trim()];
+                        MoveJSON moveInfo = new MoveJSON("--", "--", "--", "--", "--", "--", "--", "--", "--");
+                        try { moveInfo.moveType = (string)moveName["Type"]; } catch { }
+                        try { moveInfo.moveFreq = (string)moveName["Freq"]; } catch { }
+                        try { moveInfo.moveAC = (string)moveName["AC"]; } catch { }
+                        try { moveInfo.moveDB = (string)moveName["DB"]; } catch { }
+                        try { moveInfo.moveClass = (string)moveName["Class"]; } catch { }
+                        try { moveInfo.moveRange = (string)moveName["Range"]; } catch { }
+                        try { moveInfo.moveEffect = (string)moveName["Effect"]; } catch { }
+                        try { moveInfo.moveConEffect = (string)moveName["Contest Type"]; } catch { }
+                        try { moveInfo.moveConType = (string)moveName["Contest Effect"]; } catch { }
                         writer.WritePropertyName("Move" + placement);
                         writer.WriteStartObject();
                         writer.WritePropertyName("Name");
-                        writer.WriteValue(m);
+                        writer.WriteValue(mSplit[0].Trim());
+                        if (moveInfo.moveType != null)
+                        {
+                            writer.WritePropertyName("Type");
+                            writer.WriteValue(moveInfo.moveType);
+                        }
+                        if (moveInfo.moveFreq != null)
+                        {
+                            writer.WritePropertyName("Freq");
+                            writer.WriteValue(moveInfo.moveFreq);
+                        }
+                        if (moveInfo.moveAC != null)
+                        {
+                            writer.WritePropertyName("AC");
+                            writer.WriteValue(moveInfo.moveAC);
+                        }
+                        if (moveInfo.moveDB != null)
+                        {
+                            writer.WritePropertyName("DB");
+                            writer.WriteValue(moveInfo.moveDB);
+                        }
+                        if (moveInfo.moveClass != null)
+                        {
+                            writer.WritePropertyName("Class");
+                            writer.WriteValue(moveInfo.moveClass);
+                        }
+                        if (moveInfo.moveRange != null)
+                        {
+                            writer.WritePropertyName("Range");
+                            writer.WriteValue(moveInfo.moveRange);
+                        }
+                        if (moveInfo.moveEffect != null)
+                        {
+                            writer.WritePropertyName("Effect");
+                            writer.WriteValue(moveInfo.moveEffect);
+                        }
+                        if (moveInfo.moveConType != null)
+                        {
+                            writer.WritePropertyName("Contest Type");
+                            writer.WriteValue(moveInfo.moveConType);
+                        }
+                        if (moveInfo.moveConEffect != null)
+                        {
+                            writer.WritePropertyName("Contest Effect");
+                            writer.WriteValue(moveInfo.moveConEffect);
+                        }
                         writer.WriteEndObject();
                         placement++;
                     }
@@ -1993,10 +2052,38 @@ namespace GenesisDex
                 {
                     if (a != "Abilities:")
                     {
+                        string json = File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + @"Data\JSON\abilities.json");
+                        JObject aJSON = JObject.Parse(json);
+                        JToken abilityName = aJSON[a];
+                        AbilityJSON abilityInfo = new AbilityJSON("--", "--", "--", "--");
+                        try { abilityInfo.abiTrigger = (string)abilityName["Trigger"]; } catch { }
+                        try { abilityInfo.abiFreq = (string)abilityName["Freq"]; } catch { }
+                        try { abilityInfo.abiTarget = (string)abilityName["Target"]; } catch { }
+                        try { abilityInfo.abiEffect = (string)abilityName["Effect"]; } catch { }
                         writer.WritePropertyName("Ability" + placement);
                         writer.WriteStartObject();
                         writer.WritePropertyName("Name");
                         writer.WriteValue(a);
+                        if (abilityInfo.abiFreq != null)
+                        {
+                            writer.WritePropertyName("Freq");
+                            writer.WriteValue(abilityInfo.abiFreq);
+                        }
+                        if (abilityInfo.abiTarget != null)
+                        {
+                            writer.WritePropertyName("Target");
+                            writer.WriteValue(abilityInfo.abiTarget);
+                        }
+                        if (abilityInfo.abiTrigger != null)
+                        {
+                            writer.WritePropertyName("Trigger");
+                            writer.WriteValue(abilityInfo.abiTrigger);
+                        }
+                        if (abilityInfo.abiEffect != null)
+                        {
+                            writer.WritePropertyName("Effect");
+                            writer.WriteValue(abilityInfo.abiEffect);
+                        }
                         writer.WriteEndObject();
                         placement++;
                     }

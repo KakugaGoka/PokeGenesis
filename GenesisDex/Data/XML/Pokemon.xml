@@ -959,7 +959,7 @@
         <cap id="0">Overland 5</cap>
         <cap id="1">Swim 2</cap>
         <cap id="2">Jump 1/1 </cap>
-        <cap id="3">Power1</cap>
+        <cap id="3">Power 1</cap>
         <cap id="4">Naturewalk (Grassland, Forest)</cap>
         <cap id="5">Wallclimber</cap>
         <cap id="6">Threaded</cap>
@@ -1039,7 +1039,7 @@
         <cap id="0">Overland 2</cap>
         <cap id="1">Swim 2</cap>
         <cap id="2">Jump 1/1</cap>
-        <cap id="3">Power1</cap>
+        <cap id="3">Power 1</cap>
         <cap id="4">Naturewalk (Grassland, Forest)</cap>
         <cap id="5">Threaded</cap>
         <cap id="6">Underdog</cap>
@@ -1117,7 +1117,7 @@
         <cap id="1">Sky 8</cap>
         <cap id="2">Swim 2</cap>
         <cap id="3">Jump 1/1</cap>
-        <cap id="4">Power2</cap>
+        <cap id="4">Power 2</cap>
         <cap id="5">Naturewalk (Grassland, Forest)</cap>
         <cap id="6">Wallclimber</cap>
         <cap id="7">Threaded</cap>
@@ -12597,7 +12597,7 @@
         <cap id="1">Swim 2</cap>
         <cap id="2">Burrow 2</cap>
         <cap id="3">Jump 1/1</cap>
-        <cap id="4">Power1</cap>
+        <cap id="4">Power 1</cap>
         <cap id="5">Darkvision</cap>
         <cap id="6">Mushroom Harvest</cap>
         <cap id="7">Naturewalk (Grassland, Forest)</cap>
@@ -12687,7 +12687,7 @@
         <cap id="1">Swim 2</cap>
         <cap id="2">Burrow 3</cap>
         <cap id="3">Jump 1/1</cap>
-        <cap id="4">Power3</cap>
+        <cap id="4">Power 3</cap>
         <cap id="5">Darkvision</cap>
         <cap id="6">Mushroom Harvest</cap>
         <cap id="7">Naturewalk (Grassland, Forest)</cap>
