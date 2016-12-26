@@ -2020,7 +2020,7 @@ namespace GenesisDex
                         }
                         if (moveInfo.moveClass != null)
                         {
-                            writer.WritePropertyName("Class");
+                            writer.WritePropertyName("DType");
                             writer.WriteValue(moveInfo.moveClass);
                         }
                         if (moveInfo.moveRange != null)
