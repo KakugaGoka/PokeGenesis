@@ -2011,12 +2011,12 @@ namespace GenesisDex
                         if (moveInfo.moveAC != null)
                         {
                             writer.WritePropertyName("AC");
-                            writer.WriteValue(moveInfo.moveAC);
+                            writer.WriteValue(Convert.ToInt32(moveInfo.moveAC));
                         }
                         if (moveInfo.moveDB != null)
                         {
                             writer.WritePropertyName("DB");
-                            writer.WriteValue(moveInfo.moveDB);
+                            writer.WriteValue(Convert.ToInt32(moveInfo.moveDB));
                         }
                         if (moveInfo.moveClass != null)
                         {
