@@ -2213,8 +2213,8 @@ namespace GenesisDex
                     }
                     if (importedPokemon[s].Contains(" Type:"))
                     {
-                        string[] temp = importedPokemon[s].Split(' ');
-                        Type.Add(temp[2]);
+                        string[] temp = importedPokemon[s].Split(':');
+                        Type.Add(temp[1].Trim());
                     }
                     if (importedPokemon[s].Contains(" Nature:"))
                     {
@@ -2384,6 +2384,7 @@ namespace GenesisDex
                     Vulnerable = false
                 });
                 CombatStage.Add(new int[] { 0, 0, 0, 0, 0, 0 });
+                hasScanned = true;
             }
         }
         private void PokeImportScan_ProgressChanged(object sender, ProgressChangedEventArgs e)
