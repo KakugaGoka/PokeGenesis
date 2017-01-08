@@ -116,7 +116,6 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.tbNature = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -160,6 +159,10 @@
             this.btnImport = new System.Windows.Forms.PictureBox();
             this.PokeSaveJSON = new System.ComponentModel.BackgroundWorker();
             this.btnRoll20Export = new System.Windows.Forms.PictureBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.nudInjuries = new System.Windows.Forms.NumericUpDown();
+            this.label29 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnScanPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLevelMin)).BeginInit();
@@ -189,6 +192,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudGoTo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnImport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRoll20Export)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudInjuries)).BeginInit();
             this.SuspendLayout();
             // 
             // pbPokemon
@@ -861,7 +865,7 @@
             this.tbBaseHP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbBaseHP.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbBaseHP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tbBaseHP.Location = new System.Drawing.Point(749, 249);
+            this.tbBaseHP.Location = new System.Drawing.Point(749, 265);
             this.tbBaseHP.Name = "tbBaseHP";
             this.tbBaseHP.ReadOnly = true;
             this.tbBaseHP.Size = new System.Drawing.Size(38, 21);
@@ -873,7 +877,7 @@
             this.tbBaseATK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbBaseATK.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbBaseATK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tbBaseATK.Location = new System.Drawing.Point(749, 273);
+            this.tbBaseATK.Location = new System.Drawing.Point(749, 289);
             this.tbBaseATK.Name = "tbBaseATK";
             this.tbBaseATK.ReadOnly = true;
             this.tbBaseATK.Size = new System.Drawing.Size(38, 21);
@@ -885,7 +889,7 @@
             this.tbBaseDEF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbBaseDEF.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbBaseDEF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tbBaseDEF.Location = new System.Drawing.Point(749, 297);
+            this.tbBaseDEF.Location = new System.Drawing.Point(749, 313);
             this.tbBaseDEF.Name = "tbBaseDEF";
             this.tbBaseDEF.ReadOnly = true;
             this.tbBaseDEF.Size = new System.Drawing.Size(38, 21);
@@ -897,7 +901,7 @@
             this.tbBaseSPATK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbBaseSPATK.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbBaseSPATK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tbBaseSPATK.Location = new System.Drawing.Point(749, 321);
+            this.tbBaseSPATK.Location = new System.Drawing.Point(749, 337);
             this.tbBaseSPATK.Name = "tbBaseSPATK";
             this.tbBaseSPATK.ReadOnly = true;
             this.tbBaseSPATK.Size = new System.Drawing.Size(38, 21);
@@ -909,7 +913,7 @@
             this.tbBaseSPDEF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbBaseSPDEF.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbBaseSPDEF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tbBaseSPDEF.Location = new System.Drawing.Point(749, 345);
+            this.tbBaseSPDEF.Location = new System.Drawing.Point(749, 361);
             this.tbBaseSPDEF.Name = "tbBaseSPDEF";
             this.tbBaseSPDEF.ReadOnly = true;
             this.tbBaseSPDEF.Size = new System.Drawing.Size(38, 21);
@@ -921,7 +925,7 @@
             this.tbBaseSPD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbBaseSPD.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbBaseSPD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tbBaseSPD.Location = new System.Drawing.Point(749, 369);
+            this.tbBaseSPD.Location = new System.Drawing.Point(749, 385);
             this.tbBaseSPD.Name = "tbBaseSPD";
             this.tbBaseSPD.ReadOnly = true;
             this.tbBaseSPD.Size = new System.Drawing.Size(38, 21);
@@ -933,7 +937,7 @@
             this.tbCurrentHealth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbCurrentHealth.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCurrentHealth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tbCurrentHealth.Location = new System.Drawing.Point(869, 225);
+            this.tbCurrentHealth.Location = new System.Drawing.Point(789, 225);
             this.tbCurrentHealth.Name = "tbCurrentHealth";
             this.tbCurrentHealth.ReadOnly = true;
             this.tbCurrentHealth.Size = new System.Drawing.Size(38, 21);
@@ -945,7 +949,7 @@
             this.tbCurrentHP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbCurrentHP.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCurrentHP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tbCurrentHP.Location = new System.Drawing.Point(869, 249);
+            this.tbCurrentHP.Location = new System.Drawing.Point(869, 265);
             this.tbCurrentHP.Name = "tbCurrentHP";
             this.tbCurrentHP.ReadOnly = true;
             this.tbCurrentHP.Size = new System.Drawing.Size(38, 21);
@@ -957,7 +961,7 @@
             this.tbLevelHP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbLevelHP.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbLevelHP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tbLevelHP.Location = new System.Drawing.Point(789, 249);
+            this.tbLevelHP.Location = new System.Drawing.Point(789, 265);
             this.tbLevelHP.Name = "tbLevelHP";
             this.tbLevelHP.ReadOnly = true;
             this.tbLevelHP.Size = new System.Drawing.Size(38, 21);
@@ -969,7 +973,7 @@
             this.tbCurrentATK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbCurrentATK.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCurrentATK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tbCurrentATK.Location = new System.Drawing.Point(869, 273);
+            this.tbCurrentATK.Location = new System.Drawing.Point(869, 289);
             this.tbCurrentATK.Name = "tbCurrentATK";
             this.tbCurrentATK.ReadOnly = true;
             this.tbCurrentATK.Size = new System.Drawing.Size(38, 21);
@@ -981,7 +985,7 @@
             this.tbLevelATK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbLevelATK.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbLevelATK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tbLevelATK.Location = new System.Drawing.Point(789, 273);
+            this.tbLevelATK.Location = new System.Drawing.Point(789, 289);
             this.tbLevelATK.Name = "tbLevelATK";
             this.tbLevelATK.ReadOnly = true;
             this.tbLevelATK.Size = new System.Drawing.Size(38, 21);
@@ -993,7 +997,7 @@
             this.tbCurrentDEF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbCurrentDEF.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCurrentDEF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tbCurrentDEF.Location = new System.Drawing.Point(869, 297);
+            this.tbCurrentDEF.Location = new System.Drawing.Point(869, 313);
             this.tbCurrentDEF.Name = "tbCurrentDEF";
             this.tbCurrentDEF.ReadOnly = true;
             this.tbCurrentDEF.Size = new System.Drawing.Size(38, 21);
@@ -1005,7 +1009,7 @@
             this.tbLevelDEF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbLevelDEF.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbLevelDEF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tbLevelDEF.Location = new System.Drawing.Point(789, 297);
+            this.tbLevelDEF.Location = new System.Drawing.Point(789, 313);
             this.tbLevelDEF.Name = "tbLevelDEF";
             this.tbLevelDEF.Size = new System.Drawing.Size(38, 21);
             this.tbLevelDEF.TabIndex = 126;
@@ -1016,7 +1020,7 @@
             this.tbCurrentSPATK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbCurrentSPATK.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCurrentSPATK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tbCurrentSPATK.Location = new System.Drawing.Point(869, 321);
+            this.tbCurrentSPATK.Location = new System.Drawing.Point(869, 337);
             this.tbCurrentSPATK.Name = "tbCurrentSPATK";
             this.tbCurrentSPATK.ReadOnly = true;
             this.tbCurrentSPATK.Size = new System.Drawing.Size(38, 21);
@@ -1028,7 +1032,7 @@
             this.tbLevelSPATK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbLevelSPATK.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbLevelSPATK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tbLevelSPATK.Location = new System.Drawing.Point(789, 321);
+            this.tbLevelSPATK.Location = new System.Drawing.Point(789, 337);
             this.tbLevelSPATK.Name = "tbLevelSPATK";
             this.tbLevelSPATK.Size = new System.Drawing.Size(38, 21);
             this.tbLevelSPATK.TabIndex = 128;
@@ -1039,7 +1043,7 @@
             this.tbCurrentSPDEF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbCurrentSPDEF.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCurrentSPDEF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tbCurrentSPDEF.Location = new System.Drawing.Point(869, 345);
+            this.tbCurrentSPDEF.Location = new System.Drawing.Point(869, 361);
             this.tbCurrentSPDEF.Name = "tbCurrentSPDEF";
             this.tbCurrentSPDEF.ReadOnly = true;
             this.tbCurrentSPDEF.Size = new System.Drawing.Size(38, 21);
@@ -1051,7 +1055,7 @@
             this.tbLevelSPDEF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbLevelSPDEF.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbLevelSPDEF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tbLevelSPDEF.Location = new System.Drawing.Point(789, 345);
+            this.tbLevelSPDEF.Location = new System.Drawing.Point(789, 361);
             this.tbLevelSPDEF.Name = "tbLevelSPDEF";
             this.tbLevelSPDEF.ReadOnly = true;
             this.tbLevelSPDEF.Size = new System.Drawing.Size(38, 21);
@@ -1063,7 +1067,7 @@
             this.tbCurrentSPD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbCurrentSPD.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCurrentSPD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tbCurrentSPD.Location = new System.Drawing.Point(869, 369);
+            this.tbCurrentSPD.Location = new System.Drawing.Point(869, 385);
             this.tbCurrentSPD.Name = "tbCurrentSPD";
             this.tbCurrentSPD.ReadOnly = true;
             this.tbCurrentSPD.Size = new System.Drawing.Size(38, 21);
@@ -1075,7 +1079,7 @@
             this.tbLevelSPD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbLevelSPD.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbLevelSPD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tbLevelSPD.Location = new System.Drawing.Point(789, 369);
+            this.tbLevelSPD.Location = new System.Drawing.Point(789, 385);
             this.tbLevelSPD.Name = "tbLevelSPD";
             this.tbLevelSPD.ReadOnly = true;
             this.tbLevelSPD.Size = new System.Drawing.Size(38, 21);
@@ -1087,7 +1091,7 @@
             this.nudHPCS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nudHPCS.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudHPCS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.nudHPCS.Location = new System.Drawing.Point(829, 249);
+            this.nudHPCS.Location = new System.Drawing.Point(829, 265);
             this.nudHPCS.Maximum = new decimal(new int[] {
             5,
             0,
@@ -1109,7 +1113,7 @@
             this.nudATKCS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nudATKCS.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudATKCS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.nudATKCS.Location = new System.Drawing.Point(829, 273);
+            this.nudATKCS.Location = new System.Drawing.Point(829, 289);
             this.nudATKCS.Maximum = new decimal(new int[] {
             5,
             0,
@@ -1131,7 +1135,7 @@
             this.nudDEFCS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nudDEFCS.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudDEFCS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.nudDEFCS.Location = new System.Drawing.Point(829, 297);
+            this.nudDEFCS.Location = new System.Drawing.Point(829, 313);
             this.nudDEFCS.Maximum = new decimal(new int[] {
             5,
             0,
@@ -1153,7 +1157,7 @@
             this.nudSPATKCS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nudSPATKCS.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudSPATKCS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.nudSPATKCS.Location = new System.Drawing.Point(829, 321);
+            this.nudSPATKCS.Location = new System.Drawing.Point(829, 337);
             this.nudSPATKCS.Maximum = new decimal(new int[] {
             5,
             0,
@@ -1175,7 +1179,7 @@
             this.nudSPDEFCS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nudSPDEFCS.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudSPDEFCS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.nudSPDEFCS.Location = new System.Drawing.Point(829, 345);
+            this.nudSPDEFCS.Location = new System.Drawing.Point(829, 361);
             this.nudSPDEFCS.Maximum = new decimal(new int[] {
             5,
             0,
@@ -1197,7 +1201,7 @@
             this.nudSPDCS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nudSPDCS.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudSPDCS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.nudSPDCS.Location = new System.Drawing.Point(829, 369);
+            this.nudSPDCS.Location = new System.Drawing.Point(829, 385);
             this.nudSPDCS.Maximum = new decimal(new int[] {
             5,
             0,
@@ -1297,7 +1301,7 @@
             this.label16.BackColor = System.Drawing.Color.Beige;
             this.label16.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label16.Location = new System.Drawing.Point(717, 248);
+            this.label16.Location = new System.Drawing.Point(717, 264);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(30, 18);
             this.label16.TabIndex = 147;
@@ -1309,7 +1313,7 @@
             this.label17.BackColor = System.Drawing.Color.Beige;
             this.label17.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label17.Location = new System.Drawing.Point(710, 272);
+            this.label17.Location = new System.Drawing.Point(710, 288);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(37, 18);
             this.label17.TabIndex = 148;
@@ -1321,7 +1325,7 @@
             this.label18.BackColor = System.Drawing.Color.Beige;
             this.label18.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label18.Location = new System.Drawing.Point(710, 296);
+            this.label18.Location = new System.Drawing.Point(710, 312);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(37, 18);
             this.label18.TabIndex = 149;
@@ -1333,7 +1337,7 @@
             this.label19.BackColor = System.Drawing.Color.Beige;
             this.label19.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label19.Location = new System.Drawing.Point(711, 368);
+            this.label19.Location = new System.Drawing.Point(711, 384);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(36, 18);
             this.label19.TabIndex = 150;
@@ -1345,7 +1349,7 @@
             this.label20.BackColor = System.Drawing.Color.Beige;
             this.label20.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label20.Location = new System.Drawing.Point(696, 344);
+            this.label20.Location = new System.Drawing.Point(696, 360);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(51, 18);
             this.label20.TabIndex = 151;
@@ -1357,7 +1361,7 @@
             this.label21.BackColor = System.Drawing.Color.Beige;
             this.label21.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label21.Location = new System.Drawing.Point(696, 320);
+            this.label21.Location = new System.Drawing.Point(696, 336);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(51, 18);
             this.label21.TabIndex = 152;
@@ -1369,7 +1373,7 @@
             this.label22.BackColor = System.Drawing.Color.Beige;
             this.label22.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label22.Location = new System.Drawing.Point(750, 207);
+            this.label22.Location = new System.Drawing.Point(751, 247);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(36, 18);
             this.label22.TabIndex = 153;
@@ -1381,7 +1385,7 @@
             this.label23.BackColor = System.Drawing.Color.Beige;
             this.label23.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label23.Location = new System.Drawing.Point(836, 207);
+            this.label23.Location = new System.Drawing.Point(837, 247);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(23, 18);
             this.label23.TabIndex = 154;
@@ -1393,7 +1397,7 @@
             this.label24.BackColor = System.Drawing.Color.Beige;
             this.label24.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label24.Location = new System.Drawing.Point(869, 207);
+            this.label24.Location = new System.Drawing.Point(870, 247);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(38, 18);
             this.label24.TabIndex = 155;
@@ -1405,23 +1409,11 @@
             this.label25.BackColor = System.Drawing.Color.Beige;
             this.label25.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label25.Location = new System.Drawing.Point(787, 207);
+            this.label25.Location = new System.Drawing.Point(788, 247);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(41, 18);
             this.label25.TabIndex = 156;
             this.label25.Text = "Level";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.BackColor = System.Drawing.Color.Beige;
-            this.label26.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label26.Location = new System.Drawing.Point(698, 390);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(84, 18);
-            this.label26.TabIndex = 157;
-            this.label26.Text = "Capabilities:";
             // 
             // label28
             // 
@@ -2301,6 +2293,59 @@
             this.btnRoll20Export.MouseLeave += new System.EventHandler(this.btnRoll20Export_MouseLeave);
             this.btnRoll20Export.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnRoll20Export_MouseUp);
             // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.Beige;
+            this.label26.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label26.Location = new System.Drawing.Point(751, 207);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(36, 18);
+            this.label26.TabIndex = 201;
+            this.label26.Text = "Base";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.Beige;
+            this.label27.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label27.Location = new System.Drawing.Point(788, 207);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(38, 18);
+            this.label27.TabIndex = 202;
+            this.label27.Text = "Total";
+            // 
+            // nudInjuries
+            // 
+            this.nudInjuries.BackColor = System.Drawing.Color.Beige;
+            this.nudInjuries.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nudInjuries.Font = new System.Drawing.Font("Sitka Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudInjuries.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.nudInjuries.Location = new System.Drawing.Point(849, 225);
+            this.nudInjuries.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.nudInjuries.Name = "nudInjuries";
+            this.nudInjuries.Size = new System.Drawing.Size(38, 21);
+            this.nudInjuries.TabIndex = 203;
+            this.nudInjuries.ValueChanged += new System.EventHandler(this.nudInjuries_ValueChanged);
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.BackColor = System.Drawing.Color.Beige;
+            this.label29.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label29.Location = new System.Drawing.Point(840, 207);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(56, 18);
+            this.label29.TabIndex = 204;
+            this.label29.Text = "Injuries";
+            // 
             // FormScan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2308,6 +2353,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.label29);
+            this.Controls.Add(this.nudInjuries);
+            this.Controls.Add(this.label27);
+            this.Controls.Add(this.label26);
             this.Controls.Add(this.btnRoll20Export);
             this.Controls.Add(this.btnImport);
             this.Controls.Add(this.nudGoTo);
@@ -2347,7 +2396,6 @@
             this.Controls.Add(this.tbGender);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.tbNature);
-            this.Controls.Add(this.label26);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label23);
@@ -2469,6 +2517,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudGoTo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnImport)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRoll20Export)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudInjuries)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2561,7 +2610,6 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.TextBox tbNature;
         private System.Windows.Forms.Label label6;
@@ -2605,5 +2653,9 @@
         private System.Windows.Forms.PictureBox btnImport;
         private System.ComponentModel.BackgroundWorker PokeSaveJSON;
         private System.Windows.Forms.PictureBox btnRoll20Export;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.NumericUpDown nudInjuries;
+        private System.Windows.Forms.Label label29;
     }
 }

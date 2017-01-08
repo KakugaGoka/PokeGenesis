@@ -9569,7 +9569,7 @@
     <entry>Vivillon with many different patterns are found all over the world. These patterns are affected by the climate of their habitat.</entry>
     <List666>
       <Ability>
-        <BasicAbility>Compund Eyes</BasicAbility>
+        <BasicAbility>Compound Eyes</BasicAbility>
         <AdvancedAbility>Shield Dust</AdvancedAbility>
         <AdvancedAbility>Friend Guard</AdvancedAbility>
         <AdvancedAbility>Covert</AdvancedAbility>
@@ -14888,7 +14888,7 @@
     <egg>Water 3</egg>
     <hatch>10 Days</hatch>
     <diet>Carnivore</diet>
-    <habitat>Ovean</habitat>
+    <habitat>Ocean</habitat>
     <legendary>false</legendary>
     <entry>Tentacool's body is largely composed of water. If it is removed from the sea, it dries up like parchment. If this Pokémon happens to become dehydrated, put it back into the sea.</entry>
     <List072>
@@ -20569,6 +20569,8 @@
         <cap id="2">Jump 1/1</cap>
         <cap id="3">Power 2</cap>
         <cap id="4">Fountain</cap>
+        <cap id="5">Naturewalk (Wetlands)</cap>
+        <cap id="6">Underdog</cap>
       </Capability>
       <Evolution>
         <evo id="0">1 - Slowpoke</evo>
@@ -32702,8 +32704,8 @@
     <weight>168.7 lbs. / 76.5kg (4)</weight>
     <gender>50% M / 50% F</gender>
     <egg>Mineral / Indeterminate</egg>
-    <diet>Desert</diet>
-    <habitat>Terravore</habitat>
+    <diet>Terravore</diet>
+    <habitat>Desert</habitat>
     <legendary>false</legendary>
     <entry>It has been said that they swallow those who get too close and turn them into mummies. They like to eat gold nuggets.</entry>
     <List563>
@@ -33944,6 +33946,14 @@
           <bonus>2</bonus>
         </skill>
       </Skills>
+      <Capability>
+        <cap id="0">Overland 5</cap>
+        <cap id="1">Swim 2</cap>
+        <cap id="2">Jump 1/1</cap>
+        <cap id="3">Power 4</cap>
+        <cap id="4">Naturewalk (Grassland, Forest)</cap>
+        <cap id="5">Herb Growth</cap>
+      </Capability>
       <Evolution>
         <evo id="0">1 - Petilil</evo>
         <evo id="1">2 - Lilligant Sun Stone Minimum 20</evo>
@@ -48777,7 +48787,7 @@
     <diet>Omnivore</diet>
     <habitat>Freshwater, Grassland</habitat>
     <legendary>false</legendary>
-    <entry>t swims by rotating its two tails like a screw. When it dives, its flotation sac collapses.</entry>
+    <entry>It swims by rotating its two tails like a screw. When it dives, its flotation sac collapses.</entry>
     <List418>
       <Ability>
         <BasicAbility>Vanguard</BasicAbility>
@@ -58730,7 +58740,7 @@
     <List310>
       <Ability>
         <BasicAbility>Electrodash</BasicAbility>
-        <BasicAbility>Lightening Rod</BasicAbility>
+        <BasicAbility>Lightning Rod</BasicAbility>
         <AdvancedAbility>Sprint</AdvancedAbility>
         <AdvancedAbility>Static</AdvancedAbility>
         <HighAbility>Minus</HighAbility>
@@ -61164,11 +61174,12 @@
         <cap id="0">Overland 3</cap>
         <cap id="1">Swim 2</cap>
         <cap id="2">Jump 0/0</cap>
-        <cap id="3">Power 3 Amorphous</cap>
-        <cap id="4">Egg Warmer</cap>
-        <cap id="5">Firestarter</cap>
-        <cap id="6">Wallclimber</cap>
-        <cap id="7">Underdog</cap>
+        <cap id="3">Power 3</cap>
+        <cap id="4">Amorphous</cap>
+        <cap id="5">Egg Warmer</cap>
+        <cap id="6">Firestarter</cap>
+        <cap id="7">Wallclimber</cap>
+        <cap id="8">Underdog</cap>
       </Capability>
       <Evolution>
         <evo id="0">1 - Slugma</evo>

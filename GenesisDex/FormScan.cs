@@ -109,6 +109,7 @@ namespace GenesisDex
         //===========================================================================================================
         List<decimal> MaxHealth = new List<decimal>();
         List<decimal> CurrentHealth = new List<decimal>();
+        List<decimal> Injuries = new List<decimal>();
         //===========================================================================================================
         List<string> habitats = new List<string>();
         List<string> types = new List<string>();
@@ -421,6 +422,7 @@ namespace GenesisDex
                 AllShinyCheck.Add(isShiny);
                 AllStatus.Add(statusBool.createStatus());
                 CombatStage.Add(new int[] {0, 0, 0, 0, 0, 0});
+                Injuries.Add(0);
                 Current++;
                 Progress++;
                 PokeGenerator.ReportProgress(Progress);
@@ -1584,7 +1586,14 @@ namespace GenesisDex
             lbSkills.Items.Add("Skills:");
             for (var s = 0; s < AllSkills[Current].Count; s++)
             {
-                lbSkills.Items.Add(AllSkills[Current][s].name + " " + AllSkills[Current][s].die + "d6+" + AllSkills[Current][s].bonus);
+                if (Convert.ToInt32(AllSkills[Current][s].bonus) < 0)
+                {
+                    lbSkills.Items.Add(AllSkills[Current][s].name + " " + AllSkills[Current][s].die + "d6" + AllSkills[Current][s].bonus);
+                }
+                else
+                {
+                    lbSkills.Items.Add(AllSkills[Current][s].name + " " + AllSkills[Current][s].die + "d6+" + AllSkills[Current][s].bonus);
+                }
             }
             pkItem.Image = AllItems1[Current];
             SetItem();
@@ -1687,6 +1696,7 @@ namespace GenesisDex
                     "Fairy: x" + (ttInfoType1.fairy).ToString() + Environment.NewLine);
             }
             nudGoTo.Maximum = AllPokemon.Count;
+            nudInjuries.Value = Injuries[Current];
             isWritingInfo = false;
         }
 
@@ -1738,6 +1748,7 @@ namespace GenesisDex
                 if (AllStatus[Current].Confused == true) { captureRate += 5; }
                 if (AllStatus[Current].Paralysis == true) { captureRate += 10; }
                 if (AllStatus[Current].Stuck == true) { captureRate += 10; }
+                captureRate += 5 * Convert.ToInt32(Injuries[Current]);
                 tbCaptureRate.Text = captureRate.ToString() + " or lower to capture.";
             }
         }
@@ -1879,17 +1890,17 @@ namespace GenesisDex
                 writer.WritePropertyName("base_SPEED");
                 writer.WriteValue(Convert.ToInt32(BasePokemon[Current].spd));
                 writer.WritePropertyName("HP");
-                writer.WriteValue(Convert.ToInt32(AllPokemon[Current].hp) - Convert.ToInt32(BasePokemon[Current].hp));
+                writer.WriteValue(Convert.ToInt32(AllStat[Current][0]) - Convert.ToInt32(BasePokemon[Current].hp));
                 writer.WritePropertyName("ATK");
-                writer.WriteValue(Convert.ToInt32(AllPokemon[Current].atk) - Convert.ToInt32(BasePokemon[Current].atk));
+                writer.WriteValue(Convert.ToInt32(AllStat[Current][1]) - Convert.ToInt32(BasePokemon[Current].atk));
                 writer.WritePropertyName("DEF");
-                writer.WriteValue(Convert.ToInt32(AllPokemon[Current].def) - Convert.ToInt32(BasePokemon[Current].def));
+                writer.WriteValue(Convert.ToInt32(AllStat[Current][2]) - Convert.ToInt32(BasePokemon[Current].def));
                 writer.WritePropertyName("SPATK");
-                writer.WriteValue(Convert.ToInt32(AllPokemon[Current].spatk) - Convert.ToInt32(BasePokemon[Current].spatk));
+                writer.WriteValue(Convert.ToInt32(AllStat[Current][3]) - Convert.ToInt32(BasePokemon[Current].spatk));
                 writer.WritePropertyName("SPDEF");
-                writer.WriteValue(Convert.ToInt32(AllPokemon[Current].spdef) - Convert.ToInt32(BasePokemon[Current].spdef));
+                writer.WriteValue(Convert.ToInt32(AllStat[Current][4]) - Convert.ToInt32(BasePokemon[Current].spdef));
                 writer.WritePropertyName("SPEED");
-                writer.WriteValue(Convert.ToInt32(AllPokemon[Current].spd) - Convert.ToInt32(BasePokemon[Current].spd));
+                writer.WriteValue(Convert.ToInt32(AllStat[Current][5]) - Convert.ToInt32(BasePokemon[Current].spd));
                 writer.WritePropertyName("Capabilities");
                 writer.WriteStartObject();
                 string startNaturewalk = "Error";
@@ -2112,6 +2123,7 @@ namespace GenesisDex
                     " Stats:" + Environment.NewLine +
                     " Current Health: " + tbCurrentHealth.Text + Environment.NewLine +
                     " Max Health: " + tbMaxHealth.Text + Environment.NewLine +
+                    " Injuries: " + nudInjuries.Value.ToString() + Environment.NewLine +
                     " HP: " + tbLevelHP.Text + " (" + BasePokemon[Current].hp + ")" + Environment.NewLine +
                     " ATK: " + tbLevelATK.Text + " (" + BasePokemon[Current].atk + ")" + Environment.NewLine +
                     " DEF: " + tbLevelDEF.Text + " (" + BasePokemon[Current].def + ")" + Environment.NewLine +
@@ -2240,6 +2252,11 @@ namespace GenesisDex
                     {
                         string[] temp = importedPokemon[s].Split(' ');
                         MaxHealth.Add(Convert.ToInt32(temp[3]));
+                    }
+                    if (importedPokemon[s].Contains(" Injuries:"))
+                    {
+                        string[] temp = importedPokemon[s].Split(' ');
+                        Injuries.Add(Convert.ToInt32(temp[2]));
                     }
                     if (importedPokemon[s].Contains(" HP:"))
                     {
@@ -4214,6 +4231,15 @@ namespace GenesisDex
         private void btnGoTo_MouseLeave(object sender, EventArgs e)
         {
             btnGoTo.Image = (getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\GoTo.png"));
+        }
+
+        //===========================================================================================================
+        //=== 
+        //===========================================================================================================
+        private void nudInjuries_ValueChanged(object sender, EventArgs e)
+        {
+            Injuries[Current] = nudInjuries.Value;
+            WriteInfo();
         }
     }
 }
