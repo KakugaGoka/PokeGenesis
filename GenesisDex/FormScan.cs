@@ -1592,7 +1592,9 @@ namespace GenesisDex
                 }
                 else
                 {
-                    lbSkills.Items.Add(AllSkills[Current][s].name + " " + AllSkills[Current][s].die + "d6+" + AllSkills[Current][s].bonus);
+                    string skillAdd = AllSkills[Current][s].name + " " + AllSkills[Current][s].die + "d6+" + AllSkills[Current][s].bonus;
+                    skillAdd = skillAdd.Replace("++", "+");
+                    lbSkills.Items.Add(skillAdd);
                 }
             }
             pkItem.Image = AllItems1[Current];
@@ -2117,6 +2119,8 @@ namespace GenesisDex
                     " Number: " + AllPokemon[Current].number + Environment.NewLine +
                     " Type: " + tbType.Text + Environment.NewLine +
                     " Gender: " + tbGender.Text + Environment.NewLine +
+                    " Size: " + AllPokemon[Current].size + Environment.NewLine +
+                    " Weight: " + AllPokemon[Current].weight + Environment.NewLine +
                     " Nature: " + tbNature.Text + Environment.NewLine +
                     " Level: " + tbLevel.Text + Environment.NewLine +
                     Environment.NewLine +
@@ -2149,7 +2153,14 @@ namespace GenesisDex
                 sw.WriteLine(Environment.NewLine + "Skills:");
                 for (var s = 0; s < AllSkills[Current].Count; s++)
                 {
-                    sw.WriteLine("-" + AllSkills[Current][s]);
+                    if (Convert.ToInt32(AllSkills[Current][s].bonus) < 0)
+                    {
+                        sw.WriteLine("-" + AllSkills[Current][s].name + " " + AllSkills[Current][s].die + "d6" + AllSkills[Current][s].bonus);
+                    }
+                    else
+                    {
+                        sw.WriteLine("-" + AllSkills[Current][s].name + " " + AllSkills[Current][s].die + "d6+" + AllSkills[Current][s].bonus);
+                    }
                 }
                 sw.WriteLine(Environment.NewLine + "Held Item:" + Environment.NewLine + AllDesc1[Current]);
                 sw.WriteLine(Environment.NewLine + "------------------------------------------------------------------------------------------");
@@ -2207,6 +2218,8 @@ namespace GenesisDex
                 string imbSPATK = "0";
                 string imbSPDEF = "0";
                 string imbSPD = "0";
+                string imWeight = "ERROR";
+                string imSize = "ERROR";
                 if (importedPokemon[0] != "§PokeGenesis Export§") return;
                 for (int s = 0; s < importedPokemon.Count(); s++)
                 {
@@ -2232,6 +2245,26 @@ namespace GenesisDex
                     {
                         string[] temp = importedPokemon[s].Split(' ');
                         AllNatures.Add(temp[2]);
+                    }
+                    if (importedPokemon[s].Contains(" Weight:"))
+                    {
+                        string[] temp = importedPokemon[s].Split(' ');
+                        StringBuilder build = new StringBuilder();
+                        for (int t = 2; t < temp.Count(); t++)
+                        {
+                            build.Append(temp[t]);
+                        }
+                        imWeight = build.ToString();
+                    }
+                    if (importedPokemon[s].Contains(" Size:"))
+                    {
+                        string[] temp = importedPokemon[s].Split(' ');
+                        StringBuilder build = new StringBuilder();
+                        for (int t = 2; t < temp.Count(); t++)
+                        {
+                            build.Append(temp[t]);
+                        }
+                        imSize = build.ToString();
                     }
                     if (importedPokemon[s].Contains(" Gender:"))
                     {
@@ -2340,7 +2373,20 @@ namespace GenesisDex
                             else
                                 break;
                         }
-                        AllSkills.Add(skill);
+                        List<Skill> imSkills = new List<Skill>();
+                        foreach(string sk in ski)
+                        {
+                            string[] skillFind = sk.Split(' ');
+                            string[] finalSKill = skillFind[1].Split('d');
+                            Skill newSkill = new Skill
+                            {
+                                name = skillFind[0],
+                                die = finalSKill[0],
+                                bonus = finalSKill[1].TrimStart('6')
+                            };
+                            imSkills.Add(newSkill);
+                        }
+                        AllSkills.Add(imSkills);
                     }
                     if (importedPokemon[s].Contains("Held Item:"))
                     {
@@ -2356,7 +2402,9 @@ namespace GenesisDex
                 }
                 AllPokemon.Add(new Pokemon
                 {
-                    id = imName
+                    id = imName,
+                    weight = imWeight,
+                    size = imSize
                 });
                 BasePokemon.Add(new Pokemon
                 {
