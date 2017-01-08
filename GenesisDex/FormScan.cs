@@ -2024,12 +2024,12 @@ namespace GenesisDex
                         if (moveInfo.moveAC != null)
                         {
                             writer.WritePropertyName("AC");
-                            writer.WriteValue(Convert.ToInt32(moveInfo.moveAC));
+                            writer.WriteValue(moveInfo.moveAC);
                         }
                         if (moveInfo.moveDB != null)
                         {
                             writer.WritePropertyName("DB");
-                            writer.WriteValue(Convert.ToInt32(moveInfo.moveDB));
+                            writer.WriteValue(moveInfo.moveDB);
                         }
                         if (moveInfo.moveClass != null)
                         {
@@ -2252,7 +2252,7 @@ namespace GenesisDex
                         StringBuilder build = new StringBuilder();
                         for (int t = 2; t < temp.Count(); t++)
                         {
-                            build.Append(temp[t]);
+                            build.Append(temp[t] + " ");
                         }
                         imWeight = build.ToString();
                     }
@@ -2262,14 +2262,19 @@ namespace GenesisDex
                         StringBuilder build = new StringBuilder();
                         for (int t = 2; t < temp.Count(); t++)
                         {
-                            build.Append(temp[t]);
+                            build.Append(temp[t] + " ");
                         }
                         imSize = build.ToString();
                     }
                     if (importedPokemon[s].Contains(" Gender:"))
                     {
                         string[] temp = importedPokemon[s].Split(' ');
-                        Gender.Add(temp[2]);
+                        StringBuilder build = new StringBuilder();
+                        for (int t = 2; t < temp.Count(); t++)
+                        {
+                            build.Append(temp[t] + " ");
+                        }
+                        Gender.Add(build.ToString());
                     }
                     if (importedPokemon[s].Contains(" Level:"))
                     {
@@ -3030,6 +3035,7 @@ namespace GenesisDex
             if (e.Button != MouseButtons.Left) return;
             PokeImportDialog.Filter = "PokeGenesis Export File | *.pkgen";
             PokeImportDialog.Multiselect = true;
+            PokeImportDialog.FileName = "";
             importResult = PokeImportDialog.ShowDialog() == DialogResult.OK;
             if (!importResult) return;
             PokeImportScan.RunWorkerAsync();
