@@ -2131,7 +2131,7 @@
     <gender>50% M / 50% F</gender>
     <egg>Field / Dragon</egg>
     <diet>Carnivore</diet>
-    <habitat>Grassland Marsh</habitat>
+    <habitat>Grassland, Marsh</habitat>
     <legendary>false</legendary>
     <entry>This Pokémon is terrifically strong in order to constrict things with its body. It can even flatten steel oil drums. Once Arbok wraps its body around its foe, escaping its crunching embrace is impossible.</entry>
     <List024>
@@ -2478,7 +2478,7 @@
         <move id="13">34 Gyro Ball - Steel</move>
         <move id="14">38 Swords Dance - Normal</move>
         <move id="15">42 Sandstorm - Rock</move>
-        <move id="16">46 Earthquake</move>
+        <move id="16">46 Earthquake - Ground</move>
       </Moves>
     </List027>
   </Pokemon>
@@ -3756,13 +3756,13 @@
         <move id="5">17  Confuse Ray - Ghost</move>
         <move id="6">19  Air Cutter - Flying</move>
         <move id="7">23  Swift - Normal</move>
-        <move id="8">25  Poison Fang</move>
-        <move id="9">29  Mean Look</move>
+        <move id="8">25  Poison Fang - Poison</move>
+        <move id="9">29  Mean Look - Normal</move>
         <move id="10">31  Acrobatics - Flying</move>
         <move id="11">35  Haze - Ice</move>
         <move id="12">37  Venoshock - Poison</move>
         <move id="13">41  Air Slash - Flying</move>
-        <move id="14">43  Quick Guard</move>
+        <move id="14">43  Quick Guard - Fighting</move>
       </Moves>
     </List041>
   </Pokemon>
@@ -3779,6 +3779,7 @@
     <size>16’ 05” / 5m (Huge)</size>
     <weight>672.4 lbs. / 305 kg (6)</weight>
     <gender>Genderless</gender>
+    <egg>None</egg>
     <hatch>75 Days</hatch>
     <diet>Nullivore</diet>
     <habitat>Cave</habitat>
@@ -4206,7 +4207,7 @@
         <cap id="0">Overland 2</cap>
         <cap id="1">Swim 2</cap>
         <cap id="2">Sky 5</cap>
-        <cap id="3">Jump1/1</cap>
+        <cap id="3">Jump 1/1</cap>
         <cap id="4">Power 1</cap>
         <cap id="5">Darkvision</cap>
         <cap id="6">Underdog</cap>
@@ -5785,18 +5786,23 @@
         <evo id="0">1 - Hawlucha</evo>
       </Evolution>
       <Moves>
-        <move id="0">1 Tackle</move>
-        <move id="1">1 Hone Claws</move>
-        <move id="2">8 Wing Attack</move>
-        <move id="3">12 Roost</move>
-        <move id="4">16 Aerial Ace</move>
-        <move id="5">20 Encore</move>
-        <move id="6">24 Flying</move>
-        <move id="7">28 Flying Press</move>
-        <move id="8">32 Bounce</move>
-        <move id="9">48 Sky Attack</move>
-        <move id="10">55 Sky Drop</move>
-        <move id="11">60 Swords Dance</move>
+        <move id="0">1 Tackle - Normal</move>
+        <move id="1">1 Hone Claws - Dark</move>
+        <move id="1">1 Detect - Fighting</move>
+        <move id="1">4 Karate Chop - Fighting</move>
+        <move id="2">8 Wing Attack - Flying</move>
+        <move id="3">12 Roost - Flying</move>
+        <move id="4">16 Aerial Ace - Flying</move>
+        <move id="5">20 Encore - Normal</move>
+        <move id="6">24 Fling - Dark</move>
+        <move id="7">28 Flying Press - Fighting</move>
+        <move id="8">32 Bounce - Flying</move>
+        <move id="1">36 Endeavor - Normal</move>
+        <move id="1">40 Feather Dance - Flying</move>
+        <move id="1">44 High Jump Kick - Flying</move>
+        <move id="9">48 Sky Attack - Flying</move>
+        <move id="10">55 Sky Drop - Flying</move>
+        <move id="11">60 Swords Dance - Normal</move>
       </Moves>
     </List701>
   </Pokemon>
@@ -5872,21 +5878,22 @@
         <evo id="0">1 - Dedenne</evo>
       </Evolution>
       <Moves>
-        <move id="0">1 Tackle</move>
-        <move id="1">1 Tail Whip</move>
-        <move id="2">7 Thunder Shock</move>
-        <move id="3">14 Charm</move>
-        <move id="4">17 Parabolic Charge</move>
-        <move id="5">20 Nuzzle</move>
-        <move id="6">23 Thunder Wave</move>
-        <move id="7">26 Volt Switch</move>
-        <move id="8">30 Rest</move>
-        <move id="9">31 Snore</move>
-        <move id="10">34 Charge Beam</move>
-        <move id="11">39 Entraiment</move>
-        <move id="12">42 Play Rough</move>
-        <move id="13">45 Thunder</move>
-        <move id="14">50 Discharge</move>
+        <move id="0">1 Tackle - Normal</move>
+        <move id="1">1 Tail Whip - Normal</move>
+        <move id="2">7 Thunder Shock - Electric</move>
+        <move id="3">11 Charge - Electric</move>
+        <move id="3">14 Charm - Fairy</move>
+        <move id="4">17 Parabolic Charge - Electric</move>
+        <move id="5">20 Nuzzle - Electric</move>
+        <move id="6">23 Thunder Wave - Electric</move>
+        <move id="7">26 Volt Switch - Electric</move>
+        <move id="8">30 Rest - Psychic</move>
+        <move id="9">31 Snore - Normal</move>
+        <move id="10">34 Charge Beam - Electric</move>
+        <move id="11">39 Entraiment - Normal</move>
+        <move id="12">42 Play Rough - Fairy</move>
+        <move id="13">45 Thunder - Electric</move>
+        <move id="14">50 Discharge - Electric</move>
       </Moves>
     </List702>
   </Pokemon>
@@ -6047,14 +6054,7 @@
       </Capability>
       <Evolution>
         <evo id="0">1 - Eevee</evo>
-        <evo id="1">2 - Vaporeon Water Stone</evo>
-        <evo id="2">2 - Jolteon Thunderstone</evo>
-        <evo id="3">2 - Flareon Fire Stone</evo>
-        <evo id="4">2 - Espeon Dawn Stone</evo>
-        <evo id="5">2 - Umbreon Dusk Stone</evo>
-        <evo id="6">2 - Leafeon Leaf Stone</evo>
-        <evo id="7">2 - Glaceon Shiny Stone</evo>
-        <evo id="8">2 - Sylveon Moon Stone</evo>
+        <evo id="1">2 - Sylveon Moon Stone</evo>
       </Evolution>
       <Moves>
         <move id="0">1 Tackle - Normal</move>
@@ -6343,13 +6343,13 @@
         <move id="4">17  Confuse Ray - Ghost</move>
         <move id="5">19  Air Cutter - Flying</move>
         <move id="6">24  Swift - Normal</move>
-        <move id="7">27  Poison Fang</move>
+        <move id="7">27  Poison Fang - Poison</move>
         <move id="8">32  Mean Look</move>
         <move id="9">35  Acrobatics - Flying</move>
         <move id="10">40  Haze - Ice</move>
         <move id="11">43  Venoshock - Poison</move>
         <move id="12">48  Air Slash - Flying</move>
-        <move id="13">51  Quick Guard</move>
+        <move id="13">51  Quick Guard - Fighting</move>
       </Moves>
     </List042>
   </Pokemon>
@@ -6519,7 +6519,7 @@
         <evo id="3">4 - Bellossom Sun Stone Minimum 30</evo>
       </Evolution>
       <Moves>
-        <move id="0">5  Sweet Scent - Norma</move>
+        <move id="0">5  Sweet Scent - Normal</move>
         <move id="1">9  Acid - Poison</move>
         <move id="2">13  Poison Powder - Poison</move>
         <move id="3">14  Stun Spore - Grass</move>
@@ -7456,7 +7456,7 @@
     <spdef>6</spdef>
     <spd>5</spd>
     <size>1’ 08” / 0.5m (Small)</size>
-    <weight>.3 lbs. / 31 kg (3)</weight>
+    <weight>68.3 lbs. / 31 kg (3)</weight>
     <gender>50% M / 50% F</gender>
     <egg>Water 1 and Water 3</egg>
     <hatch>10 Days</hatch>
@@ -7726,7 +7726,7 @@
         <move id="13">35 Pluck - Flying</move>
         <move id="14">39 Psycho Cut - Flying</move>
         <move id="15">43 Slash - Normal</move>
-        <move id="16">46 Night Slash</move>
+        <move id="16">46 Night Slash - Dark</move>
         <move id="17">48 Superpower - Fighting</move>
       </Moves>
     </List686>
@@ -8613,7 +8613,7 @@
         <cap id="4">Naturewalk (Grassland, Forest)</cap>
       </Capability>
       <Evolution>
-        <evo id="0">1 - Panchem</evo>
+        <evo id="0">1 - Pancham</evo>
         <evo id="1">2 - Pangoro Minimum 30, Exposed to Dark Type</evo>
       </Evolution>
       <Moves>
@@ -10901,7 +10901,7 @@
         <move id="13">52 Pain Split - Normal</move>
         <move id="14">55 Wood Hammer - Grass</move>
         <move id="15">60 Hammer Arm - Fighting</move>
-        <move id="16">70 Giga Impact</move>
+        <move id="16">70 Giga Impact - Normal</move>
       </Moves>
     </List652>
   </Pokemon>
@@ -12458,7 +12458,7 @@
     <size>6’ 7” / 2m (Large)</size>
     <weight>440.9 lbs. / 200kg (6)</weight>
     <gender>No Gender</gender>
-    <egg>None</egg>
+    <egg>Field</egg>
     <hatch>40 Days</hatch>
     <diet>Omnivore</diet>
     <habitat>Cave, Mountain</habitat>
@@ -14250,7 +14250,7 @@
     <weight>105.8 lbs. / 48kg (3)</weight>
     <gender>75% M / 25% F</gender>
     <egg>Humanshape</egg>
-    <diet>Omnicoew</diet>
+    <diet>Omnivore</diet>
     <habitat>Urban</habitat>
     <legendary>false</legendary>
     <entry>Alakazam's brain continually grows, making its head far too heavy to support with its neck. This Pokémon holds its head up using its psychokinetic power instead.</entry>
@@ -19245,8 +19245,8 @@
     <spatk>6</spatk>
     <spdef>5</spdef>
     <spd>7</spd>
-    <size>Height : 0’ 4” / 0.1m (Small)</size>
-    <weight>Weight : 1.3 lbs. / 0.6kg (1)</weight>
+    <size>0’ 4” / 0.1m (Small)</size>
+    <weight>1.3 lbs. / 0.6kg (1)</weight>
     <gender>50% M / 50% F</gender>
     <egg>Bug</egg>
     <hatch>10 Days</hatch>
@@ -21435,8 +21435,8 @@
     <size>3’ 11” / 1.2m (Medium)</size>
     <weight>66.1 lbs. / 30kg (3)</weight>
     <gender>50% M / 50% F</gender>
-    <egg>Terravore</egg>
-    <diet>Indeterminate</diet>
+    <egg>Indeterminate</egg>
+    <diet>Terravore</diet>
     <habitat>Urban</habitat>
     <legendary>false</legendary>
     <entry>From Muk's body seeps a foul fluid that gives off a nose-bendingly horrible stench. Just one drop of this Pokémon's body fluid can turn a pool stagnant and rancid.</entry>
@@ -22764,7 +22764,8 @@
         <cap id="0">Overland 5</cap>
         <cap id="1">Swim 3</cap>
         <cap id="2">Jump 1/2</cap>
-        <cap id="3">Power 6 Naturewalk (Grassland, Forest)</cap>
+        <cap id="3">Power 6</cap>
+        <cap id="4">Naturewalk  (Grassland, Forest)</cap>
       </Capability>
       <Evolution>
         <evo id="0">1 - Exeggcute</evo>
@@ -24603,7 +24604,7 @@
         <move id="13">49 Double Hit - Normal</move>
         <move id="14">53 Air Slash - Flying</move>
         <move id="15">57 Swords Dance - Normal</move>
-        <move id="16">61 Feint - Norma</move>
+        <move id="16">61 Feint - Normal</move>
       </Moves>
     </List123>
   </Pokemon>
@@ -26635,12 +26636,16 @@
         </skill>
       </Skills>
       <Capability>
-        <cap id="0">Athl 5d6+2</cap>
-        <cap id="1">Acro 3d6</cap>
-        <cap id="2">Combat 4d6+2</cap>
-        <cap id="3">Stealth 2d6+1</cap>
-        <cap id="4">Percep 4d6</cap>
-        <cap id="5">Focus 5d6</cap>
+        <cap id="0">Overland 5</cap>
+        <cap id="1">Swim 5</cap>
+        <cap id="2">Sky 10</cap>
+        <cap id="3">Jump 2/3</cap>
+        <cap id="4">Power 7</cap>
+        <cap id="5">Firestarter</cap>
+        <cap id="6">Glow</cap>
+        <cap id="7">Guster</cap>
+        <cap id="8">Heater</cap>
+        <cap id="9">Mountable 1</cap>
       </Capability>
       <Evolution>
         <evo id="0">1 - Moltres</evo>
@@ -26749,7 +26754,7 @@
         <move id="10">45 Safeguard - Normal</move>
         <move id="11">51 Dragon Dance - Dragon</move>
         <move id="12">55 Outrage - Dragon</move>
-        <move id="13">61 Hyper Beam - Norm</move>
+        <move id="13">61 Hyper Beam - Normal</move>
       </Moves>
     </List147>
   </Pokemon>
@@ -28752,13 +28757,13 @@
         <move id="4">17 Confuse Ray - Ghost</move>
         <move id="5">19 Air Cutter - Flying</move>
         <move id="6">24 Swift - Normal</move>
-        <move id="7">27 Poison Fang</move>
-        <move id="8">32 Mean Look</move>
+        <move id="7">27 Poison Fang - Poison</move>
+        <move id="8">32 Mean Look - Normal</move>
         <move id="9">35 Acrobatics - Flying</move>
         <move id="10">40 Haze - Ice</move>
         <move id="11">43 Venoshock - Poison</move>
         <move id="12">48 Air Slash - Flying</move>
-        <move id="13">51 Quick Guard</move>
+        <move id="13">51 Quick Guard - Fighting</move>
       </Moves>
     </List169>
   </Pokemon>
@@ -32337,8 +32342,8 @@
     <weight>70.5 lbs. / 32kg (3)</weight>
     <gender>87.5% M / 12.5% F</gender>
     <egg>Flying / Water 3</egg>
-    <diet>Mountain</diet>
-    <habitat>Carnivore</habitat>
+    <diet>Carnivore</diet>
+    <habitat>Mountain</habitat>
     <legendary>false</legendary>
     <entry>They are intelligent and will cooperate to catch prey. From the ground, they use a running start to take flight.</entry>
     <List567>
@@ -33255,7 +33260,7 @@
     <egg>Bug / Mineral</egg>
     <hatch>10 Days</hatch>
     <diet>Herbivore, Terravore</diet>
-    <habitat>Cave, Desert, Grassland, Mountian</habitat>
+    <habitat>Cave, Desert, Grassland, Mountain</habitat>
     <legendary>false</legendary>
     <entry>It makes a hole in a suitable rock. If that rock breaks, the Pokémon remains agitated until it locates a replacement.</entry>
     <List557>
@@ -35387,10 +35392,9 @@
         <cap id="6">Underdog</cap>
       </Capability>
       <Evolution>
-        <evo id="0">Evolution:</evo>
-        <evo id="1">1 - Tympole</evo>
-        <evo id="2">2 - Palpitoad Minimum 20</evo>
-        <evo id="3">3 - Seismitoad Minimum 35</evo>
+        <evo id="0">1 - Tympole</evo>
+        <evo id="1">2 - Palpitoad Minimum 20</evo>
+        <evo id="2">3 - Seismitoad Minimum 35</evo>
       </Evolution>
       <Moves>
         <move id="0">1 Bubble - Water</move>
@@ -35940,9 +35944,8 @@
         <cap id="7">Naturewalk (Cave, Mountain)</cap>
       </Capability>
       <Evolution>
-        <evo id="0">Evolution:</evo>
-        <evo id="1">1 - Drilbur</evo>
-        <evo id="2">2 - Excadrill Minimum 30</evo>
+        <evo id="0">1 - Drilbur</evo>
+        <evo id="1">2 - Excadrill Minimum 30</evo>
       </Evolution>
       <Moves>
         <move id="0">1 Mud Sport - Ground</move>
@@ -36049,7 +36052,7 @@
         <move id="9">32 Air Slash - Flying</move>
         <move id="10">36 Future Sight - Psychic</move>
         <move id="11">41 Psychic - Psychic</move>
-        <move id="12">47 Endeavor - NormalOne</move>
+        <move id="12">47 Endeavor - Normal</move>
       </Moves>
     </List528>
   </Pokemon>
@@ -37599,7 +37602,7 @@
     <gender>50% M / 50% F</gender>
     <egg>Field</egg>
     <diet>Omnivore</diet>
-    <habitat>Grassland Urban</habitat>
+    <habitat>Grassland, Urban</habitat>
     <legendary>false</legendary>
     <entry>This very loyal Pokémon helps Trainers, and it also takes care of other Pokémon.</entry>
     <List507>
@@ -37777,7 +37780,7 @@
     <size>1’ 8” / 0.5m (Small)</size>
     <weight>25.6 lbs. / 11.6kg (2)</weight>
     <gender>50% M / 50% F</gender>
-    <egg>Fieild</egg>
+    <egg>Field</egg>
     <hatch>10 Days</hatch>
     <diet>Herbivore</diet>
     <habitat>Forest, Grassland</habitat>
@@ -41796,6 +41799,7 @@
     <atk>+4</atk>
     <def>+3</def>
     <spd>+3</spd>
+    <ability>Inner Focus</ability>
   </Mega475>
   <Pokemon Stage="3">
     <number>474</number>
@@ -42776,7 +42780,7 @@
         <move id="11">48 Earthquake - Ground</move>
         <move id="12">55 Megahorn - Bug</move>
         <move id="13">62 Horn Drill - Normal</move>
-        <move id="14">69 Rock Wrecker</move>
+        <move id="14">69 Rock Wrecker - Rock</move>
       </Moves>
     </List464>
   </Pokemon>
@@ -43115,7 +43119,7 @@
         <cap id="3">Power 6</cap>
         <cap id="4">Chilled</cap>
         <cap id="5">Freezer</cap>
-        <cap id="6">Naturewalk (Grassland, ForestTundra)</cap>
+        <cap id="6">Naturewalk (Grassland, Forest, Tundra)</cap>
       </Capability>
       <Evolution>
         <evo id="0">1 - Snover</evo>
@@ -43304,7 +43308,7 @@
       </Capability>
       <Evolution>
         <evo id="0">1 - Mantyke</evo>
-        <evo id="1">2 - Mantine, interact wiht a Remoraid, Min. 10</evo>
+        <evo id="1">2 - Mantine, interact with a Remoraid, Min. 10</evo>
       </Evolution>
       <Moves>
         <move id="0">1 Bubble - Water</move>
@@ -43614,7 +43618,7 @@
     <List454>
       <Ability>
         <BasicAbility>Dry Skin</BasicAbility>
-        <BasicAbility>Aticipation</BasicAbility>
+        <BasicAbility>Anticipation</BasicAbility>
         <AdvancedAbility>Poison Touch</AdvancedAbility>
         <AdvancedAbility>Dodge</AdvancedAbility>
         <HighAbility>Deadly Poison</HighAbility>
@@ -45213,7 +45217,7 @@
     <egg>Mineral</egg>
     <hatch>10 Days</hatch>
     <diet>Nullivore</diet>
-    <habitat>Cave, Forest, Mountian</habitat>
+    <habitat>Cave, Forest, Mountain</habitat>
     <legendary>false</legendary>
     <entry>Ancient people believed that the pattern on Bronzor's back contained a mysterious power.</entry>
     <List436>
@@ -46941,8 +46945,7 @@
       </Capability>
       <Evolution>
         <evo id="0">1 - Gligar</evo>
-        <evo id="1">2 - Gliscor Holding Razor Fang Minimum 25</evo>
-        <evo id="2">at Night</evo>
+        <evo id="1">2 - Gliscor Holding Razor Fang Minimum 25 at Night</evo>
       </Evolution>
       <Moves>
         <move id="0">1 Poison Sting - Poison</move>
@@ -50580,7 +50583,7 @@
         <move id="7">34 Close Combat - Fighting</move>
         <move id="8">41 Agility - Psychic</move>
         <move id="9">49 Brave Bird - Flying</move>
-        <move id="10">57 Final Gambit - Normal</move>
+        <move id="10">57 Final Gambit - Fighting</move>
       </Moves>
     </List398>
   </Pokemon>
@@ -50665,7 +50668,7 @@
         <move id="6">33 Take Down - Normal</move>
         <move id="7">38 Agility - Psychic</move>
         <move id="8">43 Brave Bird - Flying</move>
-        <move id="9">48 Final Gambit - Normal</move>
+        <move id="9">48 Final Gambit - Fighting</move>
       </Moves>
     </List397>
   </Pokemon>
@@ -50753,7 +50756,7 @@
         <move id="8">29 Take Down - Normal</move>
         <move id="9">33 Agility - Psychic</move>
         <move id="10">37 Brave Bird - Flying</move>
-        <move id="11">41 Final Gambit - Normal</move>
+        <move id="11">41 Final Gambit - Fighting</move>
       </Moves>
     </List396>
   </Pokemon>
@@ -53148,7 +53151,7 @@
     <diet>Carnivore</diet>
     <habitat>Cave, Mountain</habitat>
     <legendary>false</legendary>
-    <entry>Instead of blood, a powerful magnetic force courses throughout Beldum's body. This Pokémon communicates with others by sending controlled pulses of magnetism.</entry>
+    <entry>Salamence came about as a result of a strong, long-held dream of growing wings. It is said that this powerful desire triggered a sudden mutation in this Pokémon's cells, causing it to sprout its magnificent wings.</entry>
     <List373>
       <Ability>
         <BasicAbility>Intimidate</BasicAbility>
@@ -53658,7 +53661,7 @@
       <Moves>
         <move id="0">1 Whirlpool - Water</move>
         <move id="1">1 Confusion - Psychic</move>
-        <move id="2">5 Water Sport</move>
+        <move id="2">5 Water Sport - Water</move>
         <move id="3">9 Agility - Psychic</move>
         <move id="4">11 Draining Kiss - Fairy</move>
         <move id="5">14 Water Pulse - Water</move>
@@ -54880,7 +54883,7 @@
     <size>3’ 3” / 1m (Medium)</size>
     <weight>48.5 lbs. / 22kg (2)</weight>
     <gender>50% M / 50% F</gender>
-    <egg>field</egg>
+    <egg>Field</egg>
     <hatch>10 Days</hatch>
     <diet>Herbivore</diet>
     <habitat>Forest</habitat>
@@ -58838,7 +58841,7 @@
     <List309>
       <Ability>
         <BasicAbility>Electrodash</BasicAbility>
-        <BasicAbility>Lightening Rod</BasicAbility>
+        <BasicAbility>Lightning Rod</BasicAbility>
         <AdvancedAbility>Sprint</AdvancedAbility>
         <AdvancedAbility>Static</AdvancedAbility>
         <HighAbility>Minus</HighAbility>
@@ -61267,11 +61270,12 @@
         <cap id="0">Overland 4</cap>
         <cap id="1">Swim 3</cap>
         <cap id="2">Jump 0/0</cap>
-        <cap id="3">Power 4 Egg Warmer</cap>
-        <cap id="4">Firestarter</cap>
-        <cap id="5">Heater</cap>
-        <cap id="6">Wallclimber</cap>
-        <cap id="7">Underdog</cap>
+        <cap id="3">Power 4</cap>
+        <cap id="4">Egg  Warmer</cap>
+        <cap id="5">Firestarter</cap>
+        <cap id="6">Heater</cap>
+        <cap id="7">Wallclimber</cap>
+        <cap id="8">Underdog</cap>
       </Capability>
       <Evolution>
         <evo id="0">1 - Slugma</evo>
@@ -63409,7 +63413,7 @@
         <move id="9">32 Giga Drain - Grass</move>
         <move id="10">35 Bug Buzz - Bug</move>
         <move id="11">37 Rage - Normal</move>
-        <move id="12">40 Quiver Dance</move>
+        <move id="12">40 Quiver Dance - Bug</move>
       </Moves>
     </List267>
   </Pokemon>
@@ -66210,8 +66214,7 @@
         <evo id="0">1 - Tyrogue</evo>
         <evo id="1">2 - Hitmonchan Superior Defense Minimum 20</evo>
         <evo id="2">2 - Hitmonlee Superior Attack Minimum 20</evo>
-        <evo id="3">2 - Hitmontop Equal Attack and Defense</evo>
-        <evo id="4">Minimum 20</evo>
+        <evo id="3">2 - Hitmontop Equal Attack and Defense Minimum 20</evo>
       </Evolution>
       <Moves>
         <move id="0">1 Fake Out - Normal</move>
@@ -66942,7 +66945,7 @@
   <Pokemon Stage="1">
     <number>227</number>
     <id>Skarmory</id>
-    <type>Steel / Fighting</type>
+    <type>Steel / Flying</type>
     <hp>7</hp>
     <atk>8</atk>
     <def>14</def>
@@ -67100,7 +67103,7 @@
       </Capability>
       <Evolution>
         <evo id="0">1 - Mantyke</evo>
-        <evo id="1">2 - Mantine, interact wiht a Remoraid, Min. 10</evo>
+        <evo id="1">2 - Mantine, interact with a Remoraid, Min. 10</evo>
       </Evolution>
       <Moves>
         <move id="0">3 Supersonic - Normal</move>
