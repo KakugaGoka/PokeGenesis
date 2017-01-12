@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
 using System.Drawing;
+using Microsoft.Win32;
 
 namespace GenesisDexEngine
 {
@@ -25,7 +26,7 @@ namespace GenesisDexEngine
     class Pokemon
     {
         public string id { get; set; }
-        public string entry { get; set; } 
+        public string entry { get; set; }
         public string stage { get; set; }
         public string number { get; set; }
         public string type { get; set; }
@@ -304,11 +305,11 @@ namespace GenesisDexEngine
                         };
             idList = query.ToList();
             return idList;
-         }
+        }
     }
 
     // Used to create a list to populate FormOptions and to apply those Options into the other Forms.
-        class OptionsList
+    class OptionsList
     {
         public List<Options> createList()
         {
@@ -437,7 +438,8 @@ namespace GenesisDexEngine
             string fileName = (AppDomain.CurrentDomain.BaseDirectory + "DATA\\XML\\Items.xml");
             List<Items> idList = new List<Items>();
             XDocument doc = XDocument.Load(fileName);
-            var query = from node in doc.Descendants("Item") where (string)node.Attribute("Tier") == tier
+            var query = from node in doc.Descendants("Item")
+                        where (string)node.Attribute("Tier") == tier
                         select new Items
                         {
                             id = (string)node.Element("id"),
@@ -556,7 +558,7 @@ namespace GenesisDexEngine
             var query = from node in doc.Descendants("List" + decend).Descendants("Moves").Descendants("move")
                         select new Moves
                         {
-                                 move = (string)node.Value
+                            move = (string)node.Value
                         };
             idList = query.ToList();
             return idList;
@@ -675,6 +677,17 @@ namespace GenesisDexEngine
                         };
             idList = query.ToList();
             return idList;
+        }
+    }
+
+    //
+    class DPISense
+    {
+        public int? CheckDPI()
+        {
+            RegistryKey regKey = Registry.CurrentUser.OpenSubKey(@"Control Panel\Desktop\WindowMetrics");
+            int? dpix = regKey.GetValue("AppliedDPI") as int?;
+            return dpix;
         }
     }
 }

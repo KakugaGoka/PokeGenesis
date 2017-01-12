@@ -197,11 +197,12 @@
             // 
             // pbPokemon
             // 
+            this.pbPokemon.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pbPokemon.BackColor = System.Drawing.Color.Transparent;
+            this.pbPokemon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pbPokemon.Location = new System.Drawing.Point(64, 60);
             this.pbPokemon.Name = "pbPokemon";
             this.pbPokemon.Size = new System.Drawing.Size(250, 210);
-            this.pbPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbPokemon.TabIndex = 31;
             this.pbPokemon.TabStop = false;
             // 
@@ -1227,7 +1228,7 @@
             this.lbCapabilites.ItemHeight = 18;
             this.lbCapabilites.Location = new System.Drawing.Point(701, 408);
             this.lbCapabilites.Name = "lbCapabilites";
-            this.lbCapabilites.Size = new System.Drawing.Size(238, 182);
+            this.lbCapabilites.Size = new System.Drawing.Size(238, 146);
             this.lbCapabilites.TabIndex = 141;
             this.lbCapabilites.MouseLeave += new System.EventHandler(this.lbCapabilites_MouseLeave);
             this.lbCapabilites.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbCaps_MouseMove);
@@ -1242,7 +1243,7 @@
             this.lbMoves.ItemHeight = 18;
             this.lbMoves.Location = new System.Drawing.Point(945, 208);
             this.lbMoves.Name = "lbMoves";
-            this.lbMoves.Size = new System.Drawing.Size(238, 146);
+            this.lbMoves.Size = new System.Drawing.Size(238, 110);
             this.lbMoves.TabIndex = 142;
             this.lbMoves.MouseLeave += new System.EventHandler(this.lbMoves_MouseLeave);
             this.lbMoves.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbMoves_MouseMove);
@@ -2149,7 +2150,7 @@
             this.lbSkills.ItemHeight = 18;
             this.lbSkills.Location = new System.Drawing.Point(945, 353);
             this.lbSkills.Name = "lbSkills";
-            this.lbSkills.Size = new System.Drawing.Size(238, 146);
+            this.lbSkills.Size = new System.Drawing.Size(238, 110);
             this.lbSkills.TabIndex = 190;
             this.lbSkills.MouseLeave += new System.EventHandler(this.lbSkills_MouseLeave);
             this.lbSkills.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbSkills_MouseMove);
@@ -2164,7 +2165,7 @@
             this.lbAbilities.ItemHeight = 18;
             this.lbAbilities.Location = new System.Drawing.Point(945, 498);
             this.lbAbilities.Name = "lbAbilities";
-            this.lbAbilities.Size = new System.Drawing.Size(238, 92);
+            this.lbAbilities.Size = new System.Drawing.Size(238, 56);
             this.lbAbilities.TabIndex = 191;
             this.lbAbilities.MouseLeave += new System.EventHandler(this.lbAbilities_MouseLeave);
             this.lbAbilities.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbAbilities_MouseMove);
@@ -2352,7 +2353,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1280, 718);
             this.Controls.Add(this.label29);
             this.Controls.Add(this.nudInjuries);
             this.Controls.Add(this.label27);
@@ -2479,6 +2481,7 @@
             this.Controls.Add(this.nudLevelMin);
             this.Controls.Add(this.btnScanPokemon);
             this.Controls.Add(this.rtbGasp);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormScan";

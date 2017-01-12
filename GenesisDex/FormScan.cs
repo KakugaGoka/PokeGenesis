@@ -15,6 +15,7 @@ using NAudio.Wave;
 using GenesisDexEngine;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
+using Microsoft.Win32;
 
 namespace GenesisDex
 {
