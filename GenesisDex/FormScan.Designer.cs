@@ -1243,7 +1243,7 @@
             this.lbMoves.ItemHeight = 18;
             this.lbMoves.Location = new System.Drawing.Point(945, 208);
             this.lbMoves.Name = "lbMoves";
-            this.lbMoves.Size = new System.Drawing.Size(238, 128);
+            this.lbMoves.Size = new System.Drawing.Size(238, 146);
             this.lbMoves.TabIndex = 142;
             this.lbMoves.MouseLeave += new System.EventHandler(this.lbMoves_MouseLeave);
             this.lbMoves.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbMoves_MouseMove);
@@ -2150,7 +2150,7 @@
             this.lbSkills.ItemHeight = 18;
             this.lbSkills.Location = new System.Drawing.Point(945, 353);
             this.lbSkills.Name = "lbSkills";
-            this.lbSkills.Size = new System.Drawing.Size(238, 128);
+            this.lbSkills.Size = new System.Drawing.Size(238, 146);
             this.lbSkills.TabIndex = 190;
             this.lbSkills.MouseLeave += new System.EventHandler(this.lbSkills_MouseLeave);
             this.lbSkills.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbSkills_MouseMove);
