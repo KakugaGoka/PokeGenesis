@@ -1228,7 +1228,7 @@
             this.lbCapabilites.ItemHeight = 18;
             this.lbCapabilites.Location = new System.Drawing.Point(701, 408);
             this.lbCapabilites.Name = "lbCapabilites";
-            this.lbCapabilites.Size = new System.Drawing.Size(238, 146);
+            this.lbCapabilites.Size = new System.Drawing.Size(238, 182);
             this.lbCapabilites.TabIndex = 141;
             this.lbCapabilites.MouseLeave += new System.EventHandler(this.lbCapabilites_MouseLeave);
             this.lbCapabilites.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbCaps_MouseMove);
@@ -1243,7 +1243,7 @@
             this.lbMoves.ItemHeight = 18;
             this.lbMoves.Location = new System.Drawing.Point(945, 208);
             this.lbMoves.Name = "lbMoves";
-            this.lbMoves.Size = new System.Drawing.Size(238, 110);
+            this.lbMoves.Size = new System.Drawing.Size(238, 128);
             this.lbMoves.TabIndex = 142;
             this.lbMoves.MouseLeave += new System.EventHandler(this.lbMoves_MouseLeave);
             this.lbMoves.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbMoves_MouseMove);
@@ -2150,7 +2150,7 @@
             this.lbSkills.ItemHeight = 18;
             this.lbSkills.Location = new System.Drawing.Point(945, 353);
             this.lbSkills.Name = "lbSkills";
-            this.lbSkills.Size = new System.Drawing.Size(238, 110);
+            this.lbSkills.Size = new System.Drawing.Size(238, 128);
             this.lbSkills.TabIndex = 190;
             this.lbSkills.MouseLeave += new System.EventHandler(this.lbSkills_MouseLeave);
             this.lbSkills.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbSkills_MouseMove);
@@ -2165,7 +2165,7 @@
             this.lbAbilities.ItemHeight = 18;
             this.lbAbilities.Location = new System.Drawing.Point(945, 498);
             this.lbAbilities.Name = "lbAbilities";
-            this.lbAbilities.Size = new System.Drawing.Size(238, 56);
+            this.lbAbilities.Size = new System.Drawing.Size(238, 92);
             this.lbAbilities.TabIndex = 191;
             this.lbAbilities.MouseLeave += new System.EventHandler(this.lbAbilities_MouseLeave);
             this.lbAbilities.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbAbilities_MouseMove);
