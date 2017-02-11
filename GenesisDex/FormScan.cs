@@ -1276,7 +1276,11 @@ namespace GenesisDex
                     mov = mov + ")";
                     moves.Add(mov);
                 }
-                if (moves.Count > 6) { moves.RemoveAt(0); }
+                if (moves.Count > 6)
+                {
+                    int moveNum = rng.Next(0, 7);
+                    moves.RemoveAt(moveNum);
+                }
             }
             bool done = false;
             if (isShiny == true)
@@ -1290,7 +1294,11 @@ namespace GenesisDex
                         done = true;
                     }
                 } while (done == false);
-                if (moves.Count >= 6) { moves.RemoveAt(0); }
+                if (moves.Count >= 6)
+                {
+                    int moveNum = rng.Next(0, 6);
+                    moves.RemoveAt(moveNum);
+                }
                 string newmove = TMList[i].id + " (" + TMList[i].type +")";
                 moves.Add(newmove);
             }
@@ -3176,8 +3184,8 @@ namespace GenesisDex
                 chkBurned.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
                 if (!isWritingInfo && hasScanned)
                 {
-                    if (nudDEFCS.Value - 2 < -5)
-                        nudDEFCS.Value = -5;
+                    if (nudDEFCS.Value - 2 < -6)
+                        nudDEFCS.Value = -6;
                     else
                         nudDEFCS.Value -= 2;
                     AllStatus[Current].Burned = true;
@@ -3189,8 +3197,8 @@ namespace GenesisDex
                 chkBurned.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
                 if (!isWritingInfo && hasScanned)
                 {
-                    if (nudDEFCS.Value + 2 > 5)
-                        nudDEFCS.Value = 5;
+                    if (nudDEFCS.Value + 2 > 6)
+                        nudDEFCS.Value = 6;
                     else
                         nudDEFCS.Value += 2;
                     AllStatus[Current].Burned = false;
@@ -3304,8 +3312,8 @@ namespace GenesisDex
                 chkPoisoned.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
                 if (!isWritingInfo && hasScanned)
                 {
-                    if (nudSPDEFCS.Value - 2 < -5)
-                        nudSPDEFCS.Value = -5;
+                    if (nudSPDEFCS.Value - 2 < -6)
+                        nudSPDEFCS.Value = -6;
                     else
                         nudSPDEFCS.Value -= 2;
                     AllStatus[Current].Poisoned = true;
@@ -3317,8 +3325,8 @@ namespace GenesisDex
                 chkPoisoned.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
                 if (!isWritingInfo && hasScanned)
                 {
-                    if (nudSPDEFCS.Value + 2 > 5)
-                        nudSPDEFCS.Value = 5;
+                    if (nudSPDEFCS.Value + 2 > 6)
+                        nudSPDEFCS.Value = 6;
                     else
                         nudSPDEFCS.Value += 2;
                     AllStatus[Current].Poisoned = false;
@@ -3752,8 +3760,8 @@ namespace GenesisDex
                 chkParalysis.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Checked.png");
                 if (!isWritingInfo && hasScanned)
                 {
-                    if (nudSPDCS.Value - 4 < -5)
-                        nudSPDCS.Value = -5;
+                    if (nudSPDCS.Value - 4 < -6)
+                        nudSPDCS.Value = -6;
                     else
                         nudSPDCS.Value -= 4;
                     AllStatus[Current].Paralysis = true;
@@ -3765,8 +3773,8 @@ namespace GenesisDex
                 chkParalysis.Image = getImage(AppDomain.CurrentDomain.BaseDirectory + "Data\\GUI\\Unchecked.png");
                 if (!isWritingInfo && hasScanned)
                 {
-                    if (nudSPDCS.Value + 4 > 5)
-                        nudSPDCS.Value = 5;
+                    if (nudSPDCS.Value + 4 > 6)
+                        nudSPDCS.Value = 6;
                     else
                         nudSPDCS.Value += 4;
                     AllStatus[Current].Paralysis = false;
