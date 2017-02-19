@@ -2013,7 +2013,7 @@ namespace GenesisDex
                         try { moveInfo.moveDB = (string)moveName["DB"]; } catch { }
                         try { moveInfo.moveClass = (string)moveName["Class"]; } catch { }
                         try { moveInfo.moveRange = (string)moveName["Range"]; } catch { }
-                        try { moveInfo.moveEffect = (string)moveName["Effect"]; } catch { }
+                        try { moveInfo.moveEffect = (string)moveName["Effects"]; } catch { }
                         try { moveInfo.moveConEffect = (string)moveName["Contest Type"]; } catch { }
                         try { moveInfo.moveConType = (string)moveName["Contest Effect"]; } catch { }
                         writer.WritePropertyName("Move" + placement);
@@ -2052,7 +2052,7 @@ namespace GenesisDex
                         }
                         if (moveInfo.moveEffect != null)
                         {
-                            writer.WritePropertyName("Effect");
+                            writer.WritePropertyName("Effects");
                             writer.WriteValue(moveInfo.moveEffect);
                         }
                         if (moveInfo.moveConType != null)
@@ -2103,7 +2103,7 @@ namespace GenesisDex
                         }
                         if (abilityInfo.abiEffect != null)
                         {
-                            writer.WritePropertyName("Effect");
+                            writer.WritePropertyName("Info");
                             writer.WriteValue(abilityInfo.abiEffect);
                         }
                         writer.WriteEndObject();
@@ -2463,7 +2463,6 @@ namespace GenesisDex
                     Vulnerable = false
                 });
                 CombatStage.Add(new int[] { 0, 0, 0, 0, 0, 0 });
-                hasScanned = true;
             }
         }
         private void PokeImportScan_ProgressChanged(object sender, ProgressChangedEventArgs e)
@@ -2481,6 +2480,7 @@ namespace GenesisDex
             tbPokeCount.Text = (Current + 1).ToString() + "/" + AllPokemon.Count.ToString();
             pbPokemon.Image = AllImages[Current];
             SetPoke();
+            hasScanned = true;
             WriteInfo();
         }
 

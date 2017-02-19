@@ -1094,12 +1094,12 @@
             this.nudHPCS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.nudHPCS.Location = new System.Drawing.Point(829, 265);
             this.nudHPCS.Maximum = new decimal(new int[] {
-            5,
+            6,
             0,
             0,
             0});
             this.nudHPCS.Minimum = new decimal(new int[] {
-            5,
+            6,
             0,
             0,
             -2147483648});
@@ -1116,12 +1116,12 @@
             this.nudATKCS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.nudATKCS.Location = new System.Drawing.Point(829, 289);
             this.nudATKCS.Maximum = new decimal(new int[] {
-            5,
+            6,
             0,
             0,
             0});
             this.nudATKCS.Minimum = new decimal(new int[] {
-            5,
+            6,
             0,
             0,
             -2147483648});
@@ -1138,12 +1138,12 @@
             this.nudDEFCS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.nudDEFCS.Location = new System.Drawing.Point(829, 313);
             this.nudDEFCS.Maximum = new decimal(new int[] {
-            5,
+            6,
             0,
             0,
             0});
             this.nudDEFCS.Minimum = new decimal(new int[] {
-            5,
+            6,
             0,
             0,
             -2147483648});
@@ -1160,12 +1160,12 @@
             this.nudSPATKCS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.nudSPATKCS.Location = new System.Drawing.Point(829, 337);
             this.nudSPATKCS.Maximum = new decimal(new int[] {
-            5,
+            6,
             0,
             0,
             0});
             this.nudSPATKCS.Minimum = new decimal(new int[] {
-            5,
+            6,
             0,
             0,
             -2147483648});
@@ -1182,12 +1182,12 @@
             this.nudSPDEFCS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.nudSPDEFCS.Location = new System.Drawing.Point(829, 361);
             this.nudSPDEFCS.Maximum = new decimal(new int[] {
-            5,
+            6,
             0,
             0,
             0});
             this.nudSPDEFCS.Minimum = new decimal(new int[] {
-            5,
+            6,
             0,
             0,
             -2147483648});
@@ -1204,12 +1204,12 @@
             this.nudSPDCS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.nudSPDCS.Location = new System.Drawing.Point(829, 385);
             this.nudSPDCS.Maximum = new decimal(new int[] {
-            5,
+            6,
             0,
             0,
             0});
             this.nudSPDCS.Minimum = new decimal(new int[] {
-            5,
+            6,
             0,
             0,
             -2147483648});
