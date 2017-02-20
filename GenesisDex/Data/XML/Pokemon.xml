@@ -2615,7 +2615,7 @@
         <skill id="2">
           <name>Combat</name>
           <die>3</die>
-          <bonus>0</bonus>
+          <bonus>-1</bonus>
         </skill>
         <skill id="3">
           <name>Stealth</name>
@@ -2885,7 +2885,7 @@
         <skill id="2">
           <name>Combat</name>
           <die>3</die>
-          <bonus>0</bonus>
+          <bonus>-1</bonus>
         </skill>
         <skill id="3">
           <name>Stealth</name>
@@ -6670,7 +6670,7 @@
         <skill id="3">
           <name>Stealth</name>
           <die>1</die>
-          <bonus>0</bonus>
+          <bonus>-1</bonus>
         </skill>
         <skill id="4">
           <name>Percep</name>
@@ -7481,7 +7481,7 @@
         <skill id="1">
           <name>Acro</name>
           <die>1</die>
-          <bonus>0</bonus>
+          <bonus>-1</bonus>
         </skill>
         <skill id="2">
           <name>Combat</name>
@@ -12669,7 +12669,7 @@
         <skill id="3">
           <name>Stealth</name>
           <die>3</die>
-          <bonus>0</bonus>
+          <bonus>-3</bonus>
         </skill>
         <skill id="4">
           <name>Percep</name>
@@ -12749,7 +12749,7 @@
         <skill id="1">
           <name>Acro</name>
           <die>2</die>
-          <bonus>0</bonus>
+          <bonus>-1</bonus>
         </skill>
         <skill id="2">
           <name>Combat</name>
@@ -15369,7 +15369,7 @@
         <skill id="1">
           <name>Acro</name>
           <die>3</die>
-          <bonus>0</bonus>
+          <bonus>-1</bonus>
         </skill>
         <skill id="2">
           <name>Combat</name>
@@ -15744,7 +15744,7 @@
         <skill id="4">
           <name>Percep</name>
           <die>1</die>
-          <bonus>0</bonus>
+          <bonus>-1</bonus>
         </skill>
         <skill id="5">
           <name>Focus</name>
@@ -16913,7 +16913,7 @@
         <skill id="3">
           <name>Stealth</name>
           <die>2</die>
-          <bonus>0</bonus>
+          <bonus>-1</bonus>
         </skill>
         <skill id="4">
           <name>Percep</name>
@@ -18737,7 +18737,7 @@
         <skill id="2">
           <name>Combat</name>
           <die>4</die>
-          <bonus>0</bonus>
+          <bonus>-2</bonus>
         </skill>
         <skill id="3">
           <name>Stealth</name>
@@ -19830,7 +19830,7 @@
         <skill id="3">
           <name>Stealth</name>
           <die>3</die>
-          <bonus>0</bonus>
+          <bonus>-1</bonus>
         </skill>
         <skill id="4">
           <name>Percep</name>
@@ -21028,7 +21028,7 @@
         <skill id="5">
           <name>Focus</name>
           <die>2</die>
-          <bonus>0</bonus>
+          <bonus>-2</bonus>
         </skill>
       </Skills>
       <Capability>
@@ -21115,7 +21115,7 @@
         <skill id="5">
           <name>Focus</name>
           <die>2</die>
-          <bonus>0</bonus>
+          <bonus>-3</bonus>
         </skill>
       </Skills>
       <Capability>
@@ -24572,7 +24572,7 @@
         <skill id="5">
           <name>Focus</name>
           <die>3</die>
-          <bonus>0</bonus>
+          <bonus>-2</bonus>
         </skill>
       </Skills>
       <Capability>
@@ -28717,7 +28717,7 @@
         <skill id="2">
           <name>Combat</name>
           <die>4</die>
-          <bonus>0</bonus>
+          <bonus>-1</bonus>
         </skill>
         <skill id="3">
           <name>Stealth</name>
@@ -28814,7 +28814,7 @@
         <skill id="3">
           <name>Stealth</name>
           <die>1</die>
-          <bonus>0</bonus>
+          <bonus>-1</bonus>
         </skill>
         <skill id="4">
           <name>Percep</name>
@@ -28908,7 +28908,7 @@
         <skill id="3">
           <name>Stealth</name>
           <die>1</die>
-          <bonus>0</bonus>
+          <bonus>-2</bonus>
         </skill>
         <skill id="4">
           <name>Percep</name>
@@ -29253,7 +29253,7 @@
         <skill id="2">
           <name>Combat</name>
           <die>2</die>
-          <bonus>0</bonus>
+          <bonus>-1</bonus>
         </skill>
         <skill id="3">
           <name>Stealth</name>
@@ -36188,7 +36188,7 @@
         <skill id="2">
           <name>Combat</name>
           <die>4</die>
-          <bonus>0</bonus>
+          <bonus>-1</bonus>
         </skill>
         <skill id="3">
           <name>Stealth</name>
@@ -42290,7 +42290,7 @@
         <skill id="3">
           <name>Stealth</name>
           <die>3</die>
-          <bonus>0</bonus>
+          <bonus>-2</bonus>
         </skill>
         <skill id="4">
           <name>Percep</name>
@@ -42378,7 +42378,7 @@
         <skill id="3">
           <name>Stealth</name>
           <die>2</die>
-          <bonus>0</bonus>
+          <bonus>-1</bonus>
         </skill>
         <skill id="4">
           <name>Percep</name>
@@ -47110,7 +47110,7 @@
         <skill id="2">
           <name>Combat</name>
           <die>3</die>
-          <bonus>0</bonus>
+          <bonus>-1</bonus>
         </skill>
         <skill id="3">
           <name>Stealth</name>
@@ -47375,7 +47375,7 @@
         <skill id="3">
           <name>Stealth</name>
           <die>3</die>
-          <bonus>0</bonus>
+          <bonus>-2</bonus>
         </skill>
         <skill id="4">
           <name>Percep</name>
@@ -49177,7 +49177,7 @@
         <skill id="5">
           <name>Focus</name>
           <die>3</die>
-          <bonus>0</bonus>
+          <bonus>-1</bonus>
         </skill>
       </Skills>
       <Capability>
@@ -49244,7 +49244,7 @@
         <skill id="1">
           <name>Acro</name>
           <die>3</die>
-          <bonus>0</bonus>
+          <bonus>-1</bonus>
         </skill>
         <skill id="2">
           <name>Combat</name>
@@ -49332,7 +49332,7 @@
         <skill id="1">
           <name>Acro</name>
           <die>2</die>
-          <bonus>0</bonus>
+          <bonus>-1</bonus>
         </skill>
         <skill id="2">
           <name>Combat</name>
@@ -51956,7 +51956,7 @@
         <skill id="1">
           <name>Acro</name>
           <die>3</die>
-          <bonus>0</bonus>
+          <bonus>-1</bonus>
         </skill>
         <skill id="2">
           <name>Combat</name>
@@ -52043,7 +52043,7 @@
         <skill id="1">
           <name>Acro</name>
           <die>3</die>
-          <bonus>0</bonus>
+          <bonus>-1</bonus>
         </skill>
         <skill id="2">
           <name>Combat</name>
@@ -57744,7 +57744,7 @@
         <skill id="3">
           <name>Stealth</name>
           <die>1</die>
-          <bonus>0</bonus>
+          <bonus>-3</bonus>
         </skill>
         <skill id="4">
           <name>Percep</name>
@@ -60264,7 +60264,7 @@
         <skill id="2">
           <name>Combat</name>
           <die>3</die>
-          <bonus>0</bonus>
+          <bonus>-1</bonus>
         </skill>
         <skill id="3">
           <name>Stealth</name>
@@ -60436,7 +60436,7 @@
         <skill id="1">
           <name>Acro</name>
           <die>4</die>
-          <bonus>0</bonus>
+          <bonus>-1</bonus>
         </skill>
         <skill id="2">
           <name>Combat</name>
