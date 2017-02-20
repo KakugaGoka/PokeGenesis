@@ -2000,7 +2000,7 @@ namespace GenesisDex
                 int placement = 1;
                 foreach (string m in lbMoves.Items)
                 {
-                    if (m != "Moves:")
+                    if (m != "Moves:" && m != "Struggle (Normal)")
                     {
                         string json = File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + @"Data\JSON\moves.json");
                         JObject mJSON = JObject.Parse(json);

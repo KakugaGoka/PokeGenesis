@@ -12944,7 +12944,7 @@
         <skill id="5">
           <name>Focus</name>
           <die>3</die>
-          <bonus>a</bonus>
+          <bonus>1</bonus>
         </skill>
       </Skills>
       <Capability>
@@ -35916,7 +35916,7 @@
         <skill id="2">
           <name>Combat</name>
           <die>2</die>
-          <bonus>!</bonus>
+          <bonus>1</bonus>
         </skill>
         <skill id="3">
           <name>Stealth</name>
