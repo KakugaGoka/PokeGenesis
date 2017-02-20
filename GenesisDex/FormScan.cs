@@ -1104,11 +1104,11 @@ namespace GenesisDex
             {
                 MessageBox.Show("skill die is not entered correctly. " +
                 "Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue. Erroring skill will be replaced with an 'ERROR' text.");
-                skillList[i].die = "ERROR";
+                skillList[i].die = 123456789;
                 return skillList[i];
             }
             Up++;
-            skillList[i].die = Up.ToString();
+            skillList[i].die = Up;
             return skillList[i];
         }
 
@@ -1120,11 +1120,11 @@ namespace GenesisDex
             {
                 MessageBox.Show("skill die is not entered correctly. " +
                 "Please take a look at the Pokemon.XML in your Data\\XML folder to closer inspet the issue. Erroring skill will be replaced with an 'ERROR' text.");
-                skillList[i].die = "ERROR";
+                skillList[i].die = 123456789;
                 return skillList[i];
             }
             Down--;
-            skillList[i].die = Down.ToString();
+            skillList[i].die = Down;
             return skillList[i];
         }
 
@@ -1153,6 +1153,11 @@ namespace GenesisDex
             {
                 prep.Add(SkillUp(values[0]));
                 prep.Add(SkillDn(values[1]));
+                if (prep[1].die == 0)
+                {
+                    prep[1].die++;
+                    prep[0].die--;
+                }
                 for (int s = 2; s < skillList.Count(); s++)
                 {
                     prep.Add(skillList[values[s]]);
@@ -1164,6 +1169,16 @@ namespace GenesisDex
                 prep.Add(SkillDn(values[1]));
                 prep.Add(SkillUp(values[2]));
                 prep.Add(SkillDn(values[3]));
+                if (prep[1].die == 0)
+                {
+                    prep[1].die++;
+                    prep[0].die--;
+                }
+                if (prep[3].die == 0)
+                {
+                    prep[3].die++;
+                    prep[2].die--;
+                }
                 for (int s = 4; s < skillList.Count(); s++)
                 {
                     prep.Add(skillList[values[s]]);
@@ -1177,6 +1192,21 @@ namespace GenesisDex
                 prep.Add(SkillDn(values[3]));
                 prep.Add(SkillUp(values[4]));
                 prep.Add(SkillDn(values[5]));
+                if (prep[1].die == 0)
+                {
+                    prep[1].die++;
+                    prep[0].die--;
+                }
+                if (prep[3].die == 0)
+                {
+                    prep[3].die++;
+                    prep[2].die--;
+                }
+                if (prep[5].die == 0)
+                {
+                    prep[5].die++;
+                    prep[4].die--;
+                }
                 for (int s = 6; s < skillList.Count(); s++)
                 {
                     prep.Add(skillList[values[s]]);
@@ -2395,8 +2425,8 @@ namespace GenesisDex
                             Skill newSkill = new Skill
                             {
                                 name = skillFind[0],
-                                die = finalSKill[0],
-                                bonus = finalSKill[1].TrimStart('6')
+                                die = Convert.ToInt32(finalSKill[0]),
+                                bonus = Convert.ToInt32(finalSKill[1].TrimStart('6'))
                             };
                             imSkills.Add(newSkill);
                         }

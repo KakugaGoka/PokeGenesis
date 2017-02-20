@@ -86,8 +86,8 @@ namespace GenesisDexEngine
     class Skill
     {
         public string name { get; set; }
-        public string die { get; set; }
-        public string bonus { get; set; }
+        public int die { get; set; }
+        public int bonus { get; set; }
     }
 
     class Moves
@@ -539,8 +539,8 @@ namespace GenesisDexEngine
                         select new Skill
                         {
                             name = (string)node.Element("name").Value,
-                            die = (string)node.Element("die").Value,
-                            bonus = (string)node.Element("bonus").Value
+                            die = (int)node.Element("die"),
+                            bonus = (int)node.Element("bonus")
                         };
             idList = query.ToList();
             return idList;
