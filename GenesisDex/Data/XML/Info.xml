@@ -6717,7 +6717,7 @@ Contest Type:Cute
 Contest Effect:Unsettling
       </Description>
     </Move>
-    <Move name="Vicegrip">
+    <Move name="Vice Grip">
       <Description>
 Type:Normal
 Freq:At-Will
@@ -8525,7 +8525,7 @@ Contest Type:Cute
 Contest Effect:Desperation
       </Description>
     </Move>
-    <Move name="Bubblebeam">
+    <Move name="Bubble Beam">
       <Description>
 Type:Water
 Freq:At-Will
@@ -8534,7 +8534,7 @@ DB:8
 Class:Special
 Range:4 1 Target
 Effect:Bubblebeam lowers the target's
- Speed by -1 CS on 18+.
+Speed by -1 CS on 18+.
 Contest Type:Beauty
 Contest Effect:Desperation
       </Description>
@@ -10767,6 +10767,13 @@ Effect:The user is immune to the Sleep
  Defensive.
       </Description>
     </Ability>
+    <Ability name="Instinct">
+      <Description>
+Freq:Static
+Effect:The user’s default Evasion is increased by
++2. Defensive.
+      </Description>
+    </Ability>
     <Ability name="Interference">
       <Description>
 Freq:Scene - Swift Action
@@ -11692,6 +11699,15 @@ Freq:Static
 Effect:The user does not provoke Attacks of
 Opportunity by Shifting. The user cannot be
 Trapped.
+      </Description>
+    </Ability>
+    <Ability name="Run Up">
+      <Description>
+Freq:Static
+Effect:If the user moves in a straight line to a target and
+uses a damaging Melee Attack, it may add the number
+of meters traveled in a direct line as Bonus Damage to
+a Damage Roll.
       </Description>
     </Ability>
     <Ability name="Sand Force">
@@ -12662,6 +12678,14 @@ Defensive.
       <Description>
 Freq:Static
 Effect:The user is immune to Burns. Defensive.
+      </Description>
+    </Ability>
+    <Ability name="Wave Rider">
+      <Description>
+Freq:Static
+Effect:While in water, the user’s Speed Stat gains +4
+Combat Stages. Remove these Combat Stages if the user
+exits the water.
       </Description>
     </Ability>
     <Ability name="Weak Armor">
@@ -13691,9 +13715,9 @@ as long as they are at least Level 20.
 MooMoo Milk may be collected with a
 Collection Jar.,</Description>
     </Capability>
-    <Capability name="Mindlock">
+    <Capability name="Mind Lock">
       <Description>Pokemon who have the Capability
-Mindlock cannot have their minds read by 
+Mind Lock cannot have their minds read by 
 Telepathy, are immune to the Move Mind Reader, 
 cannot have their emotions calmed with 
 Gentle Vibe, and Telepathic Warning cannot

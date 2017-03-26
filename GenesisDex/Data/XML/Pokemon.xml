@@ -2909,7 +2909,7 @@
         <cap id="2">Burrow 2</cap>
         <cap id="3">Jump 1/1 </cap>
         <cap id="4">Power 2</cap>
-        <cap id="5"> Nautewalk (Grassland) </cap>
+        <cap id="5">Naturewalk (Grassland) </cap>
         <cap id="6">Underdog</cap>
       </Capability>
       <Evolution>
@@ -15895,7 +15895,7 @@
     <List631>
       <Ability>
         <BasicAbility>Flash Fire</BasicAbility>
-        <BasicAbility>Glutony</BasicAbility>
+        <BasicAbility>Gluttony</BasicAbility>
         <AdvancedAbility>White Smoke</AdvancedAbility>
         <AdvancedAbility>Magma Armor</AdvancedAbility>
         <HighAbility>Flame Tongue</HighAbility>
@@ -17684,7 +17684,7 @@
       </Moves>
     </List613>
   </Pokemon>
-  <Pokemon Stage="2">
+  <Pokemon Stage="3">
     <number>612</number>
     <id>Haxorus</id>
     <type>Dragon</type>
@@ -17752,7 +17752,7 @@
       <Evolution>
         <evo id="0">1 - Axew</evo>
         <evo id="1">2 - Fraxure Minimum 35</evo>
-        <evo id="2">2 - Haxorus Minimum 45</evo>
+        <evo id="2">3 - Haxorus Minimum 45</evo>
       </Evolution>
       <Moves>
         <move id="0">4 Leer - Normal</move>
@@ -17842,7 +17842,7 @@
       <Evolution>
         <evo id="0">1- Axew</evo>
         <evo id="1">2 - Fraxure Minimum 35</evo>
-        <evo id="2">2 - Haxorus Minimum 45</evo>
+        <evo id="2">3 - Haxorus Minimum 45</evo>
       </Evolution>
       <Moves>
         <move id="0">4 Leer - Normal</move>
@@ -17933,7 +17933,7 @@
       <Evolution>
         <evo id="0">1 - Axew</evo>
         <evo id="1">2 - Fraxure Minimum 35</evo>
-        <evo id="2">2 - Haxorus Minimum 45</evo>
+        <evo id="2">3 - Haxorus Minimum 45</evo>
       </Evolution>
       <Moves>
         <move id="0">1 Scratch - Normal</move>
@@ -22092,7 +22092,7 @@
     <List096>
       <Ability>
         <BasicAbility>Insomnia</BasicAbility>
-        <BasicAbility>Forcewars</BasicAbility>
+        <BasicAbility>Forewarn</BasicAbility>
         <AdvancedAbility>Inner Focus</AdvancedAbility>
         <AdvancedAbility>Hypnotic</AdvancedAbility>
         <HighAbility>Dreamspinner</HighAbility>
@@ -24785,7 +24785,7 @@
       </Moves>
     </List125>
   </Pokemon>
-  <Pokemon Stage="3">
+  <Pokemon Stage="2">
     <number>126</number>
     <id>Magmar</id>
     <type>Fire</type>
