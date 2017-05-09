@@ -102,10 +102,9 @@
     "Effect": "Attacks and Moves targeting you that don't require an Accuracy Check now require one, as though they had an Accuracy Check of 2. You may only apply half of your Evasion to these Attacks and Moves. Defensive."
   },
   "Bodyguard": {
-    "Freq": "At-Will - Free Action",
-    "Trigger": "You hit with Bone Club, Bonemerang, or Bone Rush",
-    "Effect": "Connection — Bonemerang. Once per Scene per Move, the following Moves may be used as if they had the following bonuses:\nBone Club: Bone Club's target loses 1 Defense and Special Attack CS.\nBonemerang: Has a Range of Line 6 but loses the Double Strike keyword\nBone Rush: Bone Rush automatically 'hits' four times (as per the Five Strike keyword)."
-  },
+    "Freq": "Scene – Free Action",
+    "Trigger": "A cardinally adjacent Ally is hit by an attack",
+    "Effect": "The user and the target switch places, and the user becomes the target of the attack instead, taking damage from the attack as if resisted one step further. If switching places would not move the triggering Ally out of the area-of-effect of a Burst, Blast, Cone, or Line, this Ability does not prevent the ally from being hit. Defensive."},
   "Bone Lord": {
     "Freq": "Scene — Free Action",
     "Trigger": "The user hits with Bone Club, Bonemerang, or Bone Rush",

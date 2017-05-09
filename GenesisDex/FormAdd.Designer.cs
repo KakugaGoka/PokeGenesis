@@ -949,8 +949,7 @@
             this.rtbEntry.Size = new System.Drawing.Size(504, 113);
             this.rtbEntry.TabIndex = 51;
             this.rtbEntry.Text = "";
-            this.ttPokemon.SetToolTip(this.rtbEntry, "1 - Move\r\n4 - Move\r\n7 - Move\r\n(Please enter like this as the level is used in gen" +
-        "eration)");
+            this.ttPokemon.SetToolTip(this.rtbEntry, "Pokedex Entry!!! :D");
             // 
             // cbLegend
             // 

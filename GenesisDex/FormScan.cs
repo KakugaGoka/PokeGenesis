@@ -2422,12 +2422,7 @@ namespace GenesisDex
                         {
                             string[] skillFind = sk.Split(' ');
                             string[] finalSKill = skillFind[1].Split('d');
-                            Skill newSkill = new Skill
-                            {
-                                name = skillFind[0],
-                                die = Convert.ToInt32(finalSKill[0]),
-                                bonus = Convert.ToInt32(finalSKill[1].TrimStart('6'))
-                            };
+                            Skill newSkill = new Skill(skillFind[0], Convert.ToInt32(finalSKill[0]), Convert.ToInt32(finalSKill[1].TrimStart('6')));
                             imSkills.Add(newSkill);
                         }
                         AllSkills.Add(imSkills);

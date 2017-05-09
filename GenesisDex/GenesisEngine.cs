@@ -88,6 +88,13 @@ namespace GenesisDexEngine
         public string name { get; set; }
         public int die { get; set; }
         public int bonus { get; set; }
+
+        public Skill(string n, int d, int b)
+        {
+            name = n;
+            die = d;
+            bonus = b;
+        }
     }
 
     class Moves
@@ -536,12 +543,7 @@ namespace GenesisDexEngine
             List<Skill> idList = new List<Skill>();
             XDocument doc = XDocument.Load(fileName);
             var query = from node in doc.Descendants("List" + decend).Descendants("Skills").Descendants("skill")
-                        select new Skill
-                        {
-                            name = (string)node.Element("name").Value,
-                            die = (int)node.Element("die"),
-                            bonus = (int)node.Element("bonus")
-                        };
+                        select new Skill((string)node.Element("name").Value, (int)node.Element("die"), (int)node.Element("bonus"));
             idList = query.ToList();
             return idList;
         }

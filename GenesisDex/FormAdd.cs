@@ -139,7 +139,7 @@ namespace GenesisDex
             List<string> Capabilities = new List<string>();
             List<string> Moves = new List<string>();
             List<string> Evo = new List<string>();
-            List<string> Skills = new List<string>();
+            List<Skill> Skills = new List<Skill>();
             List<string> tC = new List<string>();
             List<string> tS = new List<string>();
             string[] tempCap = listCap.Text.Split(',');
@@ -218,7 +218,20 @@ namespace GenesisDex
             {
                 string newString = tS[s];
                 string nextString = Regex.Replace(newString, @"\s+", " ");
-                Skills.Add(nextString.Trim());
+                string[] skillarray = nextString.Trim().Split(new char[] { 'd', ' ' });
+                string skillName = skillarray[0];
+                int skillDie = 0;
+                int skillBonus = 0;
+                try { skillDie = Convert.ToInt32(skillarray[1]); } catch { }
+                try
+                {
+                    if (skillarray[2].Contains("+"))
+                    {
+                        string[] bonusarray = skillarray[2].Split('+');
+                        skillBonus = Convert.ToInt32(bonusarray[1]);
+                    }
+                } catch { }
+                Skills.Add(new Skill(skillName, skillDie, skillBonus));
             }
             tbNumber.Text = tbNumber.Text.Trim(' ');
             tbName.Text = tbName.Text.Trim(' ');
@@ -289,7 +302,10 @@ namespace GenesisDex
                         new XElement(cbAbi5.Text + "Ability", tbAbi5.Text)),
                     new XElement("Skills",
                         from s in Skills
-                        select new XElement("skill", new XAttribute("id", k++), s)),
+                        select new XElement("skill", new XAttribute("id", k++), 
+                            new XElement("name", s.name),
+                            new XElement("die", s.die),
+                            new XElement("bonus", s.bonus))),
                     new XElement("Capability",
                         from s in Capabilities
                         select new XElement("cap", new XAttribute("id", c++), s)),
