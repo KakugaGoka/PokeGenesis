@@ -1,0 +1,18 @@
+﻿{
+	"Habitats": [
+		"Artic",
+		"Beach",
+		"Cave",
+		"Desert",
+		"Forest",
+		"Freshwater",
+		"Grassland",
+		"Marsh",
+		"Mountian",
+		"Ocean",
+		"Rainforest",
+		"Taiga",
+		"Tundra",
+		"Urban"
+	]
+}

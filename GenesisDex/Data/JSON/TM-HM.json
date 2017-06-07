@@ -1,0 +1,541 @@
+﻿{
+  "TM": [
+    {
+      "number": "1",
+      "id": "Hone Claws",
+      "type": "Dark"
+    },
+    {
+      "number": "2",
+      "id": "Dragon Claw",
+      "type": "Dragon"
+    },
+    {
+      "number": "3",
+      "id": "Psyshock",
+      "type": "Psychic"
+    },
+    {
+      "number": "4",
+      "id": "Calm Mind",
+      "type": "Psychic"
+    },
+    {
+      "number": "5",
+      "id": "Roar",
+      "type": "Normal"
+    },
+    {
+      "number": "6",
+      "id": "Toxic",
+      "type": "Poison"
+    },
+    {
+      "number": "7",
+      "id": "Hail",
+      "type": "Ice"
+    },
+    {
+      "number": "8",
+      "id": "Bulk Up",
+      "type": "Fighting"
+    },
+    {
+      "number": "9",
+      "id": "Venoshock",
+      "type": "Poison"
+    },
+    {
+      "number": "10",
+      "id": "Hidden Power",
+      "type": "Normal"
+    },
+    {
+      "number": "11",
+      "id": "Sunny Day",
+      "type": "Fire"
+    },
+    {
+      "number": "12",
+      "id": "Taunt",
+      "type": "Dark"
+    },
+    {
+      "number": "13",
+      "id": "Ice Beam",
+      "type": "Ice"
+    },
+    {
+      "number": "14",
+      "id": "Blizzard",
+      "type": "Ice"
+    },
+    {
+      "number": "15",
+      "id": "Hyper Beam",
+      "type": "Normal"
+    },
+    {
+      "number": "16",
+      "id": "Light Screen",
+      "type": "Psychic"
+    },
+    {
+      "number": "17",
+      "id": "Protect",
+      "type": "Normal"
+    },
+    {
+      "number": "18",
+      "id": "Rain Dance",
+      "type": "Water"
+    },
+    {
+      "number": "19",
+      "id": "Roost",
+      "type": "Flying"
+    },
+    {
+      "number": "20",
+      "id": "Safeguard",
+      "type": "Normal"
+    },
+    {
+      "number": "21",
+      "id": "Frustration",
+      "type": "Normal"
+    },
+    {
+      "number": "22",
+      "id": "Solar Beam",
+      "type": "Grass"
+    },
+    {
+      "number": "23",
+      "id": "Smack Down",
+      "type": "Rock"
+    },
+    {
+      "number": "24",
+      "id": "Thunderbolt",
+      "type": "Electric"
+    },
+    {
+      "number": "25",
+      "id": "Thunder",
+      "type": "Electric"
+    },
+    {
+      "number": "26",
+      "id": "Earthquake",
+      "type": "Ground"
+    },
+    {
+      "number": "27",
+      "id": "Return",
+      "type": "Normal"
+    },
+    {
+      "number": "28",
+      "id": "Dig",
+      "type": "Ground"
+    },
+    {
+      "number": "29",
+      "id": "Psychic",
+      "type": "Psychic"
+    },
+    {
+      "number": "30",
+      "id": "Shadow Ball",
+      "type": "Ghost"
+    },
+    {
+      "number": "31",
+      "id": "Brick Break",
+      "type": "Fighting"
+    },
+    {
+      "number": "32",
+      "id": "Double Team",
+      "type": "Normal"
+    },
+    {
+      "number": "33",
+      "id": "Reflect",
+      "type": "Psychic"
+    },
+    {
+      "number": "34",
+      "id": "Sludge Wave",
+      "type": "Poison"
+    },
+    {
+      "number": "35",
+      "id": "Flamethrower",
+      "type": "Fire"
+    },
+    {
+      "number": "36",
+      "id": "Sludge Bomb",
+      "type": "Poison"
+    },
+    {
+      "number": "37",
+      "id": "Sandstorm",
+      "type": "Rock"
+    },
+    {
+      "number": "38",
+      "id": "Fire Blast",
+      "type": "Fire"
+    },
+    {
+      "number": "39",
+      "id": "Rock Tomb",
+      "type": "Rock"
+    },
+    {
+      "number": "40",
+      "id": "Aerial Ace",
+      "type": "Flying"
+    },
+    {
+      "number": "41",
+      "id": "Torment",
+      "type": "Dark"
+    },
+    {
+      "number": "42",
+      "id": "Facade",
+      "type": "Normal"
+    },
+    {
+      "number": "43",
+      "id": "Flame Charge",
+      "type": "Fire"
+    },
+    {
+      "number": "44",
+      "id": "Rest",
+      "type": "Psychic"
+    },
+    {
+      "number": "45",
+      "id": "Attract",
+      "type": "Normal"
+    },
+    {
+      "number": "46",
+      "id": "Thief",
+      "type": "Dark"
+    },
+    {
+      "number": "47",
+      "id": "Low Sweep",
+      "type": "Fighting"
+    },
+    {
+      "number": "48",
+      "id": "Round",
+      "type": "Normal"
+    },
+    {
+      "number": "49",
+      "id": "Echoed Voice",
+      "type": "Normal"
+    },
+    {
+      "number": "50",
+      "id": "Overheat",
+      "type": "Fire"
+    },
+    {
+      "number": "51",
+      "id": "Steel Wing",
+      "type": "Steel"
+    },
+    {
+      "number": "52",
+      "id": "Focus Blast",
+      "type": "Fighting"
+    },
+    {
+      "number": "53",
+      "id": "Energy Ball",
+      "type": "Grass"
+    },
+    {
+      "number": "54",
+      "id": "False Swipe",
+      "type": "Normal"
+    },
+    {
+      "number": "55",
+      "id": "Scald",
+      "type": "Water"
+    },
+    {
+      "number": "56",
+      "id": "Fling",
+      "type": "Dark"
+    },
+    {
+      "number": "57",
+      "id": "Charge Beam",
+      "type": "Electric"
+    },
+    {
+      "number": "58",
+      "id": "Sky Drop",
+      "type": "Flying"
+    },
+    {
+      "number": "59",
+      "id": "Incinerate",
+      "type": "Fire"
+    },
+    {
+      "number": "60",
+      "id": "Quash",
+      "type": "Dark"
+    },
+    {
+      "number": "61",
+      "id": "Will-O-Wisp",
+      "type": "Fire"
+    },
+    {
+      "number": "62",
+      "id": "Acrobatics",
+      "type": "Flying"
+    },
+    {
+      "number": "63",
+      "id": "Embargo",
+      "type": "Dark"
+    },
+    {
+      "number": "64",
+      "id": "Explosion",
+      "type": "Normal"
+    },
+    {
+      "number": "65",
+      "id": "Shadow Claw",
+      "type": "Ghost"
+    },
+    {
+      "number": "66",
+      "id": "Payback",
+      "type": "Dark"
+    },
+    {
+      "number": "67",
+      "id": "Retaliate",
+      "type": "Normal"
+    },
+    {
+      "number": "68",
+      "id": "Giga Impact",
+      "type": "Normal"
+    },
+    {
+      "number": "69",
+      "id": "Rock Polish",
+      "type": "Rock"
+    },
+    {
+      "number": "70",
+      "id": "Flash",
+      "type": "Normal"
+    },
+    {
+      "number": "71",
+      "id": "Stone Edge",
+      "type": "Rock"
+    },
+    {
+      "number": "72",
+      "id": "Volt Switch",
+      "type": "Electric"
+    },
+    {
+      "number": "73",
+      "id": "Thunder Wave",
+      "type": "Electric"
+    },
+    {
+      "number": "74",
+      "id": "Gyro Ball",
+      "type": "Steel"
+    },
+    {
+      "number": "75",
+      "id": "Swords Dance",
+      "type": "Normal"
+    },
+    {
+      "number": "76",
+      "id": "Struggle Bug",
+      "type": "Bug"
+    },
+    {
+      "number": "77",
+      "id": "Psych Up",
+      "type": "Normal"
+    },
+    {
+      "number": "78",
+      "id": "Bulldoze",
+      "type": "Ground"
+    },
+    {
+      "number": "79",
+      "id": "Frost Breath",
+      "type": "Ice"
+    },
+    {
+      "number": "80",
+      "id": "Rock Slide",
+      "type": "Rock"
+    },
+    {
+      "number": "81",
+      "id": "X-Scissor",
+      "type": "Bug"
+    },
+    {
+      "number": "82",
+      "id": "Dragon Tail",
+      "type": "Dragon"
+    },
+    {
+      "number": "83",
+      "id": "Infestation",
+      "type": "Bug"
+    },
+    {
+      "number": "84",
+      "id": "Poison Jab",
+      "type": "Poison"
+    },
+    {
+      "number": "85",
+      "id": "Dream Eater",
+      "type": "Psychic"
+    },
+    {
+      "number": "86",
+      "id": "Grass Knot",
+      "type": "Grass"
+    },
+    {
+      "number": "87",
+      "id": "Swagger",
+      "type": "Normal"
+    },
+    {
+      "number": "88",
+      "id": "Sleep Talk",
+      "type": "Normal"
+    },
+    {
+      "number": "89",
+      "id": "U-turn",
+      "type": "Bug"
+    },
+    {
+      "number": "90",
+      "id": "Substitute",
+      "type": "Normal"
+    },
+    {
+      "number": "91",
+      "id": "Flash Cannon",
+      "type": "Steel"
+    },
+    {
+      "number": "92",
+      "id": "Trick Room",
+      "type": "Psychic"
+    },
+    {
+      "number": "93",
+      "id": "Wild Charge",
+      "type": "Electric"
+    },
+    {
+      "number": "94",
+      "id": "Secret Power",
+      "type": "Normal"
+    },
+    {
+      "number": "95",
+      "id": "Snarl",
+      "type": "Dark"
+    },
+    {
+      "number": "96",
+      "id": "Nature Power",
+      "type": "Normal"
+    },
+    {
+      "number": "97",
+      "id": "Dark Pulse",
+      "type": "Dark"
+    },
+    {
+      "number": "98",
+      "id": "Power-Up Punch",
+      "type": "Fighting"
+    },
+    {
+      "number": "99",
+      "id": "Dazzling Gleam",
+      "type": "Fairy"
+    },
+    {
+      "number": "100",
+      "id": "Confide",
+      "type": "Normal"
+    }
+  ],
+  "HM": [
+    {
+      "number": "A1",
+      "id": "Cut",
+      "type": "Normal"
+    },
+    {
+      "number": "A2",
+      "id": "Fly",
+      "type": "Flying"
+    },
+    {
+      "number": "A3",
+      "id": "Surf",
+      "type": "Water"
+    },
+    {
+      "number": "A4",
+      "id": "Strength",
+      "type": "Normal"
+    },
+    {
+      "number": "A5",
+      "id": "Waterfall",
+      "type": "Water"
+    },
+    {
+      "number": "A6",
+      "id": "Rock Smash",
+      "type": "Fighting"
+    },
+    {
+      "number": "A7",
+      "id": "Dive",
+      "type": "Water"
+    }
+  ]
+}

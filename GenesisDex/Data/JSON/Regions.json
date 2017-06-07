@@ -1,0 +1,3077 @@
+﻿{
+  "Regions": {
+    "Region": [
+      {
+        "Name": "Kanto",
+        "MaxLevel": "65",
+        "MinLevel": "3",
+        "Spawns": {
+          "id": [
+            {
+              "spawnrate": "1",
+              "name": "Bulbasaur"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Ivysaur"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Venusaur"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Charmander"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Charmeleon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Charizard"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Squirtle"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Wartortle"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Blastoise"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Caterpie"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Metapod"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Butterfree"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Weedle"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Kakuna"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Beedrill"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Pidgey"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Pidgeotto"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Pidgeot"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Rattata"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Raticate"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Spearow"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Fearow"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Ekans"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Arbok"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Pikachu"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Raichu"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Sandshrew"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Sandslash"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Nidoran♀"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Nidorina"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Nidoqueen"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Nidoran♂"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Nidorino"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Nidoking"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Clefairy"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Clefable"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Vulpix"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Ninetales"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Jigglypuff"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Wigglytuff"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Zubat"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Golbat"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Oddish"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Gloom"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Vileplume"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Paras"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Parasect"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Venonat"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Venomoth"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Diglett"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Dugtrio"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Meowth"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Persian"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Psyduck"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Golduck"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Mankey"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Primeape"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Growlithe"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Arcanine"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Poliwag"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Poliwhirl"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Poliwrath"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Abra"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Kadabra"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Alakazam"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Machop"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Machoke"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Machamp"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Bellsprout"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Weepinbell"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Victreebel"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Tentacool"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Tentacruel"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Geodude"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Graveler"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Golem"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Ponyta"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Rapidash"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Slowpoke"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Slowbro"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Magnemite"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Magneton"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Farfetch'd"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Doduo"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Dodrio"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Seel"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Dewgong"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Grimer"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Muk"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Shellder"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Cloyster"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Gastly"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Haunter"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Gengar"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Onix"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Drowzee"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Hypno"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Krabby"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Kingler"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Voltorb"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Electrode"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Exeggcute"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Exeggutor"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Cubone"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Marowak"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Hitmonlee"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Hitmonchan"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Lickitung"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Koffing"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Weezing"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Rhyhorn"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Rhydon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Chansey"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Tangela"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Kangaskhan"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Horsea"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Seadra"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Goldeen"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Seaking"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Staryu"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Starmie"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Mr. Mime"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Scyther"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Jynx"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Electabuzz"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Magmar"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Pinsir"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Tauros"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Magikarp"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Gyarados"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Lapras"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Ditto"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Eevee"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Vaporeon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Jolteon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Flareon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Porygon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Omanyte"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Omastar"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Kabuto"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Kabutops"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Aerodactyl"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Snorlax"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Articuno"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Zapdos"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Moltres"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Dratini"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Dragonair"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Dragonite"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Mewtwo"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Mew"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "Johto",
+        "MaxLevel": "70",
+        "MinLevel": "4",
+        "Spawns": {
+          "id": [
+            {
+              "spawnrate": "1",
+              "name": "Chikorita"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Bayleef"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Meganium"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Cyndaquil"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Quilava"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Typhlosion"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Totodile"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Croconaw"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Feraligatr"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Sentret"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Furret"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Hoothoot"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Noctowl"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Ledyba"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Ledian"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Spinarak"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Ariados"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Crobat"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Chinchou"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Lanturn"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Pichu"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Cleffa"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Igglybuff"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Togepi"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Togetic"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Natu"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Xatu"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Mareep"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Flaaffy"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Ampharos"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Bellossom"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Marill"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Azumarill"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Sudowoodo"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Politoed"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Hoppip"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Skiploom"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Jumpluff"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Aipom"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Sunkern"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Sunflora"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Yanma"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Wooper"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Quagsire"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Espeon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Umbreon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Murkrow"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Slowking"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Misdreavus"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Unown"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Wobbuffet"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Girafarig"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Pineco"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Forretress"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Dunsparce"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Gligar"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Steelix"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Snubbull"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Granbull"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Qwilfish"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Scizor"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Shuckle"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Heracross"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Sneasel"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Teddiursa"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Ursaring"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Slugma"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Magcargo"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Swinub"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Piloswine"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Corsola"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Remoraid"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Octillery"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Delibird"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Mantine"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Skarmory"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Houndour"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Houndoom"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Kingdra"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Phanpy"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Donphan"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Porygon2"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Stantler"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Smeargle"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Tyrogue"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Hitmontop"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Smoochum"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Elekid"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Magby"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Miltank"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Blissey"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Raikou"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Entei"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Suicune"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Larvitar"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Pupitar"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Tyranitar"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Lugia"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Ho-Oh"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Celebi"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "Hoenn",
+        "MaxLevel": "75",
+        "MinLevel": "5",
+        "Spawns": {
+          "id": [
+            {
+              "spawnrate": "1",
+              "name": "Treecko"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Grovyle"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Sceptile"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Torchic"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Combusken"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Blaziken"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Mudkip"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Marshtomp"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Swampert"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Poochyena"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Mightyena"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Zigzagoon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Linoone"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Wurmple"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Silcoon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Beautifly"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Cascoon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Dustox"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Lotad"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Lombre"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Ludicolo"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Seedot"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Nuzleaf"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Shiftry"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Taillow"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Swellow"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Wingull"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Pelipper"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Ralts"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Kirlia"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Gardevoir"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Surskit"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Masquerain"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Shroomish"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Breloom"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Slakoth"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Vigoroth"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Slaking"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Nincada"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Ninjask"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Shedinja"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Whismur"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Loudred"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Exploud"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Makuhita"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Hariyama"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Azurill"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Nosepass"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Skitty"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Delcatty"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Sableye"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Mawile"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Aron"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Lairon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Aggron"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Meditite"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Medicham"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Electrike"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Manectric"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Plusle"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Minun"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Volbeat"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Illumise"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Roselia"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Gulpin"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Swalot"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Carvanha"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Sharpedo"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Wailmer"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Wailord"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Numel"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Camerupt"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Torkoal"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Spoink"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Grumpig"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Spinda"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Trapinch"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Vibrava"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Flygon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Cacnea"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Cacturne"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Swablu"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Altaria"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Zangoose"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Seviper"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Lunatone"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Solrock"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Barboach"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Whiscash"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Corphish"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Crawdaunt"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Baltoy"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Claydol"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Lileep"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Cradily"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Anorith"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Armaldo"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Feebas"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Milotic"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Castform"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Kecleon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Shuppet"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Banette"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Duskull"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Dusclops"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Tropius"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Chimecho"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Absol"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Wynaut"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Snorunt"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Glalie"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Spheal"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Sealeo"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Walrein"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Clamperl"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Huntail"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Gorebyss"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Relicanth"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Luvdisc"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Bagon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Shelgon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Salamence"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Beldum"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Metang"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Metagross"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Regirock"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Regice"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Registeel"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Latias"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Latios"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Kyogre"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Groudon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Rayquaza"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Jirachi"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Deoxys (Normal Forme)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Deoxys (Attack Forme)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Deoxys (Defense Forme)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Deoxys (Speed Forme)"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "Sinnoh",
+        "MaxLevel": "80",
+        "MinLevel": "6",
+        "Spawns": {
+          "id": [
+            {
+              "spawnrate": "1",
+              "name": "Turtwig"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Grotle"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Torterra"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Chimchar"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Monferno"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Infernape"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Piplup"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Prinplup"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Empoleon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Starly"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Staravia"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Staraptor"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Bidoof"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Bibarel"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Kricketot"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Kricketune"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Shinx"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Luxio"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Luxray"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Budew"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Roserade"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Cranidos"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Rampardos"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Shieldon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Bastiodon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Burmy"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Wormadam (Plant Cloak Form)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Wormadam (Sandy Cloak Form)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Wormadam (Trash Cloak Form)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Mothim"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Combee"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Vespiquen"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Pachirisu"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Buizel"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Floatzel"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Cherubi"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Cherrim"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Shellos"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Gastrodon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Ambipom"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Drifloon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Drifblim"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Buneary"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Lopunny"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Mismagius"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Honchkrow"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Glameow"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Purugly"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Chingling"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Stunky"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Skuntank"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Bronzor"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Bronzong"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Bonsly"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Mime Jr."
+            },
+            {
+              "spawnrate": "1",
+              "name": "Happiny"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Chatot"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Spiritomb"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Gible"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Gabite"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Garchomp"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Munchlax"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Riolu"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Lucario"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Hippopotas"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Hippowdon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Skorupi"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Drapion"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Croagunk"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Toxicroak"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Carnivine"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Finneon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Lumineon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Mantyke"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Snover"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Abomasnow"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Weavile"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Magnezone"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Lickilicky"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Rhyperior"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Tangrowth"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Electivire"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Magmortar"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Togekiss"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Yanmega"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Leafeon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Glaceon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Gliscor"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Mamoswine"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Porygon-Z"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Gallade"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Probopass"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Dusknoir"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Froslass"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Rotom (Normal)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Rotom (Fan)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Rotom (Frost)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Rotom (Heat)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Rotom (Mow)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Rotom (Wash)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Uxie"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Mesprit"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Azelf"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Dialga"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Palkia"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Heatran"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Regigigas"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Giratina (Altered Forme)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Giratina (Origin Forme)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Cresselia"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Phione"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Manaphy"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Darkrai"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Shaymin (Land Forme)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Shaymin (Sky Forme)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Arceus"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Victini"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "Unova",
+        "MaxLevel": "85",
+        "MinLevel": "7",
+        "Spawns": {
+          "id": [
+            {
+              "spawnrate": "1",
+              "name": "Snivy"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Servine"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Serperior"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Tepig"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Pignite"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Emboar"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Oshawott"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Dewott"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Samurott"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Patrat"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Watchog"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Lillipup"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Herdier"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Stoutland"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Purrloin"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Liepard"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Pansage"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Simisage"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Pansear"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Simisear"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Panpour"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Simipour"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Munna"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Musharna"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Pidove"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Tranquill"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Unfezant (Female)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Unfezant (Male)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Blitzle"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Zebstrika"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Roggenrola"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Boldore"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Gigalith"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Woobat"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Swoobat"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Drilbur"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Excadrill"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Audino"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Timburr"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Gurdurr"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Conkeldurr"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Tympole"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Palpitoad"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Seismitoad"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Throh"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Sawk"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Sewaddle"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Swadloon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Leavanny"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Venipede"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Whirlipede"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Scolipede"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Cottonee"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Whimsicott"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Petilil"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Lilligant"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Basculin (Blue)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Basculin (Red)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Sandile"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Krokorok"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Krookodile"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Darumaka"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Darmanitan"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Maractus"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Dwebble"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Crustle"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Scraggy"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Scrafty"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Sigilyph"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Yamask"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Cofagrigus"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Tirtouga"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Carracosta"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Archen"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Archeops"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Trubbish"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Garbodor"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Zorua"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Zoroark"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Minccino"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Cinccino"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Gothita"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Gothorita"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Gothitelle"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Solosis"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Duosion"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Reuniclus"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Ducklett"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Swanna"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Vanillite"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Vanillish"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Vanilluxe"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Deerling"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Sawsbuck"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Emolga"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Karrablast"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Escavalier"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Foongus"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Amoonguss"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Frillish"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Jellicent"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Alomomola"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Joltik"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Galvantula"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Ferroseed"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Ferrothorn"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Klink"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Klang"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Klinklang"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Tynamo"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Eelektrik"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Eelektross"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Elgyem"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Beheeyem"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Litwick"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Lampant"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Chandelure"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Axew"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Fraxure"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Haxorus"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Chubchoo"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Beartic"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Cryogonal"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Shelmet"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Accelgor"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Stunfisk"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Mienfoo"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Mienshao"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Druddigon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Golett"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Golurk"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Pawniard"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Bisharp"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Bouffalant"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Rufflet"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Braviary"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Vullaby"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Mandibuzz"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Heatmor"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Durant"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Deino"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Zweuilous"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Hydreigon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Larvesta"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Volcarona"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Cobalion"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Terrakion"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Virizion"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Tornadus (Incarnate Forme)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Tornadus (Therian Forme)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Thundurus (Incarnate Forme)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Thundurus (Therian Forme)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Reshiram"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Zekrom"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Landorus (Incarnate Forme)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Landorus (Therian Forme)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Kyurem"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Kyurem (Zekrom Fusion Form)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Kyurem (Reshiram Fusion Form)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Keldeo"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Meloetta (Aria Form)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Meloetta (Step Form)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Genesect"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "Kalos",
+        "MaxLevel": "90",
+        "MinLevel": "8",
+        "Spawns": {
+          "id": [
+            {
+              "spawnrate": "1",
+              "name": "Chespin"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Quilladin"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Chesnaught"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Fennekin"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Braixen"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Delphox"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Froakie"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Frogadier"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Greninja"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Bunnelby"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Diggersby"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Fletchling"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Fletchinder"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Talonflame"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Scatterbug"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Spewpa"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Vivillon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Litleo"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Pyroar"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Flabébé"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Floette"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Florges"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Skiddo"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Gogoat"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Pancham"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Pangoro"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Furfrou"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Espurr"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Meowstic (female)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Meowstic (male)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Honedge"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Doublade"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Aegislash"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Spritzee"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Aromatisse"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Swirlix"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Slurpuff"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Inkay"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Malamar"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Binacle"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Barbaracle"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Skrelp"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Dragalge"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Clauncher"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Clawitzer"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Helioptile"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Heliolisk"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Tyrunt"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Tyrantrum"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Amaura"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Aurorus"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Sylveon"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Hawlucha"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Dedenne"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Carbink"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Goomy"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Sligoo"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Goodra"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Klefki"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Phantump"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Trevenant"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Pumpkaboo (average)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Pumpkaboo (large)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Pumpkaboo (small)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Pumpkaboo (super)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Gourgeist (average)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Gourgeist (large)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Gourgeist (small)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Gourgeist (super)"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Bergmite"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Avalugg"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Noibat"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Noivern"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Xerneas"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Yveltal"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Zygarde"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Diancie"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Hoopa Confined"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Hoopa Unbound"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "Route 101",
+        "MaxLevel": "5",
+        "MinLevel": "2",
+        "Spawns": {
+          "id": [
+            {
+              "spawnrate": "1",
+              "name": "Caterpie"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Weedle"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Pidgey"
+            },
+            {
+              "spawnrate": "1",
+              "name": "Rattata"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,184 @@
+﻿{
+  "Nature": [
+    {
+      "id": "Cuddly",
+      "up": "hp",
+      "down": "atk"
+    },
+    {
+      "id": "Distracted",
+      "up": "hp",
+      "down": "def"
+    },
+    {
+      "id": "Proud",
+      "up": "hp",
+      "down": "spatk"
+    },
+    {
+      "id": "Decisive",
+      "up": "hp",
+      "down": "spdef"
+    },
+    {
+      "id": "Patient",
+      "up": "hp",
+      "down": "spd"
+    },
+    {
+      "id": "Desperate",
+      "up": "atk",
+      "down": "hp"
+    },
+    {
+      "id": "Lonely",
+      "up": "atk",
+      "down": "def"
+    },
+    {
+      "id": "Adamant",
+      "up": "atk",
+      "down": "spatk"
+    },
+    {
+      "id": "Naughty",
+      "up": "atk",
+      "down": "spdef"
+    },
+    {
+      "id": "Brave",
+      "up": "atk",
+      "down": "spd"
+    },
+    {
+      "id": "Stark",
+      "up": "def",
+      "down": "hp"
+    },
+    {
+      "id": "Bold",
+      "up": "def",
+      "down": "atk"
+    },
+    {
+      "id": "Impish",
+      "up": "def",
+      "down": "spatk"
+    },
+    {
+      "id": "Lax",
+      "up": "def",
+      "down": "spdef"
+    },
+    {
+      "id": "Relaxed",
+      "up": "def",
+      "down": "spd"
+    },
+    {
+      "id": "Curious",
+      "up": "spatk",
+      "down": "hp"
+    },
+    {
+      "id": "Modest",
+      "up": "spatk",
+      "down": "atk"
+    },
+    {
+      "id": "Mild",
+      "up": "spatk",
+      "down": "def"
+    },
+    {
+      "id": "Rash",
+      "up": "spatk",
+      "down": "spdef"
+    },
+    {
+      "id": "Quiet",
+      "up": "spatk",
+      "down": "spd"
+    },
+    {
+      "id": "Dreamy",
+      "up": "spdef",
+      "down": "hp"
+    },
+    {
+      "id": "Calm",
+      "up": "spdef",
+      "down": "atk"
+    },
+    {
+      "id": "Gentle",
+      "up": "spdef",
+      "down": "def"
+    },
+    {
+      "id": "Careful",
+      "up": "spdef",
+      "down": "spatk"
+    },
+    {
+      "id": "Sassy",
+      "up": "spdef",
+      "down": "spd"
+    },
+    {
+      "id": "Skittish",
+      "up": "spd",
+      "down": "hp"
+    },
+    {
+      "id": "Timid",
+      "up": "spd",
+      "down": "atk"
+    },
+    {
+      "id": "Hasty",
+      "up": "spd",
+      "down": "def"
+    },
+    {
+      "id": "Jolly",
+      "up": "spd",
+      "down": "spatk"
+    },
+    {
+      "id": "Naive",
+      "up": "spd",
+      "down": "spdef"
+    },
+    {
+      "id": "Composed",
+      "up": "hp",
+      "down": "hp"
+    },
+    {
+      "id": "Hardy",
+      "up": "atk",
+      "down": "atk"
+    },
+    {
+      "id": "Docile",
+      "up": "def",
+      "down": "def"
+    },
+    {
+      "id": "Bashful",
+      "up": "spatk",
+      "down": "spatk"
+    },
+    {
+      "id": "Quirky",
+      "up": "spdef",
+      "down": "spdef"
+    },
+    {
+      "id": "Serious",
+      "up": "spd",
+      "down": "spd"
+    }
+  ]
+}

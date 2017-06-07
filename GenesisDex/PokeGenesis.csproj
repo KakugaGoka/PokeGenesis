@@ -2503,12 +2503,20 @@
     <None Include="Data\Audio\Empty.ogg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Data\JSON\abilities.json">
+    <None Include="Data\JSON\Abilities.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Data\JSON\moves.json">
+    <None Include="Data\JSON\DefaultRegion.json" />
+    <None Include="Data\JSON\Info.json" />
+    <None Include="Data\JSON\Items.json" />
+    <None Include="Data\JSON\Moves.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Data\JSON\Natures.json" />
+    <None Include="Data\JSON\Pokemon.json" />
+    <None Include="Data\JSON\Regions.json" />
+    <None Include="Data\JSON\TM-HM.json" />
+    <None Include="Data\JSON\Types.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -3854,6 +3862,7 @@
     <Content Include="Data\Images\TM-HM\WaterHM.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Data\JSON\Habitats,json" />
     <Content Include="Data\Options.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
